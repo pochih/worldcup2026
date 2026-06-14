@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T17:46:02.098545+00:00",
+  "generatedAt": "2026-06-14T19:56:18.960946+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -521,8 +521,8 @@
       "group": "E",
       "utc": "2026-06-14T17:00:00Z",
       "localKick": "2026-06-14T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Houston Stadium",
       "city": "Houston",
       "tz": "",
@@ -534,7 +534,7 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "score": 2,
+        "score": 7,
         "pen": null
       },
       "away": {
@@ -545,8 +545,8 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43948",
+      "attendance": "68021",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -573,6 +573,46 @@
           "team": "43948",
           "player": "Schlotterbeck",
           "score": "2-1",
+          "type": "G"
+        },
+        {
+          "minute": "45'+5'",
+          "side": "home",
+          "team": "43948",
+          "player": "Havertz",
+          "score": "3-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "47'",
+          "side": "home",
+          "team": "43948",
+          "player": "Musiala",
+          "score": "4-1",
+          "type": "G"
+        },
+        {
+          "minute": "68'",
+          "side": "home",
+          "team": "43948",
+          "player": "Nathaniel Brown",
+          "score": "5-1",
+          "type": "G"
+        },
+        {
+          "minute": "78'",
+          "side": "home",
+          "team": "43948",
+          "player": "Deniz Undav",
+          "score": "6-1",
+          "type": "G"
+        },
+        {
+          "minute": "88'",
+          "side": "home",
+          "team": "43948",
+          "player": "Havertz",
+          "score": "7-1",
           "type": "G"
         }
       ]
@@ -4825,9 +4865,9 @@
         "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 2,
+        "GF": 7,
         "GA": 1,
-        "GD": 1,
+        "GD": 6,
         "Pts": 3
       },
       {
@@ -4868,8 +4908,8 @@
         "D": 0,
         "L": 1,
         "GF": 1,
-        "GA": 2,
-        "GD": -1,
+        "GA": 7,
+        "GD": -6,
         "Pts": 0
       }
     ],
