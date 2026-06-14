@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 世足觀賽指南｜FIFA World Cup 2026</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <span class="logo">⚽</span>
+    <div>
+      <h1>2026 世足觀賽指南</h1>
+      <p class="tag">FIFA World Cup 26 · 美國 / 加拿大 / 墨西哥 · 6.11 – 7.19</p>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-view="calendar" class="active">📅 賽程日曆</button>
+    <button data-view="standings">📊 小組排名</button>
+    <button data-view="bracket">🏆 淘汰賽樹狀圖</button>
+    <button data-view="teams">🌍 隊伍</button>
+  </nav>
+  <div class="meta">
+    <span id="updated">載入中…</span>
+    <button id="refresh" title="重新載入資料">↻</button>
+  </div>
+</header>
+
+<main id="app">
+  <section id="view-calendar" class="view active">
+    <div class="cal-toolbar">
+      <button id="cal-prev">◀</button>
+      <h2 id="cal-title">—</h2>
+      <button id="cal-next">▶</button>
+      <button id="cal-today" class="today-btn">今天</button>
+      <label class="filter">
+        <input type="checkbox" id="filter-tw"> 只看公視轉播
+      </label>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+    <div class="day-detail" id="day-detail"></div>
+  </section>
+
+  <section id="view-standings" class="view">
+    <div class="standings-grid" id="standings-grid"></div>
+    <p class="legend">
+      P=賽次 W=勝 D=平 L=負 GF=進球 GA=失球 GD=淨勝球 Pts=積分
+      &nbsp;|&nbsp; 各組前 2 名 + 8 支最佳第 3 名晉級 32 強
+    </p>
+  </section>
+
+  <section id="view-bracket" class="view">
+    <h2>32 強淘汰賽 Bracket</h2>
+    <div id="bracket"></div>
+  </section>
+
+  <section id="view-teams" class="view">
+    <div id="teams-grid"></div>
+  </section>
+</main>
+
+<footer>
+  <p>資料來源：<a href="https://www.fifa.com" target="_blank" rel="noopener">FIFA 官方 API</a> ·
+     場館資料：<a href="https://github.com/openfootball/world-cup" target="_blank" rel="noopener">openfootball</a> ·
+     每小時自動更新 (GitHub Actions) ·
+     <a href="https://github.com/" id="repo-link" target="_blank" rel="noopener">原始碼</a></p>
+  <p class="disclaimer">轉播資訊以官方公告為準。本站為球迷自製、非官方。</p>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

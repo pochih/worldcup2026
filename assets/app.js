@@ -1,0 +1,329 @@
+// 2026 World Cup viewer — single-file vanilla JS
+// Data shape: see scripts/fetch_and_build.py
+
+const STAGE_LABEL_ZH = {
+  group: "小組賽", r32: "32 強", r16: "16 強",
+  qf: "8 強", sf: "4 強", third: "季軍戰", final: "決賽",
+};
+
+const TAIPEI_TZ = "Asia/Taipei";
+const MONTH_ZH = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
+const WEEKDAY_ZH = ["日","一","二","三","四","五","六"];
+
+let DATA = null;
+let SELECTED_DAY = null;        // ISO date string yyyy-mm-dd in Taipei time
+let CAL_MONTH = null;           // {y, m} in Taipei
+let FILTER_TW = false;
+
+// ---------- utilities ----------
+
+// FIFA Date field is UTC ISO; convert to Taipei {y,m,d} and HH:MM
+function utcToTaipei(utcStr) {
+  const d = new Date(utcStr);
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: TAIPEI_TZ, year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hour12: false,
+  }).formatToParts(d);
+  const get = (t) => parts.find(p => p.type === t)?.value || "";
+  return {
+    date: `${get("year")}-${get("month")}-${get("day")}`,
+    time: `${get("hour")}:${get("minute")}`,
+    raw: d,
+  };
+}
+
+function todayInTaipei() {
+  const p = new Intl.DateTimeFormat("en-CA", {
+    timeZone: TAIPEI_TZ, year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(new Date());
+  const g = (t) => p.find(x => x.type === t).value;
+  return `${g("year")}-${g("month")}-${g("day")}`;
+}
+
+function daysInMonth(y, m) { return new Date(y, m, 0).getDate(); }
+
+function fmtRelativeUpdate(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  const diffMin = Math.floor((Date.now() - d.getTime()) / 60000);
+  if (diffMin < 1) return "剛剛更新";
+  if (diffMin < 60) return `${diffMin} 分鐘前更新`;
+  if (diffMin < 1440) return `${Math.floor(diffMin/60)} 小時前更新`;
+  return `${Math.floor(diffMin/1440)} 天前更新`;
+}
+
+function isPlayed(m) { return m.status === 0 && m.home.score !== null; }
+function isLive(m) { return m.status === 3; }  // best-guess; FIFA may not flag in-play here
+
+// ---------- data load ----------
+
+async function loadData() {
+  const res = await fetch(`data/schedule.json?t=${Date.now()}`);
+  if (!res.ok) throw new Error("data load failed");
+  DATA = await res.json();
+  document.getElementById("updated").textContent =
+    `📡 ${fmtRelativeUpdate(DATA.generatedAt)}`;
+}
+
+// ---------- calendar ----------
+
+function buildCalIndex() {
+  // group matches by Taipei date
+  const byDay = {};
+  for (const m of DATA.matches) {
+    const tp = utcToTaipei(m.utc);
+    (byDay[tp.date] = byDay[tp.date] || []).push({ ...m, tpTime: tp.time });
+  }
+  return byDay;
+}
+
+function renderCalendar() {
+  const grid = document.getElementById("cal-grid");
+  const byDay = buildCalIndex();
+  const { y, m } = CAL_MONTH;
+  document.getElementById("cal-title").textContent = `${y}年 ${MONTH_ZH[m-1]}`;
+
+  grid.innerHTML = "";
+  // headers
+  ["日","一","二","三","四","五","六"].forEach(d => {
+    const h = document.createElement("div"); h.className = "cal-head"; h.textContent = d; grid.appendChild(h);
+  });
+  // padding
+  const first = new Date(y, m - 1, 1);
+  const firstDow = first.getDay();
+  for (let i = 0; i < firstDow; i++) {
+    const c = document.createElement("div"); c.className = "cal-cell empty"; grid.appendChild(c);
+  }
+  const today = todayInTaipei();
+  const dim = daysInMonth(y, m);
+  for (let d = 1; d <= dim; d++) {
+    const ds = `${y}-${String(m).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    const cell = document.createElement("div");
+    cell.className = "cal-cell";
+    const matches = (byDay[ds] || []).filter(mm => !FILTER_TW || mm.twBroadcast.some(b => b.includes("公視")));
+    if (matches.length) cell.classList.add("has-match");
+    if (ds === today) cell.classList.add("today");
+    if (ds === SELECTED_DAY) cell.classList.add("selected");
+
+    const num = document.createElement("div"); num.className = "day-num"; num.textContent = d; cell.appendChild(num);
+    if (matches.length) {
+      const cnt = document.createElement("div"); cnt.className = "match-count"; cnt.textContent = `${matches.length} 場`; cell.appendChild(cnt);
+      const pills = document.createElement("div"); pills.className = "match-pills";
+      matches.slice(0, 2).forEach(mm => {
+        const p = document.createElement("div");
+        p.className = "match-pill" + (mm.stage !== "group" ? " knockout" : "");
+        p.textContent = `${mm.home.code || "?"} vs ${mm.away.code || "?"}`;
+        pills.appendChild(p);
+      });
+      if (matches.length > 2) {
+        const p = document.createElement("div"); p.className = "match-pill"; p.textContent = `+${matches.length-2}…`; pills.appendChild(p);
+      }
+      cell.appendChild(pills);
+      cell.onclick = () => { SELECTED_DAY = ds; renderCalendar(); renderDayDetail(); };
+    }
+    grid.appendChild(cell);
+  }
+  renderDayDetail();
+}
+
+function renderDayDetail() {
+  const el = document.getElementById("day-detail");
+  if (!SELECTED_DAY) {
+    el.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px 0">點選日期查看當天賽事</p>`;
+    return;
+  }
+  const byDay = buildCalIndex();
+  const matches = (byDay[SELECTED_DAY] || []).sort((a, b) => a.tpTime.localeCompare(b.tpTime));
+  const [y, m, d] = SELECTED_DAY.split("-").map(Number);
+  let html = `<h3>${y}年${m}月${d}日（${MONTH_ZH[m-1]}）— ${matches.length} 場比賽</h3>`;
+  if (!matches.length) {
+    html += `<p style="color:var(--text-dim);text-align:center;padding:20px 0">這天沒有比賽 🛌</p>`;
+    el.innerHTML = html;
+    return;
+  }
+  for (const mm of matches) {
+    const played = isPlayed(mm);
+    const live = isLive(mm);
+    const cls = live ? "live" : (played ? "played" : "");
+    const home = mm.home, away = mm.away;
+    const homeName = home.name || mm.placeholderHome || "TBD";
+    const awayName = away.name || mm.placeholderAway || "TBD";
+    const scoreHtml = played
+      ? `<div class="score">${home.score} <span style="color:var(--text-dim)">–</span> ${away.score}${(home.pen !== null && home.pen !== undefined) ? `<span class="pen">PK ${home.pen}-${away.pen}</span>` : ""}</div>`
+      : `<div class="score scheduled">${mm.tpTime}<br><span style="font-size:10px">台北</span></div>`;
+    const stageBadge = mm.stage === "group"
+      ? `<span class="badge group">小組 ${mm.group}</span>`
+      : `<span class="badge knockout">${STAGE_LABEL_ZH[mm.stage] || mm.stageLabel}</span>`;
+    const liveBadge = live ? `<span class="badge live">● 進行中</span>` : "";
+    const doneBadge = played ? `<span class="badge done">已結束</span>` : "";
+    const tw = mm.twBroadcast.length ? `<span class="badge tw">📺 ${mm.twBroadcast.join("／")}</span>` : "";
+    const att = mm.attendance ? `<span class="badge">👥 ${Number(mm.attendance).toLocaleString()}</span>` : "";
+
+    html += `
+      <div class="match-card ${cls}">
+        <div class="home">
+          ${home.flag ? `<img class="flag" src="${home.flag}" alt="${home.code}" loading="lazy">` : ""}
+          <div>
+            <div class="team-name">${homeName}</div>
+            <div class="team-code">${home.code || ""}</div>
+          </div>
+        </div>
+        ${scoreHtml}
+        <div class="away">
+          ${away.flag ? `<img class="flag" src="${away.flag}" alt="${away.code}" loading="lazy">` : ""}
+          <div>
+            <div class="team-name">${awayName}</div>
+            <div class="team-code">${away.code || ""}</div>
+          </div>
+        </div>
+        <div class="match-meta">
+          ${stageBadge} ${liveBadge} ${doneBadge}
+          <span class="badge">🏟 ${mm.venue || "?"}${mm.city ? ` · ${mm.city}` : ""}</span>
+          ${tw} ${att}
+        </div>
+      </div>`;
+  }
+  el.innerHTML = html;
+}
+
+// ---------- standings ----------
+
+function renderStandings() {
+  const grid = document.getElementById("standings-grid");
+  const groups = Object.keys(DATA.standings).sort();
+  grid.innerHTML = groups.map(g => {
+    const rows = DATA.standings[g];
+    const rowsHtml = rows.map((r, i) => {
+      const cls = i < 2 ? "qualified" : (i === 2 ? "third" : "");
+      return `<tr class="${cls}">
+        <td><div class="team-cell">${r.flag ? `<img src="${r.flag}" alt="">` : ""}${r.name}</div></td>
+        <td>${r.P}</td><td>${r.W}</td><td>${r.D}</td><td>${r.L}</td>
+        <td>${r.GF}</td><td>${r.GA}</td><td>${r.GD > 0 ? "+" : ""}${r.GD}</td>
+        <td><strong>${r.Pts}</strong></td>
+      </tr>`;
+    }).join("");
+    return `<div class="group-card">
+      <h3>Group ${g} <span class="badge">小組 ${g}</span></h3>
+      <table>
+        <thead><tr><th>球隊</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>
+    </div>`;
+  }).join("");
+}
+
+// ---------- bracket ----------
+
+function renderBracket() {
+  // Group matches by stage
+  const stages = ["r32", "r16", "qf", "sf", "third", "final"];
+  const titles = { r32: "32 強", r16: "16 強", qf: "8 強", sf: "4 強", third: "季軍戰", final: "決賽" };
+  const byStage = {};
+  for (const s of stages) byStage[s] = [];
+  for (const m of DATA.matches) if (byStage[m.stage]) byStage[m.stage].push(m);
+  for (const s of stages) byStage[s].sort((a,b) => (a.no||0) - (b.no||0));
+
+  const el = document.getElementById("bracket");
+  el.innerHTML = stages.map(s => {
+    const ms = byStage[s];
+    return `<div class="bracket-round">
+      <h4>${titles[s]}</h4>
+      ${ms.map(m => bracketMatchHtml(m)).join("")}
+    </div>`;
+  }).join("");
+}
+
+function bracketMatchHtml(m) {
+  const played = isPlayed(m);
+  const home = m.home, away = m.away;
+  const hName = home.name || `<span class="ph">${m.placeholderHome || "TBD"}</span>`;
+  const aName = away.name || `<span class="ph">${m.placeholderAway || "TBD"}</span>`;
+  const hWin = played && home.score > away.score;
+  const aWin = played && away.score > home.score;
+  const tp = utcToTaipei(m.utc);
+  return `<div class="bracket-match">
+    <div class="row ${hWin ? "winner" : ""}">
+      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}${hName}</div>
+      <div class="vs-score">${played ? home.score : ""}</div>
+    </div>
+    <div class="row ${aWin ? "winner" : ""}">
+      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}${aName}</div>
+      <div class="vs-score">${played ? away.score : ""}</div>
+    </div>
+    <div class="meta">#${m.no} · ${tp.date.slice(5)} ${tp.time}</div>
+  </div>`;
+}
+
+// ---------- teams ----------
+
+function renderTeams() {
+  const teams = Object.values(DATA.teams);
+  // Find group letter for each team
+  const teamGroup = {};
+  for (const [g, rows] of Object.entries(DATA.standings)) {
+    for (const r of rows) teamGroup[r.id] = g;
+  }
+  teams.sort((a, b) => (teamGroup[a.id] || "Z").localeCompare(teamGroup[b.id] || "Z") || a.name.localeCompare(b.name));
+  const el = document.getElementById("teams-grid");
+  el.innerHTML = teams.map(t => `
+    <div class="team-card">
+      ${t.flag ? `<img src="${t.flag}" alt="${t.code}">` : ""}
+      <div class="name">${t.name}</div>
+      <div class="group-badge">Group ${teamGroup[t.id] || "?"}</div>
+    </div>`).join("");
+}
+
+// ---------- tabs ----------
+
+function setView(name) {
+  document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+  document.getElementById(`view-${name}`).classList.add("active");
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === name));
+}
+
+// ---------- init ----------
+
+async function init() {
+  try { await loadData(); }
+  catch (e) {
+    document.getElementById("app").innerHTML = `<p style="text-align:center;padding:60px;color:var(--text-dim)">資料載入失敗：${e.message}<br>請檢查 data/schedule.json 是否存在。</p>`;
+    return;
+  }
+  // Default month: first match's month, or today
+  const first = DATA.matches[0];
+  const tpFirst = utcToTaipei(first.utc);
+  const today = todayInTaipei();
+  const useToday = today >= tpFirst.date && today <= utcToTaipei(DATA.matches[DATA.matches.length-1].utc).date;
+  const startDate = useToday ? today : tpFirst.date;
+  const [yy, mm, dd] = startDate.split("-").map(Number);
+  CAL_MONTH = { y: yy, m: mm };
+  SELECTED_DAY = startDate;
+
+  renderCalendar();
+  renderStandings();
+  renderBracket();
+  renderTeams();
+
+  // Tab nav
+  document.getElementById("tabs").addEventListener("click", e => {
+    if (e.target.tagName === "BUTTON") setView(e.target.dataset.view);
+  });
+  // Cal nav
+  document.getElementById("cal-prev").onclick = () => {
+    CAL_MONTH.m--; if (CAL_MONTH.m < 1) { CAL_MONTH.m = 12; CAL_MONTH.y--; }
+    renderCalendar();
+  };
+  document.getElementById("cal-next").onclick = () => {
+    CAL_MONTH.m++; if (CAL_MONTH.m > 12) { CAL_MONTH.m = 1; CAL_MONTH.y++; }
+    renderCalendar();
+  };
+  document.getElementById("cal-today").onclick = () => {
+    const t = todayInTaipei();
+    const [y, m] = t.split("-").map(Number);
+    CAL_MONTH = { y, m }; SELECTED_DAY = t; renderCalendar();
+  };
+  document.getElementById("filter-tw").onchange = (e) => { FILTER_TW = e.target.checked; renderCalendar(); };
+  document.getElementById("refresh").onclick = async () => { await loadData(); renderCalendar(); renderStandings(); renderBracket(); renderTeams(); };
+}
+
+init();

@@ -1,0 +1,5002 @@
+{
+  "generatedAt": "2026-06-14T16:03:01.913113+00:00",
+  "totalMatches": 104,
+  "matches": [
+    {
+      "id": "400021443",
+      "no": 1,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "A",
+      "utc": "2026-06-11T19:00:00Z",
+      "localKick": "2026-06-11T13:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "A1",
+      "placeholderAway": "A2",
+      "home": {
+        "id": "43911",
+        "code": "MEX",
+        "name": "Mexico",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
+        "score": 2,
+        "pen": null
+      },
+      "away": {
+        "id": "43883",
+        "code": "RSA",
+        "name": "South Africa",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
+        "score": 0,
+        "pen": null
+      },
+      "winner": "43911",
+      "attendance": "80824",
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021441",
+      "no": 2,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "A",
+      "utc": "2026-06-12T02:00:00Z",
+      "localKick": "2026-06-11T20:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "A3",
+      "placeholderAway": "A4",
+      "home": {
+        "id": "43822",
+        "code": "KOR",
+        "name": "Korea Republic",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
+        "score": 2,
+        "pen": null
+      },
+      "away": {
+        "id": "43995",
+        "code": "CZE",
+        "name": "Czechia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
+        "score": 1,
+        "pen": null
+      },
+      "winner": "43822",
+      "attendance": "44985",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021449",
+      "no": 3,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "B",
+      "utc": "2026-06-12T19:00:00Z",
+      "localKick": "2026-06-12T15:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "B1",
+      "placeholderAway": "B2",
+      "home": {
+        "id": "43899",
+        "code": "CAN",
+        "name": "Canada",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
+        "score": 1,
+        "pen": null
+      },
+      "away": {
+        "id": "44037",
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
+        "score": 1,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": "43002",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021458",
+      "no": 4,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "D",
+      "utc": "2026-06-13T01:00:00Z",
+      "localKick": "2026-06-12T18:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "D1",
+      "placeholderAway": "D2",
+      "home": {
+        "id": "43921",
+        "code": "USA",
+        "name": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
+        "score": 4,
+        "pen": null
+      },
+      "away": {
+        "id": "43928",
+        "code": "PAR",
+        "name": "Paraguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
+        "score": 1,
+        "pen": null
+      },
+      "winner": "43921",
+      "attendance": "70492",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021453",
+      "no": 5,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "C",
+      "utc": "2026-06-14T01:00:00Z",
+      "localKick": "2026-06-13T21:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "C3",
+      "placeholderAway": "C4",
+      "home": {
+        "id": "43908",
+        "code": "HAI",
+        "name": "Haiti",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
+        "score": 0,
+        "pen": null
+      },
+      "away": {
+        "id": "43967",
+        "code": "SCO",
+        "name": "Scotland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
+        "score": 1,
+        "pen": null
+      },
+      "winner": "43967",
+      "attendance": "64146",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021463",
+      "no": 6,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "D",
+      "utc": "2026-06-14T04:00:00Z",
+      "localKick": "2026-06-13T21:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "D3",
+      "placeholderAway": "D4",
+      "home": {
+        "id": "43976",
+        "code": "AUS",
+        "name": "Australia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
+        "score": 2,
+        "pen": null
+      },
+      "away": {
+        "id": "43972",
+        "code": "TUR",
+        "name": "Türkiye",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
+        "score": 0,
+        "pen": null
+      },
+      "winner": "43976",
+      "attendance": "52497",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021456",
+      "no": 7,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "C",
+      "utc": "2026-06-13T22:00:00Z",
+      "localKick": "2026-06-13T18:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "C1",
+      "placeholderAway": "C2",
+      "home": {
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
+        "score": 1,
+        "pen": null
+      },
+      "away": {
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
+        "score": 1,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": "80663",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021447",
+      "no": 8,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "B",
+      "utc": "2026-06-13T19:00:00Z",
+      "localKick": "2026-06-13T12:00:00Z",
+      "status": 0,
+      "resultType": 1,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "B3",
+      "placeholderAway": "B4",
+      "home": {
+        "id": "43834",
+        "code": "QAT",
+        "name": "Qatar",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
+        "score": 1,
+        "pen": null
+      },
+      "away": {
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
+        "score": 1,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": "67966",
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021467",
+      "no": 9,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "E",
+      "utc": "2026-06-14T23:00:00Z",
+      "localKick": "2026-06-14T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "E3",
+      "placeholderAway": "E4",
+      "home": {
+        "id": "43854",
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43927",
+        "code": "ECU",
+        "name": "Ecuador",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021464",
+      "no": 10,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "E",
+      "utc": "2026-06-14T17:00:00Z",
+      "localKick": "2026-06-14T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "E1",
+      "placeholderAway": "E2",
+      "home": {
+        "id": "43948",
+        "code": "GER",
+        "name": "Germany",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "1895293",
+        "code": "CUW",
+        "name": "Curaçao",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021470",
+      "no": 11,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "F",
+      "utc": "2026-06-14T20:00:00Z",
+      "localKick": "2026-06-14T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "F1",
+      "placeholderAway": "F2",
+      "home": {
+        "id": "43960",
+        "code": "NED",
+        "name": "Netherlands",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43819",
+        "code": "JPN",
+        "name": "Japan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021474",
+      "no": 12,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "F",
+      "utc": "2026-06-15T02:00:00Z",
+      "localKick": "2026-06-14T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "F3",
+      "placeholderAway": "F4",
+      "home": {
+        "id": "43970",
+        "code": "SWE",
+        "name": "Sweden",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43888",
+        "code": "TUN",
+        "name": "Tunisia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021486",
+      "no": 13,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "H",
+      "utc": "2026-06-15T22:00:00Z",
+      "localKick": "2026-06-15T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "H3",
+      "placeholderAway": "H4",
+      "home": {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43930",
+        "code": "URU",
+        "name": "Uruguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021482",
+      "no": 14,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "H",
+      "utc": "2026-06-15T16:00:00Z",
+      "localKick": "2026-06-15T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "H1",
+      "placeholderAway": "H2",
+      "home": {
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43850",
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021476",
+      "no": 15,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "G",
+      "utc": "2026-06-16T01:00:00Z",
+      "localKick": "2026-06-15T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "G3",
+      "placeholderAway": "G4",
+      "home": {
+        "id": "43817",
+        "code": "IRN",
+        "name": "IR Iran",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43978",
+        "code": "NZL",
+        "name": "New Zealand",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021478",
+      "no": 16,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "G",
+      "utc": "2026-06-15T19:00:00Z",
+      "localKick": "2026-06-15T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "G1",
+      "placeholderAway": "G2",
+      "home": {
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43855",
+        "code": "EGY",
+        "name": "Egypt",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021490",
+      "no": 17,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "I",
+      "utc": "2026-06-16T19:00:00Z",
+      "localKick": "2026-06-16T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "I1",
+      "placeholderAway": "I2",
+      "home": {
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43879",
+        "code": "SEN",
+        "name": "Senegal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021488",
+      "no": 18,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "I",
+      "utc": "2026-06-16T22:00:00Z",
+      "localKick": "2026-06-16T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "I3",
+      "placeholderAway": "I4",
+      "home": {
+        "id": "43818",
+        "code": "IRQ",
+        "name": "Iraq",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021496",
+      "no": 19,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "J",
+      "utc": "2026-06-17T01:00:00Z",
+      "localKick": "2026-06-16T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "J1",
+      "placeholderAway": "J2",
+      "home": {
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43843",
+        "code": "ALG",
+        "name": "Algeria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021498",
+      "no": 20,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "J",
+      "utc": "2026-06-17T04:00:00Z",
+      "localKick": "2026-06-16T21:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "J3",
+      "placeholderAway": "J4",
+      "home": {
+        "id": "43934",
+        "code": "AUT",
+        "name": "Austria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43820",
+        "code": "JOR",
+        "name": "Jordan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021510",
+      "no": 21,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "L",
+      "utc": "2026-06-17T23:00:00Z",
+      "localKick": "2026-06-17T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "L3",
+      "placeholderAway": "L4",
+      "home": {
+        "id": "43860",
+        "code": "GHA",
+        "name": "Ghana",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43914",
+        "code": "PAN",
+        "name": "Panama",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021507",
+      "no": 22,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "L",
+      "utc": "2026-06-17T20:00:00Z",
+      "localKick": "2026-06-17T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "L1",
+      "placeholderAway": "L2",
+      "home": {
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021502",
+      "no": 23,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "K",
+      "utc": "2026-06-17T17:00:00Z",
+      "localKick": "2026-06-17T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "K1",
+      "placeholderAway": "K2",
+      "home": {
+        "id": "43963",
+        "code": "POR",
+        "name": "Portugal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "20014",
+        "code": "COD",
+        "name": "Congo DR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021504",
+      "no": 24,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "K",
+      "utc": "2026-06-18T02:00:00Z",
+      "localKick": "2026-06-17T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "K3",
+      "placeholderAway": "K4",
+      "home": {
+        "id": "44005",
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43926",
+        "code": "COL",
+        "name": "Colombia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021440",
+      "no": 25,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "A",
+      "utc": "2026-06-18T16:00:00Z",
+      "localKick": "2026-06-18T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "A4",
+      "placeholderAway": "A2",
+      "home": {
+        "id": "43995",
+        "code": "CZE",
+        "name": "Czechia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43883",
+        "code": "RSA",
+        "name": "South Africa",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021446",
+      "no": 26,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "B",
+      "utc": "2026-06-18T19:00:00Z",
+      "localKick": "2026-06-18T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "B4",
+      "placeholderAway": "B2",
+      "home": {
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "44037",
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021450",
+      "no": 27,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "B",
+      "utc": "2026-06-18T22:00:00Z",
+      "localKick": "2026-06-18T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "B1",
+      "placeholderAway": "B3",
+      "home": {
+        "id": "43899",
+        "code": "CAN",
+        "name": "Canada",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43834",
+        "code": "QAT",
+        "name": "Qatar",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021442",
+      "no": 28,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "A",
+      "utc": "2026-06-19T01:00:00Z",
+      "localKick": "2026-06-18T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "A1",
+      "placeholderAway": "A3",
+      "home": {
+        "id": "43911",
+        "code": "MEX",
+        "name": "Mexico",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43822",
+        "code": "KOR",
+        "name": "Korea Republic",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021457",
+      "no": 29,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "C",
+      "utc": "2026-06-20T00:30:00Z",
+      "localKick": "2026-06-19T20:30:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "C1",
+      "placeholderAway": "C3",
+      "home": {
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43908",
+        "code": "HAI",
+        "name": "Haiti",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021454",
+      "no": 30,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "C",
+      "utc": "2026-06-19T22:00:00Z",
+      "localKick": "2026-06-19T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "C4",
+      "placeholderAway": "C2",
+      "home": {
+        "id": "43967",
+        "code": "SCO",
+        "name": "Scotland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021460",
+      "no": 31,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "D",
+      "utc": "2026-06-20T03:00:00Z",
+      "localKick": "2026-06-19T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "D4",
+      "placeholderAway": "D2",
+      "home": {
+        "id": "43972",
+        "code": "TUR",
+        "name": "Türkiye",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43928",
+        "code": "PAR",
+        "name": "Paraguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021462",
+      "no": 32,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "D",
+      "utc": "2026-06-19T19:00:00Z",
+      "localKick": "2026-06-19T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "D1",
+      "placeholderAway": "D3",
+      "home": {
+        "id": "43921",
+        "code": "USA",
+        "name": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43976",
+        "code": "AUS",
+        "name": "Australia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021469",
+      "no": 33,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "E",
+      "utc": "2026-06-20T20:00:00Z",
+      "localKick": "2026-06-20T16:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "E1",
+      "placeholderAway": "E3",
+      "home": {
+        "id": "43948",
+        "code": "GER",
+        "name": "Germany",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43854",
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021465",
+      "no": 34,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "E",
+      "utc": "2026-06-21T00:00:00Z",
+      "localKick": "2026-06-20T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "E4",
+      "placeholderAway": "E2",
+      "home": {
+        "id": "43927",
+        "code": "ECU",
+        "name": "Ecuador",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "1895293",
+        "code": "CUW",
+        "name": "Curaçao",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021472",
+      "no": 35,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "F",
+      "utc": "2026-06-20T17:00:00Z",
+      "localKick": "2026-06-20T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "F1",
+      "placeholderAway": "F3",
+      "home": {
+        "id": "43960",
+        "code": "NED",
+        "name": "Netherlands",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43970",
+        "code": "SWE",
+        "name": "Sweden",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021475",
+      "no": 36,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "F",
+      "utc": "2026-06-21T04:00:00Z",
+      "localKick": "2026-06-20T22:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "F4",
+      "placeholderAway": "F2",
+      "home": {
+        "id": "43888",
+        "code": "TUN",
+        "name": "Tunisia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43819",
+        "code": "JPN",
+        "name": "Japan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021487",
+      "no": 37,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "H",
+      "utc": "2026-06-21T22:00:00Z",
+      "localKick": "2026-06-21T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "H4",
+      "placeholderAway": "H2",
+      "home": {
+        "id": "43930",
+        "code": "URU",
+        "name": "Uruguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43850",
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021483",
+      "no": 38,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "H",
+      "utc": "2026-06-21T16:00:00Z",
+      "localKick": "2026-06-21T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "H1",
+      "placeholderAway": "H3",
+      "home": {
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021477",
+      "no": 39,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "G",
+      "utc": "2026-06-21T19:00:00Z",
+      "localKick": "2026-06-21T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "G1",
+      "placeholderAway": "G3",
+      "home": {
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43817",
+        "code": "IRN",
+        "name": "IR Iran",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021480",
+      "no": 40,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "G",
+      "utc": "2026-06-22T01:00:00Z",
+      "localKick": "2026-06-21T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "G4",
+      "placeholderAway": "G2",
+      "home": {
+        "id": "43978",
+        "code": "NZL",
+        "name": "New Zealand",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43855",
+        "code": "EGY",
+        "name": "Egypt",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021491",
+      "no": 41,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "I",
+      "utc": "2026-06-23T00:00:00Z",
+      "localKick": "2026-06-22T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "I4",
+      "placeholderAway": "I2",
+      "home": {
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43879",
+        "code": "SEN",
+        "name": "Senegal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021492",
+      "no": 42,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "I",
+      "utc": "2026-06-22T21:00:00Z",
+      "localKick": "2026-06-22T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "I1",
+      "placeholderAway": "I3",
+      "home": {
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43818",
+        "code": "IRQ",
+        "name": "Iraq",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021494",
+      "no": 43,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "J",
+      "utc": "2026-06-22T17:00:00Z",
+      "localKick": "2026-06-22T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "J1",
+      "placeholderAway": "J3",
+      "home": {
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43934",
+        "code": "AUT",
+        "name": "Austria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021499",
+      "no": 44,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "J",
+      "utc": "2026-06-23T03:00:00Z",
+      "localKick": "2026-06-22T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "J4",
+      "placeholderAway": "J2",
+      "home": {
+        "id": "43820",
+        "code": "JOR",
+        "name": "Jordan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43843",
+        "code": "ALG",
+        "name": "Algeria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021506",
+      "no": 45,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "L",
+      "utc": "2026-06-23T20:00:00Z",
+      "localKick": "2026-06-23T16:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "L1",
+      "placeholderAway": "L3",
+      "home": {
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43860",
+        "code": "GHA",
+        "name": "Ghana",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021511",
+      "no": 46,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "L",
+      "utc": "2026-06-23T23:00:00Z",
+      "localKick": "2026-06-23T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "L4",
+      "placeholderAway": "L2",
+      "home": {
+        "id": "43914",
+        "code": "PAN",
+        "name": "Panama",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021503",
+      "no": 47,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "K",
+      "utc": "2026-06-23T17:00:00Z",
+      "localKick": "2026-06-23T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "K1",
+      "placeholderAway": "K3",
+      "home": {
+        "id": "43963",
+        "code": "POR",
+        "name": "Portugal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "44005",
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021501",
+      "no": 48,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "K",
+      "utc": "2026-06-24T02:00:00Z",
+      "localKick": "2026-06-23T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "K4",
+      "placeholderAway": "K2",
+      "home": {
+        "id": "43926",
+        "code": "COL",
+        "name": "Colombia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "20014",
+        "code": "COD",
+        "name": "Congo DR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021455",
+      "no": 49,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "C",
+      "utc": "2026-06-24T22:00:00Z",
+      "localKick": "2026-06-24T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "C4",
+      "placeholderAway": "C1",
+      "home": {
+        "id": "43967",
+        "code": "SCO",
+        "name": "Scotland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021452",
+      "no": 50,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "C",
+      "utc": "2026-06-24T22:00:00Z",
+      "localKick": "2026-06-24T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "C2",
+      "placeholderAway": "C3",
+      "home": {
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43908",
+        "code": "HAI",
+        "name": "Haiti",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021451",
+      "no": 51,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "B",
+      "utc": "2026-06-24T19:00:00Z",
+      "localKick": "2026-06-24T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "B4",
+      "placeholderAway": "B1",
+      "home": {
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43899",
+        "code": "CAN",
+        "name": "Canada",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021448",
+      "no": 52,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "B",
+      "utc": "2026-06-24T19:00:00Z",
+      "localKick": "2026-06-24T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "B2",
+      "placeholderAway": "B3",
+      "home": {
+        "id": "44037",
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43834",
+        "code": "QAT",
+        "name": "Qatar",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021444",
+      "no": 53,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "A",
+      "utc": "2026-06-25T01:00:00Z",
+      "localKick": "2026-06-24T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "A4",
+      "placeholderAway": "A1",
+      "home": {
+        "id": "43995",
+        "code": "CZE",
+        "name": "Czechia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43911",
+        "code": "MEX",
+        "name": "Mexico",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021445",
+      "no": 54,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "A",
+      "utc": "2026-06-25T01:00:00Z",
+      "localKick": "2026-06-24T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "A2",
+      "placeholderAway": "A3",
+      "home": {
+        "id": "43883",
+        "code": "RSA",
+        "name": "South Africa",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43822",
+        "code": "KOR",
+        "name": "Korea Republic",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021468",
+      "no": 55,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "E",
+      "utc": "2026-06-25T20:00:00Z",
+      "localKick": "2026-06-25T16:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "E2",
+      "placeholderAway": "E3",
+      "home": {
+        "id": "1895293",
+        "code": "CUW",
+        "name": "Curaçao",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43854",
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021466",
+      "no": 56,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "E",
+      "utc": "2026-06-25T20:00:00Z",
+      "localKick": "2026-06-25T16:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "E4",
+      "placeholderAway": "E1",
+      "home": {
+        "id": "43927",
+        "code": "ECU",
+        "name": "Ecuador",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43948",
+        "code": "GER",
+        "name": "Germany",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021471",
+      "no": 57,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "F",
+      "utc": "2026-06-25T23:00:00Z",
+      "localKick": "2026-06-25T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "F2",
+      "placeholderAway": "F3",
+      "home": {
+        "id": "43819",
+        "code": "JPN",
+        "name": "Japan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43970",
+        "code": "SWE",
+        "name": "Sweden",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021473",
+      "no": 58,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "F",
+      "utc": "2026-06-25T23:00:00Z",
+      "localKick": "2026-06-25T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "F4",
+      "placeholderAway": "F1",
+      "home": {
+        "id": "43888",
+        "code": "TUN",
+        "name": "Tunisia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43960",
+        "code": "NED",
+        "name": "Netherlands",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021459",
+      "no": 59,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "D",
+      "utc": "2026-06-26T02:00:00Z",
+      "localKick": "2026-06-25T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "D4",
+      "placeholderAway": "D1",
+      "home": {
+        "id": "43972",
+        "code": "TUR",
+        "name": "Türkiye",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43921",
+        "code": "USA",
+        "name": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021461",
+      "no": 60,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "D",
+      "utc": "2026-06-26T02:00:00Z",
+      "localKick": "2026-06-25T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "D2",
+      "placeholderAway": "D3",
+      "home": {
+        "id": "43928",
+        "code": "PAR",
+        "name": "Paraguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43976",
+        "code": "AUS",
+        "name": "Australia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021489",
+      "no": 61,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "I",
+      "utc": "2026-06-26T19:00:00Z",
+      "localKick": "2026-06-26T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "I4",
+      "placeholderAway": "I1",
+      "home": {
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021493",
+      "no": 62,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "I",
+      "utc": "2026-06-26T19:00:00Z",
+      "localKick": "2026-06-26T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "I2",
+      "placeholderAway": "I3",
+      "home": {
+        "id": "43879",
+        "code": "SEN",
+        "name": "Senegal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43818",
+        "code": "IRQ",
+        "name": "Iraq",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021479",
+      "no": 63,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "G",
+      "utc": "2026-06-27T03:00:00Z",
+      "localKick": "2026-06-26T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "G2",
+      "placeholderAway": "G3",
+      "home": {
+        "id": "43855",
+        "code": "EGY",
+        "name": "Egypt",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43817",
+        "code": "IRN",
+        "name": "IR Iran",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021481",
+      "no": 64,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "G",
+      "utc": "2026-06-27T03:00:00Z",
+      "localKick": "2026-06-26T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "G4",
+      "placeholderAway": "G1",
+      "home": {
+        "id": "43978",
+        "code": "NZL",
+        "name": "New Zealand",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021485",
+      "no": 65,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "H",
+      "utc": "2026-06-27T00:00:00Z",
+      "localKick": "2026-06-26T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "H2",
+      "placeholderAway": "H3",
+      "home": {
+        "id": "43850",
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021484",
+      "no": 66,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "H",
+      "utc": "2026-06-27T00:00:00Z",
+      "localKick": "2026-06-26T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Guadalajara Stadium",
+      "city": "Guadalajara",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "H4",
+      "placeholderAway": "H1",
+      "home": {
+        "id": "43930",
+        "code": "URU",
+        "name": "Uruguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021508",
+      "no": 67,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "L",
+      "utc": "2026-06-27T21:00:00Z",
+      "localKick": "2026-06-27T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "L4",
+      "placeholderAway": "L1",
+      "home": {
+        "id": "43914",
+        "code": "PAN",
+        "name": "Panama",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021509",
+      "no": 68,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "L",
+      "utc": "2026-06-27T21:00:00Z",
+      "localKick": "2026-06-27T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "L2",
+      "placeholderAway": "L3",
+      "home": {
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43860",
+        "code": "GHA",
+        "name": "Ghana",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021497",
+      "no": 69,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "J",
+      "utc": "2026-06-28T02:00:00Z",
+      "localKick": "2026-06-27T21:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "J2",
+      "placeholderAway": "J3",
+      "home": {
+        "id": "43843",
+        "code": "ALG",
+        "name": "Algeria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43934",
+        "code": "AUT",
+        "name": "Austria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021495",
+      "no": 70,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "J",
+      "utc": "2026-06-28T02:00:00Z",
+      "localKick": "2026-06-27T21:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "J4",
+      "placeholderAway": "J1",
+      "home": {
+        "id": "43820",
+        "code": "JOR",
+        "name": "Jordan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021505",
+      "no": 71,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "K",
+      "utc": "2026-06-27T23:30:00Z",
+      "localKick": "2026-06-27T19:30:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "K4",
+      "placeholderAway": "K1",
+      "home": {
+        "id": "43926",
+        "code": "COL",
+        "name": "Colombia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "43963",
+        "code": "POR",
+        "name": "Portugal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021500",
+      "no": 72,
+      "stage": "group",
+      "stageLabel": "First Stage",
+      "group": "K",
+      "utc": "2026-06-27T23:30:00Z",
+      "localKick": "2026-06-27T19:30:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "K2",
+      "placeholderAway": "K3",
+      "home": {
+        "id": "20014",
+        "code": "COD",
+        "name": "Congo DR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": "44005",
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021518",
+      "no": 73,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-06-28T19:00:00Z",
+      "localKick": "2026-06-28T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "2A",
+      "placeholderAway": "2B",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021513",
+      "no": 74,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-06-29T20:30:00Z",
+      "localKick": "2026-06-29T16:30:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1E",
+      "placeholderAway": "3ABCDF",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021522",
+      "no": 75,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-06-30T01:00:00Z",
+      "localKick": "2026-06-29T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Monterrey Stadium",
+      "city": "Monterrey",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "1F",
+      "placeholderAway": "2C",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021516",
+      "no": 76,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-06-29T17:00:00Z",
+      "localKick": "2026-06-29T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1C",
+      "placeholderAway": "2F",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021523",
+      "no": 77,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-06-30T21:00:00Z",
+      "localKick": "2026-06-30T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1I",
+      "placeholderAway": "3CDFGH",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021514",
+      "no": 78,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-06-30T17:00:00Z",
+      "localKick": "2026-06-30T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "2E",
+      "placeholderAway": "2I",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021520",
+      "no": 79,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-01T01:00:00Z",
+      "localKick": "2026-06-30T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "1A",
+      "placeholderAway": "3CEFHI",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021512",
+      "no": 80,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-01T16:00:00Z",
+      "localKick": "2026-07-01T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1L",
+      "placeholderAway": "3EHIJK",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021524",
+      "no": 81,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-02T00:00:00Z",
+      "localKick": "2026-07-01T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1D",
+      "placeholderAway": "3BEFIJ",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021525",
+      "no": 82,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-01T20:00:00Z",
+      "localKick": "2026-07-01T13:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1G",
+      "placeholderAway": "3AEHIJ",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021526",
+      "no": 83,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-02T23:00:00Z",
+      "localKick": "2026-07-02T19:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Toronto Stadium",
+      "city": "Toronto",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "2K",
+      "placeholderAway": "2L",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021519",
+      "no": 84,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-02T19:00:00Z",
+      "localKick": "2026-07-02T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1H",
+      "placeholderAway": "2J",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021527",
+      "no": 85,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-03T03:00:00Z",
+      "localKick": "2026-07-02T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "1B",
+      "placeholderAway": "3EFGIJ",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021521",
+      "no": 86,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-03T22:00:00Z",
+      "localKick": "2026-07-03T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1J",
+      "placeholderAway": "2H",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021517",
+      "no": 87,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-04T01:30:00Z",
+      "localKick": "2026-07-03T20:30:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "1K",
+      "placeholderAway": "3DEIJL",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021515",
+      "no": 88,
+      "stage": "r32",
+      "stageLabel": "Round of 32",
+      "group": "",
+      "utc": "2026-07-03T18:00:00Z",
+      "localKick": "2026-07-03T13:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "2D",
+      "placeholderAway": "2G",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021533",
+      "no": 89,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-04T21:00:00Z",
+      "localKick": "2026-07-04T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W74",
+      "placeholderAway": "W77",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021530",
+      "no": 90,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-04T17:00:00Z",
+      "localKick": "2026-07-04T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Houston Stadium",
+      "city": "Houston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W73",
+      "placeholderAway": "W75",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021532",
+      "no": 91,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-05T20:00:00Z",
+      "localKick": "2026-07-05T16:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W76",
+      "placeholderAway": "W78",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021531",
+      "no": 92,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-06T00:00:00Z",
+      "localKick": "2026-07-05T18:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Mexico City Stadium",
+      "city": "Mexico City",
+      "tz": "",
+      "country": "MEX",
+      "placeholderHome": "W79",
+      "placeholderAway": "W80",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021529",
+      "no": 93,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-06T19:00:00Z",
+      "localKick": "2026-07-06T14:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W83",
+      "placeholderAway": "W84",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021534",
+      "no": 94,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-07T00:00:00Z",
+      "localKick": "2026-07-06T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Seattle Stadium",
+      "city": "Seattle",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W81",
+      "placeholderAway": "W82",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021528",
+      "no": 95,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-07T16:00:00Z",
+      "localKick": "2026-07-07T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W86",
+      "placeholderAway": "W88",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021535",
+      "no": 96,
+      "stage": "r16",
+      "stageLabel": "Round of 16",
+      "group": "",
+      "utc": "2026-07-07T20:00:00Z",
+      "localKick": "2026-07-07T13:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "BC Place Vancouver",
+      "city": "Vancouver",
+      "tz": "",
+      "country": "CAN",
+      "placeholderHome": "W85",
+      "placeholderAway": "W87",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021536",
+      "no": 97,
+      "stage": "qf",
+      "stageLabel": "Quarter-final",
+      "group": "",
+      "utc": "2026-07-09T20:00:00Z",
+      "localKick": "2026-07-09T16:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Boston Stadium",
+      "city": "Boston",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W89",
+      "placeholderAway": "W90",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021538",
+      "no": 98,
+      "stage": "qf",
+      "stageLabel": "Quarter-final",
+      "group": "",
+      "utc": "2026-07-10T19:00:00Z",
+      "localKick": "2026-07-10T12:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W93",
+      "placeholderAway": "W94",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021539",
+      "no": 99,
+      "stage": "qf",
+      "stageLabel": "Quarter-final",
+      "group": "",
+      "utc": "2026-07-11T21:00:00Z",
+      "localKick": "2026-07-11T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W91",
+      "placeholderAway": "W92",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021537",
+      "no": 100,
+      "stage": "qf",
+      "stageLabel": "Quarter-final",
+      "group": "",
+      "utc": "2026-07-12T01:00:00Z",
+      "localKick": "2026-07-11T20:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Kansas City Stadium",
+      "city": "Kansas City",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W95",
+      "placeholderAway": "W96",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台"
+      ]
+    },
+    {
+      "id": "400021541",
+      "no": 101,
+      "stage": "sf",
+      "stageLabel": "Semi-final",
+      "group": "",
+      "utc": "2026-07-14T19:00:00Z",
+      "localKick": "2026-07-14T14:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Dallas Stadium",
+      "city": "Dallas",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W97",
+      "placeholderAway": "W98",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021540",
+      "no": 102,
+      "stage": "sf",
+      "stageLabel": "Semi-final",
+      "group": "",
+      "utc": "2026-07-15T19:00:00Z",
+      "localKick": "2026-07-15T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Atlanta Stadium",
+      "city": "Atlanta",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W99",
+      "placeholderAway": "W100",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021542",
+      "no": 103,
+      "stage": "third",
+      "stageLabel": "Play-off for third place",
+      "group": "",
+      "utc": "2026-07-18T21:00:00Z",
+      "localKick": "2026-07-18T17:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "Miami Stadium",
+      "city": "Miami",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "RU101",
+      "placeholderAway": "RU102",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    },
+    {
+      "id": "400021543",
+      "no": 104,
+      "stage": "final",
+      "stageLabel": "Final",
+      "group": "",
+      "utc": "2026-07-19T19:00:00Z",
+      "localKick": "2026-07-19T15:00:00Z",
+      "status": 1,
+      "resultType": 0,
+      "venue": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "tz": "",
+      "country": "USA",
+      "placeholderHome": "W101",
+      "placeholderAway": "W102",
+      "home": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "away": {
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
+        "score": null,
+        "pen": null
+      },
+      "winner": null,
+      "attendance": null,
+      "twBroadcast": [
+        "愛爾達體育台",
+        "公視（無線轉播）"
+      ]
+    }
+  ],
+  "teams": {
+    "43911": {
+      "id": "43911",
+      "code": "MEX",
+      "name": "Mexico",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
+      "country": "MEX"
+    },
+    "43883": {
+      "id": "43883",
+      "code": "RSA",
+      "name": "South Africa",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
+      "country": "RSA"
+    },
+    "43822": {
+      "id": "43822",
+      "code": "KOR",
+      "name": "Korea Republic",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
+      "country": "KOR"
+    },
+    "43995": {
+      "id": "43995",
+      "code": "CZE",
+      "name": "Czechia",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
+      "country": "CZE"
+    },
+    "43899": {
+      "id": "43899",
+      "code": "CAN",
+      "name": "Canada",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
+      "country": "CAN"
+    },
+    "44037": {
+      "id": "44037",
+      "code": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
+      "country": "BIH"
+    },
+    "43921": {
+      "id": "43921",
+      "code": "USA",
+      "name": "USA",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
+      "country": "USA"
+    },
+    "43928": {
+      "id": "43928",
+      "code": "PAR",
+      "name": "Paraguay",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
+      "country": "PAR"
+    },
+    "43834": {
+      "id": "43834",
+      "code": "QAT",
+      "name": "Qatar",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
+      "country": "QAT"
+    },
+    "43971": {
+      "id": "43971",
+      "code": "SUI",
+      "name": "Switzerland",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
+      "country": "SUI"
+    },
+    "43924": {
+      "id": "43924",
+      "code": "BRA",
+      "name": "Brazil",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
+      "country": "BRA"
+    },
+    "43872": {
+      "id": "43872",
+      "code": "MAR",
+      "name": "Morocco",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
+      "country": "MAR"
+    },
+    "43908": {
+      "id": "43908",
+      "code": "HAI",
+      "name": "Haiti",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
+      "country": "HAI"
+    },
+    "43967": {
+      "id": "43967",
+      "code": "SCO",
+      "name": "Scotland",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
+      "country": "SCO"
+    },
+    "43976": {
+      "id": "43976",
+      "code": "AUS",
+      "name": "Australia",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
+      "country": "AUS"
+    },
+    "43972": {
+      "id": "43972",
+      "code": "TUR",
+      "name": "Türkiye",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
+      "country": "TUR"
+    },
+    "43948": {
+      "id": "43948",
+      "code": "GER",
+      "name": "Germany",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
+      "country": "GER"
+    },
+    "1895293": {
+      "id": "1895293",
+      "code": "CUW",
+      "name": "Curaçao",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
+      "country": "CUW"
+    },
+    "43960": {
+      "id": "43960",
+      "code": "NED",
+      "name": "Netherlands",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
+      "country": "NED"
+    },
+    "43819": {
+      "id": "43819",
+      "code": "JPN",
+      "name": "Japan",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
+      "country": "JPN"
+    },
+    "43854": {
+      "id": "43854",
+      "code": "CIV",
+      "name": "Côte d'Ivoire",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
+      "country": "CIV"
+    },
+    "43927": {
+      "id": "43927",
+      "code": "ECU",
+      "name": "Ecuador",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
+      "country": "ECU"
+    },
+    "43970": {
+      "id": "43970",
+      "code": "SWE",
+      "name": "Sweden",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
+      "country": "SWE"
+    },
+    "43888": {
+      "id": "43888",
+      "code": "TUN",
+      "name": "Tunisia",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
+      "country": "TUN"
+    },
+    "43969": {
+      "id": "43969",
+      "code": "ESP",
+      "name": "Spain",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+      "country": "ESP"
+    },
+    "43850": {
+      "id": "43850",
+      "code": "CPV",
+      "name": "Cabo Verde",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
+      "country": "CPV"
+    },
+    "43935": {
+      "id": "43935",
+      "code": "BEL",
+      "name": "Belgium",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
+      "country": "BEL"
+    },
+    "43855": {
+      "id": "43855",
+      "code": "EGY",
+      "name": "Egypt",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
+      "country": "EGY"
+    },
+    "43835": {
+      "id": "43835",
+      "code": "KSA",
+      "name": "Saudi Arabia",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+      "country": "KSA"
+    },
+    "43930": {
+      "id": "43930",
+      "code": "URU",
+      "name": "Uruguay",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+      "country": "URU"
+    },
+    "43817": {
+      "id": "43817",
+      "code": "IRN",
+      "name": "IR Iran",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+      "country": "IRN"
+    },
+    "43978": {
+      "id": "43978",
+      "code": "NZL",
+      "name": "New Zealand",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
+      "country": "NZL"
+    },
+    "43946": {
+      "id": "43946",
+      "code": "FRA",
+      "name": "France",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
+      "country": "FRA"
+    },
+    "43879": {
+      "id": "43879",
+      "code": "SEN",
+      "name": "Senegal",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
+      "country": "SEN"
+    },
+    "43818": {
+      "id": "43818",
+      "code": "IRQ",
+      "name": "Iraq",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
+      "country": "IRQ"
+    },
+    "43961": {
+      "id": "43961",
+      "code": "NOR",
+      "name": "Norway",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
+      "country": "NOR"
+    },
+    "43922": {
+      "id": "43922",
+      "code": "ARG",
+      "name": "Argentina",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
+      "country": "ARG"
+    },
+    "43843": {
+      "id": "43843",
+      "code": "ALG",
+      "name": "Algeria",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
+      "country": "ALG"
+    },
+    "43934": {
+      "id": "43934",
+      "code": "AUT",
+      "name": "Austria",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
+      "country": "AUT"
+    },
+    "43820": {
+      "id": "43820",
+      "code": "JOR",
+      "name": "Jordan",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
+      "country": "JOR"
+    },
+    "43963": {
+      "id": "43963",
+      "code": "POR",
+      "name": "Portugal",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+      "country": "POR"
+    },
+    "20014": {
+      "id": "20014",
+      "code": "COD",
+      "name": "Congo DR",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+      "country": "COD"
+    },
+    "43942": {
+      "id": "43942",
+      "code": "ENG",
+      "name": "England",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
+      "country": "ENG"
+    },
+    "43938": {
+      "id": "43938",
+      "code": "CRO",
+      "name": "Croatia",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+      "country": "CRO"
+    },
+    "43860": {
+      "id": "43860",
+      "code": "GHA",
+      "name": "Ghana",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
+      "country": "GHA"
+    },
+    "43914": {
+      "id": "43914",
+      "code": "PAN",
+      "name": "Panama",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
+      "country": "PAN"
+    },
+    "44005": {
+      "id": "44005",
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
+      "country": "UZB"
+    },
+    "43926": {
+      "id": "43926",
+      "code": "COL",
+      "name": "Colombia",
+      "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
+      "country": "COL"
+    }
+  },
+  "standings": {
+    "A": [
+      {
+        "id": "43911",
+        "code": "MEX",
+        "name": "Mexico",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 2,
+        "GA": 0,
+        "GD": 2,
+        "Pts": 3
+      },
+      {
+        "id": "43822",
+        "code": "KOR",
+        "name": "Korea Republic",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 2,
+        "GA": 1,
+        "GD": 1,
+        "Pts": 3
+      },
+      {
+        "id": "43995",
+        "code": "CZE",
+        "name": "Czechia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 2,
+        "GD": -1,
+        "Pts": 0
+      },
+      {
+        "id": "43883",
+        "code": "RSA",
+        "name": "South Africa",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 2,
+        "GD": -2,
+        "Pts": 0
+      }
+    ],
+    "B": [
+      {
+        "id": "44037",
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43899",
+        "code": "CAN",
+        "name": "Canada",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43834",
+        "code": "QAT",
+        "name": "Qatar",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      }
+    ],
+    "D": [
+      {
+        "id": "43921",
+        "code": "USA",
+        "name": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 4,
+        "GA": 1,
+        "GD": 3,
+        "Pts": 3
+      },
+      {
+        "id": "43976",
+        "code": "AUS",
+        "name": "Australia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 2,
+        "GA": 0,
+        "GD": 2,
+        "Pts": 3
+      },
+      {
+        "id": "43972",
+        "code": "TUR",
+        "name": "Türkiye",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 2,
+        "GD": -2,
+        "Pts": 0
+      },
+      {
+        "id": "43928",
+        "code": "PAR",
+        "name": "Paraguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 4,
+        "GD": -3,
+        "Pts": 0
+      }
+    ],
+    "C": [
+      {
+        "id": "43967",
+        "code": "SCO",
+        "name": "Scotland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 1,
+        "GA": 0,
+        "GD": 1,
+        "Pts": 3
+      },
+      {
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43908",
+        "code": "HAI",
+        "name": "Haiti",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 1,
+        "GD": -1,
+        "Pts": 0
+      }
+    ],
+    "E": [
+      {
+        "id": "1895293",
+        "code": "CUW",
+        "name": "Curaçao",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43854",
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43927",
+        "code": "ECU",
+        "name": "Ecuador",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43948",
+        "code": "GER",
+        "name": "Germany",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "F": [
+      {
+        "id": "43819",
+        "code": "JPN",
+        "name": "Japan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43960",
+        "code": "NED",
+        "name": "Netherlands",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43970",
+        "code": "SWE",
+        "name": "Sweden",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43888",
+        "code": "TUN",
+        "name": "Tunisia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "H": [
+      {
+        "id": "43850",
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43930",
+        "code": "URU",
+        "name": "Uruguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "G": [
+      {
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43855",
+        "code": "EGY",
+        "name": "Egypt",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43817",
+        "code": "IRN",
+        "name": "IR Iran",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43978",
+        "code": "NZL",
+        "name": "New Zealand",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "I": [
+      {
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43818",
+        "code": "IRQ",
+        "name": "Iraq",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43879",
+        "code": "SEN",
+        "name": "Senegal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "J": [
+      {
+        "id": "43843",
+        "code": "ALG",
+        "name": "Algeria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43934",
+        "code": "AUT",
+        "name": "Austria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43820",
+        "code": "JOR",
+        "name": "Jordan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "L": [
+      {
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43860",
+        "code": "GHA",
+        "name": "Ghana",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43914",
+        "code": "PAN",
+        "name": "Panama",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ],
+    "K": [
+      {
+        "id": "43926",
+        "code": "COL",
+        "name": "Colombia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "20014",
+        "code": "COD",
+        "name": "Congo DR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "43963",
+        "code": "POR",
+        "name": "Portugal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "44005",
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
+        "P": 0,
+        "W": 0,
+        "D": 0,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 0
+      }
+    ]
+  }
+}
