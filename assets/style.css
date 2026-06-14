@@ -398,10 +398,11 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 
 .radar {
   width: 100%;
-  max-width: 230px;
+  max-width: 280px;
   height: auto;
-  margin: 4px auto 2px;
+  margin: 6px auto 4px;
   display: block;
+  overflow: visible;
 }
 
 footer {

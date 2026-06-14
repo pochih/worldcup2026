@@ -368,8 +368,10 @@ const RADAR_LABELS = {
 
 function radarSvg(stats) {
   // Hexagon (6 axes) radar chart, 1-10 scale.
-  const size = 200, cx = size / 2, cy = size / 2 + 4;
-  const radius = 68;
+  // viewBox is wider than tall so left/right labels ("中場 7.5") don't get clipped.
+  const w = 260, h = 200;
+  const cx = w / 2, cy = h / 2;
+  const radius = 60;
   const n = RADAR_AXES.length;
   // Angles: start at top (12 o'clock), clockwise
   const angle = (i) => -Math.PI / 2 + (2 * Math.PI * i) / n;
@@ -402,18 +404,22 @@ function radarSvg(stats) {
     return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.5" fill="var(--accent)"/>`;
   }).join("");
 
-  // Labels with values
+  // Labels with values, positioned outside the hexagon vertex.
+  // Use larger offset on sides (where labels are widest) and anchor accordingly.
   const labels = RADAR_AXES.map((axis, i) => {
-    const [lx, ly] = point(i, radius + 16);
+    const a = angle(i);
+    const isTopBottom = Math.abs(Math.cos(a)) < 0.01;     // 12 / 6 o'clock
+    const offset = isTopBottom ? 14 : 12;
+    const [lx, ly] = point(i, radius + offset);
     const v = stats[axis];
-    const anchor = Math.abs(lx - cx) < 1 ? "middle" : (lx > cx ? "start" : "end");
+    const anchor = isTopBottom ? "middle" : (lx > cx ? "start" : "end");
     return `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}" dy="0.35em"
-      font-size="10" fill="var(--text-dim)" font-weight="600">
+      font-size="11" fill="var(--text-dim)" font-weight="600">
       ${RADAR_LABELS[axis]} <tspan fill="var(--accent)" font-weight="700">${v}</tspan>
     </text>`;
   }).join("");
 
-  return `<svg class="radar" viewBox="0 0 ${size} ${size + 8}" xmlns="http://www.w3.org/2000/svg">
+  return `<svg class="radar" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
     ${rings}
     ${axes}
     <polygon points="${dataPts}" fill="rgba(0,212,170,0.22)" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/>
