@@ -12,10 +12,12 @@ const WEEKDAY_ZH = ["日","一","二","三","四","五","六"];
 
 let DATA = null;
 let ANALYSIS = null;
-let SELECTED_DAY = null;        // ISO date string yyyy-mm-dd in Taipei time
-let CAL_MONTH = null;           // {y, m} in Taipei
+let STARS = null;
+let SELECTED_DAY = null;
+let CAL_MONTH = null;
 let FILTER_TW = false;
 let ADV_FILTER = "all";
+let STARS_FILTER = "all";
 
 // ---------- utilities ----------
 
@@ -69,6 +71,10 @@ async function loadData() {
   try {
     const ra = await fetch(`data/teams_analysis.json?t=${Date.now()}`);
     if (ra.ok) ANALYSIS = await ra.json();
+  } catch (e) { /* ignore */ }
+  try {
+    const rs = await fetch(`data/stars.json?t=${Date.now()}`);
+    if (rs.ok) STARS = await rs.json();
   } catch (e) { /* ignore */ }
 }
 
@@ -479,6 +485,88 @@ function renderAnalysis() {
   }).join("");
 }
 
+// ---------- stars ----------
+
+const POS_GROUP = {
+  GK: "守", CB: "守", LB: "守", RB: "守",
+  DM: "中", CM: "中", AM: "攻",
+  LW: "攻", RW: "攻", ST: "攻", CF: "攻",
+};
+const POS_COLOR = {
+  GK: "#ffc857", CB: "#4fc3ff", LB: "#4fc3ff", RB: "#4fc3ff",
+  DM: "#9c89ff", CM: "#9c89ff", AM: "#00d4aa",
+  LW: "#ff4e6a", RW: "#ff4e6a", ST: "#ff4e6a", CF: "#ff4e6a",
+};
+
+function renderStars() {
+  const grid = document.getElementById("stars-grid");
+  const filterBar = document.getElementById("stars-filter");
+  if (!STARS) {
+    grid.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">球星資料載入中…</p>`;
+    return;
+  }
+  const teamCodes = Object.keys(STARS).filter(k => !k.startsWith("_"));
+
+  // Filter buttons (one per team + all)
+  filterBar.innerHTML = `<button class="sfilter ${STARS_FILTER === 'all' ? 'active' : ''}" data-f="all">全部</button>` +
+    teamCodes.map(code => {
+      const t = Object.values(DATA.teams).find(t => t.code === code);
+      const name = t ? t.name : code;
+      const flag = t && t.flag ? `<img src="${t.flag}" alt="">` : "";
+      return `<button class="sfilter ${STARS_FILTER === code ? 'active' : ''}" data-f="${code}">${flag}${name}</button>`;
+    }).join("");
+
+  filterBar.onclick = (e) => {
+    const b = e.target.closest("[data-f]");
+    if (!b) return;
+    STARS_FILTER = b.dataset.f;
+    renderStars();
+  };
+
+  const teams = STARS_FILTER === "all" ? teamCodes : [STARS_FILTER];
+  grid.innerHTML = teams.map(code => {
+    const t = Object.values(DATA.teams).find(t => t.code === code) || { name: code, flag: "" };
+    const players = STARS[code] || [];
+    return `<div class="stars-team">
+      <div class="stars-team-head">
+        ${t.flag ? `<img src="${t.flag}" alt="${code}">` : ""}
+        <h3>${t.name}</h3>
+        <span class="stars-count">${players.length} 位球星</span>
+      </div>
+      <div class="stars-cards">
+        ${players.map(p => starCardHtml(p)).join("")}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function starCardHtml(p) {
+  const s = p.stats2526 || {};
+  const posColor = POS_COLOR[p.pos] || "var(--text-dim)";
+  const grp = POS_GROUP[p.pos] || "?";
+  return `<div class="star-card">
+    <div class="star-head">
+      <div class="star-shirt" title="球衣號">${p.shirt || "?"}</div>
+      <div class="star-id">
+        <div class="star-name">${p.nameZh || p.name}</div>
+        <div class="star-name-en">${p.name}</div>
+      </div>
+      <div class="star-pos" style="background:${posColor}" title="${p.pos} (${grp})">${p.pos}</div>
+    </div>
+    <div class="star-club">
+      <span class="club-label">🏟</span>
+      <span class="club-name">${p.club}</span>
+      <span class="club-league">${p.league || ""}</span>
+    </div>
+    <div class="star-stats">
+      <div class="stat"><div class="stat-num">${s.apps ?? "—"}</div><div class="stat-lbl">出場</div></div>
+      <div class="stat"><div class="stat-num">${s.goals ?? "—"}</div><div class="stat-lbl">進球</div></div>
+      <div class="stat"><div class="stat-num">${s.assists ?? "—"}</div><div class="stat-lbl">助攻</div></div>
+    </div>
+    <div class="star-note">${p.note || ""}</div>
+  </div>`;
+}
+
 // ---------- tabs ----------
 
 function setView(name) {
@@ -510,6 +598,7 @@ async function init() {
   renderBracket();
   renderTeams();
   renderAnalysis();
+  renderStars();
 
   // Tab nav
   document.getElementById("tabs").addEventListener("click", e => {
@@ -533,7 +622,11 @@ async function init() {
   document.querySelectorAll('input[name="adv-filter"]').forEach(r => {
     r.onchange = (e) => { ADV_FILTER = e.target.value; renderAnalysis(); };
   });
-  document.getElementById("refresh").onclick = async () => { await loadData(); renderCalendar(); renderStandings(); renderBracket(); renderTeams(); renderAnalysis(); };
+  document.getElementById("refresh").onclick = async () => {
+    await loadData();
+    renderCalendar(); renderStandings(); renderBracket();
+    renderTeams(); renderAnalysis(); renderStars();
+  };
 }
 
 init();

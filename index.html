@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>2026 世足觀賽指南｜FIFA World Cup 2026</title>
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
@@ -17,11 +17,12 @@
     </div>
   </div>
   <nav class="tabs" id="tabs">
-    <button data-view="calendar" class="active">📅 賽程日曆</button>
-    <button data-view="standings">📊 小組排名</button>
-    <button data-view="bracket">🏆 淘汰賽樹狀圖</button>
+    <button data-view="calendar" class="active">📅 賽程</button>
+    <button data-view="standings">📊 排名</button>
+    <button data-view="bracket">🏆 淘汰賽</button>
     <button data-view="teams">🌍 隊伍</button>
-    <button data-view="analysis">🎯 戰力分析</button>
+    <button data-view="analysis">🎯 戰力</button>
+    <button data-view="stars">⭐ 熱門球星</button>
   </nav>
   <div class="meta">
     <span id="updated">載入中…</span>
@@ -77,6 +78,17 @@
       📐 六邊形指標（1–10 分）：<b>進攻</b>（鋒線威脅）·<b>防守</b>（後防穩定）·<b>中場</b>（控制創造）·
       <b>體能</b>（跑動耐力）·<b>經驗</b>（大賽歷練）·<b>球星</b>（頂級球員影響力）
       <br>⚠️ 數值與晉級預測為編者基於 2024-2026 國際賽表現、陣容、小組情況之主觀評估，僅供觀賽參考。
+    </p>
+  </section>
+  <section id="view-stars" class="view">
+    <div class="stars-toolbar">
+      <h2>⭐ 熱門球星</h2>
+      <div class="stars-filter" id="stars-filter"></div>
+    </div>
+    <div id="stars-grid"></div>
+    <p class="legend">
+      ⚽ 12 熱門隊伍 × 4 當家球星，2025-26 俱樂部賽季數據（聯賽 + 盃賽 + 歐戰合計）<br>
+      資料截至 2026 年 5 月底歐洲賽季結束。助攻數部分為估算值。
     </p>
   </section>
 </main>

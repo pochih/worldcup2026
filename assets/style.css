@@ -411,21 +411,239 @@ footer {
 }
 footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
 
-@media (max-width: 768px) {
-  .site-header { grid-template-columns: 1fr; gap: 12px; padding: 12px 16px; }
-  .tabs { justify-self: start; }
-  .cal-cell { min-height: 64px; padding: 4px; }
-  .match-pill { display: none; }
-  .match-card { grid-template-columns: 1fr 60px 1fr; }
-  .match-card img.flag { width: 28px; height: 19px; }
-  .match-card .team-name { font-size: 13px; }
-  #bracket {
-    gap: 2px;
-    font-size: 9px;
-  }
-  #bracket .bracket-match { padding: 3px 4px; font-size: 9px; min-height: 38px; }
-  #bracket .bracket-match .row img { width: 11px; height: 8px; margin-right: 2px; }
-  #bracket .br-final .row { font-size: 10px; }
-  #bracket .br-col h4 { font-size: 9px; margin-bottom: 2px; }
-  #bracket .bracket-match .meta { font-size: 8px; }
+/* ========== Stars (熱門球星) ========== */
+.stars-toolbar {
+  display: flex; flex-direction: column; gap: 12px;
+  margin-bottom: 16px;
 }
+.stars-toolbar h2 { margin: 0; font-size: 22px; }
+.stars-filter {
+  display: flex; gap: 6px; overflow-x: auto;
+  scrollbar-width: thin; padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+.sfilter {
+  display: inline-flex; align-items: center; gap: 6px;
+  white-space: nowrap; font-size: 13px;
+  padding: 6px 12px; border-radius: 16px;
+}
+.sfilter img { width: 18px; height: 12px; object-fit: cover; border-radius: 2px; }
+.sfilter.active {
+  background: var(--accent); color: #06281e;
+  font-weight: 700; border-color: var(--accent);
+}
+
+#stars-grid { display: flex; flex-direction: column; gap: 24px; }
+.stars-team {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.stars-team-head {
+  display: flex; align-items: center; gap: 10px;
+  padding-bottom: 12px; margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.stars-team-head img { width: 36px; height: 24px; object-fit: cover; border-radius: 3px; }
+.stars-team-head h3 { margin: 0; font-size: 18px; flex: 1; }
+.stars-count {
+  font-size: 11px; color: var(--text-dim);
+  background: var(--bg-2); padding: 3px 10px; border-radius: 10px;
+}
+.stars-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+.star-card {
+  background: var(--bg-2);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.star-head { display: flex; align-items: center; gap: 10px; }
+.star-shirt {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--surface-2); color: var(--text);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 15px; font-variant-numeric: tabular-nums;
+  border: 2px solid var(--border); flex-shrink: 0;
+}
+.star-id { flex: 1; min-width: 0; }
+.star-name { font-weight: 700; font-size: 15px; line-height: 1.2; }
+.star-name-en {
+  font-size: 11px; color: var(--text-dim); line-height: 1.2;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.star-pos {
+  font-size: 10px; padding: 3px 7px; border-radius: 4px;
+  color: white; font-weight: 800; letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+.star-club {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px;
+  background: rgba(0,0,0,0.18);
+  padding: 6px 8px; border-radius: 5px;
+}
+.club-label { opacity: 0.6; }
+.club-name { font-weight: 600; color: var(--text); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.club-league { font-size: 10px; color: var(--text-dim); }
+.star-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px;
+  background: rgba(0,212,170,0.06); border-radius: 5px; padding: 6px;
+}
+.star-stats .stat { text-align: center; }
+.star-stats .stat-num {
+  font-weight: 800; font-size: 18px; color: var(--accent);
+  font-variant-numeric: tabular-nums; line-height: 1.1;
+}
+.star-stats .stat-lbl { font-size: 10px; color: var(--text-dim); margin-top: 2px; }
+.star-note {
+  font-size: 12px; line-height: 1.5; color: var(--text);
+  padding-left: 8px; border-left: 2px solid var(--accent);
+}
+
+/* ========== Mobile friendly ========== */
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+
+  /* Header: stack, smaller, horizontal-scrolling tabs */
+  .site-header {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 8px; padding: 10px 12px;
+    padding-top: max(10px, env(safe-area-inset-top));
+  }
+  .brand { gap: 8px; }
+  .logo { font-size: 28px; }
+  .brand h1 { font-size: 16px; }
+  .tag { font-size: 10px; }
+  .meta { grid-column: 2; grid-row: 1; font-size: 10px; }
+  .meta #refresh { padding: 2px 8px; }
+
+  .tabs {
+    grid-column: 1 / -1; grid-row: 2;
+    overflow-x: auto; flex-wrap: nowrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -12px; padding: 0 12px 4px;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs button {
+    padding: 7px 11px; font-size: 13px; white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  main { margin: 12px auto; padding: 0 10px 32px; }
+
+  /* Calendar: smaller cells, hide pills entirely (count only) */
+  .cal-toolbar h2 { font-size: 16px; min-width: 130px; }
+  .cal-toolbar button { padding: 5px 9px; font-size: 13px; }
+  .cal-toolbar .filter { width: 100%; }
+  .cal-cell { min-height: 50px; padding: 3px; font-size: 11px; }
+  .day-num { font-size: 13px; margin-bottom: 1px; }
+  .match-count { font-size: 9px; margin-bottom: 1px; }
+  .match-pill { display: none; }
+  .cal-head { font-size: 10px; padding: 4px 0; }
+
+  /* Day detail */
+  .day-detail { padding: 12px; }
+  .day-detail h3 { font-size: 15px; margin-bottom: 12px; }
+  .match-card { grid-template-columns: 1fr 56px 1fr; padding: 10px; gap: 6px; }
+  .match-card img.flag { width: 24px; height: 16px; }
+  .match-card .team-name { font-size: 12px; line-height: 1.2; }
+  .match-card .team-code { font-size: 10px; }
+  .match-card .score { font-size: 20px; }
+  .match-card .score.scheduled { font-size: 12px; }
+  .match-meta { gap: 6px; font-size: 10px; padding-top: 8px; }
+  .match-meta .badge { padding: 2px 6px; font-size: 10px; }
+  .goals-list { gap: 4px 8px; padding: 8px; font-size: 11px; }
+  .goals-list .goal-min { font-size: 10px; min-width: 36px; }
+
+  /* Standings: 1 column, condensed table */
+  .standings-grid { grid-template-columns: 1fr; gap: 12px; }
+  .group-card { padding: 12px; }
+  .group-card h3 { font-size: 15px; }
+  .group-card table { font-size: 11px; }
+  .group-card th, .group-card td { padding: 4px 2px; }
+  .legend { font-size: 11px; padding: 10px; line-height: 1.6; }
+
+  /* Bracket: switch to vertical (top-down) stacked rounds */
+  #bracket {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .br-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 4px;
+  }
+  .br-col h4 {
+    grid-column: 1 / -1; text-align: left;
+    font-size: 12px; margin: 0;
+    padding: 4px 8px; background: var(--surface);
+    border-radius: 4px;
+  }
+  .br-final-col {
+    padding: 12px 10px; gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .br-final { min-height: 60px; }
+  .br-side-right .row { flex-direction: row; }
+  .br-side-right .row img { margin-right: 4px; margin-left: 0; }
+  .br-side-right .vs-score { padding-left: 6px; padding-right: 0; }
+  .bracket-match { font-size: 11px; padding: 5px 7px; min-height: 50px; }
+  .bracket-match .row img { width: 14px; height: 10px; }
+  .bracket-match .meta { font-size: 9px; }
+
+  /* Teams: smaller cards */
+  #teams-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
+  .team-card { padding: 10px; gap: 6px; }
+  .team-card img { width: 40px; height: 28px; }
+  .team-card .name { font-size: 12px; }
+  .team-card .group-badge { font-size: 10px; }
+
+  /* Analysis: 1 column, smaller radar */
+  .analysis-toolbar { gap: 8px; }
+  .analysis-toolbar h2 { font-size: 18px; }
+  .analysis-filters {
+    overflow-x: auto; flex-wrap: nowrap;
+    scrollbar-width: none; padding-bottom: 4px;
+    margin: 0 -10px; padding-left: 10px; padding-right: 10px;
+  }
+  .analysis-filters::-webkit-scrollbar { display: none; }
+  .analysis-filters label { white-space: nowrap; flex-shrink: 0; font-size: 12px; }
+  #analysis-grid { grid-template-columns: 1fr; gap: 10px; }
+  .analysis-card { padding: 12px; gap: 8px; }
+  .analysis-head .name { font-size: 15px; }
+  .analysis-tags .pill { font-size: 10px; padding: 2px 6px; }
+  .analysis-section { font-size: 12px; line-height: 1.5; }
+  .radar { max-width: 240px; }
+
+  /* Stars: 1 column per team */
+  .stars-toolbar h2 { font-size: 18px; }
+  .stars-filter { margin: 0 -10px; padding-left: 10px; padding-right: 10px; padding-bottom: 6px; }
+  .sfilter { padding: 5px 10px; font-size: 12px; }
+  .stars-cards { grid-template-columns: 1fr; gap: 8px; }
+  .stars-team { padding: 12px; }
+  .stars-team-head img { width: 30px; height: 20px; }
+  .stars-team-head h3 { font-size: 16px; }
+  .star-card { padding: 10px; gap: 6px; }
+  .star-shirt { width: 32px; height: 32px; font-size: 13px; }
+  .star-name { font-size: 14px; }
+  .star-stats .stat-num { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  .brand h1 { font-size: 14px; }
+  .tag { display: none; }  /* save vertical space on tiny phones */
+  .tabs button { padding: 6px 9px; font-size: 12px; }
+  .cal-cell { min-height: 44px; }
+  .cal-toolbar { font-size: 13px; }
+  .day-num { font-size: 12px; }
+  .match-card { grid-template-columns: 1fr 50px 1fr; }
+  .match-card img.flag { width: 22px; height: 15px; }
+}
+
