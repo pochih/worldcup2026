@@ -259,64 +259,64 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 #bracket {
   display: grid;
   grid-template-columns:
-    1.1fr  0.9fr  0.9fr  0.9fr   /* left half: R32 R16 QF SF */
-    1.3fr                         /* center: final + third */
-    0.9fr  0.9fr  0.9fr  1.1fr;   /* right half: SF QF R16 R32 */
-  gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 12px;
+    1.15fr 0.85fr 0.85fr 0.85fr   /* left half: R32 R16 QF SF */
+    1.1fr                          /* center: final + third */
+    0.85fr 0.85fr 0.85fr 1.15fr;   /* right half: SF QF R16 R32 */
+  gap: 4px;
+  padding-bottom: 8px;
   align-items: stretch;
+  width: 100%;
 }
 .br-col {
   display: flex; flex-direction: column;
-  justify-content: space-around; gap: 6px;
-  min-width: 140px;
+  justify-content: space-around; gap: 4px;
+  min-width: 0;
 }
 .br-col h4 {
-  text-align: center; margin: 0 0 8px;
-  font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+  text-align: center; margin: 0 0 4px;
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
   color: var(--text-dim);
 }
 .br-final-col {
   justify-content: center;
   background: linear-gradient(180deg, rgba(255,200,87,0.06), rgba(0,212,170,0.04));
-  border-radius: 12px;
-  padding: 14px 8px;
+  border-radius: 10px;
+  padding: 8px 4px;
   border: 1px solid var(--border);
-  min-width: 180px;
 }
-.br-final-col h4 { color: var(--gold); font-size: 13px; }
+.br-final-col h4 { color: var(--gold); font-size: 11px; }
 
 .bracket-match {
   background: var(--surface);
-  border-radius: 6px;
-  padding: 8px;
-  font-size: 12px;
-  min-height: 64px;
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 10.5px;
+  min-height: 44px;
   display: flex; flex-direction: column; justify-content: center;
   border: 1px solid var(--border);
 }
 /* Mirror right-half cards so flags hug the inside (toward the final) */
 .br-side-right .row { flex-direction: row-reverse; }
-.br-side-right .row img { margin-right: 0; margin-left: 6px; }
-.br-side-right .vs-score { padding-left: 0; padding-right: 8px; }
+.br-side-right .row img { margin-right: 0; margin-left: 4px; }
+.br-side-right .vs-score { padding-left: 0; padding-right: 6px; }
 
 /* Final card highlight */
 .br-final {
   background: linear-gradient(135deg, rgba(255,200,87,0.18), rgba(0,212,170,0.12));
   border: 2px solid var(--gold);
   box-shadow: 0 4px 16px rgba(255,200,87,0.18);
+  min-height: 56px;
 }
-.br-final .row { padding: 4px 0; font-size: 13px; font-weight: 600; }
+.br-final .row { padding: 2px 0; font-size: 12px; font-weight: 600; }
 
-.bracket-match .row { display: flex; justify-content: space-between; align-items: center; padding: 2px 0; }
+.bracket-match .row { display: flex; justify-content: space-between; align-items: center; padding: 1px 0; min-width: 0; }
 .bracket-match .row.winner { color: var(--accent); font-weight: 600; }
-.bracket-match .row img { width: 16px; height: 11px; object-fit: cover; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+.bracket-match .row img { width: 14px; height: 10px; object-fit: cover; border-radius: 2px; margin-right: 4px; flex-shrink: 0; }
 .bracket-match .vs-name { display: flex; align-items: center; flex: 1; min-width: 0; }
-.bracket-match .vs-name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.bracket-match .vs-name .ph { color: var(--text-dim); font-style: italic; }
-.bracket-match .vs-score { font-weight: 700; font-variant-numeric: tabular-nums; padding-left: 8px; }
-.bracket-match .meta { font-size: 10px; color: var(--text-dim); margin-top: 4px; text-align: center; }
+.bracket-match .vs-name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.bracket-match .vs-name .ph { color: var(--text-dim); font-style: italic; font-size: 10px; }
+.bracket-match .vs-score { font-weight: 700; font-variant-numeric: tabular-nums; padding-left: 6px; flex-shrink: 0; }
+.bracket-match .meta { font-size: 9px; color: var(--text-dim); margin-top: 2px; text-align: center; }
 .br-empty { color: var(--text-dim); justify-content: center; align-items: center; text-align: center; }
 
 /* ========== Teams ========== */
@@ -419,9 +419,12 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
   .match-card img.flag { width: 28px; height: 19px; }
   .match-card .team-name { font-size: 13px; }
   #bracket {
-    grid-template-columns:
-      130px 110px 110px 110px
-      160px
-      110px 110px 110px 130px;
+    gap: 2px;
+    font-size: 9px;
   }
+  #bracket .bracket-match { padding: 3px 4px; font-size: 9px; min-height: 38px; }
+  #bracket .bracket-match .row img { width: 11px; height: 8px; margin-right: 2px; }
+  #bracket .br-final .row { font-size: 10px; }
+  #bracket .br-col h4 { font-size: 9px; margin-bottom: 2px; }
+  #bracket .bracket-match .meta { font-size: 8px; }
 }
