@@ -245,25 +245,72 @@ function renderStandings() {
 // ---------- bracket ----------
 
 function renderBracket() {
-  // Group matches by stage
-  const stages = ["r32", "r16", "qf", "sf", "third", "final"];
-  const titles = { r32: "32 強", r16: "16 強", qf: "8 強", sf: "4 強", third: "季軍戰", final: "決賽" };
-  const byStage = {};
-  for (const s of stages) byStage[s] = [];
-  for (const m of DATA.matches) if (byStage[m.stage]) byStage[m.stage].push(m);
-  for (const s of stages) byStage[s].sort((a,b) => (a.no||0) - (b.no||0));
+  // Two-sided layout meeting at the final.
+  // Each side has 16 teams: R32 (8) → R16 (4) → QF (2) → SF (1) → Final.
+  // Match numbers per FIFA bracket:
+  //   Left half  → SF #101 = W(QF#97) vs W(QF#98)
+  //     QF #97 = W(R16 #89) vs W(R16 #90)
+  //       R16 #89 = W74 vs W77 → R32 #74, #77
+  //       R16 #90 = W73 vs W75 → R32 #73, #75
+  //     QF #98 = W(R16 #93) vs W(R16 #94)
+  //       R16 #93 = W83 vs W84 → R32 #83, #84
+  //       R16 #94 = W81 vs W82 → R32 #81, #82
+  //   Right half → SF #102 = W(QF#99) vs W(QF#100)
+  //     QF #99 = W(R16 #91) vs W(R16 #92)
+  //       R16 #91 = W76 vs W78 → R32 #76, #78
+  //       R16 #92 = W79 vs W80 → R32 #79, #80
+  //     QF #100 = W(R16 #95) vs W(R16 #96)
+  //       R16 #95 = W86 vs W88 → R32 #86, #88
+  //       R16 #96 = W85 vs W87 → R32 #85, #87
+  const LAYOUT = {
+    left: {
+      r32: [74, 77, 73, 75, 83, 84, 81, 82],
+      r16: [89, 90, 93, 94],
+      qf:  [97, 98],
+      sf:  [101],
+    },
+    right: {
+      r32: [76, 78, 79, 80, 86, 88, 85, 87],
+      r16: [91, 92, 95, 96],
+      qf:  [99, 100],
+      sf:  [102],
+    },
+  };
+  const byNo = {};
+  for (const m of DATA.matches) byNo[m.no] = m;
 
-  const el = document.getElementById("bracket");
-  el.innerHTML = stages.map(s => {
-    const ms = byStage[s];
-    return `<div class="bracket-round">
-      <h4>${titles[s]}</h4>
-      ${ms.map(m => bracketMatchHtml(m)).join("")}
+  const finalMatch = byNo[104];
+  const thirdMatch = byNo[103];
+
+  // Build columns left→right: L-R32 | L-R16 | L-QF | L-SF | FINAL | R-SF | R-QF | R-R16 | R-R32
+  function colHtml(title, nums, side) {
+    return `<div class="br-col br-${side || 'mid'}">
+      <h4>${title}</h4>
+      ${nums.map(n => bracketCardHtml(byNo[n], side)).join("")}
     </div>`;
-  }).join("");
+  }
+
+  const html = `
+    ${colHtml("32 強", LAYOUT.left.r32, "left")}
+    ${colHtml("16 強", LAYOUT.left.r16, "left")}
+    ${colHtml("8 強", LAYOUT.left.qf,  "left")}
+    ${colHtml("4 強", LAYOUT.left.sf,  "left")}
+    <div class="br-col br-final-col">
+      <h4>🏆 決賽</h4>
+      ${bracketCardHtml(finalMatch, "final")}
+      <h4 style="margin-top:18px;color:var(--gold)">🥉 季軍戰</h4>
+      ${bracketCardHtml(thirdMatch, "third")}
+    </div>
+    ${colHtml("4 強", LAYOUT.right.sf,  "right")}
+    ${colHtml("8 強", LAYOUT.right.qf,  "right")}
+    ${colHtml("16 強", LAYOUT.right.r16, "right")}
+    ${colHtml("32 強", LAYOUT.right.r32, "right")}
+  `;
+  document.getElementById("bracket").innerHTML = html;
 }
 
-function bracketMatchHtml(m) {
+function bracketCardHtml(m, side) {
+  if (!m) return `<div class="bracket-match br-empty">—</div>`;
   const played = isPlayed(m);
   const home = m.home, away = m.away;
   const hName = home.name || `<span class="ph">${m.placeholderHome || "TBD"}</span>`;
@@ -271,13 +318,14 @@ function bracketMatchHtml(m) {
   const hWin = played && home.score > away.score;
   const aWin = played && away.score > home.score;
   const tp = utcToTaipei(m.utc);
-  return `<div class="bracket-match">
+  const sideCls = side ? `br-side-${side}` : "";
+  return `<div class="bracket-match ${sideCls} ${m.stage === 'final' ? 'br-final' : ''}">
     <div class="row ${hWin ? "winner" : ""}">
-      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}${hName}</div>
+      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}<span>${hName}</span></div>
       <div class="vs-score">${played ? home.score : ""}</div>
     </div>
     <div class="row ${aWin ? "winner" : ""}">
-      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}${aName}</div>
+      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}<span>${aName}</span></div>
       <div class="vs-score">${played ? away.score : ""}</div>
     </div>
     <div class="meta">#${m.no} · ${tp.date.slice(5)} ${tp.time}</div>
