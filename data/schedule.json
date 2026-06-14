@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T16:24:06.235653+00:00",
+  "generatedAt": "2026-06-14T17:46:02.098545+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -521,7 +521,7 @@
       "group": "E",
       "utc": "2026-06-14T17:00:00Z",
       "localKick": "2026-06-14T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Houston Stadium",
       "city": "Houston",
@@ -534,7 +534,7 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -542,7 +542,7 @@
         "code": "CUW",
         "name": "Curaçao",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -550,7 +550,32 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "6'",
+          "side": "home",
+          "team": "43948",
+          "player": "Nmecha",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "21'",
+          "side": "away",
+          "team": "1895293",
+          "player": "Livano Comenencia",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "38'",
+          "side": "home",
+          "team": "43948",
+          "player": "Schlotterbeck",
+          "score": "2-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021470",
@@ -4792,18 +4817,18 @@
     ],
     "E": [
       {
-        "id": "1895293",
-        "code": "CUW",
-        "name": "Curaçao",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
-        "P": 0,
-        "W": 0,
+        "id": "43948",
+        "code": "GER",
+        "name": "Germany",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GF": 2,
+        "GA": 1,
+        "GD": 1,
+        "Pts": 3
       },
       {
         "id": "43854",
@@ -4834,17 +4859,17 @@
         "Pts": 0
       },
       {
-        "id": "43948",
-        "code": "GER",
-        "name": "Germany",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "P": 0,
+        "id": "1895293",
+        "code": "CUW",
+        "name": "Curaçao",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 2,
+        "GD": -1,
         "Pts": 0
       }
     ],
