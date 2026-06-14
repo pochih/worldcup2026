@@ -1,0 +1,68 @@
+{
+  "_meta": "48 國戰力與晉級分析（手動撰寫，基於 2024-2026 國際賽表現、各隊陣容與小組情況）。最後更新：賽前。",
+  "_legend": {
+    "style": "進攻 / 防守 / 均衡 / 反擊",
+    "fifaRank": "FIFA 世界排名（2026 年初）",
+    "advance": "晉級 32 強機率（編者預測）：lock=幾乎確定, likely=有機會, dark=黑馬, low=機會低"
+  },
+
+  "MEX": {"style": "進攻", "rank": 17, "advance": "lock", "strength": "地主氣勢、亞茲提卡海拔優勢、邊路速度", "weakness": "中後衛經驗不足、客場 (美/加) 適應", "watch": "Raúl Jiménez 領銜鋒線 vs 經驗豐富的後防夥伴 Edson Álvarez", "predict": "小組首位出線"},
+  "RSA": {"style": "反擊", "rank": 56, "advance": "low", "strength": "速度型邊鋒、年輕活力", "weakness": "把握機會差、定位球防守差", "watch": "Lyle Foster 是否能扛起進攻", "predict": "小組墊底，難晉級"},
+  "KOR": {"style": "進攻", "rank": 23, "advance": "likely", "strength": "孫興慜世界級邊鋒、李剛仁中場創造力", "weakness": "中後衛慢、定位球差", "watch": "孫興慜的最後一屆世界盃", "predict": "次席出線可期"},
+  "CZE": {"style": "均衡", "rank": 36, "advance": "dark", "strength": "中場組織、Patrik Schick 進球能力", "weakness": "後防老化、邊路速度不足", "watch": "Schick 能否複製 Euro 2020 表現", "predict": "拚最佳第 3 名"},
+
+  "CAN": {"style": "反擊", "rank": 31, "advance": "lock", "strength": "Alphonso Davies 飛翼速度、Jonathan David 進攻", "weakness": "中後場深度、教練調度", "watch": "Davies vs 對方防守邊", "predict": "地主之利首席出線"},
+  "BIH": {"style": "進攻", "rank": 75, "advance": "low", "strength": "Edin Džeko 經驗、長傳球風", "weakness": "整體節奏慢、缺速度", "watch": "Džeko 末代世界盃登場", "predict": "勉強搶第 3"},
+  "QAT": {"style": "均衡", "rank": 58, "advance": "low", "strength": "2022 主辦經驗、Akram Afif 速度", "weakness": "個人技術不夠頂尖、體能不耐長戰", "watch": "亞洲盃冠軍能否在世界盃複製", "predict": "難晉級"},
+  "SUI": {"style": "防守", "rank": 19, "advance": "likely", "strength": "防守紀律、Granit Xhaka 中場主導", "weakness": "鋒線終結力下降、Shaqiri 老化", "watch": "Yann Sommer 鎮守球門", "predict": "次席出線"},
+
+  "BRA": {"style": "進攻", "rank": 5, "advance": "lock", "strength": "Vinícius Jr / Rodrygo / Raphinha 攻擊三叉戟、技術全面", "weakness": "中鋒不穩、後防專注度", "watch": "Vini Jr 能否在大賽爆發", "predict": "首席輕鬆出線"},
+  "MAR": {"style": "防守", "rank": 12, "advance": "likely", "strength": "2022 四強底蘊、定位球、後防整體性", "weakness": "缺乏世界級中鋒", "watch": "Hakim Ziyech / Achraf Hakimi 能否延續水準", "predict": "次席出線"},
+  "HAI": {"style": "反擊", "rank": 84, "advance": "low", "strength": "邊路速度、不畏戰", "weakness": "經驗不足、後防漏洞多", "watch": "球隊 50 年來首次世界盃", "predict": "爆冷才有機會"},
+  "SCO": {"style": "均衡", "rank": 39, "advance": "dark", "strength": "Scott McTominay 中場、Andy Robertson 領導", "weakness": "鋒線疲弱、缺破局者", "watch": "蘇格蘭近 28 年首次世界盃", "predict": "拚最佳第 3"},
+
+  "USA": {"style": "進攻", "rank": 16, "advance": "lock", "strength": "地主主場、年輕陣容海外歷練、Pulisic / Balogun 攻擊", "weakness": "中後衛溝通、門將位置不穩", "watch": "Christian Pulisic 主場帶領", "predict": "小組首席"},
+  "PAR": {"style": "防守", "rank": 41, "advance": "low", "strength": "防守韌性、定位球", "weakness": "進攻單薄、創造力不足", "watch": "Almirón 能否一肩扛起進攻", "predict": "難晉級"},
+  "AUS": {"style": "均衡", "rank": 26, "advance": "likely", "strength": "團隊紀律、體能、Mat Ryan 門將", "weakness": "缺世界級球星、進攻效率低", "watch": "新世代邊鋒 Irankunda 突破", "predict": "次席或最佳第 3"},
+  "TUR": {"style": "進攻", "rank": 28, "advance": "likely", "strength": "Arda Güler 創造力、Hakan Çalhanoğlu 中場、年輕活力", "weakness": "後防穩定度、心理素質", "watch": "Güler 能否成為新一代主宰", "predict": "次席出線可期"},
+
+  "GER": {"style": "進攻", "rank": 9, "advance": "lock", "strength": "Musiala / Wirtz 雙天才、中場控制", "weakness": "中後衛速度、邊衛攻守平衡", "watch": "Musiala 是否能扛大旗", "predict": "首席出線"},
+  "CUW": {"style": "反擊", "rank": 80, "advance": "low", "strength": "歷史性首次晉級、加勒比海歸化球員", "weakness": "深度不足、缺大賽經驗", "watch": "Tahith Chong 為首歐化陣容", "predict": "難晉級"},
+  "CIV": {"style": "進攻", "rank": 40, "advance": "likely", "strength": "2024 非洲盃冠軍、Haller / Pépé 鋒線", "weakness": "防守集中度、客場心理", "watch": "Sébastien Haller 鋒線終結", "predict": "拚次席"},
+  "ECU": {"style": "均衡", "rank": 32, "advance": "dark", "strength": "Moisés Caicedo 中場、年輕邊鋒", "weakness": "經驗、鋒線終結", "watch": "Caicedo 主導中場", "predict": "拚最佳第 3"},
+
+  "NED": {"style": "進攻", "rank": 6, "advance": "lock", "strength": "Van Dijk 領銜後防、Frenkie de Jong 中場、Gakpo 進攻", "weakness": "後場速度、戰術死板", "watch": "Memphis Depay 鋒線", "predict": "首席出線"},
+  "JPN": {"style": "進攻", "rank": 18, "advance": "likely", "strength": "技術細膩、海外球員多 (歐洲一流聯賽)、團隊紀律", "weakness": "缺頂尖中鋒、定位球", "watch": "三笘薰邊路爆破、久保建英創造", "predict": "次席出線"},
+  "SWE": {"style": "均衡", "rank": 35, "advance": "dark", "strength": "Alexander Isak 鋒線、Dejan Kulusevski 邊鋒", "weakness": "中場控制力差、深度有限", "watch": "Isak 進球能力", "predict": "拚最佳第 3"},
+  "TUN": {"style": "防守", "rank": 51, "advance": "low", "strength": "防守組織、Hannibal Mejbri 中場潛力", "weakness": "進攻乏力、鋒線無人", "watch": "Hannibal 表現", "predict": "難晉級"},
+
+  "BEL": {"style": "進攻", "rank": 8, "advance": "lock", "strength": "De Bruyne 中場魔術、Lukaku 鋒線、Doku 邊路", "weakness": "後防老化、門將定位球弱", "watch": "黃金世代最後機會", "predict": "首席出線"},
+  "EGY": {"style": "反擊", "rank": 33, "advance": "likely", "strength": "Mohamed Salah 世界級邊鋒", "weakness": "Salah 以外缺破局者、整體性", "watch": "Salah 末代世界盃", "predict": "次席出線"},
+  "IRN": {"style": "均衡", "rank": 21, "advance": "dark", "strength": "Mehdi Taremi 鋒線、防守紀律", "weakness": "創造力不足、心理素質", "watch": "Taremi 進球能力", "predict": "拚最佳第 3"},
+  "NZL": {"style": "防守", "rank": 88, "advance": "low", "strength": "定位球身體優勢", "weakness": "速度差、技術粗糙", "watch": "首次小組賽贏球的機會", "predict": "難晉級"},
+
+  "ESP": {"style": "進攻", "rank": 2, "advance": "lock", "strength": "Lamine Yamal / Nico Williams 雙翼、Rodri 中場、控球哲學", "weakness": "中鋒位置缺一錘定音者", "watch": "Lamine Yamal (17 歲) 的舞台", "predict": "首席輕鬆出線"},
+  "CPV": {"style": "反擊", "rank": 71, "advance": "low", "strength": "歷史性首次晉級、葡語系混合風格", "weakness": "深度不足、缺大賽經驗", "watch": "島國奇蹟", "predict": "難晉級"},
+  "KSA": {"style": "防守", "rank": 60, "advance": "low", "strength": "曾在 2022 擊敗阿根廷的勇氣", "weakness": "個人技術差距、依賴外籍教練", "watch": "2034 主辦前的世界盃熱身", "predict": "難晉級"},
+  "URU": {"style": "進攻", "rank": 13, "advance": "lock", "strength": "Bielsa 體系、Federico Valverde / Darwin Núñez", "weakness": "後防老化、紀律問題", "watch": "Núñez 終結效率", "predict": "次席穩定出線"},
+
+  "FRA": {"style": "進攻", "rank": 3, "advance": "lock", "strength": "Mbappé 領銜、中場全面 (Tchouaméni / Camavinga)", "weakness": "後防中堅老化、教練 Deschamps 戰術保守", "watch": "Mbappé 衝擊金球", "predict": "首席出線"},
+  "SEN": {"style": "均衡", "rank": 20, "advance": "likely", "strength": "Sadio Mané 經驗、Kalidou Koulibaly 防守", "weakness": "缺世界級中場、終結力", "watch": "新世代邊鋒接班", "predict": "次席出線"},
+  "IRQ": {"style": "防守", "rank": 55, "advance": "low", "strength": "歷史性世界盃首勝可能、防守頑強", "weakness": "個人技術、體能", "watch": "Aymen Hussein 鋒線", "predict": "難晉級"},
+  "NOR": {"style": "進攻", "rank": 14, "advance": "likely", "strength": "Erling Haaland 怪物中鋒、Martin Ødegaard 中場魔術", "weakness": "後防深度、首次世界盃經驗", "watch": "Haaland 首次世界盃秀", "predict": "次席出線"},
+
+  "ARG": {"style": "均衡", "rank": 1, "advance": "lock", "strength": "衛冕冠軍、Messi 收官、Julián Álvarez 鋒線、整體性極佳", "weakness": "Messi 體能、後防老化", "watch": "Messi 末舞", "predict": "首席出線"},
+  "ALG": {"style": "進攻", "rank": 38, "advance": "dark", "strength": "Riyad Mahrez 創造力、邊路速度", "weakness": "後防穩定度、紀律", "watch": "Mahrez 帶領反彈", "predict": "拚次席"},
+  "AUT": {"style": "均衡", "rank": 25, "advance": "likely", "strength": "Marko Arnautović 鋒線、Marcel Sabitzer 中場", "weakness": "缺世界級巨星、深度", "watch": "Ralf Rangnick 高壓體系", "predict": "次席出線"},
+  "JOR": {"style": "防守", "rank": 62, "advance": "low", "strength": "2024 亞洲盃亞軍經驗", "weakness": "個人技術、體能", "watch": "Musa Al-Taamari 邊鋒", "predict": "難晉級"},
+
+  "POR": {"style": "進攻", "rank": 7, "advance": "lock", "strength": "C 羅末舞 + Bruno Fernandes / Bernardo Silva / Rafael Leão 黃金世代", "weakness": "Roberto Martínez 戰術、防守失誤", "watch": "C 羅最後一屆世界盃", "predict": "首席出線"},
+  "COD": {"style": "進攻", "rank": 44, "advance": "dark", "strength": "Cédric Bakambu 鋒線、年輕陣容衝勁", "weakness": "整體紀律、大賽經驗", "watch": "歷史性久違回歸", "predict": "拚最佳第 3"},
+  "UZB": {"style": "均衡", "rank": 57, "advance": "low", "strength": "歷史性首次晉級、Eldor Shomurodov 鋒線", "weakness": "缺大賽經驗", "watch": "中亞首隊", "predict": "難晉級"},
+  "COL": {"style": "進攻", "rank": 11, "advance": "lock", "strength": "James Rodríguez 回春、Luis Díaz 邊路", "weakness": "中鋒不穩、心理素質", "watch": "Luis Díaz 衝擊", "predict": "次席穩定出線"},
+
+  "ENG": {"style": "進攻", "rank": 4, "advance": "lock", "strength": "Bellingham / Foden / Saka / Kane 攻擊群、深度頂尖", "weakness": "教練組變更、後防左路", "watch": "Bellingham 領銜爭冠", "predict": "首席出線"},
+  "CRO": {"style": "均衡", "rank": 10, "advance": "likely", "strength": "Modrić 中場大師 (末舞)、Kovačić / Brozović 三中場", "weakness": "鋒線缺一錘定音者、Modrić 體能", "watch": "Modrić 末代登場", "predict": "次席出線"},
+  "GHA": {"style": "進攻", "rank": 73, "advance": "dark", "strength": "Mohammed Kudus 創造、Inaki Williams 速度", "weakness": "防守紀律、教練組", "watch": "Kudus 個人秀", "predict": "拚最佳第 3"},
+  "PAN": {"style": "防守", "rank": 42, "advance": "low", "strength": "整體紀律、中北美洲韌性", "weakness": "個人技術、創造力", "watch": "Adalberto Carrasquilla 中場", "predict": "難晉級"}
+}

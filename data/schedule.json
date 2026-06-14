@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T16:03:01.913113+00:00",
+  "generatedAt": "2026-06-14T16:24:06.235653+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -37,8 +37,25 @@
       "winner": "43911",
       "attendance": "80824",
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "9'",
+          "side": "home",
+          "team": "43911",
+          "player": "Julian Quinones",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "67'",
+          "side": "home",
+          "team": "43911",
+          "player": "Raúl",
+          "score": "2-0",
+          "type": "G"
+        }
       ]
     },
     {
@@ -76,7 +93,33 @@
       "winner": "43822",
       "attendance": "44985",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "59'",
+          "side": "away",
+          "team": "43995",
+          "player": "Ladislav Krejci",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "67'",
+          "side": "home",
+          "team": "43822",
+          "player": "Hwang Inbeom",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "80'",
+          "side": "home",
+          "team": "43822",
+          "player": "H G Oh",
+          "score": "2-1",
+          "type": "G"
+        }
       ]
     },
     {
@@ -114,7 +157,25 @@
       "winner": null,
       "attendance": "43002",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "21'",
+          "side": "away",
+          "team": "44037",
+          "player": "Jovo Lukic",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "78'",
+          "side": "home",
+          "team": "43899",
+          "player": "Cyle Larin",
+          "score": "1-1",
+          "type": "G"
+        }
       ]
     },
     {
@@ -152,7 +213,49 @@
       "winner": "43921",
       "attendance": "70492",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "7'",
+          "side": "home",
+          "team": "43928",
+          "player": "Damian Bobadilla",
+          "score": "1-0",
+          "type": "OG"
+        },
+        {
+          "minute": "31'",
+          "side": "home",
+          "team": "43921",
+          "player": "Folarin Balogun",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "45'+5'",
+          "side": "home",
+          "team": "43921",
+          "player": "Folarin Balogun",
+          "score": "3-0",
+          "type": "G"
+        },
+        {
+          "minute": "73'",
+          "side": "away",
+          "team": "43928",
+          "player": "Mauricio",
+          "score": "3-1",
+          "type": "G"
+        },
+        {
+          "minute": "90'+8'",
+          "side": "home",
+          "team": "43921",
+          "player": "Reyna",
+          "score": "4-1",
+          "type": "G"
+        }
       ]
     },
     {
@@ -190,7 +293,17 @@
       "winner": "43967",
       "attendance": "64146",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "28'",
+          "side": "away",
+          "team": "43967",
+          "player": "John McGINN",
+          "score": "0-1",
+          "type": "G"
+        }
       ]
     },
     {
@@ -228,7 +341,25 @@
       "winner": "43976",
       "attendance": "52497",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "27'",
+          "side": "home",
+          "team": "43976",
+          "player": "Nestory Irankunda",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "75'",
+          "side": "home",
+          "team": "43976",
+          "player": "Connor Metcalfe",
+          "score": "2-0",
+          "type": "G"
+        }
       ]
     },
     {
@@ -266,7 +397,25 @@
       "winner": null,
       "attendance": "80663",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "21'",
+          "side": "away",
+          "team": "43872",
+          "player": "Saibari",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "32'",
+          "side": "home",
+          "team": "43924",
+          "player": "Vini Jr.",
+          "score": "1-1",
+          "type": "G"
+        }
       ]
     },
     {
@@ -304,7 +453,25 @@
       "winner": null,
       "attendance": "67966",
       "twBroadcast": [
-        "愛爾達體育台"
+        "愛爾達體育台（付費）"
+      ],
+      "goals": [
+        {
+          "minute": "17'",
+          "side": "away",
+          "team": "43971",
+          "player": "Embolo",
+          "score": "0-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "90'+4'",
+          "side": "home",
+          "team": "43971",
+          "player": "Miro Muheim",
+          "score": "1-1",
+          "type": "OG"
+        }
       ]
     },
     {
@@ -342,8 +509,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021464",
@@ -380,8 +548,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021470",
@@ -418,8 +587,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021474",
@@ -456,8 +626,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021486",
@@ -494,8 +665,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021482",
@@ -532,8 +704,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021476",
@@ -570,8 +743,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021478",
@@ -608,8 +782,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021490",
@@ -646,8 +821,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021488",
@@ -684,8 +860,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021496",
@@ -722,8 +899,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021498",
@@ -760,8 +938,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021510",
@@ -798,8 +977,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021507",
@@ -836,8 +1016,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021502",
@@ -874,8 +1055,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021504",
@@ -912,8 +1094,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021440",
@@ -950,8 +1133,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021446",
@@ -988,8 +1172,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021450",
@@ -1026,8 +1211,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021442",
@@ -1064,8 +1250,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021457",
@@ -1102,8 +1289,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021454",
@@ -1140,8 +1328,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021460",
@@ -1178,8 +1367,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021462",
@@ -1216,8 +1406,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021469",
@@ -1254,8 +1445,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021465",
@@ -1292,8 +1484,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021472",
@@ -1330,8 +1523,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021475",
@@ -1368,8 +1562,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021487",
@@ -1406,8 +1601,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021483",
@@ -1444,8 +1640,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021477",
@@ -1482,9 +1679,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021480",
@@ -1521,8 +1718,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021491",
@@ -1559,8 +1757,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021492",
@@ -1597,8 +1796,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021494",
@@ -1635,8 +1835,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021499",
@@ -1673,8 +1874,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021506",
@@ -1711,8 +1913,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021511",
@@ -1749,8 +1952,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021503",
@@ -1787,8 +1991,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021501",
@@ -1825,8 +2030,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021455",
@@ -1863,8 +2069,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021452",
@@ -1901,8 +2108,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021451",
@@ -1939,8 +2147,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021448",
@@ -1977,8 +2186,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021444",
@@ -2015,8 +2225,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021445",
@@ -2053,8 +2264,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021468",
@@ -2091,8 +2303,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021466",
@@ -2129,8 +2342,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021471",
@@ -2167,8 +2381,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021473",
@@ -2205,8 +2420,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021459",
@@ -2243,8 +2459,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021461",
@@ -2281,8 +2498,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021489",
@@ -2319,8 +2537,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021493",
@@ -2357,8 +2576,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021479",
@@ -2395,8 +2615,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021481",
@@ -2433,8 +2654,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021485",
@@ -2471,8 +2693,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021484",
@@ -2509,8 +2732,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021508",
@@ -2547,8 +2771,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021509",
@@ -2585,8 +2810,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021497",
@@ -2623,8 +2849,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021495",
@@ -2661,8 +2888,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021505",
@@ -2699,8 +2927,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021500",
@@ -2737,8 +2966,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021518",
@@ -2775,9 +3005,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021513",
@@ -2814,8 +3044,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021522",
@@ -2852,8 +3083,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021516",
@@ -2890,8 +3122,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021523",
@@ -2928,8 +3161,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021514",
@@ -2966,8 +3200,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021520",
@@ -3004,8 +3239,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021512",
@@ -3042,8 +3278,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021524",
@@ -3080,8 +3317,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021525",
@@ -3118,8 +3356,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021526",
@@ -3156,8 +3395,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021519",
@@ -3194,8 +3434,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021527",
@@ -3232,8 +3473,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021521",
@@ -3270,8 +3512,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021517",
@@ -3308,8 +3551,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021515",
@@ -3346,8 +3590,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021533",
@@ -3384,8 +3629,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021530",
@@ -3422,8 +3668,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021532",
@@ -3460,8 +3707,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021531",
@@ -3498,8 +3746,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021529",
@@ -3536,8 +3785,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021534",
@@ -3574,8 +3824,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021528",
@@ -3612,8 +3863,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021535",
@@ -3650,8 +3902,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021536",
@@ -3688,9 +3941,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021538",
@@ -3727,8 +3980,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021539",
@@ -3765,8 +4019,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021537",
@@ -3803,8 +4058,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021541",
@@ -3841,9 +4097,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021540",
@@ -3880,9 +4136,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021542",
@@ -3919,9 +4175,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     },
     {
       "id": "400021543",
@@ -3958,9 +4214,9 @@
       "winner": null,
       "attendance": null,
       "twBroadcast": [
-        "愛爾達體育台",
-        "公視（無線轉播）"
-      ]
+        "愛爾達體育台（付費）"
+      ],
+      "goals": []
     }
   ],
   "teams": {

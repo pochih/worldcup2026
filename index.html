@@ -21,6 +21,7 @@
     <button data-view="standings">📊 小組排名</button>
     <button data-view="bracket">🏆 淘汰賽樹狀圖</button>
     <button data-view="teams">🌍 隊伍</button>
+    <button data-view="analysis">🎯 戰力分析</button>
   </nav>
   <div class="meta">
     <span id="updated">載入中…</span>
@@ -59,14 +60,31 @@
   <section id="view-teams" class="view">
     <div id="teams-grid"></div>
   </section>
+
+  <section id="view-analysis" class="view">
+    <div class="analysis-toolbar">
+      <h2>48 國戰力簡介 & 晉級預測</h2>
+      <div class="analysis-filters">
+        <label><input type="radio" name="adv-filter" value="all" checked> 全部</label>
+        <label><input type="radio" name="adv-filter" value="lock"> 🟢 幾乎確定晉級</label>
+        <label><input type="radio" name="adv-filter" value="likely"> 🔵 有機會</label>
+        <label><input type="radio" name="adv-filter" value="dark"> 🟡 黑馬</label>
+        <label><input type="radio" name="adv-filter" value="low"> 🔴 機會低</label>
+      </div>
+    </div>
+    <div id="analysis-grid"></div>
+    <p class="legend">
+      ⚠️ 戰力分析為編者基於 2024-2026 國際賽表現、陣容、小組情況之主觀預測，僅供觀賽參考，不作博弈用途。
+    </p>
+  </section>
 </main>
 
 <footer>
   <p>資料來源：<a href="https://www.fifa.com" target="_blank" rel="noopener">FIFA 官方 API</a> ·
      場館資料：<a href="https://github.com/openfootball/world-cup" target="_blank" rel="noopener">openfootball</a> ·
      每小時自動更新 (GitHub Actions) ·
-     <a href="https://github.com/" id="repo-link" target="_blank" rel="noopener">原始碼</a></p>
-  <p class="disclaimer">轉播資訊以官方公告為準。本站為球迷自製、非官方。</p>
+     <a href="https://github.com/pochih/worldcup2026" id="repo-link" target="_blank" rel="noopener">原始碼</a></p>
+  <p class="disclaimer">台灣轉播：愛爾達體育台擁有全 104 場轉播權（付費 OTT/MOD）。本站為球迷自製、非官方。</p>
 </footer>
 
 <script src="assets/app.js" defer></script>

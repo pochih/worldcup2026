@@ -11,9 +11,11 @@ const MONTH_ZH = ["1月","2月","3月","4月","5月","6月","7月","8月","9月"
 const WEEKDAY_ZH = ["日","一","二","三","四","五","六"];
 
 let DATA = null;
+let ANALYSIS = null;
 let SELECTED_DAY = null;        // ISO date string yyyy-mm-dd in Taipei time
 let CAL_MONTH = null;           // {y, m} in Taipei
 let FILTER_TW = false;
+let ADV_FILTER = "all";
 
 // ---------- utilities ----------
 
@@ -63,6 +65,11 @@ async function loadData() {
   DATA = await res.json();
   document.getElementById("updated").textContent =
     `📡 ${fmtRelativeUpdate(DATA.generatedAt)}`;
+  // Load analysis JSON (optional — site still works without it)
+  try {
+    const ra = await fetch(`data/teams_analysis.json?t=${Date.now()}`);
+    if (ra.ok) ANALYSIS = await ra.json();
+  } catch (e) { /* ignore */ }
 }
 
 // ---------- calendar ----------
@@ -159,6 +166,19 @@ function renderDayDetail() {
     const tw = mm.twBroadcast.length ? `<span class="badge tw">📺 ${mm.twBroadcast.join("／")}</span>` : "";
     const att = mm.attendance ? `<span class="badge">👥 ${Number(mm.attendance).toLocaleString()}</span>` : "";
 
+    let goalsHtml = "";
+    if (played && mm.goals && mm.goals.length) {
+      const homeG = mm.goals.filter(g => g.side === "home")
+        .map(g => goalRowHtml(g)).join("");
+      const awayG = mm.goals.filter(g => g.side === "away")
+        .map(g => goalRowHtml(g)).join("");
+      goalsHtml = `<div class="goals-list">
+        <div class="goal-home">${homeG || '<span style="color:var(--text-dim);font-size:11px">—</span>'}</div>
+        <div class="ball">⚽</div>
+        <div class="goal-away">${awayG || '<span style="color:var(--text-dim);font-size:11px">—</span>'}</div>
+      </div>`;
+    }
+
     html += `
       <div class="match-card ${cls}">
         <div class="home">
@@ -176,6 +196,7 @@ function renderDayDetail() {
             <div class="team-code">${away.code || ""}</div>
           </div>
         </div>
+        ${goalsHtml}
         <div class="match-meta">
           ${stageBadge} ${liveBadge} ${doneBadge}
           <span class="badge">🏟 ${mm.venue || "?"}${mm.city ? ` · ${mm.city}` : ""}</span>
@@ -184,6 +205,15 @@ function renderDayDetail() {
       </div>`;
   }
   el.innerHTML = html;
+}
+
+function goalRowHtml(g) {
+  const tag = g.type === "OG" ? `<span class="goal-tag og">OG</span>` :
+              g.type === "PEN" ? `<span class="goal-tag pen">PEN</span>` : "";
+  return `<div class="goal-row">
+    <span class="goal-min">${g.minute}</span>
+    <span class="goal-player">${g.player}</span>${tag}
+  </div>`;
 }
 
 // ---------- standings ----------
@@ -273,6 +303,65 @@ function renderTeams() {
     </div>`).join("");
 }
 
+// ---------- analysis ----------
+
+const ADV_LABEL = {
+  lock: "🟢 幾乎確定晉級",
+  likely: "🔵 有機會晉級",
+  dark: "🟡 黑馬",
+  low: "🔴 機會低",
+};
+
+function renderAnalysis() {
+  const el = document.getElementById("analysis-grid");
+  if (!ANALYSIS) {
+    el.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">戰力分析資料載入中…</p>`;
+    return;
+  }
+  const teamGroup = {};
+  for (const [g, rows] of Object.entries(DATA.standings)) {
+    for (const r of rows) teamGroup[r.code] = g;
+  }
+  // Sort: by advance tier, then by group, then by FIFA rank
+  const tierOrder = { lock: 0, likely: 1, dark: 2, low: 3 };
+  const entries = Object.entries(ANALYSIS)
+    .filter(([k]) => !k.startsWith("_"))
+    .filter(([k, v]) => ADV_FILTER === "all" || v.advance === ADV_FILTER)
+    .sort((a, b) => {
+      const ta = tierOrder[a[1].advance] ?? 9, tb = tierOrder[b[1].advance] ?? 9;
+      if (ta !== tb) return ta - tb;
+      const ga = teamGroup[a[0]] || "Z", gb = teamGroup[b[0]] || "Z";
+      if (ga !== gb) return ga.localeCompare(gb);
+      return (a[1].rank || 99) - (b[1].rank || 99);
+    });
+
+  if (!entries.length) {
+    el.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">沒有符合此分類的隊伍</p>`;
+    return;
+  }
+
+  el.innerHTML = entries.map(([code, a]) => {
+    const team = Object.values(DATA.teams).find(t => t.code === code) || { name: code, flag: "" };
+    const grp = teamGroup[code] || "?";
+    return `<div class="analysis-card adv-${a.advance}">
+      <div class="analysis-head">
+        ${team.flag ? `<img src="${team.flag}" alt="${code}">` : ""}
+        <div class="name">${team.name}</div>
+        <span class="grp">Group ${grp}</span>
+      </div>
+      <div class="analysis-tags">
+        <span class="pill style-${a.style}">${a.style}型</span>
+        <span class="pill rank">FIFA #${a.rank}</span>
+        <span class="pill adv-${a.advance}">${ADV_LABEL[a.advance] || a.advance}</span>
+      </div>
+      <div class="analysis-section"><span class="lbl">💪 優點</span>${a.strength}</div>
+      <div class="analysis-section"><span class="lbl">⚠️ 弱點</span>${a.weakness}</div>
+      <div class="analysis-section"><span class="lbl">👀 觀賽重點</span>${a.watch}</div>
+      <div class="analysis-section predict"><span class="lbl">🎯 預測</span>${a.predict}</div>
+    </div>`;
+  }).join("");
+}
+
 // ---------- tabs ----------
 
 function setView(name) {
@@ -303,6 +392,7 @@ async function init() {
   renderStandings();
   renderBracket();
   renderTeams();
+  renderAnalysis();
 
   // Tab nav
   document.getElementById("tabs").addEventListener("click", e => {
@@ -323,7 +413,10 @@ async function init() {
     CAL_MONTH = { y, m }; SELECTED_DAY = t; renderCalendar();
   };
   document.getElementById("filter-tw").onchange = (e) => { FILTER_TW = e.target.checked; renderCalendar(); };
-  document.getElementById("refresh").onclick = async () => { await loadData(); renderCalendar(); renderStandings(); renderBracket(); renderTeams(); };
+  document.querySelectorAll('input[name="adv-filter"]').forEach(r => {
+    r.onchange = (e) => { ADV_FILTER = e.target.value; renderAnalysis(); };
+  });
+  document.getElementById("refresh").onclick = async () => { await loadData(); renderCalendar(); renderStandings(); renderBracket(); renderTeams(); renderAnalysis(); };
 }
 
 init();

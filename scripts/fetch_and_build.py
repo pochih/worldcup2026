@@ -17,11 +17,14 @@ FIFA_URL = (
     "https://api.fifa.com/api/v3/calendar/matches"
     "?idCompetition=17&idSeason=285023&count=200&language=en"
 )
+# Per-match timeline: /timelines/{competition}/{season}/{stage}/{match}
+TIMELINE_URL = (
+    "https://api.fifa.com/api/v3/timelines/17/285023/{stage}/{match}?language=en"
+)
 
-# Taiwan broadcasters (best-known sources as of 2026). Update as confirmed.
-# Elta Sports holds Taiwan rights; PTS shows selected matches free-to-air.
-DEFAULT_TW_BROADCAST = ["愛爾達體育台"]
-PTS_FREE_MATCHES = {1, 39, 73, 97, 101, 102, 103, 104}  # opener, TWN-relevant slots, knockouts
+# Taiwan broadcasters. Confirmed: Elta holds all 104 matches behind subscription.
+# No free-to-air partner is confirmed for 2026 as of mid-June.
+DEFAULT_TW_BROADCAST = ["愛爾達體育台（付費）"]
 
 
 def pick(loc_list, default=""):
@@ -44,6 +47,57 @@ def fetch_fifa():
     req = Request(FIFA_URL, headers={"User-Agent": "Mozilla/5.0 wc2026-site"})
     with urlopen(req, timeout=30) as r:
         return json.load(r)
+
+
+def fetch_timeline(stage_id, match_id):
+    url = TIMELINE_URL.format(stage=stage_id, match=match_id)
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0 wc2026-site"})
+    try:
+        with urlopen(req, timeout=20) as r:
+            return json.load(r)
+    except Exception as e:
+        print(f"  timeline {match_id} failed: {e}", file=sys.stderr)
+        return None
+
+
+def extract_goals(timeline, home_team_id, away_team_id):
+    """Pull goal events from a FIFA timeline payload.
+    Type 0 = Goal, Type 34 = Own goal, Type 41 = Penalty goal (when separate)."""
+    if not timeline or "Event" not in timeline:
+        return []
+    GOAL_TYPES = {0, 34, 41}
+    goals = []
+    for e in timeline["Event"]:
+        if e.get("Type") not in GOAL_TYPES:
+            continue
+        minute = e.get("MatchMinute", "") or ""
+        desc = (e.get("EventDescription") or [{}])[0].get("Description", "")
+        player = desc
+        if "(" in player:
+            player = player.split("(")[0].strip()
+        player = " ".join(
+            w.title() if w.isupper() and len(w) > 1 else w
+            for w in player.split()
+        )
+        team_id = str(e.get("IdTeam") or "")
+        # Determine scoring side. For own goals, IdTeam is the team that conceded
+        # (the player's team) — so the SCORING side is the opposite.
+        kind = e.get("Type")
+        if team_id == str(home_team_id):
+            side = "away" if kind == 34 else "home"
+        elif team_id == str(away_team_id):
+            side = "home" if kind == 34 else "away"
+        else:
+            side = "?"
+        goals.append({
+            "minute": minute,
+            "side": side,
+            "team": team_id,
+            "player": player,
+            "score": f"{e.get('HomeGoals',0)}-{e.get('AwayGoals',0)}",
+            "type": "OG" if kind == 34 else ("PEN" if kind == 41 else "G"),
+        })
+    return goals
 
 
 def load_stadiums():
@@ -92,10 +146,15 @@ def stage_kind(stage_desc, group_desc):
     return "group"
 
 
-def transform(raw, stadiums):
+def transform(raw, stadiums, fetch_goals=True):
     matches = []
     teams = {}
-    for m in raw.get("Results", []):
+    raw_matches = raw.get("Results", [])
+    finished = [m for m in raw_matches if m.get("HomeTeamScore") is not None and m.get("AwayTeamScore") is not None]
+    if fetch_goals:
+        print(f"Fetching timelines for {len(finished)} finished matches…", file=sys.stderr)
+
+    for m in raw_matches:
         home = m.get("Home") or {}
         away = m.get("Away") or {}
         stage = pick(m.get("StageName"))
@@ -107,8 +166,6 @@ def transform(raw, stadiums):
 
         match_no = m.get("MatchNumber") or 0
         tw_broadcast = list(DEFAULT_TW_BROADCAST)
-        if match_no in PTS_FREE_MATCHES:
-            tw_broadcast.append("公視（無線轉播）")
 
         rec = {
             "id": m.get("IdMatch"),
@@ -145,7 +202,11 @@ def transform(raw, stadiums):
             "winner": m.get("Winner"),
             "attendance": m.get("Attendance"),
             "twBroadcast": tw_broadcast,
+            "goals": [],
         }
+        if fetch_goals and rec["home"]["score"] is not None and rec["away"]["score"] is not None:
+            tl = fetch_timeline(m.get("IdStage"), m.get("IdMatch"))
+            rec["goals"] = extract_goals(tl, rec["home"]["id"], rec["away"]["id"])
         matches.append(rec)
 
         for side in (home, away):
