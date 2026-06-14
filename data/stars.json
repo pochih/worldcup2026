@@ -1,91 +1,1167 @@
 {
-  "_meta": "12 熱門隊伍 × 4 當家球星（2025-26 賽季數據）。資料來自 Wikipedia / FBref / Transfermarkt，截至 2026 年 5 月底歐洲賽季結束。助攻數部分為估算值。",
+  "_meta": "20 熱門隊伍 × 4 當家球星（2025-26 賽季數據）。資料來自 Wikipedia / FBref / Transfermarkt，截至 2026 年 5 月底歐洲賽季結束。助攻數部分為估算值。",
   "_legend": {
     "pos": "GK=守門員 / CB=中後衛 / LB=左後衛 / RB=右後衛 / DM=後腰 / CM=中場 / AM=前腰 / LW=左翼 / RW=右翼 / ST=前鋒 / CF=中鋒",
     "stats2526": "2025-26 俱樂部賽季全部賽事 (聯賽 + 盃賽 + 歐戰) 合計"
   },
-
   "ARG": [
-    {"name": "Lionel Messi", "nameZh": "梅西", "shirt": 10, "pos": "AM", "club": "Inter Miami", "league": "MLS", "stats2526": {"apps": 35, "goals": 32, "assists": 21}, "note": "末代世界盃，2022 冠軍隊長，定位球與最後一傳大師"},
-    {"name": "Lautaro Martínez", "nameZh": "勞塔羅", "shirt": 22, "pos": "ST", "club": "Inter Milan", "league": "Serie A", "stats2526": {"apps": 41, "goals": 22, "assists": 6}, "note": "國米隊長，禁區內冷靜終結者"},
-    {"name": "Julián Álvarez", "nameZh": "阿爾瓦雷斯", "shirt": 9, "pos": "ST", "club": "Atlético Madrid", "league": "La Liga", "stats2526": {"apps": 49, "goals": 20, "assists": 8}, "note": "床單軍團火力擔當，靈動跑位串聯前場"},
-    {"name": "Emiliano Martínez", "nameZh": "迪布·馬丁尼茲", "shirt": 23, "pos": "GK", "club": "Aston Villa", "league": "Premier League", "stats2526": {"apps": 44, "goals": 0, "assists": 0}, "note": "PK 大戰心理戰專家，2022 世界盃最佳門將"}
+    {
+      "name": "Lionel Messi",
+      "nameZh": "梅西",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "Inter Miami",
+      "league": "MLS",
+      "stats2526": {
+        "apps": 35,
+        "goals": 32,
+        "assists": 21
+      },
+      "note": "末代世界盃，2022 冠軍隊長，定位球與最後一傳大師"
+    },
+    {
+      "name": "Lautaro Martínez",
+      "nameZh": "勞塔羅",
+      "shirt": 22,
+      "pos": "ST",
+      "club": "Inter Milan",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 41,
+        "goals": 22,
+        "assists": 6
+      },
+      "note": "國米隊長，禁區內冷靜終結者"
+    },
+    {
+      "name": "Julián Álvarez",
+      "nameZh": "阿爾瓦雷斯",
+      "shirt": 9,
+      "pos": "ST",
+      "club": "Atlético Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 49,
+        "goals": 20,
+        "assists": 8
+      },
+      "note": "床單軍團火力擔當，靈動跑位串聯前場"
+    },
+    {
+      "name": "Emiliano Martínez",
+      "nameZh": "迪布·馬丁尼茲",
+      "shirt": 23,
+      "pos": "GK",
+      "club": "Aston Villa",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 44,
+        "goals": 0,
+        "assists": 0
+      },
+      "note": "PK 大戰心理戰專家，2022 世界盃最佳門將"
+    }
   ],
-
   "BRA": [
-    {"name": "Vinícius Júnior", "nameZh": "維尼修斯", "shirt": 7, "pos": "LW", "club": "Real Madrid", "league": "La Liga", "stats2526": {"apps": 53, "goals": 22, "assists": 12}, "note": "左路爆點，1v1 過人王，歐冠決賽型球員"},
-    {"name": "Raphinha", "nameZh": "拉菲尼亞", "shirt": 11, "pos": "RW", "club": "Barcelona", "league": "La Liga", "stats2526": {"apps": 33, "goals": 21, "assists": 9}, "note": "巴薩進攻火力，遠射與定位球俱佳"},
-    {"name": "Neymar", "nameZh": "內馬爾", "shirt": 10, "pos": "AM", "club": "Santos", "league": "Brasileirão", "stats2526": {"apps": 37, "goals": 15, "assists": 10}, "note": "重返桑托斯找回節奏，末代世界盃指揮官"},
-    {"name": "Bruno Guimarães", "nameZh": "布魯諾", "shirt": 8, "pos": "CM", "club": "Newcastle", "league": "Premier League", "stats2526": {"apps": 41, "goals": 9, "assists": 7}, "note": "中場節拍器，攻守兼備（替補 Rodrygo 受傷）"}
+    {
+      "name": "Vinícius Júnior",
+      "nameZh": "維尼修斯",
+      "shirt": 7,
+      "pos": "LW",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 53,
+        "goals": 22,
+        "assists": 12
+      },
+      "note": "左路爆點，1v1 過人王，歐冠決賽型球員"
+    },
+    {
+      "name": "Raphinha",
+      "nameZh": "拉菲尼亞",
+      "shirt": 11,
+      "pos": "RW",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 33,
+        "goals": 21,
+        "assists": 9
+      },
+      "note": "巴薩進攻火力，遠射與定位球俱佳"
+    },
+    {
+      "name": "Neymar",
+      "nameZh": "內馬爾",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "Santos",
+      "league": "Brasileirão",
+      "stats2526": {
+        "apps": 37,
+        "goals": 15,
+        "assists": 10
+      },
+      "note": "重返桑托斯找回節奏，末代世界盃指揮官"
+    },
+    {
+      "name": "Bruno Guimarães",
+      "nameZh": "布魯諾",
+      "shirt": 8,
+      "pos": "CM",
+      "club": "Newcastle",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 41,
+        "goals": 9,
+        "assists": 7
+      },
+      "note": "中場節拍器，攻守兼備（替補 Rodrygo 受傷）"
+    }
   ],
-
   "FRA": [
-    {"name": "Kylian Mbappé", "nameZh": "姆巴佩", "shirt": 10, "pos": "ST", "club": "Real Madrid", "league": "La Liga", "stats2526": {"apps": 44, "goals": 42, "assists": 8}, "note": "歐冠金靴 + Pichichi 雙料王，極速反擊終結者"},
-    {"name": "Ousmane Dembélé", "nameZh": "登貝萊", "shirt": 11, "pos": "RW", "club": "Paris Saint-Germain", "league": "Ligue 1", "stats2526": {"apps": 40, "goals": 20, "assists": 9}, "note": "2025 金球獎得主，雙腳爆點突破之王"},
-    {"name": "Michael Olise", "nameZh": "奧利斯", "shirt": 17, "pos": "RW", "club": "Bayern Munich", "league": "Bundesliga", "stats2526": {"apps": 52, "goals": 22, "assists": 16}, "note": "德甲全能邊鋒，左腳天才，15+15 賽季"},
-    {"name": "Aurélien Tchouaméni", "nameZh": "楚阿梅尼", "shirt": 8, "pos": "DM", "club": "Real Madrid", "league": "La Liga", "stats2526": {"apps": 49, "goals": 2, "assists": 3}, "note": "皇馬攔截屏障，覆蓋面積大"}
+    {
+      "name": "Kylian Mbappé",
+      "nameZh": "姆巴佩",
+      "shirt": 10,
+      "pos": "ST",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 44,
+        "goals": 42,
+        "assists": 8
+      },
+      "note": "歐冠金靴 + Pichichi 雙料王，極速反擊終結者"
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "nameZh": "登貝萊",
+      "shirt": 11,
+      "pos": "RW",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "stats2526": {
+        "apps": 40,
+        "goals": 20,
+        "assists": 9
+      },
+      "note": "2025 金球獎得主，雙腳爆點突破之王"
+    },
+    {
+      "name": "Michael Olise",
+      "nameZh": "奧利斯",
+      "shirt": 17,
+      "pos": "RW",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 52,
+        "goals": 22,
+        "assists": 16
+      },
+      "note": "德甲全能邊鋒，左腳天才，15+15 賽季"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "nameZh": "楚阿梅尼",
+      "shirt": 8,
+      "pos": "DM",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 49,
+        "goals": 2,
+        "assists": 3
+      },
+      "note": "皇馬攔截屏障，覆蓋面積大"
+    }
   ],
-
   "ENG": [
-    {"name": "Jude Bellingham", "nameZh": "貝林漢", "shirt": 10, "pos": "AM", "club": "Real Madrid", "league": "La Liga", "stats2526": {"apps": 40, "goals": 8, "assists": 7}, "note": "皇馬大腦，國家德比殺手，英格蘭核心"},
-    {"name": "Harry Kane", "nameZh": "凱恩", "shirt": 9, "pos": "ST", "club": "Bayern Munich", "league": "Bundesliga", "stats2526": {"apps": 51, "goals": 61, "assists": 12}, "note": "歐洲金靴，賽季 61 球破隊史紀錄"},
-    {"name": "Phil Foden", "nameZh": "福登", "shirt": 47, "pos": "AM", "club": "Manchester City", "league": "Premier League", "stats2526": {"apps": 50, "goals": 10, "assists": 8}, "note": "曼城技術核心，左腳細膩，內切遠射"},
-    {"name": "Bukayo Saka", "nameZh": "薩卡", "shirt": 7, "pos": "RW", "club": "Arsenal", "league": "Premier League", "stats2526": {"apps": 49, "goals": 11, "assists": 13}, "note": "阿森納右路節拍器，內切助攻精準"}
+    {
+      "name": "Jude Bellingham",
+      "nameZh": "貝林漢",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 40,
+        "goals": 8,
+        "assists": 7
+      },
+      "note": "皇馬大腦，國家德比殺手，英格蘭核心"
+    },
+    {
+      "name": "Harry Kane",
+      "nameZh": "凱恩",
+      "shirt": 9,
+      "pos": "ST",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 51,
+        "goals": 61,
+        "assists": 12
+      },
+      "note": "歐洲金靴，賽季 61 球破隊史紀錄"
+    },
+    {
+      "name": "Phil Foden",
+      "nameZh": "福登",
+      "shirt": 47,
+      "pos": "AM",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 50,
+        "goals": 10,
+        "assists": 8
+      },
+      "note": "曼城技術核心，左腳細膩，內切遠射"
+    },
+    {
+      "name": "Bukayo Saka",
+      "nameZh": "薩卡",
+      "shirt": 7,
+      "pos": "RW",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 49,
+        "goals": 11,
+        "assists": 13
+      },
+      "note": "阿森納右路節拍器，內切助攻精準"
+    }
   ],
-
   "ESP": [
-    {"name": "Lamine Yamal", "nameZh": "亞馬爾", "shirt": 10, "pos": "RW", "club": "Barcelona", "league": "La Liga", "stats2526": {"apps": 45, "goals": 24, "assists": 14}, "note": "18 歲披上巴薩 10 號，內切+傳球皆世界級"},
-    {"name": "Rodri", "nameZh": "羅德里", "shirt": 16, "pos": "DM", "club": "Manchester City", "league": "Premier League", "stats2526": {"apps": 33, "goals": 2, "assists": 4}, "note": "金球獎得主，後腰戰術中樞，控節奏大師"},
-    {"name": "Pedri", "nameZh": "佩德里", "shirt": 20, "pos": "CM", "club": "Barcelona", "league": "La Liga", "stats2526": {"apps": 43, "goals": 2, "assists": 8}, "note": "巴薩中場節拍器，控傳與小範圍配合典範"},
-    {"name": "Mikel Merino", "nameZh": "梅里諾", "shirt": 24, "pos": "CM", "club": "Arsenal", "league": "Premier League", "stats2526": {"apps": 42, "goals": 9, "assists": 6}, "note": "歐國盃英雄延續火熱，定位球與對抗強"}
+    {
+      "name": "Lamine Yamal",
+      "nameZh": "亞馬爾",
+      "shirt": 10,
+      "pos": "RW",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 45,
+        "goals": 24,
+        "assists": 14
+      },
+      "note": "18 歲披上巴薩 10 號，內切+傳球皆世界級"
+    },
+    {
+      "name": "Rodri",
+      "nameZh": "羅德里",
+      "shirt": 16,
+      "pos": "DM",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 33,
+        "goals": 2,
+        "assists": 4
+      },
+      "note": "金球獎得主，後腰戰術中樞，控節奏大師"
+    },
+    {
+      "name": "Pedri",
+      "nameZh": "佩德里",
+      "shirt": 20,
+      "pos": "CM",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 43,
+        "goals": 2,
+        "assists": 8
+      },
+      "note": "巴薩中場節拍器，控傳與小範圍配合典範"
+    },
+    {
+      "name": "Mikel Merino",
+      "nameZh": "梅里諾",
+      "shirt": 24,
+      "pos": "CM",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 42,
+        "goals": 9,
+        "assists": 6
+      },
+      "note": "歐國盃英雄延續火熱，定位球與對抗強"
+    }
   ],
-
   "GER": [
-    {"name": "Jamal Musiala", "nameZh": "穆夏拉", "shirt": 10, "pos": "AM", "club": "Bayern Munich", "league": "Bundesliga", "stats2526": {"apps": 24, "goals": 5, "assists": 5}, "note": "重傷後復出，盤帶魔術師，德國進攻寄望"},
-    {"name": "Florian Wirtz", "nameZh": "維爾茨", "shirt": 7, "pos": "AM", "club": "Liverpool", "league": "Premier League", "stats2526": {"apps": 49, "goals": 7, "assists": 14}, "note": "夏窗破紀錄轉會紅軍，第二前鋒+前腰串聯"},
-    {"name": "Joshua Kimmich", "nameZh": "基米希", "shirt": 6, "pos": "DM", "club": "Bayern Munich", "league": "Bundesliga", "stats2526": {"apps": 49, "goals": 2, "assists": 11}, "note": "德國隊長，後腰調度與定位球指揮官"},
-    {"name": "Kai Havertz", "nameZh": "哈弗茨", "shirt": 9, "pos": "ST", "club": "Arsenal", "league": "Premier League", "stats2526": {"apps": 38, "goals": 14, "assists": 7}, "note": "前場萬金油，可邊可中"}
+    {
+      "name": "Jamal Musiala",
+      "nameZh": "穆夏拉",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 24,
+        "goals": 5,
+        "assists": 5
+      },
+      "note": "重傷後復出，盤帶魔術師，德國進攻寄望"
+    },
+    {
+      "name": "Florian Wirtz",
+      "nameZh": "維爾茨",
+      "shirt": 7,
+      "pos": "AM",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 49,
+        "goals": 7,
+        "assists": 14
+      },
+      "note": "夏窗破紀錄轉會紅軍，第二前鋒+前腰串聯"
+    },
+    {
+      "name": "Joshua Kimmich",
+      "nameZh": "基米希",
+      "shirt": 6,
+      "pos": "DM",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 49,
+        "goals": 2,
+        "assists": 11
+      },
+      "note": "德國隊長，後腰調度與定位球指揮官"
+    },
+    {
+      "name": "Kai Havertz",
+      "nameZh": "哈弗茨",
+      "shirt": 9,
+      "pos": "ST",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 38,
+        "goals": 14,
+        "assists": 7
+      },
+      "note": "前場萬金油，可邊可中"
+    }
   ],
-
   "POR": [
-    {"name": "Cristiano Ronaldo", "nameZh": "C 羅", "shirt": 7, "pos": "ST", "club": "Al-Nassr", "league": "Saudi Pro League", "stats2526": {"apps": 40, "goals": 30, "assists": 5}, "note": "末代世界盃，率隊勇奪沙特聯冠軍"},
-    {"name": "Bruno Fernandes", "nameZh": "B 費", "shirt": 8, "pos": "AM", "club": "Manchester United", "league": "Premier League", "stats2526": {"apps": 37, "goals": 9, "assists": 21}, "note": "英超賽季 MVP，21 助攻破紀錄"},
-    {"name": "Rafael Leão", "nameZh": "萊昂", "shirt": 17, "pos": "LW", "club": "AC Milan", "league": "Serie A", "stats2526": {"apps": 40, "goals": 12, "assists": 9}, "note": "左路爆點，米蘭進攻箭頭，速度型邊鋒"},
-    {"name": "Bernardo Silva", "nameZh": "B 席", "shirt": 20, "pos": "CM", "club": "Manchester City", "league": "Premier League", "stats2526": {"apps": 48, "goals": 8, "assists": 11}, "note": "曼城多面手，技術細膩萬金油"}
+    {
+      "name": "Cristiano Ronaldo",
+      "nameZh": "C 羅",
+      "shirt": 7,
+      "pos": "ST",
+      "club": "Al-Nassr",
+      "league": "Saudi Pro League",
+      "stats2526": {
+        "apps": 40,
+        "goals": 30,
+        "assists": 5
+      },
+      "note": "末代世界盃，率隊勇奪沙特聯冠軍"
+    },
+    {
+      "name": "Bruno Fernandes",
+      "nameZh": "B 費",
+      "shirt": 8,
+      "pos": "AM",
+      "club": "Manchester United",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 37,
+        "goals": 9,
+        "assists": 21
+      },
+      "note": "英超賽季 MVP，21 助攻破紀錄"
+    },
+    {
+      "name": "Rafael Leão",
+      "nameZh": "萊昂",
+      "shirt": 17,
+      "pos": "LW",
+      "club": "AC Milan",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 40,
+        "goals": 12,
+        "assists": 9
+      },
+      "note": "左路爆點，米蘭進攻箭頭，速度型邊鋒"
+    },
+    {
+      "name": "Bernardo Silva",
+      "nameZh": "B 席",
+      "shirt": 20,
+      "pos": "CM",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 48,
+        "goals": 8,
+        "assists": 11
+      },
+      "note": "曼城多面手，技術細膩萬金油"
+    }
   ],
-
   "NED": [
-    {"name": "Virgil van Dijk", "nameZh": "范戴克", "shirt": 4, "pos": "CB", "club": "Liverpool", "league": "Premier League", "stats2526": {"apps": 55, "goals": 8, "assists": 3}, "note": "荷蘭隊長，制空與站位皇者，後防定海神針"},
-    {"name": "Frenkie de Jong", "nameZh": "德容", "shirt": 21, "pos": "CM", "club": "Barcelona", "league": "La Liga", "stats2526": {"apps": 38, "goals": 1, "assists": 4}, "note": "巴薩中場核心，盤帶推進大師"},
-    {"name": "Cody Gakpo", "nameZh": "加克波", "shirt": 18, "pos": "LW", "club": "Liverpool", "league": "Premier League", "stats2526": {"apps": 52, "goals": 9, "assists": 7}, "note": "可邊可中的高大型前鋒，左腳冷射精準"},
-    {"name": "Denzel Dumfries", "nameZh": "鄧弗里斯", "shirt": 22, "pos": "RB", "club": "Inter Milan", "league": "Serie A", "stats2526": {"apps": 28, "goals": 5, "assists": 6}, "note": "右翼衛炸彈頭，前插與下底傳中俱佳"}
+    {
+      "name": "Virgil van Dijk",
+      "nameZh": "范戴克",
+      "shirt": 4,
+      "pos": "CB",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 55,
+        "goals": 8,
+        "assists": 3
+      },
+      "note": "荷蘭隊長，制空與站位皇者，後防定海神針"
+    },
+    {
+      "name": "Frenkie de Jong",
+      "nameZh": "德容",
+      "shirt": 21,
+      "pos": "CM",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 38,
+        "goals": 1,
+        "assists": 4
+      },
+      "note": "巴薩中場核心，盤帶推進大師"
+    },
+    {
+      "name": "Cody Gakpo",
+      "nameZh": "加克波",
+      "shirt": 18,
+      "pos": "LW",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 52,
+        "goals": 9,
+        "assists": 7
+      },
+      "note": "可邊可中的高大型前鋒，左腳冷射精準"
+    },
+    {
+      "name": "Denzel Dumfries",
+      "nameZh": "鄧弗里斯",
+      "shirt": 22,
+      "pos": "RB",
+      "club": "Inter Milan",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 28,
+        "goals": 5,
+        "assists": 6
+      },
+      "note": "右翼衛炸彈頭，前插與下底傳中俱佳"
+    }
   ],
-
   "BEL": [
-    {"name": "Kevin De Bruyne", "nameZh": "迪布魯尼", "shirt": 7, "pos": "AM", "club": "Napoli", "league": "Serie A", "stats2526": {"apps": 21, "goals": 5, "assists": 8}, "note": "傷後復出，世界級長傳調度，比利時最後一搏"},
-    {"name": "Jérémy Doku", "nameZh": "多庫", "shirt": 11, "pos": "LW", "club": "Manchester City", "league": "Premier League", "stats2526": {"apps": 47, "goals": 8, "assists": 12}, "note": "瘋狂變向 1v1，曼城左路爆點"},
-    {"name": "Romelu Lukaku", "nameZh": "盧卡庫", "shirt": 10, "pos": "ST", "club": "Napoli", "league": "Serie A", "stats2526": {"apps": 7, "goals": 1, "assists": 1}, "note": "賽季因傷大幅缺陣，能否爆發成謎"},
-    {"name": "Charles De Ketelaere", "nameZh": "德凱特拉勒", "shirt": 18, "pos": "AM", "club": "Atalanta", "league": "Serie A", "stats2526": {"apps": 42, "goals": 11, "assists": 9}, "note": "意甲多面進攻型中場，比利時新核"}
+    {
+      "name": "Kevin De Bruyne",
+      "nameZh": "迪布魯尼",
+      "shirt": 7,
+      "pos": "AM",
+      "club": "Napoli",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 21,
+        "goals": 5,
+        "assists": 8
+      },
+      "note": "傷後復出，世界級長傳調度，比利時最後一搏"
+    },
+    {
+      "name": "Jérémy Doku",
+      "nameZh": "多庫",
+      "shirt": 11,
+      "pos": "LW",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 47,
+        "goals": 8,
+        "assists": 12
+      },
+      "note": "瘋狂變向 1v1，曼城左路爆點"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "nameZh": "盧卡庫",
+      "shirt": 10,
+      "pos": "ST",
+      "club": "Napoli",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 7,
+        "goals": 1,
+        "assists": 1
+      },
+      "note": "賽季因傷大幅缺陣，能否爆發成謎"
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "nameZh": "德凱特拉勒",
+      "shirt": 18,
+      "pos": "AM",
+      "club": "Atalanta",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 42,
+        "goals": 11,
+        "assists": 9
+      },
+      "note": "意甲多面進攻型中場，比利時新核"
+    }
   ],
-
   "JPN": [
-    {"name": "Kaoru Mitoma", "nameZh": "三笘薰", "shirt": 22, "pos": "LW", "club": "Brighton", "league": "Premier League", "stats2526": {"apps": 27, "goals": 3, "assists": 5}, "note": "盤帶細膩，左路爆破手（季末傷停影響備戰）"},
-    {"name": "Takefusa Kubo", "nameZh": "久保建英", "shirt": 14, "pos": "RW", "club": "Real Sociedad", "league": "La Liga", "stats2526": {"apps": 27, "goals": 2, "assists": 4}, "note": "右路內切型技術派，日本創造力擔當"},
-    {"name": "Wataru Endo", "nameZh": "遠藤航", "shirt": 3, "pos": "DM", "club": "Liverpool", "league": "Premier League", "stats2526": {"apps": 12, "goals": 0, "assists": 1}, "note": "日本隊長，攔截覆蓋大師，後腰核心"},
-    {"name": "Daichi Kamada", "nameZh": "鎌田大地", "shirt": 18, "pos": "CM", "club": "Crystal Palace", "league": "Premier League", "stats2526": {"apps": 46, "goals": 1, "assists": 6}, "note": "中前場節拍器，傳球與插上俱佳"}
+    {
+      "name": "Kaoru Mitoma",
+      "nameZh": "三笘薰",
+      "shirt": 22,
+      "pos": "LW",
+      "club": "Brighton",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 27,
+        "goals": 3,
+        "assists": 5
+      },
+      "note": "盤帶細膩，左路爆破手（季末傷停影響備戰）"
+    },
+    {
+      "name": "Takefusa Kubo",
+      "nameZh": "久保建英",
+      "shirt": 14,
+      "pos": "RW",
+      "club": "Real Sociedad",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 27,
+        "goals": 2,
+        "assists": 4
+      },
+      "note": "右路內切型技術派，日本創造力擔當"
+    },
+    {
+      "name": "Wataru Endo",
+      "nameZh": "遠藤航",
+      "shirt": 3,
+      "pos": "DM",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 12,
+        "goals": 0,
+        "assists": 1
+      },
+      "note": "日本隊長，攔截覆蓋大師，後腰核心"
+    },
+    {
+      "name": "Daichi Kamada",
+      "nameZh": "鎌田大地",
+      "shirt": 18,
+      "pos": "CM",
+      "club": "Crystal Palace",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 46,
+        "goals": 1,
+        "assists": 6
+      },
+      "note": "中前場節拍器，傳球與插上俱佳"
+    }
   ],
-
   "KOR": [
-    {"name": "Son Heung-min", "nameZh": "孫興慜", "shirt": 7, "pos": "LW", "club": "Los Angeles FC", "league": "MLS", "stats2526": {"apps": 34, "goals": 14, "assists": 9}, "note": "夏窗破 MLS 紀錄加盟 LAFC，韓國隊長末代世界盃"},
-    {"name": "Lee Kang-in", "nameZh": "李剛仁", "shirt": 19, "pos": "AM", "club": "Paris Saint-Germain", "league": "Ligue 1", "stats2526": {"apps": 39, "goals": 4, "assists": 6}, "note": "PSG 技術型前腰，韓國創造力核心"},
-    {"name": "Kim Min-jae", "nameZh": "金玟哉", "shirt": 4, "pos": "CB", "club": "Bayern Munich", "league": "Bundesliga", "stats2526": {"apps": 37, "goals": 1, "assists": 1}, "note": "韓國「怪物」後衛，制空與一對一強"},
-    {"name": "Hwang Hee-chan", "nameZh": "黃喜燦", "shirt": 11, "pos": "LW", "club": "Wolverhampton", "league": "Premier League", "stats2526": {"apps": 31, "goals": 3, "assists": 4}, "note": "速度型邊鋒，反擊衝刺尖刀"}
+    {
+      "name": "Son Heung-min",
+      "nameZh": "孫興慜",
+      "shirt": 7,
+      "pos": "LW",
+      "club": "Los Angeles FC",
+      "league": "MLS",
+      "stats2526": {
+        "apps": 34,
+        "goals": 14,
+        "assists": 9
+      },
+      "note": "夏窗破 MLS 紀錄加盟 LAFC，韓國隊長末代世界盃"
+    },
+    {
+      "name": "Lee Kang-in",
+      "nameZh": "李剛仁",
+      "shirt": 19,
+      "pos": "AM",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "stats2526": {
+        "apps": 39,
+        "goals": 4,
+        "assists": 6
+      },
+      "note": "PSG 技術型前腰，韓國創造力核心"
+    },
+    {
+      "name": "Kim Min-jae",
+      "nameZh": "金玟哉",
+      "shirt": 4,
+      "pos": "CB",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 37,
+        "goals": 1,
+        "assists": 1
+      },
+      "note": "韓國「怪物」後衛，制空與一對一強"
+    },
+    {
+      "name": "Hwang Hee-chan",
+      "nameZh": "黃喜燦",
+      "shirt": 11,
+      "pos": "LW",
+      "club": "Wolverhampton",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 31,
+        "goals": 3,
+        "assists": 4
+      },
+      "note": "速度型邊鋒，反擊衝刺尖刀"
+    }
   ],
-
   "MEX": [
-    {"name": "Raúl Jiménez", "nameZh": "勞爾", "shirt": 9, "pos": "ST", "club": "Fulham", "league": "Premier League", "stats2526": {"apps": 43, "goals": 10, "assists": 5}, "note": "墨西哥老將中鋒，背身做球與終結兼備"},
-    {"name": "Edson Álvarez", "nameZh": "艾爾韋斯", "shirt": 4, "pos": "DM", "club": "Fenerbahçe (loan)", "league": "Süper Lig", "stats2526": {"apps": 24, "goals": 0, "assists": 1}, "note": "墨西哥隊長，後腰攔截屏障"},
-    {"name": "Santiago Giménez", "nameZh": "聖地亞哥", "shirt": 11, "pos": "ST", "club": "AC Milan", "league": "Serie A", "stats2526": {"apps": 18, "goals": 1, "assists": 2}, "note": "傷後復出仍是前場希望，門前嗅覺強"},
-    {"name": "Gilberto Mora", "nameZh": "莫拉", "shirt": 19, "pos": "AM", "club": "Club Tijuana", "league": "Liga MX", "stats2526": {"apps": 23, "goals": 8, "assists": 4}, "note": "17 歲新星，東道主新生代天才前腰"}
+    {
+      "name": "Raúl Jiménez",
+      "nameZh": "勞爾",
+      "shirt": 9,
+      "pos": "ST",
+      "club": "Fulham",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 43,
+        "goals": 10,
+        "assists": 5
+      },
+      "note": "墨西哥老將中鋒，背身做球與終結兼備"
+    },
+    {
+      "name": "Edson Álvarez",
+      "nameZh": "艾爾韋斯",
+      "shirt": 4,
+      "pos": "DM",
+      "club": "Fenerbahçe (loan)",
+      "league": "Süper Lig",
+      "stats2526": {
+        "apps": 24,
+        "goals": 0,
+        "assists": 1
+      },
+      "note": "墨西哥隊長，後腰攔截屏障"
+    },
+    {
+      "name": "Santiago Giménez",
+      "nameZh": "聖地亞哥",
+      "shirt": 11,
+      "pos": "ST",
+      "club": "AC Milan",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 18,
+        "goals": 1,
+        "assists": 2
+      },
+      "note": "傷後復出仍是前場希望，門前嗅覺強"
+    },
+    {
+      "name": "Gilberto Mora",
+      "nameZh": "莫拉",
+      "shirt": 19,
+      "pos": "AM",
+      "club": "Club Tijuana",
+      "league": "Liga MX",
+      "stats2526": {
+        "apps": 23,
+        "goals": 8,
+        "assists": 4
+      },
+      "note": "17 歲新星，東道主新生代天才前腰"
+    }
+  ],
+  "USA": [
+    {
+      "name": "Christian Pulisic",
+      "nameZh": "普利西奇",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "AC Milan",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 34,
+        "goals": 10,
+        "assists": 7
+      },
+      "note": "美國隊長，左路內切創造力強，海外進球王"
+    },
+    {
+      "name": "Folarin Balogun",
+      "nameZh": "巴洛根",
+      "shirt": 20,
+      "pos": "ST",
+      "club": "AS Monaco",
+      "league": "Ligue 1",
+      "stats2526": {
+        "apps": 43,
+        "goals": 19,
+        "assists": 4
+      },
+      "note": "摩納哥當家中鋒，速度與射門俱佳"
+    },
+    {
+      "name": "Weston McKennie",
+      "nameZh": "麥肯尼",
+      "shirt": 8,
+      "pos": "CM",
+      "club": "Juventus",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 48,
+        "goals": 9,
+        "assists": 8
+      },
+      "note": "斑馬軍團多功能中場，意甲最佳陣容"
+    },
+    {
+      "name": "Tyler Adams",
+      "nameZh": "亞當斯",
+      "shirt": 4,
+      "pos": "DM",
+      "club": "AFC Bournemouth",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 26,
+        "goals": 2,
+        "assists": 2
+      },
+      "note": "美國隊防守中場屏障"
+    }
+  ],
+  "URU": [
+    {
+      "name": "Federico Valverde",
+      "nameZh": "華佛迪",
+      "shirt": 8,
+      "pos": "CM",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 49,
+        "goals": 9,
+        "assists": 5
+      },
+      "note": "皇馬副隊長，跑動範圍大、遠射兇猛"
+    },
+    {
+      "name": "Darwin Núñez",
+      "nameZh": "紐尼斯",
+      "shirt": 19,
+      "pos": "ST",
+      "club": "Al-Hilal",
+      "league": "Saudi Pro League",
+      "stats2526": {
+        "apps": 24,
+        "goals": 9,
+        "assists": 3
+      },
+      "note": "瘋狗式衝刺中鋒，轉戰沙地後出場縮減"
+    },
+    {
+      "name": "Ronald Araújo",
+      "nameZh": "阿勞荷",
+      "shirt": 4,
+      "pos": "CB",
+      "club": "Barcelona",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 38,
+        "goals": 4,
+        "assists": 1
+      },
+      "note": "巴薩鐵衛兼隊長，速度與對抗一流"
+    },
+    {
+      "name": "Maximiliano Araújo",
+      "nameZh": "M·阿勞荷",
+      "shirt": 20,
+      "pos": "LW",
+      "club": "Sporting CP",
+      "league": "Primeira Liga",
+      "stats2526": {
+        "apps": 47,
+        "goals": 7,
+        "assists": 6
+      },
+      "note": "葡超最佳陣容左翼，速度型邊鋒"
+    }
+  ],
+  "CAN": [
+    {
+      "name": "Alphonso Davies",
+      "nameZh": "戴維斯",
+      "shirt": 19,
+      "pos": "LB",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 23,
+        "goals": 1,
+        "assists": 3
+      },
+      "note": "加拿大隊長，閃電左後衛，傷癒復出助拜仁奪冠"
+    },
+    {
+      "name": "Jonathan David",
+      "nameZh": "強納森·大衛",
+      "shirt": 10,
+      "pos": "ST",
+      "club": "Juventus",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 46,
+        "goals": 8,
+        "assists": 4
+      },
+      "note": "冷靜射手，自由轉會加盟尤文"
+    },
+    {
+      "name": "Stephen Eustáquio",
+      "nameZh": "尤斯塔基奧",
+      "shirt": 7,
+      "pos": "CM",
+      "club": "FC Porto",
+      "league": "Primeira Liga",
+      "stats2526": {
+        "apps": 16,
+        "goals": 0,
+        "assists": 2
+      },
+      "note": "波圖中場節拍器，加拿大中場大腦"
+    },
+    {
+      "name": "Tajon Buchanan",
+      "nameZh": "布坎南",
+      "shirt": 17,
+      "pos": "RW",
+      "club": "Villarreal",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 43,
+        "goals": 7,
+        "assists": 5
+      },
+      "note": "邊路速度型，本季西甲上演帽子戲法"
+    }
+  ],
+  "COL": [
+    {
+      "name": "Luis Díaz",
+      "nameZh": "迪亞斯",
+      "shirt": 7,
+      "pos": "LW",
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 51,
+        "goals": 26,
+        "assists": 13
+      },
+      "note": "拜仁左翼新王，破紀錄轉會，哥倫比亞進攻發動機"
+    },
+    {
+      "name": "James Rodríguez",
+      "nameZh": "占士·洛迪古斯",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "Minnesota United",
+      "league": "MLS",
+      "stats2526": {
+        "apps": 23,
+        "goals": 3,
+        "assists": 4
+      },
+      "note": "哥倫比亞隊長兼 10 號，轉戰 MLS 備戰世盃"
+    },
+    {
+      "name": "Daniel Muñoz",
+      "nameZh": "穆紐斯",
+      "shirt": 22,
+      "pos": "RB",
+      "club": "Crystal Palace",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 46,
+        "goals": 5,
+        "assists": 4
+      },
+      "note": "助水晶宮奪歐協聯冠軍，攻擊型右閘"
+    },
+    {
+      "name": "Richard Ríos",
+      "nameZh": "里奧斯",
+      "shirt": 6,
+      "pos": "CM",
+      "club": "Benfica",
+      "league": "Primeira Liga",
+      "stats2526": {
+        "apps": 45,
+        "goals": 8,
+        "assists": 4
+      },
+      "note": "本菲卡中場引擎，搶斷與推進兼具"
+    }
+  ],
+  "CRO": [
+    {
+      "name": "Luka Modrić",
+      "nameZh": "莫德里奇",
+      "shirt": 10,
+      "pos": "CM",
+      "club": "AC Milan",
+      "league": "Serie A",
+      "stats2526": {
+        "apps": 34,
+        "goals": 2,
+        "assists": 6
+      },
+      "note": "40 歲傳奇末舞，自由身加盟米蘭續寫傳奇"
+    },
+    {
+      "name": "Mateo Kovačić",
+      "nameZh": "高華錫",
+      "shirt": 8,
+      "pos": "CM",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 9,
+        "goals": 0,
+        "assists": 1
+      },
+      "note": "曼城技術中場，本季傷病困擾出場銳減"
+    },
+    {
+      "name": "Joško Gvardiol",
+      "nameZh": "格瓦迪奧",
+      "shirt": 24,
+      "pos": "CB",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 25,
+        "goals": 2,
+        "assists": 2
+      },
+      "note": "克羅地亞鐵閘，可踢中堅與左閘"
+    },
+    {
+      "name": "Andrej Kramarić",
+      "nameZh": "卡馬里奇",
+      "shirt": 27,
+      "pos": "ST",
+      "club": "TSG Hoffenheim",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 36,
+        "goals": 15,
+        "assists": 5
+      },
+      "note": "霍芬咸老牌射手，本季完成德甲 300 場"
+    }
+  ],
+  "NOR": [
+    {
+      "name": "Erling Haaland",
+      "nameZh": "哈蘭德",
+      "shirt": 9,
+      "pos": "ST",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 52,
+        "goals": 38,
+        "assists": 6
+      },
+      "note": "進球機器，英超金靴，挪威 30 年首登世盃"
+    },
+    {
+      "name": "Martin Ødegaard",
+      "nameZh": "奧迪加特",
+      "shirt": 8,
+      "pos": "AM",
+      "club": "Arsenal",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 36,
+        "goals": 1,
+        "assists": 8
+      },
+      "note": "阿仙奴隊長，本季隨槍手奪英超冠軍"
+    },
+    {
+      "name": "Antonio Nusa",
+      "nameZh": "努薩",
+      "shirt": 20,
+      "pos": "LW",
+      "club": "RB Leipzig",
+      "league": "Bundesliga",
+      "stats2526": {
+        "apps": 35,
+        "goals": 5,
+        "assists": 5
+      },
+      "note": "20 歲爆發型邊鋒，左路盤帶犀利"
+    },
+    {
+      "name": "Alexander Sørloth",
+      "nameZh": "索路夫",
+      "shirt": 7,
+      "pos": "ST",
+      "club": "Atlético Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 54,
+        "goals": 20,
+        "assists": 4
+      },
+      "note": "床單軍團高中鋒，制空與支點俱佳"
+    }
+  ],
+  "MAR": [
+    {
+      "name": "Achraf Hakimi",
+      "nameZh": "哈基米",
+      "shirt": 2,
+      "pos": "RB",
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "stats2526": {
+        "apps": 32,
+        "goals": 3,
+        "assists": 7
+      },
+      "note": "PSG 歐冠+法甲雙料冠軍，摩洛哥隊長"
+    },
+    {
+      "name": "Brahim Díaz",
+      "nameZh": "白咸·迪亞斯",
+      "shirt": 10,
+      "pos": "AM",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "stats2526": {
+        "apps": 42,
+        "goals": 2,
+        "assists": 5
+      },
+      "note": "皇馬輪換進攻手，盤帶細膩，摩洛哥 10 號"
+    },
+    {
+      "name": "Youssef En-Nesyri",
+      "nameZh": "恩尼斯利",
+      "shirt": 19,
+      "pos": "ST",
+      "club": "Al-Ittihad",
+      "league": "Saudi Pro League",
+      "stats2526": {
+        "apps": 44,
+        "goals": 16,
+        "assists": 3
+      },
+      "note": "高大中鋒，制空一流，摩洛哥頭號箭頭"
+    },
+    {
+      "name": "Noussair Mazraoui",
+      "nameZh": "馬拉維",
+      "shirt": 3,
+      "pos": "RB",
+      "club": "Manchester United",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 20,
+        "goals": 0,
+        "assists": 2
+      },
+      "note": "曼聯多功能後衛，可踢左右閘"
+    }
+  ],
+  "EGY": [
+    {
+      "name": "Mohamed Salah",
+      "nameZh": "薩拉",
+      "shirt": 10,
+      "pos": "RW",
+      "club": "Liverpool",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 40,
+        "goals": 22,
+        "assists": 12
+      },
+      "note": "法老王，最後一季紅軍，埃及隊神"
+    },
+    {
+      "name": "Omar Marmoush",
+      "nameZh": "馬穆殊",
+      "shirt": 22,
+      "pos": "ST",
+      "club": "Manchester City",
+      "league": "Premier League",
+      "stats2526": {
+        "apps": 36,
+        "goals": 8,
+        "assists": 5
+      },
+      "note": "曼城新援，速度型前鋒，能踢中鋒與邊路"
+    },
+    {
+      "name": "Mostafa Mohamed",
+      "nameZh": "莫斯塔法",
+      "shirt": 9,
+      "pos": "ST",
+      "club": "FC Nantes",
+      "league": "Ligue 1",
+      "stats2526": {
+        "apps": 28,
+        "goals": 5,
+        "assists": 2
+      },
+      "note": "南特中鋒，背身做球與射門兼具"
+    },
+    {
+      "name": "Trezeguet",
+      "nameZh": "特拉澤古特",
+      "shirt": 17,
+      "pos": "LW",
+      "club": "Al Ahly",
+      "league": "Egyptian Premier League",
+      "stats2526": {
+        "apps": 30,
+        "goals": 12,
+        "assists": 6
+      },
+      "note": "回歸母會艾阿利，左腳邊鋒內切射門"
+    }
   ]
 }
