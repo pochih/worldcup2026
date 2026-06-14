@@ -396,6 +396,14 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   border-left: 3px solid var(--accent);
 }
 
+.radar {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  margin: 4px auto 2px;
+  display: block;
+}
+
 footer {
   text-align: center; padding: 24px; color: var(--text-dim); font-size: 12px;
   border-top: 1px solid var(--border);

@@ -360,6 +360,68 @@ const ADV_LABEL = {
   low: "🔴 機會低",
 };
 
+const RADAR_AXES = ["attack", "defense", "midfield", "fitness", "experience", "stars"];
+const RADAR_LABELS = {
+  attack: "進攻", defense: "防守", midfield: "中場",
+  fitness: "體能", experience: "經驗", stars: "球星",
+};
+
+function radarSvg(stats) {
+  // Hexagon (6 axes) radar chart, 1-10 scale.
+  const size = 200, cx = size / 2, cy = size / 2 + 4;
+  const radius = 68;
+  const n = RADAR_AXES.length;
+  // Angles: start at top (12 o'clock), clockwise
+  const angle = (i) => -Math.PI / 2 + (2 * Math.PI * i) / n;
+  const point = (i, r) => [cx + r * Math.cos(angle(i)), cy + r * Math.sin(angle(i))];
+
+  // Rings at 2,4,6,8,10
+  const rings = [2, 4, 6, 8, 10].map(v => {
+    const r = (v / 10) * radius;
+    const pts = Array.from({ length: n }, (_, i) => point(i, r).join(",")).join(" ");
+    return `<polygon points="${pts}" fill="none" stroke="rgba(151,163,207,0.18)" stroke-width="1"/>`;
+  }).join("");
+
+  // Axis lines
+  const axes = Array.from({ length: n }, (_, i) => {
+    const [x, y] = point(i, radius);
+    return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="rgba(151,163,207,0.22)" stroke-width="1"/>`;
+  }).join("");
+
+  // Data polygon
+  const dataPts = RADAR_AXES.map((axis, i) => {
+    const v = Math.max(0, Math.min(10, stats[axis] || 0));
+    const r = (v / 10) * radius;
+    return point(i, r).map(n => n.toFixed(1)).join(",");
+  }).join(" ");
+
+  // Vertex dots
+  const dots = RADAR_AXES.map((axis, i) => {
+    const v = Math.max(0, Math.min(10, stats[axis] || 0));
+    const [x, y] = point(i, (v / 10) * radius);
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.5" fill="var(--accent)"/>`;
+  }).join("");
+
+  // Labels with values
+  const labels = RADAR_AXES.map((axis, i) => {
+    const [lx, ly] = point(i, radius + 16);
+    const v = stats[axis];
+    const anchor = Math.abs(lx - cx) < 1 ? "middle" : (lx > cx ? "start" : "end");
+    return `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}" dy="0.35em"
+      font-size="10" fill="var(--text-dim)" font-weight="600">
+      ${RADAR_LABELS[axis]} <tspan fill="var(--accent)" font-weight="700">${v}</tspan>
+    </text>`;
+  }).join("");
+
+  return `<svg class="radar" viewBox="0 0 ${size} ${size + 8}" xmlns="http://www.w3.org/2000/svg">
+    ${rings}
+    ${axes}
+    <polygon points="${dataPts}" fill="rgba(0,212,170,0.22)" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/>
+    ${dots}
+    ${labels}
+  </svg>`;
+}
+
 function renderAnalysis() {
   const el = document.getElementById("analysis-grid");
   if (!ANALYSIS) {
@@ -402,6 +464,7 @@ function renderAnalysis() {
         <span class="pill rank">FIFA #${a.rank}</span>
         <span class="pill adv-${a.advance}">${ADV_LABEL[a.advance] || a.advance}</span>
       </div>
+      ${a.stats ? radarSvg(a.stats) : ""}
       <div class="analysis-section"><span class="lbl">💪 優點</span>${a.strength}</div>
       <div class="analysis-section"><span class="lbl">⚠️ 弱點</span>${a.weakness}</div>
       <div class="analysis-section"><span class="lbl">👀 觀賽重點</span>${a.watch}</div>
