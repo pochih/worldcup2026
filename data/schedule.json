@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T17:12:32.120728+00:00",
+  "generatedAt": "2026-06-15T18:01:51.496994+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -836,8 +836,8 @@
       "group": "H",
       "utc": "2026-06-15T16:00:00Z",
       "localKick": "2026-06-15T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -861,7 +861,7 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "67640",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
