@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T23:36:37.780133+00:00",
+  "generatedAt": "2026-06-15T05:26:38.427682+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -482,8 +482,8 @@
       "group": "E",
       "utc": "2026-06-14T23:00:00Z",
       "localKick": "2026-06-14T19:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
       "tz": "",
@@ -495,7 +495,7 @@
         "code": "CIV",
         "name": "Côte d'Ivoire",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -506,12 +506,21 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43854",
+      "attendance": "68274",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "90'",
+          "side": "home",
+          "team": "43854",
+          "player": "Amad Diallo",
+          "score": "1-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021464",
@@ -697,8 +706,8 @@
       "group": "F",
       "utc": "2026-06-15T02:00:00Z",
       "localKick": "2026-06-14T20:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Monterrey Stadium",
       "city": "Monterrey",
       "tz": "",
@@ -710,7 +719,7 @@
         "code": "SWE",
         "name": "Sweden",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
-        "score": null,
+        "score": 5,
         "pen": null
       },
       "away": {
@@ -718,15 +727,64 @@
         "code": "TUN",
         "name": "Tunisia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43970",
+      "attendance": "50987",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "7'",
+          "side": "home",
+          "team": "43970",
+          "player": "Yasin Ayari",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "30'",
+          "side": "home",
+          "team": "43970",
+          "player": "Alexander Isak",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "43'",
+          "side": "away",
+          "team": "43888",
+          "player": "Omar Rekik",
+          "score": "2-1",
+          "type": "G"
+        },
+        {
+          "minute": "59'",
+          "side": "home",
+          "team": "43970",
+          "player": "Viktor Gyokeres",
+          "score": "3-1",
+          "type": "G"
+        },
+        {
+          "minute": "84'",
+          "side": "home",
+          "team": "43970",
+          "player": "Mattias Svanberg",
+          "score": "4-1",
+          "type": "G"
+        },
+        {
+          "minute": "90'+6'",
+          "side": "home",
+          "team": "43970",
+          "player": "Yasin Ayari",
+          "score": "5-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021486",
@@ -4909,13 +4967,13 @@
         "name": "Côte d'Ivoire",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
         "P": 1,
-        "W": 0,
-        "D": 1,
+        "W": 1,
+        "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 1,
         "GA": 0,
-        "GD": 0,
-        "Pts": 1
+        "GD": 1,
+        "Pts": 3
       },
       {
         "id": "43927",
@@ -4924,12 +4982,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
         "P": 1,
         "W": 0,
-        "D": 1,
-        "L": 0,
+        "D": 0,
+        "L": 1,
         "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 1
+        "GA": 1,
+        "GD": -1,
+        "Pts": 0
       },
       {
         "id": "1895293",
@@ -4947,6 +5005,20 @@
       }
     ],
     "F": [
+      {
+        "id": "43970",
+        "code": "SWE",
+        "name": "Sweden",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 5,
+        "GA": 1,
+        "GD": 4,
+        "Pts": 3
+      },
       {
         "id": "43819",
         "code": "JPN",
@@ -4976,31 +5048,17 @@
         "Pts": 1
       },
       {
-        "id": "43970",
-        "code": "SWE",
-        "name": "Sweden",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
         "id": "43888",
         "code": "TUN",
         "name": "Tunisia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUN",
-        "P": 0,
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 5,
+        "GD": -4,
         "Pts": 0
       }
     ],
