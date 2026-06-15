@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T12:41:44.085196+00:00",
+  "generatedAt": "2026-06-15T16:44:50.810005+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -833,7 +833,7 @@
       "group": "H",
       "utc": "2026-06-15T16:00:00Z",
       "localKick": "2026-06-15T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
@@ -846,7 +846,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -854,7 +854,7 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5068,34 +5068,34 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 0,
         "GA": 0,
         "GD": 0,
-        "Pts": 0
-      },
-      {
-        "id": "43835",
-        "code": "KSA",
-        "name": "Saudi Arabia",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "id": "43969",
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
         "P": 0,
         "W": 0,
         "D": 0,
