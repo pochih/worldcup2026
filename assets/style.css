@@ -179,6 +179,8 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 .match-meta .badge.group { background: rgba(0,212,170,0.15); color: var(--accent); }
 .match-meta .badge.knockout { background: rgba(255,200,87,0.18); color: var(--gold); font-weight: 600; }
 .match-meta .badge.tw { background: rgba(255,140,66,0.18); color: var(--tw); font-weight: 600; }
+.match-meta .badge.tw-free { background: rgba(0,212,170,0.20); color: var(--accent); }
+.match-meta .badge.tw-cable { background: rgba(79,195,255,0.18); color: var(--upcoming); }
 .match-meta .badge.live { background: var(--live); color: white; font-weight: 600; }
 .match-meta .badge.done { background: var(--surface-2); color: var(--done); }
 

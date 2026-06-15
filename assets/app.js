@@ -113,7 +113,7 @@ function renderCalendar() {
     const ds = `${y}-${String(m).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
     const cell = document.createElement("div");
     cell.className = "cal-cell";
-    const matches = (byDay[ds] || []).filter(mm => !FILTER_TW || mm.twBroadcast.some(b => b.includes("公視")));
+    const matches = (byDay[ds] || []).filter(mm => !FILTER_TW || mm.twBroadcast.some(b => b.includes("台視") || b.includes("無線")));
     if (matches.length) cell.classList.add("has-match");
     if (ds === today) cell.classList.add("today");
     if (ds === SELECTED_DAY) cell.classList.add("selected");
@@ -169,7 +169,12 @@ function renderDayDetail() {
       : `<span class="badge knockout">${STAGE_LABEL_ZH[mm.stage] || mm.stageLabel}</span>`;
     const liveBadge = live ? `<span class="badge live">● 進行中</span>` : "";
     const doneBadge = played ? `<span class="badge done">已結束</span>` : "";
-    const tw = mm.twBroadcast.length ? `<span class="badge tw">📺 ${mm.twBroadcast.join("／")}</span>` : "";
+    const tw = (mm.twBroadcast || []).map(b => {
+      const free = b.includes("台視") || b.includes("無線");
+      const cable = b.includes("東森") || b.includes("第四台");
+      const cls = free ? "tw tw-free" : (cable ? "tw tw-cable" : "tw");
+      return `<span class="badge ${cls}">📺 ${b}</span>`;
+    }).join(" ");
     const att = mm.attendance ? `<span class="badge">👥 ${Number(mm.attendance).toLocaleString()}</span>` : "";
 
     let goalsHtml = "";

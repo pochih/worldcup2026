@@ -22,9 +22,15 @@ TIMELINE_URL = (
     "https://api.fifa.com/api/v3/timelines/17/285023/{stage}/{match}?language=en"
 )
 
-# Taiwan broadcasters. Confirmed: Elta holds all 104 matches behind subscription.
-# No free-to-air partner is confirmed for 2026 as of mid-June.
+# Taiwan broadcasters (confirmed 2026-06-16 from ETtoday / CNA / broadcaster pages):
+#   - Elta (愛爾達): paid, all 104 matches, via OTT + MOD + Hami Video
+#   - TTV (台視):     free-to-air, sublicensed select matches (group + knockouts)
+#   - EBC (東森):    basic cable, ~40+ matches, all knockouts from R32 onward
 DEFAULT_TW_BROADCAST = ["愛爾達體育台（付費）"]
+# Heuristics for free / cable broadcasts (until per-match official list is public):
+#   TTV typically picks marquee matches: opener, hosts (USA/MEX/CAN), all knockouts
+TTV_FREE_HOST_CODES = {"USA", "MEX", "CAN"}
+# EBC covers all knockouts (R32→Final), confirmed by official page
 
 
 def pick(loc_list, default=""):
@@ -165,7 +171,18 @@ def transform(raw, stadiums, fetch_goals=True):
         meta = stadiums.get(st_name, {})
 
         match_no = m.get("MatchNumber") or 0
+        stage_k = stage_kind(stage, grp_desc)
+        home_code = (home.get("Abbreviation") or "").upper()
+        away_code = (away.get("Abbreviation") or "").upper()
         tw_broadcast = list(DEFAULT_TW_BROADCAST)
+        # EBC covers all knockout rounds (R32 → Final + 3rd place)
+        if stage_k != "group":
+            tw_broadcast.append("東森（基本第四台）")
+        # TTV: opener + host-team matches + all knockouts (free-to-air)
+        is_opener = match_no == 1
+        has_host = home_code in TTV_FREE_HOST_CODES or away_code in TTV_FREE_HOST_CODES
+        if is_opener or has_host or stage_k != "group":
+            tw_broadcast.append("台視（免費無線）")
 
         rec = {
             "id": m.get("IdMatch"),
