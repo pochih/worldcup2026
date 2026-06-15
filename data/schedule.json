@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T18:01:51.496994+00:00",
+  "generatedAt": "2026-06-15T21:20:13.313668+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -914,8 +914,8 @@
       "group": "G",
       "utc": "2026-06-15T19:00:00Z",
       "localKick": "2026-06-15T12:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Seattle Stadium",
       "city": "Seattle",
       "tz": "",
@@ -927,7 +927,7 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -935,15 +935,32 @@
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "66775",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "19'",
+          "side": "away",
+          "team": "43855",
+          "player": "E.Ashour",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "66'",
+          "side": "home",
+          "team": "43855",
+          "player": "M.Hany",
+          "score": "1-1",
+          "type": "OG"
+        }
+      ]
     },
     {
       "id": "400021490",
@@ -5199,28 +5216,28 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 1,
+        "GA": 1,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "id": "43855",
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 1,
+        "GA": 1,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "id": "43817",
