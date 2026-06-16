@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T21:20:13.313668+00:00",
+  "generatedAt": "2026-06-16T00:01:13.883745+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -797,7 +797,7 @@
       "group": "H",
       "utc": "2026-06-15T22:00:00Z",
       "localKick": "2026-06-15T18:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Miami Stadium",
       "city": "Miami",
@@ -810,7 +810,7 @@
         "code": "KSA",
         "name": "Saudi Arabia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -818,15 +818,32 @@
         "code": "URU",
         "name": "Uruguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "62764",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "41'",
+          "side": "home",
+          "team": "43835",
+          "player": "Alamri",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "80'",
+          "side": "away",
+          "team": "43930",
+          "player": "Maxi Araujo",
+          "score": "1-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021482",
@@ -5154,6 +5171,34 @@
     ],
     "H": [
       {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43930",
+        "code": "URU",
+        "name": "Uruguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
         "id": "43850",
         "code": "CPV",
         "name": "Cabo Verde",
@@ -5180,34 +5225,6 @@
         "GA": 0,
         "GD": 0,
         "Pts": 1
-      },
-      {
-        "id": "43835",
-        "code": "KSA",
-        "name": "Saudi Arabia",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "id": "43930",
-        "code": "URU",
-        "name": "Uruguay",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
       }
     ],
     "G": [
