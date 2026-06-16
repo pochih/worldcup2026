@@ -1,0 +1,401 @@
+{
+  "id": "NOR_FRA",
+  "title": "Norway 🇳🇴 vs France 🇫🇷",
+  "shortTitle": "NOR vs FRA",
+  "subtitle": "北歐神塔挑戰衛冕亞軍 · Haaland 對決法蘭西天才",
+  "stage": "小組賽 · 強強對決",
+  "venue": "AT&T Stadium, Dallas (推測)",
+  "history": [
+    {
+      "year": "1998 WC 小組",
+      "score": "NOR 2-1 BRA",
+      "note": "Norway 上次參加 WC 的高光時刻"
+    },
+    {
+      "year": "2000 友誼賽",
+      "score": "FRA 1-1 NOR",
+      "note": "近 20 年罕有正式交手"
+    },
+    {
+      "year": "Euro 2024 預選",
+      "score": "未交手",
+      "note": "兩隊近期國際賽各打各的"
+    }
+  ],
+  "home": {
+    "code": "NOR",
+    "name": "Norway",
+    "flag": "🇳🇴",
+    "color": "#ef2b2d",
+    "colorAlt": "#002868",
+    "manager": "Solbakken",
+    "formation": "4-3-3",
+    "lineup": [
+      {
+        "n": 1,
+        "name": "Nyland",
+        "pos": "GK",
+        "x": 8,
+        "y": 50
+      },
+      {
+        "n": 2,
+        "name": "Ryerson",
+        "pos": "RB",
+        "x": 22,
+        "y": 18
+      },
+      {
+        "n": 4,
+        "name": "Ajer",
+        "pos": "CB",
+        "x": 22,
+        "y": 38
+      },
+      {
+        "n": 5,
+        "name": "Strand Larsen",
+        "pos": "CB",
+        "x": 22,
+        "y": 62
+      },
+      {
+        "n": 3,
+        "name": "Bjørkan",
+        "pos": "LB",
+        "x": 22,
+        "y": 82
+      },
+      {
+        "n": 6,
+        "name": "Berge",
+        "pos": "DM",
+        "x": 38,
+        "y": 50
+      },
+      {
+        "n": 10,
+        "name": "Ødegaard (C)",
+        "pos": "AM",
+        "x": 50,
+        "y": 35
+      },
+      {
+        "n": 8,
+        "name": "Aasgaard",
+        "pos": "CM",
+        "x": 50,
+        "y": 65
+      },
+      {
+        "n": 17,
+        "name": "Nusa",
+        "pos": "LW",
+        "x": 62,
+        "y": 82
+      },
+      {
+        "n": 9,
+        "name": "Haaland",
+        "pos": "ST",
+        "x": 70,
+        "y": 50
+      },
+      {
+        "n": 11,
+        "name": "Sørloth",
+        "pos": "RW",
+        "x": 62,
+        "y": 18
+      }
+    ],
+    "arrows": [
+      {
+        "from": [
+          50,
+          35
+        ],
+        "to": [
+          68,
+          48
+        ],
+        "label": "Ødegaard 直塞 Haaland"
+      },
+      {
+        "from": [
+          62,
+          82
+        ],
+        "to": [
+          78,
+          60
+        ],
+        "label": "Nusa 過人"
+      },
+      {
+        "from": [
+          70,
+          50
+        ],
+        "to": [
+          85,
+          50
+        ],
+        "label": "Haaland 衝擊禁區"
+      }
+    ],
+    "stats": {
+      "attack": 8.0,
+      "defense": 6.5,
+      "midfield": 7.0,
+      "fitness": 7.5,
+      "experience": 5.5,
+      "stars": 9.0
+    }
+  },
+  "away": {
+    "code": "FRA",
+    "name": "France",
+    "flag": "🇫🇷",
+    "color": "#0055a4",
+    "colorAlt": "#ef4135",
+    "manager": "Deschamps",
+    "formation": "4-2-3-1",
+    "lineup": [
+      {
+        "n": 16,
+        "name": "Maignan",
+        "pos": "GK",
+        "x": 92,
+        "y": 50
+      },
+      {
+        "n": 5,
+        "name": "Koundé",
+        "pos": "RB",
+        "x": 78,
+        "y": 82
+      },
+      {
+        "n": 17,
+        "name": "Saliba",
+        "pos": "CB",
+        "x": 78,
+        "y": 62
+      },
+      {
+        "n": 4,
+        "name": "Upamecano",
+        "pos": "CB",
+        "x": 78,
+        "y": 38
+      },
+      {
+        "n": 3,
+        "name": "T. Hernández",
+        "pos": "LB",
+        "x": 78,
+        "y": 18
+      },
+      {
+        "n": 8,
+        "name": "Tchouaméni",
+        "pos": "DM",
+        "x": 62,
+        "y": 38
+      },
+      {
+        "n": 13,
+        "name": "Camavinga",
+        "pos": "DM",
+        "x": 62,
+        "y": 62
+      },
+      {
+        "n": 11,
+        "name": "Doué",
+        "pos": "RW",
+        "x": 44,
+        "y": 82
+      },
+      {
+        "n": 7,
+        "name": "Olise",
+        "pos": "AM",
+        "x": 44,
+        "y": 50
+      },
+      {
+        "n": 22,
+        "name": "Barcola",
+        "pos": "LW",
+        "x": 44,
+        "y": 18
+      },
+      {
+        "n": 10,
+        "name": "Mbappé (C)",
+        "pos": "ST",
+        "x": 30,
+        "y": 50
+      }
+    ],
+    "arrows": [
+      {
+        "from": [
+          44,
+          50
+        ],
+        "to": [
+          30,
+          40
+        ],
+        "label": "Olise 串聯 Mbappé"
+      },
+      {
+        "from": [
+          44,
+          18
+        ],
+        "to": [
+          22,
+          30
+        ],
+        "label": "Barcola 邊路爆破"
+      },
+      {
+        "from": [
+          30,
+          50
+        ],
+        "to": [
+          12,
+          50
+        ],
+        "label": "Mbappé 突破"
+      }
+    ],
+    "stats": {
+      "attack": 9.5,
+      "defense": 8.5,
+      "midfield": 8.8,
+      "fitness": 8.5,
+      "experience": 9.0,
+      "stars": 9.5
+    }
+  },
+  "timeline": [
+    {
+      "min": 8,
+      "side": "home",
+      "type": "chance",
+      "text": "Haaland 高位逼搶差點製造機會"
+    },
+    {
+      "min": 22,
+      "side": "away",
+      "type": "control",
+      "text": "France 中場 Tchouaméni-Camavinga 雙樞紐穩住節奏"
+    },
+    {
+      "min": 35,
+      "side": "away",
+      "type": "goal",
+      "text": "Mbappé 利用速度單刀破門",
+      "score": "0-1"
+    },
+    {
+      "min": 45,
+      "side": "neutral",
+      "type": "halftime",
+      "text": "半場：Norway 0-1 France"
+    },
+    {
+      "min": 60,
+      "side": "away",
+      "type": "goal",
+      "text": "Olise 接 Mbappé 助攻第二球",
+      "score": "0-2"
+    },
+    {
+      "min": 75,
+      "side": "home",
+      "type": "goal",
+      "text": "Haaland 力拼下頭槌爭回顏面",
+      "score": "1-2"
+    },
+    {
+      "min": 88,
+      "side": "away",
+      "type": "goal",
+      "text": "Mbappé 反擊鎖定勝局",
+      "score": "1-3"
+    },
+    {
+      "min": 90,
+      "side": "neutral",
+      "type": "fulltime",
+      "text": "全場：Norway 1-3 France"
+    }
+  ],
+  "referee": {
+    "style": "南美/拉丁奔放派",
+    "tendency": "對速度型球員衝撞容忍度低，Mbappé/Doué 容易製造任意球；Haaland 因 frustration 易累計黃牌",
+    "impact": "定位球將是 France 額外得分來源，Norway 後防壓力倍增"
+  },
+  "keyDuels": [
+    {
+      "home": "Haaland",
+      "away": "Saliba",
+      "note": "英超已多次交手，Saliba 速度+對抗能壓制 Haaland 背身"
+    },
+    {
+      "home": "Ødegaard",
+      "away": "Tchouaméni",
+      "note": "中場核心對決，攔截 vs 創造"
+    },
+    {
+      "home": "Ryerson",
+      "away": "Mbappé",
+      "note": "右後衛 Ryerson 速度恐難跟上 Mbappé 內切"
+    }
+  ],
+  "predict": {
+    "score": "France 3-1 Norway",
+    "confidence": 75,
+    "winner": "away",
+    "reasoning": "Norway 後防線速度與經驗都不足以擋住 France 三叉戟。Haaland 雖然神勇，但獨木難支——若 Ødegaard 被切斷，Norway 的進攻組織會崩潰。France 預期掌控中場、伺機反擊。",
+    "scenarios": [
+      {
+        "score": "FRA 3-1 NOR",
+        "prob": 30,
+        "desc": "最可能 — Mbappé 雙響 + Haaland 安慰球"
+      },
+      {
+        "score": "FRA 2-1 NOR",
+        "prob": 22,
+        "desc": "Norway 拼到底但仍輸一球"
+      },
+      {
+        "score": "FRA 2-0 NOR",
+        "prob": 18,
+        "desc": "Saliba 完全凍結 Haaland"
+      },
+      {
+        "score": "FRA 4-1 NOR",
+        "prob": 12,
+        "desc": "Mbappé 帽子戲法演出"
+      },
+      {
+        "score": "FRA 1-1 NOR",
+        "prob": 10,
+        "desc": "Haaland 進球 + Norway 死守一分"
+      },
+      {
+        "score": "NOR 2-1 FRA",
+        "prob": 8,
+        "desc": "大冷門 — Haaland 雙響爆冷"
+      }
+    ]
+  }
+}

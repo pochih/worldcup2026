@@ -598,6 +598,42 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
   border-radius: 50%; margin-right: 4px; vertical-align: middle;
 }
 
+.arrow-legend {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin: 10px 0 4px;
+}
+.arrow-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--bg-2);
+  padding: 4px 10px; border-radius: 14px;
+  font-size: 11px; font-weight: 600;
+  border: 1px solid var(--border);
+}
+.arrow-chip .arrow-line {
+  display: inline-block; width: 14px; height: 2px;
+  border-radius: 1px;
+}
+.arrow-chip .arrow-side {
+  font-size: 10px; font-weight: 800;
+  color: var(--text-dim);
+  background: var(--surface); padding: 1px 6px; border-radius: 8px;
+}
+.arrow-chip .arrow-label { color: var(--text); }
+
+.auto-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 12px;
+  background: rgba(156, 137, 255, 0.18);
+  color: #c1b3ff;
+  border: 1px solid rgba(156, 137, 255, 0.4);
+}
+.auto-badge.hypothetical {
+  background: rgba(255, 200, 87, 0.16);
+  color: var(--gold);
+  border-color: rgba(255, 200, 87, 0.4);
+}
+
 .history-list {
   display: flex; flex-direction: column; gap: 6px;
 }

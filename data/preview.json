@@ -1,7 +1,355 @@
 {
-  "_generatedAt": "2026-06-17",
-  "_note": "強強對決前瞻戰報。每場含首發、走勢、裁判推測、預測比分、雙方數據雷達。戰術板採 100x140 球場座標（橫式，左方為主隊、右方為客隊）。",
+  "_generatedAt": "2026-06-16T23:25:38.851334+00:00",
+  "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
+    {
+      "id": "BRA_MAR_7",
+      "_auto": true,
+      "_kickoffUtc": "2026-06-13T22:00:00Z",
+      "_matchNo": 7,
+      "title": "巴西 🇧🇷 vs 🇲🇦 摩洛哥",
+      "shortTitle": "BRA vs MAR",
+      "subtitle": "FIFA 排名 #5 vs #12",
+      "stage": "小組賽 · 強強對決",
+      "venue": "New York/New Jersey Stadium (New Jersey",
+      "history": [],
+      "home": {
+        "code": "BRA",
+        "name": "巴西",
+        "flag": "🇧🇷",
+        "color": "#ffdf00",
+        "colorAlt": "#ffdf00",
+        "manager": "Ancelotti",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "RB",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 8,
+            "name": "布魯諾",
+            "pos": "CM",
+            "x": 40,
+            "y": 30
+          },
+          {
+            "n": 10,
+            "name": "內馬爾",
+            "pos": "DM",
+            "x": 40,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "CM",
+            "pos": "CM",
+            "x": 40,
+            "y": 70
+          },
+          {
+            "n": 7,
+            "name": "維尼修斯",
+            "pos": "RW",
+            "x": 60,
+            "y": 18
+          },
+          {
+            "n": 11,
+            "name": "拉菲尼亞",
+            "pos": "ST",
+            "x": 68,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "LW",
+            "pos": "LW",
+            "x": 60,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              60,
+              18
+            ],
+            "to": [
+              78,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              68,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "stats": {
+          "attack": 9.5,
+          "defense": 7.5,
+          "midfield": 8.5,
+          "fitness": 8.5,
+          "experience": 8.5,
+          "stars": 9.5
+        }
+      },
+      "away": {
+        "code": "MAR",
+        "name": "摩洛哥",
+        "flag": "🇲🇦",
+        "color": "#c1272d",
+        "colorAlt": "#c1272d",
+        "manager": "Regragui",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "哈基米",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "馬拉維",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 10,
+            "name": "白咸·迪亞斯",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 7,
+            "name": "DM",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "CM",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 19,
+            "name": "恩尼斯利",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 10,
+            "name": "ST",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "LW",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "stats": {
+          "attack": 6.5,
+          "defense": 8.0,
+          "midfield": 7.5,
+          "fitness": 8.0,
+          "experience": 7.5,
+          "stars": 7.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "home",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：BRA 2-1 MAR (中場時)"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "扳回一城",
+          "score": "1-1"
+        },
+        {
+          "min": 68,
+          "side": "home",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "2-1"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：BRA 2-1 MAR"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "維尼修斯",
+          "away": "MAR #3 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "BRA #3 (CB)",
+          "away": "恩尼斯利",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "內馬爾",
+          "away": "白咸·迪亞斯",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "predict": {
+        "score": "2-1",
+        "confidence": 61,
+        "winner": "home",
+        "reasoning": "主隊在進攻佔優 (3.0)；主隊在球星佔優 (2.0)，預期主隊取勝。",
+        "scenarios": [
+          {
+            "score": "2-1",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "1-0",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
     {
       "id": "ENG_CRO",
       "title": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs Croatia 🇭🇷",
@@ -10,9 +358,21 @@
       "stage": "小組賽 · 強強對決",
       "venue": "MetLife Stadium, New Jersey (推測)",
       "history": [
-        { "year": "2018 WC 4 強", "score": "CRO 2-1 ENG", "note": "Mandžukić 加時絕殺" },
-        { "year": "Euro 2020 小組", "score": "ENG 1-0 CRO", "note": "Sterling 進球" },
-        { "year": "Euro 2024 小組", "score": "ENG 1-0 CRO", "note": "Bellingham 破門" }
+        {
+          "year": "2018 WC 4 強",
+          "score": "CRO 2-1 ENG",
+          "note": "Mandžukić 加時絕殺"
+        },
+        {
+          "year": "Euro 2020 小組",
+          "score": "ENG 1-0 CRO",
+          "note": "Sterling 進球"
+        },
+        {
+          "year": "Euro 2024 小組",
+          "score": "ENG 1-0 CRO",
+          "note": "Bellingham 破門"
+        }
       ],
       "home": {
         "code": "ENG",
@@ -23,24 +383,127 @@
         "manager": "Tuchel",
         "formation": "4-2-3-1",
         "lineup": [
-          { "n": 1,  "name": "Pickford",       "pos": "GK",  "x": 8,  "y": 50 },
-          { "n": 2,  "name": "Walker",         "pos": "RB",  "x": 22, "y": 18 },
-          { "n": 5,  "name": "Stones",         "pos": "CB",  "x": 22, "y": 38 },
-          { "n": 6,  "name": "Konsa",          "pos": "CB",  "x": 22, "y": 62 },
-          { "n": 3,  "name": "Lewis-Skelly",   "pos": "LB",  "x": 22, "y": 82 },
-          { "n": 4,  "name": "Rice",           "pos": "DM",  "x": 38, "y": 38 },
-          { "n": 8,  "name": "Wharton",        "pos": "DM",  "x": 38, "y": 62 },
-          { "n": 7,  "name": "Saka",           "pos": "RW",  "x": 56, "y": 18 },
-          { "n": 10, "name": "Bellingham",     "pos": "AM",  "x": 56, "y": 50 },
-          { "n": 11, "name": "Foden",          "pos": "LW",  "x": 56, "y": 82 },
-          { "n": 9,  "name": "Kane (C)",       "pos": "ST",  "x": 70, "y": 50 }
+          {
+            "n": 1,
+            "name": "Pickford",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "Walker",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 5,
+            "name": "Stones",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 6,
+            "name": "Konsa",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 3,
+            "name": "Lewis-Skelly",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 4,
+            "name": "Rice",
+            "pos": "DM",
+            "x": 38,
+            "y": 38
+          },
+          {
+            "n": 8,
+            "name": "Wharton",
+            "pos": "DM",
+            "x": 38,
+            "y": 62
+          },
+          {
+            "n": 7,
+            "name": "Saka",
+            "pos": "RW",
+            "x": 56,
+            "y": 18
+          },
+          {
+            "n": 10,
+            "name": "Bellingham",
+            "pos": "AM",
+            "x": 56,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "Foden",
+            "pos": "LW",
+            "x": 56,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "Kane (C)",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          }
         ],
         "arrows": [
-          { "from": [56, 18], "to": [78, 28], "label": "Saka 內切" },
-          { "from": [56, 82], "to": [70, 70], "label": "Foden 連線" },
-          { "from": [56, 50], "to": [72, 42], "label": "Bellingham 後插上" }
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              78,
+              28
+            ],
+            "label": "Saka 內切"
+          },
+          {
+            "from": [
+              56,
+              82
+            ],
+            "to": [
+              70,
+              70
+            ],
+            "label": "Foden 連線"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              72,
+              42
+            ],
+            "label": "Bellingham 後插上"
+          }
         ],
-        "stats": { "attack": 8.5, "defense": 8.0, "midfield": 8.2, "fitness": 8.5, "experience": 7.8, "stars": 9.0 }
+        "stats": {
+          "attack": 8.5,
+          "defense": 8.0,
+          "midfield": 8.2,
+          "fitness": 8.5,
+          "experience": 7.8,
+          "stars": 9.0
+        }
       },
       "away": {
         "code": "CRO",
@@ -51,34 +514,180 @@
         "manager": "Dalić",
         "formation": "4-3-3",
         "lineup": [
-          { "n": 1,  "name": "Livaković",  "pos": "GK",  "x": 92, "y": 50 },
-          { "n": 2,  "name": "Stanišić",   "pos": "RB",  "x": 78, "y": 82 },
-          { "n": 6,  "name": "Šutalo",     "pos": "CB",  "x": 78, "y": 62 },
-          { "n": 5,  "name": "Gvardiol",   "pos": "CB",  "x": 78, "y": 38 },
-          { "n": 19, "name": "Sosa",       "pos": "LB",  "x": 78, "y": 18 },
-          { "n": 10, "name": "Modrić (C)", "pos": "CM",  "x": 60, "y": 35 },
-          { "n": 8,  "name": "Kovačić",    "pos": "DM",  "x": 60, "y": 50 },
-          { "n": 13, "name": "Sučić",      "pos": "CM",  "x": 60, "y": 65 },
-          { "n": 9,  "name": "Kramarić",   "pos": "RW",  "x": 42, "y": 80 },
-          { "n": 17, "name": "Petković",   "pos": "ST",  "x": 32, "y": 50 },
-          { "n": 14, "name": "Baturina",   "pos": "LW",  "x": 42, "y": 20 }
+          {
+            "n": 1,
+            "name": "Livaković",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "Stanišić",
+            "pos": "RB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 6,
+            "name": "Šutalo",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "Gvardiol",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 19,
+            "name": "Sosa",
+            "pos": "LB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 10,
+            "name": "Modrić (C)",
+            "pos": "CM",
+            "x": 60,
+            "y": 35
+          },
+          {
+            "n": 8,
+            "name": "Kovačić",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 13,
+            "name": "Sučić",
+            "pos": "CM",
+            "x": 60,
+            "y": 65
+          },
+          {
+            "n": 9,
+            "name": "Kramarić",
+            "pos": "RW",
+            "x": 42,
+            "y": 80
+          },
+          {
+            "n": 17,
+            "name": "Petković",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 14,
+            "name": "Baturina",
+            "pos": "LW",
+            "x": 42,
+            "y": 20
+          }
         ],
         "arrows": [
-          { "from": [60, 35], "to": [42, 30], "label": "Modrić 直塞" },
-          { "from": [42, 80], "to": [28, 60], "label": "Kramarić 邊路" },
-          { "from": [32, 50], "to": [20, 50], "label": "Petković 衝刺" }
+          {
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              42,
+              30
+            ],
+            "label": "Modrić 直塞"
+          },
+          {
+            "from": [
+              42,
+              80
+            ],
+            "to": [
+              28,
+              60
+            ],
+            "label": "Kramarić 邊路"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              20,
+              50
+            ],
+            "label": "Petković 衝刺"
+          }
         ],
-        "stats": { "attack": 7.0, "defense": 7.5, "midfield": 8.5, "fitness": 6.5, "experience": 9.0, "stars": 7.5 }
+        "stats": {
+          "attack": 7.0,
+          "defense": 7.5,
+          "midfield": 8.5,
+          "fitness": 6.5,
+          "experience": 9.0,
+          "stars": 7.5
+        }
       },
       "timeline": [
-        { "min": 5,  "side": "away", "type": "control",   "text": "Modrić 接管中場節奏，Croatia 控球率 65%" },
-        { "min": 18, "side": "home", "type": "chance",    "text": "Saka 邊路內切製造首次射門" },
-        { "min": 32, "side": "home", "type": "goal",      "text": "Bellingham 禁區弧頂遠射開紀錄", "score": "1-0" },
-        { "min": 45, "side": "neutral","type": "halftime","text": "半場：England 1-0 Croatia" },
-        { "min": 58, "side": "away", "type": "goal",      "text": "Petković 角球頭槌扳平", "score": "1-1" },
-        { "min": 70, "side": "home", "type": "sub",       "text": "Tuchel 換上 Palmer 加強進攻" },
-        { "min": 78, "side": "home", "type": "goal",      "text": "Kane 接 Foden 傳中近距離破門", "score": "2-1" },
-        { "min": 90, "side": "neutral","type": "fulltime","text": "全場：England 2-1 Croatia" }
+        {
+          "min": 5,
+          "side": "away",
+          "type": "control",
+          "text": "Modrić 接管中場節奏，Croatia 控球率 65%"
+        },
+        {
+          "min": 18,
+          "side": "home",
+          "type": "chance",
+          "text": "Saka 邊路內切製造首次射門"
+        },
+        {
+          "min": 32,
+          "side": "home",
+          "type": "goal",
+          "text": "Bellingham 禁區弧頂遠射開紀錄",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：England 1-0 Croatia"
+        },
+        {
+          "min": 58,
+          "side": "away",
+          "type": "goal",
+          "text": "Petković 角球頭槌扳平",
+          "score": "1-1"
+        },
+        {
+          "min": 70,
+          "side": "home",
+          "type": "sub",
+          "text": "Tuchel 換上 Palmer 加強進攻"
+        },
+        {
+          "min": 78,
+          "side": "home",
+          "type": "goal",
+          "text": "Kane 接 Foden 傳中近距離破門",
+          "score": "2-1"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：England 2-1 Croatia"
+        }
       ],
       "referee": {
         "style": "歐洲嚴謹派",
@@ -86,9 +695,21 @@
         "impact": "Croatia 中場 Modrić/Kovačić 易累計黃牌，影響後段防守強度"
       },
       "keyDuels": [
-        { "home": "Bellingham",   "away": "Modrić",   "note": "中場 C 位傳承之戰，新王 vs 老王" },
-        { "home": "Saka",         "away": "Sosa",     "note": "邊路速度爆破，Sosa 防守是隱憂" },
-        { "home": "Kane",         "away": "Šutalo",   "note": "禁區制空權，Kane 把握機會能力一流" }
+        {
+          "home": "Bellingham",
+          "away": "Modrić",
+          "note": "中場 C 位傳承之戰，新王 vs 老王"
+        },
+        {
+          "home": "Saka",
+          "away": "Sosa",
+          "note": "邊路速度爆破，Sosa 防守是隱憂"
+        },
+        {
+          "home": "Kane",
+          "away": "Šutalo",
+          "note": "禁區制空權，Kane 把握機會能力一流"
+        }
       ],
       "predict": {
         "score": "England 2-1 Croatia",
@@ -96,11 +717,1078 @@
         "winner": "home",
         "reasoning": "Croatia 中場質量仍是世界級，但 Modrić 已 40 歲、Kovačić 體能下滑，下半場後段難擋 England 邊路衝擊。Tuchel 的高壓 + Bellingham 後插上是制勝關鍵。",
         "scenarios": [
-          { "score": "ENG 2-1 CRO", "prob": 35, "desc": "最可能 — 三獅後段體能取勝" },
-          { "score": "ENG 1-1 CRO", "prob": 22, "desc": "Croatia 老謀深算守住一分" },
-          { "score": "ENG 3-1 CRO", "prob": 18, "desc": "Bellingham/Kane 連環破門" },
-          { "score": "CRO 2-1 ENG", "prob": 15, "desc": "Modrić 史詩級告別演出" },
-          { "score": "ENG 1-0 CRO", "prob": 10, "desc": "防守戰，定位球決勝" }
+          {
+            "score": "ENG 2-1 CRO",
+            "prob": 35,
+            "desc": "最可能 — 三獅後段體能取勝"
+          },
+          {
+            "score": "ENG 1-1 CRO",
+            "prob": 22,
+            "desc": "Croatia 老謀深算守住一分"
+          },
+          {
+            "score": "ENG 3-1 CRO",
+            "prob": 18,
+            "desc": "Bellingham/Kane 連環破門"
+          },
+          {
+            "score": "CRO 2-1 ENG",
+            "prob": 15,
+            "desc": "Modrić 史詩級告別演出"
+          },
+          {
+            "score": "ENG 1-0 CRO",
+            "prob": 10,
+            "desc": "防守戰，定位球決勝"
+          }
+        ]
+      },
+      "_auto": false,
+      "_kickoffUtc": "2026-06-17T20:00:00Z",
+      "_matchNo": 22
+    },
+    {
+      "id": "MEX_KOR_28",
+      "_auto": true,
+      "_kickoffUtc": "2026-06-19T01:00:00Z",
+      "_matchNo": 28,
+      "title": "墨西哥 🇲🇽 vs 🇰🇷 南韓",
+      "shortTitle": "MEX vs KOR",
+      "subtitle": "FIFA 排名 #17 vs #23",
+      "stage": "小組賽 · 強強對決",
+      "venue": "Guadalajara Stadium (Guadalajara",
+      "history": [],
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "flag": "🇲🇽",
+        "color": "#006847",
+        "colorAlt": "#006847",
+        "manager": "Aguirre",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "RB",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 4,
+            "name": "艾爾韋斯",
+            "pos": "CM",
+            "x": 40,
+            "y": 30
+          },
+          {
+            "n": 19,
+            "name": "莫拉",
+            "pos": "DM",
+            "x": 40,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "CM",
+            "pos": "CM",
+            "x": 40,
+            "y": 70
+          },
+          {
+            "n": 9,
+            "name": "勞爾",
+            "pos": "RW",
+            "x": 60,
+            "y": 18
+          },
+          {
+            "n": 11,
+            "name": "聖地亞哥",
+            "pos": "ST",
+            "x": 68,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "LW",
+            "pos": "LW",
+            "x": 60,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              60,
+              18
+            ],
+            "to": [
+              78,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              68,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "stats": {
+          "attack": 7.0,
+          "defense": 6.5,
+          "midfield": 7.0,
+          "fitness": 7.5,
+          "experience": 7.5,
+          "stars": 6.5
+        }
+      },
+      "away": {
+        "code": "KOR",
+        "name": "南韓",
+        "flag": "🇰🇷",
+        "color": "#cd2e3a",
+        "colorAlt": "#cd2e3a",
+        "manager": "Hong Myung-bo",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 4,
+            "name": "金玟哉",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 19,
+            "name": "李剛仁",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 7,
+            "name": "DM",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "CM",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 7,
+            "name": "孫興慜",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 11,
+            "name": "黃喜燦",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "LW",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "stats": {
+          "attack": 7.5,
+          "defense": 6.0,
+          "midfield": 7.5,
+          "fitness": 7.5,
+          "experience": 7.0,
+          "stars": 8.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "away",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "扳回一城",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：MEX 1-2 KOR (中場時)"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "1-1"
+        },
+        {
+          "min": 78,
+          "side": "away",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "1-2"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：MEX 1-2 KOR"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "勞爾",
+          "away": "金玟哉",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "MEX #3 (CB)",
+          "away": "孫興慜",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "艾爾韋斯",
+          "away": "李剛仁",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "predict": {
+        "score": "1-2",
+        "confidence": 52,
+        "winner": "away",
+        "reasoning": "客隊在球星佔優 (2.0)；客隊在進攻佔優 (0.5)，預期客隊取勝。",
+        "scenarios": [
+          {
+            "score": "1-2",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "0-1",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-2",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NOR_SEN_41",
+      "_auto": true,
+      "_kickoffUtc": "2026-06-23T00:00:00Z",
+      "_matchNo": 41,
+      "title": "挪威 🇳🇴 vs 🇸🇳 塞內加爾",
+      "shortTitle": "NOR vs SEN",
+      "subtitle": "FIFA 排名 #14 vs #20",
+      "stage": "小組賽 · 強強對決",
+      "venue": "New York/New Jersey Stadium (New Jersey",
+      "history": [],
+      "home": {
+        "code": "NOR",
+        "name": "挪威",
+        "flag": "🇳🇴",
+        "color": "#ef2b2d",
+        "colorAlt": "#ef2b2d",
+        "manager": "Solbakken",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "RB",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 8,
+            "name": "奧迪加特",
+            "pos": "CM",
+            "x": 40,
+            "y": 30
+          },
+          {
+            "n": 7,
+            "name": "DM",
+            "pos": "DM",
+            "x": 40,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "CM",
+            "pos": "CM",
+            "x": 40,
+            "y": 70
+          },
+          {
+            "n": 9,
+            "name": "哈蘭德",
+            "pos": "RW",
+            "x": 60,
+            "y": 18
+          },
+          {
+            "n": 20,
+            "name": "努薩",
+            "pos": "ST",
+            "x": 68,
+            "y": 50
+          },
+          {
+            "n": 7,
+            "name": "索路夫",
+            "pos": "LW",
+            "x": 60,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              60,
+              18
+            ],
+            "to": [
+              78,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              68,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "stats": {
+          "attack": 9.0,
+          "defense": 7.0,
+          "midfield": 8.0,
+          "fitness": 8.0,
+          "experience": 6.5,
+          "stars": 9.5
+        }
+      },
+      "away": {
+        "code": "SEN",
+        "name": "塞內加爾",
+        "flag": "🇸🇳",
+        "color": "#00853f",
+        "colorAlt": "#00853f",
+        "manager": "Pape Thiaw",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "RB",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 6,
+            "name": "CM",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 7,
+            "name": "DM",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "CM",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 9,
+            "name": "RW",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 10,
+            "name": "ST",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "LW",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "stats": {
+          "attack": 7.0,
+          "defense": 7.5,
+          "midfield": 7.0,
+          "fitness": 8.0,
+          "experience": 7.5,
+          "stars": 7.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "home",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：NOR 2-1 SEN (中場時)"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "扳回一城",
+          "score": "1-1"
+        },
+        {
+          "min": 68,
+          "side": "home",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "2-1"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：NOR 2-1 SEN"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "哈蘭德",
+          "away": "SEN #3 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "NOR #3 (CB)",
+          "away": "SEN #9 (RW)",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "奧迪加特",
+          "away": "SEN #6 (CM)",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "predict": {
+        "score": "2-1",
+        "confidence": 57,
+        "winner": "home",
+        "reasoning": "主隊在進攻佔優 (2.0)；主隊在球星佔優 (2.0)，預期主隊取勝。",
+        "scenarios": [
+          {
+            "score": "2-1",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "1-0",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "COL_POR_71",
+      "_auto": true,
+      "_kickoffUtc": "2026-06-27T23:30:00Z",
+      "_matchNo": 71,
+      "title": "哥倫比亞 🇨🇴 vs 🇵🇹 葡萄牙",
+      "shortTitle": "COL vs POR",
+      "subtitle": "FIFA 排名 #11 vs #7",
+      "stage": "小組賽 · 強強對決",
+      "venue": "Miami Stadium (Miami",
+      "history": [],
+      "home": {
+        "code": "COL",
+        "name": "哥倫比亞",
+        "flag": "🇨🇴",
+        "color": "#fcd116",
+        "colorAlt": "#fcd116",
+        "manager": "Lorenzo",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 22,
+            "name": "穆紐斯",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 6,
+            "name": "里奧斯",
+            "pos": "DM",
+            "x": 38,
+            "y": 38
+          },
+          {
+            "n": 10,
+            "name": "占士·洛迪古斯",
+            "pos": "DM",
+            "x": 38,
+            "y": 62
+          },
+          {
+            "n": 7,
+            "name": "迪亞斯",
+            "pos": "RW",
+            "x": 56,
+            "y": 18
+          },
+          {
+            "n": 9,
+            "name": "AM",
+            "pos": "AM",
+            "x": 56,
+            "y": 50
+          },
+          {
+            "n": 10,
+            "name": "LW",
+            "pos": "LW",
+            "x": 56,
+            "y": 82
+          },
+          {
+            "n": 11,
+            "name": "ST",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              78,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              72,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "stats": {
+          "attack": 8.0,
+          "defense": 7.0,
+          "midfield": 8.0,
+          "fitness": 7.5,
+          "experience": 7.5,
+          "stars": 8.0
+        }
+      },
+      "away": {
+        "code": "POR",
+        "name": "葡萄牙",
+        "flag": "🇵🇹",
+        "color": "#006600",
+        "colorAlt": "#006600",
+        "manager": "Roberto Martínez",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "GK",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "RB",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "CB",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "LB",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 20,
+            "name": "B 席",
+            "pos": "DM",
+            "x": 62,
+            "y": 38
+          },
+          {
+            "n": 8,
+            "name": "B 費",
+            "pos": "DM",
+            "x": 62,
+            "y": 62
+          },
+          {
+            "n": 7,
+            "name": "C 羅",
+            "pos": "RW",
+            "x": 44,
+            "y": 18
+          },
+          {
+            "n": 17,
+            "name": "萊昂",
+            "pos": "AM",
+            "x": 44,
+            "y": 50
+          },
+          {
+            "n": 10,
+            "name": "LW",
+            "pos": "LW",
+            "x": 44,
+            "y": 82
+          },
+          {
+            "n": 11,
+            "name": "ST",
+            "pos": "ST",
+            "x": 30,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              22,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              28,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "stats": {
+          "attack": 9.0,
+          "defense": 7.5,
+          "midfield": 8.5,
+          "fitness": 8.0,
+          "experience": 8.5,
+          "stars": 9.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "away",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "扳回一城",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：COL 1-2 POR (中場時)"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "1-1"
+        },
+        {
+          "min": 78,
+          "side": "away",
+          "type": "goal",
+          "text": "破門，比分擴大",
+          "score": "1-2"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：COL 1-2 POR"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "迪亞斯",
+          "away": "POR #3 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "COL #3 (CB)",
+          "away": "C 羅",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "占士·洛迪古斯",
+          "away": "B 費",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "predict": {
+        "score": "1-2",
+        "confidence": 56,
+        "winner": "away",
+        "reasoning": "客隊在球星佔優 (1.5)；客隊在進攻佔優 (1.0)，預期客隊取勝。",
+        "scenarios": [
+          {
+            "score": "1-2",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "0-1",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-2",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
+            "prob": 14,
+            "desc": "可能情境"
+          }
         ]
       }
     },
@@ -112,9 +1800,21 @@
       "stage": "小組賽 · 強強對決",
       "venue": "AT&T Stadium, Dallas (推測)",
       "history": [
-        { "year": "1998 WC 小組", "score": "NOR 2-1 BRA", "note": "Norway 上次參加 WC 的高光時刻" },
-        { "year": "2000 友誼賽",  "score": "FRA 1-1 NOR", "note": "近 20 年罕有正式交手" },
-        { "year": "Euro 2024 預選","score": "未交手",      "note": "兩隊近期國際賽各打各的" }
+        {
+          "year": "1998 WC 小組",
+          "score": "NOR 2-1 BRA",
+          "note": "Norway 上次參加 WC 的高光時刻"
+        },
+        {
+          "year": "2000 友誼賽",
+          "score": "FRA 1-1 NOR",
+          "note": "近 20 年罕有正式交手"
+        },
+        {
+          "year": "Euro 2024 預選",
+          "score": "未交手",
+          "note": "兩隊近期國際賽各打各的"
+        }
       ],
       "home": {
         "code": "NOR",
@@ -125,24 +1825,127 @@
         "manager": "Solbakken",
         "formation": "4-3-3",
         "lineup": [
-          { "n": 1,  "name": "Nyland",          "pos": "GK", "x": 8,  "y": 50 },
-          { "n": 2,  "name": "Ryerson",         "pos": "RB", "x": 22, "y": 18 },
-          { "n": 4,  "name": "Ajer",            "pos": "CB", "x": 22, "y": 38 },
-          { "n": 5,  "name": "Strand Larsen",   "pos": "CB", "x": 22, "y": 62 },
-          { "n": 3,  "name": "Bjørkan",         "pos": "LB", "x": 22, "y": 82 },
-          { "n": 6,  "name": "Berge",           "pos": "DM", "x": 38, "y": 50 },
-          { "n": 10, "name": "Ødegaard (C)",    "pos": "AM", "x": 50, "y": 35 },
-          { "n": 8,  "name": "Aasgaard",        "pos": "CM", "x": 50, "y": 65 },
-          { "n": 17, "name": "Nusa",            "pos": "LW", "x": 62, "y": 82 },
-          { "n": 9,  "name": "Haaland",         "pos": "ST", "x": 70, "y": 50 },
-          { "n": 11, "name": "Sørloth",         "pos": "RW", "x": 62, "y": 18 }
+          {
+            "n": 1,
+            "name": "Nyland",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "Ryerson",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 4,
+            "name": "Ajer",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 5,
+            "name": "Strand Larsen",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 3,
+            "name": "Bjørkan",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 6,
+            "name": "Berge",
+            "pos": "DM",
+            "x": 38,
+            "y": 50
+          },
+          {
+            "n": 10,
+            "name": "Ødegaard (C)",
+            "pos": "AM",
+            "x": 50,
+            "y": 35
+          },
+          {
+            "n": 8,
+            "name": "Aasgaard",
+            "pos": "CM",
+            "x": 50,
+            "y": 65
+          },
+          {
+            "n": 17,
+            "name": "Nusa",
+            "pos": "LW",
+            "x": 62,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "Haaland",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "Sørloth",
+            "pos": "RW",
+            "x": 62,
+            "y": 18
+          }
         ],
         "arrows": [
-          { "from": [50, 35], "to": [68, 48], "label": "Ødegaard 直塞 Haaland" },
-          { "from": [62, 82], "to": [78, 60], "label": "Nusa 過人" },
-          { "from": [70, 50], "to": [85, 50], "label": "Haaland 衝擊禁區" }
+          {
+            "from": [
+              50,
+              35
+            ],
+            "to": [
+              68,
+              48
+            ],
+            "label": "Ødegaard 直塞 Haaland"
+          },
+          {
+            "from": [
+              62,
+              82
+            ],
+            "to": [
+              78,
+              60
+            ],
+            "label": "Nusa 過人"
+          },
+          {
+            "from": [
+              70,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "Haaland 衝擊禁區"
+          }
         ],
-        "stats": { "attack": 8.0, "defense": 6.5, "midfield": 7.0, "fitness": 7.5, "experience": 5.5, "stars": 9.0 }
+        "stats": {
+          "attack": 8.0,
+          "defense": 6.5,
+          "midfield": 7.0,
+          "fitness": 7.5,
+          "experience": 5.5,
+          "stars": 9.0
+        }
       },
       "away": {
         "code": "FRA",
@@ -153,34 +1956,181 @@
         "manager": "Deschamps",
         "formation": "4-2-3-1",
         "lineup": [
-          { "n": 16, "name": "Maignan",       "pos": "GK", "x": 92, "y": 50 },
-          { "n": 5,  "name": "Koundé",        "pos": "RB", "x": 78, "y": 82 },
-          { "n": 17, "name": "Saliba",        "pos": "CB", "x": 78, "y": 62 },
-          { "n": 4,  "name": "Upamecano",     "pos": "CB", "x": 78, "y": 38 },
-          { "n": 3,  "name": "T. Hernández",  "pos": "LB", "x": 78, "y": 18 },
-          { "n": 8,  "name": "Tchouaméni",    "pos": "DM", "x": 62, "y": 38 },
-          { "n": 13, "name": "Camavinga",     "pos": "DM", "x": 62, "y": 62 },
-          { "n": 11, "name": "Doué",          "pos": "RW", "x": 44, "y": 82 },
-          { "n": 7,  "name": "Olise",         "pos": "AM", "x": 44, "y": 50 },
-          { "n": 22, "name": "Barcola",       "pos": "LW", "x": 44, "y": 18 },
-          { "n": 10, "name": "Mbappé (C)",    "pos": "ST", "x": 30, "y": 50 }
+          {
+            "n": 16,
+            "name": "Maignan",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 5,
+            "name": "Koundé",
+            "pos": "RB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 17,
+            "name": "Saliba",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 4,
+            "name": "Upamecano",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 3,
+            "name": "T. Hernández",
+            "pos": "LB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 8,
+            "name": "Tchouaméni",
+            "pos": "DM",
+            "x": 62,
+            "y": 38
+          },
+          {
+            "n": 13,
+            "name": "Camavinga",
+            "pos": "DM",
+            "x": 62,
+            "y": 62
+          },
+          {
+            "n": 11,
+            "name": "Doué",
+            "pos": "RW",
+            "x": 44,
+            "y": 82
+          },
+          {
+            "n": 7,
+            "name": "Olise",
+            "pos": "AM",
+            "x": 44,
+            "y": 50
+          },
+          {
+            "n": 22,
+            "name": "Barcola",
+            "pos": "LW",
+            "x": 44,
+            "y": 18
+          },
+          {
+            "n": 10,
+            "name": "Mbappé (C)",
+            "pos": "ST",
+            "x": 30,
+            "y": 50
+          }
         ],
         "arrows": [
-          { "from": [44, 50], "to": [30, 40], "label": "Olise 串聯 Mbappé" },
-          { "from": [44, 18], "to": [22, 30], "label": "Barcola 邊路爆破" },
-          { "from": [30, 50], "to": [12, 50], "label": "Mbappé 突破" }
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              30,
+              40
+            ],
+            "label": "Olise 串聯 Mbappé"
+          },
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              22,
+              30
+            ],
+            "label": "Barcola 邊路爆破"
+          },
+          {
+            "from": [
+              30,
+              50
+            ],
+            "to": [
+              12,
+              50
+            ],
+            "label": "Mbappé 突破"
+          }
         ],
-        "stats": { "attack": 9.5, "defense": 8.5, "midfield": 8.8, "fitness": 8.5, "experience": 9.0, "stars": 9.5 }
+        "stats": {
+          "attack": 9.5,
+          "defense": 8.5,
+          "midfield": 8.8,
+          "fitness": 8.5,
+          "experience": 9.0,
+          "stars": 9.5
+        }
       },
       "timeline": [
-        { "min": 8,  "side": "home", "type": "chance",   "text": "Haaland 高位逼搶差點製造機會" },
-        { "min": 22, "side": "away", "type": "control",  "text": "France 中場 Tchouaméni-Camavinga 雙樞紐穩住節奏" },
-        { "min": 35, "side": "away", "type": "goal",     "text": "Mbappé 利用速度單刀破門", "score": "0-1" },
-        { "min": 45, "side": "neutral","type": "halftime","text": "半場：Norway 0-1 France" },
-        { "min": 60, "side": "away", "type": "goal",     "text": "Olise 接 Mbappé 助攻第二球", "score": "0-2" },
-        { "min": 75, "side": "home", "type": "goal",     "text": "Haaland 力拼下頭槌爭回顏面", "score": "1-2" },
-        { "min": 88, "side": "away", "type": "goal",     "text": "Mbappé 反擊鎖定勝局", "score": "1-3" },
-        { "min": 90, "side": "neutral","type": "fulltime","text": "全場：Norway 1-3 France" }
+        {
+          "min": 8,
+          "side": "home",
+          "type": "chance",
+          "text": "Haaland 高位逼搶差點製造機會"
+        },
+        {
+          "min": 22,
+          "side": "away",
+          "type": "control",
+          "text": "France 中場 Tchouaméni-Camavinga 雙樞紐穩住節奏"
+        },
+        {
+          "min": 35,
+          "side": "away",
+          "type": "goal",
+          "text": "Mbappé 利用速度單刀破門",
+          "score": "0-1"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：Norway 0-1 France"
+        },
+        {
+          "min": 60,
+          "side": "away",
+          "type": "goal",
+          "text": "Olise 接 Mbappé 助攻第二球",
+          "score": "0-2"
+        },
+        {
+          "min": 75,
+          "side": "home",
+          "type": "goal",
+          "text": "Haaland 力拼下頭槌爭回顏面",
+          "score": "1-2"
+        },
+        {
+          "min": 88,
+          "side": "away",
+          "type": "goal",
+          "text": "Mbappé 反擊鎖定勝局",
+          "score": "1-3"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：Norway 1-3 France"
+        }
       ],
       "referee": {
         "style": "南美/拉丁奔放派",
@@ -188,9 +2138,21 @@
         "impact": "定位球將是 France 額外得分來源，Norway 後防壓力倍增"
       },
       "keyDuels": [
-        { "home": "Haaland",   "away": "Saliba",       "note": "英超已多次交手，Saliba 速度+對抗能壓制 Haaland 背身" },
-        { "home": "Ødegaard",  "away": "Tchouaméni",   "note": "中場核心對決，攔截 vs 創造" },
-        { "home": "Ryerson",   "away": "Mbappé",       "note": "右後衛 Ryerson 速度恐難跟上 Mbappé 內切" }
+        {
+          "home": "Haaland",
+          "away": "Saliba",
+          "note": "英超已多次交手，Saliba 速度+對抗能壓制 Haaland 背身"
+        },
+        {
+          "home": "Ødegaard",
+          "away": "Tchouaméni",
+          "note": "中場核心對決，攔截 vs 創造"
+        },
+        {
+          "home": "Ryerson",
+          "away": "Mbappé",
+          "note": "右後衛 Ryerson 速度恐難跟上 Mbappé 內切"
+        }
       ],
       "predict": {
         "score": "France 3-1 Norway",
@@ -198,14 +2160,42 @@
         "winner": "away",
         "reasoning": "Norway 後防線速度與經驗都不足以擋住 France 三叉戟。Haaland 雖然神勇，但獨木難支——若 Ødegaard 被切斷，Norway 的進攻組織會崩潰。France 預期掌控中場、伺機反擊。",
         "scenarios": [
-          { "score": "FRA 3-1 NOR", "prob": 30, "desc": "最可能 — Mbappé 雙響 + Haaland 安慰球" },
-          { "score": "FRA 2-1 NOR", "prob": 22, "desc": "Norway 拼到底但仍輸一球" },
-          { "score": "FRA 2-0 NOR", "prob": 18, "desc": "Saliba 完全凍結 Haaland" },
-          { "score": "FRA 4-1 NOR", "prob": 12, "desc": "Mbappé 帽子戲法演出" },
-          { "score": "FRA 1-1 NOR", "prob": 10, "desc": "Haaland 進球 + Norway 死守一分" },
-          { "score": "NOR 2-1 FRA", "prob": 8,  "desc": "大冷門 — Haaland 雙響爆冷" }
+          {
+            "score": "FRA 3-1 NOR",
+            "prob": 30,
+            "desc": "最可能 — Mbappé 雙響 + Haaland 安慰球"
+          },
+          {
+            "score": "FRA 2-1 NOR",
+            "prob": 22,
+            "desc": "Norway 拼到底但仍輸一球"
+          },
+          {
+            "score": "FRA 2-0 NOR",
+            "prob": 18,
+            "desc": "Saliba 完全凍結 Haaland"
+          },
+          {
+            "score": "FRA 4-1 NOR",
+            "prob": 12,
+            "desc": "Mbappé 帽子戲法演出"
+          },
+          {
+            "score": "FRA 1-1 NOR",
+            "prob": 10,
+            "desc": "Haaland 進球 + Norway 死守一分"
+          },
+          {
+            "score": "NOR 2-1 FRA",
+            "prob": 8,
+            "desc": "大冷門 — Haaland 雙響爆冷"
+          }
         ]
-      }
+      },
+      "_auto": false,
+      "_kickoffUtc": "",
+      "_matchNo": 9999,
+      "_hypothetical": true
     }
   ]
 }

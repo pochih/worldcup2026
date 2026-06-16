@@ -308,6 +308,24 @@ def main():
     out.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {out} ({len(matches)} matches, {len(teams)} teams)", file=sys.stderr)
 
+    # Build preview.json from the freshly written schedule + analysis + stars.
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from build_preview import build_preview as _bp
+        analysis = json.loads((DATA / "teams_analysis.json").read_text(encoding="utf-8"))
+        stars = json.loads((DATA / "stars.json").read_text(encoding="utf-8"))
+        team_meta = json.loads((DATA / "team_meta.json").read_text(encoding="utf-8"))
+        templates = json.loads((DATA / "lineup_templates.json").read_text(encoding="utf-8"))
+        preview = _bp(bundle, analysis, stars, team_meta, templates)
+        (DATA / "preview.json").write_text(
+            json.dumps(preview, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        auto = sum(1 for m in preview["matches"] if m.get("_auto"))
+        print(f"Wrote preview.json ({len(preview['matches'])} matches, {auto} auto-generated)",
+              file=sys.stderr)
+    except Exception as e:
+        print(f"preview build skipped: {e}", file=sys.stderr)
+
 
 if __name__ == "__main__":
     main()

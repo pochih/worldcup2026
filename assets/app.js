@@ -592,9 +592,18 @@ const TIMELINE_ICON = {
 };
 
 // Pitch SVG: 100 (length) x 100 (width). Home attacks left→right, Away attacks right→left.
+// Names go below the dot for home (left half) and above the dot for away (right half),
+// so the two halves' name strips never collide near the centre line.
+function shortPlayerName(name) {
+  if (!name) return "";
+  if (name.length <= 10) return name;
+  const parts = name.split(/\s+/);
+  if (parts.length >= 2) return `${parts[0][0]}. ${parts[parts.length - 1]}`.slice(0, 11);
+  return name.slice(0, 9) + ".";
+}
+
 function pitchSvg(home, away) {
   const W = 100, H = 100;
-  // pitch background + lines
   const pitchBg = `
     <defs>
       <pattern id="grass" x="0" y="0" width="10" height="100" patternUnits="userSpaceOnUse">
@@ -618,27 +627,42 @@ function pitchSvg(home, away) {
     <circle cx="${W-11}" cy="50" r="0.6" fill="rgba(255,255,255,0.7)"/>
   `;
 
-  const playerCircles = (team, isHome) => {
+  const playerCircles = (team, isHome, otherTeam) => {
     return team.lineup.map(p => {
       const fill = POS_FILL[p.pos] || "#97a3cf";
-      const ring = isHome ? team.color : team.color;
+      const ring = team.color;
+      // Home → label below the dot; Away → label above the dot.
+      let labelY = isHome ? p.y + 6.8 : p.y - 4.6;
+
+      // Collision avoidance: if any opponent player has its label projected
+      // into the same band (close in x AND close in y), nudge this label
+      // further away from the centre line.
+      const opponents = otherTeam ? otherTeam.lineup : [];
+      const oppLabelY = (op) => isHome ? op.y - 4.6 : op.y + 6.8;
+      const tooClose = opponents.some(op => {
+        const dx = Math.abs(op.x - p.x);
+        const dy = Math.abs(oppLabelY(op) - labelY);
+        return dx < 8 && dy < 4;
+      });
+      if (tooClose) labelY += isHome ? 3.6 : -3.6;
+
       return `<g filter="url(#playerShadow)">
         <circle cx="${p.x}" cy="${p.y}" r="3.6" fill="${fill}" stroke="${ring}" stroke-width="0.9"/>
         <text x="${p.x}" y="${p.y}" text-anchor="middle" dy="0.35em"
               font-size="3" font-weight="800" fill="#0a0e27">${p.n}</text>
-        <text x="${p.x}" y="${p.y + 6.5}" text-anchor="middle"
-              font-size="2.4" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.25"
-              paint-order="stroke" stroke-linejoin="round">${p.name}</text>
+        <text x="${p.x}" y="${labelY}" text-anchor="middle"
+              font-size="2.2" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.45"
+              paint-order="stroke" stroke-linejoin="round"
+              text-rendering="geometricPrecision">${shortPlayerName(p.name)}</text>
       </g>`;
     }).join("");
   };
 
+  // Arrows on pitch are visual-only — labels rendered in the legend below.
   const arrows = (team, color) => {
     return (team.arrows || []).map((a, i) => {
       const id = `arrow-${color.replace("#","")}-${i}`;
       const [x1, y1] = a.from, [x2, y2] = a.to;
-      // midpoint label
-      const mx = (x1 + x2) / 2, my = (y1 + y2) / 2 - 1.2;
       return `
         <defs>
           <marker id="${id}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
@@ -648,8 +672,6 @@ function pitchSvg(home, away) {
         <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"
               stroke="${color}" stroke-width="0.8" stroke-dasharray="1.5,0.8"
               marker-end="url(#${id})" opacity="0.85"/>
-        <text x="${mx}" y="${my}" text-anchor="middle" font-size="2.2" font-weight="700"
-              fill="${color}" stroke="#000" stroke-width="0.3" paint-order="stroke">${a.label}</text>
       `;
     }).join("");
   };
@@ -658,13 +680,27 @@ function pitchSvg(home, away) {
     ${pitchBg}
     ${arrows(home, home.color)}
     ${arrows(away, away.color)}
-    ${playerCircles(home, true)}
-    ${playerCircles(away, false)}
+    ${playerCircles(home, true, away)}
+    ${playerCircles(away, false, home)}
     <text x="2"   y="6" font-size="4" font-weight="800" fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">${home.flag} ${home.code}</text>
     <text x="98"  y="6" text-anchor="end" font-size="4" font-weight="800" fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">${away.code} ${away.flag}</text>
     <text x="2"   y="97" font-size="2.6" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">${home.formation} · ${home.manager}</text>
     <text x="98"  y="97" text-anchor="end" font-size="2.6" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">${away.formation} · ${away.manager}</text>
   </svg>`;
+}
+
+function arrowLegendHtml(home, away) {
+  const items = [];
+  (home.arrows || []).forEach(a => items.push({ side: "home", color: home.color, label: a.label }));
+  (away.arrows || []).forEach(a => items.push({ side: "away", color: away.color, label: a.label }));
+  if (!items.length) return "";
+  return `<div class="arrow-legend">
+    ${items.map(it => `<span class="arrow-chip">
+      <span class="arrow-line" style="background:${it.color}"></span>
+      <span class="arrow-side">${it.side === "home" ? home.code : away.code}</span>
+      <span class="arrow-label">${it.label || ""}</span>
+    </span>`).join("")}
+  </div>`;
 }
 
 // Dual-team radar: overlay home (accent) and away (red) on the same hexagon.
@@ -778,7 +814,7 @@ function renderPreview() {
   }
   tabsEl.innerHTML = PREVIEW.matches.map((m, i) =>
     `<button class="ptab ${i === PREVIEW_MATCH_IDX ? 'active' : ''}" data-idx="${i}">
-      ${m.shortTitle}
+      ${m._auto ? '🤖 ' : ''}${m.shortTitle}
     </button>`
   ).join("");
   tabsEl.onclick = (e) => {
@@ -790,6 +826,25 @@ function renderPreview() {
 
   const m = PREVIEW.matches[PREVIEW_MATCH_IDX];
   const winnerCode = m.predict.winner === "home" ? m.home.code : m.away.code;
+  const autoBadge = m._auto
+    ? `<span class="auto-badge" title="自動生成自 FIFA 排名與球星數據">🤖 自動生成戰報</span>`
+    : "";
+  const hypoBadge = m._hypothetical
+    ? `<span class="auto-badge hypothetical" title="此對戰未在賽程中出現，為假想戰報">💭 假想對戰</span>`
+    : "";
+  const historyHtml = (m.history && m.history.length) ? `
+      <div class="preview-section">
+        <h4>📜 歷史交手</h4>
+        <div class="history-list">
+          ${m.history.map(h => `
+            <div class="history-row">
+              <span class="history-year">${h.year}</span>
+              <span class="history-score">${h.score}</span>
+              <span class="history-note">${h.note}</span>
+            </div>
+          `).join("")}
+        </div>
+      </div>` : "";
 
   contentEl.innerHTML = `
     <div class="preview-card">
@@ -799,6 +854,8 @@ function renderPreview() {
         <div class="preview-meta">
           <span class="badge">📍 ${m.venue}</span>
           <span class="badge">🏆 ${m.stage}</span>
+          ${autoBadge}
+          ${hypoBadge}
         </div>
       </div>
 
@@ -832,6 +889,7 @@ function renderPreview() {
         <div class="pitch-wrap">
           ${pitchSvg(m.home, m.away)}
         </div>
+        ${arrowLegendHtml(m.home, m.away)}
         <div class="pitch-legend">
           <span class="legend-dot" style="background:#ffc857"></span> GK 守門
           <span class="legend-dot" style="background:#4fc3ff"></span> 後衛
@@ -841,19 +899,7 @@ function renderPreview() {
         </div>
       </div>
 
-      <!-- History -->
-      <div class="preview-section">
-        <h4>📜 歷史交手</h4>
-        <div class="history-list">
-          ${m.history.map(h => `
-            <div class="history-row">
-              <span class="history-year">${h.year}</span>
-              <span class="history-score">${h.score}</span>
-              <span class="history-note">${h.note}</span>
-            </div>
-          `).join("")}
-        </div>
-      </div>
+      ${historyHtml}
 
       <!-- Radar comparison -->
       <div class="preview-section">

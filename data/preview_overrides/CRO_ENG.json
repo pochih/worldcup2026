@@ -1,0 +1,395 @@
+{
+  "id": "ENG_CRO",
+  "title": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs Croatia 🇭🇷",
+  "shortTitle": "ENG vs CRO",
+  "subtitle": "宿敵再戰 · 三獅軍團能否徹底壓過格子軍？",
+  "stage": "小組賽 · 強強對決",
+  "venue": "MetLife Stadium, New Jersey (推測)",
+  "history": [
+    {
+      "year": "2018 WC 4 強",
+      "score": "CRO 2-1 ENG",
+      "note": "Mandžukić 加時絕殺"
+    },
+    {
+      "year": "Euro 2020 小組",
+      "score": "ENG 1-0 CRO",
+      "note": "Sterling 進球"
+    },
+    {
+      "year": "Euro 2024 小組",
+      "score": "ENG 1-0 CRO",
+      "note": "Bellingham 破門"
+    }
+  ],
+  "home": {
+    "code": "ENG",
+    "name": "England",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "color": "#ffffff",
+    "colorAlt": "#1e2a8a",
+    "manager": "Tuchel",
+    "formation": "4-2-3-1",
+    "lineup": [
+      {
+        "n": 1,
+        "name": "Pickford",
+        "pos": "GK",
+        "x": 8,
+        "y": 50
+      },
+      {
+        "n": 2,
+        "name": "Walker",
+        "pos": "RB",
+        "x": 22,
+        "y": 18
+      },
+      {
+        "n": 5,
+        "name": "Stones",
+        "pos": "CB",
+        "x": 22,
+        "y": 38
+      },
+      {
+        "n": 6,
+        "name": "Konsa",
+        "pos": "CB",
+        "x": 22,
+        "y": 62
+      },
+      {
+        "n": 3,
+        "name": "Lewis-Skelly",
+        "pos": "LB",
+        "x": 22,
+        "y": 82
+      },
+      {
+        "n": 4,
+        "name": "Rice",
+        "pos": "DM",
+        "x": 38,
+        "y": 38
+      },
+      {
+        "n": 8,
+        "name": "Wharton",
+        "pos": "DM",
+        "x": 38,
+        "y": 62
+      },
+      {
+        "n": 7,
+        "name": "Saka",
+        "pos": "RW",
+        "x": 56,
+        "y": 18
+      },
+      {
+        "n": 10,
+        "name": "Bellingham",
+        "pos": "AM",
+        "x": 56,
+        "y": 50
+      },
+      {
+        "n": 11,
+        "name": "Foden",
+        "pos": "LW",
+        "x": 56,
+        "y": 82
+      },
+      {
+        "n": 9,
+        "name": "Kane (C)",
+        "pos": "ST",
+        "x": 70,
+        "y": 50
+      }
+    ],
+    "arrows": [
+      {
+        "from": [
+          56,
+          18
+        ],
+        "to": [
+          78,
+          28
+        ],
+        "label": "Saka 內切"
+      },
+      {
+        "from": [
+          56,
+          82
+        ],
+        "to": [
+          70,
+          70
+        ],
+        "label": "Foden 連線"
+      },
+      {
+        "from": [
+          56,
+          50
+        ],
+        "to": [
+          72,
+          42
+        ],
+        "label": "Bellingham 後插上"
+      }
+    ],
+    "stats": {
+      "attack": 8.5,
+      "defense": 8.0,
+      "midfield": 8.2,
+      "fitness": 8.5,
+      "experience": 7.8,
+      "stars": 9.0
+    }
+  },
+  "away": {
+    "code": "CRO",
+    "name": "Croatia",
+    "flag": "🇭🇷",
+    "color": "#dc1f31",
+    "colorAlt": "#0f1d3f",
+    "manager": "Dalić",
+    "formation": "4-3-3",
+    "lineup": [
+      {
+        "n": 1,
+        "name": "Livaković",
+        "pos": "GK",
+        "x": 92,
+        "y": 50
+      },
+      {
+        "n": 2,
+        "name": "Stanišić",
+        "pos": "RB",
+        "x": 78,
+        "y": 82
+      },
+      {
+        "n": 6,
+        "name": "Šutalo",
+        "pos": "CB",
+        "x": 78,
+        "y": 62
+      },
+      {
+        "n": 5,
+        "name": "Gvardiol",
+        "pos": "CB",
+        "x": 78,
+        "y": 38
+      },
+      {
+        "n": 19,
+        "name": "Sosa",
+        "pos": "LB",
+        "x": 78,
+        "y": 18
+      },
+      {
+        "n": 10,
+        "name": "Modrić (C)",
+        "pos": "CM",
+        "x": 60,
+        "y": 35
+      },
+      {
+        "n": 8,
+        "name": "Kovačić",
+        "pos": "DM",
+        "x": 60,
+        "y": 50
+      },
+      {
+        "n": 13,
+        "name": "Sučić",
+        "pos": "CM",
+        "x": 60,
+        "y": 65
+      },
+      {
+        "n": 9,
+        "name": "Kramarić",
+        "pos": "RW",
+        "x": 42,
+        "y": 80
+      },
+      {
+        "n": 17,
+        "name": "Petković",
+        "pos": "ST",
+        "x": 32,
+        "y": 50
+      },
+      {
+        "n": 14,
+        "name": "Baturina",
+        "pos": "LW",
+        "x": 42,
+        "y": 20
+      }
+    ],
+    "arrows": [
+      {
+        "from": [
+          60,
+          35
+        ],
+        "to": [
+          42,
+          30
+        ],
+        "label": "Modrić 直塞"
+      },
+      {
+        "from": [
+          42,
+          80
+        ],
+        "to": [
+          28,
+          60
+        ],
+        "label": "Kramarić 邊路"
+      },
+      {
+        "from": [
+          32,
+          50
+        ],
+        "to": [
+          20,
+          50
+        ],
+        "label": "Petković 衝刺"
+      }
+    ],
+    "stats": {
+      "attack": 7.0,
+      "defense": 7.5,
+      "midfield": 8.5,
+      "fitness": 6.5,
+      "experience": 9.0,
+      "stars": 7.5
+    }
+  },
+  "timeline": [
+    {
+      "min": 5,
+      "side": "away",
+      "type": "control",
+      "text": "Modrić 接管中場節奏，Croatia 控球率 65%"
+    },
+    {
+      "min": 18,
+      "side": "home",
+      "type": "chance",
+      "text": "Saka 邊路內切製造首次射門"
+    },
+    {
+      "min": 32,
+      "side": "home",
+      "type": "goal",
+      "text": "Bellingham 禁區弧頂遠射開紀錄",
+      "score": "1-0"
+    },
+    {
+      "min": 45,
+      "side": "neutral",
+      "type": "halftime",
+      "text": "半場：England 1-0 Croatia"
+    },
+    {
+      "min": 58,
+      "side": "away",
+      "type": "goal",
+      "text": "Petković 角球頭槌扳平",
+      "score": "1-1"
+    },
+    {
+      "min": 70,
+      "side": "home",
+      "type": "sub",
+      "text": "Tuchel 換上 Palmer 加強進攻"
+    },
+    {
+      "min": 78,
+      "side": "home",
+      "type": "goal",
+      "text": "Kane 接 Foden 傳中近距離破門",
+      "score": "2-1"
+    },
+    {
+      "min": 90,
+      "side": "neutral",
+      "type": "fulltime",
+      "text": "全場：England 2-1 Croatia"
+    }
+  ],
+  "referee": {
+    "style": "歐洲嚴謹派",
+    "tendency": "判罰標準偏嚴，對 Croatia 老將中場犯規零容忍；任意球與 VAR 介入頻繁",
+    "impact": "Croatia 中場 Modrić/Kovačić 易累計黃牌，影響後段防守強度"
+  },
+  "keyDuels": [
+    {
+      "home": "Bellingham",
+      "away": "Modrić",
+      "note": "中場 C 位傳承之戰，新王 vs 老王"
+    },
+    {
+      "home": "Saka",
+      "away": "Sosa",
+      "note": "邊路速度爆破，Sosa 防守是隱憂"
+    },
+    {
+      "home": "Kane",
+      "away": "Šutalo",
+      "note": "禁區制空權，Kane 把握機會能力一流"
+    }
+  ],
+  "predict": {
+    "score": "England 2-1 Croatia",
+    "confidence": 60,
+    "winner": "home",
+    "reasoning": "Croatia 中場質量仍是世界級，但 Modrić 已 40 歲、Kovačić 體能下滑，下半場後段難擋 England 邊路衝擊。Tuchel 的高壓 + Bellingham 後插上是制勝關鍵。",
+    "scenarios": [
+      {
+        "score": "ENG 2-1 CRO",
+        "prob": 35,
+        "desc": "最可能 — 三獅後段體能取勝"
+      },
+      {
+        "score": "ENG 1-1 CRO",
+        "prob": 22,
+        "desc": "Croatia 老謀深算守住一分"
+      },
+      {
+        "score": "ENG 3-1 CRO",
+        "prob": 18,
+        "desc": "Bellingham/Kane 連環破門"
+      },
+      {
+        "score": "CRO 2-1 ENG",
+        "prob": 15,
+        "desc": "Modrić 史詩級告別演出"
+      },
+      {
+        "score": "ENG 1-0 CRO",
+        "prob": 10,
+        "desc": "防守戰，定位球決勝"
+      }
+    ]
+  }
+}
