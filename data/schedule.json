@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T17:20:15.459162+00:00",
+  "generatedAt": "2026-06-16T21:18:30.806177+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1020,8 +1020,8 @@
       "group": "I",
       "utc": "2026-06-16T19:00:00Z",
       "localKick": "2026-06-16T15:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -1033,7 +1033,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -1041,15 +1041,48 @@
         "code": "SEN",
         "name": "Senegal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43946",
+      "attendance": "80545",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "66'",
+          "side": "home",
+          "team": "43946",
+          "player": "Mbappé",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "82'",
+          "side": "home",
+          "team": "43946",
+          "player": "Barcola",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "90'+5'",
+          "side": "away",
+          "team": "43879",
+          "player": "Mbaye",
+          "score": "2-1",
+          "type": "G"
+        },
+        {
+          "minute": "90'+6'",
+          "side": "home",
+          "team": "43946",
+          "player": "Mbappé",
+          "score": "3-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021488",
@@ -5324,14 +5357,14 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GF": 3,
+        "GA": 1,
+        "GD": 2,
+        "Pts": 3
       },
       {
         "id": "43818",
@@ -5366,13 +5399,13 @@
         "code": "SEN",
         "name": "Senegal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
-        "P": 0,
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 3,
+        "GD": -2,
         "Pts": 0
       }
     ],
