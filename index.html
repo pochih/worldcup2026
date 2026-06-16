@@ -23,6 +23,7 @@
     <button data-view="teams">🌍 隊伍</button>
     <button data-view="analysis">🎯 戰力</button>
     <button data-view="stars">⭐ 熱門球星</button>
+    <button data-view="preview">📋 戰報</button>
   </nav>
   <div class="meta">
     <span id="updated">載入中…</span>
@@ -89,6 +90,17 @@
     <p class="legend">
       ⚽ 20 熱門隊伍 × 4 當家球星，2025-26 俱樂部賽季數據（聯賽 + 盃賽 + 歐戰合計）<br>
       資料截至 2026 年 5 月底歐洲賽季結束。助攻數部分為估算值。
+    </p>
+  </section>
+
+  <section id="view-preview" class="view">
+    <div class="preview-toolbar">
+      <h2>📋 強強對決前瞻戰報</h2>
+      <div class="preview-tabs" id="preview-tabs"></div>
+    </div>
+    <div id="preview-content"></div>
+    <p class="legend">
+      🎯 戰報內容（首發、走勢、預測比分、雷達數據）為編者基於 2024-2026 國際賽表現、球員狀態與戰術風格之主觀推演，僅供觀賽參考，非官方資料。
     </p>
   </section>
 </main>

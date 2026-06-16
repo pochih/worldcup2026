@@ -13,11 +13,13 @@ const WEEKDAY_ZH = ["日","一","二","三","四","五","六"];
 let DATA = null;
 let ANALYSIS = null;
 let STARS = null;
+let PREVIEW = null;
 let SELECTED_DAY = null;
 let CAL_MONTH = null;
 let FILTER_TW = false;
 let ADV_FILTER = "all";
 let STARS_FILTER = "all";
+let PREVIEW_MATCH_IDX = 0;
 
 // ---------- utilities ----------
 
@@ -75,6 +77,10 @@ async function loadData() {
   try {
     const rs = await fetch(`data/stars.json?t=${Date.now()}`);
     if (rs.ok) STARS = await rs.json();
+  } catch (e) { /* ignore */ }
+  try {
+    const rp = await fetch(`data/preview.json?t=${Date.now()}`);
+    if (rp.ok) PREVIEW = await rp.json();
   } catch (e) { /* ignore */ }
 }
 
@@ -572,6 +578,353 @@ function starCardHtml(p) {
   </div>`;
 }
 
+// ---------- preview (戰報) ----------
+
+const POS_FILL = {
+  GK: "#ffc857", CB: "#4fc3ff", LB: "#4fc3ff", RB: "#4fc3ff",
+  DM: "#9c89ff", CM: "#9c89ff", AM: "#00d4aa",
+  LW: "#ff4e6a", RW: "#ff4e6a", ST: "#ff4e6a", CF: "#ff4e6a",
+};
+
+const TIMELINE_ICON = {
+  goal: "⚽", chance: "💥", control: "🎯", sub: "🔄",
+  halftime: "⏸", fulltime: "🏁", card: "🟨",
+};
+
+// Pitch SVG: 100 (length) x 100 (width). Home attacks left→right, Away attacks right→left.
+function pitchSvg(home, away) {
+  const W = 100, H = 100;
+  // pitch background + lines
+  const pitchBg = `
+    <defs>
+      <pattern id="grass" x="0" y="0" width="10" height="100" patternUnits="userSpaceOnUse">
+        <rect x="0" y="0" width="5"  height="100" fill="#0f5132"/>
+        <rect x="5" y="0" width="5"  height="100" fill="#0d4429"/>
+      </pattern>
+      <filter id="playerShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="0.5" stdDeviation="0.6" flood-opacity="0.5"/>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="${W}" height="${H}" fill="url(#grass)"/>
+    <rect x="1" y="1" width="${W-2}" height="${H-2}" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <line x1="50" y1="1" x2="50" y2="99" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <circle cx="50" cy="50" r="9" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <circle cx="50" cy="50" r="0.6" fill="rgba(255,255,255,0.7)"/>
+    <rect x="1"    y="28" width="14" height="44" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <rect x="1"    y="38" width="6"  height="24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <rect x="${W-15}" y="28" width="14" height="44" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <rect x="${W-7}"  y="38" width="6"  height="24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
+    <circle cx="11"    cy="50" r="0.6" fill="rgba(255,255,255,0.7)"/>
+    <circle cx="${W-11}" cy="50" r="0.6" fill="rgba(255,255,255,0.7)"/>
+  `;
+
+  const playerCircles = (team, isHome) => {
+    return team.lineup.map(p => {
+      const fill = POS_FILL[p.pos] || "#97a3cf";
+      const ring = isHome ? team.color : team.color;
+      return `<g filter="url(#playerShadow)">
+        <circle cx="${p.x}" cy="${p.y}" r="3.6" fill="${fill}" stroke="${ring}" stroke-width="0.9"/>
+        <text x="${p.x}" y="${p.y}" text-anchor="middle" dy="0.35em"
+              font-size="3" font-weight="800" fill="#0a0e27">${p.n}</text>
+        <text x="${p.x}" y="${p.y + 6.5}" text-anchor="middle"
+              font-size="2.4" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.25"
+              paint-order="stroke" stroke-linejoin="round">${p.name}</text>
+      </g>`;
+    }).join("");
+  };
+
+  const arrows = (team, color) => {
+    return (team.arrows || []).map((a, i) => {
+      const id = `arrow-${color.replace("#","")}-${i}`;
+      const [x1, y1] = a.from, [x2, y2] = a.to;
+      // midpoint label
+      const mx = (x1 + x2) / 2, my = (y1 + y2) / 2 - 1.2;
+      return `
+        <defs>
+          <marker id="${id}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="${color}"/>
+          </marker>
+        </defs>
+        <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"
+              stroke="${color}" stroke-width="0.8" stroke-dasharray="1.5,0.8"
+              marker-end="url(#${id})" opacity="0.85"/>
+        <text x="${mx}" y="${my}" text-anchor="middle" font-size="2.2" font-weight="700"
+              fill="${color}" stroke="#000" stroke-width="0.3" paint-order="stroke">${a.label}</text>
+      `;
+    }).join("");
+  };
+
+  return `<svg class="pitch" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    ${pitchBg}
+    ${arrows(home, home.color)}
+    ${arrows(away, away.color)}
+    ${playerCircles(home, true)}
+    ${playerCircles(away, false)}
+    <text x="2"   y="6" font-size="4" font-weight="800" fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">${home.flag} ${home.code}</text>
+    <text x="98"  y="6" text-anchor="end" font-size="4" font-weight="800" fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">${away.code} ${away.flag}</text>
+    <text x="2"   y="97" font-size="2.6" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">${home.formation} · ${home.manager}</text>
+    <text x="98"  y="97" text-anchor="end" font-size="2.6" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">${away.formation} · ${away.manager}</text>
+  </svg>`;
+}
+
+// Dual-team radar: overlay home (accent) and away (red) on the same hexagon.
+function radarCompareSvg(home, away) {
+  const w = 320, h = 240;
+  const cx = w / 2, cy = h / 2;
+  const radius = 78;
+  const n = RADAR_AXES.length;
+  const angle = (i) => -Math.PI / 2 + (2 * Math.PI * i) / n;
+  const point = (i, r) => [cx + r * Math.cos(angle(i)), cy + r * Math.sin(angle(i))];
+
+  const rings = [2, 4, 6, 8, 10].map(v => {
+    const r = (v / 10) * radius;
+    const pts = Array.from({ length: n }, (_, i) => point(i, r).join(",")).join(" ");
+    return `<polygon points="${pts}" fill="none" stroke="rgba(151,163,207,0.18)" stroke-width="1"/>`;
+  }).join("");
+
+  const axes = Array.from({ length: n }, (_, i) => {
+    const [x, y] = point(i, radius);
+    return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="rgba(151,163,207,0.22)" stroke-width="1"/>`;
+  }).join("");
+
+  const buildPoly = (stats, color, fillColor) => {
+    const pts = RADAR_AXES.map((axis, i) => {
+      const v = Math.max(0, Math.min(10, stats[axis] || 0));
+      const r = (v / 10) * radius;
+      return point(i, r).map(n => n.toFixed(1)).join(",");
+    }).join(" ");
+    const dots = RADAR_AXES.map((axis, i) => {
+      const v = Math.max(0, Math.min(10, stats[axis] || 0));
+      const [x, y] = point(i, (v / 10) * radius);
+      return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="${color}" stroke="#0a0e27" stroke-width="1"/>`;
+    }).join("");
+    return `<polygon points="${pts}" fill="${fillColor}" stroke="${color}" stroke-width="2" stroke-linejoin="round"/>${dots}`;
+  };
+
+  // Axis labels with both team values
+  const labels = RADAR_AXES.map((axis, i) => {
+    const a = angle(i);
+    const isTopBottom = Math.abs(Math.cos(a)) < 0.01;
+    const offset = isTopBottom ? 16 : 14;
+    const [lx, ly] = point(i, radius + offset);
+    const anchor = isTopBottom ? "middle" : (lx > cx ? "start" : "end");
+    const hv = home.stats[axis], av = away.stats[axis];
+    return `<g>
+      <text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}" dy="-0.4em"
+        font-size="11" fill="var(--text-dim)" font-weight="600">${RADAR_LABELS[axis]}</text>
+      <text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}" dy="0.9em"
+        font-size="10" font-weight="800">
+        <tspan fill="var(--accent)">${hv}</tspan>
+        <tspan fill="var(--text-dim)" dx="3">vs</tspan>
+        <tspan fill="var(--accent-2)" dx="3">${av}</tspan>
+      </text>
+    </g>`;
+  }).join("");
+
+  return `<svg class="radar-compare" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+    ${rings}
+    ${axes}
+    ${buildPoly(away.stats, "var(--accent-2)", "rgba(255,78,106,0.18)")}
+    ${buildPoly(home.stats, "var(--accent)",   "rgba(0,212,170,0.22)")}
+    ${labels}
+  </svg>`;
+}
+
+function timelineHtml(timeline, home, away) {
+  return `<div class="timeline">
+    <div class="timeline-track"></div>
+    ${timeline.map(ev => {
+      const sideCls = ev.side === "home" ? "tl-home" : (ev.side === "away" ? "tl-away" : "tl-neutral");
+      const typeCls = `tl-${ev.type}`;
+      const teamCode = ev.side === "home" ? home.code : (ev.side === "away" ? away.code : "");
+      const teamFlag = ev.side === "home" ? home.flag : (ev.side === "away" ? away.flag : "");
+      const scoreLabel = ev.score ? `<span class="tl-score">${ev.score}</span>` : "";
+      const minPct = (ev.min / 95) * 100;
+      return `<div class="tl-event ${sideCls} ${typeCls}" style="left:${minPct}%">
+        <div class="tl-min">${ev.min}'</div>
+        <div class="tl-marker">${TIMELINE_ICON[ev.type] || "•"}</div>
+        <div class="tl-content">
+          ${teamFlag ? `<span class="tl-flag">${teamFlag} ${teamCode}</span>` : ""}
+          ${scoreLabel}
+          <div class="tl-text">${ev.text}</div>
+        </div>
+      </div>`;
+    }).join("")}
+  </div>`;
+}
+
+function predictBarsHtml(scenarios) {
+  const max = Math.max(...scenarios.map(s => s.prob));
+  return `<div class="predict-bars">
+    ${scenarios.map(s => `
+      <div class="predict-row">
+        <div class="predict-score">${s.score}</div>
+        <div class="predict-bar-wrap">
+          <div class="predict-bar" style="width:${(s.prob/max)*100}%"></div>
+          <div class="predict-prob">${s.prob}%</div>
+        </div>
+        <div class="predict-desc">${s.desc}</div>
+      </div>
+    `).join("")}
+  </div>`;
+}
+
+function renderPreview() {
+  const tabsEl = document.getElementById("preview-tabs");
+  const contentEl = document.getElementById("preview-content");
+  if (!PREVIEW || !PREVIEW.matches) {
+    contentEl.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">戰報資料載入中…</p>`;
+    return;
+  }
+  tabsEl.innerHTML = PREVIEW.matches.map((m, i) =>
+    `<button class="ptab ${i === PREVIEW_MATCH_IDX ? 'active' : ''}" data-idx="${i}">
+      ${m.shortTitle}
+    </button>`
+  ).join("");
+  tabsEl.onclick = (e) => {
+    const b = e.target.closest("[data-idx]");
+    if (!b) return;
+    PREVIEW_MATCH_IDX = parseInt(b.dataset.idx, 10);
+    renderPreview();
+  };
+
+  const m = PREVIEW.matches[PREVIEW_MATCH_IDX];
+  const winnerCode = m.predict.winner === "home" ? m.home.code : m.away.code;
+
+  contentEl.innerHTML = `
+    <div class="preview-card">
+      <div class="preview-header">
+        <h3>${m.title}</h3>
+        <p class="preview-subtitle">${m.subtitle}</p>
+        <div class="preview-meta">
+          <span class="badge">📍 ${m.venue}</span>
+          <span class="badge">🏆 ${m.stage}</span>
+        </div>
+      </div>
+
+      <!-- Versus banner -->
+      <div class="vs-banner">
+        <div class="vs-team home">
+          <div class="vs-flag">${m.home.flag}</div>
+          <div class="vs-name">${m.home.name}</div>
+          <div class="vs-formation">${m.home.formation}</div>
+          <div class="vs-manager">主帥：${m.home.manager}</div>
+        </div>
+        <div class="vs-center">
+          <div class="vs-label">VS</div>
+          <div class="vs-predict">
+            <div class="vs-predict-label">預測比分</div>
+            <div class="vs-predict-score">${m.predict.score}</div>
+            <div class="vs-predict-conf">信心 ${m.predict.confidence}%</div>
+          </div>
+        </div>
+        <div class="vs-team away">
+          <div class="vs-flag">${m.away.flag}</div>
+          <div class="vs-name">${m.away.name}</div>
+          <div class="vs-formation">${m.away.formation}</div>
+          <div class="vs-manager">主帥：${m.away.manager}</div>
+        </div>
+      </div>
+
+      <!-- Pitch tactical board -->
+      <div class="preview-section">
+        <h4>⚽ 戰術板 · 預測首發陣型</h4>
+        <div class="pitch-wrap">
+          ${pitchSvg(m.home, m.away)}
+        </div>
+        <div class="pitch-legend">
+          <span class="legend-dot" style="background:#ffc857"></span> GK 守門
+          <span class="legend-dot" style="background:#4fc3ff"></span> 後衛
+          <span class="legend-dot" style="background:#9c89ff"></span> 後腰
+          <span class="legend-dot" style="background:#00d4aa"></span> 前腰
+          <span class="legend-dot" style="background:#ff4e6a"></span> 鋒線
+        </div>
+      </div>
+
+      <!-- History -->
+      <div class="preview-section">
+        <h4>📜 歷史交手</h4>
+        <div class="history-list">
+          ${m.history.map(h => `
+            <div class="history-row">
+              <span class="history-year">${h.year}</span>
+              <span class="history-score">${h.score}</span>
+              <span class="history-note">${h.note}</span>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- Radar comparison -->
+      <div class="preview-section">
+        <h4>📐 雙方戰力雷達比較</h4>
+        <div class="radar-compare-wrap">
+          ${radarCompareSvg(m.home, m.away)}
+          <div class="radar-legend">
+            <div class="radar-legend-item">
+              <span class="radar-dot" style="background:var(--accent)"></span>
+              <span>${m.home.flag} ${m.home.code}</span>
+            </div>
+            <div class="radar-legend-item">
+              <span class="radar-dot" style="background:var(--accent-2)"></span>
+              <span>${m.away.flag} ${m.away.code}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="preview-section">
+        <h4>📊 比賽走勢預測 (0-90 分鐘)</h4>
+        ${timelineHtml(m.timeline, m.home, m.away)}
+      </div>
+
+      <!-- Key duels -->
+      <div class="preview-section">
+        <h4>⚔️ 關鍵對位</h4>
+        <div class="duels-list">
+          ${m.keyDuels.map(d => `
+            <div class="duel-row">
+              <div class="duel-home">${m.home.flag} ${d.home}</div>
+              <div class="duel-vs">VS</div>
+              <div class="duel-away">${d.away} ${m.away.flag}</div>
+              <div class="duel-note">${d.note}</div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- Referee -->
+      <div class="preview-section">
+        <h4>🧑‍⚖️ 裁判風格推測</h4>
+        <div class="referee-card">
+          <div class="referee-row"><span class="ref-label">風格</span><span>${m.referee.style}</span></div>
+          <div class="referee-row"><span class="ref-label">傾向</span><span>${m.referee.tendency}</span></div>
+          <div class="referee-row"><span class="ref-label">影響</span><span>${m.referee.impact}</span></div>
+        </div>
+      </div>
+
+      <!-- Final prediction -->
+      <div class="preview-section predict-section">
+        <h4>🎯 最終預測</h4>
+        <div class="predict-headline">
+          <div class="predict-winner-flag">${m.predict.winner === "home" ? m.home.flag : m.away.flag}</div>
+          <div class="predict-headline-text">
+            <div class="predict-final-score">${m.predict.score}</div>
+            <div class="predict-conf-bar-wrap">
+              <div class="predict-conf-bar" style="width:${m.predict.confidence}%"></div>
+              <span class="predict-conf-text">信心度 ${m.predict.confidence}%</span>
+            </div>
+          </div>
+        </div>
+        <p class="predict-reasoning">${m.predict.reasoning}</p>
+        <h5>各情境機率分布</h5>
+        ${predictBarsHtml(m.predict.scenarios)}
+      </div>
+    </div>
+  `;
+}
+
 // ---------- tabs ----------
 
 function setView(name) {
@@ -604,6 +957,7 @@ async function init() {
   renderTeams();
   renderAnalysis();
   renderStars();
+  renderPreview();
 
   // Tab nav
   document.getElementById("tabs").addEventListener("click", e => {
@@ -630,7 +984,7 @@ async function init() {
   document.getElementById("refresh").onclick = async () => {
     await loadData();
     renderCalendar(); renderStandings(); renderBracket();
-    renderTeams(); renderAnalysis(); renderStars();
+    renderTeams(); renderAnalysis(); renderStars(); renderPreview();
   };
 }
 
