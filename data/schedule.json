@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T00:01:13.883745+00:00",
+  "generatedAt": "2026-06-16T05:30:20.612121+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -797,8 +797,8 @@
       "group": "H",
       "utc": "2026-06-15T22:00:00Z",
       "localKick": "2026-06-15T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Miami Stadium",
       "city": "Miami",
       "tz": "",
@@ -892,8 +892,8 @@
       "group": "G",
       "utc": "2026-06-16T01:00:00Z",
       "localKick": "2026-06-15T18:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -905,7 +905,7 @@
         "code": "IRN",
         "name": "IR Iran",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -913,15 +913,48 @@
         "code": "NZL",
         "name": "New Zealand",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "70108",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "7'",
+          "side": "away",
+          "team": "43978",
+          "player": "Just",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "32'",
+          "side": "home",
+          "team": "43817",
+          "player": "Ramin",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "54'",
+          "side": "away",
+          "team": "43978",
+          "player": "Just",
+          "score": "1-2",
+          "type": "G"
+        },
+        {
+          "minute": "64'",
+          "side": "home",
+          "team": "43817",
+          "player": "M.Mohebbi",
+          "score": "2-2",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021478",
@@ -5229,6 +5262,34 @@
     ],
     "G": [
       {
+        "id": "43817",
+        "code": "IRN",
+        "name": "IR Iran",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 2,
+        "GA": 2,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43978",
+        "code": "NZL",
+        "name": "New Zealand",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 2,
+        "GA": 2,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
         "id": "43935",
         "code": "BEL",
         "name": "Belgium",
@@ -5255,34 +5316,6 @@
         "GA": 1,
         "GD": 0,
         "Pts": 1
-      },
-      {
-        "id": "43817",
-        "code": "IRN",
-        "name": "IR Iran",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "id": "43978",
-        "code": "NZL",
-        "name": "New Zealand",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
       }
     ],
     "I": [
