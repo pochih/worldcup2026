@@ -342,6 +342,18 @@
     "tendency": "判罰標準偏嚴，對 Croatia 老將中場犯規零容忍；任意球與 VAR 介入頻繁",
     "impact": "Croatia 中場 Modrić/Kovačić 易累計黃牌，影響後段防守強度"
   },
+  "tactics": {
+    "home": [
+      "Saka 內切製造威脅 + Lewis-Skelly 邊路套上",
+      "Bellingham 後插上找空檔，Kane 拉回中路接應",
+      "下半場 Tuchel 換上 Palmer/Gordon 提速，打體能戰"
+    ],
+    "away": [
+      "Modrić-Kovačić 雙核心控制中場節奏",
+      "Petković 留高 + Kramarić/Baturina 拉邊跑位",
+      "防守端依靠 Gvardiol 的速度補位 Saka"
+    ]
+  },
   "keyDuels": [
     {
       "home": "Bellingham",

@@ -316,7 +316,9 @@ def main():
         stars = json.loads((DATA / "stars.json").read_text(encoding="utf-8"))
         team_meta = json.loads((DATA / "team_meta.json").read_text(encoding="utf-8"))
         templates = json.loads((DATA / "lineup_templates.json").read_text(encoding="utf-8"))
-        preview = _bp(bundle, analysis, stars, team_meta, templates)
+        rosters_path = DATA / "rosters.json"
+        rosters = json.loads(rosters_path.read_text(encoding="utf-8")) if rosters_path.exists() else {}
+        preview = _bp(bundle, analysis, stars, team_meta, templates, rosters=rosters)
         (DATA / "preview.json").write_text(
             json.dumps(preview, ensure_ascii=False, indent=2), encoding="utf-8"
         )

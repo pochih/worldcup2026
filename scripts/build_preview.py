@@ -55,6 +55,13 @@ POS_BUCKET = {
     "LW": "FW", "RW": "FW", "ST": "FW", "CF": "FW",
 }
 
+# Chinese labels for unfilled slots so non-curated teams still read naturally.
+POS_ZH = {
+    "GK": "門將", "CB": "中後衛", "LB": "左後衛", "RB": "右後衛",
+    "DM": "後腰", "CM": "中場", "LM": "左中場", "RM": "右中場",
+    "AM": "前腰", "LW": "左翼", "RW": "右翼", "ST": "中鋒", "CF": "前鋒",
+}
+
 
 def match_key(code_a, code_b):
     return "_".join(sorted([code_a.upper(), code_b.upper()]))
@@ -86,52 +93,89 @@ def short_name(name):
     return name[:9] + "."
 
 
-def make_lineup(code, team_meta, stars, templates, mirror=False):
-    """Produce 11 player dicts. Star roster fills 4 slots by position bucket;
-    rest are placeholders like '#7 RW'."""
+def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None):
+    """Produce 11 player dicts. Priority for filling each slot:
+       1) rosters.json (full curated 11-man squad, exact pos match preferred)
+       2) stars.json (4-name star roster, bucket-matched)
+       3) Chinese position label fallback (e.g., '右後衛').
+    Always returns 11 entries in template order."""
+    rosters = rosters or {}
     meta = team_meta.get(code, {})
     formation = meta.get("formation", "4-3-3")
+    # If rosters specifies a formation for this team, prefer it (more accurate)
+    roster_entry = rosters.get(code)
+    if roster_entry and roster_entry.get("formation"):
+        formation = roster_entry["formation"]
     template = templates.get(formation, templates["4-3-3"])
 
-    star_list = list(stars.get(code, []))
-    # Group stars by bucket
+    # Bucket roster players by exact pos (for first-pass fill)
+    roster_by_pos = {}
+    if roster_entry:
+        for p in roster_entry.get("players", []):
+            roster_by_pos.setdefault(p.get("pos", ""), []).append(p)
+
+    # Bucket stars
     star_by_bucket = {}
-    for s in star_list:
+    for s in stars.get(code, []):
         b = POS_BUCKET.get(s.get("pos", ""), "MID")
         star_by_bucket.setdefault(b, []).append(s)
 
+    used_roster = set()
     used_stars = set()
     lineup = []
     for i, slot in enumerate(template):
-        bucket = POS_BUCKET.get(slot["pos"], "MID")
-        # Try exact-bucket star, then adjacent buckets
-        candidates = []
-        if bucket in star_by_bucket:
-            candidates.extend(star_by_bucket[bucket])
-        if bucket == "FW" and "AM" in star_by_bucket:
-            candidates.extend(star_by_bucket["AM"])
-        if bucket == "AM" and "FW" in star_by_bucket:
-            candidates.extend(star_by_bucket["FW"])
-        if bucket == "MID" and "AM" in star_by_bucket:
-            candidates.extend(star_by_bucket["AM"])
-
+        slot_pos = slot["pos"]
+        bucket = POS_BUCKET.get(slot_pos, "MID")
         chosen = None
-        for c in candidates:
-            cid = id(c)
-            if cid in used_stars: continue
-            chosen = c
-            used_stars.add(cid)
+        chosen_source = None
+
+        # 1. Try roster exact-pos match
+        for p in roster_by_pos.get(slot_pos, []):
+            pid = id(p)
+            if pid in used_roster: continue
+            chosen = p
+            chosen_source = "roster"
+            used_roster.add(pid)
             break
+
+        # 2. Try roster same-bucket match (e.g., slot=DM, roster has CM)
+        if not chosen:
+            for pos_key, plist in roster_by_pos.items():
+                if POS_BUCKET.get(pos_key) != bucket: continue
+                for p in plist:
+                    pid = id(p)
+                    if pid in used_roster: continue
+                    chosen = p
+                    chosen_source = "roster"
+                    used_roster.add(pid)
+                    break
+                if chosen: break
+
+        # 3. Try stars (bucket + adjacent)
+        if not chosen:
+            candidates = []
+            if bucket in star_by_bucket: candidates.extend(star_by_bucket[bucket])
+            if bucket == "FW" and "AM" in star_by_bucket: candidates.extend(star_by_bucket["AM"])
+            if bucket == "AM" and "FW" in star_by_bucket: candidates.extend(star_by_bucket["FW"])
+            if bucket == "MID" and "AM" in star_by_bucket: candidates.extend(star_by_bucket["AM"])
+            for c in candidates:
+                cid = id(c)
+                if cid in used_stars: continue
+                chosen = c
+                chosen_source = "star"
+                used_stars.add(cid)
+                break
 
         x = (100 - slot["x"]) if mirror else slot["x"]
         if chosen:
             n = chosen.get("shirt") or (i + 1)
             name = short_name(chosen.get("nameZh") or chosen.get("name") or "")
         else:
+            # 4. Final fallback: Chinese position label
             n = i + 1
-            name = slot["pos"]
+            name = POS_ZH.get(slot_pos, slot_pos)
 
-        lineup.append({"n": n, "name": name, "pos": slot["pos"], "x": x, "y": slot["y"]})
+        lineup.append({"n": n, "name": name, "pos": slot_pos, "x": x, "y": slot["y"]})
     return lineup, formation
 
 
@@ -352,7 +396,73 @@ def default_referee():
     }
 
 
-def gen_match_preview(m, analysis, stars, team_meta, templates):
+# Tactics templates keyed by (formation, primary_style). Each returns 3 short bullets
+# describing how the team will likely play. Style values come from teams_analysis.json.
+TACTICS_TEMPLATES = {
+    ("4-3-3", "進攻"):  ["雙翼速度衝擊邊路", "中場三人組高位逼搶", "鋒線中路接應內切"],
+    ("4-3-3", "技術"):  ["短傳滲透打開空間", "中場控球節奏壓制", "邊鋒內收創造肋部"],
+    ("4-3-3", "均衡"):  ["邊路傳中找中鋒搶點", "中場輪轉支援防守", "邊後衛伺機壓上助攻"],
+    ("4-3-3", "防守"):  ["雙邊鋒回防組成 4-5-1", "後腰拖後保護後衛線", "反擊找中鋒長傳"],
+    ("4-2-3-1", "進攻"): ["邊鋒突破到底線傳中", "前腰直塞中鋒身後", "雙後腰其一壓上助攻"],
+    ("4-2-3-1", "技術"): ["前腰拉邊串聯三線", "雙後腰其一前插製造人數", "中鋒回撤拉開空間"],
+    ("4-2-3-1", "均衡"): ["邊路傳中與中路滲透並進", "雙後腰一攻一守", "定位球是重要得分手段"],
+    ("4-2-3-1", "防守"): ["低位防守等待反擊", "邊鋒快速轉移找中鋒", "前腰回撤組成 4-5-1"],
+    ("4-4-2", "進攻"):  ["雙鋒搶點配合邊路傳中", "邊前衛提速插上", "中前場壓迫對方出球"],
+    ("4-4-2", "技術"):  ["中場四人組維持控球", "兩前鋒一回撤一搶點", "兩翼適時內收"],
+    ("4-4-2", "均衡"):  ["緊湊 4-4 兩線間距防守", "兩翼快速轉移", "雙鋒前後距離配合"],
+    ("4-4-2", "防守"):  ["低位密集防守", "雙鋒留前等待長傳反擊", "邊前衛回防補位"],
+    ("3-5-2", "進攻"):  ["雙翼衛全力壓上製造寬度", "雙鋒前壓拉扯後衛線", "後腰送威脅球"],
+    ("3-5-2", "技術"):  ["三後衛短傳出球建立節奏", "翼衛伺機助攻", "中場三角形傳遞"],
+    ("3-5-2", "均衡"):  ["翼衛攻守兼備", "三中衛保護中路", "雙鋒交替回撤接應"],
+    ("3-5-2", "防守"):  ["五人後場退守 (3+2)", "等待長傳找雙鋒反擊", "中場全員回防"],
+    ("5-3-2", "進攻"):  ["翼衛伺機壓上製造邊路寬度", "三中場前插支援", "雙鋒拉扯後衛線"],
+    ("5-3-2", "技術"):  ["五後衛擴張邊路", "中場三人組短傳推進", "鋒線回撤接應"],
+    ("5-3-2", "均衡"):  ["五人後場保證防線厚度", "中場穩定推進", "雙鋒一搶點一回撤"],
+    ("5-3-2", "防守"):  ["低位密集防守 5 後衛保護中路", "雙鋒反擊轉移", "翼衛伺機壓上肋部"],
+    ("3-4-3", "進攻"):  ["三鋒線拉開寬度", "雙後腰前壓支援", "邊翼衛快速套邊"],
+    ("3-4-3", "技術"):  ["三中衛出球建立節奏", "中前場形成菱形傳遞", "邊鋒內收肋部"],
+    ("3-4-3", "均衡"):  ["三後衛 + 雙翼衛 5 人防守", "三鋒線中路 + 兩肋", "中場搶斷後快速分邊"],
+    ("3-4-3", "防守"):  ["三後衛 + 雙翼衛回收 5-4-1", "鋒線回防為三中場", "等待反擊長傳"],
+}
+
+# Strength keyword → bonus tactical bullet. Allows fine-tuning beyond the template.
+STRENGTH_KEYWORD_BULLETS = {
+    "邊路速度": "邊鋒/邊後衛速度爆破將是進攻關鍵",
+    "邊路": "邊路傳中與套邊配合密集",
+    "定位球": "角球與任意球是重要得分手段",
+    "高位逼搶": "前場高位壓迫切斷對手出球",
+    "反擊": "防守反擊轉換速度極快",
+    "中場": "中場控制是壓制比賽的核心",
+    "後防": "後防穩固，難以被打穿",
+    "鋒線": "鋒線終結效率極高",
+    "球星": "球星個人能力可以解決僵局",
+    "經驗": "大賽經驗豐富，關鍵時刻不慌",
+}
+
+
+def make_tactics(code, team_meta, analysis):
+    """Return list of 3 short tactical bullets for the given team."""
+    meta = team_meta.get(code, {})
+    formation = meta.get("formation", "4-3-3")
+    info = analysis.get(code, {}) or {}
+    style = info.get("style", "均衡")
+    strength = info.get("strength", "")
+
+    base = TACTICS_TEMPLATES.get((formation, style)) or TACTICS_TEMPLATES.get((formation, "均衡"))
+    if not base:
+        base = ["陣型內球員按位置責任分工", "中場負責節奏與控制", "鋒線伺機完成攻勢"]
+
+    bullets = list(base)
+    # If a strength keyword matches, replace the third bullet with a more specific one
+    for kw, bullet in STRENGTH_KEYWORD_BULLETS.items():
+        if kw in strength:
+            if bullet not in bullets:
+                bullets[-1] = bullet
+            break
+    return bullets[:3]
+
+
+def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None):
     """Auto-generate preview entry for one match."""
     h_code = m["home"]["code"].upper()
     a_code = m["away"]["code"].upper()
@@ -367,14 +477,18 @@ def gen_match_preview(m, analysis, stars, team_meta, templates):
     a_stats = a_an.get("stats") or {"attack": 5, "defense": 5, "midfield": 5,
                                      "fitness": 5, "experience": 5, "stars": 5}
 
-    h_lineup, h_form = make_lineup(h_code, team_meta, stars, templates, mirror=False)
-    a_lineup, a_form = make_lineup(a_code, team_meta, stars, templates, mirror=True)
+    h_lineup, h_form = make_lineup(h_code, team_meta, stars, templates, mirror=False, rosters=rosters)
+    a_lineup, a_form = make_lineup(a_code, team_meta, stars, templates, mirror=True, rosters=rosters)
     h_arrows = make_arrows(h_form, mirror=False)
     a_arrows = make_arrows(a_form, mirror=True)
 
     predict = predict_score(h_stats, a_stats)
     timeline = make_timeline(predict, h_code, a_code)
     duels = key_duels(h_code, a_code, stars, h_lineup, a_lineup)
+    tactics = {
+        "home": make_tactics(h_code, team_meta, analysis),
+        "away": make_tactics(a_code, team_meta, analysis),
+    }
 
     h_zh = ZH.get(h_code, m["home"].get("name", h_code))
     a_zh = ZH.get(a_code, m["away"].get("name", a_code))
@@ -415,6 +529,7 @@ def gen_match_preview(m, analysis, stars, team_meta, templates):
         "timeline": timeline,
         "referee": default_referee(),
         "keyDuels": duels,
+        "tactics": tactics,
         "predict": predict,
     }
 
@@ -431,7 +546,7 @@ def load_overrides():
     return out
 
 
-def build_preview(schedule, analysis, stars, team_meta, templates):
+def build_preview(schedule, analysis, stars, team_meta, templates, rosters=None):
     overrides = load_overrides()
     seen_keys = set()
     used_override_keys = set()
@@ -466,7 +581,7 @@ def build_preview(schedule, analysis, stars, team_meta, templates):
                 entry["stage"] = STAGE_LABEL_ZH.get(stage, stage)
             matches_out.append(entry)
         else:
-            matches_out.append(gen_match_preview(m, analysis, stars, team_meta, templates))
+            matches_out.append(gen_match_preview(m, analysis, stars, team_meta, templates, rosters=rosters))
 
     matches_out.sort(key=lambda x: (x.get("_kickoffUtc") or "", x.get("_matchNo", 0)))
 
@@ -498,8 +613,10 @@ def main():
     stars = json.loads((DATA / "stars.json").read_text(encoding="utf-8"))
     team_meta = json.loads((DATA / "team_meta.json").read_text(encoding="utf-8"))
     templates = json.loads((DATA / "lineup_templates.json").read_text(encoding="utf-8"))
+    rosters_path = DATA / "rosters.json"
+    rosters = json.loads(rosters_path.read_text(encoding="utf-8")) if rosters_path.exists() else {}
 
-    preview = build_preview(schedule, analysis, stars, team_meta, templates)
+    preview = build_preview(schedule, analysis, stars, team_meta, templates, rosters=rosters)
     out = DATA / "preview.json"
     out.write_text(json.dumps(preview, ensure_ascii=False, indent=2), encoding="utf-8")
     auto = sum(1 for m in preview["matches"] if m.get("_auto"))

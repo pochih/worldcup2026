@@ -343,6 +343,18 @@
     "tendency": "對速度型球員衝撞容忍度低，Mbappé/Doué 容易製造任意球；Haaland 因 frustration 易累計黃牌",
     "impact": "定位球將是 France 額外得分來源，Norway 後防壓力倍增"
   },
+  "tactics": {
+    "home": [
+      "Haaland 高位逼搶衝擊 Saliba/Upamecano",
+      "Ødegaard 拉邊組織 + Nusa 過人創造空檔",
+      "雙邊衛快速壓上製造 5 人前場，搶斷後直送 Haaland"
+    ],
+    "away": [
+      "Tchouaméni-Camavinga 雙樞紐切斷 Ødegaard 傳球線路",
+      "Mbappé 內收找肋部，Doué/Barcola 拉邊扯開後衛線",
+      "Saliba 一對一鎖死 Haaland，Maignan 出擊化解高球"
+    ]
+  },
   "keyDuels": [
     {
       "home": "Haaland",

@@ -591,6 +591,12 @@ const TIMELINE_ICON = {
   halftime: "⏸", fulltime: "🏁", card: "🟨",
 };
 
+const POS_ZH_JS = {
+  GK: "門將", CB: "中後衛", LB: "左後衛", RB: "右後衛",
+  DM: "後腰", CM: "中場", LM: "左中場", RM: "右中場",
+  AM: "前腰", LW: "左翼", RW: "右翼", ST: "中鋒", CF: "前鋒",
+};
+
 // Pitch SVG: 100 (length) x 100 (width). Home attacks left→right, Away attacks right→left.
 // Names go below the dot for home (left half) and above the dot for away (right half),
 // so the two halves' name strips never collide near the centre line.
@@ -600,6 +606,14 @@ function shortPlayerName(name) {
   const parts = name.split(/\s+/);
   if (parts.length >= 2) return `${parts[0][0]}. ${parts[parts.length - 1]}`.slice(0, 11);
   return name.slice(0, 9) + ".";
+}
+
+// If the player's `name` field is just a position code (e.g., "RB"), turn it
+// into the Chinese label so unfilled lineups still read naturally.
+function displayPlayerName(p) {
+  const n = p.name || "";
+  if (/^[A-Z]{1,3}$/.test(n)) return POS_ZH_JS[n] || n;
+  return shortPlayerName(n);
 }
 
 function pitchSvg(home, away) {
@@ -653,7 +667,7 @@ function pitchSvg(home, away) {
         <text x="${p.x}" y="${labelY}" text-anchor="middle"
               font-size="2.2" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.45"
               paint-order="stroke" stroke-linejoin="round"
-              text-rendering="geometricPrecision">${shortPlayerName(p.name)}</text>
+              text-rendering="geometricPrecision">${displayPlayerName(p)}</text>
       </g>`;
     }).join("");
   };
@@ -890,6 +904,17 @@ function renderPreview() {
           ${pitchSvg(m.home, m.away)}
         </div>
         ${arrowLegendHtml(m.home, m.away)}
+        ${m.tactics ? `
+        <div class="tactics-block">
+          <div class="tactics-team tactics-home">
+            <h5><span class="tactics-flag">${m.home.flag}</span> ${m.home.code} 戰術重點</h5>
+            <ul>${(m.tactics.home || []).map(t => `<li>${t}</li>`).join("")}</ul>
+          </div>
+          <div class="tactics-team tactics-away">
+            <h5><span class="tactics-flag">${m.away.flag}</span> ${m.away.code} 戰術重點</h5>
+            <ul>${(m.tactics.away || []).map(t => `<li>${t}</li>`).join("")}</ul>
+          </div>
+        </div>` : ""}
         <div class="pitch-legend">
           <span class="legend-dot" style="background:#ffc857"></span> GK 守門
           <span class="legend-dot" style="background:#4fc3ff"></span> 後衛
