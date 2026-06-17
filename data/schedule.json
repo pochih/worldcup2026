@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T23:46:30.540874+00:00",
+  "generatedAt": "2026-06-17T05:14:32.817527+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1092,8 +1092,8 @@
       "group": "I",
       "utc": "2026-06-16T22:00:00Z",
       "localKick": "2026-06-16T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Boston Stadium",
       "city": "Boston",
       "tz": "",
@@ -1113,10 +1113,10 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": 3,
+        "score": 4,
         "pen": null
       },
-      "winner": null,
+      "winner": "43961",
       "attendance": "63106",
       "twBroadcast": [
         "愛爾達體育台（付費）"
@@ -1153,6 +1153,14 @@
           "player": "Leo Ostigard",
           "score": "1-3",
           "type": "G"
+        },
+        {
+          "minute": "90'+6'",
+          "side": "away",
+          "team": "43818",
+          "player": "Hussein",
+          "score": "1-4",
+          "type": "OG"
         }
       ]
     },
@@ -1164,8 +1172,8 @@
       "group": "J",
       "utc": "2026-06-17T01:00:00Z",
       "localKick": "2026-06-16T20:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
       "tz": "",
@@ -1177,7 +1185,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -1185,15 +1193,40 @@
         "code": "ALG",
         "name": "Algeria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43922",
+      "attendance": "69045",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "17'",
+          "side": "home",
+          "team": "43922",
+          "player": "Messi",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "60'",
+          "side": "home",
+          "team": "43922",
+          "player": "Messi",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "76'",
+          "side": "home",
+          "team": "43922",
+          "player": "Messi",
+          "score": "3-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021498",
@@ -1203,7 +1236,7 @@
       "group": "J",
       "utc": "2026-06-17T04:00:00Z",
       "localKick": "2026-06-16T21:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "San Francisco Bay Area Stadium",
       "city": "San Francisco Bay Area",
@@ -1216,7 +1249,7 @@
         "code": "AUT",
         "name": "Austria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -1224,7 +1257,7 @@
         "code": "JOR",
         "name": "Jordan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -1232,7 +1265,24 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "20'",
+          "side": "home",
+          "team": "43934",
+          "player": "Romano Schmid",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "50'",
+          "side": "away",
+          "team": "43820",
+          "player": "Ali Olwan",
+          "score": "1-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021510",
@@ -5386,6 +5436,20 @@
     ],
     "I": [
       {
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 4,
+        "GA": 1,
+        "GD": 3,
+        "Pts": 3
+      },
+      {
         "id": "43946",
         "code": "FRA",
         "name": "France",
@@ -5400,34 +5464,6 @@
         "Pts": 3
       },
       {
-        "id": "43961",
-        "code": "NOR",
-        "name": "Norway",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "P": 1,
-        "W": 1,
-        "D": 0,
-        "L": 0,
-        "GF": 3,
-        "GA": 1,
-        "GD": 2,
-        "Pts": 3
-      },
-      {
-        "id": "43818",
-        "code": "IRQ",
-        "name": "Iraq",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
-        "P": 1,
-        "W": 0,
-        "D": 0,
-        "L": 1,
-        "GF": 1,
-        "GA": 3,
-        "GD": -2,
-        "Pts": 0
-      },
-      {
         "id": "43879",
         "code": "SEN",
         "name": "Senegal",
@@ -5440,63 +5476,77 @@
         "GA": 3,
         "GD": -2,
         "Pts": 0
+      },
+      {
+        "id": "43818",
+        "code": "IRQ",
+        "name": "Iraq",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRQ",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 4,
+        "GD": -3,
+        "Pts": 0
       }
     ],
     "J": [
-      {
-        "id": "43843",
-        "code": "ALG",
-        "name": "Algeria",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
       {
         "id": "43922",
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 3,
         "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GD": 3,
+        "Pts": 3
       },
       {
         "id": "43934",
         "code": "AUT",
         "name": "Austria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 1,
         "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GD": 1,
+        "Pts": 3
       },
       {
         "id": "43820",
         "code": "JOR",
         "name": "Jordan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
-        "P": 0,
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
+        "L": 1,
         "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "GA": 1,
+        "GD": -1,
+        "Pts": 0
+      },
+      {
+        "id": "43843",
+        "code": "ALG",
+        "name": "Algeria",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 3,
+        "GD": -3,
         "Pts": 0
       }
     ],
