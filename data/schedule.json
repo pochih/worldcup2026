@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T17:22:12.816887+00:00",
+  "generatedAt": "2026-06-17T20:29:33.898987+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1347,7 +1347,7 @@
       "group": "L",
       "utc": "2026-06-17T20:00:00Z",
       "localKick": "2026-06-17T15:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Dallas Stadium",
       "city": "Dallas",
@@ -1360,7 +1360,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -1368,7 +1368,7 @@
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -1376,7 +1376,16 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "12'",
+          "side": "home",
+          "team": "43942",
+          "player": "Kane",
+          "score": "1-0",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021502",
@@ -1386,8 +1395,8 @@
       "group": "K",
       "utc": "2026-06-17T17:00:00Z",
       "localKick": "2026-06-17T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Houston Stadium",
       "city": "Houston",
       "tz": "",
@@ -1407,11 +1416,11 @@
         "code": "COD",
         "name": "Congo DR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "68777",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -1422,6 +1431,14 @@
           "team": "43963",
           "player": "João Neves",
           "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "45'+5'",
+          "side": "away",
+          "team": "20014",
+          "player": "Yoane Wissa",
+          "score": "1-1",
           "type": "G"
         }
       ]
@@ -5577,32 +5594,18 @@
     ],
     "L": [
       {
-        "id": "43938",
-        "code": "CRO",
-        "name": "Croatia",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
         "id": "43942",
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 1,
         "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GD": 1,
+        "Pts": 3
       },
       {
         "id": "43860",
@@ -5631,22 +5634,50 @@
         "GA": 0,
         "GD": 0,
         "Pts": 0
+      },
+      {
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 1,
+        "GD": -1,
+        "Pts": 0
       }
     ],
     "K": [
+      {
+        "id": "20014",
+        "code": "COD",
+        "name": "Congo DR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
       {
         "id": "43963",
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
         "P": 1,
-        "W": 1,
-        "D": 0,
+        "W": 0,
+        "D": 1,
         "L": 0,
         "GF": 1,
-        "GA": 0,
-        "GD": 1,
-        "Pts": 3
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
       },
       {
         "id": "43926",
@@ -5674,20 +5705,6 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
-        "Pts": 0
-      },
-      {
-        "id": "20014",
-        "code": "COD",
-        "name": "Congo DR",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
-        "P": 1,
-        "W": 0,
-        "D": 0,
-        "L": 1,
-        "GF": 0,
-        "GA": 1,
-        "GD": -1,
         "Pts": 0
       }
     ]
