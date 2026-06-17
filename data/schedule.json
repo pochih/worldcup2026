@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T13:59:19.840386+00:00",
+  "generatedAt": "2026-06-17T17:22:12.816887+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1386,7 +1386,7 @@
       "group": "K",
       "utc": "2026-06-17T17:00:00Z",
       "localKick": "2026-06-17T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Houston Stadium",
       "city": "Houston",
@@ -1399,7 +1399,7 @@
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -1407,7 +1407,7 @@
         "code": "COD",
         "name": "Congo DR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -1415,7 +1415,16 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "6'",
+          "side": "home",
+          "team": "43963",
+          "player": "João Neves",
+          "score": "1-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021504",
@@ -5626,38 +5635,24 @@
     ],
     "K": [
       {
-        "id": "43926",
-        "code": "COL",
-        "name": "Colombia",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "id": "20014",
-        "code": "COD",
-        "name": "Congo DR",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
         "id": "43963",
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 1,
+        "GA": 0,
+        "GD": 1,
+        "Pts": 3
+      },
+      {
+        "id": "43926",
+        "code": "COL",
+        "name": "Colombia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
         "P": 0,
         "W": 0,
         "D": 0,
@@ -5679,6 +5674,20 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 0
+      },
+      {
+        "id": "20014",
+        "code": "COD",
+        "name": "Congo DR",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 1,
+        "GD": -1,
         "Pts": 0
       }
     ]
