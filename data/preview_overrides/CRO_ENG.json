@@ -144,6 +144,15 @@
         "label": "Bellingham 後插上"
       }
     ],
+    "ballRoutes": [
+      { "from": [38, 38], "to": [56, 50], "label": "Rice → Bellingham" },
+      { "from": [56, 50], "to": [70, 50], "label": "Bellingham → Kane" },
+      { "from": [22, 18], "to": [56, 18], "label": "Walker → Saka" }
+    ],
+    "zones": [
+      { "x": 32, "y": 8,  "w": 28, "h": 22, "label": "Saka 內切區", "kind": "wing" },
+      { "x": 50, "y": 35, "w": 25, "h": 30, "label": "Bellingham 創造區", "kind": "create" }
+    ],
     "stats": {
       "attack": 8.5,
       "defense": 8.0,
@@ -274,6 +283,15 @@
         ],
         "label": "Petković 衝刺"
       }
+    ],
+    "ballRoutes": [
+      { "from": [60, 35], "to": [32, 50], "label": "Modrić → Petković" },
+      { "from": [60, 50], "to": [42, 80], "label": "Kovačić → Kramarić" },
+      { "from": [78, 38], "to": [42, 20], "label": "Gvardiol 長傳 Baturina" }
+    ],
+    "zones": [
+      { "x": 50, "y": 30, "w": 25, "h": 40, "label": "Modrić 控制區", "kind": "create" },
+      { "x": 65, "y": 18, "w": 28, "h": 64, "label": "後場屏障", "kind": "defense" }
     ],
     "stats": {
       "attack": 7.0,

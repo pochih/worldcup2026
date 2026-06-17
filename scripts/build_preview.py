@@ -210,6 +210,96 @@ def make_arrows(formation, mirror=False):
     return out
 
 
+def make_ball_routes(formation, mirror=False):
+    """Generic passing-lane routes for the team's intended build-up.
+    Solid lines (no arrowhead) drawn behind the players showing where
+    the ball is meant to go. 2-3 routes per team, mirrored for away."""
+    routes_by_form = {
+        "4-3-3":   [([38, 50], [56, 50], "後腰→前場"),
+                    ([56, 18], [70, 50], "右翼→中鋒"),
+                    ([56, 82], [70, 50], "左翼→中鋒")],
+        "4-2-3-1": [([38, 38], [56, 50], "後腰→前腰"),
+                    ([56, 50], [70, 50], "前腰→中鋒"),
+                    ([22, 18], [56, 18], "右後衛長傳右翼")],
+        "4-4-2":   [([42, 40], [65, 38], "中場→中鋒"),
+                    ([42, 18], [65, 38], "右中→中鋒"),
+                    ([42, 82], [65, 62], "左中→中鋒")],
+        "3-5-2":   [([42, 50], [65, 50], "中場→雙鋒"),
+                    ([38, 14], [65, 38], "右翼衛→中鋒"),
+                    ([38, 86], [65, 62], "左翼衛→中鋒")],
+        "5-3-2":   [([42, 50], [65, 50], "中場→雙鋒"),
+                    ([22, 14], [65, 38], "右後衛長傳"),
+                    ([22, 86], [65, 62], "左後衛長傳")],
+        "3-4-3":   [([42, 38], [62, 22], "中場→右翼"),
+                    ([42, 62], [62, 78], "中場→左翼"),
+                    ([42, 50], [68, 50], "中場→中鋒")],
+    }
+    base = routes_by_form.get(formation, routes_by_form["4-3-3"])
+    out = []
+    for frm, to, label in base:
+        fx, fy = frm
+        tx, ty = to
+        if mirror:
+            fx, tx = 100 - fx, 100 - tx
+        out.append({"from": [fx, fy], "to": [tx, ty], "label": label})
+    return out
+
+
+def make_zones(formation, style, mirror=False):
+    """1-2 highlighted zones describing where the team focuses its play.
+    kind drives the color: press / create / wing / defense."""
+    # Coordinates in home orientation (attacking left→right). Mirror for away.
+    zones_by_form_style = {
+        ("4-3-3", "進攻"):  [(35, 8, 28, 84, "高位逼搶區", "press"),
+                             (52, 30, 22, 40, "創造區", "create")],
+        ("4-3-3", "技術"):  [(28, 18, 32, 64, "控球區", "create"),
+                             (50, 28, 28, 44, "滲透區", "create")],
+        ("4-3-3", "均衡"):  [(50, 8, 26, 22, "右路衝擊", "wing"),
+                             (50, 70, 26, 22, "左路衝擊", "wing")],
+        ("4-3-3", "防守"):  [(8, 18, 28, 64, "後場屏障", "defense"),
+                             (60, 30, 24, 40, "反擊起點", "press")],
+        ("4-2-3-1", "進攻"): [(32, 8, 30, 84, "高位逼搶區", "press"),
+                              (50, 30, 24, 40, "前腰串聯區", "create")],
+        ("4-2-3-1", "技術"): [(30, 25, 34, 50, "控球節奏區", "create"),
+                              (50, 8, 22, 22, "右路套邊", "wing")],
+        ("4-2-3-1", "均衡"): [(48, 30, 26, 40, "前腰活動區", "create"),
+                              (50, 8, 24, 22, "右翼壓上", "wing")],
+        ("4-2-3-1", "防守"): [(8, 18, 26, 64, "雙後腰屏障", "defense"),
+                              (58, 28, 28, 44, "反擊出球區", "press")],
+        ("4-4-2", "進攻"):  [(35, 8, 30, 22, "右路傳中區", "wing"),
+                             (35, 70, 30, 22, "左路傳中區", "wing")],
+        ("4-4-2", "技術"):  [(28, 22, 36, 56, "中場控制區", "create")],
+        ("4-4-2", "均衡"):  [(40, 30, 30, 40, "中前場壓迫", "press")],
+        ("4-4-2", "防守"):  [(8, 18, 28, 64, "後場 4-4 屏障", "defense")],
+        ("3-5-2", "進攻"):  [(28, 8, 22, 22, "右翼衛壓上", "wing"),
+                             (28, 70, 22, 22, "左翼衛壓上", "wing")],
+        ("3-5-2", "技術"):  [(28, 25, 36, 50, "中場控制區", "create")],
+        ("3-5-2", "均衡"):  [(50, 30, 28, 40, "前場聯動區", "create")],
+        ("3-5-2", "防守"):  [(8, 18, 28, 64, "三中衛 + 雙後腰", "defense")],
+        ("5-3-2", "進攻"):  [(48, 30, 28, 40, "雙鋒前壓區", "press")],
+        ("5-3-2", "技術"):  [(28, 25, 36, 50, "中場控制區", "create")],
+        ("5-3-2", "均衡"):  [(8, 14, 32, 72, "五人後場", "defense")],
+        ("5-3-2", "防守"):  [(8, 14, 32, 72, "五人後場屏障", "defense"),
+                             (60, 30, 22, 40, "反擊起點", "press")],
+        ("3-4-3", "進攻"):  [(50, 8, 28, 22, "右翼爆破", "wing"),
+                             (50, 70, 28, 22, "左翼爆破", "wing")],
+        ("3-4-3", "技術"):  [(28, 22, 36, 56, "三中衛出球", "create")],
+        ("3-4-3", "均衡"):  [(50, 30, 26, 40, "三鋒線中路", "press")],
+        ("3-4-3", "防守"):  [(8, 18, 30, 64, "三後衛 + 雙翼衛", "defense")],
+    }
+    base = zones_by_form_style.get((formation, style)) \
+        or zones_by_form_style.get((formation, "均衡")) \
+        or [(28, 30, 36, 40, "戰術核心區", "create")]
+
+    out = []
+    for x, y, w, h, label, kind in base:
+        if mirror:
+            # Mirror x: the rect's right edge becomes (100 - x), so new x = 100 - x - w
+            x = 100 - x - w
+        out.append({"x": x, "y": y, "w": w, "h": h, "label": label, "kind": kind})
+    return out
+
+
 def predict_score(home_stats, away_stats):
     """Rule-based prediction. Returns dict with score / confidence / winner /
     reasoning / scenarios."""
@@ -481,6 +571,12 @@ def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None):
     a_lineup, a_form = make_lineup(a_code, team_meta, stars, templates, mirror=True, rosters=rosters)
     h_arrows = make_arrows(h_form, mirror=False)
     a_arrows = make_arrows(a_form, mirror=True)
+    h_routes = make_ball_routes(h_form, mirror=False)
+    a_routes = make_ball_routes(a_form, mirror=True)
+    h_style = (h_an.get("style") or "均衡")
+    a_style = (a_an.get("style") or "均衡")
+    h_zones = make_zones(h_form, h_style, mirror=False)
+    a_zones = make_zones(a_form, a_style, mirror=True)
 
     predict = predict_score(h_stats, a_stats)
     timeline = make_timeline(predict, h_code, a_code)
@@ -514,6 +610,8 @@ def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None):
             "formation": h_form,
             "lineup": h_lineup,
             "arrows": h_arrows,
+            "ballRoutes": h_routes,
+            "zones": h_zones,
             "stats": h_stats,
         },
         "away": {
@@ -524,6 +622,8 @@ def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None):
             "formation": a_form,
             "lineup": a_lineup,
             "arrows": a_arrows,
+            "ballRoutes": a_routes,
+            "zones": a_zones,
             "stats": a_stats,
         },
         "timeline": timeline,

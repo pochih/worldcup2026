@@ -617,18 +617,32 @@ function displayPlayerName(p) {
 }
 
 function pitchSvg(home, away) {
+  // Kept for backwards-compat with older preview.json. Prefer singleTeamPitch().
+  return singleTeamPitch(home, "home") + singleTeamPitch(away, "away");
+}
+
+const ZONE_COLORS = {
+  press:   { fill: "rgba(255, 78, 106, 0.15)",  stroke: "rgba(255, 78, 106, 0.7)",  label: "#ff4e6a" },
+  create:  { fill: "rgba(0, 212, 170, 0.15)",   stroke: "rgba(0, 212, 170, 0.7)",   label: "#00d4aa" },
+  wing:    { fill: "rgba(255, 140, 66, 0.15)",  stroke: "rgba(255, 140, 66, 0.7)",  label: "#ff8c42" },
+  defense: { fill: "rgba(79, 195, 255, 0.15)",  stroke: "rgba(79, 195, 255, 0.7)",  label: "#4fc3ff" },
+};
+
+function singleTeamPitch(team, side) {
+  // One team, full 100x100 pitch, no opponent → no overlap risk.
   const W = 100, H = 100;
+  const isHome = side === "home";
   const pitchBg = `
     <defs>
-      <pattern id="grass" x="0" y="0" width="10" height="100" patternUnits="userSpaceOnUse">
+      <pattern id="grass-${side}" x="0" y="0" width="10" height="100" patternUnits="userSpaceOnUse">
         <rect x="0" y="0" width="5"  height="100" fill="#0f5132"/>
         <rect x="5" y="0" width="5"  height="100" fill="#0d4429"/>
       </pattern>
-      <filter id="playerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <filter id="playerShadow-${side}" x="-50%" y="-50%" width="200%" height="200%">
         <feDropShadow dx="0" dy="0.5" stdDeviation="0.6" flood-opacity="0.5"/>
       </filter>
     </defs>
-    <rect x="0" y="0" width="${W}" height="${H}" fill="url(#grass)"/>
+    <rect x="0" y="0" width="${W}" height="${H}" fill="url(#grass-${side})"/>
     <rect x="1" y="1" width="${W-2}" height="${H-2}" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
     <line x1="50" y1="1" x2="50" y2="99" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
     <circle cx="50" cy="50" r="9" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
@@ -641,65 +655,88 @@ function pitchSvg(home, away) {
     <circle cx="${W-11}" cy="50" r="0.6" fill="rgba(255,255,255,0.7)"/>
   `;
 
-  const playerCircles = (team, isHome, otherTeam) => {
-    return team.lineup.map(p => {
-      const fill = POS_FILL[p.pos] || "#97a3cf";
-      const ring = team.color;
-      // Home → label below the dot; Away → label above the dot.
-      let labelY = isHome ? p.y + 6.8 : p.y - 4.6;
+  // Zones: drawn first (behind everything else)
+  const zones = (team.zones || []).map((z, i) => {
+    const c = ZONE_COLORS[z.kind] || ZONE_COLORS.create;
+    const labelX = z.x + 1.5;
+    const labelY = z.y + 4;
+    return `
+      <rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}"
+            fill="${c.fill}" stroke="${c.stroke}" stroke-width="0.5"
+            stroke-dasharray="1.5,1" rx="1"/>
+      <text x="${labelX}" y="${labelY}" font-size="2.6" font-weight="800"
+            fill="${c.label}" stroke="#0a0e27" stroke-width="0.4"
+            paint-order="stroke">${z.label}</text>
+    `;
+  }).join("");
 
-      // Collision avoidance: if any opponent player has its label projected
-      // into the same band (close in x AND close in y), nudge this label
-      // further away from the centre line.
-      const opponents = otherTeam ? otherTeam.lineup : [];
-      const oppLabelY = (op) => isHome ? op.y - 4.6 : op.y + 6.8;
-      const tooClose = opponents.some(op => {
-        const dx = Math.abs(op.x - p.x);
-        const dy = Math.abs(oppLabelY(op) - labelY);
-        return dx < 8 && dy < 4;
-      });
-      if (tooClose) labelY += isHome ? 3.6 : -3.6;
+  // Ball routes: solid thin lines, no arrowhead — passing lanes
+  const ballRoutes = (team.ballRoutes || []).map((r, i) => {
+    const [x1, y1] = r.from, [x2, y2] = r.to;
+    return `
+      <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"
+            stroke="rgba(255,255,255,0.85)" stroke-width="0.5"
+            stroke-linecap="round" opacity="0.7"/>
+      <circle cx="${x2}" cy="${y2}" r="0.9" fill="rgba(255,255,255,0.85)"/>
+    `;
+  }).join("");
 
-      return `<g filter="url(#playerShadow)">
-        <circle cx="${p.x}" cy="${p.y}" r="3.6" fill="${fill}" stroke="${ring}" stroke-width="0.9"/>
-        <text x="${p.x}" y="${p.y}" text-anchor="middle" dy="0.35em"
-              font-size="3" font-weight="800" fill="#0a0e27">${p.n}</text>
-        <text x="${p.x}" y="${labelY}" text-anchor="middle"
-              font-size="2.2" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.45"
-              paint-order="stroke" stroke-linejoin="round"
-              text-rendering="geometricPrecision">${displayPlayerName(p)}</text>
-      </g>`;
-    }).join("");
-  };
+  // Attack arrows: dashed team-color, with arrowhead — runs
+  const arrows = (team.arrows || []).map((a, i) => {
+    const id = `arrow-${side}-${i}`;
+    const [x1, y1] = a.from, [x2, y2] = a.to;
+    return `
+      <defs>
+        <marker id="${id}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="${team.color}"/>
+        </marker>
+      </defs>
+      <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"
+            stroke="${team.color}" stroke-width="0.8" stroke-dasharray="1.5,0.8"
+            marker-end="url(#${id})" opacity="0.95"/>
+    `;
+  }).join("");
 
-  // Arrows on pitch are visual-only — labels rendered in the legend below.
-  const arrows = (team, color) => {
-    return (team.arrows || []).map((a, i) => {
-      const id = `arrow-${color.replace("#","")}-${i}`;
-      const [x1, y1] = a.from, [x2, y2] = a.to;
-      return `
-        <defs>
-          <marker id="${id}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
-            <path d="M0,0 L10,5 L0,10 Z" fill="${color}"/>
-          </marker>
-        </defs>
-        <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"
-              stroke="${color}" stroke-width="0.8" stroke-dasharray="1.5,0.8"
-              marker-end="url(#${id})" opacity="0.85"/>
-      `;
-    }).join("");
-  };
+  // Players
+  const playerCircles = team.lineup.map(p => {
+    const fill = POS_FILL[p.pos] || "#97a3cf";
+    const ring = team.color;
+    // No opponent on the pitch → simple, consistent label placement.
+    const labelY = isHome ? p.y + 6.8 : p.y - 4.6;
+    return `<g filter="url(#playerShadow-${side})">
+      <circle cx="${p.x}" cy="${p.y}" r="3.6" fill="${fill}" stroke="${ring}" stroke-width="0.9"/>
+      <text x="${p.x}" y="${p.y}" text-anchor="middle" dy="0.35em"
+            font-size="3" font-weight="800" fill="#0a0e27">${p.n}</text>
+      <text x="${p.x}" y="${labelY}" text-anchor="middle"
+            font-size="2.2" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.45"
+            paint-order="stroke" stroke-linejoin="round"
+            text-rendering="geometricPrecision">${displayPlayerName(p)}</text>
+    </g>`;
+  }).join("");
 
-  return `<svg class="pitch" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  // Title strip + small attack-direction caption
+  const dirCaption = isHome ? "進攻方向 →" : "← 進攻方向";
+  const titleX = isHome ? 2 : 98;
+  const titleAnchor = isHome ? "start" : "end";
+
+  return `<svg class="pitch pitch-${side}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     ${pitchBg}
-    ${arrows(home, home.color)}
-    ${arrows(away, away.color)}
-    ${playerCircles(home, true, away)}
-    ${playerCircles(away, false, home)}
-    <text x="2"   y="6" font-size="4" font-weight="800" fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">${home.flag} ${home.code}</text>
-    <text x="98"  y="6" text-anchor="end" font-size="4" font-weight="800" fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">${away.code} ${away.flag}</text>
-    <text x="2"   y="97" font-size="2.6" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">${home.formation} · ${home.manager}</text>
-    <text x="98"  y="97" text-anchor="end" font-size="2.6" font-weight="700" fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">${away.formation} · ${away.manager}</text>
+    ${zones}
+    ${ballRoutes}
+    ${arrows}
+    ${playerCircles}
+    <text x="${titleX}" y="6" text-anchor="${titleAnchor}" font-size="4" font-weight="800"
+          fill="#fff" stroke="#000" stroke-width="0.5" paint-order="stroke">
+      ${team.flag} ${team.code}
+    </text>
+    <text x="${titleX}" y="11" text-anchor="${titleAnchor}" font-size="2.8" font-weight="700"
+          fill="#fff" stroke="#000" stroke-width="0.3" paint-order="stroke">
+      ${team.formation} · ${team.manager}
+    </text>
+    <text x="50" y="6" text-anchor="middle" font-size="2.4" font-weight="700"
+          fill="rgba(255,255,255,0.7)" stroke="#000" stroke-width="0.3" paint-order="stroke">
+      ${dirCaption}
+    </text>
   </svg>`;
 }
 
@@ -897,11 +934,19 @@ function renderPreview() {
         </div>
       </div>
 
-      <!-- Pitch tactical board -->
+      <!-- Pitch tactical boards: two stacked single-team pitches -->
       <div class="preview-section">
         <h4>⚽ 戰術板 · 預測首發陣型</h4>
-        <div class="pitch-wrap">
-          ${pitchSvg(m.home, m.away)}
+        <div class="pitch-wrap pitch-wrap-home">
+          ${singleTeamPitch(m.home, "home")}
+        </div>
+        <div class="pitch-divider">
+          <span class="pitch-divider-flag">${m.home.flag}</span>
+          <span class="pitch-divider-vs">VS</span>
+          <span class="pitch-divider-flag">${m.away.flag}</span>
+        </div>
+        <div class="pitch-wrap pitch-wrap-away">
+          ${singleTeamPitch(m.away, "away")}
         </div>
         ${arrowLegendHtml(m.home, m.away)}
         ${m.tactics ? `
@@ -921,6 +966,10 @@ function renderPreview() {
           <span class="legend-dot" style="background:#9c89ff"></span> 後腰
           <span class="legend-dot" style="background:#00d4aa"></span> 前腰
           <span class="legend-dot" style="background:#ff4e6a"></span> 鋒線
+          &nbsp;&nbsp;
+          <span class="legend-line solid"></span> 出球路線
+          <span class="legend-line dashed"></span> 進攻路徑
+          <span class="legend-zone"></span> 戰術重點區
         </div>
       </div>
 

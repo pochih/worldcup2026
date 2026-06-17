@@ -144,6 +144,15 @@
         "label": "Haaland 衝擊禁區"
       }
     ],
+    "ballRoutes": [
+      { "from": [50, 35], "to": [70, 50], "label": "Ødegaard → Haaland" },
+      { "from": [38, 50], "to": [50, 35], "label": "Berge → Ødegaard" },
+      { "from": [62, 82], "to": [70, 50], "label": "Nusa → Haaland" }
+    ],
+    "zones": [
+      { "x": 32, "y": 30, "w": 30, "h": 40, "label": "高位逼搶區", "kind": "press" },
+      { "x": 55, "y": 35, "w": 25, "h": 30, "label": "Haaland 終結區", "kind": "create" }
+    ],
     "stats": {
       "attack": 8.0,
       "defense": 6.5,
@@ -274,6 +283,15 @@
         ],
         "label": "Mbappé 突破"
       }
+    ],
+    "ballRoutes": [
+      { "from": [44, 50], "to": [30, 50], "label": "Olise → Mbappé" },
+      { "from": [62, 38], "to": [44, 50], "label": "Tchouaméni → Olise" },
+      { "from": [44, 18], "to": [30, 50], "label": "Barcola 內收給 Mbappé" }
+    ],
+    "zones": [
+      { "x": 35, "y": 30, "w": 25, "h": 40, "label": "Olise 串聯區", "kind": "create" },
+      { "x": 64, "y": 18, "w": 28, "h": 64, "label": "Saliba 凍結區", "kind": "defense" }
     ],
     "stats": {
       "attack": 9.5,

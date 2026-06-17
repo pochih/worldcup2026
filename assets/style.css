@@ -588,14 +588,52 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
   padding: 6px;
   border: 2px solid var(--border);
 }
+.pitch-wrap-home { border-color: var(--accent); }
+.pitch-wrap-away { border-color: var(--accent-2); }
 .pitch { width: 100%; height: auto; display: block; }
+
+.pitch-divider {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 8px 0;
+  font-size: 14px; font-weight: 800;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+.pitch-divider-flag { font-size: 24px; line-height: 1; }
+.pitch-divider-vs {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0a0e27;
+  padding: 4px 14px; border-radius: 12px;
+  font-size: 14px; font-weight: 900;
+}
+
 .pitch-legend {
   display: flex; flex-wrap: wrap; gap: 12px;
   margin-top: 10px; font-size: 11px; color: var(--text-dim);
+  align-items: center;
 }
 .pitch-legend .legend-dot {
   display: inline-block; width: 10px; height: 10px;
   border-radius: 50%; margin-right: 4px; vertical-align: middle;
+}
+.pitch-legend .legend-line {
+  display: inline-block; width: 18px; height: 2px;
+  margin-right: 4px; vertical-align: middle;
+}
+.pitch-legend .legend-line.solid {
+  background: rgba(255, 255, 255, 0.85);
+}
+.pitch-legend .legend-line.dashed {
+  background: repeating-linear-gradient(to right,
+    var(--accent) 0, var(--accent) 4px,
+    transparent 4px, transparent 7px);
+}
+.pitch-legend .legend-zone {
+  display: inline-block; width: 14px; height: 10px;
+  margin-right: 4px; vertical-align: middle;
+  background: rgba(0, 212, 170, 0.18);
+  border: 1px dashed rgba(0, 212, 170, 0.7);
+  border-radius: 2px;
 }
 
 .arrow-legend {
@@ -1013,18 +1051,12 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
 
   .preview-section h4 { font-size: 14px; }
 
-  /* Pitch: rotate 90° for vertical phone view */
-  .pitch-wrap {
-    aspect-ratio: 1 / 1.4;
-    max-height: 70vh;
-    display: flex; align-items: center; justify-content: center;
-    overflow: hidden;
-  }
-  .pitch {
-    width: 140%;
-    transform: rotate(90deg);
-    transform-origin: center center;
-  }
+  /* Pitch: keep natural landscape — two single-team boards stack
+     vertically on mobile already, no rotation needed. */
+  .pitch-wrap { padding: 4px; }
+  .pitch-divider { gap: 8px; font-size: 12px; }
+  .pitch-divider-flag { font-size: 18px; }
+  .pitch-divider-vs { padding: 3px 10px; font-size: 12px; }
 
   .history-row {
     grid-template-columns: 1fr; gap: 2px; padding: 8px 10px;
