@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T20:29:33.898987+00:00",
+  "generatedAt": "2026-06-17T22:52:28.083404+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1347,8 +1347,8 @@
       "group": "L",
       "utc": "2026-06-17T20:00:00Z",
       "localKick": "2026-06-17T15:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Dallas Stadium",
       "city": "Dallas",
       "tz": "",
@@ -1360,7 +1360,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 1,
+        "score": 4,
         "pen": null
       },
       "away": {
@@ -1368,11 +1368,11 @@
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43942",
+      "attendance": "70389",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -1384,6 +1384,46 @@
           "player": "Kane",
           "score": "1-0",
           "type": "PEN"
+        },
+        {
+          "minute": "36'",
+          "side": "away",
+          "team": "43938",
+          "player": "Martin Baturina",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "42'",
+          "side": "home",
+          "team": "43942",
+          "player": "Kane",
+          "score": "2-1",
+          "type": "G"
+        },
+        {
+          "minute": "45'+5'",
+          "side": "away",
+          "team": "43938",
+          "player": "Petar Musa",
+          "score": "2-2",
+          "type": "G"
+        },
+        {
+          "minute": "47'",
+          "side": "home",
+          "team": "43942",
+          "player": "Bellingham",
+          "score": "3-2",
+          "type": "G"
+        },
+        {
+          "minute": "85'",
+          "side": "home",
+          "team": "43942",
+          "player": "Rashford",
+          "score": "4-2",
+          "type": "G"
         }
       ]
     },
@@ -5602,9 +5642,9 @@
         "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 1,
-        "GA": 0,
-        "GD": 1,
+        "GF": 4,
+        "GA": 2,
+        "GD": 2,
         "Pts": 3
       },
       {
@@ -5644,9 +5684,9 @@
         "W": 0,
         "D": 0,
         "L": 1,
-        "GF": 0,
-        "GA": 1,
-        "GD": -1,
+        "GF": 2,
+        "GA": 4,
+        "GD": -2,
         "Pts": 0
       }
     ],
