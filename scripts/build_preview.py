@@ -151,6 +151,25 @@ def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None):
                     break
                 if chosen: break
 
+        # 2b. Try roster adjacent-bucket match (e.g., slot=CM, roster has AM —
+        # happens when team_meta formation differs from roster's "natural" formation,
+        # so a 4-3-3 template with no AM slot still places an AM-listed playmaker).
+        if not chosen:
+            adj_buckets = []
+            if bucket == "MID": adj_buckets = ["AM"]
+            elif bucket == "AM": adj_buckets = ["MID", "FW"]
+            elif bucket == "FW": adj_buckets = ["AM"]
+            for pos_key, plist in roster_by_pos.items():
+                if POS_BUCKET.get(pos_key) not in adj_buckets: continue
+                for p in plist:
+                    pid = id(p)
+                    if pid in used_roster: continue
+                    chosen = p
+                    chosen_source = "roster"
+                    used_roster.add(pid)
+                    break
+                if chosen: break
+
         # 3. Try stars (bucket + adjacent)
         if not chosen:
             candidates = []
