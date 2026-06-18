@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T20:37:53.637951+00:00",
+  "generatedAt": "2026-06-18T23:03:53.898522+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1628,8 +1628,8 @@
       "group": "B",
       "utc": "2026-06-18T19:00:00Z",
       "localKick": "2026-06-18T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -1641,7 +1641,7 @@
         "code": "SUI",
         "name": "Switzerland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
-        "score": 1,
+        "score": 4,
         "pen": null
       },
       "away": {
@@ -1649,10 +1649,10 @@
         "code": "BIH",
         "name": "Bosnia and Herzegovina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
+      "winner": "43971",
       "attendance": "70026",
       "twBroadcast": [
         "愛爾達體育台（付費）"
@@ -1665,6 +1665,38 @@
           "player": "Johan Manzambi",
           "score": "1-0",
           "type": "G"
+        },
+        {
+          "minute": "84'",
+          "side": "home",
+          "team": "43971",
+          "player": "Vargas",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "90'",
+          "side": "home",
+          "team": "43971",
+          "player": "Johan Manzambi",
+          "score": "3-0",
+          "type": "G"
+        },
+        {
+          "minute": "90'+3'",
+          "side": "away",
+          "team": "44037",
+          "player": "Ermin Mahmic",
+          "score": "3-1",
+          "type": "G"
+        },
+        {
+          "minute": "90'+7'",
+          "side": "home",
+          "team": "43971",
+          "player": "Xhaka",
+          "score": "4-1",
+          "type": "PEN"
         }
       ]
     },
@@ -1676,7 +1708,7 @@
       "group": "B",
       "utc": "2026-06-18T22:00:00Z",
       "localKick": "2026-06-18T15:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
@@ -1689,7 +1721,7 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -1697,7 +1729,7 @@
         "code": "QAT",
         "name": "Qatar",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -1706,7 +1738,32 @@
         "愛爾達體育台（付費）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "16'",
+          "side": "home",
+          "team": "43899",
+          "player": "Cyle Larin",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "29'",
+          "side": "home",
+          "team": "43899",
+          "player": "Jonathan David",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "45'+3'",
+          "side": "home",
+          "team": "43899",
+          "player": "Jonathan David",
+          "score": "3-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021442",
@@ -5188,9 +5245,9 @@
         "W": 1,
         "D": 1,
         "L": 0,
-        "GF": 2,
-        "GA": 1,
-        "GD": 1,
+        "GF": 5,
+        "GA": 2,
+        "GD": 3,
         "Pts": 4
       },
       {
@@ -5198,28 +5255,14 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "P": 1,
-        "W": 0,
+        "P": 2,
+        "W": 1,
         "D": 1,
         "L": 0,
-        "GF": 1,
+        "GF": 4,
         "GA": 1,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "id": "43834",
-        "code": "QAT",
-        "name": "Qatar",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
+        "GD": 3,
+        "Pts": 4
       },
       {
         "id": "44037",
@@ -5230,9 +5273,23 @@
         "W": 0,
         "D": 1,
         "L": 1,
+        "GF": 2,
+        "GA": 5,
+        "GD": -3,
+        "Pts": 1
+      },
+      {
+        "id": "43834",
+        "code": "QAT",
+        "name": "Qatar",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
         "GF": 1,
-        "GA": 2,
-        "GD": -1,
+        "GA": 4,
+        "GD": -3,
         "Pts": 1
       }
     ],
