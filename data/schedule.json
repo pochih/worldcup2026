@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:24:44.396881+00:00",
+  "generatedAt": "2026-06-18T18:10:56.402942+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1572,8 +1572,8 @@
       "group": "A",
       "utc": "2026-06-18T16:00:00Z",
       "localKick": "2026-06-18T12:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -1585,7 +1585,7 @@
         "code": "CZE",
         "name": "Czechia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -1593,15 +1593,32 @@
         "code": "RSA",
         "name": "South Africa",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "67442",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "6'",
+          "side": "home",
+          "team": "43995",
+          "player": "Michal Sadilek",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "83'",
+          "side": "away",
+          "team": "43883",
+          "player": "Mokoena",
+          "score": "1-1",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021446",
@@ -5128,28 +5145,28 @@
         "code": "CZE",
         "name": "Czechia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
-        "GF": 1,
-        "GA": 2,
+        "GF": 2,
+        "GA": 3,
         "GD": -1,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "id": "43883",
         "code": "RSA",
         "name": "South Africa",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
-        "GF": 0,
-        "GA": 2,
+        "GF": 1,
+        "GA": 3,
         "GD": -2,
-        "Pts": 0
+        "Pts": 1
       }
     ],
     "B": [
