@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T22:52:28.083404+00:00",
+  "generatedAt": "2026-06-18T01:39:19.571667+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1308,8 +1308,8 @@
       "group": "L",
       "utc": "2026-06-17T23:00:00Z",
       "localKick": "2026-06-17T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Toronto Stadium",
       "city": "Toronto",
       "tz": "",
@@ -1321,7 +1321,7 @@
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -1329,15 +1329,24 @@
         "code": "PAN",
         "name": "Panama",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43860",
+      "attendance": "42942",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "90'+5'",
+          "side": "home",
+          "team": "43860",
+          "player": "Caleb Yirenkyi",
+          "score": "1-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021507",
@@ -5652,27 +5661,27 @@
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 1,
         "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GD": 1,
+        "Pts": 3
       },
       {
         "id": "43914",
         "code": "PAN",
         "name": "Panama",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
-        "P": 0,
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
+        "L": 1,
         "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "GA": 1,
+        "GD": -1,
         "Pts": 0
       },
       {
