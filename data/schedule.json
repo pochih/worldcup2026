@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T23:03:53.898522+00:00",
+  "generatedAt": "2026-06-19T01:51:57.326270+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1708,8 +1708,8 @@
       "group": "B",
       "utc": "2026-06-18T22:00:00Z",
       "localKick": "2026-06-18T15:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
       "tz": "",
@@ -1721,7 +1721,7 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "score": 3,
+        "score": 6,
         "pen": null
       },
       "away": {
@@ -1732,8 +1732,8 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43899",
+      "attendance": "52497",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "台視（免費無線）"
@@ -1762,6 +1762,30 @@
           "player": "Jonathan David",
           "score": "3-0",
           "type": "G"
+        },
+        {
+          "minute": "64'",
+          "side": "home",
+          "team": "43899",
+          "player": "Nathan Saliba",
+          "score": "4-0",
+          "type": "G"
+        },
+        {
+          "minute": "75'",
+          "side": "home",
+          "team": "43834",
+          "player": "Mohamed Manai",
+          "score": "5-0",
+          "type": "OG"
+        },
+        {
+          "minute": "90'+2'",
+          "side": "home",
+          "team": "43899",
+          "player": "Jonathan David",
+          "score": "6-0",
+          "type": "G"
         }
       ]
     },
@@ -1773,7 +1797,7 @@
       "group": "A",
       "utc": "2026-06-19T01:00:00Z",
       "localKick": "2026-06-18T19:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Guadalajara Stadium",
       "city": "Guadalajara",
@@ -1786,7 +1810,7 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -1794,7 +1818,7 @@
         "code": "KOR",
         "name": "Korea Republic",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5183,28 +5207,28 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "P": 1,
+        "P": 2,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 2,
         "GA": 0,
         "GD": 2,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43822",
         "code": "KOR",
         "name": "Korea Republic",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
-        "P": 1,
+        "P": 2,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 2,
         "GA": 1,
         "GD": 1,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43995",
@@ -5237,6 +5261,20 @@
     ],
     "B": [
       {
+        "id": "43899",
+        "code": "CAN",
+        "name": "Canada",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 7,
+        "GA": 1,
+        "GD": 6,
+        "Pts": 4
+      },
+      {
         "id": "43971",
         "code": "SUI",
         "name": "Switzerland",
@@ -5247,20 +5285,6 @@
         "L": 0,
         "GF": 5,
         "GA": 2,
-        "GD": 3,
-        "Pts": 4
-      },
-      {
-        "id": "43899",
-        "code": "CAN",
-        "name": "Canada",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "P": 2,
-        "W": 1,
-        "D": 1,
-        "L": 0,
-        "GF": 4,
-        "GA": 1,
         "GD": 3,
         "Pts": 4
       },
@@ -5288,8 +5312,8 @@
         "D": 1,
         "L": 1,
         "GF": 1,
-        "GA": 4,
-        "GD": -3,
+        "GA": 7,
+        "GD": -6,
         "Pts": 1
       }
     ],
