@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T21:20:51.402809+00:00",
+  "generatedAt": "2026-06-19T23:13:07.528400+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1885,7 +1885,7 @@
       "group": "C",
       "utc": "2026-06-19T22:00:00Z",
       "localKick": "2026-06-19T18:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Boston Stadium",
       "city": "Boston",
@@ -1898,7 +1898,7 @@
         "code": "SCO",
         "name": "Scotland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -1906,7 +1906,7 @@
         "code": "MAR",
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -1914,7 +1914,16 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "2'",
+          "side": "away",
+          "team": "43872",
+          "player": "Ismael Saibari",
+          "score": "0-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021460",
@@ -5403,17 +5412,31 @@
     ],
     "C": [
       {
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 2,
+        "GA": 1,
+        "GD": 1,
+        "Pts": 4
+      },
+      {
         "id": "43967",
         "code": "SCO",
         "name": "Scotland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SCO",
-        "P": 1,
+        "P": 2,
         "W": 1,
         "D": 0,
-        "L": 0,
+        "L": 1,
         "GF": 1,
-        "GA": 0,
-        "GD": 1,
+        "GA": 1,
+        "GD": 0,
         "Pts": 3
       },
       {
@@ -5421,20 +5444,6 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "id": "43872",
-        "code": "MAR",
-        "name": "Morocco",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
         "P": 1,
         "W": 0,
         "D": 1,
