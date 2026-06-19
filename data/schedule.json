@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T20:02:24.041163+00:00",
+  "generatedAt": "2026-06-19T21:20:51.402809+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1963,8 +1963,8 @@
       "group": "D",
       "utc": "2026-06-19T19:00:00Z",
       "localKick": "2026-06-19T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Seattle Stadium",
       "city": "Seattle",
       "tz": "",
@@ -1987,8 +1987,8 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43921",
+      "attendance": "66925",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "台視（免費無線）"
