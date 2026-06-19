@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T01:51:57.326270+00:00",
+  "generatedAt": "2026-06-19T07:25:23.180567+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1797,8 +1797,8 @@
       "group": "A",
       "utc": "2026-06-19T01:00:00Z",
       "localKick": "2026-06-18T19:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Guadalajara Stadium",
       "city": "Guadalajara",
       "tz": "",
@@ -1810,7 +1810,7 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -1821,13 +1821,22 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43911",
+      "attendance": "45522",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "50'",
+          "side": "home",
+          "team": "43911",
+          "player": "Luis Romo",
+          "score": "1-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021457",
@@ -3812,10 +3821,10 @@
       "placeholderHome": "1A",
       "placeholderAway": "3CEFHI",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43911",
+        "code": "MEX",
+        "name": "Mexico",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
         "score": null,
         "pen": null
       },
@@ -5208,13 +5217,13 @@
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
         "P": 2,
-        "W": 1,
-        "D": 1,
+        "W": 2,
+        "D": 0,
         "L": 0,
-        "GF": 2,
+        "GF": 3,
         "GA": 0,
-        "GD": 2,
-        "Pts": 4
+        "GD": 3,
+        "Pts": 6
       },
       {
         "id": "43822",
@@ -5223,12 +5232,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
         "P": 2,
         "W": 1,
-        "D": 1,
-        "L": 0,
+        "D": 0,
+        "L": 1,
         "GF": 2,
-        "GA": 1,
-        "GD": 1,
-        "Pts": 4
+        "GA": 2,
+        "GD": 0,
+        "Pts": 3
       },
       {
         "id": "43995",
