@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T00:19:12.291846+00:00",
+  "generatedAt": "2026-06-20T05:43:18.222278+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1846,8 +1846,8 @@
       "group": "C",
       "utc": "2026-06-20T00:30:00Z",
       "localKick": "2026-06-19T20:30:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
       "tz": "",
@@ -1859,7 +1859,7 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -1867,15 +1867,40 @@
         "code": "HAI",
         "name": "Haiti",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
-        "score": null,
+        "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43924",
+      "attendance": "68324",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "23'",
+          "side": "home",
+          "team": "43924",
+          "player": "Matheus Cunha",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "36'",
+          "side": "home",
+          "team": "43924",
+          "player": "Matheus Cunha",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "45'+3'",
+          "side": "home",
+          "team": "43924",
+          "player": "Vinicius Junior",
+          "score": "3-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021454",
@@ -1933,8 +1958,8 @@
       "group": "D",
       "utc": "2026-06-20T03:00:00Z",
       "localKick": "2026-06-19T20:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "San Francisco Bay Area Stadium",
       "city": "San Francisco Bay Area",
       "tz": "",
@@ -1946,7 +1971,7 @@
         "code": "TUR",
         "name": "Türkiye",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -1954,15 +1979,24 @@
         "code": "PAR",
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43928",
+      "attendance": "68827",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "2'",
+          "side": "away",
+          "team": "43928",
+          "player": "Matias Galarza",
+          "score": "0-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021462",
@@ -3929,10 +3963,10 @@
       "placeholderHome": "1D",
       "placeholderAway": "3BEFIJ",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43921",
+        "code": "USA",
+        "name": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
         "score": null,
         "pen": null
       },
@@ -5382,35 +5416,49 @@
         "Pts": 3
       },
       {
-        "id": "43972",
-        "code": "TUR",
-        "name": "Türkiye",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
-        "P": 1,
-        "W": 0,
-        "D": 0,
-        "L": 1,
-        "GF": 0,
-        "GA": 2,
-        "GD": -2,
-        "Pts": 0
-      },
-      {
         "id": "43928",
         "code": "PAR",
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
-        "P": 1,
-        "W": 0,
+        "P": 2,
+        "W": 1,
         "D": 0,
         "L": 1,
-        "GF": 1,
+        "GF": 2,
         "GA": 4,
+        "GD": -2,
+        "Pts": 3
+      },
+      {
+        "id": "43972",
+        "code": "TUR",
+        "name": "Türkiye",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
+        "P": 2,
+        "W": 0,
+        "D": 0,
+        "L": 2,
+        "GF": 0,
+        "GA": 3,
         "GD": -3,
         "Pts": 0
       }
     ],
     "C": [
+      {
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 4,
+        "GA": 1,
+        "GD": 3,
+        "Pts": 4
+      },
       {
         "id": "43872",
         "code": "MAR",
@@ -5440,31 +5488,17 @@
         "Pts": 3
       },
       {
-        "id": "43924",
-        "code": "BRA",
-        "name": "Brazil",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
         "id": "43908",
         "code": "HAI",
         "name": "Haiti",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
-        "P": 1,
+        "P": 2,
         "W": 0,
         "D": 0,
-        "L": 1,
+        "L": 2,
         "GF": 0,
-        "GA": 1,
-        "GD": -1,
+        "GA": 4,
+        "GD": -4,
         "Pts": 0
       }
     ],
