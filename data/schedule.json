@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T20:40:32.522328+00:00",
+  "generatedAt": "2026-06-20T22:21:51.916715+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2063,8 +2063,8 @@
       "group": "E",
       "utc": "2026-06-20T20:00:00Z",
       "localKick": "2026-06-20T16:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Toronto Stadium",
       "city": "Toronto",
       "tz": "",
@@ -2076,7 +2076,7 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -2087,8 +2087,8 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43948",
+      "attendance": "43036",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -2099,6 +2099,22 @@
           "team": "43854",
           "player": "Franck Kessie",
           "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "68'",
+          "side": "home",
+          "team": "43948",
+          "player": "Deniz Undav",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "90'+4'",
+          "side": "home",
+          "team": "43948",
+          "player": "Deniz Undav",
+          "score": "2-1",
           "type": "G"
         }
       ]
@@ -5562,31 +5578,31 @@
     ],
     "E": [
       {
-        "id": "43854",
-        "code": "CIV",
-        "name": "Côte d'Ivoire",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
-        "P": 2,
-        "W": 2,
-        "D": 0,
-        "L": 0,
-        "GF": 2,
-        "GA": 0,
-        "GD": 2,
-        "Pts": 6
-      },
-      {
         "id": "43948",
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
         "P": 2,
+        "W": 2,
+        "D": 0,
+        "L": 0,
+        "GF": 9,
+        "GA": 2,
+        "GD": 7,
+        "Pts": 6
+      },
+      {
+        "id": "43854",
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
+        "P": 2,
         "W": 1,
         "D": 0,
         "L": 1,
-        "GF": 7,
+        "GF": 2,
         "GA": 2,
-        "GD": 5,
+        "GD": 0,
         "Pts": 3
       },
       {
