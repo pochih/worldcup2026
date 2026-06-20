@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T05:43:18.222278+00:00",
+  "generatedAt": "2026-06-20T09:36:58.592726+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -53,7 +53,7 @@
           "minute": "67'",
           "side": "home",
           "team": "43911",
-          "player": "Raúl",
+          "player": "Raul Jimenez",
           "score": "2-0",
           "type": "G"
         }
@@ -117,7 +117,7 @@
           "minute": "80'",
           "side": "home",
           "team": "43822",
-          "player": "H G Oh",
+          "player": "Oh Hyeongyu",
           "score": "2-1",
           "type": "G"
         }
@@ -255,7 +255,7 @@
           "minute": "90'+8'",
           "side": "home",
           "team": "43921",
-          "player": "Reyna",
+          "player": "Giovanni Reyna",
           "score": "4-1",
           "type": "G"
         }
@@ -407,7 +407,7 @@
           "minute": "21'",
           "side": "away",
           "team": "43872",
-          "player": "Saibari",
+          "player": "Ismael Saibari",
           "score": "0-1",
           "type": "G"
         },
@@ -415,7 +415,7 @@
           "minute": "32'",
           "side": "home",
           "team": "43924",
-          "player": "Vini Jr.",
+          "player": "Vinicius Junior",
           "score": "1-1",
           "type": "G"
         }
@@ -463,7 +463,7 @@
           "minute": "17'",
           "side": "away",
           "team": "43971",
-          "player": "Embolo",
+          "player": "Breel Embolo",
           "score": "0-1",
           "type": "PEN"
         },
@@ -567,7 +567,7 @@
           "minute": "6'",
           "side": "home",
           "team": "43948",
-          "player": "Nmecha",
+          "player": "Felix Nmecha",
           "score": "1-0",
           "type": "G"
         },
@@ -583,7 +583,7 @@
           "minute": "38'",
           "side": "home",
           "team": "43948",
-          "player": "Schlotterbeck",
+          "player": "Nico Schlotterbeck",
           "score": "2-1",
           "type": "G"
         },
@@ -591,7 +591,7 @@
           "minute": "45'+5'",
           "side": "home",
           "team": "43948",
-          "player": "Havertz",
+          "player": "Kai Havertz",
           "score": "3-1",
           "type": "PEN"
         },
@@ -599,7 +599,7 @@
           "minute": "47'",
           "side": "home",
           "team": "43948",
-          "player": "Musiala",
+          "player": "Jamal Musiala",
           "score": "4-1",
           "type": "G"
         },
@@ -623,7 +623,7 @@
           "minute": "88'",
           "side": "home",
           "team": "43948",
-          "player": "Havertz",
+          "player": "Kai Havertz",
           "score": "7-1",
           "type": "G"
         }
@@ -679,7 +679,7 @@
           "minute": "57'",
           "side": "away",
           "team": "43819",
-          "player": "Nakamura",
+          "player": "Keito Nakamura",
           "score": "1-1",
           "type": "G"
         },
@@ -695,7 +695,7 @@
           "minute": "88'",
           "side": "away",
           "team": "43819",
-          "player": "Kamada",
+          "player": "Daichi Kamada",
           "score": "2-2",
           "type": "G"
         }
@@ -831,7 +831,7 @@
           "minute": "41'",
           "side": "home",
           "team": "43835",
-          "player": "Alamri",
+          "player": "Abdulelah Alamri",
           "score": "1-0",
           "type": "G"
         },
@@ -926,7 +926,7 @@
           "minute": "7'",
           "side": "away",
           "team": "43978",
-          "player": "Just",
+          "player": "Elijah Just",
           "score": "0-1",
           "type": "G"
         },
@@ -934,7 +934,7 @@
           "minute": "32'",
           "side": "home",
           "team": "43817",
-          "player": "Ramin",
+          "player": "Ramin Rezaeian",
           "score": "1-1",
           "type": "G"
         },
@@ -942,7 +942,7 @@
           "minute": "54'",
           "side": "away",
           "team": "43978",
-          "player": "Just",
+          "player": "Elijah Just",
           "score": "1-2",
           "type": "G"
         },
@@ -950,7 +950,7 @@
           "minute": "64'",
           "side": "home",
           "team": "43817",
-          "player": "M.Mohebbi",
+          "player": "Mohammad Mohebbi",
           "score": "2-2",
           "type": "G"
         }
@@ -998,7 +998,7 @@
           "minute": "19'",
           "side": "away",
           "team": "43855",
-          "player": "E.Ashour",
+          "player": "Emam Ashour",
           "score": "0-1",
           "type": "G"
         },
@@ -1006,7 +1006,7 @@
           "minute": "66'",
           "side": "home",
           "team": "43855",
-          "player": "M.Hany",
+          "player": "Mohamed Hany",
           "score": "1-1",
           "type": "OG"
         }
@@ -1054,7 +1054,7 @@
           "minute": "66'",
           "side": "home",
           "team": "43946",
-          "player": "Mbappé",
+          "player": "Kylian Mbappe",
           "score": "1-0",
           "type": "G"
         },
@@ -1062,7 +1062,7 @@
           "minute": "82'",
           "side": "home",
           "team": "43946",
-          "player": "Barcola",
+          "player": "Bradley Barcola",
           "score": "2-0",
           "type": "G"
         },
@@ -1070,7 +1070,7 @@
           "minute": "90'+5'",
           "side": "away",
           "team": "43879",
-          "player": "Mbaye",
+          "player": "Ibrahim Mbaye",
           "score": "2-1",
           "type": "G"
         },
@@ -1078,7 +1078,7 @@
           "minute": "90'+6'",
           "side": "home",
           "team": "43946",
-          "player": "Mbappé",
+          "player": "Kylian Mbappe",
           "score": "3-1",
           "type": "G"
         }
@@ -1126,7 +1126,7 @@
           "minute": "29'",
           "side": "away",
           "team": "43961",
-          "player": "Haaland",
+          "player": "Erling Haaland",
           "score": "0-1",
           "type": "G"
         },
@@ -1134,7 +1134,7 @@
           "minute": "39'",
           "side": "home",
           "team": "43818",
-          "player": "Hussein",
+          "player": "Aymen Hussein",
           "score": "1-1",
           "type": "G"
         },
@@ -1142,7 +1142,7 @@
           "minute": "43'",
           "side": "away",
           "team": "43961",
-          "player": "Haaland",
+          "player": "Erling Haaland",
           "score": "1-2",
           "type": "G"
         },
@@ -1158,7 +1158,7 @@
           "minute": "90'+6'",
           "side": "away",
           "team": "43818",
-          "player": "Hussein",
+          "player": "Aymen Hussein",
           "score": "1-4",
           "type": "OG"
         }
@@ -1206,7 +1206,7 @@
           "minute": "17'",
           "side": "home",
           "team": "43922",
-          "player": "Messi",
+          "player": "Lionel Messi",
           "score": "1-0",
           "type": "G"
         },
@@ -1214,7 +1214,7 @@
           "minute": "60'",
           "side": "home",
           "team": "43922",
-          "player": "Messi",
+          "player": "Lionel Messi",
           "score": "2-0",
           "type": "G"
         },
@@ -1222,7 +1222,7 @@
           "minute": "76'",
           "side": "home",
           "team": "43922",
-          "player": "Messi",
+          "player": "Lionel Messi",
           "score": "3-0",
           "type": "G"
         }
@@ -1294,7 +1294,7 @@
           "minute": "90'+12'",
           "side": "home",
           "team": "43934",
-          "player": "Arnautovic",
+          "player": "Marko Arnautovic",
           "score": "3-1",
           "type": "PEN"
         }
@@ -1390,7 +1390,7 @@
           "minute": "12'",
           "side": "home",
           "team": "43942",
-          "player": "Kane",
+          "player": "Harry Kane",
           "score": "1-0",
           "type": "PEN"
         },
@@ -1406,7 +1406,7 @@
           "minute": "42'",
           "side": "home",
           "team": "43942",
-          "player": "Kane",
+          "player": "Harry Kane",
           "score": "2-1",
           "type": "G"
         },
@@ -1422,7 +1422,7 @@
           "minute": "47'",
           "side": "home",
           "team": "43942",
-          "player": "Bellingham",
+          "player": "Jude Bellingham",
           "score": "3-2",
           "type": "G"
         },
@@ -1430,7 +1430,7 @@
           "minute": "85'",
           "side": "home",
           "team": "43942",
-          "player": "Rashford",
+          "player": "Marcus Rashford",
           "score": "4-2",
           "type": "G"
         }
@@ -1478,7 +1478,7 @@
           "minute": "6'",
           "side": "home",
           "team": "43963",
-          "player": "João Neves",
+          "player": "Joao Neves",
           "score": "1-0",
           "type": "G"
         },
@@ -1614,7 +1614,7 @@
           "minute": "83'",
           "side": "away",
           "team": "43883",
-          "player": "Mokoena",
+          "player": "Teboho Mokoena",
           "score": "1-1",
           "type": "PEN"
         }
@@ -1670,7 +1670,7 @@
           "minute": "84'",
           "side": "home",
           "team": "43971",
-          "player": "Vargas",
+          "player": "Ruben Vargas",
           "score": "2-0",
           "type": "G"
         },
@@ -1694,7 +1694,7 @@
           "minute": "90'+7'",
           "side": "home",
           "team": "43971",
-          "player": "Xhaka",
+          "player": "Granit Xhaka",
           "score": "4-1",
           "type": "PEN"
         }
