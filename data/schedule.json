@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T23:13:07.528400+00:00",
+  "generatedAt": "2026-06-20T00:19:12.291846+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1885,8 +1885,8 @@
       "group": "C",
       "utc": "2026-06-19T22:00:00Z",
       "localKick": "2026-06-19T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Boston Stadium",
       "city": "Boston",
       "tz": "",
@@ -1909,8 +1909,8 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43872",
+      "attendance": "64146",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
