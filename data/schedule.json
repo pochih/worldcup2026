@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T16:47:46.112089+00:00",
+  "generatedAt": "2026-06-20T18:44:20.398554+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2141,7 +2141,7 @@
       "group": "F",
       "utc": "2026-06-20T17:00:00Z",
       "localKick": "2026-06-20T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Houston Stadium",
       "city": "Houston",
@@ -2154,7 +2154,7 @@
         "code": "NED",
         "name": "Netherlands",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
-        "score": null,
+        "score": 4,
         "pen": null
       },
       "away": {
@@ -2162,7 +2162,7 @@
         "code": "SWE",
         "name": "Sweden",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -2170,7 +2170,48 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "5'",
+          "side": "home",
+          "team": "43960",
+          "player": "Brian Brobbey",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "17'",
+          "side": "home",
+          "team": "43960",
+          "player": "Brian Brobbey",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "47'",
+          "side": "home",
+          "team": "43960",
+          "player": "Cody Gakpo",
+          "score": "3-0",
+          "type": "G"
+        },
+        {
+          "minute": "54'",
+          "side": "home",
+          "team": "43960",
+          "player": "Cody Gakpo",
+          "score": "4-0",
+          "type": "G"
+        },
+        {
+          "minute": "59'",
+          "side": "away",
+          "team": "43970",
+          "player": "Anthony Elanga",
+          "score": "4-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021475",
@@ -5562,17 +5603,31 @@
     ],
     "F": [
       {
+        "id": "43960",
+        "code": "NED",
+        "name": "Netherlands",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 6,
+        "GA": 3,
+        "GD": 3,
+        "Pts": 4
+      },
+      {
         "id": "43970",
         "code": "SWE",
         "name": "Sweden",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
-        "P": 1,
+        "P": 2,
         "W": 1,
         "D": 0,
-        "L": 0,
-        "GF": 5,
-        "GA": 1,
-        "GD": 4,
+        "L": 1,
+        "GF": 6,
+        "GA": 5,
+        "GD": 1,
         "Pts": 3
       },
       {
@@ -5580,20 +5635,6 @@
         "code": "JPN",
         "name": "Japan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 2,
-        "GA": 2,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "id": "43960",
-        "code": "NED",
-        "name": "Netherlands",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
         "P": 1,
         "W": 0,
         "D": 1,
