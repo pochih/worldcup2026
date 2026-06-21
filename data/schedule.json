@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T22:21:51.916715+00:00",
+  "generatedAt": "2026-06-21T00:20:27.644821+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2127,7 +2127,7 @@
       "group": "E",
       "utc": "2026-06-21T00:00:00Z",
       "localKick": "2026-06-20T19:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
@@ -2140,7 +2140,7 @@
         "code": "ECU",
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -2148,7 +2148,7 @@
         "code": "CUW",
         "name": "Curaçao",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5610,28 +5610,28 @@
         "code": "ECU",
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 0,
         "GA": 1,
         "GD": -1,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "id": "1895293",
         "code": "CUW",
         "name": "Curaçao",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 1,
         "GA": 7,
         "GD": -6,
-        "Pts": 0
+        "Pts": 1
       }
     ],
     "F": [
