@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T20:00:44.172591+00:00",
+  "generatedAt": "2026-06-21T21:41:16.283339+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2437,8 +2437,8 @@
       "group": "G",
       "utc": "2026-06-21T19:00:00Z",
       "localKick": "2026-06-21T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -2462,7 +2462,7 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "70317",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
