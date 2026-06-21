@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T21:41:16.283339+00:00",
+  "generatedAt": "2026-06-21T23:43:19.359968+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2326,7 +2326,7 @@
       "group": "H",
       "utc": "2026-06-21T22:00:00Z",
       "localKick": "2026-06-21T18:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Miami Stadium",
       "city": "Miami",
@@ -2339,7 +2339,7 @@
         "code": "URU",
         "name": "Uruguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -2347,15 +2347,48 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "64003",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "21'",
+          "side": "away",
+          "team": "43850",
+          "player": "Kevin Pina",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "44'",
+          "side": "home",
+          "team": "43930",
+          "player": "Maxi Araujo",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "45'+6'",
+          "side": "home",
+          "team": "43930",
+          "player": "Agustin Canobbio",
+          "score": "2-1",
+          "type": "G"
+        },
+        {
+          "minute": "61'",
+          "side": "away",
+          "team": "43850",
+          "player": "Helio Varela",
+          "score": "2-2",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021483",
@@ -5778,28 +5811,28 @@
         "code": "URU",
         "name": "Uruguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
-        "GF": 1,
-        "GA": 1,
+        "GF": 3,
+        "GA": 3,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
       },
       {
         "id": "43850",
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 2,
+        "GA": 2,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
       },
       {
         "id": "43835",
