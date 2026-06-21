@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:17:43.450555+00:00",
+  "generatedAt": "2026-06-21T16:08:26.404335+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2365,7 +2365,7 @@
       "group": "H",
       "utc": "2026-06-21T16:00:00Z",
       "localKick": "2026-06-21T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
@@ -2378,7 +2378,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -2386,7 +2386,7 @@
         "code": "KSA",
         "name": "Saudi Arabia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5731,14 +5731,28 @@
         "code": "KSA",
         "name": "Saudi Arabia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
         "GF": 1,
         "GA": 1,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
+      },
+      {
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
+        "P": 2,
+        "W": 0,
+        "D": 2,
+        "L": 0,
+        "GF": 0,
+        "GA": 0,
+        "GD": 0,
+        "Pts": 2
       },
       {
         "id": "43930",
@@ -5759,20 +5773,6 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "id": "43969",
-        "code": "ESP",
-        "name": "Spain",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "P": 1,
         "W": 0,
         "D": 1,
