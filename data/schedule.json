@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T16:08:26.404335+00:00",
+  "generatedAt": "2026-06-21T17:51:02.107520+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2378,7 +2378,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": 0,
+        "score": 4,
         "pen": null
       },
       "away": {
@@ -2390,11 +2390,44 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "68239",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "10'",
+          "side": "home",
+          "team": "43969",
+          "player": "Lamine Yamal",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "21'",
+          "side": "home",
+          "team": "43969",
+          "player": "Mikel Oyarzabal",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "24'",
+          "side": "home",
+          "team": "43969",
+          "player": "Mikel Oyarzabal",
+          "score": "3-0",
+          "type": "G"
+        },
+        {
+          "minute": "49'",
+          "side": "home",
+          "team": "43835",
+          "player": "Hassan Altambakti",
+          "score": "4-0",
+          "type": "OG"
+        }
+      ]
     },
     {
       "id": "400021477",
@@ -5727,32 +5760,18 @@
     ],
     "H": [
       {
-        "id": "43835",
-        "code": "KSA",
-        "name": "Saudi Arabia",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "P": 2,
-        "W": 0,
-        "D": 2,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 2
-      },
-      {
         "id": "43969",
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "P": 2,
-        "W": 0,
-        "D": 2,
+        "W": 1,
+        "D": 1,
         "L": 0,
-        "GF": 0,
+        "GF": 4,
         "GA": 0,
-        "GD": 0,
-        "Pts": 2
+        "GD": 4,
+        "Pts": 4
       },
       {
         "id": "43930",
@@ -5780,6 +5799,20 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 1
+      },
+      {
+        "id": "43835",
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 1,
+        "GA": 5,
+        "GD": -4,
         "Pts": 1
       }
     ],
