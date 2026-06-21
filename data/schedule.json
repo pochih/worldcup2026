@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T17:51:02.107520+00:00",
+  "generatedAt": "2026-06-21T20:00:44.172591+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2365,8 +2365,8 @@
       "group": "H",
       "utc": "2026-06-21T16:00:00Z",
       "localKick": "2026-06-21T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -2389,7 +2389,7 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43969",
       "attendance": "68239",
       "twBroadcast": [
         "愛爾達體育台（付費）"
@@ -2437,7 +2437,7 @@
       "group": "G",
       "utc": "2026-06-21T19:00:00Z",
       "localKick": "2026-06-21T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
@@ -2450,7 +2450,7 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -2458,7 +2458,7 @@
         "code": "IRN",
         "name": "IR Iran",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5822,14 +5822,28 @@
         "code": "IRN",
         "name": "IR Iran",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
         "GF": 2,
         "GA": 2,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
+      },
+      {
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
+        "P": 2,
+        "W": 0,
+        "D": 2,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 2
       },
       {
         "id": "43978",
@@ -5842,20 +5856,6 @@
         "L": 0,
         "GF": 2,
         "GA": 2,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "id": "43935",
-        "code": "BEL",
-        "name": "Belgium",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
         "GD": 0,
         "Pts": 1
       },
