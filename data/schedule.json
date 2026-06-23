@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:13:19.124610+00:00",
+  "generatedAt": "2026-06-23T20:21:29.038493+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2845,7 +2845,7 @@
       "group": "L",
       "utc": "2026-06-23T20:00:00Z",
       "localKick": "2026-06-23T16:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Boston Stadium",
       "city": "Boston",
@@ -2858,7 +2858,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -2866,7 +2866,7 @@
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -2923,8 +2923,8 @@
       "group": "K",
       "utc": "2026-06-23T17:00:00Z",
       "localKick": "2026-06-23T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Houston Stadium",
       "city": "Houston",
       "tz": "",
@@ -2936,7 +2936,7 @@
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "score": 3,
+        "score": 5,
         "pen": null
       },
       "away": {
@@ -2947,8 +2947,8 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43963",
+      "attendance": "68777",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -2975,6 +2975,22 @@
           "team": "43963",
           "player": "Cristiano Ronaldo",
           "score": "3-0",
+          "type": "G"
+        },
+        {
+          "minute": "60'",
+          "side": "home",
+          "team": "44005",
+          "player": "Abduvohid Nematov",
+          "score": "4-0",
+          "type": "OG"
+        },
+        {
+          "minute": "87'",
+          "side": "home",
+          "team": "43963",
+          "player": "Rafael Leao",
+          "score": "5-0",
           "type": "G"
         }
       ]
@@ -6195,28 +6211,28 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "P": 1,
+        "P": 2,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 4,
         "GA": 2,
         "GD": 2,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43860",
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "P": 1,
+        "P": 2,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 1,
         "GA": 0,
         "GD": 1,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43914",
@@ -6257,9 +6273,9 @@
         "W": 1,
         "D": 1,
         "L": 0,
-        "GF": 4,
+        "GF": 6,
         "GA": 1,
-        "GD": 3,
+        "GD": 5,
         "Pts": 4
       },
       {
@@ -6300,8 +6316,8 @@
         "D": 0,
         "L": 2,
         "GF": 1,
-        "GA": 6,
-        "GD": -5,
+        "GA": 8,
+        "GD": -7,
         "Pts": 0
       }
     ]
