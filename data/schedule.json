@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T00:19:58.396082+00:00",
+  "generatedAt": "2026-06-23T05:13:48.595291+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2581,8 +2581,8 @@
       "group": "I",
       "utc": "2026-06-23T00:00:00Z",
       "localKick": "2026-06-22T20:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -2594,7 +2594,7 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": 0,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -2602,15 +2602,56 @@
         "code": "SEN",
         "name": "Senegal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43961",
+      "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "43'",
+          "side": "home",
+          "team": "43961",
+          "player": "Marcus Holmgren Pedersen",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "48'",
+          "side": "home",
+          "team": "43961",
+          "player": "Erling Haaland",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "53'",
+          "side": "away",
+          "team": "43879",
+          "player": "Ismaila Sarr",
+          "score": "2-1",
+          "type": "G"
+        },
+        {
+          "minute": "58'",
+          "side": "home",
+          "team": "43961",
+          "player": "Erling Haaland",
+          "score": "3-1",
+          "type": "G"
+        },
+        {
+          "minute": "90'+3'",
+          "side": "away",
+          "team": "43879",
+          "player": "Ismaila Sarr",
+          "score": "3-2",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021492",
@@ -2620,8 +2661,8 @@
       "group": "I",
       "utc": "2026-06-22T21:00:00Z",
       "localKick": "2026-06-22T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
       "tz": "",
@@ -2633,7 +2674,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": 2,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -2644,7 +2685,7 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43946",
       "attendance": null,
       "twBroadcast": [
         "愛爾達體育台（付費）"
@@ -2664,6 +2705,14 @@
           "team": "43946",
           "player": "Kylian Mbappe",
           "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "66'",
+          "side": "home",
+          "team": "43946",
+          "player": "Ousmane Dembele",
+          "score": "3-0",
           "type": "G"
         }
       ]
@@ -2732,8 +2781,8 @@
       "group": "J",
       "utc": "2026-06-23T03:00:00Z",
       "localKick": "2026-06-22T20:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "San Francisco Bay Area Stadium",
       "city": "San Francisco Bay Area",
       "tz": "",
@@ -2745,7 +2794,7 @@
         "code": "JOR",
         "name": "Jordan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -2753,15 +2802,40 @@
         "code": "ALG",
         "name": "Algeria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
-        "score": null,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43843",
+      "attendance": "68371",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "36'",
+          "side": "home",
+          "team": "43820",
+          "player": "Nizar Alrashdan",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "69'",
+          "side": "away",
+          "team": "43843",
+          "player": "Nadhir Benbouali",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "82'",
+          "side": "away",
+          "team": "43843",
+          "player": "Amine Gouiri",
+          "score": "1-2",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021506",
@@ -4408,10 +4482,10 @@
       "placeholderHome": "1J",
       "placeholderAway": "2H",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
         "score": null,
         "pen": null
       },
@@ -5984,9 +6058,9 @@
         "W": 2,
         "D": 0,
         "L": 0,
-        "GF": 5,
+        "GF": 6,
         "GA": 1,
-        "GD": 4,
+        "GD": 5,
         "Pts": 6
       },
       {
@@ -5995,13 +6069,13 @@
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
         "P": 2,
-        "W": 1,
-        "D": 1,
+        "W": 2,
+        "D": 0,
         "L": 0,
-        "GF": 4,
-        "GA": 1,
-        "GD": 3,
-        "Pts": 4
+        "GF": 7,
+        "GA": 3,
+        "GD": 4,
+        "Pts": 6
       },
       {
         "id": "43879",
@@ -6010,12 +6084,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
         "P": 2,
         "W": 0,
-        "D": 1,
-        "L": 1,
-        "GF": 1,
-        "GA": 3,
-        "GD": -2,
-        "Pts": 1
+        "D": 0,
+        "L": 2,
+        "GF": 3,
+        "GA": 6,
+        "GD": -3,
+        "Pts": 0
       },
       {
         "id": "43818",
@@ -6027,8 +6101,8 @@
         "D": 0,
         "L": 2,
         "GF": 1,
-        "GA": 6,
-        "GD": -5,
+        "GA": 7,
+        "GD": -6,
         "Pts": 0
       }
     ],
@@ -6062,30 +6136,30 @@
         "Pts": 3
       },
       {
-        "id": "43820",
-        "code": "JOR",
-        "name": "Jordan",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
-        "P": 1,
-        "W": 0,
-        "D": 0,
-        "L": 1,
-        "GF": 1,
-        "GA": 3,
-        "GD": -2,
-        "Pts": 0
-      },
-      {
         "id": "43843",
         "code": "ALG",
         "name": "Algeria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
-        "P": 1,
-        "W": 0,
+        "P": 2,
+        "W": 1,
         "D": 0,
         "L": 1,
-        "GF": 0,
-        "GA": 3,
+        "GF": 2,
+        "GA": 4,
+        "GD": -2,
+        "Pts": 3
+      },
+      {
+        "id": "43820",
+        "code": "JOR",
+        "name": "Jordan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JOR",
+        "P": 2,
+        "W": 0,
+        "D": 0,
+        "L": 2,
+        "GF": 2,
+        "GA": 5,
         "GD": -3,
         "Pts": 0
       }
