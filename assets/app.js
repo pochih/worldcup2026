@@ -14,6 +14,9 @@ let DATA = null;
 let ANALYSIS = null;
 let STARS = null;
 let PREVIEW = null;
+let ROSTERS = null;
+let LINEUP_TEMPLATES = null;
+let TEAM_META = null;
 let SELECTED_DAY = null;
 let CAL_MONTH = null;
 let FILTER_TW = false;
@@ -81,6 +84,18 @@ async function loadData() {
   try {
     const rp = await fetch(`data/preview.json?t=${Date.now()}`);
     if (rp.ok) PREVIEW = await rp.json();
+  } catch (e) { /* ignore */ }
+  try {
+    const rr = await fetch(`data/rosters.json?t=${Date.now()}`);
+    if (rr.ok) ROSTERS = await rr.json();
+  } catch (e) { /* ignore */ }
+  try {
+    const rl = await fetch(`data/lineup_templates.json?t=${Date.now()}`);
+    if (rl.ok) LINEUP_TEMPLATES = await rl.json();
+  } catch (e) { /* ignore */ }
+  try {
+    const rm = await fetch(`data/team_meta.json?t=${Date.now()}`);
+    if (rm.ok) TEAM_META = await rm.json();
   } catch (e) { /* ignore */ }
 }
 
@@ -235,13 +250,83 @@ function goalRowHtml(g) {
 
 // ---------- standings ----------
 
+// For each group, compute which team codes are mathematically eliminated
+// from the top-2 (i.e. cannot finish 1st or 2nd in this group no matter how
+// the remaining group matches play out). Returns { [group]: Set<code> }.
+//
+// Note: ignores the "8 best 3rd-place" path on purpose — a team eliminated
+// from the top-2 may still sneak in via best-3rd, but the user asked us to
+// mark them as eliminated once they can't reach the top 2 of their group.
+function computeEliminatedByGroup() {
+  const out = {};
+  const remainingByGroup = {};
+  for (const m of DATA.matches) {
+    if (m.stage !== "group") continue;
+    if (isPlayed(m)) continue;
+    (remainingByGroup[m.group] = remainingByGroup[m.group] || []).push(m);
+  }
+  for (const g of Object.keys(DATA.standings)) {
+    const baseRows = DATA.standings[g];
+    const remaining = remainingByGroup[g] || [];
+    const elim = new Set(baseRows.map(r => r.code));
+    // Cap brute force: max 6 matches per group × 3 outcomes = 729 futures.
+    // Once a team appears in top-2 of any future, drop it from `elim`.
+    const totalFutures = Math.pow(3, remaining.length);
+    for (let f = 0; f < totalFutures; f++) {
+      // Apply this future's outcomes to a clone of the standings.
+      const clone = baseRows.map(r => ({ ...r }));
+      const byCode = Object.fromEntries(clone.map(r => [r.code, r]));
+      let n = f;
+      for (const m of remaining) {
+        const outcome = n % 3; n = Math.floor(n / 3);
+        const home = byCode[m.home.code];
+        const away = byCode[m.away.code];
+        if (!home || !away) continue;
+        home.P++; away.P++;
+        if (outcome === 0) {            // home win
+          home.W++; away.L++;
+          home.Pts += 3;
+          home.GF++; away.GA++; home.GD++; away.GD--;
+        } else if (outcome === 1) {     // draw
+          home.D++; away.D++;
+          home.Pts++; away.Pts++;
+        } else {                         // away win
+          away.W++; home.L++;
+          away.Pts += 3;
+          away.GF++; home.GA++; away.GD++; home.GD--;
+        }
+      }
+      // Rank by Pts → GD → GF. With our scope-limited tiebreaker, any team
+      // that ties with #2 on (Pts, GD, GF) could plausibly take a top-2 slot
+      // under the full FIFA tiebreakers, so we treat them as "still alive".
+      clone.sort((a, b) => b.Pts - a.Pts || b.GD - a.GD || b.GF - a.GF);
+      const cutoff = clone[1];
+      for (const r of clone) {
+        const stillAlive =
+          (r.Pts > cutoff.Pts) ||
+          (r.Pts === cutoff.Pts && r.GD > cutoff.GD) ||
+          (r.Pts === cutoff.Pts && r.GD === cutoff.GD && r.GF >= cutoff.GF);
+        if (stillAlive) elim.delete(r.code);
+      }
+      if (elim.size === 0) break;
+    }
+    out[g] = elim;
+  }
+  return out;
+}
+
 function renderStandings() {
   const grid = document.getElementById("standings-grid");
   const groups = Object.keys(DATA.standings).sort();
+  const eliminated = computeEliminatedByGroup();
   grid.innerHTML = groups.map(g => {
     const rows = DATA.standings[g];
+    const elimSet = eliminated[g] || new Set();
     const rowsHtml = rows.map((r, i) => {
-      const cls = i < 2 ? "qualified" : (i === 2 ? "third" : "");
+      const isOut = elimSet.has(r.code);
+      const cls = isOut ? "eliminated"
+                : i < 2 ? "qualified"
+                : i === 2 ? "third" : "";
       return `<tr class="${cls}">
         <td><div class="team-cell">${r.flag ? `<img src="${r.flag}" alt="">` : ""}${r.name}</div></td>
         <td>${r.P}</td><td>${r.W}</td><td>${r.D}</td><td>${r.L}</td>
@@ -538,17 +623,69 @@ function renderStars() {
   grid.innerHTML = teams.map(code => {
     const t = Object.values(DATA.teams).find(t => t.code === code) || { name: code, flag: "" };
     const players = STARS[code] || [];
+    const pitchSvg = buildRosterPitch(code, t);
     return `<div class="stars-team">
       <div class="stars-team-head">
         ${t.flag ? `<img src="${t.flag}" alt="${code}">` : ""}
         <h3>${t.name}</h3>
         <span class="stars-count">${players.length} 位球星</span>
       </div>
+      ${pitchSvg}
       <div class="stars-cards">
         ${players.map(p => starCardHtml(p)).join("")}
       </div>
     </div>`;
   }).join("");
+}
+
+function buildRosterPitch(code, teamFromData) {
+  if (!ROSTERS || !LINEUP_TEMPLATES || !ROSTERS[code]) return "";
+  const roster = ROSTERS[code];
+  const formation = roster.formation;
+  const slots = LINEUP_TEMPLATES[formation];
+  if (!slots) return "";
+
+  // Assign each roster player to a template slot. Match by exact position first;
+  // fall back by position group (defenders/mids/attackers) so 4-3-3 with one
+  // listed CM still fills a 4-2-3-1 DM slot etc.
+  const POS_TO_GROUP = {
+    GK: "GK", CB: "DEF", LB: "DEF", RB: "DEF",
+    DM: "MID", CM: "MID", AM: "MID", RM: "MID", LM: "MID",
+    LW: "ATK", RW: "ATK", ST: "ATK", CF: "ATK",
+  };
+  const remaining = roster.players.map(p => ({ ...p }));
+  const assigned = [];
+  for (const slot of slots) {
+    // Exact match
+    let idx = remaining.findIndex(p => p.pos === slot.pos);
+    if (idx < 0) {
+      // Group match
+      const wantedGroup = POS_TO_GROUP[slot.pos];
+      idx = remaining.findIndex(p => POS_TO_GROUP[p.pos] === wantedGroup);
+    }
+    if (idx < 0) {
+      // Anyone left (shouldn't happen on 11+11)
+      idx = 0;
+    }
+    const p = remaining.splice(idx, 1)[0];
+    assigned.push({
+      x: slot.x, y: slot.y, pos: slot.pos,
+      n: p.shirt, name: p.name, nameZh: p.nameZh,
+    });
+  }
+
+  const meta = (TEAM_META && TEAM_META[code]) || {};
+  const team = {
+    lineup: assigned,
+    formation,
+    manager: meta.manager || "",
+    color: meta.color || "#00d4aa",
+    flag: meta.flagEmoji || "",
+    code,
+    zones: [],
+    arrows: [],
+  };
+  return `<div class="stars-pitch-wrap">${singleTeamPitch(team, "home")}</div>`;
 }
 
 function starCardHtml(p) {
@@ -1051,6 +1188,8 @@ function setView(name) {
   document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
   document.getElementById(`view-${name}`).classList.add("active");
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === name));
+  const activeBtn = document.querySelector(`#tabs button[data-view="${name}"]`);
+  activeBtn?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
 }
 
 // ---------- init ----------
