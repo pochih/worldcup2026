@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T15:24:51.020210+00:00",
+  "generatedAt": "2026-06-23T18:13:19.124610+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2923,7 +2923,7 @@
       "group": "K",
       "utc": "2026-06-23T17:00:00Z",
       "localKick": "2026-06-23T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Houston Stadium",
       "city": "Houston",
@@ -2936,7 +2936,7 @@
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -2944,7 +2944,7 @@
         "code": "UZB",
         "name": "Uzbekistan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -2952,7 +2952,32 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "6'",
+          "side": "home",
+          "team": "43963",
+          "player": "Cristiano Ronaldo",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "17'",
+          "side": "home",
+          "team": "43963",
+          "player": "Nuno Mendes",
+          "score": "2-0",
+          "type": "G"
+        },
+        {
+          "minute": "39'",
+          "side": "home",
+          "team": "43963",
+          "player": "Cristiano Ronaldo",
+          "score": "3-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021501",
@@ -6224,6 +6249,20 @@
     ],
     "K": [
       {
+        "id": "43963",
+        "code": "POR",
+        "name": "Portugal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 4,
+        "GA": 1,
+        "GD": 3,
+        "Pts": 4
+      },
+      {
         "id": "43926",
         "code": "COL",
         "name": "Colombia",
@@ -6252,31 +6291,17 @@
         "Pts": 1
       },
       {
-        "id": "43963",
-        "code": "POR",
-        "name": "Portugal",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
         "id": "44005",
         "code": "UZB",
         "name": "Uzbekistan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/UZB",
-        "P": 1,
+        "P": 2,
         "W": 0,
         "D": 0,
-        "L": 1,
+        "L": 2,
         "GF": 1,
-        "GA": 3,
-        "GD": -2,
+        "GA": 6,
+        "GD": -5,
         "Pts": 0
       }
     ]
