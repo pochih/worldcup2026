@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T19:01:16.124411+00:00",
+  "generatedAt": "2026-06-24T20:54:56.371813+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3246,7 +3246,7 @@
         "code": "SUI",
         "name": "Switzerland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -3254,16 +3254,44 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "52497",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "46'",
+          "side": "home",
+          "team": "43971",
+          "player": "Ruben Vargas",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Johan Manzambi"
+        },
+        {
+          "minute": "57'",
+          "side": "home",
+          "team": "43971",
+          "player": "Johan Manzambi",
+          "score": "2-0",
+          "type": "G",
+          "assist": "Breel Embolo"
+        },
+        {
+          "minute": "76'",
+          "side": "away",
+          "team": "43899",
+          "player": "Promise David",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Nathan Saliba"
+        }
+      ]
     },
     {
       "id": "400021448",
@@ -3286,7 +3314,7 @@
         "code": "BIH",
         "name": "Bosnia and Herzegovina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
-        "score": 0,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -3294,15 +3322,51 @@
         "code": "QAT",
         "name": "Qatar",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "66925",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "29'",
+          "side": "home",
+          "team": "44037",
+          "player": "Kerim Alajbegovic",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Ivan Basic"
+        },
+        {
+          "minute": "34'",
+          "side": "home",
+          "team": "43834",
+          "player": "Mahmoud Abunada",
+          "score": "2-0",
+          "type": "OG"
+        },
+        {
+          "minute": "42'",
+          "side": "away",
+          "team": "43834",
+          "player": "Hassan Alhaydos",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Edmilson Junior"
+        },
+        {
+          "minute": "80'",
+          "side": "home",
+          "team": "44037",
+          "player": "Ermin Mahmic",
+          "score": "3-1",
+          "type": "G",
+          "assist": "Dennis Hadzikadunic"
+        }
+      ]
     },
     {
       "id": "400021444",
@@ -5798,32 +5862,32 @@
     ],
     "B": [
       {
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
+        "P": 3,
+        "W": 2,
+        "D": 1,
+        "L": 0,
+        "GF": 7,
+        "GA": 3,
+        "GD": 4,
+        "Pts": 7
+      },
+      {
         "id": "43899",
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
         "P": 3,
         "W": 1,
-        "D": 2,
-        "L": 0,
-        "GF": 7,
-        "GA": 1,
-        "GD": 6,
-        "Pts": 5
-      },
-      {
-        "id": "43971",
-        "code": "SUI",
-        "name": "Switzerland",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
-        "P": 3,
-        "W": 1,
-        "D": 2,
-        "L": 0,
-        "GF": 5,
-        "GA": 2,
-        "GD": 3,
-        "Pts": 5
+        "D": 1,
+        "L": 1,
+        "GF": 8,
+        "GA": 3,
+        "GD": 5,
+        "Pts": 4
       },
       {
         "id": "44037",
@@ -5831,13 +5895,13 @@
         "name": "Bosnia and Herzegovina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
         "P": 3,
-        "W": 0,
-        "D": 2,
+        "W": 1,
+        "D": 1,
         "L": 1,
-        "GF": 2,
-        "GA": 5,
-        "GD": -3,
-        "Pts": 2
+        "GF": 5,
+        "GA": 6,
+        "GD": -1,
+        "Pts": 4
       },
       {
         "id": "43834",
@@ -5846,12 +5910,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/QAT",
         "P": 3,
         "W": 0,
-        "D": 2,
-        "L": 1,
-        "GF": 1,
-        "GA": 7,
-        "GD": -6,
-        "Pts": 2
+        "D": 1,
+        "L": 2,
+        "GF": 2,
+        "GA": 10,
+        "GD": -8,
+        "Pts": 1
       }
     ],
     "D": [
