@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T22:36:50.751103+00:00",
+  "generatedAt": "2026-06-24T00:10:05.732723+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -2884,7 +2884,7 @@
       "group": "L",
       "utc": "2026-06-23T23:00:00Z",
       "localKick": "2026-06-23T19:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Toronto Stadium",
       "city": "Toronto",
@@ -2897,7 +2897,7 @@
         "code": "PAN",
         "name": "Panama",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -2905,7 +2905,7 @@
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -6239,28 +6239,28 @@
         "code": "PAN",
         "name": "Panama",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 0,
         "GA": 1,
         "GD": -1,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "id": "43938",
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 2,
         "GA": 4,
         "GD": -2,
-        "Pts": 0
+        "Pts": 1
       }
     ],
     "K": [
