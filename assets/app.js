@@ -1301,12 +1301,31 @@ function renderPreview() {
 
 // ---------- tabs ----------
 
-function setView(name) {
+const VALID_VIEWS = new Set([
+  "calendar", "standings", "bracket", "teams", "analysis", "stars", "scorers", "preview",
+]);
+
+function setView(name, fromHistory) {
+  if (!VALID_VIEWS.has(name)) name = "calendar";
   document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
   document.getElementById(`view-${name}`).classList.add("active");
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === name));
   const activeBtn = document.querySelector(`#tabs button[data-view="${name}"]`);
   activeBtn?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  // Only push a new history entry for explicit user clicks — never when this
+  // call originated from popstate/hashchange (would loop), and never when the
+  // requested view already matches the current hash.
+  if (!fromHistory) {
+    const target = `#${name}`;
+    if (location.hash !== target) {
+      history.pushState({ view: name }, "", target);
+    }
+  }
+}
+
+function viewFromHash() {
+  const h = (location.hash || "").replace(/^#/, "");
+  return VALID_VIEWS.has(h) ? h : "calendar";
 }
 
 // ---------- init ----------
@@ -1340,6 +1359,11 @@ async function init() {
   document.getElementById("tabs").addEventListener("click", e => {
     if (e.target.tagName === "BUTTON") setView(e.target.dataset.view);
   });
+  // Browser back/forward: react to hash change without pushing a new entry.
+  window.addEventListener("popstate", () => setView(viewFromHash(), true));
+  window.addEventListener("hashchange", () => setView(viewFromHash(), true));
+  // Honor initial hash on first load so deep-links work.
+  setView(viewFromHash(), true);
   // Cal nav
   document.getElementById("cal-prev").onclick = () => {
     CAL_MONTH.m--; if (CAL_MONTH.m < 1) { CAL_MONTH.m = 12; CAL_MONTH.y--; }
