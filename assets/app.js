@@ -877,21 +877,26 @@ const ZONE_COLORS = {
   defense: { fill: "rgba(79, 195, 255, 0.15)",  stroke: "rgba(79, 195, 255, 0.7)",  label: "#4fc3ff" },
 };
 
+let SVG_PITCH_SEQ = 0;
 function singleTeamPitch(team, side) {
   // One team, full 100x100 pitch, no opponent → no overlap risk.
   const W = 100, H = 100;
   const isHome = side === "home";
+  // Each pitch must have unique SVG defs ids — otherwise a hidden view's
+  // `<filter id="playerShadow-home">` shadows the visible one and players
+  // disappear. Suffix every id with an instance number.
+  const uid = `${side}-${++SVG_PITCH_SEQ}`;
   const pitchBg = `
     <defs>
-      <pattern id="grass-${side}" x="0" y="0" width="10" height="100" patternUnits="userSpaceOnUse">
+      <pattern id="grass-${uid}" x="0" y="0" width="10" height="100" patternUnits="userSpaceOnUse">
         <rect x="0" y="0" width="5"  height="100" fill="#0f5132"/>
         <rect x="5" y="0" width="5"  height="100" fill="#0d4429"/>
       </pattern>
-      <filter id="playerShadow-${side}" x="-50%" y="-50%" width="200%" height="200%">
+      <filter id="playerShadow-${uid}" x="-50%" y="-50%" width="200%" height="200%">
         <feDropShadow dx="0" dy="0.5" stdDeviation="0.6" flood-opacity="0.5"/>
       </filter>
     </defs>
-    <rect x="0" y="0" width="${W}" height="${H}" fill="url(#grass-${side})"/>
+    <rect x="0" y="0" width="${W}" height="${H}" fill="url(#grass-${uid})"/>
     <rect x="1" y="1" width="${W-2}" height="${H-2}" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
     <line x1="50" y1="1" x2="50" y2="99" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
     <circle cx="50" cy="50" r="9" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="0.4"/>
@@ -932,7 +937,7 @@ function singleTeamPitch(team, side) {
 
   // Attack arrows: dashed team-color, with arrowhead — runs
   const arrows = (team.arrows || []).map((a, i) => {
-    const id = `arrow-${side}-${i}`;
+    const id = `arrow-${uid}-${i}`;
     const [x1, y1] = a.from, [x2, y2] = a.to;
     return `
       <defs>
@@ -952,7 +957,7 @@ function singleTeamPitch(team, side) {
     const ring = team.color;
     // No opponent on the pitch → simple, consistent label placement.
     const labelY = isHome ? p.y + 6.8 : p.y - 4.6;
-    return `<g filter="url(#playerShadow-${side})">
+    return `<g filter="url(#playerShadow-${uid})">
       <circle cx="${p.x}" cy="${p.y}" r="3.6" fill="${fill}" stroke="${ring}" stroke-width="0.9"/>
       <text x="${p.x}" y="${p.y}" text-anchor="middle" dy="0.35em"
             font-size="3" font-weight="800" fill="#0a0e27">${p.n}</text>
