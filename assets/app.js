@@ -22,6 +22,7 @@ let CAL_MONTH = null;
 let FILTER_TW = false;
 let ADV_FILTER = "all";
 let STARS_FILTER = "all";
+let SCORERS_MODE = "combined"; // 'combined' | 'goals' | 'assists'
 let PREVIEW_MATCH_IDX = 0;
 
 // ---------- utilities ----------
@@ -688,6 +689,117 @@ function buildRosterPitch(code, teamFromData) {
   return `<div class="stars-pitch-wrap">${singleTeamPitch(team, "home")}</div>`;
 }
 
+// ---------- scorers leaderboard ----------
+
+function computeScorerStats() {
+  if (!DATA || !DATA.matches) return [];
+  const stats = new Map(); // name → { name, g, a, team, flag }
+  const teamByCode = {};
+  for (const t of Object.values(DATA.teams || {})) {
+    if (t.code) teamByCode[t.code] = t;
+  }
+
+  function bump(name, code, kind) {
+    if (!name) return;
+    const key = name;
+    if (!stats.has(key)) {
+      const t = teamByCode[code] || {};
+      stats.set(key, { name, g: 0, a: 0, team: code || "?", flag: t.flag || "", teamName: t.name || code || "" });
+    }
+    const row = stats.get(key);
+    if (kind === "g") row.g++;
+    else if (kind === "a") row.a++;
+    // First sighting captures team; later sightings don't overwrite
+    if (!row.team || row.team === "?") {
+      row.team = code;
+      const t = teamByCode[code] || {};
+      row.flag = t.flag || "";
+      row.teamName = t.name || code;
+    }
+  }
+
+  for (const m of DATA.matches) {
+    if (m.status !== 0) continue;
+    const homeCode = m.home && m.home.code;
+    const awayCode = m.away && m.away.code;
+    for (const g of (m.goals || [])) {
+      if (!g.player) continue;
+      const scoringCode = g.side === "home" ? homeCode : awayCode;
+      // Own goals: do NOT credit the player as a scorer
+      if (g.type !== "OG") bump(g.player, scoringCode, "g");
+      if (g.assist) bump(g.assist, scoringCode, "a");
+    }
+  }
+
+  return Array.from(stats.values());
+}
+
+function renderScorers() {
+  const list = document.getElementById("scorers-list");
+  if (!list) return;
+  if (!DATA) {
+    list.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">資料載入中…</p>`;
+    return;
+  }
+
+  // Wire tabs once
+  const tabsRoot = document.querySelector(".scorers-tabs");
+  if (tabsRoot && !tabsRoot.dataset.wired) {
+    tabsRoot.dataset.wired = "1";
+    tabsRoot.addEventListener("click", e => {
+      const b = e.target.closest(".sc-tab");
+      if (!b) return;
+      SCORERS_MODE = b.dataset.sc;
+      tabsRoot.querySelectorAll(".sc-tab").forEach(x =>
+        x.classList.toggle("active", x.dataset.sc === SCORERS_MODE));
+      renderScorers();
+    });
+  }
+
+  const all = computeScorerStats();
+  let sorted;
+  if (SCORERS_MODE === "goals") {
+    sorted = all.filter(r => r.g > 0).sort((a, b) =>
+      b.g - a.g || b.a - a.a || a.name.localeCompare(b.name));
+  } else if (SCORERS_MODE === "assists") {
+    sorted = all.filter(r => r.a > 0).sort((a, b) =>
+      b.a - a.a || b.g - a.g || a.name.localeCompare(b.name));
+  } else {
+    sorted = all.filter(r => r.g + r.a > 0).sort((a, b) =>
+      (b.g + b.a) - (a.g + a.a) || b.g - a.g || a.name.localeCompare(b.name));
+  }
+
+  const top = sorted.slice(0, 50);
+  if (!top.length) {
+    list.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">尚無資料</p>`;
+    return;
+  }
+
+  const header = `<div class="scorer-row header">
+    <div class="scorer-rank">#</div>
+    <div></div>
+    <div>球員</div>
+    <div class="scorer-stat">進球</div>
+    <div class="scorer-stat">助攻</div>
+    <div class="scorer-stat">G+A</div>
+  </div>`;
+
+  const rows = top.map((r, i) => {
+    const rank = i + 1;
+    const topCls = rank <= 3 ? `top-${rank}` : "";
+    return `<div class="scorer-row ${topCls}">
+      <div class="scorer-rank">${rank}</div>
+      <div class="scorer-flag">${r.flag ? `<img src="${r.flag}" alt="${r.team}">` : ""}</div>
+      <div class="scorer-name">${r.name}<span class="scorer-team">${r.team}</span></div>
+      <div class="scorer-stat scorer-stat-g">${r.g || "—"}</div>
+      <div class="scorer-stat scorer-stat-a">${r.a || "—"}</div>
+      <div class="scorer-stat scorer-stat-total">${r.g + r.a}</div>
+    </div>`;
+  }).join("");
+
+  list.innerHTML = header + rows;
+}
+
 function starCardHtml(p) {
   const s = p.stats2526 || {};
   const posColor = POS_COLOR[p.pos] || "var(--text-dim)";
@@ -1216,6 +1328,7 @@ async function init() {
   renderTeams();
   renderAnalysis();
   renderStars();
+  renderScorers();
   renderPreview();
 
   // Tab nav
@@ -1243,7 +1356,7 @@ async function init() {
   document.getElementById("refresh").onclick = async () => {
     await loadData();
     renderCalendar(); renderStandings(); renderBracket();
-    renderTeams(); renderAnalysis(); renderStars(); renderPreview();
+    renderTeams(); renderAnalysis(); renderStars(); renderScorers(); renderPreview();
   };
 }
 

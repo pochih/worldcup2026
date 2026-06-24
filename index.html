@@ -23,6 +23,7 @@
     <button data-view="teams">🌍 隊伍</button>
     <button data-view="analysis">🎯 戰力</button>
     <button data-view="stars">⭐ 熱門球星</button>
+    <button data-view="scorers">⚽ 進球榜</button>
     <button data-view="preview">📋 戰報</button>
   </nav>
   <div class="meta">
@@ -51,6 +52,7 @@
     <p class="legend">
       P=賽次 W=勝 D=平 L=負 GF=進球 GA=失球 GD=淨勝球 Pts=積分
       &nbsp;|&nbsp; 各組前 2 名 + 8 支最佳第 3 名晉級 32 強
+      <br>✓ 已晉級 &nbsp; ○ 第三名 &nbsp; ✗ 已淘汰（小組賽前 2 已無望，第三名晉級亦不予計入）
     </p>
   </section>
 
@@ -90,6 +92,21 @@
     <p class="legend">
       ⚽ 20 熱門隊伍 × 4 當家球星，2025-26 俱樂部賽季數據（聯賽 + 盃賽 + 歐戰合計）<br>
       資料截至 2026 年 5 月底歐洲賽季結束。助攻數部分為估算值。
+    </p>
+  </section>
+
+  <section id="view-scorers" class="view">
+    <div class="scorers-toolbar">
+      <h2>⚽ 進球榜 / 助攻榜</h2>
+      <div class="scorers-tabs">
+        <button class="sc-tab active" data-sc="combined">綜合 (G+A)</button>
+        <button class="sc-tab" data-sc="goals">進球</button>
+        <button class="sc-tab" data-sc="assists">助攻</button>
+      </div>
+    </div>
+    <div id="scorers-list"></div>
+    <p class="legend">
+      根據 FIFA 官方 timeline 即時計算。烏龍球不算進球者。助攻欄位來自 FIFA Type-1 事件，目前覆蓋率約 ~67%（其餘為單刀 / 定位球 / 未記錄）。
     </p>
   </section>
 

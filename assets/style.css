@@ -610,6 +610,82 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
 }
 .stars-pitch-wrap .pitch { width: 100%; height: auto; display: block; }
 
+/* Scorers / Assists leaderboard */
+.scorers-toolbar {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px; margin-bottom: 16px;
+}
+.scorers-toolbar h2 { margin: 0; }
+.scorers-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.sc-tab {
+  background: var(--bg-2); border: 1px solid var(--border);
+  color: var(--text); padding: 6px 14px; border-radius: 999px;
+  font-size: 13px; cursor: pointer; font-weight: 600;
+}
+.sc-tab:hover { border-color: var(--accent); }
+.sc-tab.active {
+  background: var(--accent); color: #06281e;
+  border-color: var(--accent); font-weight: 800;
+}
+#scorers-list {
+  display: grid; grid-template-columns: 1fr; gap: 6px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+.scorer-row {
+  display: grid;
+  grid-template-columns: 48px 28px 1fr 60px 60px 60px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--bg-2);
+  font-size: 14px;
+  transition: background 0.15s;
+}
+.scorer-row:hover { background: var(--surface-2); }
+.scorer-row.header {
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;
+  padding-top: 0;
+}
+.scorer-row.header:hover { background: transparent; }
+.scorer-rank {
+  font-weight: 800; color: var(--text-dim);
+  font-variant-numeric: tabular-nums; text-align: center;
+}
+.scorer-row.top-1 .scorer-rank { color: var(--gold); font-size: 18px; }
+.scorer-row.top-2 .scorer-rank { color: #c0c0c0; font-size: 17px; }
+.scorer-row.top-3 .scorer-rank { color: #cd7f32; font-size: 17px; }
+.scorer-flag { display: flex; justify-content: center; }
+.scorer-flag img { width: 28px; height: 18px; object-fit: cover; border-radius: 2px; }
+.scorer-name {
+  font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.scorer-team {
+  font-size: 11px; color: var(--text-dim); font-weight: 500; margin-left: 6px;
+}
+.scorer-stat {
+  text-align: center; font-variant-numeric: tabular-nums; font-weight: 700;
+}
+.scorer-stat-g { color: var(--accent); }
+.scorer-stat-a { color: #4fc3ff; }
+.scorer-stat-total { color: var(--gold); font-size: 16px; }
+@media (max-width: 640px) {
+  .scorer-row {
+    grid-template-columns: 38px 24px 1fr 44px 44px 50px;
+    gap: 6px; font-size: 13px; padding: 8px 10px;
+  }
+  .scorer-flag img { width: 22px; height: 14px; }
+  .scorer-team { display: block; margin-left: 0; }
+}
+
 .pitch-divider {
   display: flex; align-items: center; justify-content: center;
   gap: 14px; margin: 8px 0;

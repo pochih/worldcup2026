@@ -68,12 +68,14 @@ def fetch_timeline(stage_id, match_id):
 
 def extract_goals(timeline, home_team_id, away_team_id):
     """Pull goal events from a FIFA timeline payload.
-    Type 0 = Goal, Type 34 = Own goal, Type 41 = Penalty goal (when separate)."""
+    Type 0 = Goal, Type 34 = Own goal, Type 41 = Penalty goal (when separate).
+    Type 1 = Assist (appears right after the goal event)."""
     if not timeline or "Event" not in timeline:
         return []
     GOAL_TYPES = {0, 34, 41}
+    events = timeline["Event"]
     goals = []
-    for e in timeline["Event"]:
+    for i, e in enumerate(events):
         if e.get("Type") not in GOAL_TYPES:
             continue
         minute = e.get("MatchMinute", "") or ""
@@ -95,14 +97,37 @@ def extract_goals(timeline, home_team_id, away_team_id):
             side = "home" if kind == 34 else "away"
         else:
             side = "?"
-        goals.append({
+
+        # Look behind for an assist event (Type 1) right before this goal.
+        # FIFA timeline lists assist events 1-3 positions BEFORE the goal event.
+        assist = ""
+        for j in range(i - 1, max(i - 4, -1), -1):
+            ne = events[j]
+            if ne.get("Type") == 1:
+                ad = (ne.get("EventDescription") or [{}])[0].get("Description", "")
+                # "Assisted by Erik LIRA." → "Erik Lira"
+                ad = ad.replace("Assisted by", "").strip().rstrip(".").strip()
+                if "(" in ad:
+                    ad = ad.split("(")[0].strip()
+                assist = " ".join(
+                    w.title() if w.isupper() and len(w) > 1 else w
+                    for w in ad.split()
+                )
+                break
+            if ne.get("Type") in GOAL_TYPES:
+                break  # previous goal — assist (if any) belongs to that one
+
+        goal_entry = {
             "minute": minute,
             "side": side,
             "team": team_id,
             "player": player,
             "score": f"{e.get('HomeGoals',0)}-{e.get('AwayGoals',0)}",
             "type": "OG" if kind == 34 else ("PEN" if kind == 41 else "G"),
-        })
+        }
+        if assist:
+            goal_entry["assist"] = assist
+        goals.append(goal_entry)
     return goals
 
 

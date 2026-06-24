@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T04:33:32.340970+00:00",
+  "generatedAt": "2026-06-24T07:21:27.408852+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -47,7 +47,8 @@
           "team": "43911",
           "player": "Julian Quinones",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Erik Lira"
         },
         {
           "minute": "67'",
@@ -55,7 +56,8 @@
           "team": "43911",
           "player": "Raul Jimenez",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Roberto Alvarado"
         }
       ]
     },
@@ -103,7 +105,8 @@
           "team": "43995",
           "player": "Ladislav Krejci",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Vladimir Coufal"
         },
         {
           "minute": "67'",
@@ -111,7 +114,8 @@
           "team": "43822",
           "player": "Hwang Inbeom",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Lee Kangin"
         },
         {
           "minute": "80'",
@@ -119,7 +123,8 @@
           "team": "43822",
           "player": "Oh Hyeongyu",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Hwang Inbeom"
         }
       ]
     },
@@ -168,7 +173,8 @@
           "team": "44037",
           "player": "Jovo Lukic",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Sead Kolasinac"
         },
         {
           "minute": "78'",
@@ -176,7 +182,8 @@
           "team": "43899",
           "player": "Cyle Larin",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Promise David"
         }
       ]
     },
@@ -233,7 +240,8 @@
           "team": "43921",
           "player": "Folarin Balogun",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Christian Pulisic"
         },
         {
           "minute": "45'+5'",
@@ -241,7 +249,8 @@
           "team": "43921",
           "player": "Folarin Balogun",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Malik Tillman"
         },
         {
           "minute": "73'",
@@ -249,7 +258,8 @@
           "team": "43928",
           "player": "Mauricio",
           "score": "3-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Julio Enciso"
         },
         {
           "minute": "90'+8'",
@@ -257,7 +267,8 @@
           "team": "43921",
           "player": "Giovanni Reyna",
           "score": "4-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Alex Freeman"
         }
       ]
     },
@@ -353,7 +364,8 @@
           "team": "43976",
           "player": "Nestory Irankunda",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Paul Okon-Engstler"
         },
         {
           "minute": "75'",
@@ -409,7 +421,8 @@
           "team": "43872",
           "player": "Ismael Saibari",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Brahim Diaz"
         },
         {
           "minute": "32'",
@@ -417,7 +430,8 @@
           "team": "43924",
           "player": "Vinicius Junior",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Bruno Guimaraes"
         }
       ]
     },
@@ -521,7 +535,8 @@
           "team": "43854",
           "player": "Amad Diallo",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Wilfried Singo"
         }
       ]
     },
@@ -569,7 +584,8 @@
           "team": "43948",
           "player": "Felix Nmecha",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Florian Wirtz"
         },
         {
           "minute": "21'",
@@ -585,7 +601,8 @@
           "team": "43948",
           "player": "Nico Schlotterbeck",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Nathaniel Brown"
         },
         {
           "minute": "45'+5'",
@@ -601,7 +618,8 @@
           "team": "43948",
           "player": "Jamal Musiala",
           "score": "4-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Joshua Kimmich"
         },
         {
           "minute": "68'",
@@ -609,7 +627,8 @@
           "team": "43948",
           "player": "Nathaniel Brown",
           "score": "5-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Deniz Undav"
         },
         {
           "minute": "78'",
@@ -617,7 +636,8 @@
           "team": "43948",
           "player": "Deniz Undav",
           "score": "6-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Joshua Kimmich"
         },
         {
           "minute": "88'",
@@ -625,7 +645,8 @@
           "team": "43948",
           "player": "Kai Havertz",
           "score": "7-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Deniz Undav"
         }
       ]
     },
@@ -673,7 +694,8 @@
           "team": "43960",
           "player": "Virgil Van Dijk",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Ryan Gravenberch"
         },
         {
           "minute": "57'",
@@ -681,7 +703,8 @@
           "team": "43819",
           "player": "Keito Nakamura",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Takefusa Kubo"
         },
         {
           "minute": "64'",
@@ -689,7 +712,8 @@
           "team": "43960",
           "player": "Crysencio Summerville",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Ryan Gravenberch"
         },
         {
           "minute": "88'",
@@ -697,7 +721,8 @@
           "team": "43819",
           "player": "Daichi Kamada",
           "score": "2-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Koki Ogawa"
         }
       ]
     },
@@ -753,7 +778,8 @@
           "team": "43970",
           "player": "Alexander Isak",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Viktor Gyokeres"
         },
         {
           "minute": "43'",
@@ -761,7 +787,8 @@
           "team": "43888",
           "player": "Omar Rekik",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Hannibal Mejbri"
         },
         {
           "minute": "59'",
@@ -769,7 +796,8 @@
           "team": "43970",
           "player": "Viktor Gyokeres",
           "score": "3-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Alexander Isak"
         },
         {
           "minute": "84'",
@@ -785,7 +813,8 @@
           "team": "43970",
           "player": "Yasin Ayari",
           "score": "5-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Lucas Bergvall"
         }
       ]
     },
@@ -928,7 +957,8 @@
           "team": "43978",
           "player": "Elijah Just",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Chris Wood"
         },
         {
           "minute": "32'",
@@ -944,7 +974,8 @@
           "team": "43978",
           "player": "Elijah Just",
           "score": "1-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Chris Wood"
         },
         {
           "minute": "64'",
@@ -952,7 +983,8 @@
           "team": "43817",
           "player": "Mohammad Mohebbi",
           "score": "2-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Ramin Rezaeian"
         }
       ]
     },
@@ -1000,7 +1032,8 @@
           "team": "43855",
           "player": "Emam Ashour",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Mohamed Salah"
         },
         {
           "minute": "66'",
@@ -1056,7 +1089,8 @@
           "team": "43946",
           "player": "Kylian Mbappe",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Michael Olise"
         },
         {
           "minute": "82'",
@@ -1064,7 +1098,8 @@
           "team": "43946",
           "player": "Bradley Barcola",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Adrien Rabiot"
         },
         {
           "minute": "90'+5'",
@@ -1072,7 +1107,8 @@
           "team": "43879",
           "player": "Ibrahim Mbaye",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Iliman Ndiaye"
         },
         {
           "minute": "90'+6'",
@@ -1128,7 +1164,8 @@
           "team": "43961",
           "player": "Erling Haaland",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "David Moller Wolfe"
         },
         {
           "minute": "39'",
@@ -1136,7 +1173,8 @@
           "team": "43818",
           "player": "Aymen Hussein",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Amir Alammari"
         },
         {
           "minute": "43'",
@@ -1152,7 +1190,8 @@
           "team": "43961",
           "player": "Leo Ostigard",
           "score": "1-3",
-          "type": "G"
+          "type": "G",
+          "assist": "Martin Odegaard"
         },
         {
           "minute": "90'+6'",
@@ -1208,7 +1247,8 @@
           "team": "43922",
           "player": "Lionel Messi",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Rodrigo De Paul"
         },
         {
           "minute": "60'",
@@ -1224,7 +1264,8 @@
           "team": "43922",
           "player": "Lionel Messi",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Nico Gonzalez"
         }
       ]
     },
@@ -1272,7 +1313,8 @@
           "team": "43934",
           "player": "Romano Schmid",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Xaver Schlager"
         },
         {
           "minute": "50'",
@@ -1280,7 +1322,8 @@
           "team": "43820",
           "player": "Ali Olwan",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Noor Alrawabdeh"
         },
         {
           "minute": "76'",
@@ -1400,7 +1443,8 @@
           "team": "43938",
           "player": "Martin Baturina",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Petar Sucic"
         },
         {
           "minute": "42'",
@@ -1408,7 +1452,8 @@
           "team": "43942",
           "player": "Harry Kane",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Declan Rice"
         },
         {
           "minute": "45'+5'",
@@ -1416,7 +1461,8 @@
           "team": "43938",
           "player": "Petar Musa",
           "score": "2-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Ivan Perisic"
         },
         {
           "minute": "47'",
@@ -1424,7 +1470,8 @@
           "team": "43942",
           "player": "Jude Bellingham",
           "score": "3-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Elliot Anderson"
         },
         {
           "minute": "85'",
@@ -1432,7 +1479,8 @@
           "team": "43942",
           "player": "Marcus Rashford",
           "score": "4-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Bukayo Saka"
         }
       ]
     },
@@ -1480,7 +1528,8 @@
           "team": "43963",
           "player": "Joao Neves",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Pedro Neto"
         },
         {
           "minute": "45'+5'",
@@ -1488,7 +1537,8 @@
           "team": "20014",
           "player": "Yoane Wissa",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Arthur Masuaku"
         }
       ]
     },
@@ -1536,7 +1586,8 @@
           "team": "43926",
           "player": "Daniel Munoz",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Luis Diaz"
         },
         {
           "minute": "60'",
@@ -1552,7 +1603,8 @@
           "team": "43926",
           "player": "Luis Diaz",
           "score": "1-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Gustavo Puerta"
         },
         {
           "minute": "90'+9'",
@@ -1560,7 +1612,8 @@
           "team": "43926",
           "player": "Jaminton Campaz",
           "score": "1-3",
-          "type": "G"
+          "type": "G",
+          "assist": "Cucho Hernandez"
         }
       ]
     },
@@ -1608,7 +1661,8 @@
           "team": "43995",
           "player": "Michal Sadilek",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Alexandr Sojka"
         },
         {
           "minute": "83'",
@@ -1672,7 +1726,8 @@
           "team": "43971",
           "player": "Ruben Vargas",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Breel Embolo"
         },
         {
           "minute": "90'",
@@ -1680,7 +1735,8 @@
           "team": "43971",
           "player": "Johan Manzambi",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Ruben Vargas"
         },
         {
           "minute": "90'+3'",
@@ -1785,7 +1841,8 @@
           "team": "43899",
           "player": "Jonathan David",
           "score": "6-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Nathan Saliba"
         }
       ]
     },
@@ -1890,7 +1947,8 @@
           "team": "43924",
           "player": "Matheus Cunha",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Vinicius Junior"
         },
         {
           "minute": "45'+3'",
@@ -1898,7 +1956,8 @@
           "team": "43924",
           "player": "Vinicius Junior",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Lucas Paqueta"
         }
       ]
     },
@@ -1946,7 +2005,8 @@
           "team": "43872",
           "player": "Ismael Saibari",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Brahim Diaz"
         }
       ]
     },
@@ -1994,7 +2054,8 @@
           "team": "43928",
           "player": "Matias Galarza",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Julio Enciso"
         }
       ]
     },
@@ -2107,7 +2168,8 @@
           "team": "43948",
           "player": "Deniz Undav",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Nadiem Amiri"
         },
         {
           "minute": "90'+4'",
@@ -2115,7 +2177,8 @@
           "team": "43948",
           "player": "Deniz Undav",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Felix Nmecha"
         }
       ]
     },
@@ -2202,7 +2265,8 @@
           "team": "43960",
           "player": "Brian Brobbey",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Cody Gakpo"
         },
         {
           "minute": "17'",
@@ -2210,7 +2274,8 @@
           "team": "43960",
           "player": "Brian Brobbey",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Denzel Dumfries"
         },
         {
           "minute": "47'",
@@ -2218,7 +2283,8 @@
           "team": "43960",
           "player": "Cody Gakpo",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Denzel Dumfries"
         },
         {
           "minute": "54'",
@@ -2226,7 +2292,8 @@
           "team": "43960",
           "player": "Cody Gakpo",
           "score": "4-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Crysencio Summerville"
         },
         {
           "minute": "59'",
@@ -2234,7 +2301,8 @@
           "team": "43970",
           "player": "Anthony Elanga",
           "score": "4-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Alexander Isak"
         },
         {
           "minute": "89'",
@@ -2242,7 +2310,8 @@
           "team": "43960",
           "player": "Crysencio Summerville",
           "score": "5-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Memphis Depay"
         }
       ]
     },
@@ -2290,7 +2359,8 @@
           "team": "43819",
           "player": "Daichi Kamada",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Keito Nakamura"
         },
         {
           "minute": "31'",
@@ -2298,7 +2368,8 @@
           "team": "43819",
           "player": "Ayase Ueda",
           "score": "0-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Kou Itakura"
         },
         {
           "minute": "69'",
@@ -2306,7 +2377,8 @@
           "team": "43819",
           "player": "Junya Ito",
           "score": "0-3",
-          "type": "G"
+          "type": "G",
+          "assist": "Ayase Ueda"
         },
         {
           "minute": "83'",
@@ -2314,7 +2386,8 @@
           "team": "43819",
           "player": "Ayase Ueda",
           "score": "0-4",
-          "type": "G"
+          "type": "G",
+          "assist": "Kaishu Sano"
         }
       ]
     },
@@ -2378,7 +2451,8 @@
           "team": "43930",
           "player": "Agustin Canobbio",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Maxi Araujo"
         },
         {
           "minute": "61'",
@@ -2434,7 +2508,8 @@
           "team": "43969",
           "player": "Lamine Yamal",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Mikel Oyarzabal"
         },
         {
           "minute": "21'",
@@ -2442,7 +2517,8 @@
           "team": "43969",
           "player": "Mikel Oyarzabal",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Aymeric Laporte"
         },
         {
           "minute": "24'",
@@ -2450,7 +2526,8 @@
           "team": "43969",
           "player": "Mikel Oyarzabal",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Dani Olmo"
         },
         {
           "minute": "49'",
@@ -2545,7 +2622,8 @@
           "team": "43978",
           "player": "Finn Surman",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Tim Payne"
         },
         {
           "minute": "58'",
@@ -2553,7 +2631,8 @@
           "team": "43855",
           "player": "Mostafa Zico",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Mohamed Hany"
         },
         {
           "minute": "67'",
@@ -2561,7 +2640,8 @@
           "team": "43855",
           "player": "Mohamed Salah",
           "score": "1-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Mostafa Zico"
         },
         {
           "minute": "82'",
@@ -2569,7 +2649,8 @@
           "team": "43855",
           "player": "Trezeguet",
           "score": "1-3",
-          "type": "G"
+          "type": "G",
+          "assist": "Mohamed Salah"
         }
       ]
     },
@@ -2625,7 +2706,8 @@
           "team": "43961",
           "player": "Erling Haaland",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Martin Odegaard"
         },
         {
           "minute": "53'",
@@ -2633,7 +2715,8 @@
           "team": "43879",
           "player": "Ismaila Sarr",
           "score": "2-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Sadio Mane"
         },
         {
           "minute": "58'",
@@ -2641,7 +2724,8 @@
           "team": "43961",
           "player": "Erling Haaland",
           "score": "3-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Patrick Berg"
         },
         {
           "minute": "90'+3'",
@@ -2649,7 +2733,8 @@
           "team": "43879",
           "player": "Ismaila Sarr",
           "score": "3-2",
-          "type": "G"
+          "type": "G",
+          "assist": "Nicolas Jackson"
         }
       ]
     },
@@ -2697,7 +2782,8 @@
           "team": "43946",
           "player": "Kylian Mbappe",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Michael Olise"
         },
         {
           "minute": "54'",
@@ -2705,7 +2791,8 @@
           "team": "43946",
           "player": "Kylian Mbappe",
           "score": "2-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Ousmane Dembele"
         },
         {
           "minute": "66'",
@@ -2713,7 +2800,8 @@
           "team": "43946",
           "player": "Ousmane Dembele",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Michael Olise"
         }
       ]
     },
@@ -2761,7 +2849,8 @@
           "team": "43922",
           "player": "Lionel Messi",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Facundo Medina"
         },
         {
           "minute": "90'+5'",
@@ -2817,7 +2906,8 @@
           "team": "43820",
           "player": "Nizar Alrashdan",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Mousa Altamari"
         },
         {
           "minute": "69'",
@@ -2825,7 +2915,8 @@
           "team": "43843",
           "player": "Nadhir Benbouali",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Riyad Mahrez"
         },
         {
           "minute": "82'",
@@ -2920,7 +3011,8 @@
           "team": "43938",
           "player": "Ante Budimir",
           "score": "0-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Josip Stanisic"
         }
       ]
     },
@@ -2968,7 +3060,8 @@
           "team": "43963",
           "player": "Cristiano Ronaldo",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Joao Cancelo"
         },
         {
           "minute": "17'",
@@ -2984,7 +3077,8 @@
           "team": "43963",
           "player": "Cristiano Ronaldo",
           "score": "3-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Bruno Fernandes"
         },
         {
           "minute": "60'",
@@ -3048,7 +3142,8 @@
           "team": "43926",
           "player": "Daniel Munoz",
           "score": "1-0",
-          "type": "G"
+          "type": "G",
+          "assist": "Juan Quintero"
         }
       ]
     },
