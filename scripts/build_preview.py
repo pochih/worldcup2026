@@ -403,39 +403,62 @@ def predict_score(home_stats, away_stats):
 
 
 def make_timeline(predict, h_code, a_code):
-    """Synthetic 8-event arc keyed off predicted score."""
+    """Synthetic timeline keyed off predicted score.
+    Goal text reflects the running score at the time of that goal."""
     h, a = predict["score"].split("-")
     h, a = int(h), int(a)
     fav = "home" if predict["winner"] == "home" else "away"
     events = [{"min": 5, "side": fav, "type": "control",
                "text": "開場掌控節奏，逐步建立攻勢"}]
 
-    # Distribute home goals across first half / late, away similarly
+    # Distribute goals across the match (earlier = open, later = clincher)
     goal_min = []
-    if h >= 1: goal_min.append((35, "home", "open"))
-    if h >= 2: goal_min.append((68, "home", "second"))
-    if h >= 3: goal_min.append((85, "home", "third"))
-    if a >= 1: goal_min.append((52, "away", "open"))
-    if a >= 2: goal_min.append((78, "away", "second"))
-    if a >= 3: goal_min.append((88, "away", "third"))
+    if h >= 1: goal_min.append((35, "home"))
+    if h >= 2: goal_min.append((68, "home"))
+    if h >= 3: goal_min.append((85, "home"))
+    if a >= 1: goal_min.append((52, "away"))
+    if a >= 2: goal_min.append((78, "away"))
+    if a >= 3: goal_min.append((88, "away"))
     goal_min.sort()
 
-    # Build running score
-    running = [0, 0]
-    home_idx, away_idx = 0, 1
-    for m, side, _ in goal_min:
-        if side == "home": running[0] += 1
-        else: running[1] += 1
+    # Build running score + situation-aware text per goal
+    rh, ra = 0, 0
+    for m, side in goal_min:
+        # Pre-goal state to decide text
+        before_h, before_a = rh, ra
+        if side == "home":
+            rh += 1
+            my_before, opp_before = before_h, before_a
+        else:
+            ra += 1
+            my_before, opp_before = before_a, before_h
+
+        if my_before == 0 and opp_before == 0:
+            text = "率先破門，取得領先"
+        elif my_before == opp_before:
+            text = "反超比分，奪回領先" if m >= 60 else "再下一城，取得領先"
+        elif my_before < opp_before:
+            # was trailing
+            text = "扳平比分" if my_before + 1 == opp_before else "扳回一城"
+        else:
+            # was already leading
+            text = "鎖定勝局" if m >= 80 else "擴大領先"
+
+        if m >= 88:
+            text = ("絕殺破門！" if my_before <= opp_before else "終場前再下一城") + "（" + text + "）"
+
         events.append({
             "min": m, "side": side, "type": "goal",
-            "text": "破門，比分擴大" if side == fav else "扳回一城",
-            "score": f"{running[0]}-{running[1]}",
+            "text": text,
+            "score": f"{rh}-{ra}",
         })
 
-    # Add halftime + chance + fulltime
-    events.append({"min": 45, "side": "neutral", "type": "halftime",
-                   "text": f"半場：{h_code} {running[0]}-{running[1]} {a_code} (中場時)"
-                   if any(g[0] < 45 for g in goal_min) else f"半場：0-0"})
+    # Halftime score = state at minute 45 (only goals with min < 45)
+    half_h = sum(1 for m, s in goal_min if m < 45 and s == "home")
+    half_a = sum(1 for m, s in goal_min if m < 45 and s == "away")
+    half_text = (f"半場：{h_code} {half_h}-{half_a} {a_code}"
+                 if (half_h + half_a) > 0 else f"半場：{h_code} 0-0 {a_code}")
+    events.append({"min": 45, "side": "neutral", "type": "halftime", "text": half_text})
     events.append({"min": 90, "side": "neutral", "type": "fulltime",
                    "text": f"全場：{h_code} {h}-{a} {a_code}"})
 

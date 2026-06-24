@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-06-24T08:32:47.770703+00:00",
+  "_generatedAt": "2026-06-24T09:11:58.523982+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -370,27 +370,27 @@
           "min": 35,
           "side": "home",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "率先破門，取得領先",
           "score": "1-0"
         },
         {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：BRA 2-1 MAR (中場時)"
+          "text": "半場：BRA 1-0 MAR"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳回一城",
+          "text": "扳平比分",
           "score": "1-1"
         },
         {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "反超比分，奪回領先",
           "score": "2-1"
         },
         {
@@ -1352,27 +1352,27 @@
           "min": 35,
           "side": "home",
           "type": "goal",
-          "text": "扳回一城",
+          "text": "率先破門，取得領先",
           "score": "1-0"
         },
         {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：MEX 1-2 KOR (中場時)"
+          "text": "半場：MEX 1-0 KOR"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "扳平比分",
           "score": "1-1"
         },
         {
           "min": 78,
           "side": "away",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "反超比分，奪回領先",
           "score": "1-2"
         },
         {
@@ -1818,27 +1818,27 @@
           "min": 35,
           "side": "home",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "率先破門，取得領先",
           "score": "1-0"
         },
         {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：NOR 2-1 SEN (中場時)"
+          "text": "半場：NOR 1-0 SEN"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳回一城",
+          "text": "扳平比分",
           "score": "1-1"
         },
         {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "反超比分，奪回領先",
           "score": "2-1"
         },
         {
@@ -2284,27 +2284,27 @@
           "min": 35,
           "side": "home",
           "type": "goal",
-          "text": "扳回一城",
+          "text": "率先破門，取得領先",
           "score": "1-0"
         },
         {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：COL 1-2 POR (中場時)"
+          "text": "半場：COL 1-0 POR"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "扳平比分",
           "score": "1-1"
         },
         {
           "min": 78,
           "side": "away",
           "type": "goal",
-          "text": "破門，比分擴大",
+          "text": "反超比分，奪回領先",
           "score": "1-2"
         },
         {
