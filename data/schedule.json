@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T20:21:07.187750+00:00",
+  "generatedAt": "2026-06-25T22:44:16.483678+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3574,8 +3574,8 @@
       "group": "E",
       "utc": "2026-06-25T20:00:00Z",
       "localKick": "2026-06-25T16:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
       "tz": "",
@@ -3595,11 +3595,11 @@
         "code": "CIV",
         "name": "Côte d'Ivoire",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43854",
+      "attendance": "68324",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -3612,6 +3612,15 @@
           "score": "0-1",
           "type": "G",
           "assist": "Yan Diomande"
+        },
+        {
+          "minute": "64'",
+          "side": "away",
+          "team": "43854",
+          "player": "Nicolas Pepe",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Ibrahim Sangare"
         }
       ]
     },
@@ -3623,8 +3632,8 @@
       "group": "E",
       "utc": "2026-06-25T20:00:00Z",
       "localKick": "2026-06-25T16:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -3636,7 +3645,7 @@
         "code": "ECU",
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -3647,8 +3656,8 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43927",
+      "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -3670,6 +3679,15 @@
           "score": "1-1",
           "type": "G",
           "assist": "Pedro Vite"
+        },
+        {
+          "minute": "77'",
+          "side": "home",
+          "team": "43927",
+          "player": "Gonzalo Plata",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Kevin Rodriguez"
         }
       ]
     },
@@ -4520,10 +4538,10 @@
       "placeholderHome": "2E",
       "placeholderAway": "2I",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43854",
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
         "score": null,
         "pen": null
       },
@@ -6190,12 +6208,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
         "P": 3,
         "W": 2,
-        "D": 1,
-        "L": 0,
+        "D": 0,
+        "L": 1,
         "GF": 10,
-        "GA": 3,
-        "GD": 7,
-        "Pts": 7
+        "GA": 4,
+        "GD": 6,
+        "Pts": 6
       },
       {
         "id": "43854",
@@ -6206,9 +6224,9 @@
         "W": 2,
         "D": 0,
         "L": 1,
-        "GF": 3,
+        "GF": 4,
         "GA": 2,
-        "GD": 1,
+        "GD": 2,
         "Pts": 6
       },
       {
@@ -6217,13 +6235,13 @@
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
         "P": 3,
-        "W": 0,
-        "D": 2,
+        "W": 1,
+        "D": 1,
         "L": 1,
-        "GF": 1,
+        "GF": 2,
         "GA": 2,
-        "GD": -1,
-        "Pts": 2
+        "GD": 0,
+        "Pts": 4
       },
       {
         "id": "1895293",
@@ -6235,8 +6253,8 @@
         "D": 1,
         "L": 2,
         "GF": 1,
-        "GA": 8,
-        "GD": -7,
+        "GA": 9,
+        "GD": -8,
         "Pts": 1
       }
     ],
