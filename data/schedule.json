@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T17:22:32.499795+00:00",
+  "generatedAt": "2026-06-25T20:21:07.187750+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3574,7 +3574,7 @@
       "group": "E",
       "utc": "2026-06-25T20:00:00Z",
       "localKick": "2026-06-25T16:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
@@ -3587,7 +3587,7 @@
         "code": "CUW",
         "name": "Curaçao",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -3595,7 +3595,7 @@
         "code": "CIV",
         "name": "Côte d'Ivoire",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -3603,7 +3603,17 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "7'",
+          "side": "away",
+          "team": "43854",
+          "player": "Nicolas Pepe",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Yan Diomande"
+        }
+      ]
     },
     {
       "id": "400021466",
@@ -3613,7 +3623,7 @@
       "group": "E",
       "utc": "2026-06-25T20:00:00Z",
       "localKick": "2026-06-25T16:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
@@ -3626,7 +3636,7 @@
         "code": "ECU",
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -3634,7 +3644,7 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -3642,7 +3652,26 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "2'",
+          "side": "away",
+          "team": "43948",
+          "player": "Leroy Sane",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Florian Wirtz"
+        },
+        {
+          "minute": "9'",
+          "side": "home",
+          "team": "43927",
+          "player": "Nilson Angulo",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Pedro Vite"
+        }
+      ]
     },
     {
       "id": "400021471",
@@ -6159,55 +6188,55 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "P": 2,
+        "P": 3,
         "W": 2,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 9,
-        "GA": 2,
+        "GF": 10,
+        "GA": 3,
         "GD": 7,
-        "Pts": 6
+        "Pts": 7
       },
       {
         "id": "43854",
         "code": "CIV",
         "name": "Côte d'Ivoire",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
-        "P": 2,
-        "W": 1,
+        "P": 3,
+        "W": 2,
         "D": 0,
         "L": 1,
-        "GF": 2,
+        "GF": 3,
         "GA": 2,
-        "GD": 0,
-        "Pts": 3
+        "GD": 1,
+        "Pts": 6
       },
       {
         "id": "43927",
         "code": "ECU",
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
-        "P": 2,
+        "P": 3,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 1,
-        "GF": 0,
-        "GA": 1,
+        "GF": 1,
+        "GA": 2,
         "GD": -1,
-        "Pts": 1
+        "Pts": 2
       },
       {
         "id": "1895293",
         "code": "CUW",
         "name": "Curaçao",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CUW",
-        "P": 2,
+        "P": 3,
         "W": 0,
         "D": 1,
-        "L": 1,
+        "L": 2,
         "GF": 1,
-        "GA": 7,
-        "GD": -6,
+        "GA": 8,
+        "GD": -7,
         "Pts": 1
       }
     ],
