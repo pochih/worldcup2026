@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T00:21:00.789231+00:00",
+  "generatedAt": "2026-06-25T05:15:02.446377+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3457,8 +3457,8 @@
       "group": "A",
       "utc": "2026-06-25T01:00:00Z",
       "localKick": "2026-06-24T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Mexico City Stadium",
       "city": "Mexico City",
       "tz": "",
@@ -3470,7 +3470,7 @@
         "code": "CZE",
         "name": "Czechia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -3478,16 +3478,44 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "score": null,
+        "score": 3,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43911",
+      "attendance": "80824",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "55'",
+          "side": "away",
+          "team": "43911",
+          "player": "Mateo Chavez",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Luis Romo"
+        },
+        {
+          "minute": "61'",
+          "side": "away",
+          "team": "43911",
+          "player": "Julian Quinones",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Jorge Sanchez"
+        },
+        {
+          "minute": "90'+4'",
+          "side": "away",
+          "team": "43911",
+          "player": "Alvaro Fidalgo",
+          "score": "0-3",
+          "type": "G",
+          "assist": "Roberto Alvarado"
+        }
+      ]
     },
     {
       "id": "400021445",
@@ -3497,8 +3525,8 @@
       "group": "A",
       "utc": "2026-06-25T01:00:00Z",
       "localKick": "2026-06-24T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Monterrey Stadium",
       "city": "Monterrey",
       "tz": "",
@@ -3510,7 +3538,7 @@
         "code": "RSA",
         "name": "South Africa",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -3518,15 +3546,25 @@
         "code": "KOR",
         "name": "Korea Republic",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43883",
+      "attendance": "51243",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "63'",
+          "side": "home",
+          "team": "43883",
+          "player": "Thapelo Maseko",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Tshepang Moremi"
+        }
+      ]
     },
     {
       "id": "400021468",
@@ -4248,10 +4286,10 @@
       "placeholderHome": "2A",
       "placeholderAway": "2B",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43883",
+        "code": "RSA",
+        "name": "South Africa",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
         "score": null,
         "pen": null
       },
@@ -4338,10 +4376,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
         "score": null,
         "pen": null
       },
@@ -4371,10 +4409,10 @@
       "placeholderHome": "1C",
       "placeholderAway": "2F",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
         "score": null,
         "pen": null
       },
@@ -5889,27 +5927,41 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "P": 2,
-        "W": 2,
+        "P": 3,
+        "W": 3,
         "D": 0,
         "L": 0,
-        "GF": 3,
+        "GF": 6,
         "GA": 0,
-        "GD": 3,
-        "Pts": 6
+        "GD": 6,
+        "Pts": 9
+      },
+      {
+        "id": "43883",
+        "code": "RSA",
+        "name": "South Africa",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
+        "P": 3,
+        "W": 1,
+        "D": 1,
+        "L": 1,
+        "GF": 2,
+        "GA": 3,
+        "GD": -1,
+        "Pts": 4
       },
       {
         "id": "43822",
         "code": "KOR",
         "name": "Korea Republic",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KOR",
-        "P": 2,
+        "P": 3,
         "W": 1,
         "D": 0,
-        "L": 1,
+        "L": 2,
         "GF": 2,
-        "GA": 2,
-        "GD": 0,
+        "GA": 3,
+        "GD": -1,
         "Pts": 3
       },
       {
@@ -5917,27 +5969,13 @@
         "code": "CZE",
         "name": "Czechia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CZE",
-        "P": 2,
+        "P": 3,
         "W": 0,
         "D": 1,
-        "L": 1,
+        "L": 2,
         "GF": 2,
-        "GA": 3,
-        "GD": -1,
-        "Pts": 1
-      },
-      {
-        "id": "43883",
-        "code": "RSA",
-        "name": "South Africa",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
-        "P": 2,
-        "W": 0,
-        "D": 1,
-        "L": 1,
-        "GF": 1,
-        "GA": 3,
-        "GD": -2,
+        "GA": 6,
+        "GD": -4,
         "Pts": 1
       }
     ],
