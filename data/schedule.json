@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T22:38:44.212507+00:00",
+  "generatedAt": "2026-06-25T00:21:00.789231+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3155,8 +3155,8 @@
       "group": "C",
       "utc": "2026-06-24T22:00:00Z",
       "localKick": "2026-06-24T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Miami Stadium",
       "city": "Miami",
       "tz": "",
@@ -3176,11 +3176,11 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "score": 1,
+        "score": 3,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43924",
+      "attendance": "64478",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -3193,6 +3193,24 @@
           "score": "0-1",
           "type": "G",
           "assist": "Rayan"
+        },
+        {
+          "minute": "45'+3'",
+          "side": "away",
+          "team": "43924",
+          "player": "Vinicius Junior",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Bruno Guimaraes"
+        },
+        {
+          "minute": "60'",
+          "side": "away",
+          "team": "43924",
+          "player": "Matheus Cunha",
+          "score": "0-3",
+          "type": "G",
+          "assist": "Bruno Guimaraes"
         }
       ]
     },
@@ -3204,8 +3222,8 @@
       "group": "C",
       "utc": "2026-06-24T22:00:00Z",
       "localKick": "2026-06-24T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -3217,7 +3235,7 @@
         "code": "MAR",
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
-        "score": 0,
+        "score": 4,
         "pen": null
       },
       "away": {
@@ -3225,11 +3243,11 @@
         "code": "HAI",
         "name": "Haiti",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43872",
+      "attendance": "68239",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -3241,6 +3259,50 @@
           "player": "Yassine Bounou",
           "score": "0-1",
           "type": "OG"
+        },
+        {
+          "minute": "39'",
+          "side": "home",
+          "team": "43872",
+          "player": "Achraf Hakimi",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "43'",
+          "side": "away",
+          "team": "43908",
+          "player": "Wilson Isidor",
+          "score": "1-2",
+          "type": "G",
+          "assist": "Jean-Kevin Duverne"
+        },
+        {
+          "minute": "45'+1'",
+          "side": "home",
+          "team": "43872",
+          "player": "Ismael Saibari",
+          "score": "2-2",
+          "type": "G",
+          "assist": "Achraf Hakimi"
+        },
+        {
+          "minute": "78'",
+          "side": "home",
+          "team": "43872",
+          "player": "Soufiane Rahimi",
+          "score": "3-2",
+          "type": "G",
+          "assist": "Chadi Riad"
+        },
+        {
+          "minute": "89'",
+          "side": "home",
+          "team": "43872",
+          "player": "Gessime Yassine",
+          "score": "4-2",
+          "type": "G",
+          "assist": "Soufiane Rahimi"
         }
       ]
     },
@@ -6005,9 +6067,9 @@
         "W": 2,
         "D": 1,
         "L": 0,
-        "GF": 5,
+        "GF": 7,
         "GA": 1,
-        "GD": 4,
+        "GD": 6,
         "Pts": 7
       },
       {
@@ -6016,13 +6078,13 @@
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
         "P": 3,
-        "W": 1,
+        "W": 2,
         "D": 1,
-        "L": 1,
-        "GF": 2,
-        "GA": 2,
-        "GD": 0,
-        "Pts": 4
+        "L": 0,
+        "GF": 6,
+        "GA": 3,
+        "GD": 3,
+        "Pts": 7
       },
       {
         "id": "43967",
@@ -6034,8 +6096,8 @@
         "D": 0,
         "L": 2,
         "GF": 1,
-        "GA": 2,
-        "GD": -1,
+        "GA": 4,
+        "GD": -3,
         "Pts": 3
       },
       {
@@ -6044,13 +6106,13 @@
         "name": "Haiti",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/HAI",
         "P": 3,
-        "W": 1,
+        "W": 0,
         "D": 0,
-        "L": 2,
-        "GF": 1,
-        "GA": 4,
-        "GD": -3,
-        "Pts": 3
+        "L": 3,
+        "GF": 2,
+        "GA": 8,
+        "GD": -6,
+        "Pts": 0
       }
     ],
     "E": [
