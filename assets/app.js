@@ -466,10 +466,6 @@ function bracketCardHtml(m, side, round) {
   const placeholderHint = NEEDS[m.no] || "TBD";
   const hName = home.name || `<span class="ph">${m.placeholderHome || placeholderHint.split(" vs ")[0]}</span>`;
   const aName = away.name || `<span class="ph">${m.placeholderAway || placeholderHint.split(" vs ")[1] || "TBD"}</span>`;
-  // 國家短碼:超過 11 字元改用 code (e.g. "Bosnia and Herzegovina" → "BIH")
-  const shorten = (n, code) => (n && n.length > 11 && code) ? code : n;
-  const hDisplay = home.name ? shorten(home.name, home.code) : hName;
-  const aDisplay = away.name ? shorten(away.name, away.code) : aName;
 
   const hWin = played && home.score > away.score;
   const aWin = played && away.score > home.score;
@@ -481,11 +477,11 @@ function bracketCardHtml(m, side, round) {
   return `<div class="bracket-match ${sideCls} ${roundCls} ${stageCls} ${placeholderCls}">
     <div class="br-meta-top">#${m.no} · ${tp.date.slice(5)} ${tp.time}</div>
     <div class="row ${hWin ? "winner" : ""}">
-      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}<span title="${home.name || placeholderHint.split(" vs ")[0]}">${hDisplay}</span></div>
+      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}<span>${hName}</span></div>
       <div class="vs-score">${played ? home.score : ""}</div>
     </div>
     <div class="row ${aWin ? "winner" : ""}">
-      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}<span title="${away.name || placeholderHint.split(" vs ")[1] || ''}">${aDisplay}</span></div>
+      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}<span>${aName}</span></div>
       <div class="vs-score">${played ? away.score : ""}</div>
     </div>
   </div>`;

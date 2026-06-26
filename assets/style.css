@@ -436,7 +436,7 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 .bracket-match .row.winner { color: var(--accent); font-weight: 600; }
 .bracket-match .row img { width: 14px; height: 10px; object-fit: cover; border-radius: 2px; margin-right: 4px; flex-shrink: 0; }
 .bracket-match .vs-name { display: flex; align-items: center; flex: 1; min-width: 0; }
-.bracket-match .vs-name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.bracket-match .vs-name span { overflow: hidden; min-width: 0; word-break: break-word; line-height: 1.15; }
 .bracket-match .vs-name .ph { color: var(--text-dim); font-style: italic; font-size: 10px; }
 .bracket-match .vs-score { font-weight: 700; font-variant-numeric: tabular-nums; padding-left: 6px; flex-shrink: 0; }
 .bracket-match .meta { font-size: 9px; color: var(--text-dim); margin-top: 2px; text-align: center; }
