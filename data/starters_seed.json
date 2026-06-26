@@ -1,0 +1,771 @@
+{
+  "_note": "16 強熱門隊伍預測 11 人首發。基於 2024-2026 國際賽表現、近期友誼賽與資格賽的常用陣容。各隊陣型可被 team_meta.json 的 formation 覆蓋（用相同 pos 對應）。其他 32 隊未列出，build_preview.py 會回退到 stars.json + 中文位置標籤。",
+  "ARG": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 23, "name": "Emiliano Martínez", "nameZh": "馬丁尼斯",     "pos": "GK" },
+      { "shirt": 26, "name": "Nahuel Molina",     "nameZh": "莫利納",       "pos": "RB" },
+      { "shirt": 13, "name": "Cristian Romero",   "nameZh": "羅梅羅",       "pos": "CB" },
+      { "shirt": 25, "name": "Lisandro Martínez", "nameZh": "L. 馬丁尼斯",  "pos": "CB" },
+      { "shirt": 3,  "name": "Nicolás Tagliafico","nameZh": "塔格里亞費高", "pos": "LB" },
+      { "shirt": 5,  "name": "Leandro Paredes",   "nameZh": "帕雷德斯",     "pos": "DM" },
+      { "shirt": 20, "name": "Alexis Mac Allister","nameZh": "麥亞利斯特",  "pos": "CM" },
+      { "shirt": 24, "name": "Enzo Fernández",    "nameZh": "費南德斯",     "pos": "CM" },
+      { "shirt": 11, "name": "Ángel Di María",    "nameZh": "迪馬利亞",     "pos": "RW" },
+      { "shirt": 22, "name": "Lautaro Martínez",  "nameZh": "勞塔羅",       "pos": "ST" },
+      { "shirt": 10, "name": "Lionel Messi",      "nameZh": "梅西",         "pos": "LW" }
+    ]
+  },
+  "BRA": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Alisson",          "nameZh": "阿利森",       "pos": "GK" },
+      { "shirt": 2,  "name": "Danilo",           "nameZh": "達尼洛",       "pos": "RB" },
+      { "shirt": 3,  "name": "Marquinhos",       "nameZh": "馬奎尼奧斯",   "pos": "CB" },
+      { "shirt": 4,  "name": "Gabriel Magalhães","nameZh": "加比爾",       "pos": "CB" },
+      { "shirt": 6,  "name": "Wendell",          "nameZh": "溫德爾",       "pos": "LB" },
+      { "shirt": 5,  "name": "Bruno Guimarães",  "nameZh": "B. 吉馬良斯",  "pos": "DM" },
+      { "shirt": 8,  "name": "Lucas Paquetá",    "nameZh": "帕奎塔",       "pos": "CM" },
+      { "shirt": 17, "name": "Joelinton",        "nameZh": "若昂林頓",     "pos": "CM" },
+      { "shirt": 7,  "name": "Vinícius Jr.",     "nameZh": "維尼修斯",     "pos": "LW" },
+      { "shirt": 9,  "name": "Endrick",          "nameZh": "恩德里克",     "pos": "ST" },
+      { "shirt": 11, "name": "Raphinha",         "nameZh": "拉菲尼亞",     "pos": "RW" }
+    ]
+  },
+  "FRA": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 16, "name": "Mike Maignan",     "nameZh": "麥尼昂",       "pos": "GK" },
+      { "shirt": 5,  "name": "Jules Koundé",     "nameZh": "孔德",         "pos": "RB" },
+      { "shirt": 17, "name": "William Saliba",   "nameZh": "薩利巴",       "pos": "CB" },
+      { "shirt": 4,  "name": "Dayot Upamecano",  "nameZh": "烏帕梅卡諾",   "pos": "CB" },
+      { "shirt": 3,  "name": "Theo Hernández",   "nameZh": "T. 埃爾南德斯","pos": "LB" },
+      { "shirt": 8,  "name": "Aurélien Tchouaméni","nameZh": "楚阿梅尼",   "pos": "DM" },
+      { "shirt": 13, "name": "Eduardo Camavinga","nameZh": "卡馬文加",     "pos": "DM" },
+      { "shirt": 11, "name": "Désiré Doué",      "nameZh": "杜埃",         "pos": "RW" },
+      { "shirt": 7,  "name": "Michael Olise",    "nameZh": "奧利斯",       "pos": "AM" },
+      { "shirt": 22, "name": "Bradley Barcola",  "nameZh": "巴爾科拉",     "pos": "LW" },
+      { "shirt": 10, "name": "Kylian Mbappé",    "nameZh": "姆巴佩",       "pos": "ST" }
+    ]
+  },
+  "ESP": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 23, "name": "Unai Simón",       "nameZh": "西蒙",         "pos": "GK" },
+      { "shirt": 2,  "name": "Pedro Porro",      "nameZh": "波羅",         "pos": "RB" },
+      { "shirt": 3,  "name": "Robin Le Normand", "nameZh": "勒諾爾曼",     "pos": "CB" },
+      { "shirt": 14, "name": "Aymeric Laporte",  "nameZh": "拉波爾特",     "pos": "CB" },
+      { "shirt": 18, "name": "Marc Cucurella",   "nameZh": "古谷雷拉",     "pos": "LB" },
+      { "shirt": 16, "name": "Rodri",            "nameZh": "羅德里",       "pos": "DM" },
+      { "shirt": 8,  "name": "Fabián Ruiz",      "nameZh": "法比安",       "pos": "CM" },
+      { "shirt": 20, "name": "Pedri",            "nameZh": "佩德里",       "pos": "CM" },
+      { "shirt": 17, "name": "Nico Williams",    "nameZh": "威廉斯",       "pos": "LW" },
+      { "shirt": 9,  "name": "Álvaro Morata",    "nameZh": "莫拉塔",       "pos": "ST" },
+      { "shirt": 19, "name": "Lamine Yamal",     "nameZh": "亞馬爾",       "pos": "RW" }
+    ]
+  },
+  "ENG": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Jordan Pickford",   "nameZh": "皮克福德",     "pos": "GK" },
+      { "shirt": 2,  "name": "Kyle Walker",       "nameZh": "沃克",         "pos": "RB" },
+      { "shirt": 5,  "name": "John Stones",       "nameZh": "斯通斯",       "pos": "CB" },
+      { "shirt": 6,  "name": "Marc Guéhi",        "nameZh": "格希",         "pos": "CB" },
+      { "shirt": 3,  "name": "Lewis-Skelly",      "nameZh": "劉易斯-斯凱利","pos": "LB" },
+      { "shirt": 4,  "name": "Declan Rice",       "nameZh": "賴斯",         "pos": "DM" },
+      { "shirt": 8,  "name": "Adam Wharton",      "nameZh": "沃頓",         "pos": "DM" },
+      { "shirt": 7,  "name": "Bukayo Saka",       "nameZh": "薩卡",         "pos": "RW" },
+      { "shirt": 10, "name": "Jude Bellingham",   "nameZh": "貝林漢",       "pos": "AM" },
+      { "shirt": 11, "name": "Phil Foden",        "nameZh": "佛登",         "pos": "LW" },
+      { "shirt": 9,  "name": "Harry Kane",        "nameZh": "凱恩",         "pos": "ST" }
+    ]
+  },
+  "POR": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 22, "name": "Diogo Costa",       "nameZh": "迪奧戈科斯塔", "pos": "GK" },
+      { "shirt": 2,  "name": "João Cancelo",      "nameZh": "坎塞洛",       "pos": "RB" },
+      { "shirt": 3,  "name": "Rúben Dias",        "nameZh": "迪亞斯",       "pos": "CB" },
+      { "shirt": 4,  "name": "António Silva",     "nameZh": "A. 席爾瓦",    "pos": "CB" },
+      { "shirt": 19, "name": "Nuno Mendes",       "nameZh": "門德斯",       "pos": "LB" },
+      { "shirt": 18, "name": "Rúben Neves",       "nameZh": "魯本內維斯",   "pos": "DM" },
+      { "shirt": 8,  "name": "Bruno Fernandes",   "nameZh": "B. 費南德斯",  "pos": "DM" },
+      { "shirt": 17, "name": "Rafael Leão",       "nameZh": "勒奧",         "pos": "LW" },
+      { "shirt": 10, "name": "Bernardo Silva",    "nameZh": "B. 席爾瓦",    "pos": "AM" },
+      { "shirt": 11, "name": "João Félix",        "nameZh": "費利斯",       "pos": "RW" },
+      { "shirt": 7,  "name": "Cristiano Ronaldo", "nameZh": "C 羅",         "pos": "ST" }
+    ]
+  },
+  "GER": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Manuel Neuer",      "nameZh": "諾伊爾",       "pos": "GK" },
+      { "shirt": 6,  "name": "Joshua Kimmich",    "nameZh": "基米希",       "pos": "RB" },
+      { "shirt": 23, "name": "Nico Schlotterbeck","nameZh": "施洛特貝克",   "pos": "CB" },
+      { "shirt": 2,  "name": "Antonio Rüdiger",   "nameZh": "呂迪格",       "pos": "CB" },
+      { "shirt": 3,  "name": "David Raum",        "nameZh": "勞姆",         "pos": "LB" },
+      { "shirt": 18, "name": "Robert Andrich",    "nameZh": "安德里希",     "pos": "DM" },
+      { "shirt": 17, "name": "Florian Wirtz",     "nameZh": "維爾茨",       "pos": "AM" },
+      { "shirt": 21, "name": "Ilkay Gündoğan",    "nameZh": "京多安",       "pos": "DM" },
+      { "shirt": 7,  "name": "Jamal Musiala",     "nameZh": "穆夏拉",       "pos": "RW" },
+      { "shirt": 14, "name": "Kai Havertz",       "nameZh": "哈弗茨",       "pos": "ST" },
+      { "shirt": 10, "name": "Leroy Sané",        "nameZh": "薩內",         "pos": "LW" }
+    ]
+  },
+  "NED": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 23, "name": "Bart Verbruggen",   "nameZh": "費布魯根",     "pos": "GK" },
+      { "shirt": 22, "name": "Denzel Dumfries",   "nameZh": "鄧弗里斯",     "pos": "RB" },
+      { "shirt": 4,  "name": "Virgil van Dijk",   "nameZh": "范戴克",       "pos": "CB" },
+      { "shirt": 3,  "name": "Matthijs de Ligt",  "nameZh": "德里赫特",     "pos": "CB" },
+      { "shirt": 5,  "name": "Nathan Aké",        "nameZh": "阿克",         "pos": "LB" },
+      { "shirt": 14, "name": "Tijjani Reijnders", "nameZh": "雷恩德斯",     "pos": "DM" },
+      { "shirt": 21, "name": "Frenkie de Jong",   "nameZh": "F. 德容",      "pos": "CM" },
+      { "shirt": 6,  "name": "Xavi Simons",       "nameZh": "西蒙斯",       "pos": "CM" },
+      { "shirt": 11, "name": "Cody Gakpo",        "nameZh": "加克波",       "pos": "LW" },
+      { "shirt": 9,  "name": "Memphis Depay",     "nameZh": "迪佩",         "pos": "ST" },
+      { "shirt": 7,  "name": "Donyell Malen",     "nameZh": "馬倫",         "pos": "RW" }
+    ]
+  },
+  "BEL": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Koen Casteels",     "nameZh": "卡斯特爾斯",   "pos": "GK" },
+      { "shirt": 15, "name": "Thomas Meunier",    "nameZh": "默尼耶",       "pos": "RB" },
+      { "shirt": 5,  "name": "Wout Faes",         "nameZh": "費斯",         "pos": "CB" },
+      { "shirt": 4,  "name": "Zeno Debast",       "nameZh": "德巴斯特",     "pos": "CB" },
+      { "shirt": 3,  "name": "Arthur Theate",     "nameZh": "塔特",         "pos": "LB" },
+      { "shirt": 8,  "name": "Youri Tielemans",   "nameZh": "蒂萊曼斯",     "pos": "DM" },
+      { "shirt": 6,  "name": "Amadou Onana",      "nameZh": "奧納納",       "pos": "DM" },
+      { "shirt": 17, "name": "Jérémy Doku",       "nameZh": "多庫",         "pos": "RW" },
+      { "shirt": 7,  "name": "Kevin De Bruyne",   "nameZh": "迪布尼",       "pos": "AM" },
+      { "shirt": 11, "name": "Leandro Trossard",  "nameZh": "特羅薩德",     "pos": "LW" },
+      { "shirt": 10, "name": "Romelu Lukaku",     "nameZh": "盧卡庫",       "pos": "ST" }
+    ]
+  },
+  "CRO": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Dominik Livaković", "nameZh": "利瓦科維奇",   "pos": "GK" },
+      { "shirt": 2,  "name": "Josip Stanišić",    "nameZh": "斯坦尼希奇",   "pos": "RB" },
+      { "shirt": 6,  "name": "Joško Gvardiol",    "nameZh": "格瓦迪奧爾",   "pos": "CB" },
+      { "shirt": 21, "name": "Joshua Šutalo",     "nameZh": "舒塔洛",       "pos": "CB" },
+      { "shirt": 19, "name": "Borna Sosa",        "nameZh": "索薩",         "pos": "LB" },
+      { "shirt": 10, "name": "Luka Modrić",       "nameZh": "莫德里奇",     "pos": "CM" },
+      { "shirt": 8,  "name": "Mateo Kovačić",     "nameZh": "科瓦契奇",     "pos": "DM" },
+      { "shirt": 13, "name": "Petar Sučić",       "nameZh": "蘇契奇",       "pos": "CM" },
+      { "shirt": 9,  "name": "Andrej Kramarić",   "nameZh": "克拉瑪利奇",   "pos": "RW" },
+      { "shirt": 17, "name": "Bruno Petković",    "nameZh": "佩特科維奇",   "pos": "ST" },
+      { "shirt": 14, "name": "Martin Baturina",   "nameZh": "巴圖里納",     "pos": "LW" }
+    ]
+  },
+  "MAR": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 12, "name": "Munir Mohamedi",    "nameZh": "穆尼爾",       "pos": "GK" },
+      { "shirt": 2,  "name": "Achraf Hakimi",     "nameZh": "阿什拉夫",     "pos": "RB" },
+      { "shirt": 5,  "name": "Nayef Aguerd",      "nameZh": "阿格爾德",     "pos": "CB" },
+      { "shirt": 6,  "name": "Romain Saïss",      "nameZh": "薩伊斯",       "pos": "CB" },
+      { "shirt": 3,  "name": "Adam Masina",       "nameZh": "馬西納",       "pos": "LB" },
+      { "shirt": 8,  "name": "Azzedine Ounahi",   "nameZh": "烏納希",       "pos": "DM" },
+      { "shirt": 4,  "name": "Sofyan Amrabat",    "nameZh": "阿姆拉巴特",   "pos": "DM" },
+      { "shirt": 7,  "name": "Hakim Ziyech",      "nameZh": "齊耶赫",       "pos": "AM" },
+      { "shirt": 11, "name": "Brahim Díaz",       "nameZh": "B. 迪亞斯",    "pos": "RW" },
+      { "shirt": 9,  "name": "Youssef En-Nesyri", "nameZh": "恩尼斯利",     "pos": "ST" },
+      { "shirt": 17, "name": "Sofiane Boufal",    "nameZh": "布法爾",       "pos": "LW" }
+    ]
+  },
+  "USA": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Matt Turner",       "nameZh": "特納",         "pos": "GK" },
+      { "shirt": 2,  "name": "Sergiño Dest",      "nameZh": "德斯特",       "pos": "RB" },
+      { "shirt": 5,  "name": "Chris Richards",    "nameZh": "理查茲",       "pos": "CB" },
+      { "shirt": 3,  "name": "Tim Ream",          "nameZh": "里姆",         "pos": "CB" },
+      { "shirt": 22, "name": "Antonee Robinson",  "nameZh": "羅賓遜",       "pos": "LB" },
+      { "shirt": 4,  "name": "Tyler Adams",       "nameZh": "亞當斯",       "pos": "DM" },
+      { "shirt": 8,  "name": "Weston McKennie",   "nameZh": "麥肯尼",       "pos": "CM" },
+      { "shirt": 10, "name": "Christian Pulisic", "nameZh": "普利西奇",     "pos": "CM" },
+      { "shirt": 11, "name": "Tim Weah",          "nameZh": "韋亞",         "pos": "RW" },
+      { "shirt": 9,  "name": "Folarin Balogun",   "nameZh": "巴洛根",       "pos": "ST" },
+      { "shirt": 17, "name": "Brenden Aaronson",  "nameZh": "亞倫森",       "pos": "LW" }
+    ]
+  },
+  "MEX": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Guillermo Ochoa",   "nameZh": "奧喬亞",       "pos": "GK" },
+      { "shirt": 2,  "name": "Jorge Sánchez",     "nameZh": "桑切斯",       "pos": "RB" },
+      { "shirt": 3,  "name": "César Montes",      "nameZh": "蒙特斯",       "pos": "CB" },
+      { "shirt": 15, "name": "Johan Vásquez",     "nameZh": "巴斯克斯",     "pos": "CB" },
+      { "shirt": 23, "name": "Jesús Gallardo",    "nameZh": "加亞多",       "pos": "LB" },
+      { "shirt": 4,  "name": "Edson Álvarez",     "nameZh": "阿爾瓦雷斯",   "pos": "DM" },
+      { "shirt": 6,  "name": "Luis Chávez",       "nameZh": "查維斯",       "pos": "CM" },
+      { "shirt": 10, "name": "Orbelín Pineda",    "nameZh": "皮內達",       "pos": "CM" },
+      { "shirt": 22, "name": "Hirving Lozano",    "nameZh": "洛薩諾",       "pos": "RW" },
+      { "shirt": 9,  "name": "Raúl Jiménez",      "nameZh": "希門尼斯",     "pos": "ST" },
+      { "shirt": 11, "name": "Santiago Giménez",  "nameZh": "S. 希門尼斯",  "pos": "LW" }
+    ]
+  },
+  "JPN": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Zion Suzuki",       "nameZh": "鈴木彩艷",     "pos": "GK" },
+      { "shirt": 19, "name": "Hiroki Sakai",      "nameZh": "酒井宏樹",     "pos": "RB" },
+      { "shirt": 22, "name": "Maya Yoshida",      "nameZh": "吉田麻也",     "pos": "CB" },
+      { "shirt": 4,  "name": "Ko Itakura",        "nameZh": "板倉滉",       "pos": "CB" },
+      { "shirt": 5,  "name": "Yuto Nagatomo",     "nameZh": "長友佑都",     "pos": "LB" },
+      { "shirt": 17, "name": "Hidemasa Morita",   "nameZh": "守田英正",     "pos": "DM" },
+      { "shirt": 13, "name": "Hiroki Itō",        "nameZh": "伊藤洋輝",     "pos": "DM" },
+      { "shirt": 9,  "name": "Daichi Kamada",     "nameZh": "鎌田大地",     "pos": "AM" },
+      { "shirt": 14, "name": "Junya Itō",         "nameZh": "伊東純也",     "pos": "RW" },
+      { "shirt": 11, "name": "Takefusa Kubo",     "nameZh": "久保建英",     "pos": "LW" },
+      { "shirt": 10, "name": "Ritsu Dōan",        "nameZh": "堂安律",       "pos": "ST" }
+    ]
+  },
+  "KOR": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Kim Seung-gyu",     "nameZh": "金承奎",       "pos": "GK" },
+      { "shirt": 2,  "name": "Kim Moon-hwan",     "nameZh": "金文煥",       "pos": "RB" },
+      { "shirt": 4,  "name": "Kim Min-jae",       "nameZh": "金玟哉",       "pos": "CB" },
+      { "shirt": 20, "name": "Kim Young-gwon",    "nameZh": "金英權",       "pos": "CB" },
+      { "shirt": 14, "name": "Lee Myung-jae",     "nameZh": "李明宰",       "pos": "LB" },
+      { "shirt": 16, "name": "Hwang In-beom",     "nameZh": "黃仁範",       "pos": "DM" },
+      { "shirt": 17, "name": "Lee Jae-sung",      "nameZh": "李在城",       "pos": "CM" },
+      { "shirt": 13, "name": "Park Yong-woo",     "nameZh": "朴用宇",       "pos": "CM" },
+      { "shirt": 11, "name": "Hwang Hee-chan",    "nameZh": "黃喜燦",       "pos": "RW" },
+      { "shirt": 9,  "name": "Cho Gue-sung",      "nameZh": "趙圭成",       "pos": "ST" },
+      { "shirt": 7,  "name": "Son Heung-min",     "nameZh": "孫興慜",       "pos": "LW" }
+    ]
+  },
+  "NOR": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Ørjan Nyland",      "nameZh": "尼蘭",         "pos": "GK" },
+      { "shirt": 2,  "name": "Julian Ryerson",    "nameZh": "里爾森",       "pos": "RB" },
+      { "shirt": 4,  "name": "Kristoffer Ajer",   "nameZh": "阿耶爾",       "pos": "CB" },
+      { "shirt": 5,  "name": "Leo Østigård",      "nameZh": "厄斯蒂高",     "pos": "CB" },
+      { "shirt": 3,  "name": "Fredrik Bjørkan",   "nameZh": "比約坎",       "pos": "LB" },
+      { "shirt": 6,  "name": "Sander Berge",      "nameZh": "貝格",         "pos": "DM" },
+      { "shirt": 10, "name": "Martin Ødegaard",   "nameZh": "厄德高",       "pos": "AM" },
+      { "shirt": 8,  "name": "Oscar Bobb",        "nameZh": "波布",         "pos": "CM" },
+      { "shirt": 17, "name": "Antonio Nusa",      "nameZh": "努薩",         "pos": "LW" },
+      { "shirt": 9,  "name": "Erling Haaland",    "nameZh": "哈蘭德",       "pos": "ST" },
+      { "shirt": 11, "name": "Alexander Sørloth", "nameZh": "索羅特",       "pos": "RW" }
+    ]
+  },
+  "URU": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Sergio Rochet",     "nameZh": "羅切特",       "pos": "GK" },
+      { "shirt": 2,  "name": "Nahitan Nández",    "nameZh": "南德斯",       "pos": "RB" },
+      { "shirt": 3,  "name": "Ronald Araújo",     "nameZh": "阿勞侯",       "pos": "CB" },
+      { "shirt": 22, "name": "José María Giménez","nameZh": "希門尼斯",     "pos": "CB" },
+      { "shirt": 17, "name": "Matías Olivera",    "nameZh": "奧利維拉",     "pos": "LB" },
+      { "shirt": 6,  "name": "Rodrigo Bentancur", "nameZh": "本坦庫爾",     "pos": "DM" },
+      { "shirt": 15, "name": "Federico Valverde", "nameZh": "巴爾韋德",     "pos": "CM" },
+      { "shirt": 14, "name": "Manuel Ugarte",     "nameZh": "烏加特",       "pos": "CM" },
+      { "shirt": 11, "name": "Maximiliano Araújo","nameZh": "M. 阿勞侯",    "pos": "LW" },
+      { "shirt": 9,  "name": "Darwin Núñez",      "nameZh": "努涅斯",       "pos": "ST" },
+      { "shirt": 7,  "name": "Facundo Pellistri", "nameZh": "佩利斯特里",   "pos": "RW" }
+    ]
+  },
+  "COL": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Camilo Vargas",     "nameZh": "巴爾加斯",     "pos": "GK" },
+      { "shirt": 4,  "name": "Santiago Arias",    "nameZh": "阿里亞斯",     "pos": "RB" },
+      { "shirt": 23, "name": "Davinson Sánchez",  "nameZh": "桑切斯",       "pos": "CB" },
+      { "shirt": 2,  "name": "Yerry Mina",        "nameZh": "米納",         "pos": "CB" },
+      { "shirt": 17, "name": "Johan Mojica",      "nameZh": "莫西卡",       "pos": "LB" },
+      { "shirt": 8,  "name": "Jefferson Lerma",   "nameZh": "勒馬",         "pos": "DM" },
+      { "shirt": 16, "name": "Richard Ríos",      "nameZh": "里奧斯",       "pos": "DM" },
+      { "shirt": 11, "name": "Jhon Arias",        "nameZh": "阿里亞斯 J",   "pos": "RW" },
+      { "shirt": 10, "name": "James Rodríguez",   "nameZh": "占士羅迪古斯", "pos": "AM" },
+      { "shirt": 7,  "name": "Luis Díaz",         "nameZh": "L. 迪亞斯",    "pos": "LW" },
+      { "shirt": 9,  "name": "Jhon Durán",        "nameZh": "杜蘭",         "pos": "ST" }
+    ]
+  },
+  "SUI": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Yann Sommer",       "nameZh": "索默",         "pos": "GK" },
+      { "shirt": 5,  "name": "Manuel Akanji",     "nameZh": "阿坎吉",       "pos": "RB" },
+      { "shirt": 22, "name": "Fabian Schär",      "nameZh": "謝爾",         "pos": "CB" },
+      { "shirt": 4,  "name": "Nico Elvedi",       "nameZh": "埃爾韋迪",     "pos": "CB" },
+      { "shirt": 13, "name": "Ricardo Rodríguez", "nameZh": "羅德里奎茲",   "pos": "LB" },
+      { "shirt": 10, "name": "Granit Xhaka",      "nameZh": "扎卡",         "pos": "DM" },
+      { "shirt": 8,  "name": "Remo Freuler",      "nameZh": "弗羅勒",       "pos": "DM" },
+      { "shirt": 23, "name": "Xherdan Shaqiri",   "nameZh": "沙奇里",       "pos": "RW" },
+      { "shirt": 11, "name": "Renato Steffen",    "nameZh": "斯特芬",       "pos": "AM" },
+      { "shirt": 7,  "name": "Breel Embolo",      "nameZh": "恩博洛",       "pos": "LW" },
+      { "shirt": 9,  "name": "Zeki Amdouni",      "nameZh": "阿姆杜尼",     "pos": "ST" }
+    ]
+  },
+  "AUT": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Patrick Pentz",     "nameZh": "彭茨",         "pos": "GK" },
+      { "shirt": 21, "name": "Stefan Posch",      "nameZh": "波施",         "pos": "RB" },
+      { "shirt": 15, "name": "Philipp Lienhart",  "nameZh": "利恩哈特",     "pos": "CB" },
+      { "shirt": 4,  "name": "Kevin Danso",       "nameZh": "丹索",         "pos": "CB" },
+      { "shirt": 16, "name": "Phillipp Mwene",    "nameZh": "姆韋內",       "pos": "LB" },
+      { "shirt": 6,  "name": "Nicolas Seiwald",   "nameZh": "塞瓦德",       "pos": "DM" },
+      { "shirt": 10, "name": "Florian Grillitsch","nameZh": "格里利奇",     "pos": "DM" },
+      { "shirt": 19, "name": "Christoph Baumgartner","nameZh": "鮑姆加特納","pos": "RW" },
+      { "shirt": 14, "name": "Konrad Laimer",     "nameZh": "萊默",         "pos": "AM" },
+      { "shirt": 23, "name": "Marko Arnautović",  "nameZh": "阿瑙托維奇",   "pos": "LW" },
+      { "shirt": 9,  "name": "Marcel Sabitzer",   "nameZh": "薩比策",       "pos": "ST" }
+    ]
+  },
+  "SCO": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Angus Gunn",        "nameZh": "岡恩",         "pos": "GK" },
+      { "shirt": 2,  "name": "Anthony Ralston",   "nameZh": "拉爾斯頓",     "pos": "RB" },
+      { "shirt": 5,  "name": "Grant Hanley",      "nameZh": "漢利",         "pos": "CB" },
+      { "shirt": 6,  "name": "Kieran Tierney",    "nameZh": "蒂爾尼",       "pos": "CB" },
+      { "shirt": 3,  "name": "Andrew Robertson",  "nameZh": "羅伯遜",       "pos": "LB" },
+      { "shirt": 4,  "name": "Scott McTominay",   "nameZh": "麥湯文尼",     "pos": "DM" },
+      { "shirt": 8,  "name": "Callum McGregor",   "nameZh": "麥格雷戈",     "pos": "DM" },
+      { "shirt": 7,  "name": "John McGinn",       "nameZh": "麥金",         "pos": "RW" },
+      { "shirt": 10, "name": "Billy Gilmour",     "nameZh": "吉爾摩",       "pos": "AM" },
+      { "shirt": 14, "name": "Ben Doak",          "nameZh": "杜亞克",       "pos": "LW" },
+      { "shirt": 9,  "name": "Lyndon Dykes",      "nameZh": "戴克斯",       "pos": "ST" }
+    ]
+  },
+  "SWE": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Robin Olsen",       "nameZh": "奧爾森",       "pos": "GK" },
+      { "shirt": 2,  "name": "Emil Krafth",       "nameZh": "克拉夫特",     "pos": "RB" },
+      { "shirt": 3,  "name": "Victor Lindelöf",   "nameZh": "林德洛夫",     "pos": "CB" },
+      { "shirt": 4,  "name": "Isak Hien",         "nameZh": "海恩",         "pos": "CB" },
+      { "shirt": 6,  "name": "Ludwig Augustinsson","nameZh": "奧古斯丁松",  "pos": "LB" },
+      { "shirt": 8,  "name": "Albin Ekdal",       "nameZh": "埃克達爾",     "pos": "DM" },
+      { "shirt": 17, "name": "Viktor Gyökeres",   "nameZh": "約克雷斯",     "pos": "CM" },
+      { "shirt": 10, "name": "Emil Forsberg",     "nameZh": "福斯貝里",     "pos": "CM" },
+      { "shirt": 11, "name": "Anthony Elanga",    "nameZh": "埃蘭加",       "pos": "RW" },
+      { "shirt": 9,  "name": "Alexander Isak",    "nameZh": "伊薩克",       "pos": "ST" },
+      { "shirt": 7,  "name": "Dejan Kulusevski",  "nameZh": "庫魯塞夫斯基", "pos": "LW" }
+    ]
+  },
+  "CIV": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 22, "name": "Yahia Fofana",      "nameZh": "福法納",       "pos": "GK" },
+      { "shirt": 6,  "name": "Wilfried Singo",    "nameZh": "辛戈",         "pos": "RB" },
+      { "shirt": 4,  "name": "Evan Ndicka",       "nameZh": "恩迪卡",       "pos": "CB" },
+      { "shirt": 21, "name": "Odilon Kossounou",  "nameZh": "科蘇努",       "pos": "CB" },
+      { "shirt": 12, "name": "Ghislain Konan",    "nameZh": "科南",         "pos": "LB" },
+      { "shirt": 19, "name": "Ibrahim Sangaré",   "nameZh": "桑加雷",       "pos": "DM" },
+      { "shirt": 15, "name": "Franck Kessié",     "nameZh": "凱西",         "pos": "DM" },
+      { "shirt": 9,  "name": "Sébastien Haller",  "nameZh": "哈萊爾",       "pos": "RW" },
+      { "shirt": 10, "name": "Simon Adingra",     "nameZh": "阿丁拉",       "pos": "AM" },
+      { "shirt": 17, "name": "Nicolas Pépé",      "nameZh": "佩佩",         "pos": "LW" },
+      { "shirt": 8,  "name": "Franck Kessié",     "nameZh": "凱西",         "pos": "ST" }
+    ]
+  },
+  "SEN": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 16, "name": "Édouard Mendy",     "nameZh": "門迪",         "pos": "GK" },
+      { "shirt": 22, "name": "Krépin Diatta",     "nameZh": "迪亞塔",       "pos": "RB" },
+      { "shirt": 3,  "name": "Kalidou Koulibaly", "nameZh": "庫利巴利",     "pos": "CB" },
+      { "shirt": 13, "name": "Abdou Diallo",      "nameZh": "迪亞洛",       "pos": "CB" },
+      { "shirt": 12, "name": "Ismail Jakobs",     "nameZh": "雅各布斯",     "pos": "LB" },
+      { "shirt": 6,  "name": "Nampalys Mendy",    "nameZh": "門迪 N",       "pos": "DM" },
+      { "shirt": 5,  "name": "Idrissa Gueye",     "nameZh": "蓋耶",         "pos": "CM" },
+      { "shirt": 8,  "name": "Pape Matar Sarr",   "nameZh": "薩爾",         "pos": "CM" },
+      { "shirt": 18, "name": "Ismaïla Sarr",      "nameZh": "薩爾 I",       "pos": "RW" },
+      { "shirt": 9,  "name": "Boulaye Dia",       "nameZh": "迪亞 B",       "pos": "ST" },
+      { "shirt": 10, "name": "Sadio Mané",        "nameZh": "馬內",         "pos": "LW" }
+    ]
+  },
+  "ECU": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Hernán Galíndez",   "nameZh": "加林德斯",     "pos": "GK" },
+      { "shirt": 17, "name": "Ángelo Preciado",   "nameZh": "普雷西亞多",   "pos": "RB" },
+      { "shirt": 3,  "name": "Piero Hincapié",    "nameZh": "因卡皮埃",     "pos": "CB" },
+      { "shirt": 4,  "name": "Willian Pacho",     "nameZh": "帕喬",         "pos": "CB" },
+      { "shirt": 7,  "name": "Pervis Estupiñán",  "nameZh": "埃斯圖皮南",   "pos": "LB" },
+      { "shirt": 23, "name": "Moisés Caicedo",    "nameZh": "凱塞多",       "pos": "DM" },
+      { "shirt": 13, "name": "Jhojan Valencia",   "nameZh": "巴倫西亞 J",   "pos": "CM" },
+      { "shirt": 8,  "name": "Alan Franco",       "nameZh": "佛朗哥",       "pos": "CM" },
+      { "shirt": 11, "name": "Kendry Páez",       "nameZh": "派斯",         "pos": "RW" },
+      { "shirt": 9,  "name": "Enner Valencia",    "nameZh": "巴倫西亞",     "pos": "ST" },
+      { "shirt": 10, "name": "Gonzalo Plata",     "nameZh": "普拉塔",       "pos": "LW" }
+    ]
+  },
+  "PAR": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 12, "name": "Roberto Fernández", "nameZh": "費南德斯 R",   "pos": "GK" },
+      { "shirt": 13, "name": "Diego Gómez",       "nameZh": "戈麥斯",       "pos": "RB" },
+      { "shirt": 3,  "name": "Gustavo Gómez",     "nameZh": "G. 戈麥斯",    "pos": "CB" },
+      { "shirt": 23, "name": "Omar Alderete",     "nameZh": "阿爾德雷特",   "pos": "CB" },
+      { "shirt": 17, "name": "Junior Alonso",     "nameZh": "阿隆索",       "pos": "LB" },
+      { "shirt": 5,  "name": "Andrés Cubas",      "nameZh": "庫巴斯",       "pos": "DM" },
+      { "shirt": 14, "name": "Mathías Villasanti","nameZh": "維拉桑蒂",     "pos": "DM" },
+      { "shirt": 7,  "name": "Julio Enciso",      "nameZh": "恩西索",       "pos": "RW" },
+      { "shirt": 10, "name": "Miguel Almirón",    "nameZh": "阿爾米隆",     "pos": "AM" },
+      { "shirt": 11, "name": "Damián Bobadilla",  "nameZh": "博巴迪拉",     "pos": "LW" },
+      { "shirt": 9,  "name": "Antonio Sanabria",  "nameZh": "薩納夫里亞",   "pos": "ST" }
+    ]
+  },
+  "AUS": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Mat Ryan",          "nameZh": "瑞安",         "pos": "GK" },
+      { "shirt": 19, "name": "Lewis Miller",      "nameZh": "米勒",         "pos": "RB" },
+      { "shirt": 20, "name": "Cameron Burgess",   "nameZh": "伯吉斯",       "pos": "CB" },
+      { "shirt": 4,  "name": "Kye Rowles",        "nameZh": "羅爾斯",       "pos": "CB" },
+      { "shirt": 16, "name": "Aziz Behich",       "nameZh": "貝希奇",       "pos": "LB" },
+      { "shirt": 7,  "name": "Jackson Irvine",    "nameZh": "歐文",         "pos": "DM" },
+      { "shirt": 13, "name": "Aiden O'Neill",     "nameZh": "歐尼爾",       "pos": "DM" },
+      { "shirt": 11, "name": "Awer Mabil",        "nameZh": "馬比爾",       "pos": "RW" },
+      { "shirt": 17, "name": "Ajdin Hrustic",     "nameZh": "赫魯斯蒂奇",   "pos": "AM" },
+      { "shirt": 10, "name": "Riley McGree",      "nameZh": "麥格里",       "pos": "LW" },
+      { "shirt": 9,  "name": "Mitchell Duke",     "nameZh": "杜克",         "pos": "ST" }
+    ]
+  },
+  "EGY": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Mohamed El Shenawy","nameZh": "謝納維",       "pos": "GK" },
+      { "shirt": 7,  "name": "Mohamed Hany",      "nameZh": "哈尼",         "pos": "RB" },
+      { "shirt": 6,  "name": "Ahmed Hegazi",      "nameZh": "海加齊",       "pos": "CB" },
+      { "shirt": 5,  "name": "Mahmoud Hamdy",     "nameZh": "哈姆迪",       "pos": "CB" },
+      { "shirt": 3,  "name": "Ahmed Fattouh",     "nameZh": "法圖赫",       "pos": "LB" },
+      { "shirt": 8,  "name": "Tarek Hamed",       "nameZh": "哈邁德",       "pos": "DM" },
+      { "shirt": 17, "name": "Mohamed Elneny",    "nameZh": "埃爾內尼",     "pos": "CM" },
+      { "shirt": 21, "name": "Trezeguet",         "nameZh": "特雷澤蓋",     "pos": "CM" },
+      { "shirt": 10, "name": "Mohamed Salah",     "nameZh": "薩拉赫",       "pos": "RW" },
+      { "shirt": 9,  "name": "Mostafa Mohamed",   "nameZh": "M. 穆罕默德",  "pos": "ST" },
+      { "shirt": 11, "name": "Omar Marmoush",     "nameZh": "馬穆什",       "pos": "LW" }
+    ]
+  },
+  "GHA": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Lawrence Ati-Zigi", "nameZh": "齊基",         "pos": "GK" },
+      { "shirt": 2,  "name": "Tariq Lamptey",     "nameZh": "蘭普蒂",       "pos": "RB" },
+      { "shirt": 5,  "name": "Mohammed Salisu",   "nameZh": "薩利蘇",       "pos": "CB" },
+      { "shirt": 4,  "name": "Daniel Amartey",    "nameZh": "阿馬蒂",       "pos": "CB" },
+      { "shirt": 17, "name": "Baba Rahman",       "nameZh": "拉赫曼",       "pos": "LB" },
+      { "shirt": 10, "name": "Thomas Partey",     "nameZh": "帕爾蒂",       "pos": "DM" },
+      { "shirt": 11, "name": "Kudus Mohammed",    "nameZh": "庫杜斯",       "pos": "AM" },
+      { "shirt": 21, "name": "Salis Abdul Samed", "nameZh": "薩米德",       "pos": "CM" },
+      { "shirt": 7,  "name": "Antoine Semenyo",   "nameZh": "塞蒙約",       "pos": "RW" },
+      { "shirt": 9,  "name": "Inaki Williams",    "nameZh": "I. 威廉斯",    "pos": "ST" },
+      { "shirt": 14, "name": "Jordan Ayew",       "nameZh": "阿尤",         "pos": "LW" }
+    ]
+  },
+  "TUN": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 16, "name": "Aymen Dahmen",      "nameZh": "達赫曼",       "pos": "GK" },
+      { "shirt": 23, "name": "Mohamed Dräger",    "nameZh": "德拉格",       "pos": "RB" },
+      { "shirt": 3,  "name": "Montassar Talbi",   "nameZh": "塔爾比",       "pos": "CB" },
+      { "shirt": 20, "name": "Dylan Bronn",       "nameZh": "布隆",         "pos": "CB" },
+      { "shirt": 12, "name": "Ali Maâloul",       "nameZh": "馬盧爾",       "pos": "LB" },
+      { "shirt": 13, "name": "Ferjani Sassi",     "nameZh": "薩西",         "pos": "DM" },
+      { "shirt": 6,  "name": "Aïssa Laïdouni",    "nameZh": "拉伊杜尼",     "pos": "CM" },
+      { "shirt": 8,  "name": "Hannibal Mejbri",   "nameZh": "梅吉布里",     "pos": "CM" },
+      { "shirt": 10, "name": "Wahbi Khazri",      "nameZh": "卡茲里",       "pos": "RW" },
+      { "shirt": 9,  "name": "Issam Jebali",      "nameZh": "傑巴利",       "pos": "ST" },
+      { "shirt": 7,  "name": "Youssef Msakni",    "nameZh": "姆薩克尼",     "pos": "LW" }
+    ]
+  },
+  "IRN": {
+    "formation": "5-3-2",
+    "players": [
+      { "shirt": 1,  "name": "Alireza Beiranvand","nameZh": "貝蘭萬德",     "pos": "GK" },
+      { "shirt": 2,  "name": "Sadegh Moharrami",  "nameZh": "莫哈拉米",     "pos": "RB" },
+      { "shirt": 19, "name": "Majid Hosseini",    "nameZh": "侯賽尼",       "pos": "CB" },
+      { "shirt": 8,  "name": "Morteza Pouraliganji","nameZh": "普拉利甘吉", "pos": "CB" },
+      { "shirt": 13, "name": "Hossein Kanaani",   "nameZh": "卡納尼",       "pos": "CB" },
+      { "shirt": 5,  "name": "Milad Mohammadi",   "nameZh": "穆罕馬迪",     "pos": "LB" },
+      { "shirt": 6,  "name": "Saeid Ezatolahi",   "nameZh": "埃扎托拉希",   "pos": "DM" },
+      { "shirt": 21, "name": "Ahmad Nourollahi",  "nameZh": "努拉拉希",     "pos": "CM" },
+      { "shirt": 14, "name": "Saman Ghoddos",     "nameZh": "戈多斯",       "pos": "CM" },
+      { "shirt": 20, "name": "Sardar Azmoun",     "nameZh": "阿茲蒙",       "pos": "ST" },
+      { "shirt": 7,  "name": "Mehdi Taremi",      "nameZh": "塔雷米",       "pos": "ST" }
+    ]
+  },
+  "KSA": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 21, "name": "Mohammed Al-Owais", "nameZh": "奧韋斯",       "pos": "GK" },
+      { "shirt": 13, "name": "Yasser Al-Shahrani","nameZh": "沙赫拉尼",     "pos": "RB" },
+      { "shirt": 5,  "name": "Ali Al-Bulayhi",    "nameZh": "布萊希",       "pos": "CB" },
+      { "shirt": 3,  "name": "Abdulelah Al-Amri", "nameZh": "阿姆里",       "pos": "CB" },
+      { "shirt": 12, "name": "Saud Abdulhamid",   "nameZh": "阿卜杜哈米德", "pos": "LB" },
+      { "shirt": 14, "name": "Abdulelah Al-Malki","nameZh": "馬爾基",       "pos": "DM" },
+      { "shirt": 8,  "name": "Salman Al-Faraj",   "nameZh": "法拉吉",       "pos": "CM" },
+      { "shirt": 23, "name": "Mohamed Kanno",     "nameZh": "坎諾",         "pos": "CM" },
+      { "shirt": 18, "name": "Salem Al-Dawsari",  "nameZh": "杜薩里",       "pos": "RW" },
+      { "shirt": 11, "name": "Saleh Al-Shehri",   "nameZh": "謝赫里",       "pos": "ST" },
+      { "shirt": 10, "name": "Salem Al-Najdi",    "nameZh": "納吉迪",       "pos": "LW" }
+    ]
+  },
+  "ALG": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 16, "name": "Raïs M'Bolhi",      "nameZh": "姆博利",       "pos": "GK" },
+      { "shirt": 21, "name": "Aïssa Mandi",       "nameZh": "曼迪",         "pos": "RB" },
+      { "shirt": 6,  "name": "Ramy Bensebaini",   "nameZh": "本塞拜尼",     "pos": "CB" },
+      { "shirt": 4,  "name": "Djamel Benlamri",   "nameZh": "本拉姆里",     "pos": "CB" },
+      { "shirt": 3,  "name": "Mohamed Farès",     "nameZh": "法雷斯",       "pos": "LB" },
+      { "shirt": 13, "name": "Ismaël Bennacer",   "nameZh": "本納塞爾",     "pos": "DM" },
+      { "shirt": 8,  "name": "Sofiane Feghouli",  "nameZh": "費胡利",       "pos": "CM" },
+      { "shirt": 19, "name": "Adam Ounas",        "nameZh": "烏納斯",       "pos": "CM" },
+      { "shirt": 11, "name": "Yacine Brahimi",    "nameZh": "布拉希米",     "pos": "RW" },
+      { "shirt": 9,  "name": "Baghdad Bounedjah", "nameZh": "本內德賈",     "pos": "ST" },
+      { "shirt": 7,  "name": "Riyad Mahrez",      "nameZh": "馬雷茲",       "pos": "LW" }
+    ]
+  },
+  "BIH": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Ibrahim Šehić",     "nameZh": "謝希奇",       "pos": "GK" },
+      { "shirt": 2,  "name": "Sead Kolašinac",    "nameZh": "科拉希納茨",   "pos": "RB" },
+      { "shirt": 4,  "name": "Adrian Leon Barišić","nameZh": "巴里希奇",    "pos": "CB" },
+      { "shirt": 5,  "name": "Nikola Katić",      "nameZh": "卡蒂奇",       "pos": "CB" },
+      { "shirt": 14, "name": "Anel Ahmedhodžić",  "nameZh": "阿赫梅霍季奇", "pos": "LB" },
+      { "shirt": 6,  "name": "Edin Cocalić",      "nameZh": "科查利奇",     "pos": "DM" },
+      { "shirt": 8,  "name": "Miralem Pjanić",    "nameZh": "皮亞尼奇",     "pos": "CM" },
+      { "shirt": 10, "name": "Amer Gojak",        "nameZh": "戈雅克",       "pos": "CM" },
+      { "shirt": 7,  "name": "Edin Višća",        "nameZh": "維斯查",       "pos": "RW" },
+      { "shirt": 9,  "name": "Edin Džeko",        "nameZh": "哲科",         "pos": "ST" },
+      { "shirt": 11, "name": "Smail Prevljak",    "nameZh": "普雷夫利亞克", "pos": "LW" }
+    ]
+  },
+  "CZE": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Jindřich Staněk",   "nameZh": "斯坦內克",     "pos": "GK" },
+      { "shirt": 2,  "name": "Vladimír Coufal",   "nameZh": "考法爾",       "pos": "RB" },
+      { "shirt": 3,  "name": "Tomáš Holeš",       "nameZh": "霍萊什",       "pos": "CB" },
+      { "shirt": 22, "name": "Tomáš Vlček",       "nameZh": "弗萊切克",     "pos": "CB" },
+      { "shirt": 16, "name": "David Jurásek",     "nameZh": "尤拉塞克",     "pos": "LB" },
+      { "shirt": 5,  "name": "Tomáš Souček",      "nameZh": "蘇切克",       "pos": "DM" },
+      { "shirt": 7,  "name": "Antonín Barák",     "nameZh": "巴拉克",       "pos": "DM" },
+      { "shirt": 11, "name": "Mojmír Chytil",     "nameZh": "希蒂爾",       "pos": "RW" },
+      { "shirt": 10, "name": "Ladislav Krejčí",   "nameZh": "克雷伊奇",     "pos": "AM" },
+      { "shirt": 13, "name": "Lukáš Provod",      "nameZh": "普羅沃德",     "pos": "LW" },
+      { "shirt": 9,  "name": "Patrik Schick",     "nameZh": "希克",         "pos": "ST" }
+    ]
+  },
+  "JOR": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Yazeed Abulaila",   "nameZh": "阿布萊拉",     "pos": "GK" },
+      { "shirt": 2,  "name": "Mohammad Abu Hasheesh","nameZh": "阿布哈希什","pos": "RB" },
+      { "shirt": 4,  "name": "Yazan Al-Arab",     "nameZh": "阿拉伯",       "pos": "CB" },
+      { "shirt": 5,  "name": "Bara' Marei",       "nameZh": "馬雷",         "pos": "CB" },
+      { "shirt": 3,  "name": "Ehsan Haddad",      "nameZh": "哈達德",       "pos": "LB" },
+      { "shirt": 8,  "name": "Mahmoud Al-Mardi",  "nameZh": "馬爾迪",       "pos": "DM" },
+      { "shirt": 18, "name": "Nour Al-Rawabdeh",  "nameZh": "拉瓦布德",     "pos": "CM" },
+      { "shirt": 11, "name": "Yazan Al-Naimat",   "nameZh": "奈馬特",       "pos": "AM" },
+      { "shirt": 7,  "name": "Musa Al-Taamari",   "nameZh": "塔阿馬里",     "pos": "RW" },
+      { "shirt": 9,  "name": "Ali Olwan",         "nameZh": "奧爾萬",       "pos": "ST" },
+      { "shirt": 14, "name": "Mahmoud Al-Mardi",  "nameZh": "馬爾迪 M",     "pos": "LW" }
+    ]
+  },
+  "NZL": {
+    "formation": "5-3-2",
+    "players": [
+      { "shirt": 1,  "name": "Oliver Sail",       "nameZh": "薩伊爾",       "pos": "GK" },
+      { "shirt": 2,  "name": "Liberato Cacace",   "nameZh": "卡卡塞",       "pos": "RB" },
+      { "shirt": 5,  "name": "Michael Boxall",    "nameZh": "博克薩爾",     "pos": "CB" },
+      { "shirt": 6,  "name": "Tim Payne",         "nameZh": "佩恩",         "pos": "CB" },
+      { "shirt": 19, "name": "Nando Pijnaker",    "nameZh": "派納克",       "pos": "CB" },
+      { "shirt": 3,  "name": "Tyler Bindon",      "nameZh": "賓登",         "pos": "LB" },
+      { "shirt": 13, "name": "Marko Stamenić",    "nameZh": "斯塔梅尼奇",   "pos": "DM" },
+      { "shirt": 11, "name": "Marco Rojas",       "nameZh": "羅哈斯",       "pos": "CM" },
+      { "shirt": 14, "name": "Joe Bell",          "nameZh": "貝爾",         "pos": "CM" },
+      { "shirt": 9,  "name": "Chris Wood",        "nameZh": "活特",         "pos": "ST" },
+      { "shirt": 17, "name": "Kosta Barbarouses", "nameZh": "巴巴羅塞斯",   "pos": "ST" }
+    ]
+  },
+  "PAN": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Orlando Mosquera",  "nameZh": "莫斯克拉",     "pos": "GK" },
+      { "shirt": 2,  "name": "César Blackman",    "nameZh": "布萊克曼",     "pos": "RB" },
+      { "shirt": 3,  "name": "Harold Cummings",   "nameZh": "卡明斯",       "pos": "CB" },
+      { "shirt": 5,  "name": "Andrés Andrade",    "nameZh": "安德拉德",     "pos": "CB" },
+      { "shirt": 16, "name": "Eric Davis",        "nameZh": "戴維斯",       "pos": "LB" },
+      { "shirt": 8,  "name": "Aníbal Godoy",      "nameZh": "戈多伊",       "pos": "DM" },
+      { "shirt": 6,  "name": "Cristian Martínez", "nameZh": "馬丁尼斯",     "pos": "DM" },
+      { "shirt": 9,  "name": "Adalberto Carrasquilla","nameZh": "卡拉斯基亞","pos": "RW" },
+      { "shirt": 10, "name": "Edgar Bárcenas",    "nameZh": "巴塞納斯",     "pos": "AM" },
+      { "shirt": 11, "name": "Ismael Díaz",       "nameZh": "迪亞斯",       "pos": "LW" },
+      { "shirt": 19, "name": "Cecilio Waterman",  "nameZh": "沃特曼",       "pos": "ST" }
+    ]
+  },
+  "TUR": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Mert Günok",        "nameZh": "居諾克",       "pos": "GK" },
+      { "shirt": 2,  "name": "Zeki Çelik",        "nameZh": "切利克",       "pos": "RB" },
+      { "shirt": 4,  "name": "Çağlar Söyüncü",    "nameZh": "索揚卓",       "pos": "CB" },
+      { "shirt": 5,  "name": "Merih Demiral",     "nameZh": "德米拉爾",     "pos": "CB" },
+      { "shirt": 22, "name": "Ferdi Kadıoğlu",    "nameZh": "卡迪奧盧",     "pos": "LB" },
+      { "shirt": 8,  "name": "Hakan Çalhanoğlu",  "nameZh": "查爾漢諾盧",   "pos": "DM" },
+      { "shirt": 14, "name": "Salih Özcan",       "nameZh": "厄茲詹",       "pos": "DM" },
+      { "shirt": 10, "name": "Arda Güler",        "nameZh": "居勒爾",       "pos": "AM" },
+      { "shirt": 7,  "name": "Kerem Aktürkoğlu",  "nameZh": "阿克圖爾科盧", "pos": "RW" },
+      { "shirt": 11, "name": "Yusuf Yazıcı",      "nameZh": "亞茲奇",       "pos": "LW" },
+      { "shirt": 17, "name": "Kenan Yıldız",      "nameZh": "伊爾迪茲",     "pos": "ST" }
+    ]
+  },
+  "UZB": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 12, "name": "Utkir Yusupov",     "nameZh": "尤蘇波夫",     "pos": "GK" },
+      { "shirt": 13, "name": "Sherzod Azamov",    "nameZh": "阿扎莫夫",     "pos": "RB" },
+      { "shirt": 5,  "name": "Anzur Ismailov",    "nameZh": "伊斯馬伊洛夫", "pos": "CB" },
+      { "shirt": 4,  "name": "Egor Krimets",      "nameZh": "克里梅茨",     "pos": "CB" },
+      { "shirt": 3,  "name": "Khojimat Erkinov",  "nameZh": "厄爾基諾夫",   "pos": "LB" },
+      { "shirt": 6,  "name": "Otabek Shukurov",   "nameZh": "舒庫羅夫",     "pos": "DM" },
+      { "shirt": 8,  "name": "Jaloliddin Masharipov","nameZh": "馬沙里波夫","pos": "DM" },
+      { "shirt": 10, "name": "Abbosbek Fayzullaev","nameZh": "法伊祖拉耶夫","pos": "AM" },
+      { "shirt": 7,  "name": "Eldor Shomurodov",  "nameZh": "肖穆羅多夫",   "pos": "RW" },
+      { "shirt": 11, "name": "Igor Sergeev",      "nameZh": "謝爾蓋耶夫",   "pos": "LW" },
+      { "shirt": 9,  "name": "Bobir Davlatov",    "nameZh": "達夫拉托夫",   "pos": "ST" }
+    ]
+  },
+  "IRQ": {
+    "formation": "4-2-3-1",
+    "players": [
+      { "shirt": 1,  "name": "Jalal Hassan",      "nameZh": "哈桑",         "pos": "GK" },
+      { "shirt": 2,  "name": "Merchas Doski",     "nameZh": "多斯基",       "pos": "RB" },
+      { "shirt": 4,  "name": "Rebin Sulaka",      "nameZh": "蘇拉卡",       "pos": "CB" },
+      { "shirt": 5,  "name": "Mustafa Saadoun",   "nameZh": "薩敦",         "pos": "CB" },
+      { "shirt": 3,  "name": "Hussein Ali",       "nameZh": "阿里",         "pos": "LB" },
+      { "shirt": 6,  "name": "Amjad Attwan",      "nameZh": "阿特萬",       "pos": "DM" },
+      { "shirt": 8,  "name": "Osama Rashid",      "nameZh": "拉希德",       "pos": "DM" },
+      { "shirt": 7,  "name": "Bashar Resan",      "nameZh": "雷桑",         "pos": "RW" },
+      { "shirt": 10, "name": "Ali Al-Hamadi",     "nameZh": "哈馬迪",       "pos": "AM" },
+      { "shirt": 11, "name": "Hussein Ali",       "nameZh": "阿里 H",       "pos": "LW" },
+      { "shirt": 9,  "name": "Aymen Hussein",     "nameZh": "侯賽因",       "pos": "ST" }
+    ]
+  },
+  "QAT": {
+    "formation": "5-3-2",
+    "players": [
+      { "shirt": 1,  "name": "Meshaal Barsham",   "nameZh": "巴沙姆",       "pos": "GK" },
+      { "shirt": 14, "name": "Homam Ahmed",       "nameZh": "艾哈邁德",     "pos": "RB" },
+      { "shirt": 4,  "name": "Tarek Salman",      "nameZh": "薩爾曼",       "pos": "CB" },
+      { "shirt": 5,  "name": "Boualem Khoukhi",   "nameZh": "庫希",         "pos": "CB" },
+      { "shirt": 3,  "name": "Abdelkarim Hassan", "nameZh": "卡里姆",       "pos": "CB" },
+      { "shirt": 13, "name": "Mohamed Muntari",   "nameZh": "蒙塔里",       "pos": "LB" },
+      { "shirt": 12, "name": "Karim Boudiaf",     "nameZh": "布迪亞夫",     "pos": "DM" },
+      { "shirt": 23, "name": "Assim Madibo",      "nameZh": "馬迪博",       "pos": "CM" },
+      { "shirt": 10, "name": "Hassan Al-Haydos",  "nameZh": "海多斯",       "pos": "CM" },
+      { "shirt": 11, "name": "Akram Afif",        "nameZh": "阿菲夫",       "pos": "ST" },
+      { "shirt": 19, "name": "Almoez Ali",        "nameZh": "阿莫茲",       "pos": "ST" }
+    ]
+  },
+  "RSA": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 16, "name": "Ronwen Williams",   "nameZh": "威廉斯",       "pos": "GK" },
+      { "shirt": 2,  "name": "Khuliso Mudau",     "nameZh": "穆道",         "pos": "RB" },
+      { "shirt": 4,  "name": "Mothobi Mvala",     "nameZh": "姆瓦拉",       "pos": "CB" },
+      { "shirt": 5,  "name": "Siyanda Xulu",      "nameZh": "舒魯",         "pos": "CB" },
+      { "shirt": 3,  "name": "Aubrey Modiba",     "nameZh": "莫迪巴",       "pos": "LB" },
+      { "shirt": 8,  "name": "Teboho Mokoena",    "nameZh": "莫科埃納",     "pos": "DM" },
+      { "shirt": 6,  "name": "Sphephelo Sithole", "nameZh": "西托勒",       "pos": "CM" },
+      { "shirt": 17, "name": "Thapelo Maseko",    "nameZh": "馬塞科",       "pos": "CM" },
+      { "shirt": 11, "name": "Themba Zwane",      "nameZh": "茲瓦內",       "pos": "RW" },
+      { "shirt": 9,  "name": "Lyle Foster",       "nameZh": "福斯特",       "pos": "ST" },
+      { "shirt": 7,  "name": "Percy Tau",         "nameZh": "陶",           "pos": "LW" }
+    ]
+  },
+  "CPV": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Vozinha",           "nameZh": "沃辛哈",       "pos": "GK" },
+      { "shirt": 2,  "name": "Diney",             "nameZh": "迪內",         "pos": "RB" },
+      { "shirt": 5,  "name": "Sidnei Tavares",    "nameZh": "塔瓦雷斯",     "pos": "CB" },
+      { "shirt": 4,  "name": "Roberto Lopes",     "nameZh": "洛佩斯",       "pos": "CB" },
+      { "shirt": 3,  "name": "Stopira",           "nameZh": "斯托皮拉",     "pos": "LB" },
+      { "shirt": 6,  "name": "Jovane Cabral",     "nameZh": "卡布拉爾",     "pos": "DM" },
+      { "shirt": 8,  "name": "Kenny Rocha",       "nameZh": "羅查",         "pos": "CM" },
+      { "shirt": 10, "name": "Ryan Mendes",       "nameZh": "門德斯",       "pos": "CM" },
+      { "shirt": 7,  "name": "Garry Rodrigues",   "nameZh": "羅德里格斯",   "pos": "RW" },
+      { "shirt": 9,  "name": "Bebé",              "nameZh": "貝貝",         "pos": "ST" },
+      { "shirt": 11, "name": "Gilson Benchimol",  "nameZh": "本奇莫爾",     "pos": "LW" }
+    ]
+  },
+  "COD": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 16, "name": "Lionel Mpasi",      "nameZh": "姆帕西",       "pos": "GK" },
+      { "shirt": 2,  "name": "Arthur Masuaku",    "nameZh": "馬蘇阿庫",     "pos": "RB" },
+      { "shirt": 4,  "name": "Chancel Mbemba",    "nameZh": "姆貝姆巴",     "pos": "CB" },
+      { "shirt": 5,  "name": "Gédéon Kalulu",     "nameZh": "卡魯魯",       "pos": "CB" },
+      { "shirt": 3,  "name": "Aaron Tshibola",    "nameZh": "茲比奧拉",     "pos": "LB" },
+      { "shirt": 6,  "name": "Samuel Moutoussamy","nameZh": "穆圖薩米",     "pos": "DM" },
+      { "shirt": 8,  "name": "Charles Pickel",    "nameZh": "皮克爾",       "pos": "CM" },
+      { "shirt": 10, "name": "Théo Bongonda",     "nameZh": "邦貢達",       "pos": "CM" },
+      { "shirt": 11, "name": "Yoane Wissa",       "nameZh": "維薩",         "pos": "RW" },
+      { "shirt": 9,  "name": "Cédric Bakambu",    "nameZh": "巴坎布",       "pos": "ST" },
+      { "shirt": 7,  "name": "Silas Katompa",     "nameZh": "卡通帕",       "pos": "LW" }
+    ]
+  },
+  "CUW": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Eloy Room",         "nameZh": "魯姆",         "pos": "GK" },
+      { "shirt": 2,  "name": "Cuco Martina",      "nameZh": "馬蒂納",       "pos": "RB" },
+      { "shirt": 4,  "name": "Sherel Floranus",   "nameZh": "弗洛拉努斯",   "pos": "CB" },
+      { "shirt": 5,  "name": "Juriën Gaari",      "nameZh": "加里",         "pos": "CB" },
+      { "shirt": 3,  "name": "Jurich Carolina",   "nameZh": "卡羅琳娜",     "pos": "LB" },
+      { "shirt": 6,  "name": "Leandro Bacuna",    "nameZh": "巴庫納",       "pos": "DM" },
+      { "shirt": 8,  "name": "Juninho Bacuna",    "nameZh": "J. 巴庫納",    "pos": "CM" },
+      { "shirt": 10, "name": "Kenji Gorré",       "nameZh": "戈雷",         "pos": "CM" },
+      { "shirt": 7,  "name": "Tahith Chong",      "nameZh": "莊維恩",       "pos": "RW" },
+      { "shirt": 9,  "name": "Brandley Kuwas",    "nameZh": "庫瓦斯",       "pos": "ST" },
+      { "shirt": 11, "name": "Rangelo Janga",     "nameZh": "揚加",         "pos": "LW" }
+    ]
+  },
+  "HAI": {
+    "formation": "4-4-2",
+    "players": [
+      { "shirt": 1,  "name": "Johny Placide",     "nameZh": "普拉西德",     "pos": "GK" },
+      { "shirt": 2,  "name": "Alourdes Auguste",  "nameZh": "奧古斯特",     "pos": "RB" },
+      { "shirt": 4,  "name": "Carlens Arcus",     "nameZh": "阿庫斯",       "pos": "CB" },
+      { "shirt": 5,  "name": "Ricardo Adé",       "nameZh": "阿德",         "pos": "CB" },
+      { "shirt": 3,  "name": "Ricardo Pierre-Gabriel","nameZh": "皮埃爾",   "pos": "LB" },
+      { "shirt": 7,  "name": "Steeven Saba",      "nameZh": "薩巴",         "pos": "RM" },
+      { "shirt": 8,  "name": "Jems Geffrard",     "nameZh": "傑弗拉德",     "pos": "CM" },
+      { "shirt": 6,  "name": "Carl Sainté",       "nameZh": "聖特",         "pos": "CM" },
+      { "shirt": 11, "name": "Frantzdy Pierrot",  "nameZh": "皮埃羅",       "pos": "LM" },
+      { "shirt": 9,  "name": "Duckens Nazon",     "nameZh": "納松",         "pos": "ST" },
+      { "shirt": 10, "name": "Kevin Lafrance",    "nameZh": "拉法朗西",     "pos": "ST" }
+    ]
+  },
+  "CAN": {
+    "formation": "4-3-3",
+    "players": [
+      { "shirt": 1,  "name": "Maxime Crépeau",    "nameZh": "克雷波",       "pos": "GK" },
+      { "shirt": 2,  "name": "Alistair Johnston", "nameZh": "約翰斯頓",     "pos": "RB" },
+      { "shirt": 4,  "name": "Moïse Bombito",     "nameZh": "邦比托",       "pos": "CB" },
+      { "shirt": 5,  "name": "Steven Vitória",    "nameZh": "維托利亞",     "pos": "CB" },
+      { "shirt": 19, "name": "Alphonso Davies",   "nameZh": "戴維斯",       "pos": "LB" },
+      { "shirt": 6,  "name": "Stephen Eustáquio", "nameZh": "尤斯塔基奧",   "pos": "DM" },
+      { "shirt": 14, "name": "Mark-Anthony Kaye", "nameZh": "凱伊",         "pos": "CM" },
+      { "shirt": 8,  "name": "Liam Fraser",       "nameZh": "弗雷澤",       "pos": "CM" },
+      { "shirt": 11, "name": "Tajon Buchanan",    "nameZh": "布坎南",       "pos": "RW" },
+      { "shirt": 9,  "name": "Jonathan David",    "nameZh": "戴維",         "pos": "ST" },
+      { "shirt": 17, "name": "Cyle Larin",        "nameZh": "拉林",         "pos": "LW" }
+    ]
+  }
+}

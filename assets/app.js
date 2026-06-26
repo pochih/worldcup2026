@@ -698,28 +698,34 @@ function buildRosterPitch(code, teamFromData) {
   const slots = LINEUP_TEMPLATES[formation];
   if (!slots) return "";
 
-  // Assign each roster player to a template slot. Match by exact position first;
-  // fall back by position group (defenders/mids/attackers) so 4-3-3 with one
-  // listed CM still fills a 4-2-3-1 DM slot etc.
+  // Assign each roster player to a template slot. Prefer `starter: true`
+  // players first (Mbappé / Messi / Ronaldo / Kane etc. marked by fetch_squads
+  // from handcrafted seed), then exact pos match, then group fallback.
   const POS_TO_GROUP = {
-    GK: "GK", CB: "DEF", LB: "DEF", RB: "DEF",
-    DM: "MID", CM: "MID", AM: "MID", RM: "MID", LM: "MID",
-    LW: "ATK", RW: "ATK", ST: "ATK", CF: "ATK",
+    GK: "GK", CB: "DEF", LB: "DEF", RB: "DEF", DEF: "DEF",
+    DM: "MID", CM: "MID", AM: "MID", RM: "MID", LM: "MID", MID: "MID",
+    LW: "ATK", RW: "ATK", ST: "ATK", CF: "ATK", FW: "ATK", FWD: "ATK",
   };
   const remaining = roster.players.map(p => ({ ...p }));
   const assigned = [];
   for (const slot of slots) {
-    // Exact match
-    let idx = remaining.findIndex(p => p.pos === slot.pos);
+    const wantedGroup = POS_TO_GROUP[slot.pos];
+    // 1. Starter + exact pos
+    let idx = remaining.findIndex(p => p.starter && p.pos === slot.pos);
+    // 2. Starter + same group
     if (idx < 0) {
-      // Group match
-      const wantedGroup = POS_TO_GROUP[slot.pos];
+      idx = remaining.findIndex(p => p.starter && POS_TO_GROUP[p.pos] === wantedGroup);
+    }
+    // 3. Non-starter exact pos
+    if (idx < 0) {
+      idx = remaining.findIndex(p => p.pos === slot.pos);
+    }
+    // 4. Non-starter same group
+    if (idx < 0) {
       idx = remaining.findIndex(p => POS_TO_GROUP[p.pos] === wantedGroup);
     }
-    if (idx < 0) {
-      // Anyone left (shouldn't happen on 11+11)
-      idx = 0;
-    }
+    // 5. Anyone left
+    if (idx < 0) idx = 0;
     const p = remaining.splice(idx, 1)[0];
     assigned.push({
       x: slot.x, y: slot.y, pos: slot.pos,

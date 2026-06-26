@@ -68,6 +68,23 @@ def main():
 
     print(f"Found {len(seen_teams)} unique teams to fetch", file=sys.stderr)
 
+    # Starter seed: handcrafted 11-man starting lineups from before squad
+    # expansion. Used to mark `starter: true` on the FIFA 26-man roster so the
+    # UI can pick real starters (e.g. Mbappé #10 ST) instead of the
+    # lowest-shirt-number player at each position (e.g. Thuram #9 FWD).
+    seed_path = DATA / "starters_seed.json"
+    starter_seed = {}
+    if seed_path.exists():
+        seed = json.loads(seed_path.read_text(encoding="utf-8"))
+        for code, payload in seed.items():
+            if code == "_note" or not isinstance(payload, dict):
+                continue
+            starter_seed[code] = set()
+            for p in payload.get("players", []):
+                # store by FIFA shirt number for an unambiguous, name-agnostic mark
+                if p.get("shirt") is not None:
+                    starter_seed[code].add(p["shirt"])
+
     # Load existing rosters for nameZh preservation
     existing = json.loads((DATA / "rosters.json").read_text(encoding="utf-8"))
     nameZh_by_team = {}
@@ -122,19 +139,24 @@ def main():
 
         nz = nameZh_by_team.get(code, {})
         pz = pos_by_team.get(code, {})
+        starters = starter_seed.get(code, set())
         squad_players = []
         for p in players_raw:
             name = pick_en(p.get("PlayerName"))
             short = pick_en(p.get("ShortName")) or name
             k = _key(name)
+            shirt = p.get("ShirtNumber")
             entry = {
-                "shirt": p.get("ShirtNumber"),
+                "shirt": shirt,
                 "name": name,
                 "nameZh": nz.get(k, ""),
                 "pos": pz.get(k, POS_LABEL.get(p.get("Position"), "")),
                 "captain": bool(p.get("Captain")),
                 "id": p.get("IdPlayer"),
             }
+            # Mark starter if shirt number is in seed lineup or player is captain
+            if shirt in starters or entry["captain"]:
+                entry["starter"] = True
             pic = p.get("PlayerPicture") or {}
             if pic.get("PictureUrl"):
                 entry["picture"] = pic["PictureUrl"]
