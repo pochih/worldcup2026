@@ -278,7 +278,6 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 }
 .br-col {
   display: flex; flex-direction: column;
-  justify-content: space-around; gap: 4px;
   min-width: 0;
 }
 .br-col h4 {
@@ -286,6 +285,17 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
   color: var(--text-dim);
 }
+/* col-body 用 grid row span 對齊配對 — R32(8) → R16(4) → QF(2) → SF(1) 在垂直軸上同列中心對齊 */
+.br-col-body {
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  gap: 4px 0;
+  flex: 1;
+}
+.br-col.br-round-r32 .bracket-match { grid-row: span 2; }
+.br-col.br-round-r16 .bracket-match { grid-row: span 4; }
+.br-col.br-round-qf .bracket-match  { grid-row: span 8; }
+.br-col.br-round-sf .bracket-match  { grid-row: span 16; }
 
 /* 小組第三晉級 */
 .third-place-section {
@@ -362,21 +372,51 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 }
 .br-final-col {
   justify-content: center;
+  align-items: stretch;
+  gap: 4px;
   background: linear-gradient(180deg, rgba(255,200,87,0.06), rgba(0,212,170,0.04));
   border-radius: 10px;
   padding: 8px 4px;
   border: 1px solid var(--border);
 }
 .br-final-col h4 { color: var(--gold); font-size: 11px; }
+.br-final-col .bracket-match {
+  /* No grid row-span — final / third cards stand alone */
+  min-height: 80px;
+}
 
 .bracket-match {
   background: var(--surface);
-  border-radius: 5px;
-  padding: 4px 6px;
-  font-size: 10.5px;
-  min-height: 44px;
+  border-radius: 6px;
+  padding: 5px 7px;
+  font-size: 11px;
   display: flex; flex-direction: column; justify-content: center;
+  gap: 2px;
   border: 1px solid var(--border);
+  min-height: 0;  /* let grid row decide height */
+}
+.bracket-match .br-meta-top {
+  font-size: 9px; color: var(--text-dim);
+  text-align: center; letter-spacing: 0.02em;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 2px; margin-bottom: 2px;
+}
+/* placeholder cards: lighter, dashed border */
+.bracket-match.br-placeholder {
+  background: rgba(0,0,0,0.18);
+  border-style: dashed;
+  border-color: var(--border);
+}
+.bracket-match.br-placeholder .vs-name .ph {
+  color: var(--gold); font-style: normal; font-size: 11px;
+  font-family: "SF Mono", Consolas, monospace; font-weight: 600;
+}
+.bracket-match.br-placeholder .vs-score { display: none; }
+/* R16/QF/SF taller — let row content breathe */
+.br-col.br-round-r16 .bracket-match,
+.br-col.br-round-qf .bracket-match,
+.br-col.br-round-sf .bracket-match {
+  font-size: 12px;
 }
 /* Mirror right-half cards so flags hug the inside (toward the final) */
 .br-side-right .row { flex-direction: row-reverse; }
@@ -1144,6 +1184,16 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 4px;
   }
+  /* mobile: drop row-span alignment, use auto rows */
+  .br-col-body {
+    display: contents;  /* let parent grid take over */
+  }
+  .br-col.br-round-r32 .bracket-match,
+  .br-col.br-round-r16 .bracket-match,
+  .br-col.br-round-qf .bracket-match,
+  .br-col.br-round-sf .bracket-match {
+    grid-row: auto;
+  }
   .br-col h4 {
     grid-column: 1 / -1; text-align: left;
     font-size: 12px; margin: 0;
@@ -1160,7 +1210,7 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
   .br-side-right .vs-score { padding-left: 6px; padding-right: 0; }
   .bracket-match { font-size: 11px; padding: 5px 7px; min-height: 50px; }
   .bracket-match .row img { width: 14px; height: 10px; }
-  .bracket-match .meta { font-size: 9px; }
+  .bracket-match .br-meta-top { font-size: 9px; }
 
   /* Teams: smaller cards */
   #teams-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }

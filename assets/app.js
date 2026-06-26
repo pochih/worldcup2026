@@ -414,52 +414,80 @@ function renderBracket() {
   const thirdMatch = byNo[103];
 
   // Build columns left→right: L-R32 | L-R16 | L-QF | L-SF | FINAL | R-SF | R-QF | R-R16 | R-R32
-  function colHtml(title, nums, side) {
-    return `<div class="br-col br-${side || 'mid'}">
+  function colHtml(title, nums, side, round) {
+    return `<div class="br-col br-${side || 'mid'} br-round-${round}">
       <h4>${title}</h4>
-      ${nums.map(n => bracketCardHtml(byNo[n], side)).join("")}
+      <div class="br-col-body">
+        ${nums.map(n => bracketCardHtml(byNo[n], side, round)).join("")}
+      </div>
     </div>`;
   }
 
   const html = `
-    ${colHtml("32 強", LAYOUT.left.r32, "left")}
-    ${colHtml("16 強", LAYOUT.left.r16, "left")}
-    ${colHtml("8 強", LAYOUT.left.qf,  "left")}
-    ${colHtml("4 強", LAYOUT.left.sf,  "left")}
+    ${colHtml("32 強", LAYOUT.left.r32, "left", "r32")}
+    ${colHtml("16 強", LAYOUT.left.r16, "left", "r16")}
+    ${colHtml("8 強", LAYOUT.left.qf,  "left", "qf")}
+    ${colHtml("4 強", LAYOUT.left.sf,  "left", "sf")}
     <div class="br-col br-final-col">
       <h4>🏆 決賽</h4>
-      ${bracketCardHtml(finalMatch, "final")}
+      ${bracketCardHtml(finalMatch, "final", "final")}
       <h4 style="margin-top:18px;color:var(--gold)">🥉 季軍戰</h4>
-      ${bracketCardHtml(thirdMatch, "third")}
+      ${bracketCardHtml(thirdMatch, "third", "third")}
     </div>
-    ${colHtml("4 強", LAYOUT.right.sf,  "right")}
-    ${colHtml("8 強", LAYOUT.right.qf,  "right")}
-    ${colHtml("16 強", LAYOUT.right.r16, "right")}
-    ${colHtml("32 強", LAYOUT.right.r32, "right")}
+    ${colHtml("4 強", LAYOUT.right.sf,  "right", "sf")}
+    ${colHtml("8 強", LAYOUT.right.qf,  "right", "qf")}
+    ${colHtml("16 強", LAYOUT.right.r16, "right", "r16")}
+    ${colHtml("32 強", LAYOUT.right.r32, "right", "r32")}
   `;
   document.getElementById("bracket").innerHTML = html;
 }
 
-function bracketCardHtml(m, side) {
-  if (!m) return `<div class="bracket-match br-empty">—</div>`;
+function bracketCardHtml(m, side, round) {
+  // Placeholder hints based on knockout match number (FIFA layout)
+  const NEEDS = {
+    // R16
+    89: "W74 vs W77", 90: "W73 vs W75",
+    91: "W76 vs W78", 92: "W79 vs W80",
+    93: "W83 vs W84", 94: "W81 vs W82",
+    95: "W86 vs W88", 96: "W85 vs W87",
+    // QF
+    97: "W89 vs W90", 98: "W93 vs W94",
+    99: "W91 vs W92", 100: "W95 vs W96",
+    // SF
+    101: "W97 vs W98", 102: "W99 vs W100",
+    // Third / Final
+    103: "L101 vs L102", 104: "W101 vs W102",
+  };
+  if (!m) {
+    return `<div class="bracket-match br-empty br-round-${round || 'r32'}">—</div>`;
+  }
   const played = isPlayed(m);
   const home = m.home, away = m.away;
-  const hName = home.name || `<span class="ph">${m.placeholderHome || "TBD"}</span>`;
-  const aName = away.name || `<span class="ph">${m.placeholderAway || "TBD"}</span>`;
+  const placeholderHint = NEEDS[m.no] || "TBD";
+  const hName = home.name || `<span class="ph">${m.placeholderHome || placeholderHint.split(" vs ")[0]}</span>`;
+  const aName = away.name || `<span class="ph">${m.placeholderAway || placeholderHint.split(" vs ")[1] || "TBD"}</span>`;
+  // 國家短碼:超過 11 字元改用 code (e.g. "Bosnia and Herzegovina" → "BIH")
+  const shorten = (n, code) => (n && n.length > 11 && code) ? code : n;
+  const hDisplay = home.name ? shorten(home.name, home.code) : hName;
+  const aDisplay = away.name ? shorten(away.name, away.code) : aName;
+
   const hWin = played && home.score > away.score;
   const aWin = played && away.score > home.score;
   const tp = utcToTaipei(m.utc);
   const sideCls = side ? `br-side-${side}` : "";
-  return `<div class="bracket-match ${sideCls} ${m.stage === 'final' ? 'br-final' : ''}">
+  const roundCls = round ? `br-round-${round}` : "";
+  const stageCls = m.stage === 'final' ? 'br-final' : '';
+  const placeholderCls = (!home.name && !away.name) ? 'br-placeholder' : '';
+  return `<div class="bracket-match ${sideCls} ${roundCls} ${stageCls} ${placeholderCls}">
+    <div class="br-meta-top">#${m.no} · ${tp.date.slice(5)} ${tp.time}</div>
     <div class="row ${hWin ? "winner" : ""}">
-      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}<span>${hName}</span></div>
+      <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}<span title="${home.name || placeholderHint.split(" vs ")[0]}">${hDisplay}</span></div>
       <div class="vs-score">${played ? home.score : ""}</div>
     </div>
     <div class="row ${aWin ? "winner" : ""}">
-      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}<span>${aName}</span></div>
+      <div class="vs-name">${away.flag ? `<img src="${away.flag}" alt="">` : ""}<span title="${away.name || placeholderHint.split(" vs ")[1] || ''}">${aDisplay}</span></div>
       <div class="vs-score">${played ? away.score : ""}</div>
     </div>
-    <div class="meta">#${m.no} · ${tp.date.slice(5)} ${tp.time}</div>
   </div>`;
 }
 
