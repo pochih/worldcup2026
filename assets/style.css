@@ -286,6 +286,80 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
   color: var(--text-dim);
 }
+
+/* 小組第三晉級 */
+.third-place-section {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+}
+.third-place-section h3 {
+  margin: 0 0 6px; font-size: 15px;
+}
+.third-place-desc {
+  margin: 0 0 12px; font-size: 12px; color: var(--text-dim);
+}
+.third-place-table {
+  width: 100%; border-collapse: collapse; font-size: 13px;
+}
+.third-place-table th, .third-place-table td {
+  padding: 6px 8px; text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.third-place-table th {
+  color: var(--text-dim); font-weight: 500; font-size: 11px;
+  text-transform: uppercase;
+}
+.third-place-table td.team-cell {
+  text-align: left; white-space: nowrap;
+}
+.third-place-table td.team-cell img {
+  width: 22px; height: 14px; object-fit: cover;
+  border-radius: 2px; margin-right: 8px; vertical-align: middle;
+}
+.third-place-table tr.tp-qualified {
+  background: rgba(0,212,170,0.08);
+}
+.third-place-table tr.tp-qualified td.tp-rank::before {
+  content: '✓ '; color: var(--accent); font-weight: 700;
+}
+.third-place-table tr.tp-eliminated {
+  background: rgba(255,78,106,0.06); color: var(--text-dim);
+}
+.third-place-table tr.tp-eliminated td.tp-rank::before {
+  content: '✗ '; color: var(--accent-2); font-weight: 700;
+}
+/* qualification line — 第 8 名 (Top 8) 下方畫粗線 */
+.third-place-table tr.tp-cutoff td {
+  border-bottom: 2px dashed var(--gold) !important;
+}
+.third-place-cutoff-label {
+  font-size: 11px; color: var(--gold); margin-top: 4px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .third-place-table { font-size: 12px; }
+  .third-place-table th, .third-place-table td { padding: 5px 4px; }
+  .third-place-table td.team-cell img { width: 18px; height: 12px; margin-right: 4px; }
+  /* 小螢幕隱藏 W/D/L/GF/GA 等次要欄,只留 P / GD / Pts */
+  .third-place-table th:nth-child(4),
+  .third-place-table td:nth-child(4),
+  .third-place-table th:nth-child(5),
+  .third-place-table td:nth-child(5),
+  .third-place-table th:nth-child(6),
+  .third-place-table td:nth-child(6),
+  .third-place-table th:nth-child(7),
+  .third-place-table td:nth-child(7),
+  .third-place-table th:nth-child(8),
+  .third-place-table td:nth-child(8),
+  .third-place-table th:nth-child(9),
+  .third-place-table td:nth-child(9) {
+    display: none;
+  }
+}
 .br-final-col {
   justify-content: center;
   background: linear-gradient(180deg, rgba(255,200,87,0.06), rgba(0,212,170,0.04));

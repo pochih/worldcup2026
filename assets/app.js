@@ -347,7 +347,38 @@ function renderStandings() {
 
 // ---------- bracket ----------
 
+function renderThirdPlace() {
+  const tbody = document.querySelector("#third-place-table tbody");
+  if (!tbody || !DATA.standings) return;
+  // gather all 3rd-place rows (index 2) from each group
+  const thirds = [];
+  for (const [g, rows] of Object.entries(DATA.standings)) {
+    if (rows.length >= 3) thirds.push({ ...rows[2], group: g });
+  }
+  // FIFA tiebreaker: Pts → GD → GF
+  thirds.sort((a, b) => b.Pts - a.Pts || b.GD - a.GD || b.GF - a.GF);
+
+  const rows = thirds.map((r, i) => {
+    const rank = i + 1;
+    const top8 = rank <= 8;
+    const cls = top8 ? "tp-qualified" : "tp-eliminated";
+    const cutoff = rank === 8 ? " tp-cutoff" : "";
+    const flag = r.flag ? `<img src="${r.flag}" alt="${r.code}">` : "";
+    return `<tr class="${cls}${cutoff}">
+      <td class="tp-rank">${rank}</td>
+      <td class="team-cell">${flag}${r.name}</td>
+      <td><strong>${r.group}</strong></td>
+      <td>${r.P}</td><td>${r.W}</td><td>${r.D}</td><td>${r.L}</td>
+      <td>${r.GF}</td><td>${r.GA}</td>
+      <td>${r.GD > 0 ? "+" : ""}${r.GD}</td>
+      <td><strong>${r.Pts}</strong></td>
+    </tr>`;
+  }).join("");
+  tbody.innerHTML = rows || `<tr><td colspan="11" style="color:var(--text-dim);text-align:center;padding:14px">尚無第三名資料</td></tr>`;
+}
+
 function renderBracket() {
+  renderThirdPlace();
   // Two-sided layout meeting at the final.
   // Each side has 16 teams: R32 (8) → R16 (4) → QF (2) → SF (1) → Final.
   // Match numbers per FIFA bracket:
