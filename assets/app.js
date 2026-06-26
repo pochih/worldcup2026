@@ -251,13 +251,13 @@ function goalRowHtml(g) {
 
 // ---------- standings ----------
 
-// For each group, compute which team codes are mathematically eliminated
-// from the top-2 (i.e. cannot finish 1st or 2nd in this group no matter how
-// the remaining group matches play out). Returns { [group]: Set<code> }.
+// For each group, compute which team codes are mathematically eliminated.
+// A team is eliminated iff in ALL possible futures it finishes 4th (or worse)
+// in its own group — i.e. both top-2 path AND best-3rd path are gone.
 //
-// Note: ignores the "8 best 3rd-place" path on purpose — a team eliminated
-// from the top-2 may still sneak in via best-3rd, but the user asked us to
-// mark them as eliminated once they can't reach the top 2 of their group.
+// Conservative interpretation: any future where the team ends top-3 of its
+// group is treated as still alive (best-3rd race kicks in cross-group,
+// which we don't simulate exhaustively — we err on the side of "not yet dead").
 function computeEliminatedByGroup() {
   const out = {};
   const remainingByGroup = {};
@@ -270,11 +270,8 @@ function computeEliminatedByGroup() {
     const baseRows = DATA.standings[g];
     const remaining = remainingByGroup[g] || [];
     const elim = new Set(baseRows.map(r => r.code));
-    // Cap brute force: max 6 matches per group × 3 outcomes = 729 futures.
-    // Once a team appears in top-2 of any future, drop it from `elim`.
     const totalFutures = Math.pow(3, remaining.length);
     for (let f = 0; f < totalFutures; f++) {
-      // Apply this future's outcomes to a clone of the standings.
       const clone = baseRows.map(r => ({ ...r }));
       const byCode = Object.fromEntries(clone.map(r => [r.code, r]));
       let n = f;
@@ -284,24 +281,24 @@ function computeEliminatedByGroup() {
         const away = byCode[m.away.code];
         if (!home || !away) continue;
         home.P++; away.P++;
-        if (outcome === 0) {            // home win
+        if (outcome === 0) {
           home.W++; away.L++;
           home.Pts += 3;
           home.GF++; away.GA++; home.GD++; away.GD--;
-        } else if (outcome === 1) {     // draw
+        } else if (outcome === 1) {
           home.D++; away.D++;
           home.Pts++; away.Pts++;
-        } else {                         // away win
+        } else {
           away.W++; home.L++;
           away.Pts += 3;
           away.GF++; home.GA++; away.GD++; home.GD--;
         }
       }
-      // Rank by Pts → GD → GF. With our scope-limited tiebreaker, any team
-      // that ties with #2 on (Pts, GD, GF) could plausibly take a top-2 slot
-      // under the full FIFA tiebreakers, so we treat them as "still alive".
       clone.sort((a, b) => b.Pts - a.Pts || b.GD - a.GD || b.GF - a.GF);
-      const cutoff = clone[1];
+      const cutoff = clone[2]; // 3rd-place row in this future
+      // Any team that ties or beats the 3rd-place row on (Pts, GD, GF) is
+      // still alive — it can finish top-3 of its group in this future, which
+      // gives it at least a shot at the best-3rd race.
       for (const r of clone) {
         const stillAlive =
           (r.Pts > cutoff.Pts) ||
