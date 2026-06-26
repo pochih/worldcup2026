@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T00:22:36.106577+00:00",
+  "generatedAt": "2026-06-26T05:21:23.019059+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3699,8 +3699,8 @@
       "group": "F",
       "utc": "2026-06-25T23:00:00Z",
       "localKick": "2026-06-25T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Dallas Stadium",
       "city": "Dallas",
       "tz": "",
@@ -3720,7 +3720,7 @@
         "code": "SWE",
         "name": "Sweden",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -3742,9 +3742,10 @@
           "minute": "62'",
           "side": "away",
           "team": "43970",
-          "player": "Sweden score!",
+          "player": "Anthony Elanga",
           "score": "1-1",
-          "type": "G"
+          "type": "G",
+          "assist": "Viktor Gyokeres"
         }
       ]
     },
@@ -3756,8 +3757,8 @@
       "group": "F",
       "utc": "2026-06-25T23:00:00Z",
       "localKick": "2026-06-25T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
       "tz": "",
@@ -3777,11 +3778,11 @@
         "code": "NED",
         "name": "Netherlands",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
-        "score": 2,
+        "score": 3,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43960",
+      "attendance": "68391",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -3818,7 +3819,8 @@
           "team": "43960",
           "player": "Jan Paul Van Hecke",
           "score": "1-3",
-          "type": "G"
+          "type": "G",
+          "assist": "Tijjani Reijnders"
         }
       ]
     },
@@ -3830,8 +3832,8 @@
       "group": "D",
       "utc": "2026-06-26T02:00:00Z",
       "localKick": "2026-06-25T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -3843,7 +3845,7 @@
         "code": "TUR",
         "name": "Türkiye",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -3851,16 +3853,60 @@
         "code": "USA",
         "name": "USA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
-        "score": null,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
+      "winner": "43972",
       "attendance": null,
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "3'",
+          "side": "away",
+          "team": "43921",
+          "player": "Auston Trusty",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Sebastian Berhalter"
+        },
+        {
+          "minute": "10'",
+          "side": "home",
+          "team": "43972",
+          "player": "Arda Guler",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Baris Alper Yilmaz"
+        },
+        {
+          "minute": "31'",
+          "side": "home",
+          "team": "43972",
+          "player": "Baris Alper Yilmaz",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Orkun Kokcu"
+        },
+        {
+          "minute": "49'",
+          "side": "away",
+          "team": "43921",
+          "player": "Sebastian Berhalter",
+          "score": "2-2",
+          "type": "G"
+        },
+        {
+          "minute": "90'+8'",
+          "side": "home",
+          "team": "43972",
+          "player": "Kaan Ayhan",
+          "score": "3-2",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021461",
@@ -3870,8 +3916,8 @@
       "group": "D",
       "utc": "2026-06-26T02:00:00Z",
       "localKick": "2026-06-25T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "San Francisco Bay Area Stadium",
       "city": "San Francisco Bay Area",
       "tz": "",
@@ -3883,7 +3929,7 @@
         "code": "PAR",
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -3891,11 +3937,11 @@
         "code": "AUS",
         "name": "Australia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "68827",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -4468,10 +4514,10 @@
       "placeholderHome": "1F",
       "placeholderAway": "2C",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43960",
+        "code": "NED",
+        "name": "Netherlands",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
         "score": null,
         "pen": null
       },
@@ -4517,10 +4563,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43819",
+        "code": "JPN",
+        "name": "Japan",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
         "score": null,
         "pen": null
       },
@@ -4722,10 +4768,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "44037",
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
         "score": null,
         "pen": null
       },
@@ -5001,10 +5047,10 @@
       "placeholderHome": "2D",
       "placeholderAway": "2G",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43976",
+        "code": "AUS",
+        "name": "Australia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
         "score": null,
         "pen": null
       },
@@ -6143,13 +6189,13 @@
         "code": "USA",
         "name": "USA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
-        "P": 2,
+        "P": 3,
         "W": 2,
         "D": 0,
-        "L": 0,
-        "GF": 6,
-        "GA": 1,
-        "GD": 5,
+        "L": 1,
+        "GF": 8,
+        "GA": 4,
+        "GD": 4,
         "Pts": 6
       },
       {
@@ -6157,42 +6203,42 @@
         "code": "AUS",
         "name": "Australia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
-        "P": 2,
+        "P": 3,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 2,
         "GA": 2,
         "GD": 0,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43928",
         "code": "PAR",
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
-        "P": 2,
+        "P": 3,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 2,
         "GA": 4,
         "GD": -2,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43972",
         "code": "TUR",
         "name": "Türkiye",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/TUR",
-        "P": 2,
-        "W": 0,
+        "P": 3,
+        "W": 1,
         "D": 0,
         "L": 2,
-        "GF": 0,
-        "GA": 3,
-        "GD": -3,
-        "Pts": 0
+        "GF": 3,
+        "GA": 5,
+        "GD": -2,
+        "Pts": 3
       }
     ],
     "C": [
@@ -6321,9 +6367,9 @@
         "W": 2,
         "D": 1,
         "L": 0,
-        "GF": 9,
+        "GF": 10,
         "GA": 4,
-        "GD": 5,
+        "GD": 6,
         "Pts": 7
       },
       {
@@ -6332,13 +6378,13 @@
         "name": "Japan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
         "P": 3,
-        "W": 2,
-        "D": 1,
+        "W": 1,
+        "D": 2,
         "L": 0,
         "GF": 7,
-        "GA": 2,
-        "GD": 5,
-        "Pts": 7
+        "GA": 3,
+        "GD": 4,
+        "Pts": 5
       },
       {
         "id": "43970",
@@ -6347,12 +6393,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
         "P": 3,
         "W": 1,
-        "D": 0,
-        "L": 2,
-        "GF": 6,
+        "D": 1,
+        "L": 1,
+        "GF": 7,
         "GA": 7,
-        "GD": -1,
-        "Pts": 3
+        "GD": 0,
+        "Pts": 4
       },
       {
         "id": "43888",
@@ -6364,8 +6410,8 @@
         "D": 0,
         "L": 3,
         "GF": 2,
-        "GA": 11,
-        "GD": -9,
+        "GA": 12,
+        "GD": -10,
         "Pts": 0
       }
     ],
