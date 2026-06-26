@@ -29,12 +29,22 @@ jobs:
       - name: Fetch and build data
         run: python scripts/fetch_and_build.py
 
+      - name: Refresh squads (manual dispatch or daily 06:xx UTC slot)
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%H)" = "06" ]; then
+            echo "Running fetch_squads.py"
+            python scripts/fetch_squads.py
+          else
+            echo "Skipping squad refresh (only runs at 06:xx UTC or on manual dispatch)"
+          fi
+        continue-on-error: true
+
       - name: Commit if changed
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/schedule.json data/fifa_raw.json data/preview.json
+          git add data/schedule.json data/fifa_raw.json data/preview.json data/rosters.json
           if git diff --cached --quiet; then
             echo "No data changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"

@@ -49,10 +49,10 @@ ZH = {
 # Map star pos to a lineup slot bucket (FW / AM / MID / DEF / GK).
 POS_BUCKET = {
     "GK": "GK",
-    "CB": "DEF", "LB": "DEF", "RB": "DEF",
-    "DM": "MID", "CM": "MID", "LM": "MID", "RM": "MID",
+    "CB": "DEF", "LB": "DEF", "RB": "DEF", "DEF": "DEF",
+    "DM": "MID", "CM": "MID", "LM": "MID", "RM": "MID", "MID": "MID",
     "AM": "AM",
-    "LW": "FW", "RW": "FW", "ST": "FW", "CF": "FW",
+    "LW": "FW", "RW": "FW", "ST": "FW", "CF": "FW", "FW": "FW", "FWD": "FW",
 }
 
 # Chinese labels for unfilled slots so non-curated teams still read naturally.
