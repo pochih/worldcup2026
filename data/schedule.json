@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T19:43:24.050792+00:00",
+  "generatedAt": "2026-06-27T21:18:39.953468+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4361,7 +4361,7 @@
       "group": "L",
       "utc": "2026-06-27T21:00:00Z",
       "localKick": "2026-06-27T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
@@ -4374,7 +4374,7 @@
         "code": "PAN",
         "name": "Panama",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4382,7 +4382,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -4400,7 +4400,7 @@
       "group": "L",
       "utc": "2026-06-27T21:00:00Z",
       "localKick": "2026-06-27T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
@@ -4413,7 +4413,7 @@
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4421,7 +4421,7 @@
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -6825,56 +6825,56 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "P": 2,
+        "P": 3,
         "W": 1,
-        "D": 1,
+        "D": 2,
         "L": 0,
         "GF": 4,
         "GA": 2,
         "GD": 2,
-        "Pts": 4
+        "Pts": 5
       },
       {
         "id": "43860",
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "P": 2,
+        "P": 3,
         "W": 1,
-        "D": 1,
+        "D": 2,
         "L": 0,
         "GF": 1,
         "GA": 0,
         "GD": 1,
-        "Pts": 4
+        "Pts": 5
       },
       {
         "id": "43938",
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "P": 2,
+        "P": 3,
         "W": 1,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 3,
         "GA": 4,
         "GD": -1,
-        "Pts": 3
+        "Pts": 4
       },
       {
         "id": "43914",
         "code": "PAN",
         "name": "Panama",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
-        "P": 2,
+        "P": 3,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 2,
         "GF": 0,
         "GA": 2,
         "GD": -2,
-        "Pts": 0
+        "Pts": 1
       }
     ],
     "K": [
