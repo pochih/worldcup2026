@@ -120,6 +120,37 @@ def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None):
         b = POS_BUCKET.get(s.get("pos", ""), "MID")
         star_by_bucket.setdefault(b, []).append(s)
 
+    # Build a set of star names (English) so we can prioritize stars when
+    # the same player appears in both rosters and stars (e.g., Mbappé is
+    # FW in rosters.json #10 AND a star in stars.json — without this, the
+    # rosters' alphabetic order may push him out of the 11 in favour of
+    # secondary FWs like Thuram).
+    import unicodedata
+    def _norm(s):
+        if not s: return ""
+        # NFKD normalize → strip combining marks (é → e)
+        return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).lower()
+
+    star_names_lower = set()
+    for s in stars.get(code, []):
+        nm = _norm(s.get("name") or "")
+        if nm: star_names_lower.add(nm)
+
+    def _is_star_player(p):
+        nm = _norm(p.get("name") or "")
+        # exact normalized name match
+        if nm in star_names_lower: return True
+        # Surname fallback: check if any star's surname appears in roster name
+        for sn in star_names_lower:
+            tokens = sn.split()
+            if tokens and tokens[-1] in nm:
+                return True
+        return False
+
+    # Sort each roster pos bucket so star players come first
+    for pos_key in roster_by_pos:
+        roster_by_pos[pos_key].sort(key=lambda p: 0 if _is_star_player(p) else 1)
+
     used_roster = set()
     used_stars = set()
     lineup = []
