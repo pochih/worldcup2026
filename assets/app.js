@@ -1235,6 +1235,14 @@ function renderPreview() {
     const b = e.target.closest("[data-idx]");
     if (!b) return;
     PREVIEW_MATCH_IDX = parseInt(b.dataset.idx, 10);
+    // Push per-match hash so it can be deep-linked / browser back works
+    const m = PREVIEW.matches[PREVIEW_MATCH_IDX];
+    if (m) {
+      const target = `#preview/${_previewSlug(m)}`;
+      if (location.hash !== target) {
+        history.pushState({ view: "preview", sub: _previewSlug(m) }, "", target);
+      }
+    }
     renderPreview();
   };
 
@@ -1414,27 +1422,65 @@ const VALID_VIEWS = new Set([
   "calendar", "standings", "bracket", "teams", "analysis", "stars", "scorers", "preview",
 ]);
 
-function setView(name, fromHistory) {
+// Slug helpers for sub-paths like #preview/BRA-vs-JPN
+function _slug(s) {
+  return (s || "").trim().replace(/\s+/g, "-").replace(/[^\w\-]/g, "");
+}
+function _previewSlug(m) {
+  // Use shortTitle (e.g. "BRA vs JPN" → "BRA-vs-JPN"). Match no is only
+  // appended when the same team pairing appears more than once across the
+  // tournament (group + knockout repeat), to keep the common case simple.
+  const base = _slug(m.shortTitle || `${m.home?.code}-vs-${m.away?.code}`);
+  if (!PREVIEW || !PREVIEW.matches) return base;
+  const sameTitle = PREVIEW.matches.filter(x => _slug(x.shortTitle || "") === base);
+  if (sameTitle.length <= 1) return base;
+  const no = m._matchNo;
+  return no ? `${base}-${no}` : base;
+}
+function _findPreviewIdxBySlug(slug) {
+  if (!PREVIEW || !PREVIEW.matches) return -1;
+  return PREVIEW.matches.findIndex(m => _previewSlug(m) === slug);
+}
+
+function setView(name, fromHistory, sub) {
   if (!VALID_VIEWS.has(name)) name = "calendar";
   document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
   document.getElementById(`view-${name}`).classList.add("active");
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === name));
   const activeBtn = document.querySelector(`#tabs button[data-view="${name}"]`);
   activeBtn?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+
+  // If we're entering preview view and a sub-slug was given, switch match.
+  if (name === "preview" && sub) {
+    const idx = _findPreviewIdxBySlug(sub);
+    if (idx >= 0 && idx !== PREVIEW_MATCH_IDX) {
+      PREVIEW_MATCH_IDX = idx;
+      renderPreview();
+    }
+  }
+
   // Only push a new history entry for explicit user clicks — never when this
   // call originated from popstate/hashchange (would loop), and never when the
   // requested view already matches the current hash.
   if (!fromHistory) {
-    const target = `#${name}`;
+    let target = `#${name}`;
+    if (name === "preview" && PREVIEW && PREVIEW.matches) {
+      const m = PREVIEW.matches[PREVIEW_MATCH_IDX];
+      if (m) target = `#preview/${_previewSlug(m)}`;
+    }
     if (location.hash !== target) {
-      history.pushState({ view: name }, "", target);
+      history.pushState({ view: name, sub }, "", target);
     }
   }
 }
 
 function viewFromHash() {
-  const h = (location.hash || "").replace(/^#/, "");
-  return VALID_VIEWS.has(h) ? h : "calendar";
+  // #preview/BRA-vs-JPN → ['preview', 'BRA-vs-JPN']
+  const raw = (location.hash || "").replace(/^#/, "");
+  const [v, ...rest] = raw.split("/");
+  const sub = rest.join("/") || null;
+  const view = VALID_VIEWS.has(v) ? v : "calendar";
+  return { view, sub };
 }
 
 // ---------- init ----------
@@ -1469,10 +1515,11 @@ async function init() {
     if (e.target.tagName === "BUTTON") setView(e.target.dataset.view);
   });
   // Browser back/forward: react to hash change without pushing a new entry.
-  window.addEventListener("popstate", () => setView(viewFromHash(), true));
-  window.addEventListener("hashchange", () => setView(viewFromHash(), true));
+  window.addEventListener("popstate", () => { const { view, sub } = viewFromHash(); setView(view, true, sub); });
+  window.addEventListener("hashchange", () => { const { view, sub } = viewFromHash(); setView(view, true, sub); });
   // Honor initial hash on first load so deep-links work.
-  setView(viewFromHash(), true);
+  const initial = viewFromHash();
+  setView(initial.view, true, initial.sub);
   // Cal nav
   document.getElementById("cal-prev").onclick = () => {
     CAL_MONTH.m--; if (CAL_MONTH.m < 1) { CAL_MONTH.m = 12; CAL_MONTH.y--; }
