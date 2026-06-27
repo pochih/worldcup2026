@@ -634,17 +634,37 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
   margin-bottom: 18px; flex-wrap: wrap;
 }
 .preview-toolbar h2 { margin: 0; font-size: 22px; }
-.preview-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.preview-tabs { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .ptab {
   padding: 8px 16px; font-size: 14px; font-weight: 600;
   border-radius: 20px;
   background: var(--surface); border-color: var(--border);
+  display: inline-flex; align-items: center; gap: 6px;
 }
 .ptab:hover { background: var(--surface-2); }
 .ptab.active {
   background: var(--accent); color: #06281e;
   border-color: var(--accent);
 }
+.ptab .ptab-date {
+  font-size: 11px; color: var(--text-dim); font-weight: 500;
+  font-family: ui-monospace, monospace;
+}
+.ptab.active .ptab-date { color: #06281e; opacity: 0.8; }
+.ptab.ptab-played { opacity: 0.7; background: var(--surface-2); }
+.ptab.ptab-played:hover { opacity: 1; }
+.ptab.ptab-played.active { opacity: 1; }
+.ptab.ptab-hyp { border-style: dashed; background: transparent; }
+.ptab-divider {
+  display: inline-flex; align-items: center;
+  padding: 0 10px 0 4px;
+  font-size: 12px; font-weight: 700; color: var(--text-dim);
+  letter-spacing: 0.04em;
+  border-left: 2px solid var(--border);
+  margin-left: 4px;
+  height: 28px;
+}
+.ptab-divider:first-child { border-left: none; margin-left: 0; padding-left: 0; }
 
 .preview-card {
   background: var(--surface);

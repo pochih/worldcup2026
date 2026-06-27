@@ -1175,11 +1175,62 @@ function renderPreview() {
     contentEl.innerHTML = `<p style="color:var(--text-dim);text-align:center;padding:30px">戰報資料載入中…</p>`;
     return;
   }
-  tabsEl.innerHTML = PREVIEW.matches.map((m, i) =>
-    `<button class="ptab ${i === PREVIEW_MATCH_IDX ? 'active' : ''}" data-idx="${i}">
-      ${m._auto ? '🤖 ' : ''}${m.shortTitle}
-    </button>`
-  ).join("");
+
+  // Sort by kickoff date asc (假想對戰 / 無日期者放最後)
+  // and decide played vs upcoming by cross-referencing DATA.matches
+  const playedNos = new Set();
+  if (DATA && DATA.matches) {
+    for (const dm of DATA.matches) {
+      if (dm.status === 0 && dm.home && dm.home.score !== null && dm.home.score !== undefined) {
+        playedNos.add(dm.no);
+      }
+    }
+  }
+
+  const enriched = PREVIEW.matches.map((m, origIdx) => ({
+    m, origIdx,
+    kickoff: m._kickoffUtc || "9999",
+    played: m._matchNo ? playedNos.has(m._matchNo) : false,
+  }));
+  enriched.sort((a, b) => a.kickoff.localeCompare(b.kickoff));
+
+  // Track currently selected match by original idx so re-sorts don't lose it
+  const currentMatch = PREVIEW.matches[PREVIEW_MATCH_IDX];
+  let activeEnrichedIdx = enriched.findIndex(e => e.m === currentMatch);
+  if (activeEnrichedIdx < 0) activeEnrichedIdx = 0;
+
+  // Build tab bar with section dividers (已結束 / 未開賽 / 假想)
+  let lastBucket = null;
+  const tabBtns = enriched.map((e, i) => {
+    const kickoff = e.m._kickoffUtc;
+    let bucket;
+    if (!kickoff) bucket = "hyp";
+    else if (e.played) bucket = "played";
+    else bucket = "upcoming";
+
+    let divider = "";
+    if (bucket !== lastBucket) {
+      const label = bucket === "played" ? "✅ 已結束" : bucket === "upcoming" ? "🔜 未開賽" : "💭 假想";
+      divider = `<span class="ptab-divider">${label}</span>`;
+      lastBucket = bucket;
+    }
+
+    const tp = kickoff ? utcToTaipei(kickoff) : null;
+    const dateLabel = tp ? `${tp.date.slice(5)}` : "";
+    const cls = [
+      "ptab",
+      bucket === "played" ? "ptab-played" : "",
+      bucket === "hyp" ? "ptab-hyp" : "",
+      i === activeEnrichedIdx ? "active" : "",
+    ].filter(Boolean).join(" ");
+
+    return `${divider}<button class="${cls}" data-idx="${e.origIdx}">
+      <span class="ptab-date">${dateLabel}</span>
+      ${e.m._auto ? '🤖 ' : ''}${e.m.shortTitle}
+    </button>`;
+  }).join("");
+
+  tabsEl.innerHTML = tabBtns;
   tabsEl.onclick = (e) => {
     const b = e.target.closest("[data-idx]");
     if (!b) return;
