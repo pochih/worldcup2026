@@ -176,38 +176,42 @@ def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None, c
 
     used_roster = set()
     used_stars = set()
-    lineup = []
+    lineup = [None] * len(template)  # filled in 2-pass below
+
+    # PASS 1: every slot first tries an EXACT pos match. This is critical
+    # for keeping pos-defined stars in their natural slot — e.g., C-Ronaldo
+    # is rosters.pos=ST and template has both RW and ST; if we let RW grab
+    # any FW-bucket player first, ST loses its rightful star.
     for i, slot in enumerate(template):
+        slot_pos = slot["pos"]
+        for p in roster_by_pos.get(slot_pos, []):
+            pid = id(p)
+            if pid in used_roster: continue
+            lineup[i] = ("roster", p)
+            used_roster.add(pid)
+            break
+
+    # PASS 2: fill remaining slots via bucket / adjacent / stars / fallback
+    for i, slot in enumerate(template):
+        if lineup[i] is not None: continue
         slot_pos = slot["pos"]
         bucket = POS_BUCKET.get(slot_pos, "MID")
         chosen = None
         chosen_source = None
 
-        # 1. Try roster exact-pos match
-        for p in roster_by_pos.get(slot_pos, []):
-            pid = id(p)
-            if pid in used_roster: continue
-            chosen = p
-            chosen_source = "roster"
-            used_roster.add(pid)
-            break
+        # 2a. Try roster same-bucket match (e.g., slot=DM, roster has CM)
+        for pos_key, plist in roster_by_pos.items():
+            if POS_BUCKET.get(pos_key) != bucket: continue
+            for p in plist:
+                pid = id(p)
+                if pid in used_roster: continue
+                chosen = p
+                chosen_source = "roster"
+                used_roster.add(pid)
+                break
+            if chosen: break
 
-        # 2. Try roster same-bucket match (e.g., slot=DM, roster has CM)
-        if not chosen:
-            for pos_key, plist in roster_by_pos.items():
-                if POS_BUCKET.get(pos_key) != bucket: continue
-                for p in plist:
-                    pid = id(p)
-                    if pid in used_roster: continue
-                    chosen = p
-                    chosen_source = "roster"
-                    used_roster.add(pid)
-                    break
-                if chosen: break
-
-        # 2b. Try roster adjacent-bucket match (e.g., slot=CM, roster has AM —
-        # happens when team_meta formation differs from roster's "natural" formation,
-        # so a 4-3-3 template with no AM slot still places an AM-listed playmaker).
+        # 2b. Try roster adjacent-bucket match
         if not chosen:
             adj_buckets = []
             if bucket == "MID": adj_buckets = ["AM"]
@@ -239,17 +243,23 @@ def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None, c
                 used_stars.add(cid)
                 break
 
-        x = (100 - slot["x"]) if mirror else slot["x"]
         if chosen:
+            lineup[i] = (chosen_source, chosen)
+
+    # Render to dict list
+    final = []
+    for i, slot in enumerate(template):
+        x = (100 - slot["x"]) if mirror else slot["x"]
+        entry = lineup[i]
+        if entry:
+            chosen = entry[1]
             n = chosen.get("shirt") or (i + 1)
             name = short_name(chosen.get("nameZh") or chosen.get("name") or "")
         else:
-            # 4. Final fallback: Chinese position label
             n = i + 1
-            name = POS_ZH.get(slot_pos, slot_pos)
-
-        lineup.append({"n": n, "name": name, "pos": slot_pos, "x": x, "y": slot["y"]})
-    return lineup, formation
+            name = POS_ZH.get(slot["pos"], slot["pos"])
+        final.append({"n": n, "name": name, "pos": slot["pos"], "x": x, "y": slot["y"]})
+    return final, formation
 
 
 def make_arrows(formation, mirror=False):
