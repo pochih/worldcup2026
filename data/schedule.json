@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T21:18:39.953468+00:00",
+  "generatedAt": "2026-06-27T23:15:54.723925+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4361,8 +4361,8 @@
       "group": "L",
       "utc": "2026-06-27T21:00:00Z",
       "localKick": "2026-06-27T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -4382,15 +4382,34 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43942",
+      "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "62'",
+          "side": "away",
+          "team": "43942",
+          "player": "Jude Bellingham",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Bukayo Saka"
+        },
+        {
+          "minute": "67'",
+          "side": "away",
+          "team": "43942",
+          "player": "Harry Kane",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Jude Bellingham"
+        }
+      ]
     },
     {
       "id": "400021509",
@@ -4400,8 +4419,8 @@
       "group": "L",
       "utc": "2026-06-27T21:00:00Z",
       "localKick": "2026-06-27T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
       "tz": "",
@@ -4413,7 +4432,7 @@
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -4421,15 +4440,43 @@
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43938",
+      "attendance": "68324",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "31'",
+          "side": "home",
+          "team": "43938",
+          "player": "Petar Sucic",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Mateo Kovacic"
+        },
+        {
+          "minute": "73'",
+          "side": "away",
+          "team": "43860",
+          "player": "Derrick Luckassen",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Ernest Nuamah"
+        },
+        {
+          "minute": "83'",
+          "side": "home",
+          "team": "43938",
+          "player": "Nikola Vlasic",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Luka Modric"
+        }
+      ]
     },
     {
       "id": "400021497",
@@ -4858,10 +4905,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43927",
+        "code": "ECU",
+        "name": "Ecuador",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
         "score": null,
         "pen": null
       },
@@ -4891,10 +4938,10 @@
       "placeholderHome": "1L",
       "placeholderAway": "3EHIJK",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
         "score": null,
         "pen": null
       },
@@ -5022,10 +5069,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
         "score": null,
         "pen": null
       },
@@ -5186,10 +5233,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43860",
+        "code": "GHA",
+        "name": "Ghana",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
         "score": null,
         "pen": null
       },
@@ -6826,13 +6873,27 @@
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
         "P": 3,
-        "W": 1,
-        "D": 2,
+        "W": 2,
+        "D": 1,
         "L": 0,
-        "GF": 4,
+        "GF": 6,
         "GA": 2,
-        "GD": 2,
-        "Pts": 5
+        "GD": 4,
+        "Pts": 7
+      },
+      {
+        "id": "43938",
+        "code": "CRO",
+        "name": "Croatia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
+        "P": 3,
+        "W": 2,
+        "D": 0,
+        "L": 1,
+        "GF": 5,
+        "GA": 5,
+        "GD": 0,
+        "Pts": 6
       },
       {
         "id": "43860",
@@ -6841,25 +6902,11 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
         "P": 3,
         "W": 1,
-        "D": 2,
-        "L": 0,
-        "GF": 1,
-        "GA": 0,
-        "GD": 1,
-        "Pts": 5
-      },
-      {
-        "id": "43938",
-        "code": "CRO",
-        "name": "Croatia",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "P": 3,
-        "W": 1,
         "D": 1,
         "L": 1,
-        "GF": 3,
-        "GA": 4,
-        "GD": -1,
+        "GF": 2,
+        "GA": 2,
+        "GD": 0,
         "Pts": 4
       },
       {
@@ -6869,12 +6916,12 @@
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAN",
         "P": 3,
         "W": 0,
-        "D": 1,
-        "L": 2,
+        "D": 0,
+        "L": 3,
         "GF": 0,
-        "GA": 2,
-        "GD": -2,
-        "Pts": 1
+        "GA": 4,
+        "GD": -4,
+        "Pts": 0
       }
     ],
     "K": [

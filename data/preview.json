@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-06-27T21:18:39.986812+00:00",
+  "_generatedAt": "2026-06-27T23:15:54.757296+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -7085,6 +7085,465 @@
           },
           {
             "score": "4-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MEX_ECU_79",
+      "_auto": true,
+      "_kickoffUtc": "2026-07-01T01:00:00Z",
+      "_matchNo": 79,
+      "title": "墨西哥 🇲🇽 vs 🇪🇨 厄瓜多",
+      "shortTitle": "MEX vs ECU",
+      "subtitle": "FIFA 排名 #17 vs #32",
+      "stage": "32 強淘汰賽",
+      "venue": "Mexico City Stadium (Mexico City",
+      "history": [],
+      "home": {
+        "code": "MEX",
+        "name": "墨西哥",
+        "flag": "🇲🇽",
+        "color": "#006847",
+        "colorAlt": "#006847",
+        "manager": "Aguirre",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 13,
+            "name": "奧喬亞",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "J. SANCHEZ",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "蒙特斯",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 20,
+            "name": "M. CHAVEZ",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 23,
+            "name": "加亞多",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 17,
+            "name": "皮內達",
+            "pos": "CM",
+            "x": 40,
+            "y": 30
+          },
+          {
+            "n": 24,
+            "name": "L. CHAVEZ",
+            "pos": "DM",
+            "x": 40,
+            "y": 50
+          },
+          {
+            "n": 6,
+            "name": "Erik LIRA",
+            "pos": "CM",
+            "x": 40,
+            "y": 70
+          },
+          {
+            "n": 9,
+            "name": "R. JIMENEZ",
+            "pos": "RW",
+            "x": 60,
+            "y": 18
+          },
+          {
+            "n": 16,
+            "name": "J. QUINONES",
+            "pos": "ST",
+            "x": 68,
+            "y": 50
+          },
+          {
+            "n": 25,
+            "name": "R. ALVARADO",
+            "pos": "LW",
+            "x": 60,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              60,
+              18
+            ],
+            "to": [
+              78,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              68,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              50
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              56,
+              82
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 35,
+            "y": 8,
+            "w": 28,
+            "h": 84,
+            "label": "高位逼搶區",
+            "kind": "press"
+          },
+          {
+            "x": 52,
+            "y": 30,
+            "w": 22,
+            "h": 40,
+            "label": "創造區",
+            "kind": "create"
+          }
+        ],
+        "stats": {
+          "attack": 7.0,
+          "defense": 6.5,
+          "midfield": 7.0,
+          "fitness": 7.5,
+          "experience": 7.5,
+          "stars": 6.5
+        }
+      },
+      "away": {
+        "code": "ECU",
+        "name": "厄瓜多",
+        "flag": "🇪🇨",
+        "color": "#ffd100",
+        "colorAlt": "#ffd100",
+        "manager": "Beccacece",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "H. GALINDEZ",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "F. TORRES",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 6,
+            "name": "帕喬",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 3,
+            "name": "P. HINCAPIE",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 4,
+            "name": "J. ORDONEZ",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 21,
+            "name": "佛朗哥",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 23,
+            "name": "凱塞多",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 15,
+            "name": "Pedro VITE",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 11,
+            "name": "K. RODRIGUE",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 13,
+            "name": "巴倫西亞",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 19,
+            "name": "普拉塔",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              50
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              44,
+              82
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 24,
+            "y": 8,
+            "w": 26,
+            "h": 22,
+            "label": "右路衝擊",
+            "kind": "wing"
+          },
+          {
+            "x": 24,
+            "y": 70,
+            "w": 26,
+            "h": 22,
+            "label": "左路衝擊",
+            "kind": "wing"
+          }
+        ],
+        "stats": {
+          "attack": 6.5,
+          "defense": 7.0,
+          "midfield": 7.5,
+          "fitness": 8.0,
+          "experience": 6.0,
+          "stars": 7.0
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "home",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：MEX 1-0 ECU"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "扳平比分",
+          "score": "1-1"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：MEX 1-1 ECU"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "勞爾",
+          "away": "ECU #6 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "蒙特斯",
+          "away": "ECU #11 (RW)",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "艾爾韋斯",
+          "away": "ECU #21 (CM)",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "雙翼速度衝擊邊路",
+          "中場三人組高位逼搶",
+          "邊鋒/邊後衛速度爆破將是進攻關鍵"
+        ],
+        "away": [
+          "邊路傳中找中鋒搶點",
+          "中場輪轉支援防守",
+          "中場控制是壓制比賽的核心"
+        ]
+      },
+      "predict": {
+        "score": "1-1",
+        "confidence": 50,
+        "winner": "home",
+        "reasoning": "主隊在經驗佔優 (1.5)；主隊在進攻佔優 (0.5)，預期勢均力敵。",
+        "scenarios": [
+          {
+            "score": "1-1",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "0-0",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-1",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-2",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-0",
             "prob": 14,
             "desc": "可能情境"
           }
