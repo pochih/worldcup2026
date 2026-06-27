@@ -76,7 +76,11 @@ def team_is_confirmed(side):
     return True
 
 
-def is_marquee_group_match(h_code, a_code, analysis):
+def is_marquee_group_match(h_code, a_code, analysis, stars=None):
+    """A group match is marquee if (a) close ranks of two reasonably-strong
+    teams, OR (b) both teams have a curated star roster (a 'big' team)."""
+    if stars and h_code in stars and a_code in stars:
+        return True
     h, a = analysis.get(h_code), analysis.get(a_code)
     if not (h and a): return False
     rank_h, rank_a = h.get("rank", 99), a.get("rank", 99)
@@ -93,13 +97,21 @@ def short_name(name):
     return name[:9] + "."
 
 
-def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None):
+def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None, confirmed=None):
     """Produce 11 player dicts. Priority for filling each slot:
        1) rosters.json (full curated 11-man squad, exact pos match preferred)
+          — within each pos bucket, players that have actually appeared in
+            previous matches (goal/assist) AND star players are sorted first
        2) stars.json (4-name star roster, bucket-matched)
        3) Chinese position label fallback (e.g., '右後衛').
-    Always returns 11 entries in template order."""
+    Always returns 11 entries in template order.
+
+    `confirmed` is an optional set of normalized names known to be in coach's
+    rotation (from past goal/assist records). When provided, those players
+    are prioritized above non-confirmed roster entries.
+    """
     rosters = rosters or {}
+    confirmed = confirmed or set()
     meta = team_meta.get(code, {})
     formation = meta.get("formation", "4-3-3")
     # If rosters specifies a formation for this team, prefer it (more accurate)
@@ -147,9 +159,20 @@ def make_lineup(code, team_meta, stars, templates, mirror=False, rosters=None):
                 return True
         return False
 
-    # Sort each roster pos bucket so star players come first
+    # Sort each roster pos bucket so confirmed-from-past-matches > star > rest.
+    # Sort key: (0=confirmed-AND-star, 1=confirmed-only, 2=star-only, 3=other)
+    def _priority(p):
+        nm = _norm(p.get("name") or "")
+        # Surname for fuzzy match against confirmed set
+        last = nm.split()[-1] if nm else ""
+        is_confirmed = (nm in confirmed) or any(last and last in cn for cn in confirmed)
+        is_star = _is_star_player(p)
+        if is_confirmed and is_star: return 0
+        if is_confirmed: return 1
+        if is_star: return 2
+        return 3
     for pos_key in roster_by_pos:
-        roster_by_pos[pos_key].sort(key=lambda p: 0 if _is_star_player(p) else 1)
+        roster_by_pos[pos_key].sort(key=_priority)
 
     used_roster = set()
     used_stars = set()
@@ -625,8 +648,9 @@ def make_tactics(code, team_meta, analysis):
     return bullets[:3]
 
 
-def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None):
+def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None, confirmed_by_team=None):
     """Auto-generate preview entry for one match."""
+    confirmed_by_team = confirmed_by_team or {}
     h_code = m["home"]["code"].upper()
     a_code = m["away"]["code"].upper()
     h_meta = team_meta.get(h_code, {"formation": "4-3-3", "manager": "—",
@@ -640,8 +664,10 @@ def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None):
     a_stats = a_an.get("stats") or {"attack": 5, "defense": 5, "midfield": 5,
                                      "fitness": 5, "experience": 5, "stars": 5}
 
-    h_lineup, h_form = make_lineup(h_code, team_meta, stars, templates, mirror=False, rosters=rosters)
-    a_lineup, a_form = make_lineup(a_code, team_meta, stars, templates, mirror=True, rosters=rosters)
+    h_lineup, h_form = make_lineup(h_code, team_meta, stars, templates, mirror=False, rosters=rosters,
+                                    confirmed=confirmed_by_team.get(h_code, set()))
+    a_lineup, a_form = make_lineup(a_code, team_meta, stars, templates, mirror=True, rosters=rosters,
+                                    confirmed=confirmed_by_team.get(a_code, set()))
     h_arrows = make_arrows(h_form, mirror=False)
     a_arrows = make_arrows(a_form, mirror=True)
     h_routes = make_ball_routes(h_form, mirror=False)
@@ -719,8 +745,32 @@ def load_overrides():
     return out
 
 
+def compute_confirmed_starters(schedule):
+    """From past completed matches, collect each team's set of normalized
+    player names who appeared as goal scorer or assist provider — they're
+    likely starters or first-team-rotation players in the coach's plans."""
+    import unicodedata
+    def norm(n):
+        if not n: return ""
+        return "".join(c for c in unicodedata.normalize("NFKD", n) if not unicodedata.combining(c)).lower()
+    confirmed = {}
+    for m in schedule.get("matches", []):
+        if m.get("status") != 0: continue
+        if m.get("home", {}).get("score") is None: continue
+        h = m["home"]["code"]
+        a = m["away"]["code"]
+        for g in m.get("goals", []):
+            if not g.get("player"): continue
+            side_code = h if g.get("side") == "home" else a
+            confirmed.setdefault(side_code, set()).add(norm(g["player"]))
+            if g.get("assist"):
+                confirmed.setdefault(side_code, set()).add(norm(g["assist"]))
+    return confirmed
+
+
 def build_preview(schedule, analysis, stars, team_meta, templates, rosters=None):
     overrides = load_overrides()
+    confirmed_by_team = compute_confirmed_starters(schedule)
     seen_keys = set()
     used_override_keys = set()
     matches_out = []
@@ -733,7 +783,7 @@ def build_preview(schedule, analysis, stars, team_meta, templates, rosters=None)
         stage = m.get("stage", "group")
 
         # Group: only marquee close-rank matches
-        if stage == "group" and not is_marquee_group_match(h_code, a_code, analysis):
+        if stage == "group" and not is_marquee_group_match(h_code, a_code, analysis, stars):
             continue
         # Knockout: include all confirmed matches
 
@@ -754,7 +804,7 @@ def build_preview(schedule, analysis, stars, team_meta, templates, rosters=None)
                 entry["stage"] = STAGE_LABEL_ZH.get(stage, stage)
             matches_out.append(entry)
         else:
-            matches_out.append(gen_match_preview(m, analysis, stars, team_meta, templates, rosters=rosters))
+            matches_out.append(gen_match_preview(m, analysis, stars, team_meta, templates, rosters=rosters, confirmed_by_team=confirmed_by_team))
 
     matches_out.sort(key=lambda x: (x.get("_kickoffUtc") or "", x.get("_matchNo", 0)))
 
