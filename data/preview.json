@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-06-27T04:14:57.022873+00:00",
+  "_generatedAt": "2026-06-27T07:27:05.378079+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -5631,6 +5631,472 @@
           },
           {
             "score": "2-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AUS_EGY_88",
+      "_auto": true,
+      "_kickoffUtc": "2026-07-03T18:00:00Z",
+      "_matchNo": 88,
+      "title": "澳洲 🇦🇺 vs 🇪🇬 埃及",
+      "shortTitle": "AUS vs EGY",
+      "subtitle": "FIFA 排名 #26 vs #33",
+      "stage": "32 強淘汰賽",
+      "venue": "Dallas Stadium (Dallas",
+      "history": [],
+      "home": {
+        "code": "AUS",
+        "name": "澳洲",
+        "flag": "🇦🇺",
+        "color": "#ffcd00",
+        "colorAlt": "#ffcd00",
+        "manager": "Popovic",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "瑞安",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "M. DEGENEK",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 21,
+            "name": "伯吉斯",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 3,
+            "name": "A. CIRCATI",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 16,
+            "name": "貝希奇",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 22,
+            "name": "歐文",
+            "pos": "DM",
+            "x": 38,
+            "y": 38
+          },
+          {
+            "n": 8,
+            "name": "C. METCALFE",
+            "pos": "DM",
+            "x": 38,
+            "y": 62
+          },
+          {
+            "n": 11,
+            "name": "馬比爾",
+            "pos": "RW",
+            "x": 56,
+            "y": 18
+          },
+          {
+            "n": 10,
+            "name": "赫魯斯蒂奇",
+            "pos": "AM",
+            "x": 56,
+            "y": 50
+          },
+          {
+            "n": 7,
+            "name": "M. LECKIE",
+            "pos": "LW",
+            "x": 56,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "M. TOURE",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              78,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              72,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              38
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              22,
+              18
+            ],
+            "to": [
+              56,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 48,
+            "y": 30,
+            "w": 26,
+            "h": 40,
+            "label": "前腰活動區",
+            "kind": "create"
+          },
+          {
+            "x": 50,
+            "y": 8,
+            "w": 24,
+            "h": 22,
+            "label": "右翼壓上",
+            "kind": "wing"
+          }
+        ],
+        "stats": {
+          "attack": 6.0,
+          "defense": 7.0,
+          "midfield": 6.5,
+          "fitness": 8.0,
+          "experience": 6.5,
+          "stars": 5.5
+        }
+      },
+      "away": {
+        "code": "EGY",
+        "name": "埃及",
+        "flag": "🇪🇬",
+        "color": "#ce1126",
+        "colorAlt": "#ce1126",
+        "manager": "Hossam Hassan",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "M. ELSHENAW",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 3,
+            "name": "哈尼",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 2,
+            "name": "Y. IBRAHIM",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "H. ABDELMAG",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "RAMY RABIA",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 7,
+            "name": "特雷澤蓋",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 8,
+            "name": "E. ASHOUR",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "M. ZICO",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 10,
+            "name": "薩拉赫",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 9,
+            "name": "H. ABDELKAR",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 22,
+            "name": "馬穆什",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              50
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              44,
+              82
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 24,
+            "y": 8,
+            "w": 26,
+            "h": 22,
+            "label": "右路衝擊",
+            "kind": "wing"
+          },
+          {
+            "x": 24,
+            "y": 70,
+            "w": 26,
+            "h": 22,
+            "label": "左路衝擊",
+            "kind": "wing"
+          }
+        ],
+        "stats": {
+          "attack": 7.0,
+          "defense": 6.5,
+          "midfield": 6.5,
+          "fitness": 7.5,
+          "experience": 7.0,
+          "stars": 9.0
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "away",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：AUS 1-0 EGY"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "扳平比分",
+          "score": "1-1"
+        },
+        {
+          "min": 78,
+          "side": "away",
+          "type": "goal",
+          "text": "反超比分，奪回領先",
+          "score": "1-2"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：AUS 1-2 EGY"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "AUS #11 (RW)",
+          "away": "海加齊",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "AUS #21 (CB)",
+          "away": "薩拉",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "AUS #22 (DM)",
+          "away": "哈邁德",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "邊路傳中與中路滲透並進",
+          "雙後腰一攻一守",
+          "定位球是重要得分手段"
+        ],
+        "away": [
+          "邊路傳中與中路滲透並進",
+          "雙後腰一攻一守",
+          "定位球是重要得分手段"
+        ]
+      },
+      "predict": {
+        "score": "1-2",
+        "confidence": 54,
+        "winner": "away",
+        "reasoning": "客隊在球星佔優 (3.5)；客隊在進攻佔優 (1.0)，預期客隊取勝。",
+        "scenarios": [
+          {
+            "score": "1-2",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "0-1",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-2",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
             "prob": 14,
             "desc": "可能情境"
           }
