@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T23:22:32.884492+00:00",
+  "generatedAt": "2026-06-27T04:14:56.998140+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4125,7 +4125,7 @@
       "group": "G",
       "utc": "2026-06-27T03:00:00Z",
       "localKick": "2026-06-26T20:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Seattle Stadium",
       "city": "Seattle",
@@ -4138,7 +4138,7 @@
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -4146,7 +4146,7 @@
         "code": "IRN",
         "name": "IR Iran",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -4154,7 +4154,25 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "5'",
+          "side": "home",
+          "team": "43855",
+          "player": "Mahmoud Saber",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Trezeguet"
+        },
+        {
+          "minute": "14'",
+          "side": "away",
+          "team": "43817",
+          "player": "Ramin Rezaeian",
+          "score": "1-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021481",
@@ -4164,7 +4182,7 @@
       "group": "G",
       "utc": "2026-06-27T03:00:00Z",
       "localKick": "2026-06-26T20:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
@@ -4177,7 +4195,7 @@
         "code": "NZL",
         "name": "New Zealand",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4185,7 +4203,7 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "winner": null,
@@ -4193,7 +4211,24 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "28'",
+          "side": "away",
+          "team": "43935",
+          "player": "Leandro Trossard",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "50'",
+          "side": "away",
+          "team": "43935",
+          "player": "Leandro Trossard",
+          "score": "0-2",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021485",
@@ -4203,8 +4238,8 @@
       "group": "H",
       "utc": "2026-06-27T00:00:00Z",
       "localKick": "2026-06-26T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Houston Stadium",
       "city": "Houston",
       "tz": "",
@@ -4216,7 +4251,7 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4224,11 +4259,11 @@
         "code": "KSA",
         "name": "Saudi Arabia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "68278",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
@@ -4242,8 +4277,8 @@
       "group": "H",
       "utc": "2026-06-27T00:00:00Z",
       "localKick": "2026-06-26T18:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Guadalajara Stadium",
       "city": "Guadalajara",
       "tz": "",
@@ -4255,7 +4290,7 @@
         "code": "URU",
         "name": "Uruguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4263,15 +4298,25 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43969",
+      "attendance": "45065",
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "42'",
+          "side": "away",
+          "team": "43969",
+          "player": "Alex Baena",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Marcos Llorente"
+        }
+      ]
     },
     {
       "id": "400021508",
@@ -4573,10 +4618,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43928",
+        "code": "PAR",
+        "name": "Paraguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
         "score": null,
         "pen": null
       },
@@ -4696,10 +4741,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43970",
+        "code": "SWE",
+        "name": "Sweden",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
         "score": null,
         "pen": null
       },
@@ -4975,10 +5020,10 @@
       "placeholderHome": "1H",
       "placeholderAway": "2J",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "score": null,
         "pen": null
       },
@@ -5065,10 +5110,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43850",
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
         "score": null,
         "pen": null
       },
@@ -6513,41 +6558,41 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "P": 2,
-        "W": 1,
+        "P": 3,
+        "W": 2,
         "D": 1,
         "L": 0,
-        "GF": 4,
+        "GF": 5,
         "GA": 0,
-        "GD": 4,
-        "Pts": 4
-      },
-      {
-        "id": "43930",
-        "code": "URU",
-        "name": "Uruguay",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
-        "P": 2,
-        "W": 0,
-        "D": 2,
-        "L": 0,
-        "GF": 3,
-        "GA": 3,
-        "GD": 0,
-        "Pts": 2
+        "GD": 5,
+        "Pts": 7
       },
       {
         "id": "43850",
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "P": 2,
+        "P": 3,
         "W": 0,
-        "D": 2,
+        "D": 3,
         "L": 0,
         "GF": 2,
         "GA": 2,
         "GD": 0,
+        "Pts": 3
+      },
+      {
+        "id": "43930",
+        "code": "URU",
+        "name": "Uruguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/URU",
+        "P": 3,
+        "W": 0,
+        "D": 2,
+        "L": 1,
+        "GF": 3,
+        "GA": 4,
+        "GD": -1,
         "Pts": 2
       },
       {
@@ -6555,14 +6600,14 @@
         "code": "KSA",
         "name": "Saudi Arabia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/KSA",
-        "P": 2,
+        "P": 3,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 1,
         "GF": 1,
         "GA": 5,
         "GD": -4,
-        "Pts": 1
+        "Pts": 2
       }
     ],
     "G": [
@@ -6571,55 +6616,55 @@
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "P": 2,
+        "P": 3,
         "W": 1,
-        "D": 1,
-        "L": 0,
-        "GF": 4,
-        "GA": 2,
-        "GD": 2,
-        "Pts": 4
-      },
-      {
-        "id": "43817",
-        "code": "IRN",
-        "name": "IR Iran",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
-        "P": 2,
-        "W": 0,
         "D": 2,
         "L": 0,
-        "GF": 2,
-        "GA": 2,
-        "GD": 0,
-        "Pts": 2
+        "GF": 5,
+        "GA": 3,
+        "GD": 2,
+        "Pts": 5
       },
       {
         "id": "43935",
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "P": 2,
-        "W": 0,
+        "P": 3,
+        "W": 1,
         "D": 2,
         "L": 0,
-        "GF": 1,
+        "GF": 3,
         "GA": 1,
+        "GD": 2,
+        "Pts": 5
+      },
+      {
+        "id": "43817",
+        "code": "IRN",
+        "name": "IR Iran",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/IRN",
+        "P": 3,
+        "W": 0,
+        "D": 3,
+        "L": 0,
+        "GF": 3,
+        "GA": 3,
         "GD": 0,
-        "Pts": 2
+        "Pts": 3
       },
       {
         "id": "43978",
         "code": "NZL",
         "name": "New Zealand",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NZL",
-        "P": 2,
+        "P": 3,
         "W": 0,
         "D": 1,
-        "L": 1,
+        "L": 2,
         "GF": 3,
-        "GA": 5,
-        "GD": -2,
+        "GA": 7,
+        "GD": -4,
         "Pts": 1
       }
     ],

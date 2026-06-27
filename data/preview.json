@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-06-26T23:22:32.898799+00:00",
+  "_generatedAt": "2026-06-27T04:14:57.022873+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -3308,6 +3308,472 @@
       }
     },
     {
+      "id": "GER_PAR_74",
+      "_auto": true,
+      "_kickoffUtc": "2026-06-29T20:30:00Z",
+      "_matchNo": 74,
+      "title": "德國 🇩🇪 vs 🇵🇾 巴拉圭",
+      "shortTitle": "GER vs PAR",
+      "subtitle": "FIFA 排名 #9 vs #41",
+      "stage": "32 強淘汰賽",
+      "venue": "Boston Stadium (Boston",
+      "history": [],
+      "home": {
+        "code": "GER",
+        "name": "德國",
+        "flag": "🇩🇪",
+        "color": "#000000",
+        "colorAlt": "#000000",
+        "manager": "Nagelsmann",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "諾伊爾",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 6,
+            "name": "基米希",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 15,
+            "name": "施洛特貝克",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 2,
+            "name": "A. RUEDIGER",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 22,
+            "name": "勞姆",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 5,
+            "name": "A. PAVLOVIC",
+            "pos": "DM",
+            "x": 38,
+            "y": 38
+          },
+          {
+            "n": 8,
+            "name": "L. GORETZKA",
+            "pos": "DM",
+            "x": 38,
+            "y": 62
+          },
+          {
+            "n": 10,
+            "name": "穆夏拉",
+            "pos": "RW",
+            "x": 56,
+            "y": 18
+          },
+          {
+            "n": 17,
+            "name": "維爾茨",
+            "pos": "AM",
+            "x": 56,
+            "y": 50
+          },
+          {
+            "n": 7,
+            "name": "哈弗茨",
+            "pos": "LW",
+            "x": 56,
+            "y": 82
+          },
+          {
+            "n": 11,
+            "name": "N. WOLTEMAD",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              78,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              72,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              38
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              22,
+              18
+            ],
+            "to": [
+              56,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 32,
+            "y": 8,
+            "w": 30,
+            "h": 84,
+            "label": "高位逼搶區",
+            "kind": "press"
+          },
+          {
+            "x": 50,
+            "y": 30,
+            "w": 24,
+            "h": 40,
+            "label": "前腰串聯區",
+            "kind": "create"
+          }
+        ],
+        "stats": {
+          "attack": 8.5,
+          "defense": 7.5,
+          "midfield": 9.0,
+          "fitness": 8.0,
+          "experience": 8.5,
+          "stars": 9.0
+        }
+      },
+      "away": {
+        "code": "PAR",
+        "name": "巴拉圭",
+        "flag": "🇵🇾",
+        "color": "#d52b1e",
+        "colorAlt": "#d52b1e",
+        "manager": "Alfaro",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "G. FERNANDE",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "G. VELAZQUE",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "阿爾德雷特",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "J. CACERES",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 6,
+            "name": "阿隆索",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 14,
+            "name": "庫巴斯",
+            "pos": "DM",
+            "x": 62,
+            "y": 38
+          },
+          {
+            "n": 7,
+            "name": "Ramon SOSA",
+            "pos": "DM",
+            "x": 62,
+            "y": 62
+          },
+          {
+            "n": 19,
+            "name": "恩西索",
+            "pos": "RW",
+            "x": 44,
+            "y": 18
+          },
+          {
+            "n": 8,
+            "name": "D. GOMEZ",
+            "pos": "AM",
+            "x": 44,
+            "y": 50
+          },
+          {
+            "n": 16,
+            "name": "博巴迪拉",
+            "pos": "LW",
+            "x": 44,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "薩納夫里亞",
+            "pos": "ST",
+            "x": 30,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              22,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              28,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              38
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              78,
+              18
+            ],
+            "to": [
+              44,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 66,
+            "y": 18,
+            "w": 26,
+            "h": 64,
+            "label": "雙後腰屏障",
+            "kind": "defense"
+          },
+          {
+            "x": 14,
+            "y": 28,
+            "w": 28,
+            "h": 44,
+            "label": "反擊出球區",
+            "kind": "press"
+          }
+        ],
+        "stats": {
+          "attack": 5.5,
+          "defense": 7.0,
+          "midfield": 6.0,
+          "fitness": 7.0,
+          "experience": 6.0,
+          "stars": 5.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "home",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：GER 1-0 PAR"
+        },
+        {
+          "min": 68,
+          "side": "home",
+          "type": "goal",
+          "text": "擴大領先",
+          "score": "2-0"
+        },
+        {
+          "min": 85,
+          "side": "home",
+          "type": "goal",
+          "text": "鎖定勝局",
+          "score": "3-0"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：GER 3-0 PAR"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "哈弗茨",
+          "away": "PAR #3 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "施洛特貝克",
+          "away": "PAR #19 (RW)",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "穆夏拉",
+          "away": "PAR #14 (DM)",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "邊鋒突破到底線傳中",
+          "前腰直塞中鋒身後",
+          "中場控制是壓制比賽的核心"
+        ],
+        "away": [
+          "低位防守等待反擊",
+          "邊鋒快速轉移找中鋒",
+          "角球與任意球是重要得分手段"
+        ]
+      },
+      "predict": {
+        "score": "3-0",
+        "confidence": 69,
+        "winner": "home",
+        "reasoning": "主隊在球星佔優 (3.5)；主隊在進攻佔優 (3.0)，預期主隊取勝。",
+        "scenarios": [
+          {
+            "score": "3-0",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "2-0",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-1",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "4-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
       "id": "NED_MAR_75",
       "_auto": true,
       "_kickoffUtc": "2026-06-30T01:00:00Z",
@@ -4240,6 +4706,472 @@
       }
     },
     {
+      "id": "FRA_SWE_77",
+      "_auto": true,
+      "_kickoffUtc": "2026-06-30T21:00:00Z",
+      "_matchNo": 77,
+      "title": "法國 🇫🇷 vs 🇸🇪 瑞典",
+      "shortTitle": "FRA vs SWE",
+      "subtitle": "FIFA 排名 #3 vs #35",
+      "stage": "32 強淘汰賽",
+      "venue": "New York/New Jersey Stadium (New Jersey",
+      "history": [],
+      "home": {
+        "code": "FRA",
+        "name": "法國",
+        "flag": "🇫🇷",
+        "color": "#0055a4",
+        "colorAlt": "#0055a4",
+        "manager": "Deschamps",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "B. SAMBA",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "Malo GUSTO",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 4,
+            "name": "烏帕梅卡諾",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 17,
+            "name": "薩利巴",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 3,
+            "name": "L. Digne",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 6,
+            "name": "Manu KONE",
+            "pos": "DM",
+            "x": 38,
+            "y": 38
+          },
+          {
+            "n": 8,
+            "name": "A. TCHOUAME",
+            "pos": "DM",
+            "x": 38,
+            "y": 62
+          },
+          {
+            "n": 7,
+            "name": "O. DEMBELE",
+            "pos": "RW",
+            "x": 56,
+            "y": 18
+          },
+          {
+            "n": 11,
+            "name": "奧利斯",
+            "pos": "AM",
+            "x": 56,
+            "y": 50
+          },
+          {
+            "n": 12,
+            "name": "巴爾科拉",
+            "pos": "LW",
+            "x": 56,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "M. THURAM",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              78,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              72,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              38
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              22,
+              18
+            ],
+            "to": [
+              56,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 32,
+            "y": 8,
+            "w": 30,
+            "h": 84,
+            "label": "高位逼搶區",
+            "kind": "press"
+          },
+          {
+            "x": 50,
+            "y": 30,
+            "w": 24,
+            "h": 40,
+            "label": "前腰串聯區",
+            "kind": "create"
+          }
+        ],
+        "stats": {
+          "attack": 9.5,
+          "defense": 8.0,
+          "midfield": 8.5,
+          "fitness": 8.5,
+          "experience": 9.0,
+          "stars": 10.0
+        }
+      },
+      "away": {
+        "code": "SWE",
+        "name": "瑞典",
+        "flag": "🇸🇪",
+        "color": "#fecc00",
+        "colorAlt": "#fecc00",
+        "manager": "Tomasson",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "J. ZETTERST",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "G. LAGERBIE",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 4,
+            "name": "海恩",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 3,
+            "name": "V. LINDELOF",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "G. GUDMUNDS",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 7,
+            "name": "L. BERGVALL",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 10,
+            "name": "B. NYGREN",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 13,
+            "name": "Ken SEMA",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 11,
+            "name": "埃蘭加",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 9,
+            "name": "伊薩克",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 17,
+            "name": "V. GYOKERES",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              50
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              44,
+              82
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 24,
+            "y": 8,
+            "w": 26,
+            "h": 22,
+            "label": "右路衝擊",
+            "kind": "wing"
+          },
+          {
+            "x": 24,
+            "y": 70,
+            "w": 26,
+            "h": 22,
+            "label": "左路衝擊",
+            "kind": "wing"
+          }
+        ],
+        "stats": {
+          "attack": 7.0,
+          "defense": 6.5,
+          "midfield": 6.5,
+          "fitness": 7.0,
+          "experience": 7.0,
+          "stars": 7.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "home",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：FRA 1-0 SWE"
+        },
+        {
+          "min": 68,
+          "side": "home",
+          "type": "goal",
+          "text": "擴大領先",
+          "score": "2-0"
+        },
+        {
+          "min": 85,
+          "side": "home",
+          "type": "goal",
+          "text": "鎖定勝局",
+          "score": "3-0"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：FRA 3-0 SWE"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "姆巴佩",
+          "away": "SWE #4 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "薩利巴",
+          "away": "SWE #11 (RW)",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "楚阿梅尼",
+          "away": "SWE #7 (CM)",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "邊鋒突破到底線傳中",
+          "前腰直塞中鋒身後",
+          "中場控制是壓制比賽的核心"
+        ],
+        "away": [
+          "邊路傳中找中鋒搶點",
+          "中場輪轉支援防守",
+          "鋒線終結效率極高"
+        ]
+      },
+      "predict": {
+        "score": "3-0",
+        "confidence": 66,
+        "winner": "home",
+        "reasoning": "主隊在進攻佔優 (2.5)；主隊在球星佔優 (2.5)，預期主隊取勝。",
+        "scenarios": [
+          {
+            "score": "3-0",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "2-0",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-1",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "4-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
       "id": "USA_BIH_81",
       "_auto": true,
       "_kickoffUtc": "2026-07-02T00:00:00Z",
@@ -4699,6 +5631,472 @@
           },
           {
             "score": "2-0",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ARG_CPV_86",
+      "_auto": true,
+      "_kickoffUtc": "2026-07-03T22:00:00Z",
+      "_matchNo": 86,
+      "title": "阿根廷 🇦🇷 vs 🇨🇻 維德角",
+      "shortTitle": "ARG vs CPV",
+      "subtitle": "FIFA 排名 #1 vs #71",
+      "stage": "32 強淘汰賽",
+      "venue": "Miami Stadium (Miami",
+      "history": [],
+      "home": {
+        "code": "ARG",
+        "name": "阿根廷",
+        "flag": "🇦🇷",
+        "color": "#74acdf",
+        "colorAlt": "#74acdf",
+        "manager": "Scaloni",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "Juan MUSSO",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 26,
+            "name": "莫利納",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 13,
+            "name": "羅梅羅",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 3,
+            "name": "塔格里亞費高",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 4,
+            "name": "G. MONTIEL",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 20,
+            "name": "麥亞利斯特",
+            "pos": "CM",
+            "x": 40,
+            "y": 30
+          },
+          {
+            "n": 5,
+            "name": "帕雷德斯",
+            "pos": "DM",
+            "x": 40,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "M. SENESI",
+            "pos": "CM",
+            "x": 40,
+            "y": 70
+          },
+          {
+            "n": 6,
+            "name": "L. MARTINEZ",
+            "pos": "RW",
+            "x": 60,
+            "y": 18
+          },
+          {
+            "n": 9,
+            "name": "J. ALVAREZ",
+            "pos": "ST",
+            "x": 68,
+            "y": 50
+          },
+          {
+            "n": 10,
+            "name": "梅西",
+            "pos": "LW",
+            "x": 60,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              60,
+              18
+            ],
+            "to": [
+              78,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              68,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              50
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              56,
+              82
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 50,
+            "y": 8,
+            "w": 26,
+            "h": 22,
+            "label": "右路衝擊",
+            "kind": "wing"
+          },
+          {
+            "x": 50,
+            "y": 70,
+            "w": 26,
+            "h": 22,
+            "label": "左路衝擊",
+            "kind": "wing"
+          }
+        ],
+        "stats": {
+          "attack": 9.0,
+          "defense": 8.0,
+          "midfield": 9.0,
+          "fitness": 8.0,
+          "experience": 9.5,
+          "stars": 10.0
+        }
+      },
+      "away": {
+        "code": "CPV",
+        "name": "維德角",
+        "flag": "🇨🇻",
+        "color": "#003893",
+        "colorAlt": "#003893",
+        "manager": "Bubista",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "沃辛哈",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "斯托皮拉",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "D. BORGES",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "PICO LOPES",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "L. COSTA",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 20,
+            "name": "門德斯",
+            "pos": "CM",
+            "x": 60,
+            "y": 30
+          },
+          {
+            "n": 7,
+            "name": "卡布拉爾",
+            "pos": "DM",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "n": 6,
+            "name": "KEVIN PINA",
+            "pos": "CM",
+            "x": 60,
+            "y": 70
+          },
+          {
+            "n": 11,
+            "name": "羅德里格斯",
+            "pos": "RW",
+            "x": 40,
+            "y": 18
+          },
+          {
+            "n": 9,
+            "name": "本奇莫爾",
+            "pos": "ST",
+            "x": 32,
+            "y": 50
+          },
+          {
+            "n": 19,
+            "name": "D. LIVRAMEN",
+            "pos": "LW",
+            "x": 40,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              40,
+              18
+            ],
+            "to": [
+              22,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              32,
+              50
+            ],
+            "to": [
+              15,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              50
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              44,
+              82
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 24,
+            "y": 8,
+            "w": 26,
+            "h": 22,
+            "label": "右路衝擊",
+            "kind": "wing"
+          },
+          {
+            "x": 24,
+            "y": 70,
+            "w": 26,
+            "h": 22,
+            "label": "左路衝擊",
+            "kind": "wing"
+          }
+        ],
+        "stats": {
+          "attack": 5.5,
+          "defense": 5.0,
+          "midfield": 5.5,
+          "fitness": 6.5,
+          "experience": 4.0,
+          "stars": 5.0
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "home",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：ARG 1-0 CPV"
+        },
+        {
+          "min": 68,
+          "side": "home",
+          "type": "goal",
+          "text": "擴大領先",
+          "score": "2-0"
+        },
+        {
+          "min": 85,
+          "side": "home",
+          "type": "goal",
+          "text": "鎖定勝局",
+          "score": "3-0"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：ARG 3-0 CPV"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "勞塔羅",
+          "away": "CPV #3 (CB)",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "羅梅羅",
+          "away": "CPV #11 (RW)",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "梅西",
+          "away": "CPV #20 (CM)",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "邊路傳中找中鋒搶點",
+          "中場輪轉支援防守",
+          "鋒線終結效率極高"
+        ],
+        "away": [
+          "邊路傳中找中鋒搶點",
+          "中場輪轉支援防守",
+          "邊後衛伺機壓上助攻"
+        ]
+      },
+      "predict": {
+        "score": "3-0",
+        "confidence": 79,
+        "winner": "home",
+        "reasoning": "主隊在經驗佔優 (5.5)；主隊在球星佔優 (5.0)，預期主隊取勝。",
+        "scenarios": [
+          {
+            "score": "3-0",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "2-0",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-1",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "4-0",
             "prob": 14,
             "desc": "可能情境"
           }
