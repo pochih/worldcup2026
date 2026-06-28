@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T19:47:10.098738+00:00",
+  "generatedAt": "2026-06-28T21:18:42.757754+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4765,8 +4765,8 @@
       "group": "",
       "utc": "2026-06-28T19:00:00Z",
       "localKick": "2026-06-28T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -4786,17 +4786,26 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43899",
+      "attendance": "69237",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "90'+2'",
+          "side": "away",
+          "team": "43899",
+          "player": "Stephen Eustaquio",
+          "score": "0-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021513",
@@ -5471,10 +5480,10 @@
       "placeholderHome": "W73",
       "placeholderAway": "W75",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43899",
+        "code": "CAN",
+        "name": "Canada",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
         "score": null,
         "pen": null
       },
