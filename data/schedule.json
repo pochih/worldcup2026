@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T18:17:04.765884+00:00",
+  "generatedAt": "2026-06-28T19:47:10.098738+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4765,7 +4765,7 @@
       "group": "",
       "utc": "2026-06-28T19:00:00Z",
       "localKick": "2026-06-28T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
@@ -4778,7 +4778,7 @@
         "code": "RSA",
         "name": "South Africa",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/RSA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4786,7 +4786,7 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
