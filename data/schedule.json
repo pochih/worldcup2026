@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T14:18:46.757308+00:00",
+  "generatedAt": "2026-06-29T17:47:46.184641+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4897,7 +4897,7 @@
       "group": "",
       "utc": "2026-06-29T17:00:00Z",
       "localKick": "2026-06-29T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Houston Stadium",
       "city": "Houston",
@@ -4910,7 +4910,7 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4918,7 +4918,7 @@
         "code": "JPN",
         "name": "Japan",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/JPN",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -4928,7 +4928,16 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "29'",
+          "side": "away",
+          "team": "43819",
+          "player": "Kaishu Sano",
+          "score": "0-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021523",
