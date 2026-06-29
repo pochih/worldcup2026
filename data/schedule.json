@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T20:14:42.308741+00:00",
+  "generatedAt": "2026-06-29T21:44:00.489828+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4815,7 +4815,7 @@
       "group": "",
       "utc": "2026-06-29T20:30:00Z",
       "localKick": "2026-06-29T16:30:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Boston Stadium",
       "city": "Boston",
@@ -4828,7 +4828,7 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -4836,7 +4836,7 @@
         "code": "PAR",
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -4846,7 +4846,17 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "42'",
+          "side": "away",
+          "team": "43928",
+          "player": "Julio Enciso",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Matias Galarza"
+        }
+      ]
     },
     {
       "id": "400021522",
