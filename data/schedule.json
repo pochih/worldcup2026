@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T17:47:46.184641+00:00",
+  "generatedAt": "2026-06-29T20:14:42.308741+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4897,8 +4897,8 @@
       "group": "",
       "utc": "2026-06-29T17:00:00Z",
       "localKick": "2026-06-29T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Houston Stadium",
       "city": "Houston",
       "tz": "",
@@ -4910,7 +4910,7 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -4921,8 +4921,8 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43924",
+      "attendance": "68777",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -4936,6 +4936,24 @@
           "player": "Kaishu Sano",
           "score": "0-1",
           "type": "G"
+        },
+        {
+          "minute": "56'",
+          "side": "home",
+          "team": "43924",
+          "player": "Casemiro",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Gabriel Magalhaes"
+        },
+        {
+          "minute": "90'+5'",
+          "side": "home",
+          "team": "43924",
+          "player": "Gabriel Martinelli",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Bruno Guimaraes"
         }
       ]
     },
@@ -5530,10 +5548,10 @@
       "placeholderHome": "W76",
       "placeholderAway": "W78",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43924",
+        "code": "BRA",
+        "name": "Brazil",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
         "score": null,
         "pen": null
       },
