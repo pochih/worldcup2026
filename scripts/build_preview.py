@@ -849,6 +849,22 @@ def main():
     rosters_path = DATA / "rosters.json"
     rosters = json.loads(rosters_path.read_text(encoding="utf-8")) if rosters_path.exists() else {}
 
+    # Overlay starters_seed.json: when a team has a confirmed 11-man seed
+    # (handcrafted or FIFA-derived), let it OVERRIDE rosters' players list
+    # entirely so make_lineup picks the exact 11 starters by exact pos match.
+    seed_path = DATA / "starters_seed.json"
+    if seed_path.exists():
+        seed = json.loads(seed_path.read_text(encoding="utf-8"))
+        for code, payload in seed.items():
+            if code == "_note" or not isinstance(payload, dict):
+                continue
+            players = payload.get("players") or []
+            if len(players) >= 11:
+                rosters[code] = {
+                    "formation": payload.get("formation") or (rosters.get(code, {}).get("formation") or "4-3-3"),
+                    "players": players,
+                }
+
     preview = build_preview(schedule, analysis, stars, team_meta, templates, rosters=rosters)
     out = DATA / "preview.json"
     out.write_text(json.dumps(preview, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -1,0 +1,285 @@
+{
+  "JPN": {
+    "405530": {
+      "starts": 3,
+      "name": "Zion Suzuki",
+      "matches": [
+        "NED-JPN",
+        "TUN-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "448557": {
+      "starts": 3,
+      "name": "Daichi KAMADA",
+      "matches": [
+        "NED-JPN",
+        "TUN-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "405522": {
+      "starts": 3,
+      "name": "Keito NAKAMURA",
+      "matches": [
+        "NED-JPN",
+        "TUN-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "403274": {
+      "starts": 3,
+      "name": "Hiroki ITO",
+      "matches": [
+        "NED-JPN",
+        "TUN-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "430413": {
+      "starts": 3,
+      "name": "Ayase UEDA",
+      "matches": [
+        "NED-JPN",
+        "TUN-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "391646": {
+      "starts": 2,
+      "name": "Ritsu DOAN",
+      "matches": [
+        "NED-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "403304": {
+      "starts": 1,
+      "name": "Takefusa KUBO",
+      "matches": [
+        "NED-JPN"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "403289": {
+      "starts": 1,
+      "name": "Takehiro TOMIYASU",
+      "matches": [
+        "TUN-JPN"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "395321": {
+      "starts": 1,
+      "name": "Junya ITO",
+      "matches": [
+        "TUN-JPN"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "400511": {
+      "starts": 1,
+      "name": "Kou ITAKURA",
+      "matches": [
+        "TUN-JPN"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "479294": {
+      "starts": 1,
+      "name": "Kaishu SANO",
+      "matches": [
+        "TUN-JPN"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "400514": {
+      "starts": 2,
+      "name": "Ao TANAKA",
+      "matches": [
+        "TUN-JPN",
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "430407": {
+      "starts": 1,
+      "name": "Daizen MAEDA",
+      "matches": [
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "405528": {
+      "starts": 1,
+      "name": "Yukinari SUGAWARA",
+      "matches": [
+        "JPN-SWE"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    }
+  },
+  "BRA": {
+    "367981": {
+      "starts": 3,
+      "name": "DOUGLAS SANTOS",
+      "matches": [
+        "BRA-MAR",
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "430594": {
+      "starts": 1,
+      "name": "ROGER IBANEZ",
+      "matches": [
+        "BRA-MAR"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "433872": {
+      "starts": 2,
+      "name": "RAPHINHA",
+      "matches": [
+        "BRA-MAR",
+        "BRA-HAI"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "519836": {
+      "starts": 1,
+      "name": "IGOR THIAGO",
+      "matches": [
+        "BRA-MAR"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "411726": {
+      "starts": 3,
+      "name": "LUCAS PAQUETA",
+      "matches": [
+        "BRA-MAR",
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "430605": {
+      "starts": 3,
+      "name": "BRUNO GUIMARAES",
+      "matches": [
+        "BRA-MAR",
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "405742": {
+      "starts": 3,
+      "name": "VINICIUS JUNIOR",
+      "matches": [
+        "BRA-MAR",
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "308386": {
+      "starts": 3,
+      "name": "CASEMIRO",
+      "matches": [
+        "BRA-MAR",
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "332946": {
+      "starts": 1,
+      "name": "MARQUINHOS",
+      "matches": [
+        "BRA-MAR"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "430601": {
+      "starts": 2,
+      "name": "GABRIEL MAGALHAES",
+      "matches": [
+        "BRA-MAR",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "430609": {
+      "starts": 2,
+      "name": "MATHEUS CUNHA",
+      "matches": [
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "335656": {
+      "starts": 2,
+      "name": "DANILO",
+      "matches": [
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "308370": {
+      "starts": 2,
+      "name": "ALISSON",
+      "matches": [
+        "BRA-HAI",
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    },
+    "475036": {
+      "starts": 1,
+      "name": "RAYAN",
+      "matches": [
+        "SCO-BRA"
+      ],
+      "fifa_pos": "",
+      "shirt": ""
+    }
+  }
+}
