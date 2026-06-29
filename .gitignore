@@ -11,3 +11,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Local autoupdate state (per-machine, not synced)
+.ko_autoupdate_state.json
