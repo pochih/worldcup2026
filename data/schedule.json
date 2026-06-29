@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T21:44:00.489828+00:00",
+  "generatedAt": "2026-06-29T23:15:13.158355+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4828,7 +4828,7 @@
         "code": "GER",
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -4840,7 +4840,7 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "63945",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -4855,6 +4855,15 @@
           "score": "0-1",
           "type": "G",
           "assist": "Matias Galarza"
+        },
+        {
+          "minute": "54'",
+          "side": "home",
+          "team": "43948",
+          "player": "Kai Havertz",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Florian Wirtz"
         }
       ]
     },
