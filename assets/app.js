@@ -407,6 +407,20 @@ function renderBracket() {
       sf:  [102],
     },
   };
+  // Pair map: R32 winners advance to which R16, and so on. Used to draw
+  // bracket connectors between rounds. Format: child_no → parent_no.
+  const PARENT = {
+    // R32 → R16 (left)
+    74:89, 77:89,  73:90, 75:90,  83:93, 84:93,  81:94, 82:94,
+    // R32 → R16 (right)
+    76:91, 78:91,  79:92, 80:92,  86:95, 88:95,  85:96, 87:96,
+    // R16 → QF
+    89:97, 90:97,  93:98, 94:98,  91:99, 92:99,  95:100, 96:100,
+    // QF → SF
+    97:101, 98:101,  99:102, 100:102,
+    // SF → Final
+    101:104, 102:104,
+  };
   const byNo = {};
   for (const m of DATA.matches) byNo[m.no] = m;
 
@@ -424,6 +438,7 @@ function renderBracket() {
   }
 
   const html = `
+    <svg class="br-svg-overlay" aria-hidden="true"></svg>
     ${colHtml("32 強", LAYOUT.left.r32, "left", "r32")}
     ${colHtml("16 強", LAYOUT.left.r16, "left", "r16")}
     ${colHtml("8 強", LAYOUT.left.qf,  "left", "qf")}
@@ -439,7 +454,103 @@ function renderBracket() {
     ${colHtml("16 強", LAYOUT.right.r16, "right", "r16")}
     ${colHtml("32 強", LAYOUT.right.r32, "right", "r32")}
   `;
-  document.getElementById("bracket").innerHTML = html;
+  const root = document.getElementById("bracket");
+  root.innerHTML = html;
+
+  // Mark cards with data-match-no so SVG renderer can find them
+  root.querySelectorAll(".bracket-match").forEach(el => {
+    const noTxt = (el.querySelector(".br-meta-top")?.textContent || "").match(/#(\d+)/);
+    if (noTxt) el.dataset.matchNo = noTxt[1];
+  });
+
+  // Draw connectors AFTER layout settles
+  if (window.__brDrawTimer) cancelAnimationFrame(window.__brDrawTimer);
+  window.__brDrawTimer = requestAnimationFrame(() => drawBracketConnectors(root, PARENT, byNo));
+  // Redraw on resize
+  if (!window.__brResizeBound) {
+    window.__brResizeBound = true;
+    window.addEventListener("resize", () => {
+      if (window.__brDrawTimer) cancelAnimationFrame(window.__brDrawTimer);
+      window.__brDrawTimer = requestAnimationFrame(() => {
+        const r = document.getElementById("bracket");
+        if (r && r.querySelector(".br-svg-overlay")) drawBracketConnectors(r, PARENT, byNo);
+      });
+    });
+  }
+}
+
+function drawBracketConnectors(root, PARENT, byNo) {
+  const svg = root.querySelector(".br-svg-overlay");
+  if (!svg) return;
+  const rect = root.getBoundingClientRect();
+  svg.setAttribute("width", String(rect.width));
+  svg.setAttribute("height", String(rect.height));
+  svg.setAttribute("viewBox", `0 0 ${rect.width} ${rect.height}`);
+  // Empty existing paths
+  while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+  const cardEls = {};
+  root.querySelectorAll("[data-match-no]").forEach(el => {
+    cardEls[el.dataset.matchNo] = el;
+  });
+
+  function anchor(el, side) {
+    // side: 'in' = the edge facing the final (center)
+    //       'out' = the edge facing the outside (R32 column)
+    const r = el.getBoundingClientRect();
+    const top  = r.top + r.height / 2 - rect.top;
+    const left = r.left - rect.left;
+    const right = r.right - rect.left;
+    const isLeftHalf = el.classList.contains("br-side-left");
+    const isRightHalf = el.classList.contains("br-side-right");
+    if (side === "in") {
+      if (isLeftHalf) return { x: right, y: top };
+      if (isRightHalf) return { x: left, y: top };
+      // final/third in center: doesn't matter, return left
+      return { x: left, y: top };
+    }
+    // 'out'
+    if (isLeftHalf) return { x: left, y: top };
+    if (isRightHalf) return { x: right, y: top };
+    return { x: right, y: top };
+  }
+
+  // Build paths: for each child, find parent and connect (child 'in' → parent 'out')
+  const ns = "http://www.w3.org/2000/svg";
+  for (const [childNo, parentNo] of Object.entries(PARENT)) {
+    const childEl = cardEls[childNo];
+    const parentEl = cardEls[parentNo];
+    if (!childEl || !parentEl) continue;
+    const a = anchor(childEl, "in");
+    const b = anchor(parentEl, "out");
+    // Two-segment elbow: horizontal half-way, then vertical, then horizontal
+    const midX = (a.x + b.x) / 2;
+    const d = `M ${a.x} ${a.y} L ${midX} ${a.y} L ${midX} ${b.y} L ${b.x} ${b.y}`;
+
+    // Determine if this child won: child match status played and winner advances
+    const childM = byNo[Number(childNo)];
+    let winnerCode = null;
+    if (childM && isPlayed(childM)) {
+      const hs = childM.home.score, as = childM.away.score;
+      const hp = childM.home.pen, ap = childM.away.pen;
+      if (hs > as) winnerCode = childM.home.code;
+      else if (as > hs) winnerCode = childM.away.code;
+      else if (hp != null && ap != null) winnerCode = hp > ap ? childM.home.code : childM.away.code;
+    }
+    // Parent card has this winner code in either home or away slot?
+    let isWinnerPath = false;
+    const parentM = byNo[Number(parentNo)];
+    if (winnerCode && parentM) {
+      if (parentM.home.code === winnerCode || parentM.away.code === winnerCode) {
+        isWinnerPath = true;
+      }
+    }
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("d", d);
+    path.setAttribute("fill", "none");
+    path.setAttribute("class", isWinnerPath ? "br-conn br-conn-winner" : "br-conn");
+    svg.appendChild(path);
+  }
 }
 
 function bracketCardHtml(m, side, round) {
