@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T02:56:44.638146+00:00",
+  "generatedAt": "2026-06-30T05:17:00.075949+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4931,8 +4931,8 @@
       "group": "",
       "utc": "2026-06-30T01:00:00Z",
       "localKick": "2026-06-29T19:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 2,
       "venue": "Monterrey Stadium",
       "city": "Monterrey",
       "tz": "",
@@ -4945,7 +4945,7 @@
         "name": "Netherlands",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NED",
         "score": 1,
-        "pen": null
+        "pen": 2
       },
       "away": {
         "id": "43872",
@@ -4953,9 +4953,9 @@
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
         "score": 1,
-        "pen": null
+        "pen": 3
       },
-      "winner": null,
+      "winner": "43872",
       "attendance": "51243",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -4980,6 +4980,46 @@
           "score": "1-1",
           "type": "G",
           "assist": "Chemsdine Talbi"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43960",
+          "player": "Teun Koopmeiners",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43872",
+          "player": "Soufiane Rahimi",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43960",
+          "player": "Wout Weghorst",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43872",
+          "player": "Chemsdine Talbi",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43872",
+          "player": "Ismael Saibari",
+          "score": "1-1",
+          "type": "PEN"
         }
       ]
     },
@@ -5609,10 +5649,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
         "score": null,
         "pen": null
       },
