@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T14:41:31.598257+00:00",
+  "generatedAt": "2026-06-30T17:14:31.052530+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5140,7 +5140,7 @@
       "group": "",
       "utc": "2026-06-30T17:00:00Z",
       "localKick": "2026-06-30T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Dallas Stadium",
       "city": "Dallas",
@@ -5153,7 +5153,7 @@
         "code": "CIV",
         "name": "Côte d'Ivoire",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CIV",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5161,7 +5161,7 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
