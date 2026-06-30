@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T23:15:13.158355+00:00",
+  "generatedAt": "2026-06-30T00:19:22.690764+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -4815,8 +4815,8 @@
       "group": "",
       "utc": "2026-06-29T20:30:00Z",
       "localKick": "2026-06-29T16:30:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 2,
       "venue": "Boston Stadium",
       "city": "Boston",
       "tz": "",
@@ -4829,7 +4829,7 @@
         "name": "Germany",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GER",
         "score": 1,
-        "pen": null
+        "pen": 3
       },
       "away": {
         "id": "43928",
@@ -4837,9 +4837,9 @@
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
         "score": 1,
-        "pen": null
+        "pen": 4
       },
-      "winner": null,
+      "winner": "43928",
       "attendance": "63945",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -4864,6 +4864,62 @@
           "score": "1-1",
           "type": "G",
           "assist": "Florian Wirtz"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43928",
+          "player": "Mauricio",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43948",
+          "player": "Joshua Kimmich",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43928",
+          "player": "Gustavo Gomez",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43948",
+          "player": "Jamal Musiala",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43928",
+          "player": "Matias Galarza",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43948",
+          "player": "Nadiem Amiri",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43928",
+          "player": "Jose Canale",
+          "score": "1-1",
+          "type": "PEN"
         }
       ]
     },
@@ -5485,10 +5541,10 @@
       "placeholderHome": "W74",
       "placeholderAway": "W77",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43928",
+        "code": "PAR",
+        "name": "Paraguay",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
         "score": null,
         "pen": null
       },
