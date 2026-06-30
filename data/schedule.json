@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T21:04:38.818270+00:00",
+  "generatedAt": "2026-06-30T22:38:13.714514+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5112,7 +5112,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": 0,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -5124,13 +5124,41 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "45'",
+          "side": "home",
+          "team": "43946",
+          "player": "Kylian Mbappe",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Ousmane Dembele"
+        },
+        {
+          "minute": "53'",
+          "side": "home",
+          "team": "43946",
+          "player": "Bradley Barcola",
+          "score": "2-0",
+          "type": "G",
+          "assist": "Michael Olise"
+        },
+        {
+          "minute": "74'",
+          "side": "home",
+          "team": "43946",
+          "player": "Kylian Mbappe",
+          "score": "3-0",
+          "type": "G",
+          "assist": "Michael Olise"
+        }
+      ]
     },
     {
       "id": "400021514",
