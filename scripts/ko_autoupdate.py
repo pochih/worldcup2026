@@ -261,24 +261,43 @@ def rebuild_preview():
 
 
 def git_commit_and_push(msg):
-    subprocess.run(["git", "-C", str(ROOT), "add", "-A"], check=False)
-    diff = subprocess.run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"], check=False)
+    """Commit local changes and push. Handles "remote has new commits" by
+    rebasing on top of upstream with 'theirs' strategy for conflicts
+    (our schedule.json is the freshest, so prefer keeping local). Retries
+    push once if first attempt rejected.
+    """
+    def run(args, capture=True):
+        return subprocess.run(
+            ["git", "-C", str(ROOT)] + args,
+            check=False, capture_output=capture, text=True
+        )
+    run(["add", "-A"], capture=False)
+    diff = run(["diff", "--cached", "--quiet"])
     if diff.returncode == 0:
         return False  # nothing to commit
-    subprocess.run(
-        ["git", "-C", str(ROOT), "pull", "--rebase", "origin", "master"],
-        check=False, capture_output=True
-    )
-    subprocess.run(["git", "-C", str(ROOT), "add", "-A"], check=False)
-    subprocess.run(["git", "-C", str(ROOT), "commit", "-m", msg], check=False)
-    push = subprocess.run(
-        ["git", "-C", str(ROOT), "push", "origin", "master"],
-        capture_output=True, text=True
-    )
-    if push.returncode != 0:
-        print(f"  push failed: {push.stderr[:300]}", file=sys.stderr)
-        return False
-    return True
+    # Commit first so working tree is clean for rebase
+    run(["commit", "-m", msg], capture=False)
+
+    for attempt in range(2):
+        push = run(["push", "origin", "master"])
+        if push.returncode == 0:
+            return True
+        err = (push.stderr or "")[:300]
+        print(f"  push attempt {attempt+1} failed: {err}", file=sys.stderr)
+        if "rejected" in err or "fetch first" in err or "non-fast-forward" in err:
+            # Pull rebase with theirs strategy: when upstream + local both modified
+            # same file, prefer KEEPING LOCAL (since local is fresher FIFA data)
+            # rebase semantics flip ours/theirs: --strategy-option=theirs means
+            # 'use the side being replayed' = our commit. So we want ours.
+            rb = run(["pull", "--rebase", "-X", "theirs", "origin", "master"])
+            if rb.returncode != 0:
+                # Abort rebase if stuck
+                run(["rebase", "--abort"])
+                print(f"  rebase failed: {rb.stderr[:300]}", file=sys.stderr)
+                return False
+        else:
+            return False
+    return False
 
 
 def main():
