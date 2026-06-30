@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:05:36.450284+00:00",
+  "generatedAt": "2026-06-30T21:04:38.818270+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5099,7 +5099,7 @@
       "group": "",
       "utc": "2026-06-30T21:00:00Z",
       "localKick": "2026-06-30T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
@@ -5112,7 +5112,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5120,7 +5120,7 @@
         "code": "SWE",
         "name": "Sweden",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SWE",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5718,10 +5718,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
         "score": null,
         "pen": null
       },
