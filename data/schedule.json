@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T03:56:50.807675+00:00",
+  "generatedAt": "2026-07-01T04:11:47.751673+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5237,8 +5237,8 @@
       "group": "",
       "utc": "2026-07-01T02:00:00Z",
       "localKick": "2026-06-30T20:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Mexico City Stadium",
       "city": "Mexico City",
       "tz": "",
@@ -5261,7 +5261,7 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43911",
       "attendance": "80824",
       "twBroadcast": [
         "愛爾達體育台（付費）",
