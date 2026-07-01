@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T20:15:37.623178+00:00",
+  "generatedAt": "2026-07-01T21:48:11.018422+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5428,17 +5428,35 @@
         "code": "SEN",
         "name": "Senegal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "66925",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "24'",
+          "side": "away",
+          "team": "43879",
+          "player": "Habib Diarra",
+          "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "51'",
+          "side": "away",
+          "team": "43879",
+          "player": "Ismaila Sarr",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Moussa Niakhate"
+        }
+      ]
     },
     {
       "id": "400021526",
