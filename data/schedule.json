@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T00:19:57.423734+00:00",
+  "generatedAt": "2026-07-01T03:56:50.807675+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5235,9 +5235,9 @@
       "stage": "r32",
       "stageLabel": "Round of 32",
       "group": "",
-      "utc": "2026-07-01T01:00:00Z",
-      "localKick": "2026-06-30T19:00:00Z",
-      "status": 1,
+      "utc": "2026-07-01T02:00:00Z",
+      "localKick": "2026-06-30T20:00:00Z",
+      "status": 3,
       "resultType": 0,
       "venue": "Mexico City Stadium",
       "city": "Mexico City",
@@ -5250,7 +5250,7 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -5258,17 +5258,36 @@
         "code": "ECU",
         "name": "Ecuador",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ECU",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "80824",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "22'",
+          "side": "home",
+          "team": "43911",
+          "player": "Julian Quinones",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Roberto Alvarado"
+        },
+        {
+          "minute": "31'",
+          "side": "home",
+          "team": "43911",
+          "player": "Raul Jimenez",
+          "score": "2-0",
+          "type": "G",
+          "assist": "Julian Quinones"
+        }
+      ]
     },
     {
       "id": "400021512",
@@ -5779,10 +5798,10 @@
       "placeholderHome": "W79",
       "placeholderAway": "W80",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43911",
+        "code": "MEX",
+        "name": "Mexico",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
         "score": null,
         "pen": null
       },

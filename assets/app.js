@@ -376,49 +376,25 @@ function renderThirdPlace() {
 
 function renderBracket() {
   renderThirdPlace();
-  // Two-sided layout meeting at the final.
-  // Each side has 16 teams: R32 (8) → R16 (4) → QF (2) → SF (1) → Final.
-  // Match numbers per FIFA bracket:
-  //   Left half  → SF #101 = W(QF#97) vs W(QF#98)
-  //     QF #97 = W(R16 #89) vs W(R16 #90)
-  //       R16 #89 = W74 vs W77 → R32 #74, #77
-  //       R16 #90 = W73 vs W75 → R32 #73, #75
-  //     QF #98 = W(R16 #93) vs W(R16 #94)
-  //       R16 #93 = W83 vs W84 → R32 #83, #84
-  //       R16 #94 = W81 vs W82 → R32 #81, #82
-  //   Right half → SF #102 = W(QF#99) vs W(QF#100)
-  //     QF #99 = W(R16 #91) vs W(R16 #92)
-  //       R16 #91 = W76 vs W78 → R32 #76, #78
-  //       R16 #92 = W79 vs W80 → R32 #79, #80
-  //     QF #100 = W(R16 #95) vs W(R16 #96)
-  //       R16 #95 = W86 vs W88 → R32 #86, #88
-  //       R16 #96 = W85 vs W87 → R32 #85, #87
+  // Single-direction left→right bracket: R32 (16) → R16 (8) → QF (4) → SF (2) → Final.
+  // Order chosen so adjacent matches feed the same parent — keeps tree shape clean.
+  //   R16 #89 = W74 vs W77, #90 = W73 vs W75, #93 = W83 vs W84, #94 = W81 vs W82,
+  //       #91 = W76 vs W78, #92 = W79 vs W80, #95 = W86 vs W88, #96 = W85 vs W87
+  //   QF  #97 = W89 vs W90, #98 = W93 vs W94, #99 = W91 vs W92, #100 = W95 vs W96
+  //   SF  #101 = W97 vs W98, #102 = W99 vs W100
+  //   F   #104 = W101 vs W102 ; 3rd #103 = L101 vs L102
   const LAYOUT = {
-    left: {
-      r32: [74, 77, 73, 75, 83, 84, 81, 82],
-      r16: [89, 90, 93, 94],
-      qf:  [97, 98],
-      sf:  [101],
-    },
-    right: {
-      r32: [76, 78, 79, 80, 86, 88, 85, 87],
-      r16: [91, 92, 95, 96],
-      qf:  [99, 100],
-      sf:  [102],
-    },
+    r32: [74, 77, 73, 75, 83, 84, 81, 82, 76, 78, 79, 80, 86, 88, 85, 87],
+    r16: [89, 90, 93, 94, 91, 92, 95, 96],
+    qf:  [97, 98, 99, 100],
+    sf:  [101, 102],
   };
-  // Pair map: R32 winners advance to which R16, and so on. Used to draw
-  // bracket connectors between rounds. Format: child_no → parent_no.
+  // child_no → parent_no, drives both layout pairing and SVG connectors.
   const PARENT = {
-    // R32 → R16 (left)
     74:89, 77:89,  73:90, 75:90,  83:93, 84:93,  81:94, 82:94,
-    // R32 → R16 (right)
     76:91, 78:91,  79:92, 80:92,  86:95, 88:95,  85:96, 87:96,
-    // R16 → QF
     89:97, 90:97,  93:98, 94:98,  91:99, 92:99,  95:100, 96:100,
-    // QF → SF
     97:101, 98:101,  99:102, 100:102,
-    // SF → Final
     101:104, 102:104,
   };
   const byNo = {};
@@ -427,32 +403,27 @@ function renderBracket() {
   const finalMatch = byNo[104];
   const thirdMatch = byNo[103];
 
-  // Build columns left→right: L-R32 | L-R16 | L-QF | L-SF | FINAL | R-SF | R-QF | R-R16 | R-R32
-  function colHtml(title, nums, side, round) {
-    return `<div class="br-col br-${side || 'mid'} br-round-${round}">
+  function colHtml(title, nums, round) {
+    return `<div class="br-col br-round-${round}">
       <h4>${title}</h4>
       <div class="br-col-body">
-        ${nums.map(n => bracketCardHtml(byNo[n], side, round)).join("")}
+        ${nums.map(n => bracketCardHtml(byNo[n], round)).join("")}
       </div>
     </div>`;
   }
 
   const html = `
     <svg class="br-svg-overlay" aria-hidden="true"></svg>
-    ${colHtml("32 強", LAYOUT.left.r32, "left", "r32")}
-    ${colHtml("16 強", LAYOUT.left.r16, "left", "r16")}
-    ${colHtml("8 強", LAYOUT.left.qf,  "left", "qf")}
-    ${colHtml("4 強", LAYOUT.left.sf,  "left", "sf")}
-    <div class="br-col br-final-col">
+    ${colHtml("32 強", LAYOUT.r32, "r32")}
+    ${colHtml("16 強", LAYOUT.r16, "r16")}
+    ${colHtml("8 強",  LAYOUT.qf,  "qf")}
+    ${colHtml("4 強",  LAYOUT.sf,  "sf")}
+    <div class="br-col br-final-col br-round-final">
       <h4>🏆 決賽</h4>
-      ${bracketCardHtml(finalMatch, "final", "final")}
-      <h4 style="margin-top:18px;color:var(--gold)">🥉 季軍戰</h4>
-      ${bracketCardHtml(thirdMatch, "third", "third")}
+      ${bracketCardHtml(finalMatch, "final")}
+      <h4 class="br-third-title">🥉 季軍戰</h4>
+      ${bracketCardHtml(thirdMatch, "third")}
     </div>
-    ${colHtml("4 強", LAYOUT.right.sf,  "right", "sf")}
-    ${colHtml("8 強", LAYOUT.right.qf,  "right", "qf")}
-    ${colHtml("16 強", LAYOUT.right.r16, "right", "r16")}
-    ${colHtml("32 強", LAYOUT.right.r32, "right", "r32")}
   `;
   const root = document.getElementById("bracket");
   root.innerHTML = html;
@@ -463,17 +434,43 @@ function renderBracket() {
     if (noTxt) el.dataset.matchNo = noTxt[1];
   });
 
+  // Sync row height across all columns so R32(span 1) pairs align with R16(span 2) centers.
+  // Also align the Final card vertically to the midpoint between the two SF cards.
+  function syncRowHeight() {
+    const r32Card = root.querySelector(".br-round-r32 .bracket-match");
+    if (!r32Card) return;
+    const h = r32Card.getBoundingClientRect().height;
+    if (h > 0) root.style.setProperty("--br-row-h", `${Math.round(h)}px`);
+    // Position final card between the two SF cards
+    const sfCards = root.querySelectorAll(".br-round-sf .bracket-match");
+    const finalCol = root.querySelector(".br-final-col");
+    const finalCard = finalCol?.querySelector(".br-final");
+    if (sfCards.length === 2 && finalCard && finalCol) {
+      const colTop = finalCol.getBoundingClientRect().top;
+      const s1 = sfCards[0].getBoundingClientRect();
+      const s2 = sfCards[1].getBoundingClientRect();
+      const midY = (s1.top + s1.height/2 + s2.top + s2.height/2) / 2;
+      const fH = finalCard.getBoundingClientRect().height || 80;
+      const padTop = Math.max(10, Math.round(midY - colTop - fH/2));
+      finalCol.style.setProperty("--br-final-top", `${padTop}px`);
+    }
+  }
+  syncRowHeight();
+
   // Draw connectors AFTER layout settles
   if (window.__brDrawTimer) cancelAnimationFrame(window.__brDrawTimer);
-  window.__brDrawTimer = requestAnimationFrame(() => drawBracketConnectors(root, PARENT, byNo));
+  window.__brDrawTimer = requestAnimationFrame(() => {
+    syncRowHeight();
+    drawBracketConnectors(root, PARENT, byNo);
+  });
   // Redraw on resize
   if (!window.__brResizeBound) {
     window.__brResizeBound = true;
     window.addEventListener("resize", () => {
       if (window.__brDrawTimer) cancelAnimationFrame(window.__brDrawTimer);
       window.__brDrawTimer = requestAnimationFrame(() => {
-        const r = document.getElementById("bracket");
-        if (r && r.querySelector(".br-svg-overlay")) drawBracketConnectors(r, PARENT, byNo);
+        // Re-run the whole bracket render — cheaper than threading state through.
+        renderBracket();
       });
     });
   }
@@ -495,34 +492,21 @@ function drawBracketConnectors(root, PARENT, byNo) {
   });
 
   function anchor(el, side) {
-    // side: 'in' = the edge facing the final (center)
-    //       'out' = the edge facing the outside (R32 column)
+    // side: 'in' = left edge (child→parent inflow); 'out' = right edge (parent receives from left).
     const r = el.getBoundingClientRect();
-    const top  = r.top + r.height / 2 - rect.top;
-    const left = r.left - rect.left;
-    const right = r.right - rect.left;
-    const isLeftHalf = el.classList.contains("br-side-left");
-    const isRightHalf = el.classList.contains("br-side-right");
-    if (side === "in") {
-      if (isLeftHalf) return { x: right, y: top };
-      if (isRightHalf) return { x: left, y: top };
-      // final/third in center: doesn't matter, return left
-      return { x: left, y: top };
-    }
-    // 'out'
-    if (isLeftHalf) return { x: left, y: top };
-    if (isRightHalf) return { x: right, y: top };
-    return { x: right, y: top };
+    const top = r.top + r.height / 2 - rect.top;
+    if (side === "in") return { x: r.left - rect.left, y: top };
+    return { x: r.right - rect.left, y: top };
   }
 
-  // Build paths: for each child, find parent and connect (child 'in' → parent 'out')
+  // child 'out' (right edge) → parent 'in' (left edge): clean left-to-right flow.
   const ns = "http://www.w3.org/2000/svg";
   for (const [childNo, parentNo] of Object.entries(PARENT)) {
     const childEl = cardEls[childNo];
     const parentEl = cardEls[parentNo];
     if (!childEl || !parentEl) continue;
-    const a = anchor(childEl, "in");
-    const b = anchor(parentEl, "out");
+    const a = anchor(childEl, "out");
+    const b = anchor(parentEl, "in");
     // Two-segment elbow: horizontal half-way, then vertical, then horizontal
     const midX = (a.x + b.x) / 2;
     const d = `M ${a.x} ${a.y} L ${midX} ${a.y} L ${midX} ${b.y} L ${b.x} ${b.y}`;
@@ -553,7 +537,7 @@ function drawBracketConnectors(root, PARENT, byNo) {
   }
 }
 
-function bracketCardHtml(m, side, round) {
+function bracketCardHtml(m, round) {
   // Placeholder hints based on knockout match number (FIFA layout)
   const NEEDS = {
     // R16
@@ -581,11 +565,10 @@ function bracketCardHtml(m, side, round) {
   const hWin = played && home.score > away.score;
   const aWin = played && away.score > home.score;
   const tp = utcToTaipei(m.utc);
-  const sideCls = side ? `br-side-${side}` : "";
   const roundCls = round ? `br-round-${round}` : "";
   const stageCls = m.stage === 'final' ? 'br-final' : '';
   const placeholderCls = (!home.name && !away.name) ? 'br-placeholder' : '';
-  return `<div class="bracket-match ${sideCls} ${roundCls} ${stageCls} ${placeholderCls}">
+  return `<div class="bracket-match ${roundCls} ${stageCls} ${placeholderCls}">
     <div class="br-meta-top">#${m.no} · ${tp.date.slice(5)} ${tp.time}</div>
     <div class="row ${hWin ? "winner" : ""}">
       <div class="vs-name">${home.flag ? `<img src="${home.flag}" alt="">` : ""}<span>${hName}</span></div>

@@ -267,15 +267,15 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 /* ========== Bracket ========== */
 #bracket {
   display: grid;
-  grid-template-columns:
-    1.15fr 0.85fr 0.85fr 0.85fr   /* left half: R32 R16 QF SF */
-    1.1fr                          /* center: final + third */
-    0.85fr 0.85fr 0.85fr 1.15fr;   /* right half: SF QF R16 R32 */
-  gap: 4px;
+  /* R32 | R16 | QF | SF | Final — single-direction tree
+     大 column-gap 讓 SVG 連線有距離可畫 */
+  grid-template-columns: 1.05fr 0.95fr 0.95fr 0.95fr 1.1fr;
+  column-gap: 28px;
+  row-gap: 8px;
   padding-bottom: 8px;
-  align-items: stretch;
+  align-items: start;
   width: 100%;
-  position: relative; /* anchor for .br-svg-overlay */
+  position: relative;
 }
 /* SVG overlay sits behind cards, draws bracket connector elbows */
 .br-svg-overlay {
@@ -288,36 +288,39 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 }
 .br-col { position: relative; z-index: 1; }
 .br-conn {
-  stroke: var(--border);
-  stroke-width: 1.5;
-  opacity: 0.55;
+  stroke: var(--text-dim);
+  stroke-width: 1.6;
+  opacity: 0.4;
 }
 .br-conn-winner {
   stroke: var(--gold);
-  stroke-width: 2.2;
-  opacity: 0.95;
-  filter: drop-shadow(0 0 4px rgba(255,200,87,0.45));
+  stroke-width: 2.4;
+  opacity: 1;
+  filter: drop-shadow(0 0 5px rgba(255,200,87,0.5));
 }
 .br-col {
   display: flex; flex-direction: column;
   min-width: 0;
 }
 .br-col h4 {
-  text-align: center; margin: 0 0 4px;
-  font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
-  color: var(--text-dim);
+  text-align: center; margin: 0 0 10px;
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--text-dim); font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
 }
-/* col-body 用 grid row span 對齊配對 — R32(8) → R16(4) → QF(2) → SF(1) 在垂直軸上同列中心對齊 */
+/* 16-row grid:R32(16 場)=span 1、R16(8)=span 2、QF(4)=span 4、SF(2)=span 8 — 中心垂直對齊配對
+   row 高由 R32 卡自然高度撐起,後段欄沿用同高 row → 配對自動垂直置中 */
 .br-col-body {
   display: grid;
-  grid-template-rows: repeat(16, 1fr);
+  grid-template-rows: repeat(16, var(--br-row-h, minmax(50px, 1fr)));
   gap: 4px 0;
-  flex: 1;
+  width: 100%;
 }
-.br-col.br-round-r32 .bracket-match { grid-row: span 2; }
-.br-col.br-round-r16 .bracket-match { grid-row: span 4; }
-.br-col.br-round-qf .bracket-match  { grid-row: span 8; }
-.br-col.br-round-sf .bracket-match  { grid-row: span 16; }
+.br-col.br-round-r32 .bracket-match { grid-row: span 1; }
+.br-col.br-round-r16 .bracket-match { grid-row: span 2; align-self: center; }
+.br-col.br-round-qf  .bracket-match { grid-row: span 4; align-self: center; }
+.br-col.br-round-sf  .bracket-match { grid-row: span 8; align-self: center; }
 
 /* 小組第三晉級 */
 .third-place-section {
@@ -393,19 +396,22 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   }
 }
 .br-final-col {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
-  gap: 4px;
+  gap: 8px;
   background: linear-gradient(180deg, rgba(255,200,87,0.06), rgba(0,212,170,0.04));
   border-radius: 10px;
-  padding: 8px 4px;
+  padding: 10px 6px;
   border: 1px solid var(--border);
 }
-.br-final-col h4 { color: var(--gold); font-size: 11px; }
+.br-final-col h4 { color: var(--gold); font-size: 11px; margin: 0; text-align: center; }
+.br-final-col .br-third-title { margin-top: 14px; }
 .br-final-col .bracket-match {
-  /* No grid row-span — final / third cards stand alone */
+  /* Final / third cards stand alone — no row-span constraint */
   min-height: 80px;
 }
+/* Final 卡用 padding-top 推到 SF 兩張中心位置(JS 動態算後設 --br-final-top) */
+.br-final-col { padding-top: var(--br-final-top, 10px); }
 
 .bracket-match {
   background: var(--surface);
@@ -440,10 +446,6 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 .br-col.br-round-sf .bracket-match {
   font-size: 12px;
 }
-/* Mirror right-half cards so flags hug the inside (toward the final) */
-.br-side-right .row { flex-direction: row-reverse; }
-.br-side-right .row img { margin-right: 0; margin-left: 4px; }
-.br-side-right .vs-score { padding-left: 0; padding-right: 6px; }
 
 /* Final card highlight */
 .br-final {
@@ -1216,43 +1218,33 @@ footer .disclaimer { color: var(--text-dim); opacity: 0.6; margin-top: 6px; }
   .group-card th, .group-card td { padding: 4px 2px; }
   .legend { font-size: 11px; padding: 10px; line-height: 1.6; }
 
-  /* Bracket: switch to vertical (top-down) stacked rounds */
+  /* Bracket: keep tree shape, switch to horizontal scroll */
   #bracket {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    grid-template-columns: 200px 180px 180px 180px 200px;
+    column-gap: 18px;
+    row-gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    /* min-width 隨欄寬+gap 自然撐開,讓使用者左右滑 */
   }
-  /* Hide SVG tree connectors on mobile (cards stack vertically — no tree shape) */
-  .br-svg-overlay { display: none; }
-  .br-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    gap: 4px;
-  }
-  /* mobile: drop row-span alignment, use auto rows */
+  /* SVG overlay 保留 — 跟著 bracket 卷軸內容一起捲 */
+  .br-svg-overlay { display: block; }
+  /* mobile: 保留 grid row-span 對齊邏輯與 desktop 相同(用 --br-row-h JS 同步) */
   .br-col-body {
-    display: contents;  /* let parent grid take over */
+    display: grid;
+    grid-template-rows: repeat(16, var(--br-row-h, minmax(44px, 1fr)));
+    gap: 4px 0;
   }
-  .br-col.br-round-r32 .bracket-match,
-  .br-col.br-round-r16 .bracket-match,
-  .br-col.br-round-qf .bracket-match,
-  .br-col.br-round-sf .bracket-match {
-    grid-row: auto;
-  }
-  .br-col h4 {
-    grid-column: 1 / -1; text-align: left;
-    font-size: 12px; margin: 0;
-    padding: 4px 8px; background: var(--surface);
-    border-radius: 4px;
-  }
+  .br-col.br-round-r32 .bracket-match { grid-row: span 1; }
+  .br-col.br-round-r16 .bracket-match { grid-row: span 2; align-self: center; }
+  .br-col.br-round-qf  .bracket-match { grid-row: span 4; align-self: center; }
+  .br-col.br-round-sf  .bracket-match { grid-row: span 8; align-self: center; }
   .br-final-col {
-    padding: 12px 10px; gap: 10px;
-    grid-template-columns: 1fr;
+    padding: 10px 8px; gap: 8px;
   }
   .br-final { min-height: 60px; }
-  .br-side-right .row { flex-direction: row; }
-  .br-side-right .row img { margin-right: 4px; margin-left: 0; }
-  .br-side-right .vs-score { padding-left: 6px; padding-right: 0; }
-  .bracket-match { font-size: 11px; padding: 5px 7px; min-height: 50px; }
+  .bracket-match { font-size: 11px; padding: 5px 7px; min-height: 44px; }
   .bracket-match .row img { width: 14px; height: 10px; }
   .bracket-match .br-meta-top { font-size: 9px; }
 
