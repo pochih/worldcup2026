@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T15:49:11.882172+00:00",
+  "generatedAt": "2026-07-01T18:15:29.897282+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5297,8 +5297,8 @@
       "group": "",
       "utc": "2026-07-01T16:00:00Z",
       "localKick": "2026-07-01T12:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -5310,7 +5310,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -5318,17 +5318,45 @@
         "code": "COD",
         "name": "Congo DR",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COD",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43942",
+      "attendance": "68239",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "7'",
+          "side": "away",
+          "team": "20014",
+          "player": "Brian Cipenga",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Chancel Mbemba"
+        },
+        {
+          "minute": "75'",
+          "side": "home",
+          "team": "43942",
+          "player": "Harry Kane",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Anthony Gordon"
+        },
+        {
+          "minute": "86'",
+          "side": "home",
+          "team": "43942",
+          "player": "Harry Kane",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Anthony Gordon"
+        }
+      ]
     },
     {
       "id": "400021524",
@@ -5806,10 +5834,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
         "score": null,
         "pen": null
       },
