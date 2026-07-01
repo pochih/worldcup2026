@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T21:48:11.018422+00:00",
+  "generatedAt": "2026-07-01T23:41:09.096320+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5407,8 +5407,8 @@
       "group": "",
       "utc": "2026-07-01T20:00:00Z",
       "localKick": "2026-07-01T13:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 3,
       "venue": "Seattle Stadium",
       "city": "Seattle",
       "tz": "",
@@ -5420,7 +5420,7 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": 0,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -5431,7 +5431,7 @@
         "score": 2,
         "pen": null
       },
-      "winner": null,
+      "winner": "43935",
       "attendance": "66925",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -5455,6 +5455,32 @@
           "score": "0-2",
           "type": "G",
           "assist": "Moussa Niakhate"
+        },
+        {
+          "minute": "86'",
+          "side": "home",
+          "team": "43935",
+          "player": "Romelu Lukaku",
+          "score": "1-2",
+          "type": "G",
+          "assist": "Thomas Meunier"
+        },
+        {
+          "minute": "89'",
+          "side": "home",
+          "team": "43935",
+          "player": "Youri Tielemans",
+          "score": "2-2",
+          "type": "G",
+          "assist": "Leandro Trossard"
+        },
+        {
+          "minute": "120'+5'",
+          "side": "home",
+          "team": "43935",
+          "player": "Youri Tielemans",
+          "score": "3-2",
+          "type": "PEN"
         }
       ]
     },
@@ -5934,10 +5960,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
         "score": null,
         "pen": null
       },
