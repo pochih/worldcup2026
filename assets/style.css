@@ -266,16 +266,13 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 
 /* ========== Bracket ========== */
 #bracket {
-  display: grid;
-  /* R32 | R16 | QF | SF | Final — single-direction tree
-     大 column-gap 讓 SVG 連線有距離可畫 */
-  grid-template-columns: 1.05fr 0.95fr 0.95fr 0.95fr 1.1fr;
-  column-gap: 28px;
-  row-gap: 8px;
+  display: flex;
+  align-items: stretch;   /* every column stretches to the tallest (R32) */
+  gap: 34px;              /* 留距離給 SVG 連線畫晉級線條 */
   padding-bottom: 8px;
-  align-items: start;
   width: 100%;
   position: relative;
+  overflow-x: auto;       /* 小螢幕水平捲動,維持經典括號樹狀 */
 }
 /* SVG overlay sits behind cards, draws bracket connector elbows */
 .br-svg-overlay {
@@ -286,11 +283,10 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   pointer-events: none;
   z-index: 0;
 }
-.br-col { position: relative; z-index: 1; }
 .br-conn {
   stroke: var(--text-dim);
   stroke-width: 1.6;
-  opacity: 0.4;
+  opacity: 0.45;
 }
 .br-conn-winner {
   stroke: var(--gold);
@@ -299,28 +295,30 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   filter: drop-shadow(0 0 5px rgba(255,200,87,0.5));
 }
 .br-col {
-  display: flex; flex-direction: column;
-  min-width: 0;
+  position: relative;
+  z-index: 1;
+  flex: 1 1 0;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
 }
 .br-col h4 {
+  flex: 0 0 auto;
   text-align: center; margin: 0 0 10px;
   font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;
   color: var(--text-dim); font-weight: 600;
   padding-bottom: 4px;
   border-bottom: 1px solid var(--border);
 }
-/* 16-row grid:R32(16 場)=span 1、R16(8)=span 2、QF(4)=span 4、SF(2)=span 8 — 中心垂直對齊配對
-   row 高由 R32 卡自然高度撐起,後段欄沿用同高 row → 配對自動垂直置中 */
+/* 每一輪用 space-around 平均分佈 → 上一輪相鄰兩場自動對齊到下一輪同一張卡的
+   垂直中心,形成經典晉級樹狀圖(所有卡片等高才成立)。 */
 .br-col-body {
-  display: grid;
-  grid-template-rows: repeat(16, var(--br-row-h, minmax(50px, 1fr)));
-  gap: 4px 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
 }
-.br-col.br-round-r32 .bracket-match { grid-row: span 1; }
-.br-col.br-round-r16 .bracket-match { grid-row: span 2; align-self: center; }
-.br-col.br-round-qf  .bracket-match { grid-row: span 4; align-self: center; }
-.br-col.br-round-sf  .bracket-match { grid-row: span 8; align-self: center; }
 
 /* 小組第三晉級 */
 .third-place-section {
@@ -396,32 +394,33 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
   }
 }
 .br-final-col {
-  justify-content: flex-start;
+  justify-content: center;   /* 決賽卡垂直置中 → 對齊 4 強兩卡中點 */
   align-items: stretch;
   gap: 8px;
   background: linear-gradient(180deg, rgba(255,200,87,0.06), rgba(0,212,170,0.04));
   border-radius: 10px;
-  padding: 10px 6px;
+  padding: 10px 8px;
   border: 1px solid var(--border);
 }
-.br-final-col h4 { color: var(--gold); font-size: 11px; margin: 0; text-align: center; }
+.br-final-col h4 { color: var(--gold); font-size: 11px; margin: 0; text-align: center; border-bottom: none; }
 .br-final-col .br-third-title { margin-top: 14px; }
 .br-final-col .bracket-match {
-  /* Final / third cards stand alone — no row-span constraint */
-  min-height: 80px;
+  /* Final / third cards stand alone — no fixed-height constraint */
+  height: auto;
+  min-height: 64px;
 }
-/* Final 卡用 padding-top 推到 SF 兩張中心位置(JS 動態算後設 --br-final-top) */
-.br-final-col { padding-top: var(--br-final-top, 10px); }
 
 .bracket-match {
   background: var(--surface);
   border-radius: 6px;
-  padding: 5px 7px;
+  padding: 5px 8px;
   font-size: 11px;
   display: flex; flex-direction: column; justify-content: center;
   gap: 2px;
   border: 1px solid var(--border);
-  min-height: 0;  /* let grid row decide height */
+  height: var(--br-card-h, 60px);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .bracket-match .br-meta-top {
   font-size: 9px; color: var(--text-dim);
@@ -460,7 +459,7 @@ main { max-width: 1280px; margin: 24px auto; padding: 0 20px 48px; }
 .bracket-match .row.winner { color: var(--accent); font-weight: 600; }
 .bracket-match .row img { width: 14px; height: 10px; object-fit: cover; border-radius: 2px; margin-right: 4px; flex-shrink: 0; }
 .bracket-match .vs-name { display: flex; align-items: center; flex: 1; min-width: 0; }
-.bracket-match .vs-name span { overflow: hidden; min-width: 0; word-break: break-word; line-height: 1.15; }
+.bracket-match .vs-name span { overflow: hidden; min-width: 0; white-space: nowrap; text-overflow: ellipsis; line-height: 1.2; font-size: 12px; }
 .bracket-match .vs-name .ph { color: var(--text-dim); font-style: italic; font-size: 10px; }
 .bracket-match .vs-score { font-weight: 700; font-variant-numeric: tabular-nums; padding-left: 6px; flex-shrink: 0; }
 .bracket-match .meta { font-size: 9px; color: var(--text-dim); margin-top: 2px; text-align: center; }

@@ -434,39 +434,18 @@ function renderBracket() {
     if (noTxt) el.dataset.matchNo = noTxt[1];
   });
 
-  // Sync row height across all columns so R32(span 1) pairs align with R16(span 2) centers.
-  // Also align the Final card vertically to the midpoint between the two SF cards.
-  function syncRowHeight() {
-    const r32Card = root.querySelector(".br-round-r32 .bracket-match");
-    if (!r32Card) return;
-    const h = r32Card.getBoundingClientRect().height;
-    if (h > 0) root.style.setProperty("--br-row-h", `${Math.round(h)}px`);
-    // Position final card between the two SF cards
-    const sfCards = root.querySelectorAll(".br-round-sf .bracket-match");
-    const finalCol = root.querySelector(".br-final-col");
-    const finalCard = finalCol?.querySelector(".br-final");
-    if (sfCards.length === 2 && finalCard && finalCol) {
-      const colTop = finalCol.getBoundingClientRect().top;
-      const s1 = sfCards[0].getBoundingClientRect();
-      const s2 = sfCards[1].getBoundingClientRect();
-      const midY = (s1.top + s1.height/2 + s2.top + s2.height/2) / 2;
-      const fH = finalCard.getBoundingClientRect().height || 80;
-      const padTop = Math.max(10, Math.round(midY - colTop - fH/2));
-      finalCol.style.setProperty("--br-final-top", `${padTop}px`);
-    }
-  }
-  syncRowHeight();
-
-  // Draw connectors AFTER layout settles
+  // Draw connectors AFTER layout settles. If the bracket tab is hidden
+  // (display:none) getBoundingClientRect is all zeros — skip drawing then;
+  // setView() re-invokes renderBracket() once the tab becomes visible.
   if (window.__brDrawTimer) cancelAnimationFrame(window.__brDrawTimer);
   window.__brDrawTimer = requestAnimationFrame(() => {
-    syncRowHeight();
     drawBracketConnectors(root, PARENT, byNo);
   });
   // Redraw on resize
   if (!window.__brResizeBound) {
     window.__brResizeBound = true;
     window.addEventListener("resize", () => {
+      if (document.getElementById("view-bracket")?.classList.contains("active") !== true) return;
       if (window.__brDrawTimer) cancelAnimationFrame(window.__brDrawTimer);
       window.__brDrawTimer = requestAnimationFrame(() => {
         // Re-run the whole bracket render — cheaper than threading state through.
@@ -480,9 +459,15 @@ function drawBracketConnectors(root, PARENT, byNo) {
   const svg = root.querySelector(".br-svg-overlay");
   if (!svg) return;
   const rect = root.getBoundingClientRect();
-  svg.setAttribute("width", String(rect.width));
-  svg.setAttribute("height", String(rect.height));
-  svg.setAttribute("viewBox", `0 0 ${rect.width} ${rect.height}`);
+  // Bracket may overflow horizontally (scrolls on small screens) — cover the
+  // full scrollable area, not just the visible viewport.
+  const W = root.scrollWidth, H = root.scrollHeight;
+  const sx = root.scrollLeft, sy = root.scrollTop;
+  svg.style.width = `${W}px`;
+  svg.style.height = `${H}px`;
+  svg.setAttribute("width", String(W));
+  svg.setAttribute("height", String(H));
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
   // Empty existing paths
   while (svg.firstChild) svg.removeChild(svg.firstChild);
 
@@ -493,10 +478,11 @@ function drawBracketConnectors(root, PARENT, byNo) {
 
   function anchor(el, side) {
     // side: 'in' = left edge (child→parent inflow); 'out' = right edge (parent receives from left).
+    // Coordinates are relative to the bracket's content origin (accounts for scroll).
     const r = el.getBoundingClientRect();
-    const top = r.top + r.height / 2 - rect.top;
-    if (side === "in") return { x: r.left - rect.left, y: top };
-    return { x: r.right - rect.left, y: top };
+    const top = r.top - rect.top + sy + r.height / 2;
+    if (side === "in") return { x: r.left - rect.left + sx, y: top };
+    return { x: r.right - rect.left + sx, y: top };
   }
 
   // child 'out' (right edge) → parent 'in' (left edge): clean left-to-right flow.
@@ -1543,6 +1529,10 @@ function setView(name, fromHistory, sub) {
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === name));
   const activeBtn = document.querySelector(`#tabs button[data-view="${name}"]`);
   activeBtn?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+
+  // The bracket's SVG connector lines depend on real element positions, which are
+  // unavailable while the tab is hidden (display:none). Redraw now that it's visible.
+  if (name === "bracket") renderBracket();
 
   // If we're entering preview view and a sub-slug was given, switch match.
   if (name === "preview" && sub) {
