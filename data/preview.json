@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-06-30T22:38:13.762483+00:00",
+  "_generatedAt": "2026-07-01T00:19:57.453838+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -12190,6 +12190,465 @@
           },
           {
             "score": "1-1",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PAR_FRA_89",
+      "_auto": true,
+      "_kickoffUtc": "2026-07-04T21:00:00Z",
+      "_matchNo": 89,
+      "title": "巴拉圭 🇵🇾 vs 🇫🇷 法國",
+      "shortTitle": "PAR vs FRA",
+      "subtitle": "FIFA 排名 #41 vs #3",
+      "stage": "16 強淘汰賽",
+      "venue": "Philadelphia Stadium (Philadelphia",
+      "history": [],
+      "home": {
+        "code": "PAR",
+        "name": "巴拉圭",
+        "flag": "🇵🇾",
+        "color": "#d52b1e",
+        "colorAlt": "#d52b1e",
+        "manager": "Alfaro",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "G. FERNANDE",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 13,
+            "name": "J. CANALE",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "阿爾德雷特",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 15,
+            "name": "G. GOMEZ",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 6,
+            "name": "阿隆索",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 14,
+            "name": "庫巴斯",
+            "pos": "DM",
+            "x": 38,
+            "y": 38
+          },
+          {
+            "n": 8,
+            "name": "D. GOMEZ",
+            "pos": "DM",
+            "x": 38,
+            "y": 62
+          },
+          {
+            "n": 19,
+            "name": "恩西索",
+            "pos": "RW",
+            "x": 56,
+            "y": 18
+          },
+          {
+            "n": 11,
+            "name": "MAURICIO",
+            "pos": "AM",
+            "x": 56,
+            "y": 50
+          },
+          {
+            "n": 16,
+            "name": "博巴迪拉",
+            "pos": "LW",
+            "x": 56,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "薩納夫里亞",
+            "pos": "ST",
+            "x": 70,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              78,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              72,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              38
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              56,
+              50
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              22,
+              18
+            ],
+            "to": [
+              56,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 8,
+            "y": 18,
+            "w": 26,
+            "h": 64,
+            "label": "雙後腰屏障",
+            "kind": "defense"
+          },
+          {
+            "x": 58,
+            "y": 28,
+            "w": 28,
+            "h": 44,
+            "label": "反擊出球區",
+            "kind": "press"
+          }
+        ],
+        "stats": {
+          "attack": 5.5,
+          "defense": 7.0,
+          "midfield": 6.0,
+          "fitness": 7.0,
+          "experience": 6.0,
+          "stars": 5.5
+        }
+      },
+      "away": {
+        "code": "FRA",
+        "name": "法國",
+        "flag": "🇫🇷",
+        "color": "#0055a4",
+        "colorAlt": "#0055a4",
+        "manager": "Deschamps",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 16,
+            "name": "麥尼昂",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 5,
+            "name": "J. KOUNDE",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 4,
+            "name": "烏帕梅卡諾",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 17,
+            "name": "薩利巴",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 19,
+            "name": "T. HERNANDE",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 8,
+            "name": "A. TCHOUAME",
+            "pos": "DM",
+            "x": 62,
+            "y": 38
+          },
+          {
+            "n": 14,
+            "name": "A. RABIOT",
+            "pos": "DM",
+            "x": 62,
+            "y": 62
+          },
+          {
+            "n": 7,
+            "name": "O. DEMBELE",
+            "pos": "RW",
+            "x": 44,
+            "y": 18
+          },
+          {
+            "n": 11,
+            "name": "奧利斯",
+            "pos": "AM",
+            "x": 44,
+            "y": 50
+          },
+          {
+            "n": 12,
+            "name": "巴爾科拉",
+            "pos": "LW",
+            "x": 44,
+            "y": 82
+          },
+          {
+            "n": 10,
+            "name": "K. MBAPPE",
+            "pos": "ST",
+            "x": 30,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              22,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              28,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              38
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              78,
+              18
+            ],
+            "to": [
+              44,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 38,
+            "y": 8,
+            "w": 30,
+            "h": 84,
+            "label": "高位逼搶區",
+            "kind": "press"
+          },
+          {
+            "x": 26,
+            "y": 30,
+            "w": 24,
+            "h": 40,
+            "label": "前腰串聯區",
+            "kind": "create"
+          }
+        ],
+        "stats": {
+          "attack": 9.5,
+          "defense": 8.0,
+          "midfield": 8.5,
+          "fitness": 8.5,
+          "experience": 9.0,
+          "stars": 10.0
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "away",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：PAR 0-0 FRA"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "0-1"
+        },
+        {
+          "min": 78,
+          "side": "away",
+          "type": "goal",
+          "text": "擴大領先",
+          "score": "0-2"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：PAR 0-2 FRA"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "PAR #19 (RW)",
+          "away": "薩利巴",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "PAR #3 (CB)",
+          "away": "姆巴佩",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "PAR #14 (DM)",
+          "away": "楚阿梅尼",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "低位防守等待反擊",
+          "邊鋒快速轉移找中鋒",
+          "角球與任意球是重要得分手段"
+        ],
+        "away": [
+          "邊鋒突破到底線傳中",
+          "前腰直塞中鋒身後",
+          "中場控制是壓制比賽的核心"
+        ]
+      },
+      "predict": {
+        "score": "0-2",
+        "confidence": 73,
+        "winner": "away",
+        "reasoning": "客隊在球星佔優 (4.5)；客隊在進攻佔優 (4.0)，預期客隊取勝。",
+        "scenarios": [
+          {
+            "score": "0-2",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "0-1",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
             "prob": 14,
             "desc": "可能情境"
           }

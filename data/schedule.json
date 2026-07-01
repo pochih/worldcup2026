@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T22:38:13.714514+00:00",
+  "generatedAt": "2026-07-01T00:19:57.423734+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5099,8 +5099,8 @@
       "group": "",
       "utc": "2026-06-30T21:00:00Z",
       "localKick": "2026-06-30T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -5123,7 +5123,7 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43946",
       "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -5664,10 +5664,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
         "score": null,
         "pen": null
       },
