@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T18:15:29.897282+00:00",
+  "generatedAt": "2026-07-01T20:15:37.623178+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5407,7 +5407,7 @@
       "group": "",
       "utc": "2026-07-01T20:00:00Z",
       "localKick": "2026-07-01T13:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Seattle Stadium",
       "city": "Seattle",
@@ -5420,7 +5420,7 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5428,7 +5428,7 @@
         "code": "SEN",
         "name": "Senegal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SEN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
