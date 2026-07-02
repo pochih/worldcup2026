@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T20:36:54.845209+00:00",
+  "generatedAt": "2026-07-02T22:17:59.844728+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5550,8 +5550,8 @@
       "group": "",
       "utc": "2026-07-02T19:00:00Z",
       "localKick": "2026-07-02T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -5563,7 +5563,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": 2,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -5574,7 +5574,7 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43969",
       "attendance": "70492",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -5599,6 +5599,15 @@
           "score": "2-0",
           "type": "G",
           "assist": "Alex Baena"
+        },
+        {
+          "minute": "89'",
+          "side": "home",
+          "team": "43969",
+          "player": "Mikel Oyarzabal",
+          "score": "3-0",
+          "type": "G",
+          "assist": "Marc Cucurella"
         }
       ]
     },
@@ -5955,10 +5964,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "score": null,
         "pen": null
       },
