@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:47:27.930890+00:00",
+  "generatedAt": "2026-07-02T20:36:54.845209+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5550,7 +5550,7 @@
       "group": "",
       "utc": "2026-07-02T19:00:00Z",
       "localKick": "2026-07-02T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
@@ -5563,7 +5563,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -5571,17 +5571,36 @@
         "code": "AUT",
         "name": "Austria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUT",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "70492",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "36'",
+          "side": "home",
+          "team": "43969",
+          "player": "Mikel Oyarzabal",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Marc Cucurella"
+        },
+        {
+          "minute": "66'",
+          "side": "home",
+          "team": "43969",
+          "player": "Pedro Porro",
+          "score": "2-0",
+          "type": "G",
+          "assist": "Alex Baena"
+        }
+      ]
     },
     {
       "id": "400021527",
