@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-01T23:41:09.137528+00:00",
+  "_generatedAt": "2026-07-02T04:19:54.218886+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -13574,6 +13574,472 @@
           },
           {
             "score": "1-2",
+            "prob": 14,
+            "desc": "可能情境"
+          }
+        ]
+      }
+    },
+    {
+      "id": "USA_BEL_94",
+      "_auto": true,
+      "_kickoffUtc": "2026-07-07T00:00:00Z",
+      "_matchNo": 94,
+      "title": "美國 🇺🇸 vs 🇧🇪 比利時",
+      "shortTitle": "USA vs BEL",
+      "subtitle": "FIFA 排名 #16 vs #8",
+      "stage": "16 強淘汰賽",
+      "venue": "Seattle Stadium (Seattle",
+      "history": [],
+      "home": {
+        "code": "USA",
+        "name": "美國",
+        "flag": "🇺🇸",
+        "color": "#bf0a30",
+        "colorAlt": "#bf0a30",
+        "manager": "Pochettino",
+        "formation": "4-3-3",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "特納",
+            "pos": "GK",
+            "x": 8,
+            "y": 50
+          },
+          {
+            "n": 2,
+            "name": "德斯特",
+            "pos": "RB",
+            "x": 22,
+            "y": 18
+          },
+          {
+            "n": 3,
+            "name": "理查茲",
+            "pos": "CB",
+            "x": 22,
+            "y": 38
+          },
+          {
+            "n": 13,
+            "name": "里姆",
+            "pos": "CB",
+            "x": 22,
+            "y": 62
+          },
+          {
+            "n": 5,
+            "name": "羅賓遜",
+            "pos": "LB",
+            "x": 22,
+            "y": 82
+          },
+          {
+            "n": 10,
+            "name": "普利西奇",
+            "pos": "CM",
+            "x": 40,
+            "y": 30
+          },
+          {
+            "n": 4,
+            "name": "亞當斯",
+            "pos": "DM",
+            "x": 40,
+            "y": 50
+          },
+          {
+            "n": 8,
+            "name": "麥肯尼",
+            "pos": "CM",
+            "x": 40,
+            "y": 70
+          },
+          {
+            "n": 21,
+            "name": "韋亞",
+            "pos": "RW",
+            "x": 60,
+            "y": 18
+          },
+          {
+            "n": 20,
+            "name": "巴洛根",
+            "pos": "ST",
+            "x": 68,
+            "y": 50
+          },
+          {
+            "n": 11,
+            "name": "亞倫森",
+            "pos": "LW",
+            "x": 60,
+            "y": 82
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              60,
+              18
+            ],
+            "to": [
+              78,
+              38
+            ],
+            "label": "邊路內切"
+          },
+          {
+            "from": [
+              68,
+              50
+            ],
+            "to": [
+              85,
+              50
+            ],
+            "label": "鋒線中路衝擊"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              38,
+              50
+            ],
+            "to": [
+              56,
+              50
+            ],
+            "label": "後腰→前場"
+          },
+          {
+            "from": [
+              56,
+              18
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "右翼→中鋒"
+          },
+          {
+            "from": [
+              56,
+              82
+            ],
+            "to": [
+              70,
+              50
+            ],
+            "label": "左翼→中鋒"
+          }
+        ],
+        "zones": [
+          {
+            "x": 35,
+            "y": 8,
+            "w": 28,
+            "h": 84,
+            "label": "高位逼搶區",
+            "kind": "press"
+          },
+          {
+            "x": 52,
+            "y": 30,
+            "w": 22,
+            "h": 40,
+            "label": "創造區",
+            "kind": "create"
+          }
+        ],
+        "stats": {
+          "attack": 7.5,
+          "defense": 7.0,
+          "midfield": 7.5,
+          "fitness": 8.5,
+          "experience": 6.5,
+          "stars": 7.5
+        }
+      },
+      "away": {
+        "code": "BEL",
+        "name": "比利時",
+        "flag": "🇧🇪",
+        "color": "#ed2939",
+        "colorAlt": "#ed2939",
+        "manager": "Garcia",
+        "formation": "4-2-3-1",
+        "lineup": [
+          {
+            "n": 1,
+            "name": "T. COURTOIS",
+            "pos": "GK",
+            "x": 92,
+            "y": 50
+          },
+          {
+            "n": 15,
+            "name": "默尼耶",
+            "pos": "RB",
+            "x": 78,
+            "y": 18
+          },
+          {
+            "n": 4,
+            "name": "B. MECHELE",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
+          },
+          {
+            "n": 5,
+            "name": "M. CUYPER",
+            "pos": "CB",
+            "x": 78,
+            "y": 62
+          },
+          {
+            "n": 3,
+            "name": "塔特",
+            "pos": "LB",
+            "x": 78,
+            "y": 82
+          },
+          {
+            "n": 8,
+            "name": "蒂萊曼斯",
+            "pos": "DM",
+            "x": 62,
+            "y": 38
+          },
+          {
+            "n": 24,
+            "name": "奧納納",
+            "pos": "DM",
+            "x": 62,
+            "y": 62
+          },
+          {
+            "n": 11,
+            "name": "多庫",
+            "pos": "RW",
+            "x": 44,
+            "y": 18
+          },
+          {
+            "n": 7,
+            "name": "迪布尼",
+            "pos": "AM",
+            "x": 44,
+            "y": 50
+          },
+          {
+            "n": 10,
+            "name": "特羅薩德",
+            "pos": "LW",
+            "x": 44,
+            "y": 82
+          },
+          {
+            "n": 9,
+            "name": "盧卡庫",
+            "pos": "ST",
+            "x": 30,
+            "y": 50
+          }
+        ],
+        "arrows": [
+          {
+            "from": [
+              44,
+              18
+            ],
+            "to": [
+              22,
+              32
+            ],
+            "label": "邊鋒突破"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              28,
+              42
+            ],
+            "label": "前腰直塞"
+          }
+        ],
+        "ballRoutes": [
+          {
+            "from": [
+              62,
+              38
+            ],
+            "to": [
+              44,
+              50
+            ],
+            "label": "後腰→前腰"
+          },
+          {
+            "from": [
+              44,
+              50
+            ],
+            "to": [
+              30,
+              50
+            ],
+            "label": "前腰→中鋒"
+          },
+          {
+            "from": [
+              78,
+              18
+            ],
+            "to": [
+              44,
+              18
+            ],
+            "label": "右後衛長傳右翼"
+          }
+        ],
+        "zones": [
+          {
+            "x": 38,
+            "y": 8,
+            "w": 30,
+            "h": 84,
+            "label": "高位逼搶區",
+            "kind": "press"
+          },
+          {
+            "x": 26,
+            "y": 30,
+            "w": 24,
+            "h": 40,
+            "label": "前腰串聯區",
+            "kind": "create"
+          }
+        ],
+        "stats": {
+          "attack": 9.0,
+          "defense": 7.0,
+          "midfield": 8.5,
+          "fitness": 7.5,
+          "experience": 8.5,
+          "stars": 9.5
+        }
+      },
+      "timeline": [
+        {
+          "min": 5,
+          "side": "away",
+          "type": "control",
+          "text": "開場掌控節奏，逐步建立攻勢"
+        },
+        {
+          "min": 35,
+          "side": "home",
+          "type": "goal",
+          "text": "率先破門，取得領先",
+          "score": "1-0"
+        },
+        {
+          "min": 45,
+          "side": "neutral",
+          "type": "halftime",
+          "text": "半場：USA 1-0 BEL"
+        },
+        {
+          "min": 52,
+          "side": "away",
+          "type": "goal",
+          "text": "扳平比分",
+          "score": "1-1"
+        },
+        {
+          "min": 78,
+          "side": "away",
+          "type": "goal",
+          "text": "反超比分，奪回領先",
+          "score": "1-2"
+        },
+        {
+          "min": 90,
+          "side": "neutral",
+          "type": "fulltime",
+          "text": "全場：USA 1-2 BEL"
+        }
+      ],
+      "referee": {
+        "style": "待定",
+        "tendency": "FIFA 將在比賽前公布主裁判，依據裁判執法風格再行分析",
+        "impact": "暫無資料"
+      },
+      "keyDuels": [
+        {
+          "home": "巴洛根",
+          "away": "費斯",
+          "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
+        },
+        {
+          "home": "理查茲",
+          "away": "多庫",
+          "note": "防守 vs 進攻 — 客隊鋒線能否突破"
+        },
+        {
+          "home": "普利西奇",
+          "away": "迪布魯尼",
+          "note": "中場控制 — 誰主導節奏誰勝"
+        }
+      ],
+      "tactics": {
+        "home": [
+          "雙翼速度衝擊邊路",
+          "中場三人組高位逼搶",
+          "鋒線中路接應內切"
+        ],
+        "away": [
+          "邊鋒突破到底線傳中",
+          "前腰直塞中鋒身後",
+          "邊路傳中與套邊配合密集"
+        ]
+      },
+      "predict": {
+        "score": "1-2",
+        "confidence": 58,
+        "winner": "away",
+        "reasoning": "客隊在球星佔優 (2.0)；客隊在經驗佔優 (2.0)，預期客隊取勝。",
+        "scenarios": [
+          {
+            "score": "1-2",
+            "prob": 30,
+            "desc": "預測比分"
+          },
+          {
+            "score": "0-1",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-2",
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
+            "prob": 16,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-1",
             "prob": 14,
             "desc": "可能情境"
           }

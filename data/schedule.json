@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T23:41:09.096320+00:00",
+  "generatedAt": "2026-07-02T04:19:54.179419+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5366,8 +5366,8 @@
       "group": "",
       "utc": "2026-07-02T00:00:00Z",
       "localKick": "2026-07-01T17:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "San Francisco Bay Area Stadium",
       "city": "San Francisco Bay Area",
       "tz": "",
@@ -5379,7 +5379,7 @@
         "code": "USA",
         "name": "USA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -5387,17 +5387,34 @@
         "code": "BIH",
         "name": "Bosnia and Herzegovina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BIH",
-        "score": null,
+        "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43921",
+      "attendance": "68827",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "45'",
+          "side": "home",
+          "team": "43921",
+          "player": "Folarin Balogun",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "82'",
+          "side": "home",
+          "team": "43921",
+          "player": "Malik Tillman",
+          "score": "2-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021525",
@@ -5952,10 +5969,10 @@
       "placeholderHome": "W81",
       "placeholderAway": "W82",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43921",
+        "code": "USA",
+        "name": "USA",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
         "score": null,
         "pen": null
       },
