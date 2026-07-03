@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T16:44:32.125013+00:00",
+  "generatedAt": "2026-07-03T18:38:20.374002+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5786,7 +5786,7 @@
       "group": "",
       "utc": "2026-07-03T18:00:00Z",
       "localKick": "2026-07-03T13:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Dallas Stadium",
       "city": "Dallas",
@@ -5799,7 +5799,7 @@
         "code": "AUS",
         "name": "Australia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5807,7 +5807,7 @@
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -5817,7 +5817,17 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "13'",
+          "side": "away",
+          "team": "43855",
+          "player": "Emam Ashour",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Karim Hafez"
+        }
+      ]
     },
     {
       "id": "400021533",
