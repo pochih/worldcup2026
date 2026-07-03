@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T18:56:45.292060+00:00",
+  "generatedAt": "2026-07-03T20:21:55.786392+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5799,7 +5799,7 @@
         "code": "AUS",
         "name": "Australia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -5811,7 +5811,7 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "70244",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -5826,6 +5826,14 @@
           "score": "0-1",
           "type": "G",
           "assist": "Karim Hafez"
+        },
+        {
+          "minute": "55'",
+          "side": "home",
+          "team": "43855",
+          "player": "Mohamed Hany",
+          "score": "1-1",
+          "type": "OG"
         }
       ]
     },
@@ -6100,10 +6108,10 @@
         "pen": null
       },
       "away": {
-        "id": "43855",
-        "code": "EGY",
-        "name": "Egypt",
-        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
+        "id": null,
+        "code": null,
+        "name": null,
+        "flag": "",
         "score": null,
         "pen": null
       },
