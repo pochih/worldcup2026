@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T22:15:11.654369+00:00",
+  "generatedAt": "2026-07-03T23:18:22.301552+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5717,7 +5717,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -5735,7 +5735,17 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "29'",
+          "side": "home",
+          "team": "43922",
+          "player": "Lionel Messi",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Lisandro Martinez"
+        }
+      ]
     },
     {
       "id": "400021517",
