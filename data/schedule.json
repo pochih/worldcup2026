@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T22:17:59.844728+00:00",
+  "generatedAt": "2026-07-03T00:18:27.515889+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5509,7 +5509,7 @@
       "group": "",
       "utc": "2026-07-02T23:00:00Z",
       "localKick": "2026-07-02T19:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Toronto Stadium",
       "city": "Toronto",
@@ -5522,7 +5522,7 @@
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5530,7 +5530,7 @@
         "code": "CRO",
         "name": "Croatia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CRO",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -5540,7 +5540,17 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "53'",
+          "side": "away",
+          "team": "43938",
+          "player": "Ivan Perisic",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Josip Stanisic"
+        }
+      ]
     },
     {
       "id": "400021519",
