@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T04:55:10.196140+00:00",
+  "generatedAt": "2026-07-03T08:26:34.296828+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5645,8 +5645,8 @@
       "group": "",
       "utc": "2026-07-03T03:00:00Z",
       "localKick": "2026-07-02T20:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
       "tz": "",
@@ -5669,7 +5669,7 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43971",
       "attendance": "52497",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -6123,10 +6123,10 @@
       "placeholderHome": "W85",
       "placeholderAway": "W87",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
         "score": null,
         "pen": null
       },
