@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T18:38:20.374002+00:00",
+  "generatedAt": "2026-07-03T18:56:45.292060+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6100,10 +6100,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43855",
+        "code": "EGY",
+        "name": "Egypt",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
         "score": null,
         "pen": null
       },
