@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T20:21:55.786392+00:00",
+  "generatedAt": "2026-07-03T22:15:11.654369+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5704,7 +5704,7 @@
       "group": "",
       "utc": "2026-07-03T22:00:00Z",
       "localKick": "2026-07-03T18:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Miami Stadium",
       "city": "Miami",
@@ -5717,7 +5717,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5725,7 +5725,7 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -5786,8 +5786,8 @@
       "group": "",
       "utc": "2026-07-03T18:00:00Z",
       "localKick": "2026-07-03T13:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 2,
       "venue": "Dallas Stadium",
       "city": "Dallas",
       "tz": "",
@@ -5800,7 +5800,7 @@
         "name": "Australia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/AUS",
         "score": 1,
-        "pen": null
+        "pen": 2
       },
       "away": {
         "id": "43855",
@@ -5808,9 +5808,9 @@
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
         "score": 1,
-        "pen": null
+        "pen": 4
       },
-      "winner": null,
+      "winner": "43855",
       "attendance": "70244",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -5834,6 +5834,54 @@
           "player": "Mohamed Hany",
           "score": "1-1",
           "type": "OG"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43855",
+          "player": "Mahmoud Saber",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43976",
+          "player": "Jackson Irvine",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43855",
+          "player": "Ramy Rabia",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43976",
+          "player": "Awer Mabil",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43855",
+          "player": "Mohamed Salah",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43855",
+          "player": "Hossam Abdelmaguid",
+          "score": "1-1",
+          "type": "PEN"
         }
       ]
     },
@@ -6108,10 +6156,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43855",
+        "code": "EGY",
+        "name": "Egypt",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
         "score": null,
         "pen": null
       },

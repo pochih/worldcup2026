@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-03T20:21:55.847275+00:00",
+  "_generatedAt": "2026-07-03T22:15:11.706423+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -1142,22 +1142,22 @@
             "y": 18
           },
           {
-            "n": 6,
-            "name": "M. ABDELMON",
+            "n": 4,
+            "name": "H. ABDELMAG",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 2,
-            "name": "Y. IBRAHIM",
+            "n": 5,
+            "name": "RAMY RABIA",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 15,
+            "name": "K. HAFEZ",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -10540,22 +10540,22 @@
             "y": 18
           },
           {
-            "n": 6,
-            "name": "M. ABDELMON",
+            "n": 4,
+            "name": "H. ABDELMAG",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 2,
-            "name": "Y. IBRAHIM",
+            "n": 5,
+            "name": "RAMY RABIA",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 15,
+            "name": "K. HAFEZ",
             "pos": "LB",
             "x": 78,
             "y": 82
