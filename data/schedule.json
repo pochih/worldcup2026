@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T00:18:27.515889+00:00",
+  "generatedAt": "2026-07-03T04:55:10.196140+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5509,8 +5509,8 @@
       "group": "",
       "utc": "2026-07-02T23:00:00Z",
       "localKick": "2026-07-02T19:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Toronto Stadium",
       "city": "Toronto",
       "tz": "",
@@ -5522,7 +5522,7 @@
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -5533,8 +5533,8 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43963",
+      "attendance": "43036",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -5547,8 +5547,24 @@
           "team": "43938",
           "player": "Ivan Perisic",
           "score": "0-1",
+          "type": "G"
+        },
+        {
+          "minute": "68'",
+          "side": "home",
+          "team": "43963",
+          "player": "Cristiano Ronaldo",
+          "score": "1-1",
+          "type": "PEN"
+        },
+        {
+          "minute": "90'+4'",
+          "side": "home",
+          "team": "43963",
+          "player": "Goncalo Ramos",
+          "score": "2-1",
           "type": "G",
-          "assist": "Josip Stanisic"
+          "assist": "Rafael Leao"
         }
       ]
     },
@@ -5629,7 +5645,7 @@
       "group": "",
       "utc": "2026-07-03T03:00:00Z",
       "localKick": "2026-07-02T20:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
@@ -5642,7 +5658,7 @@
         "code": "SUI",
         "name": "Switzerland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -5650,17 +5666,35 @@
         "code": "ALG",
         "name": "Algeria",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ALG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "52497",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "10'",
+          "side": "home",
+          "team": "43971",
+          "player": "Breel Embolo",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Johan Manzambi"
+        },
+        {
+          "minute": "46'",
+          "side": "home",
+          "team": "43971",
+          "player": "Dan Ndoye",
+          "score": "2-0",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021521",
@@ -5966,10 +6000,10 @@
       "placeholderHome": "W83",
       "placeholderAway": "W84",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43963",
+        "code": "POR",
+        "name": "Portugal",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
         "score": null,
         "pen": null
       },
