@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T23:18:22.301552+00:00",
+  "generatedAt": "2026-07-04T03:59:24.922998+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5704,8 +5704,8 @@
       "group": "",
       "utc": "2026-07-03T22:00:00Z",
       "localKick": "2026-07-03T18:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 3,
       "venue": "Miami Stadium",
       "city": "Miami",
       "tz": "",
@@ -5717,7 +5717,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": 1,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -5725,11 +5725,11 @@
         "code": "CPV",
         "name": "Cabo Verde",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CPV",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43922",
+      "attendance": "64478",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -5744,6 +5744,41 @@
           "score": "1-0",
           "type": "G",
           "assist": "Lisandro Martinez"
+        },
+        {
+          "minute": "59'",
+          "side": "away",
+          "team": "43850",
+          "player": "Deroy Duarte",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Ryan Mendes"
+        },
+        {
+          "minute": "92'",
+          "side": "home",
+          "team": "43922",
+          "player": "Lisandro Martinez",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Alexis Mac Allister"
+        },
+        {
+          "minute": "103'",
+          "side": "away",
+          "team": "43850",
+          "player": "Sidny Lopes Cabral",
+          "score": "2-2",
+          "type": "G",
+          "assist": "Yannick Semedo"
+        },
+        {
+          "minute": "111'",
+          "side": "home",
+          "team": "43850",
+          "player": "Diney Borges",
+          "score": "3-2",
+          "type": "OG"
         }
       ]
     },
@@ -5755,8 +5790,8 @@
       "group": "",
       "utc": "2026-07-04T01:30:00Z",
       "localKick": "2026-07-03T20:30:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
       "tz": "",
@@ -5768,7 +5803,7 @@
         "code": "COL",
         "name": "Colombia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -5776,17 +5811,27 @@
         "code": "GHA",
         "name": "Ghana",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/GHA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43926",
+      "attendance": "69045",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "14'",
+          "side": "home",
+          "team": "43926",
+          "player": "Jhon Arias",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Luis Suarez"
+        }
+      ]
     },
     {
       "id": "400021515",
@@ -6158,10 +6203,10 @@
       "placeholderHome": "W86",
       "placeholderAway": "W88",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
         "score": null,
         "pen": null
       },
@@ -6207,10 +6252,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43926",
+        "code": "COL",
+        "name": "Colombia",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
         "score": null,
         "pen": null
       },
