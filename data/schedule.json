@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T18:10:01.560271+00:00",
+  "generatedAt": "2026-07-04T19:34:55.950220+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5989,8 +5989,8 @@
       "group": "",
       "utc": "2026-07-04T17:00:00Z",
       "localKick": "2026-07-04T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Houston Stadium",
       "city": "Houston",
       "tz": "",
@@ -6010,17 +6010,45 @@
         "code": "MAR",
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
-        "score": 0,
+        "score": 3,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43872",
+      "attendance": "68777",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "50'",
+          "side": "away",
+          "team": "43872",
+          "player": "Azzedine Ounahi",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Achraf Hakimi"
+        },
+        {
+          "minute": "82'",
+          "side": "away",
+          "team": "43872",
+          "player": "Azzedine Ounahi",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Brahim Diaz"
+        },
+        {
+          "minute": "90'+8'",
+          "side": "away",
+          "team": "43872",
+          "player": "Soufiane Rahimi",
+          "score": "0-3",
+          "type": "G",
+          "assist": "Brahim Diaz"
+        }
+      ]
     },
     {
       "id": "400021532",
@@ -6293,10 +6321,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43872",
+        "code": "MAR",
+        "name": "Morocco",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
         "score": null,
         "pen": null
       },
