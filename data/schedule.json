@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T22:09:46.211922+00:00",
+  "generatedAt": "2026-07-04T23:11:30.101856+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5948,8 +5948,8 @@
       "group": "",
       "utc": "2026-07-04T21:00:00Z",
       "localKick": "2026-07-04T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
       "tz": "",
@@ -5969,17 +5969,26 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43946",
+      "attendance": "68324",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "70'",
+          "side": "away",
+          "team": "43946",
+          "player": "Kylian Mbappe",
+          "score": "0-1",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021530",
