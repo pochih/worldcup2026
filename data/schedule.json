@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T19:34:55.950220+00:00",
+  "generatedAt": "2026-07-04T21:12:37.899951+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5948,7 +5948,7 @@
       "group": "",
       "utc": "2026-07-04T21:00:00Z",
       "localKick": "2026-07-04T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Philadelphia Stadium",
       "city": "Philadelphia",
@@ -5961,7 +5961,7 @@
         "code": "PAR",
         "name": "Paraguay",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/PAR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -5969,7 +5969,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
