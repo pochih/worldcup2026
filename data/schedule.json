@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T15:20:58.342254+00:00",
+  "generatedAt": "2026-07-04T17:17:30.351452+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -5989,7 +5989,7 @@
       "group": "",
       "utc": "2026-07-04T17:00:00Z",
       "localKick": "2026-07-04T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Houston Stadium",
       "city": "Houston",
@@ -6002,7 +6002,7 @@
         "code": "CAN",
         "name": "Canada",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/CAN",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6010,7 +6010,7 @@
         "code": "MAR",
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
