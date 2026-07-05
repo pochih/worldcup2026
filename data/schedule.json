@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T23:11:30.101856+00:00",
+  "generatedAt": "2026-07-05T00:02:00.666902+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6322,10 +6322,10 @@
       "placeholderHome": "W89",
       "placeholderAway": "W90",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
         "score": null,
         "pen": null
       },
