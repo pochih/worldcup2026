@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T19:41:50.604251+00:00",
+  "generatedAt": "2026-07-05T21:18:19.927526+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6067,7 +6067,7 @@
       "group": "",
       "utc": "2026-07-05T20:00:00Z",
       "localKick": "2026-07-05T16:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
@@ -6080,7 +6080,7 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6088,7 +6088,7 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
