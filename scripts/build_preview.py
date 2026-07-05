@@ -383,22 +383,54 @@ def make_zones(formation, style, mirror=False):
     return out
 
 
-def predict_score(home_stats, away_stats):
-    """Rule-based prediction. Returns dict with score / confidence / winner /
-    reasoning / scenarios."""
-    weights = {"attack": 0.35, "midfield": 0.25, "defense": 0.25,
-               "stars": 0.10, "experience": 0.05}
+def _poisson(lam, rng):
+    """Knuth's Poisson sampler — no numpy dep."""
+    import math
+    L = math.exp(-lam)
+    k, p = 0, 1.0
+    while p > L:
+        k += 1
+        p *= rng.random()
+    return k - 1
+
+
+def predict_score(home_stats, away_stats, home_advantage=False):
+    """Poisson-based prediction. Returns dict with score / confidence / winner /
+    reasoning / scenarios.
+
+    lam_h / lam_a derived from weighted stat diff; 10 000-trial simulation
+    yields the score distribution used for scenarios + confidence. Home
+    advantage adds +0.15 to lam_h when the match is played in the home
+    team's country (auto-detected via schedule.matches[].country).
+    Deterministic per (lam_h, lam_a) pair — same match yields same output.
+    """
+    import random
+    weights = {"attack": 0.30, "midfield": 0.20, "defense": 0.20,
+               "stars": 0.15, "experience": 0.05, "fitness": 0.10}
     diff = sum(weights[k] * (home_stats.get(k, 5) - away_stats.get(k, 5))
                for k in weights)
-    # Map diff (~ -5..+5) → expected goals delta
-    base_h = 1.4 + max(-1, min(1.5, diff * 0.6))
-    base_a = 1.4 - max(-1, min(1.5, diff * 0.6))
-    h_goals = max(0, round(base_h))
-    a_goals = max(0, round(base_a))
-    # Prevent 0-0 draws — bump the stronger side
-    if h_goals == 0 and a_goals == 0:
-        if diff >= 0: h_goals = 1
-        else: a_goals = 1
+
+    # baseline 1.35: after Poisson sampling the per-match total lands near
+    # 2.5-2.7 goals which matches historical World Cup average
+    base = 1.35
+    delta = max(-1, min(1.5, diff * 0.6))
+    lam_h = max(0.2, base + delta + (0.15 if home_advantage else 0))
+    lam_a = max(0.2, base - delta)
+
+    # Deterministic RNG keyed by rounded λ pair so identical matchups reproduce
+    rng = random.Random()
+    rng.seed(hash((round(lam_h, 3), round(lam_a, 3))))
+
+    N = 10000
+    tally = {}
+    for _ in range(N):
+        h = min(_poisson(lam_h, rng), 6)
+        a = min(_poisson(lam_a, rng), 6)
+        tally[(h, a)] = tally.get((h, a), 0) + 1
+
+    sorted_scores = sorted(tally.items(), key=lambda x: -x[1])[:5]
+    (h_goals, a_goals), top_count = sorted_scores[0]
+    top_prob = top_count / N
 
     if h_goals > a_goals:
         winner = "home"
@@ -407,9 +439,10 @@ def predict_score(home_stats, away_stats):
     else:
         winner = "draw"
 
-    confidence = int(min(85, 50 + 8 * abs(diff)))
+    # Confidence: top-scenario mass drives the base, |diff| bumps it a bit
+    confidence = int(min(90, 40 + top_prob * 100 + abs(diff) * 3))
 
-    # Reasoning: top 2 axis differences
+    # Reasoning: top 2 axis differences (unchanged, plus optional home tag)
     axis_zh = {"attack": "進攻", "midfield": "中場控制",
                "defense": "防守", "stars": "球星", "experience": "經驗",
                "fitness": "體能"}
@@ -431,30 +464,23 @@ def predict_score(home_stats, away_stats):
         "，預期客隊取勝。" if winner == "away" else
         "，預期勢均力敵。"
     )
+    if home_advantage:
+        reasoning += "（主場優勢）"
 
-    # Scenarios: build 5 likely outcomes around the prediction
-    pred = (h_goals, a_goals)
-    candidates = [pred]
-    for dh in (-1, 0, 1):
-        for da in (-1, 0, 1):
-            cand = (max(0, h_goals + dh), max(0, a_goals + da))
-            if cand not in candidates:
-                candidates.append(cand)
-    candidates = candidates[:5]
-    # Probabilities: predicted outcome biggest, others taper off
-    probs = [30, 22, 18, 16, 14][:len(candidates)]
-    # Normalize to 100
-    total = sum(probs)
-    probs = [int(round(p * 100 / total)) for p in probs]
-    diff_total = 100 - sum(probs)
-    probs[0] += diff_total
-
+    # Normalize top-5 counts to percentages summing to exactly 100
+    total = sum(cnt for _, cnt in sorted_scores)
     scenarios = []
-    for (h, a), p in zip(candidates, probs):
+    running_pct = 0
+    for i, ((h, a), cnt) in enumerate(sorted_scores):
+        if i == len(sorted_scores) - 1:
+            pct = 100 - running_pct
+        else:
+            pct = int(round(cnt * 100 / total))
+            running_pct += pct
         scenarios.append({
             "score": f"{h}-{a}",
-            "prob": p,
-            "desc": "預測比分" if (h, a) == pred else "可能情境",
+            "prob": pct,
+            "desc": "預測比分" if (h, a) == (h_goals, a_goals) else "可能情境",
         })
 
     return {
@@ -687,7 +713,8 @@ def gen_match_preview(m, analysis, stars, team_meta, templates, rosters=None, co
     h_zones = make_zones(h_form, h_style, mirror=False)
     a_zones = make_zones(a_form, a_style, mirror=True)
 
-    predict = predict_score(h_stats, a_stats)
+    predict = predict_score(h_stats, a_stats,
+                            home_advantage=((m.get("country") or "").upper() == h_code))
     timeline = make_timeline(predict, h_code, a_code)
     duels = key_duels(h_code, a_code, stars, h_lineup, a_lineup)
     tactics = {

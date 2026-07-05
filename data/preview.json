@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-05T10:27:00.010899+00:00",
+  "_generatedAt": "2026-07-05T10:32:10.965978+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -30,7 +30,7 @@
             "y": 50
           },
           {
-            "n": 13,
+            "n": 2,
             "name": "達尼洛",
             "pos": "RB",
             "x": 22,
@@ -38,42 +38,42 @@
           },
           {
             "n": 4,
-            "name": "馬奎尼奧斯",
+            "name": "加比爾",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
             "n": 3,
-            "name": "G. MAGALHAE",
+            "name": "馬奎尼奧斯",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 6,
-            "name": "A. SANDRO",
+            "n": 16,
+            "name": "D. 桑托斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
             "n": 8,
-            "name": "B. GUIMARAE",
+            "name": "B. 吉馬良斯",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 20,
-            "name": "L. PAQUETA",
+            "n": 5,
+            "name": "卡塞米羅",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 5,
-            "name": "CASEMIRO",
+            "n": 18,
+            "name": "帕奎塔",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -86,15 +86,15 @@
             "y": 18
           },
           {
-            "n": 19,
-            "name": "恩德里克",
+            "n": 9,
+            "name": "M. 庫尼亞",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
             "n": 7,
-            "name": "V. JUNIOR",
+            "name": "維尼修斯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -196,8 +196,8 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "Y. BOUNOU",
+            "n": 12,
+            "name": "穆尼爾",
             "pos": "GK",
             "x": 92,
             "y": 50
@@ -210,22 +210,22 @@
             "y": 18
           },
           {
-            "n": 14,
-            "name": "Issa Diop",
+            "n": 5,
+            "name": "阿格爾德",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 18,
-            "name": "Chadi RIAD",
+            "n": 6,
+            "name": "薩伊斯",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
             "n": 3,
-            "name": "N. MAZRAOUI",
+            "name": "馬西納",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -246,28 +246,28 @@
           },
           {
             "n": 7,
-            "name": "C. TALBI",
+            "name": "齊耶赫",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 10,
-            "name": "B. DIAZ",
+            "n": 11,
+            "name": "B. 迪亞斯",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
             "n": 9,
-            "name": "S. RAHIMI",
+            "name": "恩尼斯利",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
             "n": 17,
-            "name": "Amine SBAI",
+            "name": "布法爾",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -380,24 +380,17 @@
           "text": "半場：BRA 1-0 MAR"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
+          "text": "擴大領先",
+          "score": "2-0"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：BRA 2-1 MAR"
+          "text": "全場：BRA 2-0 MAR"
         }
       ],
       "referee": {
@@ -435,34 +428,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 61,
+        "score": "2-0",
+        "confidence": 59,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (3.0)；主隊在球星佔優 (2.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 27,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 26,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-0",
+            "prob": 20,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 14,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
-            "prob": 14,
+            "prob": 13,
             "desc": "可能情境"
           }
         ]
@@ -489,7 +482,7 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
+            "n": 23,
             "name": "費布魯根",
             "pos": "GK",
             "x": 8,
@@ -510,15 +503,15 @@
             "y": 38
           },
           {
-            "n": 6,
-            "name": "J. HECKE",
+            "n": 3,
+            "name": "德里赫特",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "M. VEN",
+            "n": 5,
+            "name": "阿克",
             "pos": "LB",
             "x": 22,
             "y": 82
@@ -538,21 +531,21 @@
             "y": 50
           },
           {
-            "n": 8,
-            "name": "R. GRAVENBE",
+            "n": 6,
+            "name": "西蒙斯",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 18,
+            "n": 7,
             "name": "馬倫",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 10,
+            "n": 9,
             "name": "迪佩",
             "pos": "ST",
             "x": 68,
@@ -669,8 +662,8 @@
             "y": 50
           },
           {
-            "n": 21,
-            "name": "Hiroki ITO",
+            "n": 2,
+            "name": "菅原由勢",
             "pos": "RB",
             "x": 78,
             "y": 18
@@ -683,57 +676,57 @@
             "y": 38
           },
           {
-            "n": 25,
-            "name": "J. SUZUKI",
+            "n": 13,
+            "name": "伊藤洋輝",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 5,
-            "name": "長友佑都",
+            "n": 22,
+            "name": "富安健洋",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 10,
-            "name": "Ritsu DOAN",
+            "n": 24,
+            "name": "佐野海舟",
             "pos": "DM",
             "x": 62,
             "y": 38
           },
           {
-            "n": 13,
-            "name": "K. Nakamura",
+            "n": 7,
+            "name": "田中碧",
             "pos": "DM",
             "x": 62,
             "y": 62
           },
           {
-            "n": 18,
-            "name": "Ayase UEDA",
+            "n": 14,
+            "name": "久保建英",
             "pos": "RW",
             "x": 44,
             "y": 18
           },
           {
-            "n": 15,
+            "n": 18,
             "name": "鎌田大地",
             "pos": "AM",
             "x": 44,
             "y": 50
           },
           {
-            "n": 8,
-            "name": "久保建英",
+            "n": 11,
+            "name": "中村敬斗",
             "pos": "LW",
             "x": 44,
             "y": 82
           },
           {
-            "n": 19,
-            "name": "Koki OGAWA",
+            "n": 20,
+            "name": "上田綺世",
             "pos": "ST",
             "x": 30,
             "y": 50
@@ -846,24 +839,10 @@
           "text": "半場：NED 1-0 JPN"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 68,
-          "side": "home",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：NED 2-1 JPN"
+          "text": "全場：NED 1-0 JPN"
         }
       ],
       "referee": {
@@ -901,33 +880,33 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 55,
+        "score": "1-0",
+        "confidence": 53,
         "winner": "home",
         "reasoning": "主隊在經驗佔優 (1.5)；主隊在進攻佔優 (1.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "1-0",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "1-0",
-            "prob": 22,
-            "desc": "可能情境"
-          },
-          {
             "score": "1-1",
-            "prob": 18,
+            "prob": 23,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
-            "prob": 16,
+            "score": "2-1",
+            "prob": 20,
             "desc": "可能情境"
           },
           {
             "score": "2-0",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-0",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -956,7 +935,7 @@
         "lineup": [
           {
             "n": 1,
-            "name": "T. COURTOIS",
+            "name": "卡斯特爾斯",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -969,15 +948,15 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "B. MECHELE",
+            "n": 5,
+            "name": "費斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "M. CUYPER",
+            "n": 4,
+            "name": "德巴斯特",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -997,14 +976,14 @@
             "y": 38
           },
           {
-            "n": 24,
+            "n": 6,
             "name": "奧納納",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 11,
+            "n": 17,
             "name": "多庫",
             "pos": "RW",
             "x": 56,
@@ -1018,14 +997,14 @@
             "y": 50
           },
           {
-            "n": 10,
+            "n": 11,
             "name": "特羅薩德",
             "pos": "LW",
             "x": 56,
             "y": 82
           },
           {
-            "n": 9,
+            "n": 10,
             "name": "盧卡庫",
             "pos": "ST",
             "x": 70,
@@ -1129,41 +1108,41 @@
         "lineup": [
           {
             "n": 1,
-            "name": "M. ELSHENAW",
+            "name": "謝納維",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 3,
+            "n": 7,
             "name": "哈尼",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 6,
+            "name": "海加齊",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
             "n": 5,
-            "name": "RAMY RABIA",
+            "name": "哈姆迪",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "K. HAFEZ",
+            "n": 3,
+            "name": "法圖赫",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 7,
+            "n": 21,
             "name": "特雷澤蓋",
             "pos": "CM",
             "x": 60,
@@ -1171,14 +1150,14 @@
           },
           {
             "n": 8,
-            "name": "E. ASHOUR",
+            "name": "哈邁德",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 11,
-            "name": "M. ZICO",
+            "n": 17,
+            "name": "埃爾內尼",
             "pos": "CM",
             "x": 60,
             "y": 70
@@ -1192,13 +1171,13 @@
           },
           {
             "n": 9,
-            "name": "H. ABDELKAR",
+            "name": "M. 穆罕默德",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 22,
+            "n": 11,
             "name": "馬穆什",
             "pos": "LW",
             "x": 40,
@@ -1312,24 +1291,17 @@
           "text": "半場：BEL 1-0 EGY"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
+          "text": "擴大領先",
+          "score": "2-0"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：BEL 2-1 EGY"
+          "text": "全場：BEL 2-0 EGY"
         }
       ],
       "referee": {
@@ -1367,33 +1339,33 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 61,
+        "score": "2-0",
+        "confidence": 58,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (2.0)；主隊在中場控制佔優 (2.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 26,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 24,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-0",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 17,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -1937,7 +1909,7 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 13,
+            "n": 1,
             "name": "奧喬亞",
             "pos": "GK",
             "x": 8,
@@ -1945,7 +1917,7 @@
           },
           {
             "n": 2,
-            "name": "J. SANCHEZ",
+            "name": "桑切斯",
             "pos": "RB",
             "x": 22,
             "y": 18
@@ -1958,8 +1930,8 @@
             "y": 38
           },
           {
-            "n": 20,
-            "name": "M. CHAVEZ",
+            "n": 15,
+            "name": "巴斯克斯",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -1972,43 +1944,43 @@
             "y": 82
           },
           {
-            "n": 17,
-            "name": "皮內達",
+            "n": 6,
+            "name": "查維斯",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 24,
-            "name": "L. CHAVEZ",
+            "n": 4,
+            "name": "阿爾瓦雷斯",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Erik LIRA",
+            "n": 10,
+            "name": "皮內達",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 9,
-            "name": "R. JIMENEZ",
+            "n": 22,
+            "name": "洛薩諾",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 16,
-            "name": "J. QUINONES",
+            "n": 9,
+            "name": "希門尼斯",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 25,
-            "name": "R. ALVARADO",
+            "n": 11,
+            "name": "S. 希門尼斯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -2111,77 +2083,77 @@
         "lineup": [
           {
             "n": 1,
-            "name": "K. Seunggyu",
+            "name": "金承奎",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
             "n": 2,
-            "name": "L. Hanbeom",
+            "name": "金文煥",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
             "n": 4,
-            "name": "KIM Minjae",
+            "name": "金玟哉",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "K. Taehyeon",
+            "n": 20,
+            "name": "金英權",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 13,
-            "name": "L. Taeseok",
+            "n": 14,
+            "name": "李明宰",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 6,
-            "name": "H. Inbeom",
+            "n": 17,
+            "name": "李在城",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 19,
-            "name": "LEE Kangin",
+            "n": 16,
+            "name": "黃仁範",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 3,
-            "name": "LEE Gihyuk",
+            "n": 13,
+            "name": "朴用宇",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 18,
-            "name": "O. Hyeongyu",
+            "n": 11,
+            "name": "黃喜燦",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 7,
-            "name": "S. Heungmin",
+            "n": 9,
+            "name": "趙圭成",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 9,
-            "name": "C. Guesung",
+            "n": 7,
+            "name": "孫興慜",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -2276,7 +2248,7 @@
       "timeline": [
         {
           "min": 5,
-          "side": "away",
+          "side": "home",
           "type": "control",
           "text": "開場掌控節奏，逐步建立攻勢"
         },
@@ -2301,17 +2273,10 @@
           "score": "1-1"
         },
         {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：MEX 1-2 KOR"
+          "text": "全場：MEX 1-1 KOR"
         }
       ],
       "referee": {
@@ -2349,34 +2314,34 @@
         ]
       },
       "predict": {
-        "score": "1-2",
+        "score": "1-1",
         "confidence": 52,
-        "winner": "away",
-        "reasoning": "客隊在球星佔優 (2.0)；客隊在進攻佔優 (0.5)，預期客隊取勝。",
+        "winner": "home",
+        "reasoning": "客隊在球星佔優 (2.0)；客隊在進攻佔優 (0.5)，預期勢均力敵。（主場優勢）",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "1-1",
+            "prob": 25,
             "desc": "預測比分"
           },
           {
+            "score": "1-2",
+            "prob": 21,
+            "desc": "可能情境"
+          },
+          {
             "score": "0-1",
-            "prob": 22,
+            "prob": 20,
             "desc": "可能情境"
           },
           {
-            "score": "0-2",
-            "prob": 18,
+            "score": "1-0",
+            "prob": 17,
             "desc": "可能情境"
           },
           {
-            "score": "0-3",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
-            "prob": 14,
+            "score": "2-1",
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -2404,63 +2369,63 @@
         "lineup": [
           {
             "n": 1,
-            "name": "O. NYLAND",
+            "name": "尼蘭",
             "pos": "GK",
             "x": 8,
             "y": 50
           },
           {
-            "n": 26,
+            "n": 2,
             "name": "里爾森",
             "pos": "RB",
             "x": 22,
             "y": 18
           },
           {
-            "n": 3,
+            "n": 4,
             "name": "阿耶爾",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 4,
-            "name": "L. OSTIGARD",
+            "n": 5,
+            "name": "厄斯蒂高",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 5,
-            "name": "D. WOLFE",
+            "n": 3,
+            "name": "比約坎",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 22,
+            "n": 8,
             "name": "波布",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 8,
+            "n": 6,
             "name": "貝格",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "P. BERG",
+            "n": 10,
+            "name": "厄德高",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 7,
-            "name": "A. SORLOTH",
+            "n": 11,
+            "name": "索羅特",
             "pos": "RW",
             "x": 60,
             "y": 18
@@ -2473,7 +2438,7 @@
             "y": 50
           },
           {
-            "n": 20,
+            "n": 17,
             "name": "努薩",
             "pos": "LW",
             "x": 60,
@@ -2576,14 +2541,14 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "Y. DIOUF",
+            "n": 16,
+            "name": "門迪",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 15,
+            "n": 22,
             "name": "迪亞塔",
             "pos": "RB",
             "x": 78,
@@ -2597,14 +2562,14 @@
             "y": 38
           },
           {
-            "n": 2,
-            "name": "M. SARR",
+            "n": 13,
+            "name": "迪亞洛",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 14,
+            "n": 12,
             "name": "雅各布斯",
             "pos": "LB",
             "x": 78,
@@ -2618,14 +2583,14 @@
             "y": 30
           },
           {
-            "n": 8,
-            "name": "L. CAMARA",
+            "n": 6,
+            "name": "門迪 N",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 17,
+            "n": 8,
             "name": "薩爾",
             "pos": "CM",
             "x": 60,
@@ -2639,15 +2604,15 @@
             "y": 18
           },
           {
-            "n": 10,
-            "name": "Sadio MANE",
+            "n": 9,
+            "name": "迪亞 B",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 11,
-            "name": "N. JACKSON",
+            "n": 10,
+            "name": "馬內",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -2760,24 +2725,17 @@
           "text": "半場：NOR 1-0 SEN"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
+          "text": "擴大領先",
+          "score": "2-0"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：NOR 2-1 SEN"
+          "text": "全場：NOR 2-0 SEN"
         }
       ],
       "referee": {
@@ -2815,34 +2773,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 57,
+        "score": "2-0",
+        "confidence": 55,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (2.0)；主隊在球星佔優 (2.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 23,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 23,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
-            "prob": 14,
+            "score": "3-0",
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -3399,35 +3357,35 @@
           },
           {
             "n": 2,
-            "name": "J. GIMENEZ",
+            "name": "南德斯",
             "pos": "RB",
             "x": 22,
             "y": 18
           },
           {
             "n": 3,
-            "name": "S. CACERES",
+            "name": "阿勞侯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 13,
-            "name": "G. VARELA",
+            "n": 22,
+            "name": "希門尼斯",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 16,
+            "n": 17,
             "name": "奧利維拉",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 5,
-            "name": "烏加特",
+            "n": 15,
+            "name": "巴爾韋德",
             "pos": "CM",
             "x": 40,
             "y": 30
@@ -3440,14 +3398,14 @@
             "y": 50
           },
           {
-            "n": 8,
-            "name": "巴爾韋德",
+            "n": 14,
+            "name": "烏加特",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 11,
+            "n": 7,
             "name": "佩利斯特里",
             "pos": "RW",
             "x": 60,
@@ -3455,14 +3413,14 @@
           },
           {
             "n": 9,
-            "name": "D. NUNEZ",
+            "name": "努涅斯",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 18,
-            "name": "B. RODRIGUE",
+            "n": 11,
+            "name": "M. 阿勞侯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -3565,13 +3523,13 @@
         "lineup": [
           {
             "n": 23,
-            "name": "Unai SIMON",
+            "name": "西蒙",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 12,
+            "n": 2,
             "name": "波羅",
             "pos": "RB",
             "x": 78,
@@ -3585,14 +3543,14 @@
             "y": 38
           },
           {
-            "n": 5,
-            "name": "M. LLORENTE",
+            "n": 3,
+            "name": "勒諾爾曼",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 24,
+            "n": 18,
             "name": "古谷雷拉",
             "pos": "LB",
             "x": 78,
@@ -3627,8 +3585,8 @@
             "y": 18
           },
           {
-            "n": 10,
-            "name": "Dani OLMO",
+            "n": 9,
+            "name": "莫拉塔",
             "pos": "ST",
             "x": 32,
             "y": 50
@@ -3735,37 +3693,23 @@
           "text": "開場掌控節奏，逐步建立攻勢"
         },
         {
-          "min": 35,
-          "side": "home",
-          "type": "goal",
-          "text": "率先破門，取得領先",
-          "score": "1-0"
-        },
-        {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：URU 1-0 ESP"
+          "text": "半場：URU 0-0 ESP"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
+          "text": "率先破門，取得領先",
+          "score": "0-1"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：URU 1-2 ESP"
+          "text": "全場：URU 0-1 ESP"
         }
       ],
       "referee": {
@@ -3803,33 +3747,33 @@
         ]
       },
       "predict": {
-        "score": "1-2",
-        "confidence": 57,
+        "score": "0-1",
+        "confidence": 55,
         "winner": "away",
         "reasoning": "客隊在中場控制佔優 (1.5)；客隊在進攻佔優 (1.0)，預期客隊取勝。",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "0-1",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "0-1",
-            "prob": 22,
-            "desc": "可能情境"
-          },
-          {
             "score": "0-2",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "0-3",
-            "prob": 16,
+            "prob": 23,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
+            "prob": 20,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -3857,7 +3801,7 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 12,
+            "n": 1,
             "name": "巴爾加斯",
             "pos": "GK",
             "x": 8,
@@ -3871,15 +3815,15 @@
             "y": 18
           },
           {
-            "n": 13,
-            "name": "米納",
+            "n": 23,
+            "name": "桑切斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
             "n": 2,
-            "name": "D. MUNOZ",
+            "name": "米納",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -3892,15 +3836,15 @@
             "y": 82
           },
           {
-            "n": 16,
+            "n": 8,
             "name": "勒馬",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 20,
-            "name": "J. QUINTERO",
+            "n": 16,
+            "name": "里奧斯",
             "pos": "DM",
             "x": 38,
             "y": 62
@@ -3913,22 +3857,22 @@
             "y": 18
           },
           {
-            "n": 6,
-            "name": "R. RIOS",
+            "n": 10,
+            "name": "占士羅迪古斯",
             "pos": "AM",
             "x": 56,
             "y": 50
           },
           {
             "n": 7,
-            "name": "Luis DIAZ",
+            "name": "L. 迪亞斯",
             "pos": "LW",
             "x": 56,
             "y": 82
           },
           {
-            "n": 19,
-            "name": "C. HERNANDE",
+            "n": 9,
+            "name": "杜蘭",
             "pos": "ST",
             "x": 70,
             "y": 50
@@ -4030,14 +3974,14 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 1,
+            "n": 22,
             "name": "迪奧戈科斯塔",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 20,
+            "n": 2,
             "name": "坎塞洛",
             "pos": "RB",
             "x": 78,
@@ -4051,36 +3995,36 @@
             "y": 38
           },
           {
-            "n": 24,
-            "name": "SAMU COSTA",
+            "n": 4,
+            "name": "A. 席爾瓦",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 25,
+            "n": 19,
             "name": "門德斯",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 8,
-            "name": "B. 費南德斯",
+            "n": 18,
+            "name": "魯本內維斯",
             "pos": "DM",
             "x": 62,
             "y": 38
           },
           {
-            "n": 21,
-            "name": "魯本內維斯",
+            "n": 8,
+            "name": "B. 費南德斯",
             "pos": "DM",
             "x": 62,
             "y": 62
           },
           {
-            "n": 17,
-            "name": "R. LEAO",
+            "n": 11,
+            "name": "費利斯",
             "pos": "RW",
             "x": 44,
             "y": 18
@@ -4093,8 +4037,8 @@
             "y": 50
           },
           {
-            "n": 9,
-            "name": "G. RAMOS",
+            "n": 17,
+            "name": "勒奧",
             "pos": "LW",
             "x": 44,
             "y": 82
@@ -4201,37 +4145,23 @@
           "text": "開場掌控節奏，逐步建立攻勢"
         },
         {
-          "min": 35,
-          "side": "home",
-          "type": "goal",
-          "text": "率先破門，取得領先",
-          "score": "1-0"
-        },
-        {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：COL 1-0 POR"
+          "text": "半場：COL 0-0 POR"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
+          "text": "率先破門，取得領先",
+          "score": "0-1"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：COL 1-2 POR"
+          "text": "全場：COL 0-1 POR"
         }
       ],
       "referee": {
@@ -4269,33 +4199,33 @@
         ]
       },
       "predict": {
-        "score": "1-2",
-        "confidence": 56,
+        "score": "0-1",
+        "confidence": 54,
         "winner": "away",
         "reasoning": "客隊在球星佔優 (1.5)；客隊在進攻佔優 (1.0)，預期客隊取勝。",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "0-1",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "0-1",
+            "score": "0-2",
             "prob": 22,
             "desc": "可能情境"
           },
           {
-            "score": "0-2",
-            "prob": 18,
+            "score": "1-1",
+            "prob": 21,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 19,
             "desc": "可能情境"
           },
           {
             "score": "0-3",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -4323,56 +4253,56 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
+            "n": 16,
             "name": "威廉斯",
             "pos": "GK",
             "x": 8,
             "y": 50
           },
           {
-            "n": 20,
+            "n": 2,
             "name": "穆道",
             "pos": "RB",
             "x": 22,
             "y": 18
           },
           {
-            "n": 2,
-            "name": "T. MATULUDI",
+            "n": 4,
+            "name": "姆瓦拉",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 3,
-            "name": "K. NDAMANE",
+            "n": 5,
+            "name": "舒魯",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 6,
+            "n": 3,
             "name": "莫迪巴",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 12,
+            "n": 17,
             "name": "馬塞科",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 4,
+            "n": 8,
             "name": "莫科埃納",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 13,
+            "n": 6,
             "name": "西托勒",
             "pos": "CM",
             "x": 40,
@@ -4393,8 +4323,8 @@
             "y": 50
           },
           {
-            "n": 8,
-            "name": "T. MOREMI",
+            "n": 7,
+            "name": "陶",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -4496,8 +4426,8 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 16,
-            "name": "M. CREPEAU",
+            "n": 1,
+            "name": "克雷波",
             "pos": "GK",
             "x": 92,
             "y": 50
@@ -4510,15 +4440,15 @@
             "y": 18
           },
           {
-            "n": 15,
+            "n": 4,
             "name": "邦比托",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 3,
-            "name": "A. JONES",
+            "n": 5,
+            "name": "維托利亞",
             "pos": "CB",
             "x": 78,
             "y": 62
@@ -4531,42 +4461,42 @@
             "y": 82
           },
           {
-            "n": 7,
-            "name": "S. EUSTAQUI",
+            "n": 14,
+            "name": "凱伊",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 25,
-            "name": "N. SALIBA",
+            "n": 6,
+            "name": "尤斯塔基奧",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "M. CHOINIER",
+            "n": 8,
+            "name": "弗雷澤",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 17,
+            "n": 11,
             "name": "布坎南",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 10,
+            "n": 9,
             "name": "戴維",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 9,
+            "n": 17,
             "name": "拉林",
             "pos": "LW",
             "x": 40,
@@ -4705,12 +4635,12 @@
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
-          "home": "RSA #2 (CB)",
+          "home": "RSA #4 (CB)",
           "away": "強納森·大衛",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
-          "home": "RSA #12 (CM)",
+          "home": "RSA #17 (CM)",
           "away": "尤斯塔基奧",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
@@ -4729,33 +4659,33 @@
       },
       "predict": {
         "score": "0-2",
-        "confidence": 65,
+        "confidence": 64,
         "winner": "away",
         "reasoning": "客隊在球星佔優 (3.5)；客隊在進攻佔優 (2.5)，預期客隊取勝。",
         "scenarios": [
           {
             "score": "0-2",
-            "prob": 30,
+            "prob": 29,
             "desc": "預測比分"
           },
           {
             "score": "0-1",
-            "prob": 22,
+            "prob": 25,
             "desc": "可能情境"
           },
           {
             "score": "0-3",
-            "prob": 18,
+            "prob": 22,
             "desc": "可能情境"
           },
           {
-            "score": "1-1",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-2",
+            "score": "0-4",
             "prob": 14,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-0",
+            "prob": 10,
             "desc": "可能情境"
           }
         ]
@@ -4789,7 +4719,7 @@
             "y": 50
           },
           {
-            "n": 13,
+            "n": 2,
             "name": "達尼洛",
             "pos": "RB",
             "x": 22,
@@ -4797,42 +4727,42 @@
           },
           {
             "n": 4,
-            "name": "馬奎尼奧斯",
+            "name": "加比爾",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
             "n": 3,
-            "name": "G. MAGALHAE",
+            "name": "馬奎尼奧斯",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 6,
-            "name": "A. SANDRO",
+            "n": 16,
+            "name": "D. 桑托斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
             "n": 8,
-            "name": "B. GUIMARAE",
+            "name": "B. 吉馬良斯",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 20,
-            "name": "L. PAQUETA",
+            "n": 5,
+            "name": "卡塞米羅",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 5,
-            "name": "CASEMIRO",
+            "n": 18,
+            "name": "帕奎塔",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -4845,15 +4775,15 @@
             "y": 18
           },
           {
-            "n": 19,
-            "name": "恩德里克",
+            "n": 9,
+            "name": "M. 庫尼亞",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
             "n": 7,
-            "name": "V. JUNIOR",
+            "name": "維尼修斯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -4962,8 +4892,8 @@
             "y": 50
           },
           {
-            "n": 21,
-            "name": "Hiroki ITO",
+            "n": 2,
+            "name": "菅原由勢",
             "pos": "RB",
             "x": 78,
             "y": 18
@@ -4976,57 +4906,57 @@
             "y": 38
           },
           {
-            "n": 25,
-            "name": "J. SUZUKI",
+            "n": 13,
+            "name": "伊藤洋輝",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 5,
-            "name": "長友佑都",
+            "n": 22,
+            "name": "富安健洋",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 10,
-            "name": "Ritsu DOAN",
+            "n": 24,
+            "name": "佐野海舟",
             "pos": "DM",
             "x": 62,
             "y": 38
           },
           {
-            "n": 13,
-            "name": "K. Nakamura",
+            "n": 7,
+            "name": "田中碧",
             "pos": "DM",
             "x": 62,
             "y": 62
           },
           {
-            "n": 18,
-            "name": "Ayase UEDA",
+            "n": 14,
+            "name": "久保建英",
             "pos": "RW",
             "x": 44,
             "y": 18
           },
           {
-            "n": 15,
+            "n": 18,
             "name": "鎌田大地",
             "pos": "AM",
             "x": 44,
             "y": 50
           },
           {
-            "n": 8,
-            "name": "久保建英",
+            "n": 11,
+            "name": "中村敬斗",
             "pos": "LW",
             "x": 44,
             "y": 82
           },
           {
-            "n": 19,
-            "name": "Koki OGAWA",
+            "n": 20,
+            "name": "上田綺世",
             "pos": "ST",
             "x": 30,
             "y": 50
@@ -5139,24 +5069,10 @@
           "text": "半場：BRA 1-0 JPN"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 68,
-          "side": "home",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：BRA 2-1 JPN"
+          "text": "全場：BRA 1-0 JPN"
         }
       ],
       "referee": {
@@ -5194,34 +5110,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 58,
+        "score": "1-0",
+        "confidence": 55,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (2.0)；主隊在球星佔優 (1.5)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "1-0",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "1-0",
-            "prob": 22,
+            "score": "2-0",
+            "prob": 24,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
-            "prob": 14,
+            "score": "3-0",
+            "prob": 15,
             "desc": "可能情境"
           }
         ]
@@ -5262,42 +5178,42 @@
             "y": 18
           },
           {
-            "n": 15,
+            "n": 23,
             "name": "施洛特貝克",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 18,
-            "name": "N. BROWN",
+            "n": 2,
+            "name": "呂迪格",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 22,
+            "n": 3,
             "name": "勞姆",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 19,
-            "name": "Leroy SANE",
+            "n": 18,
+            "name": "安德里希",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 20,
-            "name": "N. Amiri",
+            "n": 21,
+            "name": "京多安",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 10,
+            "n": 7,
             "name": "穆夏拉",
             "pos": "RW",
             "x": 56,
@@ -5311,14 +5227,14 @@
             "y": 50
           },
           {
-            "n": 26,
-            "name": "D. UNDAV",
+            "n": 10,
+            "name": "薩內",
             "pos": "LW",
             "x": 56,
             "y": 82
           },
           {
-            "n": 7,
+            "n": 14,
             "name": "哈弗茨",
             "pos": "ST",
             "x": 70,
@@ -5421,70 +5337,70 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 1,
-            "name": "G. FERNANDE",
+            "n": 12,
+            "name": "費南德斯 R",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
             "n": 13,
-            "name": "J. CANALE",
+            "name": "戈麥斯",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
             "n": 3,
-            "name": "阿爾德雷特",
+            "name": "G. 戈麥斯",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 15,
-            "name": "G. GOMEZ",
+            "n": 23,
+            "name": "阿爾德雷特",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 6,
+            "n": 17,
             "name": "阿隆索",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 14,
+            "n": 5,
             "name": "庫巴斯",
             "pos": "DM",
             "x": 62,
             "y": 38
           },
           {
-            "n": 8,
-            "name": "D. GOMEZ",
+            "n": 14,
+            "name": "維拉桑蒂",
             "pos": "DM",
             "x": 62,
             "y": 62
           },
           {
-            "n": 19,
+            "n": 7,
             "name": "恩西索",
             "pos": "RW",
             "x": 44,
             "y": 18
           },
           {
-            "n": 11,
-            "name": "MAURICIO",
+            "n": 10,
+            "name": "阿爾米隆",
             "pos": "AM",
             "x": 44,
             "y": 50
           },
           {
-            "n": 16,
+            "n": 11,
             "name": "博巴迪拉",
             "pos": "LW",
             "x": 44,
@@ -5612,17 +5528,10 @@
           "score": "2-0"
         },
         {
-          "min": 85,
-          "side": "home",
-          "type": "goal",
-          "text": "鎖定勝局",
-          "score": "3-0"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：GER 3-0 PAR"
+          "text": "全場：GER 2-0 PAR"
         }
       ],
       "referee": {
@@ -5638,12 +5547,12 @@
         },
         {
           "home": "施洛特貝克",
-          "away": "PAR #19 (RW)",
+          "away": "PAR #7 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
           "home": "穆夏拉",
-          "away": "PAR #14 (DM)",
+          "away": "PAR #5 (DM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -5660,34 +5569,34 @@
         ]
       },
       "predict": {
-        "score": "3-0",
-        "confidence": 69,
+        "score": "2-0",
+        "confidence": 67,
         "winner": "home",
         "reasoning": "主隊在球星佔優 (3.5)；主隊在進攻佔優 (3.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "3-0",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 29,
             "desc": "預測比分"
           },
           {
-            "score": "2-0",
-            "prob": 22,
+            "score": "3-0",
+            "prob": 25,
             "desc": "可能情境"
           },
           {
-            "score": "2-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "3-1",
-            "prob": 16,
+            "score": "1-0",
+            "prob": 20,
             "desc": "可能情境"
           },
           {
             "score": "4-0",
-            "prob": 14,
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "5-0",
+            "prob": 8,
             "desc": "可能情境"
           }
         ]
@@ -5714,7 +5623,7 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
+            "n": 23,
             "name": "費布魯根",
             "pos": "GK",
             "x": 8,
@@ -5735,15 +5644,15 @@
             "y": 38
           },
           {
-            "n": 6,
-            "name": "J. HECKE",
+            "n": 3,
+            "name": "德里赫特",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "M. VEN",
+            "n": 5,
+            "name": "阿克",
             "pos": "LB",
             "x": 22,
             "y": 82
@@ -5763,21 +5672,21 @@
             "y": 50
           },
           {
-            "n": 8,
-            "name": "R. GRAVENBE",
+            "n": 6,
+            "name": "西蒙斯",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 18,
+            "n": 7,
             "name": "馬倫",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 10,
+            "n": 9,
             "name": "迪佩",
             "pos": "ST",
             "x": 68,
@@ -5887,8 +5796,8 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "Y. BOUNOU",
+            "n": 12,
+            "name": "穆尼爾",
             "pos": "GK",
             "x": 92,
             "y": 50
@@ -5901,22 +5810,22 @@
             "y": 18
           },
           {
-            "n": 14,
-            "name": "Issa Diop",
+            "n": 5,
+            "name": "阿格爾德",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 18,
-            "name": "Chadi RIAD",
+            "n": 6,
+            "name": "薩伊斯",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
             "n": 3,
-            "name": "N. MAZRAOUI",
+            "name": "馬西納",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -5937,28 +5846,28 @@
           },
           {
             "n": 7,
-            "name": "C. TALBI",
+            "name": "齊耶赫",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 10,
-            "name": "B. DIAZ",
+            "n": 11,
+            "name": "B. 迪亞斯",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
             "n": 9,
-            "name": "S. RAHIMI",
+            "name": "恩尼斯利",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
             "n": 17,
-            "name": "Amine SBAI",
+            "name": "布法爾",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -6071,24 +5980,17 @@
           "text": "半場：NED 1-0 MAR"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
+          "text": "擴大領先",
+          "score": "2-0"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：NED 2-1 MAR"
+          "text": "全場：NED 2-0 MAR"
         }
       ],
       "referee": {
@@ -6126,34 +6028,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 58,
+        "score": "2-0",
+        "confidence": 55,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (2.0)；主隊在中場控制佔優 (1.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 23,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 23,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
-            "prob": 14,
+            "score": "3-0",
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -6654,62 +6556,62 @@
           },
           {
             "n": 5,
-            "name": "J. KOUNDE",
+            "name": "孔德",
             "pos": "RB",
             "x": 22,
             "y": 18
-          },
-          {
-            "n": 4,
-            "name": "烏帕梅卡諾",
-            "pos": "CB",
-            "x": 22,
-            "y": 38
           },
           {
             "n": 17,
             "name": "薩利巴",
             "pos": "CB",
             "x": 22,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "烏帕梅卡諾",
+            "pos": "CB",
+            "x": 22,
             "y": 62
           },
           {
-            "n": 19,
-            "name": "T. HERNANDE",
+            "n": 3,
+            "name": "T. 埃爾南德斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
             "n": 8,
-            "name": "A. TCHOUAME",
+            "name": "楚阿梅尼",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 14,
-            "name": "A. RABIOT",
+            "n": 13,
+            "name": "卡馬文加",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 7,
-            "name": "O. DEMBELE",
+            "n": 11,
+            "name": "杜埃",
             "pos": "RW",
             "x": 56,
             "y": 18
           },
           {
-            "n": 11,
+            "n": 7,
             "name": "奧利斯",
             "pos": "AM",
             "x": 56,
             "y": 50
           },
           {
-            "n": 12,
+            "n": 22,
             "name": "巴爾科拉",
             "pos": "LW",
             "x": 56,
@@ -6717,7 +6619,7 @@
           },
           {
             "n": 10,
-            "name": "K. MBAPPE",
+            "name": "姆巴佩",
             "pos": "ST",
             "x": 70,
             "y": 50
@@ -6820,56 +6722,56 @@
         "lineup": [
           {
             "n": 1,
-            "name": "J. ZETTERST",
+            "name": "奧爾森",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
             "n": 2,
-            "name": "G. LAGERBIE",
+            "name": "克拉夫特",
             "pos": "RB",
             "x": 78,
             "y": 18
+          },
+          {
+            "n": 3,
+            "name": "林德洛夫",
+            "pos": "CB",
+            "x": 78,
+            "y": 38
           },
           {
             "n": 4,
             "name": "海恩",
             "pos": "CB",
             "x": 78,
-            "y": 38
-          },
-          {
-            "n": 3,
-            "name": "V. LINDELOF",
-            "pos": "CB",
-            "x": 78,
             "y": 62
           },
           {
-            "n": 5,
-            "name": "G. GUDMUNDS",
+            "n": 6,
+            "name": "奧古斯丁松",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 7,
-            "name": "L. BERGVALL",
+            "n": 17,
+            "name": "約克雷斯",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 18,
-            "name": "Y. AYARI",
+            "n": 8,
+            "name": "埃克達爾",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 19,
-            "name": "M. SVANBERG",
+            "n": 10,
+            "name": "福斯貝里",
             "pos": "CM",
             "x": 60,
             "y": 70
@@ -6889,8 +6791,8 @@
             "y": 50
           },
           {
-            "n": 17,
-            "name": "V. GYOKERES",
+            "n": 7,
+            "name": "庫魯塞夫斯基",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -7010,17 +6912,10 @@
           "score": "2-0"
         },
         {
-          "min": 85,
-          "side": "home",
-          "type": "goal",
-          "text": "鎖定勝局",
-          "score": "3-0"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：FRA 3-0 SWE"
+          "text": "全場：FRA 2-0 SWE"
         }
       ],
       "referee": {
@@ -7031,7 +6926,7 @@
       "keyDuels": [
         {
           "home": "姆巴佩",
-          "away": "SWE #4 (CB)",
+          "away": "SWE #3 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
@@ -7041,7 +6936,7 @@
         },
         {
           "home": "楚阿梅尼",
-          "away": "SWE #7 (CM)",
+          "away": "SWE #17 (CM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -7058,34 +6953,34 @@
         ]
       },
       "predict": {
-        "score": "3-0",
+        "score": "2-0",
         "confidence": 66,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (2.5)；主隊在球星佔優 (2.5)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "3-0",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 28,
             "desc": "預測比分"
           },
           {
-            "score": "2-0",
+            "score": "3-0",
+            "prob": 25,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-0",
             "prob": 22,
             "desc": "可能情境"
           },
           {
-            "score": "2-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "3-1",
+            "score": "4-0",
             "prob": 16,
             "desc": "可能情境"
           },
           {
-            "score": "4-0",
-            "prob": 14,
+            "score": "0-0",
+            "prob": 9,
             "desc": "可能情境"
           }
         ]
@@ -7112,7 +7007,7 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 13,
+            "n": 1,
             "name": "奧喬亞",
             "pos": "GK",
             "x": 8,
@@ -7120,7 +7015,7 @@
           },
           {
             "n": 2,
-            "name": "J. SANCHEZ",
+            "name": "桑切斯",
             "pos": "RB",
             "x": 22,
             "y": 18
@@ -7133,8 +7028,8 @@
             "y": 38
           },
           {
-            "n": 20,
-            "name": "M. CHAVEZ",
+            "n": 15,
+            "name": "巴斯克斯",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -7147,43 +7042,43 @@
             "y": 82
           },
           {
-            "n": 17,
-            "name": "皮內達",
+            "n": 6,
+            "name": "查維斯",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 24,
-            "name": "L. CHAVEZ",
+            "n": 4,
+            "name": "阿爾瓦雷斯",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Erik LIRA",
+            "n": 10,
+            "name": "皮內達",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 9,
-            "name": "R. JIMENEZ",
+            "n": 22,
+            "name": "洛薩諾",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 16,
-            "name": "J. QUINONES",
+            "n": 9,
+            "name": "希門尼斯",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 25,
-            "name": "R. ALVARADO",
+            "n": 11,
+            "name": "S. 希門尼斯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -7286,42 +7181,42 @@
         "lineup": [
           {
             "n": 1,
-            "name": "H. GALINDEZ",
+            "name": "加林德斯",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 2,
-            "name": "F. TORRES",
+            "n": 17,
+            "name": "普雷西亞多",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 6,
-            "name": "帕喬",
+            "n": 3,
+            "name": "因卡皮埃",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 3,
-            "name": "P. HINCAPIE",
+            "n": 4,
+            "name": "帕喬",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 4,
-            "name": "J. ORDONEZ",
+            "n": 7,
+            "name": "埃斯圖皮南",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 21,
-            "name": "佛朗哥",
+            "n": 13,
+            "name": "巴倫西亞 J",
             "pos": "CM",
             "x": 60,
             "y": 30
@@ -7334,28 +7229,28 @@
             "y": 50
           },
           {
-            "n": 15,
-            "name": "Pedro VITE",
+            "n": 8,
+            "name": "佛朗哥",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
             "n": 11,
-            "name": "K. RODRIGUE",
+            "name": "派斯",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 13,
+            "n": 9,
             "name": "巴倫西亞",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 19,
+            "n": 10,
             "name": "普拉塔",
             "pos": "LW",
             "x": 40,
@@ -7490,7 +7385,7 @@
       "keyDuels": [
         {
           "home": "勞爾",
-          "away": "ECU #6 (CB)",
+          "away": "ECU #3 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
@@ -7500,7 +7395,7 @@
         },
         {
           "home": "艾爾韋斯",
-          "away": "ECU #21 (CM)",
+          "away": "ECU #13 (CM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -7518,33 +7413,33 @@
       },
       "predict": {
         "score": "1-1",
-        "confidence": 50,
+        "confidence": 52,
         "winner": "home",
-        "reasoning": "主隊在經驗佔優 (1.5)；主隊在進攻佔優 (0.5)，預期勢均力敵。",
+        "reasoning": "主隊在經驗佔優 (1.5)；主隊在進攻佔優 (0.5)，預期勢均力敵。（主場優勢）",
         "scenarios": [
           {
             "score": "1-1",
-            "prob": 30,
+            "prob": 27,
             "desc": "預測比分"
           },
           {
-            "score": "0-0",
-            "prob": 22,
+            "score": "0-1",
+            "prob": 19,
             "desc": "可能情境"
           },
           {
-            "score": "0-1",
+            "score": "1-2",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "0-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
             "score": "1-0",
-            "prob": 14,
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -7578,8 +7473,8 @@
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Marc GUEHI",
+            "n": 2,
+            "name": "沃克",
             "pos": "RB",
             "x": 22,
             "y": 18
@@ -7592,15 +7487,15 @@
             "y": 38
           },
           {
-            "n": 2,
-            "name": "Ezri KONSA",
+            "n": 6,
+            "name": "格希",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
             "n": 3,
-            "name": "N. OREILLY",
+            "name": "劉易斯-斯凱利",
             "pos": "LB",
             "x": 22,
             "y": 82
@@ -7614,7 +7509,7 @@
           },
           {
             "n": 8,
-            "name": "E. ANDERSON",
+            "name": "沃頓",
             "pos": "DM",
             "x": 38,
             "y": 62
@@ -7635,7 +7530,7 @@
           },
           {
             "n": 11,
-            "name": "M. RASHFORD",
+            "name": "佛登",
             "pos": "LW",
             "x": 56,
             "y": 82
@@ -7744,78 +7639,78 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
+            "n": 16,
             "name": "姆帕西",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 26,
+            "n": 2,
             "name": "馬蘇阿庫",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 22,
+            "n": 4,
             "name": "姆貝姆巴",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 24,
+            "n": 5,
             "name": "卡魯魯",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
+            "n": 3,
             "name": "茲比奧拉",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 10,
-            "name": "邦貢達",
+            "n": 8,
+            "name": "皮克爾",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 8,
+            "n": 6,
             "name": "穆圖薩米",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 18,
-            "name": "皮克爾",
+            "n": 10,
+            "name": "邦貢達",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 20,
+            "n": 11,
             "name": "維薩",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 17,
+            "n": 9,
             "name": "巴坎布",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 9,
-            "name": "B. CIPENGA",
+            "n": 7,
+            "name": "卡通帕",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -7935,17 +7830,10 @@
           "score": "2-0"
         },
         {
-          "min": 85,
-          "side": "home",
-          "type": "goal",
-          "text": "鎖定勝局",
-          "score": "3-0"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：ENG 3-0 COD"
+          "text": "全場：ENG 2-0 COD"
         }
       ],
       "referee": {
@@ -7956,17 +7844,17 @@
       "keyDuels": [
         {
           "home": "凱恩",
-          "away": "COD #22 (CB)",
+          "away": "COD #4 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
           "home": "斯通斯",
-          "away": "COD #20 (RW)",
+          "away": "COD #11 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
           "home": "貝林漢",
-          "away": "COD #10 (CM)",
+          "away": "COD #8 (CM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -7983,34 +7871,34 @@
         ]
       },
       "predict": {
-        "score": "3-0",
-        "confidence": 68,
+        "score": "2-0",
+        "confidence": 66,
         "winner": "home",
         "reasoning": "主隊在球星佔優 (3.5)；主隊在進攻佔優 (2.5)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "3-0",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 27,
             "desc": "預測比分"
           },
           {
-            "score": "2-0",
-            "prob": 22,
+            "score": "3-0",
+            "prob": 26,
             "desc": "可能情境"
           },
           {
-            "score": "2-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "3-1",
-            "prob": 16,
+            "score": "1-0",
+            "prob": 21,
             "desc": "可能情境"
           },
           {
             "score": "4-0",
-            "prob": 14,
+            "prob": 17,
+            "desc": "可能情境"
+          },
+          {
+            "score": "5-0",
+            "prob": 9,
             "desc": "可能情境"
           }
         ]
@@ -8038,7 +7926,7 @@
         "lineup": [
           {
             "n": 1,
-            "name": "T. COURTOIS",
+            "name": "卡斯特爾斯",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -8051,15 +7939,15 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "B. MECHELE",
+            "n": 5,
+            "name": "費斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "M. CUYPER",
+            "n": 4,
+            "name": "德巴斯特",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -8079,14 +7967,14 @@
             "y": 38
           },
           {
-            "n": 24,
+            "n": 6,
             "name": "奧納納",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 11,
+            "n": 17,
             "name": "多庫",
             "pos": "RW",
             "x": 56,
@@ -8100,14 +7988,14 @@
             "y": 50
           },
           {
-            "n": 10,
+            "n": 11,
             "name": "特羅薩德",
             "pos": "LW",
             "x": 56,
             "y": 82
           },
           {
-            "n": 9,
+            "n": 10,
             "name": "盧卡庫",
             "pos": "ST",
             "x": 70,
@@ -8210,14 +8098,14 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "Y. DIOUF",
+            "n": 16,
+            "name": "門迪",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 15,
+            "n": 22,
             "name": "迪亞塔",
             "pos": "RB",
             "x": 78,
@@ -8231,14 +8119,14 @@
             "y": 38
           },
           {
-            "n": 2,
-            "name": "M. SARR",
+            "n": 13,
+            "name": "迪亞洛",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 14,
+            "n": 12,
             "name": "雅各布斯",
             "pos": "LB",
             "x": 78,
@@ -8252,14 +8140,14 @@
             "y": 30
           },
           {
-            "n": 8,
-            "name": "L. CAMARA",
+            "n": 6,
+            "name": "門迪 N",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 17,
+            "n": 8,
             "name": "薩爾",
             "pos": "CM",
             "x": 60,
@@ -8273,15 +8161,15 @@
             "y": 18
           },
           {
-            "n": 10,
-            "name": "Sadio MANE",
+            "n": 9,
+            "name": "迪亞 B",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 11,
-            "name": "N. JACKSON",
+            "n": 10,
+            "name": "馬內",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -8394,24 +8282,17 @@
           "text": "半場：BEL 1-0 SEN"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
+          "text": "擴大領先",
+          "score": "2-0"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：BEL 2-1 SEN"
+          "text": "全場：BEL 2-0 SEN"
         }
       ],
       "referee": {
@@ -8449,34 +8330,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 59,
+        "score": "2-0",
+        "confidence": 57,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (2.0)；主隊在球星佔優 (2.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 26,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 24,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
-            "prob": 18,
+            "prob": 17,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
+            "score": "2-1",
+            "prob": 17,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-0",
             "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
-            "prob": 14,
             "desc": "可能情境"
           }
         ]
@@ -8517,21 +8398,21 @@
             "y": 18
           },
           {
-            "n": 3,
+            "n": 5,
             "name": "理查茲",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 13,
+            "n": 3,
             "name": "里姆",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 5,
+            "n": 22,
             "name": "羅賓遜",
             "pos": "LB",
             "x": 22,
@@ -8559,21 +8440,21 @@
             "y": 70
           },
           {
-            "n": 21,
+            "n": 11,
             "name": "韋亞",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 20,
+            "n": 9,
             "name": "巴洛根",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 11,
+            "n": 17,
             "name": "亞倫森",
             "pos": "LW",
             "x": 60,
@@ -8677,77 +8558,77 @@
         "lineup": [
           {
             "n": 1,
-            "name": "N. VASILJ",
+            "name": "謝希奇",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 3,
-            "name": "D. HADZIKAD",
+            "n": 2,
+            "name": "科拉希納茨",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 5,
-            "name": "S. KOLASINA",
+            "n": 4,
+            "name": "巴里希奇",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 2,
-            "name": "N. MUJAKIC",
+            "n": 5,
+            "name": "卡蒂奇",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 4,
-            "name": "T. MUHAREMO",
+            "n": 14,
+            "name": "阿赫梅霍季奇",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 13,
-            "name": "Ivan BASIC",
+            "n": 8,
+            "name": "皮亞尼奇",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 26,
-            "name": "E. MAHMIC",
+            "n": 6,
+            "name": "科查利奇",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "B. TAHIROVI",
+            "n": 10,
+            "name": "戈雅克",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 19,
-            "name": "K. ALAJBEGO",
+            "n": 7,
+            "name": "維斯查",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 25,
-            "name": "Jovo LUKIC",
+            "n": 9,
+            "name": "哲科",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 9,
-            "name": "S. BAZDAR",
+            "n": 11,
+            "name": "普雷夫利亞克",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -8860,24 +8741,17 @@
           "text": "半場：USA 1-0 BIH"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
           "min": 68,
           "side": "home",
           "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
+          "text": "擴大領先",
+          "score": "2-0"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：USA 2-1 BIH"
+          "text": "全場：USA 2-0 BIH"
         }
       ],
       "referee": {
@@ -8888,17 +8762,17 @@
       "keyDuels": [
         {
           "home": "巴洛根",
-          "away": "BIH #5 (CB)",
+          "away": "BIH #4 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
           "home": "理查茲",
-          "away": "BIH #19 (RW)",
+          "away": "BIH #7 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
           "home": "普利西奇",
-          "away": "BIH #13 (CM)",
+          "away": "BIH #8 (CM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -8915,33 +8789,33 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 59,
+        "score": "2-0",
+        "confidence": 60,
         "winner": "home",
-        "reasoning": "主隊在體能佔優 (3.0)；主隊在中場控制佔優 (1.5)，預期主隊取勝。",
+        "reasoning": "主隊在體能佔優 (3.0)；主隊在中場控制佔優 (1.5)，預期主隊取勝。（主場優勢）",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 28,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 23,
+            "desc": "可能情境"
+          },
+          {
+            "score": "3-0",
+            "prob": 21,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 14,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -8970,13 +8844,13 @@
         "lineup": [
           {
             "n": 23,
-            "name": "Unai SIMON",
+            "name": "西蒙",
             "pos": "GK",
             "x": 8,
             "y": 50
           },
           {
-            "n": 12,
+            "n": 2,
             "name": "波羅",
             "pos": "RB",
             "x": 22,
@@ -8990,14 +8864,14 @@
             "y": 38
           },
           {
-            "n": 5,
-            "name": "M. LLORENTE",
+            "n": 3,
+            "name": "勒諾爾曼",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 24,
+            "n": 18,
             "name": "古谷雷拉",
             "pos": "LB",
             "x": 22,
@@ -9032,8 +8906,8 @@
             "y": 18
           },
           {
-            "n": 10,
-            "name": "Dani OLMO",
+            "n": 9,
+            "name": "莫拉塔",
             "pos": "ST",
             "x": 68,
             "y": 50
@@ -9143,28 +9017,28 @@
         "lineup": [
           {
             "n": 1,
-            "name": "A. SCHLAGER",
+            "name": "彭茨",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 5,
+            "n": 21,
             "name": "波施",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 3,
-            "name": "丹索",
+            "n": 15,
+            "name": "利恩哈特",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 15,
-            "name": "利恩哈特",
+            "n": 4,
+            "name": "丹索",
             "pos": "CB",
             "x": 78,
             "y": 62
@@ -9191,22 +9065,22 @@
             "y": 62
           },
           {
-            "n": 7,
-            "name": "M. ARNAUTOV",
+            "n": 19,
+            "name": "鮑姆加特納",
             "pos": "RW",
             "x": 44,
             "y": 18
           },
           {
-            "n": 20,
+            "n": 14,
             "name": "萊默",
             "pos": "AM",
             "x": 44,
             "y": 50
           },
           {
-            "n": 11,
-            "name": "M. Gregorit",
+            "n": 23,
+            "name": "阿瑙托維奇",
             "pos": "LW",
             "x": 44,
             "y": 82
@@ -9347,12 +9221,12 @@
       "keyDuels": [
         {
           "home": "亞馬爾",
-          "away": "AUT #3 (CB)",
+          "away": "AUT #15 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
           "home": "勒諾爾曼",
-          "away": "AUT #7 (RW)",
+          "away": "AUT #19 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
@@ -9375,33 +9249,33 @@
       },
       "predict": {
         "score": "2-0",
-        "confidence": 63,
+        "confidence": 61,
         "winner": "home",
         "reasoning": "主隊在球星佔優 (2.5)；主隊在進攻佔優 (2.0)，預期主隊取勝。",
         "scenarios": [
           {
             "score": "2-0",
-            "prob": 30,
+            "prob": 27,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-1",
-            "prob": 16,
+            "prob": 25,
             "desc": "可能情境"
           },
           {
             "score": "3-0",
-            "prob": 14,
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "4-0",
+            "prob": 13,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 13,
             "desc": "可能情境"
           }
         ]
@@ -9428,14 +9302,14 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 1,
+            "n": 22,
             "name": "迪奧戈科斯塔",
             "pos": "GK",
             "x": 8,
             "y": 50
           },
           {
-            "n": 20,
+            "n": 2,
             "name": "坎塞洛",
             "pos": "RB",
             "x": 22,
@@ -9449,36 +9323,36 @@
             "y": 38
           },
           {
-            "n": 24,
-            "name": "SAMU COSTA",
+            "n": 4,
+            "name": "A. 席爾瓦",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 25,
+            "n": 19,
             "name": "門德斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 8,
-            "name": "B. 費南德斯",
+            "n": 18,
+            "name": "魯本內維斯",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 21,
-            "name": "魯本內維斯",
+            "n": 8,
+            "name": "B. 費南德斯",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 17,
-            "name": "R. LEAO",
+            "n": 11,
+            "name": "費利斯",
             "pos": "RW",
             "x": 56,
             "y": 18
@@ -9491,8 +9365,8 @@
             "y": 50
           },
           {
-            "n": 9,
-            "name": "G. RAMOS",
+            "n": 17,
+            "name": "勒奧",
             "pos": "LW",
             "x": 56,
             "y": 82
@@ -9602,76 +9476,76 @@
         "lineup": [
           {
             "n": 1,
-            "name": "D. LIVAKOVI",
+            "name": "利瓦科維奇",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
             "n": 2,
-            "name": "J. STANISIC",
+            "name": "斯坦尼希奇",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 4,
+            "n": 6,
             "name": "格瓦迪奧爾",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 6,
-            "name": "J. SUTALO",
+            "n": 21,
+            "name": "舒塔洛",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 3,
-            "name": "M. PONGRACI",
+            "n": 19,
+            "name": "索薩",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 8,
-            "name": "M. KOVACIC",
+            "n": 10,
+            "name": "莫德里奇",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 10,
-            "name": "L. MODRIC",
+            "n": 8,
+            "name": "科瓦契奇",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 17,
-            "name": "P. SUCIC",
+            "n": 13,
+            "name": "蘇契奇",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 11,
-            "name": "A. BUDIMIR",
+            "n": 9,
+            "name": "克拉瑪利奇",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 14,
-            "name": "I. PERISIC",
+            "n": 17,
+            "name": "佩特科維奇",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 16,
+            "n": 14,
             "name": "巴圖里納",
             "pos": "LW",
             "x": 40,
@@ -9785,24 +9659,10 @@
           "text": "半場：POR 1-0 CRO"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 68,
-          "side": "home",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：POR 2-1 CRO"
+          "text": "全場：POR 1-0 CRO"
         }
       ],
       "referee": {
@@ -9840,34 +9700,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 55,
+        "score": "1-0",
+        "confidence": 54,
         "winner": "home",
         "reasoning": "主隊在進攻佔優 (1.5)；主隊在球星佔優 (1.5)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "1-0",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "1-0",
-            "prob": 22,
+            "score": "2-0",
+            "prob": 23,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-0",
-            "prob": 14,
+            "score": "0-0",
+            "prob": 13,
             "desc": "可能情境"
           }
         ]
@@ -9895,7 +9755,7 @@
         "lineup": [
           {
             "n": 1,
-            "name": "G. KOBEL",
+            "name": "索默",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -9908,22 +9768,22 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "埃爾韋迪",
+            "n": 22,
+            "name": "謝爾",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 2,
-            "name": "M. MUHEIM",
+            "n": 4,
+            "name": "埃爾韋迪",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 3,
-            "name": "S. WIDMER",
+            "n": 13,
+            "name": "羅德里奎茲",
             "pos": "LB",
             "x": 22,
             "y": 82
@@ -9943,15 +9803,15 @@
             "y": 62
           },
           {
-            "n": 11,
-            "name": "Dan NDOYE",
+            "n": 23,
+            "name": "沙奇里",
             "pos": "RW",
             "x": 56,
             "y": 18
           },
           {
-            "n": 9,
-            "name": "J. MANZAMBI",
+            "n": 11,
+            "name": "斯特芬",
             "pos": "AM",
             "x": 56,
             "y": 50
@@ -9964,7 +9824,7 @@
             "y": 82
           },
           {
-            "n": 23,
+            "n": 9,
             "name": "阿姆杜尼",
             "pos": "ST",
             "x": 70,
@@ -10067,71 +9927,71 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "M. MASTIL",
+            "n": 16,
+            "name": "姆博利",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 2,
+            "n": 21,
             "name": "曼迪",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 21,
+            "n": 6,
             "name": "本塞拜尼",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 17,
-            "name": "R. BELGHALI",
+            "n": 4,
+            "name": "本拉姆里",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
             "n": 3,
-            "name": "A. ABADA",
+            "name": "法雷斯",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
             "n": 8,
-            "name": "H. Aouar",
+            "name": "費胡利",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 6,
-            "name": "R. ZERROUKI",
+            "n": 13,
+            "name": "本納塞爾",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 10,
-            "name": "F. CHAIBI",
+            "n": 19,
+            "name": "烏納斯",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 9,
-            "name": "A. GOUIRI",
+            "n": 11,
+            "name": "布拉希米",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 12,
-            "name": "N. BENBOUAL",
+            "n": 9,
+            "name": "本內德賈",
             "pos": "ST",
             "x": 32,
             "y": 50
@@ -10271,13 +10131,13 @@
       },
       "keyDuels": [
         {
-          "home": "SUI #11 (RW)",
-          "away": "ALG #21 (CB)",
+          "home": "SUI #23 (RW)",
+          "away": "ALG #6 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
-          "home": "SUI #4 (CB)",
-          "away": "ALG #9 (RW)",
+          "home": "SUI #22 (CB)",
+          "away": "ALG #11 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
@@ -10300,33 +10160,33 @@
       },
       "predict": {
         "score": "1-1",
-        "confidence": 50,
+        "confidence": 52,
         "winner": "home",
         "reasoning": "主隊在防守佔優 (1.0)；主隊在經驗佔優 (1.0)，預期勢均力敵。",
         "scenarios": [
           {
             "score": "1-1",
-            "prob": 30,
+            "prob": 26,
             "desc": "預測比分"
           },
           {
-            "score": "0-0",
-            "prob": 22,
+            "score": "1-0",
+            "prob": 20,
             "desc": "可能情境"
           },
           {
             "score": "0-1",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "0-2",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-0",
-            "prob": 14,
+            "score": "1-2",
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -10360,22 +10220,22 @@
             "y": 50
           },
           {
-            "n": 2,
-            "name": "M. DEGENEK",
+            "n": 19,
+            "name": "米勒",
             "pos": "RB",
             "x": 22,
             "y": 18
           },
           {
-            "n": 21,
+            "n": 20,
             "name": "伯吉斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 3,
-            "name": "A. CIRCATI",
+            "n": 4,
+            "name": "羅爾斯",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -10388,15 +10248,15 @@
             "y": 82
           },
           {
-            "n": 22,
+            "n": 7,
             "name": "歐文",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 8,
-            "name": "C. METCALFE",
+            "n": 13,
+            "name": "歐尼爾",
             "pos": "DM",
             "x": 38,
             "y": 62
@@ -10409,22 +10269,22 @@
             "y": 18
           },
           {
-            "n": 10,
+            "n": 17,
             "name": "赫魯斯蒂奇",
             "pos": "AM",
             "x": 56,
             "y": 50
           },
           {
-            "n": 17,
-            "name": "N. IRANKUND",
+            "n": 10,
+            "name": "麥格里",
             "pos": "LW",
             "x": 56,
             "y": 82
           },
           {
-            "n": 7,
-            "name": "M. LECKIE",
+            "n": 9,
+            "name": "杜克",
             "pos": "ST",
             "x": 70,
             "y": 50
@@ -10527,41 +10387,41 @@
         "lineup": [
           {
             "n": 1,
-            "name": "M. ELSHENAW",
+            "name": "謝納維",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 3,
+            "n": 7,
             "name": "哈尼",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 6,
+            "name": "海加齊",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
             "n": 5,
-            "name": "RAMY RABIA",
+            "name": "哈姆迪",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "K. HAFEZ",
+            "n": 3,
+            "name": "法圖赫",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 7,
+            "n": 21,
             "name": "特雷澤蓋",
             "pos": "CM",
             "x": 60,
@@ -10569,14 +10429,14 @@
           },
           {
             "n": 8,
-            "name": "E. ASHOUR",
+            "name": "哈邁德",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 11,
-            "name": "M. ZICO",
+            "n": 17,
+            "name": "埃爾內尼",
             "pos": "CM",
             "x": 60,
             "y": 70
@@ -10590,13 +10450,13 @@
           },
           {
             "n": 9,
-            "name": "H. ABDELKAR",
+            "name": "M. 穆罕默德",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 22,
+            "n": 11,
             "name": "馬穆什",
             "pos": "LW",
             "x": 40,
@@ -10697,37 +10557,23 @@
           "text": "開場掌控節奏，逐步建立攻勢"
         },
         {
-          "min": 35,
-          "side": "home",
-          "type": "goal",
-          "text": "率先破門，取得領先",
-          "score": "1-0"
-        },
-        {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：AUS 1-0 EGY"
+          "text": "半場：AUS 0-0 EGY"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
+          "text": "率先破門，取得領先",
+          "score": "0-1"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：AUS 1-2 EGY"
+          "text": "全場：AUS 0-1 EGY"
         }
       ],
       "referee": {
@@ -10742,12 +10588,12 @@
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
-          "home": "AUS #21 (CB)",
+          "home": "AUS #20 (CB)",
           "away": "薩拉",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
-          "home": "AUS #22 (DM)",
+          "home": "AUS #7 (DM)",
           "away": "哈邁德",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
@@ -10765,33 +10611,33 @@
         ]
       },
       "predict": {
-        "score": "1-2",
+        "score": "0-1",
         "confidence": 54,
         "winner": "away",
         "reasoning": "客隊在球星佔優 (3.5)；客隊在進攻佔優 (1.0)，預期客隊取勝。",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "0-1",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "0-1",
+            "score": "1-1",
             "prob": 22,
             "desc": "可能情境"
           },
           {
             "score": "0-2",
-            "prob": 18,
+            "prob": 21,
             "desc": "可能情境"
           },
           {
-            "score": "0-3",
-            "prob": 16,
+            "score": "1-2",
+            "prob": 19,
             "desc": "可能情境"
           },
           {
-            "score": "1-1",
+            "score": "0-0",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -10820,7 +10666,7 @@
         "lineup": [
           {
             "n": 23,
-            "name": "E. MARTINEZ",
+            "name": "馬丁尼斯",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -10833,15 +10679,15 @@
             "y": 18
           },
           {
-            "n": 13,
-            "name": "羅梅羅",
+            "n": 25,
+            "name": "L. 馬丁尼斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 25,
-            "name": "F. MEDINA",
+            "n": 13,
+            "name": "羅梅羅",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -10868,22 +10714,22 @@
             "y": 50
           },
           {
-            "n": 7,
-            "name": "R. PAUL",
+            "n": 24,
+            "name": "費南德斯",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 6,
-            "name": "L. MARTINEZ",
+            "n": 11,
+            "name": "迪馬利亞",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
             "n": 22,
-            "name": "L. MARTINEZ",
+            "name": "勞塔羅",
             "pos": "ST",
             "x": 68,
             "y": 50
@@ -10999,70 +10845,70 @@
             "y": 50
           },
           {
-            "n": 4,
-            "name": "PICO LOPES",
+            "n": 2,
+            "name": "迪內",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 13,
-            "name": "S. CABRAL",
+            "n": 4,
+            "name": "洛佩斯",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 24,
-            "name": "W. PINA",
+            "n": 5,
+            "name": "塔瓦雷斯",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 2,
+            "n": 3,
             "name": "斯托皮拉",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 20,
+            "n": 10,
             "name": "門德斯",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 7,
+            "n": 6,
             "name": "卡布拉爾",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "KEVIN PINA",
+            "n": 8,
+            "name": "羅查",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 11,
+            "n": 7,
             "name": "羅德里格斯",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 19,
-            "name": "D. LIVRAMEN",
+            "n": 9,
+            "name": "貝貝",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 9,
+            "n": 11,
             "name": "本奇莫爾",
             "pos": "LW",
             "x": 40,
@@ -11183,17 +11029,10 @@
           "score": "2-0"
         },
         {
-          "min": 85,
-          "side": "home",
-          "type": "goal",
-          "text": "鎖定勝局",
-          "score": "3-0"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：ARG 3-0 CPV"
+          "text": "全場：ARG 2-0 CPV"
         }
       ],
       "referee": {
@@ -11204,17 +11043,17 @@
       "keyDuels": [
         {
           "home": "勞塔羅",
-          "away": "CPV #13 (CB)",
+          "away": "CPV #4 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
           "home": "羅梅羅",
-          "away": "CPV #11 (RW)",
+          "away": "CPV #7 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
           "home": "梅西",
-          "away": "CPV #20 (CM)",
+          "away": "CPV #10 (CM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -11231,34 +11070,34 @@
         ]
       },
       "predict": {
-        "score": "3-0",
-        "confidence": 79,
+        "score": "2-0",
+        "confidence": 69,
         "winner": "home",
         "reasoning": "主隊在經驗佔優 (5.5)；主隊在球星佔優 (5.0)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "3-0",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 26,
             "desc": "預測比分"
           },
           {
-            "score": "2-0",
-            "prob": 22,
+            "score": "3-0",
+            "prob": 26,
             "desc": "可能情境"
           },
           {
-            "score": "2-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "3-1",
-            "prob": 16,
+            "score": "1-0",
+            "prob": 19,
             "desc": "可能情境"
           },
           {
             "score": "4-0",
-            "prob": 14,
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "5-0",
+            "prob": 11,
             "desc": "可能情境"
           }
         ]
@@ -11285,7 +11124,7 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 12,
+            "n": 1,
             "name": "巴爾加斯",
             "pos": "GK",
             "x": 8,
@@ -11299,15 +11138,15 @@
             "y": 18
           },
           {
-            "n": 13,
-            "name": "米納",
+            "n": 23,
+            "name": "桑切斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
             "n": 2,
-            "name": "D. MUNOZ",
+            "name": "米納",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -11320,15 +11159,15 @@
             "y": 82
           },
           {
-            "n": 16,
+            "n": 8,
             "name": "勒馬",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 20,
-            "name": "J. QUINTERO",
+            "n": 16,
+            "name": "里奧斯",
             "pos": "DM",
             "x": 38,
             "y": 62
@@ -11341,22 +11180,22 @@
             "y": 18
           },
           {
-            "n": 6,
-            "name": "R. RIOS",
+            "n": 10,
+            "name": "占士羅迪古斯",
             "pos": "AM",
             "x": 56,
             "y": 50
           },
           {
             "n": 7,
-            "name": "Luis DIAZ",
+            "name": "L. 迪亞斯",
             "pos": "LW",
             "x": 56,
             "y": 82
           },
           {
-            "n": 19,
-            "name": "C. HERNANDE",
+            "n": 9,
+            "name": "杜蘭",
             "pos": "ST",
             "x": 70,
             "y": 50
@@ -11459,28 +11298,28 @@
         "lineup": [
           {
             "n": 1,
-            "name": "L. ZIGI",
+            "name": "齊基",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 23,
-            "name": "D. LUCKASSE",
+            "n": 2,
+            "name": "蘭普蒂",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 2,
-            "name": "A. SEIDU",
+            "n": 5,
+            "name": "薩利蘇",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
             "n": 4,
-            "name": "J. ADJETEY",
+            "name": "阿馬蒂",
             "pos": "CB",
             "x": 78,
             "y": 62
@@ -11493,42 +11332,42 @@
             "y": 82
           },
           {
-            "n": 3,
-            "name": "C. YIRENKYI",
+            "n": 21,
+            "name": "薩米德",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 8,
-            "name": "Kwasi SIBO",
+            "n": 10,
+            "name": "帕爾蒂",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 15,
-            "name": "E. OWUSU",
+            "n": 11,
+            "name": "庫杜斯",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 11,
+            "n": 7,
             "name": "塞蒙約",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
-            "n": 19,
+            "n": 9,
             "name": "I. 威廉斯",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 9,
+            "n": 14,
             "name": "阿尤",
             "pos": "LW",
             "x": 40,
@@ -11642,24 +11481,10 @@
           "text": "半場：COL 1-0 GHA"
         },
         {
-          "min": 52,
-          "side": "away",
-          "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 68,
-          "side": "home",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：COL 2-1 GHA"
+          "text": "全場：COL 1-0 GHA"
         }
       ],
       "referee": {
@@ -11670,17 +11495,17 @@
       "keyDuels": [
         {
           "home": "迪亞斯",
-          "away": "GHA #2 (CB)",
+          "away": "GHA #5 (CB)",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
           "home": "桑切斯",
-          "away": "GHA #11 (RW)",
+          "away": "GHA #7 (RW)",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
           "home": "占士·洛迪古斯",
-          "away": "GHA #3 (CM)",
+          "away": "GHA #21 (CM)",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
       ],
@@ -11697,34 +11522,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 60,
+        "score": "1-0",
+        "confidence": 56,
         "winner": "home",
         "reasoning": "主隊在中場控制佔優 (1.5)；主隊在防守佔優 (1.5)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "1-0",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "1-0",
-            "prob": 22,
+            "score": "2-0",
+            "prob": 24,
             "desc": "可能情境"
           },
           {
-            "score": "1-1",
+            "score": "2-1",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "1-2",
-            "prob": 16,
+            "score": "3-0",
+            "prob": 17,
             "desc": "可能情境"
           },
           {
-            "score": "2-0",
-            "prob": 14,
+            "score": "1-1",
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -11751,8 +11576,8 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 16,
-            "name": "M. CREPEAU",
+            "n": 1,
+            "name": "克雷波",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -11765,15 +11590,15 @@
             "y": 18
           },
           {
-            "n": 15,
+            "n": 4,
             "name": "邦比托",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 3,
-            "name": "A. JONES",
+            "n": 5,
+            "name": "維托利亞",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -11786,42 +11611,42 @@
             "y": 82
           },
           {
-            "n": 7,
-            "name": "S. EUSTAQUI",
+            "n": 14,
+            "name": "凱伊",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 25,
-            "name": "N. SALIBA",
+            "n": 6,
+            "name": "尤斯塔基奧",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "M. CHOINIER",
+            "n": 8,
+            "name": "弗雷澤",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 17,
+            "n": 11,
             "name": "布坎南",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 10,
+            "n": 9,
             "name": "戴維",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 9,
+            "n": 17,
             "name": "拉林",
             "pos": "LW",
             "x": 60,
@@ -11924,8 +11749,8 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "Y. BOUNOU",
+            "n": 12,
+            "name": "穆尼爾",
             "pos": "GK",
             "x": 92,
             "y": 50
@@ -11938,22 +11763,22 @@
             "y": 18
           },
           {
-            "n": 14,
-            "name": "Issa Diop",
+            "n": 5,
+            "name": "阿格爾德",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 18,
-            "name": "Chadi RIAD",
+            "n": 6,
+            "name": "薩伊斯",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
             "n": 3,
-            "name": "N. MAZRAOUI",
+            "name": "馬西納",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -11974,28 +11799,28 @@
           },
           {
             "n": 7,
-            "name": "C. TALBI",
+            "name": "齊耶赫",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 10,
-            "name": "B. DIAZ",
+            "n": 11,
+            "name": "B. 迪亞斯",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
             "n": 9,
-            "name": "S. RAHIMI",
+            "name": "恩尼斯利",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
             "n": 17,
-            "name": "Amine SBAI",
+            "name": "布法爾",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -12090,7 +11915,7 @@
       "timeline": [
         {
           "min": 5,
-          "side": "away",
+          "side": "home",
           "type": "control",
           "text": "開場掌控節奏，逐步建立攻勢"
         },
@@ -12115,17 +11940,10 @@
           "score": "1-1"
         },
         {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：CAN 1-2 MAR"
+          "text": "全場：CAN 1-1 MAR"
         }
       ],
       "referee": {
@@ -12163,34 +11981,34 @@
         ]
       },
       "predict": {
-        "score": "1-2",
+        "score": "1-1",
         "confidence": 52,
-        "winner": "away",
-        "reasoning": "客隊在防守佔優 (1.5)；客隊在經驗佔優 (1.5)，預期客隊取勝。",
+        "winner": "home",
+        "reasoning": "客隊在防守佔優 (1.5)；客隊在經驗佔優 (1.5)，預期勢均力敵。",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "1-1",
+            "prob": 26,
             "desc": "預測比分"
           },
           {
             "score": "0-1",
-            "prob": 22,
+            "prob": 23,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-0",
+            "prob": 17,
             "desc": "可能情境"
           },
           {
             "score": "0-2",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "0-3",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
-            "prob": 14,
+            "prob": 15,
             "desc": "可能情境"
           }
         ]
@@ -12217,70 +12035,70 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 1,
-            "name": "G. FERNANDE",
+            "n": 12,
+            "name": "費南德斯 R",
             "pos": "GK",
             "x": 8,
             "y": 50
           },
           {
             "n": 13,
-            "name": "J. CANALE",
+            "name": "戈麥斯",
             "pos": "RB",
             "x": 22,
             "y": 18
           },
           {
             "n": 3,
-            "name": "阿爾德雷特",
+            "name": "G. 戈麥斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 15,
-            "name": "G. GOMEZ",
+            "n": 23,
+            "name": "阿爾德雷特",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 6,
+            "n": 17,
             "name": "阿隆索",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 14,
+            "n": 5,
             "name": "庫巴斯",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 8,
-            "name": "D. GOMEZ",
+            "n": 14,
+            "name": "維拉桑蒂",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 19,
+            "n": 7,
             "name": "恩西索",
             "pos": "RW",
             "x": 56,
             "y": 18
           },
           {
-            "n": 11,
-            "name": "MAURICIO",
+            "n": 10,
+            "name": "阿爾米隆",
             "pos": "AM",
             "x": 56,
             "y": 50
           },
           {
-            "n": 16,
+            "n": 11,
             "name": "博巴迪拉",
             "pos": "LW",
             "x": 56,
@@ -12398,62 +12216,62 @@
           },
           {
             "n": 5,
-            "name": "J. KOUNDE",
+            "name": "孔德",
             "pos": "RB",
             "x": 78,
             "y": 18
-          },
-          {
-            "n": 4,
-            "name": "烏帕梅卡諾",
-            "pos": "CB",
-            "x": 78,
-            "y": 38
           },
           {
             "n": 17,
             "name": "薩利巴",
             "pos": "CB",
             "x": 78,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "烏帕梅卡諾",
+            "pos": "CB",
+            "x": 78,
             "y": 62
           },
           {
-            "n": 19,
-            "name": "T. HERNANDE",
+            "n": 3,
+            "name": "T. 埃爾南德斯",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
             "n": 8,
-            "name": "A. TCHOUAME",
+            "name": "楚阿梅尼",
             "pos": "DM",
             "x": 62,
             "y": 38
           },
           {
-            "n": 14,
-            "name": "A. RABIOT",
+            "n": 13,
+            "name": "卡馬文加",
             "pos": "DM",
             "x": 62,
             "y": 62
           },
           {
-            "n": 7,
-            "name": "O. DEMBELE",
+            "n": 11,
+            "name": "杜埃",
             "pos": "RW",
             "x": 44,
             "y": 18
           },
           {
-            "n": 11,
+            "n": 7,
             "name": "奧利斯",
             "pos": "AM",
             "x": 44,
             "y": 50
           },
           {
-            "n": 12,
+            "n": 22,
             "name": "巴爾科拉",
             "pos": "LW",
             "x": 44,
@@ -12461,7 +12279,7 @@
           },
           {
             "n": 10,
-            "name": "K. MBAPPE",
+            "name": "姆巴佩",
             "pos": "ST",
             "x": 30,
             "y": 50
@@ -12594,7 +12412,7 @@
       },
       "keyDuels": [
         {
-          "home": "PAR #19 (RW)",
+          "home": "PAR #7 (RW)",
           "away": "薩利巴",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
@@ -12604,7 +12422,7 @@
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
         {
-          "home": "PAR #14 (DM)",
+          "home": "PAR #5 (DM)",
           "away": "楚阿梅尼",
           "note": "中場控制 — 誰主導節奏誰勝"
         }
@@ -12623,33 +12441,33 @@
       },
       "predict": {
         "score": "0-2",
-        "confidence": 73,
+        "confidence": 67,
         "winner": "away",
         "reasoning": "客隊在球星佔優 (4.5)；客隊在進攻佔優 (4.0)，預期客隊取勝。",
         "scenarios": [
           {
             "score": "0-2",
-            "prob": 30,
+            "prob": 29,
             "desc": "預測比分"
           },
           {
             "score": "0-1",
-            "prob": 22,
+            "prob": 25,
             "desc": "可能情境"
           },
           {
             "score": "0-3",
-            "prob": 18,
+            "prob": 22,
             "desc": "可能情境"
           },
           {
-            "score": "1-1",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-2",
+            "score": "0-4",
             "prob": 14,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-0",
+            "prob": 10,
             "desc": "可能情境"
           }
         ]
@@ -12683,7 +12501,7 @@
             "y": 50
           },
           {
-            "n": 13,
+            "n": 2,
             "name": "達尼洛",
             "pos": "RB",
             "x": 22,
@@ -12691,42 +12509,42 @@
           },
           {
             "n": 4,
-            "name": "馬奎尼奧斯",
+            "name": "加比爾",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
             "n": 3,
-            "name": "G. MAGALHAE",
+            "name": "馬奎尼奧斯",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 6,
-            "name": "A. SANDRO",
+            "n": 16,
+            "name": "D. 桑托斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
             "n": 8,
-            "name": "B. GUIMARAE",
+            "name": "B. 吉馬良斯",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 20,
-            "name": "L. PAQUETA",
+            "n": 5,
+            "name": "卡塞米羅",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 5,
-            "name": "CASEMIRO",
+            "n": 18,
+            "name": "帕奎塔",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -12739,15 +12557,15 @@
             "y": 18
           },
           {
-            "n": 19,
-            "name": "恩德里克",
+            "n": 9,
+            "name": "M. 庫尼亞",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
             "n": 7,
-            "name": "V. JUNIOR",
+            "name": "維尼修斯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -12850,63 +12668,63 @@
         "lineup": [
           {
             "n": 1,
-            "name": "O. NYLAND",
+            "name": "尼蘭",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 26,
+            "n": 2,
             "name": "里爾森",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 3,
+            "n": 4,
             "name": "阿耶爾",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 4,
-            "name": "L. OSTIGARD",
+            "n": 5,
+            "name": "厄斯蒂高",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 5,
-            "name": "D. WOLFE",
+            "n": 3,
+            "name": "比約坎",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 22,
+            "n": 8,
             "name": "波布",
             "pos": "CM",
             "x": 60,
             "y": 30
           },
           {
-            "n": 8,
+            "n": 6,
             "name": "貝格",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "P. BERG",
+            "n": 10,
+            "name": "厄德高",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 7,
-            "name": "A. SORLOTH",
+            "n": 11,
+            "name": "索羅特",
             "pos": "RW",
             "x": 40,
             "y": 18
@@ -12919,7 +12737,7 @@
             "y": 50
           },
           {
-            "n": 20,
+            "n": 17,
             "name": "努薩",
             "pos": "LW",
             "x": 40,
@@ -13040,17 +12858,10 @@
           "score": "1-1"
         },
         {
-          "min": 68,
-          "side": "home",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "2-1"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：BRA 2-1 NOR"
+          "text": "全場：BRA 1-1 NOR"
         }
       ],
       "referee": {
@@ -13088,34 +12899,34 @@
         ]
       },
       "predict": {
-        "score": "2-1",
-        "confidence": 54,
+        "score": "1-1",
+        "confidence": 53,
         "winner": "home",
-        "reasoning": "主隊在經驗佔優 (2.0)；主隊在進攻佔優 (0.5)，預期主隊取勝。",
+        "reasoning": "主隊在經驗佔優 (2.0)；主隊在進攻佔優 (0.5)，預期勢均力敵。",
         "scenarios": [
           {
-            "score": "2-1",
-            "prob": 30,
+            "score": "1-1",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
             "score": "1-0",
-            "prob": 22,
+            "prob": 23,
             "desc": "可能情境"
           },
           {
-            "score": "1-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-2",
-            "prob": 16,
+            "score": "2-1",
+            "prob": 20,
             "desc": "可能情境"
           },
           {
             "score": "2-0",
-            "prob": 14,
+            "prob": 18,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-1",
+            "prob": 15,
             "desc": "可能情境"
           }
         ]
@@ -13142,7 +12953,7 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 13,
+            "n": 1,
             "name": "奧喬亞",
             "pos": "GK",
             "x": 8,
@@ -13150,7 +12961,7 @@
           },
           {
             "n": 2,
-            "name": "J. SANCHEZ",
+            "name": "桑切斯",
             "pos": "RB",
             "x": 22,
             "y": 18
@@ -13163,8 +12974,8 @@
             "y": 38
           },
           {
-            "n": 20,
-            "name": "M. CHAVEZ",
+            "n": 15,
+            "name": "巴斯克斯",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -13177,43 +12988,43 @@
             "y": 82
           },
           {
-            "n": 17,
-            "name": "皮內達",
+            "n": 6,
+            "name": "查維斯",
             "pos": "CM",
             "x": 40,
             "y": 30
           },
           {
-            "n": 24,
-            "name": "L. CHAVEZ",
+            "n": 4,
+            "name": "阿爾瓦雷斯",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Erik LIRA",
+            "n": 10,
+            "name": "皮內達",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 9,
-            "name": "R. JIMENEZ",
+            "n": 22,
+            "name": "洛薩諾",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 16,
-            "name": "J. QUINONES",
+            "n": 9,
+            "name": "希門尼斯",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 25,
-            "name": "R. ALVARADO",
+            "n": 11,
+            "name": "S. 希門尼斯",
             "pos": "LW",
             "x": 60,
             "y": 82
@@ -13322,8 +13133,8 @@
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Marc GUEHI",
+            "n": 2,
+            "name": "沃克",
             "pos": "RB",
             "x": 78,
             "y": 18
@@ -13336,15 +13147,15 @@
             "y": 38
           },
           {
-            "n": 2,
-            "name": "Ezri KONSA",
+            "n": 6,
+            "name": "格希",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
             "n": 3,
-            "name": "N. OREILLY",
+            "name": "劉易斯-斯凱利",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -13358,7 +13169,7 @@
           },
           {
             "n": 8,
-            "name": "E. ANDERSON",
+            "name": "沃頓",
             "pos": "DM",
             "x": 62,
             "y": 62
@@ -13379,7 +13190,7 @@
           },
           {
             "n": 11,
-            "name": "M. RASHFORD",
+            "name": "佛登",
             "pos": "LW",
             "x": 44,
             "y": 82
@@ -13548,33 +13359,33 @@
       },
       "predict": {
         "score": "0-2",
-        "confidence": 64,
+        "confidence": 60,
         "winner": "away",
-        "reasoning": "客隊在球星佔優 (3.0)；客隊在進攻佔優 (2.0)，預期客隊取勝。",
+        "reasoning": "客隊在球星佔優 (3.0)；客隊在進攻佔優 (2.0)，預期客隊取勝。（主場優勢）",
         "scenarios": [
           {
             "score": "0-2",
-            "prob": 30,
+            "prob": 27,
             "desc": "預測比分"
           },
           {
             "score": "0-1",
-            "prob": 22,
+            "prob": 25,
             "desc": "可能情境"
           },
           {
             "score": "0-3",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
-            "prob": 16,
+            "prob": 22,
             "desc": "可能情境"
           },
           {
             "score": "1-2",
             "prob": 14,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-4",
+            "prob": 12,
             "desc": "可能情境"
           }
         ]
@@ -13601,14 +13412,14 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 1,
+            "n": 22,
             "name": "迪奧戈科斯塔",
             "pos": "GK",
             "x": 8,
             "y": 50
           },
           {
-            "n": 20,
+            "n": 2,
             "name": "坎塞洛",
             "pos": "RB",
             "x": 22,
@@ -13622,36 +13433,36 @@
             "y": 38
           },
           {
-            "n": 24,
-            "name": "SAMU COSTA",
+            "n": 4,
+            "name": "A. 席爾瓦",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 25,
+            "n": 19,
             "name": "門德斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
-            "n": 8,
-            "name": "B. 費南德斯",
+            "n": 18,
+            "name": "魯本內維斯",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 21,
-            "name": "魯本內維斯",
+            "n": 8,
+            "name": "B. 費南德斯",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 17,
-            "name": "R. LEAO",
+            "n": 11,
+            "name": "費利斯",
             "pos": "RW",
             "x": 56,
             "y": 18
@@ -13664,8 +13475,8 @@
             "y": 50
           },
           {
-            "n": 9,
-            "name": "G. RAMOS",
+            "n": 17,
+            "name": "勒奧",
             "pos": "LW",
             "x": 56,
             "y": 82
@@ -13775,13 +13586,13 @@
         "lineup": [
           {
             "n": 23,
-            "name": "Unai SIMON",
+            "name": "西蒙",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 12,
+            "n": 2,
             "name": "波羅",
             "pos": "RB",
             "x": 78,
@@ -13795,14 +13606,14 @@
             "y": 38
           },
           {
-            "n": 5,
-            "name": "M. LLORENTE",
+            "n": 3,
+            "name": "勒諾爾曼",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 24,
+            "n": 18,
             "name": "古谷雷拉",
             "pos": "LB",
             "x": 78,
@@ -13837,8 +13648,8 @@
             "y": 18
           },
           {
-            "n": 10,
-            "name": "Dani OLMO",
+            "n": 9,
+            "name": "莫拉塔",
             "pos": "ST",
             "x": 32,
             "y": 50
@@ -13940,7 +13751,7 @@
       "timeline": [
         {
           "min": 5,
-          "side": "away",
+          "side": "home",
           "type": "control",
           "text": "開場掌控節奏，逐步建立攻勢"
         },
@@ -13965,17 +13776,10 @@
           "score": "1-1"
         },
         {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：POR 1-2 ESP"
+          "text": "全場：POR 1-1 ESP"
         }
       ],
       "referee": {
@@ -14013,34 +13817,34 @@
         ]
       },
       "predict": {
-        "score": "1-2",
+        "score": "1-1",
         "confidence": 52,
-        "winner": "away",
-        "reasoning": "客隊在中場控制佔優 (1.0)；客隊在防守佔優 (0.5)，預期客隊取勝。",
+        "winner": "home",
+        "reasoning": "客隊在中場控制佔優 (1.0)；客隊在防守佔優 (0.5)，預期勢均力敵。",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "1-1",
+            "prob": 25,
             "desc": "預測比分"
           },
           {
             "score": "0-1",
-            "prob": 22,
+            "prob": 21,
             "desc": "可能情境"
           },
           {
-            "score": "0-2",
+            "score": "1-2",
+            "prob": 19,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-0",
             "prob": 18,
             "desc": "可能情境"
           },
           {
-            "score": "0-3",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
-            "prob": 14,
+            "score": "0-2",
+            "prob": 17,
             "desc": "可能情境"
           }
         ]
@@ -14081,21 +13885,21 @@
             "y": 18
           },
           {
-            "n": 3,
+            "n": 5,
             "name": "理查茲",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 13,
+            "n": 3,
             "name": "里姆",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 5,
+            "n": 22,
             "name": "羅賓遜",
             "pos": "LB",
             "x": 22,
@@ -14123,21 +13927,21 @@
             "y": 70
           },
           {
-            "n": 21,
+            "n": 11,
             "name": "韋亞",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
-            "n": 20,
+            "n": 9,
             "name": "巴洛根",
             "pos": "ST",
             "x": 68,
             "y": 50
           },
           {
-            "n": 11,
+            "n": 17,
             "name": "亞倫森",
             "pos": "LW",
             "x": 60,
@@ -14241,7 +14045,7 @@
         "lineup": [
           {
             "n": 1,
-            "name": "T. COURTOIS",
+            "name": "卡斯特爾斯",
             "pos": "GK",
             "x": 92,
             "y": 50
@@ -14254,15 +14058,15 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "B. MECHELE",
+            "n": 5,
+            "name": "費斯",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "M. CUYPER",
+            "n": 4,
+            "name": "德巴斯特",
             "pos": "CB",
             "x": 78,
             "y": 62
@@ -14282,14 +14086,14 @@
             "y": 38
           },
           {
-            "n": 24,
+            "n": 6,
             "name": "奧納納",
             "pos": "DM",
             "x": 62,
             "y": 62
           },
           {
-            "n": 11,
+            "n": 17,
             "name": "多庫",
             "pos": "RW",
             "x": 44,
@@ -14303,14 +14107,14 @@
             "y": 50
           },
           {
-            "n": 10,
+            "n": 11,
             "name": "特羅薩德",
             "pos": "LW",
             "x": 44,
             "y": 82
           },
           {
-            "n": 9,
+            "n": 10,
             "name": "盧卡庫",
             "pos": "ST",
             "x": 30,
@@ -14411,37 +14215,23 @@
           "text": "開場掌控節奏，逐步建立攻勢"
         },
         {
-          "min": 35,
-          "side": "home",
-          "type": "goal",
-          "text": "率先破門，取得領先",
-          "score": "1-0"
-        },
-        {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：USA 1-0 BEL"
+          "text": "半場：USA 0-0 BEL"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
+          "text": "率先破門，取得領先",
+          "score": "0-1"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：USA 1-2 BEL"
+          "text": "全場：USA 0-1 BEL"
         }
       ],
       "referee": {
@@ -14479,34 +14269,34 @@
         ]
       },
       "predict": {
-        "score": "1-2",
-        "confidence": 58,
+        "score": "0-1",
+        "confidence": 54,
         "winner": "away",
-        "reasoning": "客隊在球星佔優 (2.0)；客隊在經驗佔優 (2.0)，預期客隊取勝。",
+        "reasoning": "客隊在球星佔優 (2.0)；客隊在經驗佔優 (2.0)，預期客隊取勝。（主場優勢）",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "0-1",
+            "prob": 23,
             "desc": "預測比分"
           },
           {
-            "score": "0-1",
-            "prob": 22,
-            "desc": "可能情境"
-          },
-          {
             "score": "0-2",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "0-3",
-            "prob": 16,
+            "prob": 21,
             "desc": "可能情境"
           },
           {
             "score": "1-1",
-            "prob": 14,
+            "prob": 21,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 20,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-3",
+            "prob": 15,
             "desc": "可能情境"
           }
         ]
@@ -14534,7 +14324,7 @@
         "lineup": [
           {
             "n": 23,
-            "name": "E. MARTINEZ",
+            "name": "馬丁尼斯",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -14547,15 +14337,15 @@
             "y": 18
           },
           {
-            "n": 13,
-            "name": "羅梅羅",
+            "n": 25,
+            "name": "L. 馬丁尼斯",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 25,
-            "name": "F. MEDINA",
+            "n": 13,
+            "name": "羅梅羅",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -14582,22 +14372,22 @@
             "y": 50
           },
           {
-            "n": 7,
-            "name": "R. PAUL",
+            "n": 24,
+            "name": "費南德斯",
             "pos": "CM",
             "x": 40,
             "y": 70
           },
           {
-            "n": 6,
-            "name": "L. MARTINEZ",
+            "n": 11,
+            "name": "迪馬利亞",
             "pos": "RW",
             "x": 60,
             "y": 18
           },
           {
             "n": 22,
-            "name": "L. MARTINEZ",
+            "name": "勞塔羅",
             "pos": "ST",
             "x": 68,
             "y": 50
@@ -14707,41 +14497,41 @@
         "lineup": [
           {
             "n": 1,
-            "name": "M. ELSHENAW",
+            "name": "謝納維",
             "pos": "GK",
             "x": 92,
             "y": 50
           },
           {
-            "n": 3,
+            "n": 7,
             "name": "哈尼",
             "pos": "RB",
             "x": 78,
             "y": 18
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 6,
+            "name": "海加齊",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
             "n": 5,
-            "name": "RAMY RABIA",
+            "name": "哈姆迪",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "K. HAFEZ",
+            "n": 3,
+            "name": "法圖赫",
             "pos": "LB",
             "x": 78,
             "y": 82
           },
           {
-            "n": 7,
+            "n": 21,
             "name": "特雷澤蓋",
             "pos": "CM",
             "x": 60,
@@ -14749,14 +14539,14 @@
           },
           {
             "n": 8,
-            "name": "E. ASHOUR",
+            "name": "哈邁德",
             "pos": "DM",
             "x": 60,
             "y": 50
           },
           {
-            "n": 11,
-            "name": "M. ZICO",
+            "n": 17,
+            "name": "埃爾內尼",
             "pos": "CM",
             "x": 60,
             "y": 70
@@ -14770,13 +14560,13 @@
           },
           {
             "n": 9,
-            "name": "H. ABDELKAR",
+            "name": "M. 穆罕默德",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
-            "n": 22,
+            "n": 11,
             "name": "馬穆什",
             "pos": "LW",
             "x": 40,
@@ -14897,17 +14687,10 @@
           "score": "2-0"
         },
         {
-          "min": 85,
-          "side": "home",
-          "type": "goal",
-          "text": "鎖定勝局",
-          "score": "3-0"
-        },
-        {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：ARG 3-0 EGY"
+          "text": "全場：ARG 2-0 EGY"
         }
       ],
       "referee": {
@@ -14945,34 +14728,34 @@
         ]
       },
       "predict": {
-        "score": "3-0",
-        "confidence": 65,
+        "score": "2-0",
+        "confidence": 64,
         "winner": "home",
         "reasoning": "主隊在中場控制佔優 (2.5)；主隊在經驗佔優 (2.5)，預期主隊取勝。",
         "scenarios": [
           {
-            "score": "3-0",
-            "prob": 30,
+            "score": "2-0",
+            "prob": 29,
             "desc": "預測比分"
           },
           {
-            "score": "2-0",
-            "prob": 22,
+            "score": "1-0",
+            "prob": 24,
             "desc": "可能情境"
           },
           {
-            "score": "2-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "3-1",
-            "prob": 16,
+            "score": "3-0",
+            "prob": 23,
             "desc": "可能情境"
           },
           {
             "score": "4-0",
             "prob": 14,
+            "desc": "可能情境"
+          },
+          {
+            "score": "0-0",
+            "prob": 10,
             "desc": "可能情境"
           }
         ]
@@ -15000,7 +14783,7 @@
         "lineup": [
           {
             "n": 1,
-            "name": "G. KOBEL",
+            "name": "索默",
             "pos": "GK",
             "x": 8,
             "y": 50
@@ -15013,22 +14796,22 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "埃爾韋迪",
+            "n": 22,
+            "name": "謝爾",
             "pos": "CB",
             "x": 22,
             "y": 38
           },
           {
-            "n": 2,
-            "name": "M. MUHEIM",
+            "n": 4,
+            "name": "埃爾韋迪",
             "pos": "CB",
             "x": 22,
             "y": 62
           },
           {
-            "n": 3,
-            "name": "S. WIDMER",
+            "n": 13,
+            "name": "羅德里奎茲",
             "pos": "LB",
             "x": 22,
             "y": 82
@@ -15048,15 +14831,15 @@
             "y": 62
           },
           {
-            "n": 11,
-            "name": "Dan NDOYE",
+            "n": 23,
+            "name": "沙奇里",
             "pos": "RW",
             "x": 56,
             "y": 18
           },
           {
-            "n": 9,
-            "name": "J. MANZAMBI",
+            "n": 11,
+            "name": "斯特芬",
             "pos": "AM",
             "x": 56,
             "y": 50
@@ -15069,7 +14852,7 @@
             "y": 82
           },
           {
-            "n": 23,
+            "n": 9,
             "name": "阿姆杜尼",
             "pos": "ST",
             "x": 70,
@@ -15172,7 +14955,7 @@
         "formation": "4-2-3-1",
         "lineup": [
           {
-            "n": 12,
+            "n": 1,
             "name": "巴爾加斯",
             "pos": "GK",
             "x": 92,
@@ -15186,15 +14969,15 @@
             "y": 18
           },
           {
-            "n": 13,
-            "name": "米納",
+            "n": 23,
+            "name": "桑切斯",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
             "n": 2,
-            "name": "D. MUNOZ",
+            "name": "米納",
             "pos": "CB",
             "x": 78,
             "y": 62
@@ -15207,15 +14990,15 @@
             "y": 82
           },
           {
-            "n": 16,
+            "n": 8,
             "name": "勒馬",
             "pos": "DM",
             "x": 62,
             "y": 38
           },
           {
-            "n": 20,
-            "name": "J. QUINTERO",
+            "n": 16,
+            "name": "里奧斯",
             "pos": "DM",
             "x": 62,
             "y": 62
@@ -15228,22 +15011,22 @@
             "y": 18
           },
           {
-            "n": 6,
-            "name": "R. RIOS",
+            "n": 10,
+            "name": "占士羅迪古斯",
             "pos": "AM",
             "x": 44,
             "y": 50
           },
           {
             "n": 7,
-            "name": "Luis DIAZ",
+            "name": "L. 迪亞斯",
             "pos": "LW",
             "x": 44,
             "y": 82
           },
           {
-            "n": 19,
-            "name": "C. HERNANDE",
+            "n": 9,
+            "name": "杜蘭",
             "pos": "ST",
             "x": 30,
             "y": 50
@@ -15343,37 +15126,23 @@
           "text": "開場掌控節奏，逐步建立攻勢"
         },
         {
-          "min": 35,
-          "side": "home",
-          "type": "goal",
-          "text": "率先破門，取得領先",
-          "score": "1-0"
-        },
-        {
           "min": 45,
           "side": "neutral",
           "type": "halftime",
-          "text": "半場：SUI 1-0 COL"
+          "text": "半場：SUI 0-0 COL"
         },
         {
           "min": 52,
           "side": "away",
           "type": "goal",
-          "text": "扳平比分",
-          "score": "1-1"
-        },
-        {
-          "min": 78,
-          "side": "away",
-          "type": "goal",
-          "text": "反超比分，奪回領先",
-          "score": "1-2"
+          "text": "率先破門，取得領先",
+          "score": "0-1"
         },
         {
           "min": 90,
           "side": "neutral",
           "type": "fulltime",
-          "text": "全場：SUI 1-2 COL"
+          "text": "全場：SUI 0-1 COL"
         }
       ],
       "referee": {
@@ -15383,12 +15152,12 @@
       },
       "keyDuels": [
         {
-          "home": "SUI #11 (RW)",
+          "home": "SUI #23 (RW)",
           "away": "桑切斯",
           "note": "鋒線 vs 後衛 — 禁區內的關鍵對抗"
         },
         {
-          "home": "SUI #4 (CB)",
+          "home": "SUI #22 (CB)",
           "away": "迪亞斯",
           "note": "防守 vs 進攻 — 客隊鋒線能否突破"
         },
@@ -15411,33 +15180,33 @@
         ]
       },
       "predict": {
-        "score": "1-2",
-        "confidence": 56,
+        "score": "0-1",
+        "confidence": 54,
         "winner": "away",
         "reasoning": "客隊在進攻佔優 (1.5)；客隊在球星佔優 (1.5)，預期客隊取勝。",
         "scenarios": [
           {
-            "score": "1-2",
-            "prob": 30,
+            "score": "0-1",
+            "prob": 24,
             "desc": "預測比分"
           },
           {
-            "score": "0-1",
+            "score": "0-2",
             "prob": 22,
             "desc": "可能情境"
           },
           {
-            "score": "0-2",
-            "prob": 18,
+            "score": "1-1",
+            "prob": 21,
+            "desc": "可能情境"
+          },
+          {
+            "score": "1-2",
+            "prob": 19,
             "desc": "可能情境"
           },
           {
             "score": "0-3",
-            "prob": 16,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
             "prob": 14,
             "desc": "可能情境"
           }
@@ -15473,62 +15242,62 @@
           },
           {
             "n": 5,
-            "name": "J. KOUNDE",
+            "name": "孔德",
             "pos": "RB",
             "x": 22,
             "y": 18
-          },
-          {
-            "n": 4,
-            "name": "烏帕梅卡諾",
-            "pos": "CB",
-            "x": 22,
-            "y": 38
           },
           {
             "n": 17,
             "name": "薩利巴",
             "pos": "CB",
             "x": 22,
+            "y": 38
+          },
+          {
+            "n": 4,
+            "name": "烏帕梅卡諾",
+            "pos": "CB",
+            "x": 22,
             "y": 62
           },
           {
-            "n": 19,
-            "name": "T. HERNANDE",
+            "n": 3,
+            "name": "T. 埃爾南德斯",
             "pos": "LB",
             "x": 22,
             "y": 82
           },
           {
             "n": 8,
-            "name": "A. TCHOUAME",
+            "name": "楚阿梅尼",
             "pos": "DM",
             "x": 38,
             "y": 38
           },
           {
-            "n": 14,
-            "name": "A. RABIOT",
+            "n": 13,
+            "name": "卡馬文加",
             "pos": "DM",
             "x": 38,
             "y": 62
           },
           {
-            "n": 7,
-            "name": "O. DEMBELE",
+            "n": 11,
+            "name": "杜埃",
             "pos": "RW",
             "x": 56,
             "y": 18
           },
           {
-            "n": 11,
+            "n": 7,
             "name": "奧利斯",
             "pos": "AM",
             "x": 56,
             "y": 50
           },
           {
-            "n": 12,
+            "n": 22,
             "name": "巴爾科拉",
             "pos": "LW",
             "x": 56,
@@ -15536,7 +15305,7 @@
           },
           {
             "n": 10,
-            "name": "K. MBAPPE",
+            "name": "姆巴佩",
             "pos": "ST",
             "x": 70,
             "y": 50
@@ -15638,8 +15407,8 @@
         "formation": "4-3-3",
         "lineup": [
           {
-            "n": 1,
-            "name": "Y. BOUNOU",
+            "n": 12,
+            "name": "穆尼爾",
             "pos": "GK",
             "x": 92,
             "y": 50
@@ -15652,22 +15421,22 @@
             "y": 18
           },
           {
-            "n": 14,
-            "name": "Issa Diop",
+            "n": 5,
+            "name": "阿格爾德",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 18,
-            "name": "Chadi RIAD",
+            "n": 6,
+            "name": "薩伊斯",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
             "n": 3,
-            "name": "N. MAZRAOUI",
+            "name": "馬西納",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -15688,28 +15457,28 @@
           },
           {
             "n": 7,
-            "name": "C. TALBI",
+            "name": "齊耶赫",
             "pos": "CM",
             "x": 60,
             "y": 70
           },
           {
-            "n": 10,
-            "name": "B. DIAZ",
+            "n": 11,
+            "name": "B. 迪亞斯",
             "pos": "RW",
             "x": 40,
             "y": 18
           },
           {
             "n": 9,
-            "name": "S. RAHIMI",
+            "name": "恩尼斯利",
             "pos": "ST",
             "x": 32,
             "y": 50
           },
           {
             "n": 17,
-            "name": "Amine SBAI",
+            "name": "布法爾",
             "pos": "LW",
             "x": 40,
             "y": 82
@@ -15882,22 +15651,22 @@
           },
           {
             "score": "1-0",
-            "prob": 22,
-            "desc": "可能情境"
-          },
-          {
-            "score": "1-1",
-            "prob": 18,
-            "desc": "可能情境"
-          },
-          {
-            "score": "2-1",
-            "prob": 16,
+            "prob": 25,
             "desc": "可能情境"
           },
           {
             "score": "3-0",
-            "prob": 14,
+            "prob": 22,
+            "desc": "可能情境"
+          },
+          {
+            "score": "4-0",
+            "prob": 12,
+            "desc": "可能情境"
+          },
+          {
+            "score": "2-1",
+            "prob": 11,
             "desc": "可能情境"
           }
         ]
