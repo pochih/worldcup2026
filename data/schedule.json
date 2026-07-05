@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T21:18:19.927526+00:00",
+  "generatedAt": "2026-07-05T23:16:11.749619+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6067,8 +6067,8 @@
       "group": "",
       "utc": "2026-07-05T20:00:00Z",
       "localKick": "2026-07-05T16:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -6080,7 +6080,7 @@
         "code": "BRA",
         "name": "Brazil",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BRA",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -6088,17 +6088,44 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43961",
+      "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "79'",
+          "side": "away",
+          "team": "43961",
+          "player": "Erling Haaland",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Andreas Schjelderup"
+        },
+        {
+          "minute": "90'",
+          "side": "away",
+          "team": "43961",
+          "player": "Erling Haaland",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Andreas Schjelderup"
+        },
+        {
+          "minute": "90'+10'",
+          "side": "home",
+          "team": "43924",
+          "player": "Neymar Jr",
+          "score": "1-2",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021531",
@@ -6404,10 +6431,10 @@
       "placeholderHome": "W91",
       "placeholderAway": "W92",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43961",
+        "code": "NOR",
+        "name": "Norway",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
         "score": null,
         "pen": null
       },
