@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T23:16:11.749619+00:00",
+  "generatedAt": "2026-07-06T00:16:26.801149+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6133,8 +6133,8 @@
       "stage": "r16",
       "stageLabel": "Round of 16",
       "group": "",
-      "utc": "2026-07-06T00:00:00Z",
-      "localKick": "2026-07-05T18:00:00Z",
+      "utc": "2026-07-06T01:00:00Z",
+      "localKick": "2026-07-05T19:00:00Z",
       "status": 1,
       "resultType": 0,
       "venue": "Mexico City Stadium",
