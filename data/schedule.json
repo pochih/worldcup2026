@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T19:04:06.328001+00:00",
+  "generatedAt": "2026-07-06T20:59:37.921020+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6240,17 +6240,27 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "70649",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "90'+1'",
+          "side": "away",
+          "team": "43969",
+          "player": "Mikel Merino",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Ferran Torres"
+        }
+      ]
     },
     {
       "id": "400021534",
