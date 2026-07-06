@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T16:29:38.550415+00:00",
+  "generatedAt": "2026-07-06T19:04:06.328001+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6219,7 +6219,7 @@
       "group": "",
       "utc": "2026-07-06T19:00:00Z",
       "localKick": "2026-07-06T14:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Dallas Stadium",
       "city": "Dallas",
@@ -6232,7 +6232,7 @@
         "code": "POR",
         "name": "Portugal",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/POR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6240,7 +6240,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
