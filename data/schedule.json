@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T00:16:26.801149+00:00",
+  "generatedAt": "2026-07-06T04:40:04.915062+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6135,8 +6135,8 @@
       "group": "",
       "utc": "2026-07-06T01:00:00Z",
       "localKick": "2026-07-05T19:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Mexico City Stadium",
       "city": "Mexico City",
       "tz": "",
@@ -6148,7 +6148,7 @@
         "code": "MEX",
         "name": "Mexico",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MEX",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -6156,17 +6156,60 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 3,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43942",
+      "attendance": "80824",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "36'",
+          "side": "away",
+          "team": "43942",
+          "player": "Jude Bellingham",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Bukayo Saka"
+        },
+        {
+          "minute": "38'",
+          "side": "away",
+          "team": "43942",
+          "player": "Jude Bellingham",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Harry Kane"
+        },
+        {
+          "minute": "42'",
+          "side": "home",
+          "team": "43911",
+          "player": "Julian Quinones",
+          "score": "1-2",
+          "type": "G"
+        },
+        {
+          "minute": "60'",
+          "side": "away",
+          "team": "43942",
+          "player": "Harry Kane",
+          "score": "1-3",
+          "type": "PEN"
+        },
+        {
+          "minute": "69'",
+          "side": "home",
+          "team": "43911",
+          "player": "Raul Jimenez",
+          "score": "2-3",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021529",
@@ -6439,10 +6482,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
         "score": null,
         "pen": null
       },
