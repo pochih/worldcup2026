@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T20:59:37.921020+00:00",
+  "generatedAt": "2026-07-06T22:35:59.351423+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6219,8 +6219,8 @@
       "group": "",
       "utc": "2026-07-06T19:00:00Z",
       "localKick": "2026-07-06T14:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Dallas Stadium",
       "city": "Dallas",
       "tz": "",
@@ -6243,7 +6243,7 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
+      "winner": "43969",
       "attendance": "70649",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -6443,10 +6443,10 @@
       "placeholderHome": "W93",
       "placeholderAway": "W94",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "score": null,
         "pen": null
       },
