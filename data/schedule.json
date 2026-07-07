@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:12:00.753632+00:00",
+  "generatedAt": "2026-07-07T17:25:13.341312+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6303,7 +6303,7 @@
       ],
       "goals": [
         {
-          "minute": "9'",
+          "minute": "0'",
           "side": "away",
           "team": "43935",
           "player": "Charles De Ketelaere",
@@ -6356,7 +6356,7 @@
       "group": "",
       "utc": "2026-07-07T16:00:00Z",
       "localKick": "2026-07-07T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
@@ -6369,7 +6369,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6377,17 +6377,27 @@
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "68239",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "15'",
+          "side": "away",
+          "team": "43855",
+          "player": "Yasser Ibrahim",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Marawan Attia"
+        }
+      ]
     },
     {
       "id": "400021535",
