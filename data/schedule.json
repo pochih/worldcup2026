@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T17:25:13.341312+00:00",
+  "generatedAt": "2026-07-07T20:12:07.903294+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1317,13 +1317,21 @@
           "assist": "Xaver Schlager"
         },
         {
-          "minute": "50'",
+          "minute": "0'",
           "side": "away",
           "team": "43820",
           "player": "Ali Olwan",
           "score": "1-1",
           "type": "G",
           "assist": "Noor Alrawabdeh"
+        },
+        {
+          "minute": "50'",
+          "side": "away",
+          "team": "43820",
+          "player": "Ali Olwan",
+          "score": "1-1",
+          "type": "G"
         },
         {
           "minute": "76'",
@@ -6356,8 +6364,8 @@
       "group": "",
       "utc": "2026-07-07T16:00:00Z",
       "localKick": "2026-07-07T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -6369,7 +6377,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": 0,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -6377,10 +6385,10 @@
         "code": "EGY",
         "name": "Egypt",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/EGY",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
+      "winner": "43922",
       "attendance": "68239",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -6396,6 +6404,42 @@
           "score": "0-1",
           "type": "G",
           "assist": "Marawan Attia"
+        },
+        {
+          "minute": "67'",
+          "side": "away",
+          "team": "43855",
+          "player": "Mostafa Zico",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Haissem Hassan"
+        },
+        {
+          "minute": "79'",
+          "side": "home",
+          "team": "43922",
+          "player": "Cristian Romero",
+          "score": "1-2",
+          "type": "G",
+          "assist": "Lionel Messi"
+        },
+        {
+          "minute": "83'",
+          "side": "home",
+          "team": "43922",
+          "player": "Lionel Messi",
+          "score": "2-2",
+          "type": "G",
+          "assist": "Gonzalo Montiel"
+        },
+        {
+          "minute": "90'+2'",
+          "side": "home",
+          "team": "43922",
+          "player": "Enzo Fernandez",
+          "score": "3-2",
+          "type": "G",
+          "assist": "Lautaro Martinez"
         }
       ]
     },
@@ -6407,7 +6451,7 @@
       "group": "",
       "utc": "2026-07-07T20:00:00Z",
       "localKick": "2026-07-07T13:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
@@ -6420,7 +6464,7 @@
         "code": "SUI",
         "name": "Switzerland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6428,7 +6472,7 @@
         "code": "COL",
         "name": "Colombia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
@@ -6580,10 +6624,10 @@
       "placeholderHome": "W95",
       "placeholderAway": "W96",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
         "score": null,
         "pen": null
       },

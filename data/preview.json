@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-07T17:25:13.919197+00:00",
+  "_generatedAt": "2026-07-07T20:12:08.496480+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -1121,22 +1121,22 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 2,
+            "name": "Y. IBRAHIM",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "RAMY RABIA",
+            "n": 4,
+            "name": "H. ABDELMAG",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "K. HAFEZ",
+            "n": 5,
+            "name": "RAMY RABIA",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -1170,8 +1170,8 @@
             "y": 18
           },
           {
-            "n": 9,
-            "name": "H. ABDELKAR",
+            "n": 12,
+            "name": "H. HASSAN",
             "pos": "ST",
             "x": 32,
             "y": 50
@@ -10400,22 +10400,22 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 2,
+            "name": "Y. IBRAHIM",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "RAMY RABIA",
+            "n": 4,
+            "name": "H. ABDELMAG",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "K. HAFEZ",
+            "n": 5,
+            "name": "RAMY RABIA",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -10449,8 +10449,8 @@
             "y": 18
           },
           {
-            "n": 9,
-            "name": "H. ABDELKAR",
+            "n": 12,
+            "name": "H. HASSAN",
             "pos": "ST",
             "x": 32,
             "y": 50
@@ -10686,8 +10686,8 @@
             "y": 38
           },
           {
-            "n": 25,
-            "name": "F. MEDINA",
+            "n": 4,
+            "name": "G. MONTIEL",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -10714,8 +10714,8 @@
             "y": 50
           },
           {
-            "n": 7,
-            "name": "R. PAUL",
+            "n": 24,
+            "name": "E. FERNANDE",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -14344,8 +14344,8 @@
             "y": 38
           },
           {
-            "n": 25,
-            "name": "F. MEDINA",
+            "n": 4,
+            "name": "G. MONTIEL",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -14372,8 +14372,8 @@
             "y": 50
           },
           {
-            "n": 7,
-            "name": "R. PAUL",
+            "n": 24,
+            "name": "E. FERNANDE",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -14510,22 +14510,22 @@
             "y": 18
           },
           {
-            "n": 4,
-            "name": "H. ABDELMAG",
+            "n": 2,
+            "name": "Y. IBRAHIM",
             "pos": "CB",
             "x": 78,
             "y": 38
           },
           {
-            "n": 5,
-            "name": "RAMY RABIA",
+            "n": 4,
+            "name": "H. ABDELMAG",
             "pos": "CB",
             "x": 78,
             "y": 62
           },
           {
-            "n": 15,
-            "name": "K. HAFEZ",
+            "n": 5,
+            "name": "RAMY RABIA",
             "pos": "LB",
             "x": 78,
             "y": 82
@@ -14559,8 +14559,8 @@
             "y": 18
           },
           {
-            "n": 9,
-            "name": "H. ABDELKAR",
+            "n": 12,
+            "name": "H. HASSAN",
             "pos": "ST",
             "x": 32,
             "y": 50
