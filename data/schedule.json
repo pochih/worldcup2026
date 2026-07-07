@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T20:12:07.903294+00:00",
+  "generatedAt": "2026-07-07T21:40:08.989200+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1317,21 +1317,13 @@
           "assist": "Xaver Schlager"
         },
         {
-          "minute": "0'",
+          "minute": "50'",
           "side": "away",
           "team": "43820",
           "player": "Ali Olwan",
           "score": "1-1",
           "type": "G",
           "assist": "Noor Alrawabdeh"
-        },
-        {
-          "minute": "50'",
-          "side": "away",
-          "team": "43820",
-          "player": "Ali Olwan",
-          "score": "1-1",
-          "type": "G"
         },
         {
           "minute": "76'",
@@ -6476,7 +6468,7 @@
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "52497",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
