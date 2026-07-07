@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T22:35:59.351423+00:00",
+  "generatedAt": "2026-07-07T00:19:12.008355+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6270,7 +6270,7 @@
       "group": "",
       "utc": "2026-07-07T00:00:00Z",
       "localKick": "2026-07-06T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Seattle Stadium",
       "city": "Seattle",
@@ -6283,7 +6283,7 @@
         "code": "USA",
         "name": "USA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6291,7 +6291,7 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -6301,7 +6301,17 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "9'",
+          "side": "away",
+          "team": "43935",
+          "player": "Charles De Ketelaere",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Nicolas Raskin"
+        }
+      ]
     },
     {
       "id": "400021528",
