@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T21:40:08.989200+00:00",
+  "generatedAt": "2026-07-07T23:13:46.644968+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6443,8 +6443,8 @@
       "group": "",
       "utc": "2026-07-07T20:00:00Z",
       "localKick": "2026-07-07T13:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 2,
       "venue": "BC Place Vancouver",
       "city": "Vancouver",
       "tz": "",
@@ -6457,7 +6457,7 @@
         "name": "Switzerland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
         "score": 0,
-        "pen": null
+        "pen": 4
       },
       "away": {
         "id": "43926",
@@ -6465,16 +6465,73 @@
         "name": "Colombia",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/COL",
         "score": 0,
-        "pen": null
+        "pen": 3
       },
-      "winner": null,
+      "winner": "43971",
       "attendance": "52497",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43926",
+          "player": "Juan Quintero",
+          "score": "0-0",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43971",
+          "player": "Granit Xhaka",
+          "score": "0-0",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43971",
+          "player": "Zeki Amdouni",
+          "score": "0-0",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43926",
+          "player": "Jaminton Campaz",
+          "score": "0-0",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43971",
+          "player": "Cedric Itten",
+          "score": "0-0",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "away",
+          "team": "43926",
+          "player": "Luis Diaz",
+          "score": "0-0",
+          "type": "PEN"
+        },
+        {
+          "minute": "",
+          "side": "home",
+          "team": "43971",
+          "player": "Ruben Vargas",
+          "score": "0-0",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021536",
@@ -6624,10 +6681,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43971",
+        "code": "SUI",
+        "name": "Switzerland",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
         "score": null,
         "pen": null
       },
