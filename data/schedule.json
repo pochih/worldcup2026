@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T00:19:12.008355+00:00",
+  "generatedAt": "2026-07-07T05:05:36.931618+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6270,8 +6270,8 @@
       "group": "",
       "utc": "2026-07-07T00:00:00Z",
       "localKick": "2026-07-06T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Seattle Stadium",
       "city": "Seattle",
       "tz": "",
@@ -6283,7 +6283,7 @@
         "code": "USA",
         "name": "USA",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/USA",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -6291,11 +6291,11 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": 1,
+        "score": 4,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43935",
+      "attendance": "66925",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -6310,6 +6310,41 @@
           "score": "0-1",
           "type": "G",
           "assist": "Nicolas Raskin"
+        },
+        {
+          "minute": "31'",
+          "side": "home",
+          "team": "43921",
+          "player": "Malik Tillman",
+          "score": "1-1",
+          "type": "G"
+        },
+        {
+          "minute": "33'",
+          "side": "away",
+          "team": "43935",
+          "player": "Charles De Ketelaere",
+          "score": "1-2",
+          "type": "G",
+          "assist": "Leandro Trossard"
+        },
+        {
+          "minute": "57'",
+          "side": "away",
+          "team": "43935",
+          "player": "Hans Vanaken",
+          "score": "1-3",
+          "type": "G",
+          "assist": "Charles De Ketelaere"
+        },
+        {
+          "minute": "90'+3'",
+          "side": "away",
+          "team": "43935",
+          "player": "Romelu Lukaku",
+          "score": "1-4",
+          "type": "G",
+          "assist": "Hans Vanaken"
         }
       ]
     },
@@ -6461,10 +6496,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43935",
+        "code": "BEL",
+        "name": "Belgium",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
         "score": null,
         "pen": null
       },
