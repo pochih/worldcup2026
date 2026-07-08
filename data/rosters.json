@@ -3064,7 +3064,6 @@
         "pos": "DEF",
         "captain": false,
         "id": "335658",
-        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/c9b49c28-0494-4261-bb60-c2848b4e1120/ALEX-SANDRO_335658"
       },
       {
@@ -3150,6 +3149,7 @@
         "pos": "MID",
         "captain": false,
         "id": "367981",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/7cef9b58-da05-42ba-afe9-aebcd4d40a0e/DOUGLAS-SANTOS_367981"
       },
       {
@@ -3159,7 +3159,6 @@
         "pos": "MID",
         "captain": false,
         "id": "394456",
-        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/f32cd105-d97b-4a7b-8eb0-258271640a72/FABINHO_394456"
       },
       {
@@ -3169,6 +3168,7 @@
         "pos": "MID",
         "captain": false,
         "id": "429392",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/e564b92f-7a69-49fe-b259-c5deebf6e451/DANILO-SANTOS_429392"
       },
       {
@@ -5266,6 +5266,7 @@
         "pos": "DEF",
         "captain": false,
         "id": "405528",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/09574b48-f59b-436b-b0db-ab4816a96ede/SUGAWARA-Yukinari_405528"
       },
       {
@@ -5294,7 +5295,6 @@
         "pos": "LB",
         "captain": false,
         "id": "291372",
-        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/719252dc-c983-411f-875b-13a0f6acd967/NAGATOMO-Yuto_291372"
       },
       {
@@ -5313,6 +5313,7 @@
         "pos": "MID",
         "captain": false,
         "id": "400514",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/c041ee70-6920-4696-afe9-5a9982dc9a2b/TANAKA-Ao_400514"
       },
       {
@@ -5331,7 +5332,6 @@
         "pos": "FWD",
         "captain": false,
         "id": "464339",
-        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/389ec308-0914-4e7e-95e6-302c1d7bb0b0/GOTO-Keisuke_464339"
       },
       {
@@ -5408,7 +5408,6 @@
         "pos": "MID",
         "captain": false,
         "id": "485503",
-        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/820d40f4-df00-46d9-a36f-3f7eb523d099/SUZUKI-Yuito_485503"
       },
       {
@@ -5418,6 +5417,7 @@
         "pos": "FWD",
         "captain": false,
         "id": "430413",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/1b05e82f-94e8-470d-9c12-f9bdf1a0e080/UEDA-Ayase_430413"
       },
       {
@@ -5427,7 +5427,6 @@
         "pos": "FWD",
         "captain": false,
         "id": "403293",
-        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/3b346456-0904-4429-ac8d-1acb2c2a1934/OGAWA-Koki_403293"
       },
       {
@@ -5437,6 +5436,7 @@
         "pos": "DEF",
         "captain": false,
         "id": "405527",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/2c33d7cc-d75e-427f-9aa9-2dac0872e561/SEKO-Ayumu_405527"
       },
       {
@@ -5474,6 +5474,7 @@
         "pos": "MID",
         "captain": false,
         "id": "479294",
+        "starter": true,
         "picture": "https://digitalhub.fifa.com/transform/f5caca4b-2a48-4d7d-906e-1c2c39a6f15c/SANO-Kaishu_479294"
       },
       {
