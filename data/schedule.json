@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T18:59:39.963271+00:00",
+  "generatedAt": "2026-07-09T20:55:43.839285+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6541,7 +6541,7 @@
       "group": "",
       "utc": "2026-07-09T20:00:00Z",
       "localKick": "2026-07-09T16:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Boston Stadium",
       "city": "Boston",
@@ -6554,7 +6554,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6562,7 +6562,7 @@
         "code": "MAR",
         "name": "Morocco",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/MAR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
