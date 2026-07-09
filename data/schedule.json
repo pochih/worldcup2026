@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T20:55:43.839285+00:00",
+  "generatedAt": "2026-07-09T22:42:38.999624+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6541,8 +6541,8 @@
       "group": "",
       "utc": "2026-07-09T20:00:00Z",
       "localKick": "2026-07-09T16:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Boston Stadium",
       "city": "Boston",
       "tz": "",
@@ -6554,7 +6554,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -6565,14 +6565,33 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43946",
+      "attendance": "63811",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "60'",
+          "side": "home",
+          "team": "43946",
+          "player": "Kylian Mbappe",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Desire Doue"
+        },
+        {
+          "minute": "66'",
+          "side": "home",
+          "team": "43946",
+          "player": "Ousmane Dembele",
+          "score": "2-0",
+          "type": "G",
+          "assist": "Kylian Mbappe"
+        }
+      ]
     },
     {
       "id": "400021538",
@@ -6714,10 +6733,10 @@
       "placeholderHome": "W97",
       "placeholderAway": "W98",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
         "score": null,
         "pen": null
       },
