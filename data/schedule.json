@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T18:43:48.507886+00:00",
+  "generatedAt": "2026-07-10T20:41:21.429898+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6601,7 +6601,7 @@
       "group": "",
       "utc": "2026-07-10T19:00:00Z",
       "localKick": "2026-07-10T12:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
@@ -6614,7 +6614,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -6622,17 +6622,35 @@
         "code": "BEL",
         "name": "Belgium",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/BEL",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
-      "attendance": null,
+      "attendance": "70492",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "30'",
+          "side": "home",
+          "team": "43969",
+          "player": "Fabian Ruiz",
+          "score": "1-0",
+          "type": "G"
+        },
+        {
+          "minute": "41'",
+          "side": "away",
+          "team": "43935",
+          "player": "Charles De Ketelaere",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Timothy Castagne"
+        }
+      ]
     },
     {
       "id": "400021539",
