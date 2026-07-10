@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T20:41:21.429898+00:00",
+  "generatedAt": "2026-07-10T22:14:27.544454+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6601,8 +6601,8 @@
       "group": "",
       "utc": "2026-07-10T19:00:00Z",
       "localKick": "2026-07-10T12:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Los Angeles Stadium",
       "city": "Los Angeles",
       "tz": "",
@@ -6614,7 +6614,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
       "away": {
@@ -6625,7 +6625,7 @@
         "score": 1,
         "pen": null
       },
-      "winner": null,
+      "winner": "43969",
       "attendance": "70492",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -6649,6 +6649,14 @@
           "score": "1-1",
           "type": "G",
           "assist": "Timothy Castagne"
+        },
+        {
+          "minute": "88'",
+          "side": "home",
+          "team": "43969",
+          "player": "Mikel Merino",
+          "score": "2-1",
+          "type": "G"
         }
       ]
     },
@@ -6759,10 +6767,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "score": null,
         "pen": null
       },
