@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T21:03:01.856628+00:00",
+  "generatedAt": "2026-07-11T22:05:48.299489+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6681,7 +6681,7 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -6689,7 +6689,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -6699,7 +6699,26 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "36'",
+          "side": "home",
+          "team": "43961",
+          "player": "Andreas Schjelderup",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Martin Odegaard"
+        },
+        {
+          "minute": "45'+2'",
+          "side": "away",
+          "team": "43942",
+          "player": "Jude Bellingham",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Anthony Gordon"
+        }
+      ]
     },
     {
       "id": "400021537",
