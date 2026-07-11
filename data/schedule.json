@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T19:29:43.910360+00:00",
+  "generatedAt": "2026-07-11T21:03:01.856628+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6668,7 +6668,7 @@
       "group": "",
       "utc": "2026-07-11T21:00:00Z",
       "localKick": "2026-07-11T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Miami Stadium",
       "city": "Miami",
@@ -6681,7 +6681,7 @@
         "code": "NOR",
         "name": "Norway",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/NOR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6689,7 +6689,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
