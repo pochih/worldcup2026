@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T23:08:30.636557+00:00",
+  "generatedAt": "2026-07-12T00:08:40.913539+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6668,8 +6668,8 @@
       "group": "",
       "utc": "2026-07-11T21:00:00Z",
       "localKick": "2026-07-11T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 3,
       "venue": "Miami Stadium",
       "city": "Miami",
       "tz": "",
@@ -6689,10 +6689,10 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
+      "winner": "43942",
       "attendance": "64478",
       "twBroadcast": [
         "愛爾達體育台（付費）",
@@ -6717,6 +6717,14 @@
           "score": "1-1",
           "type": "G",
           "assist": "Anthony Gordon"
+        },
+        {
+          "minute": "93'",
+          "side": "away",
+          "team": "43942",
+          "player": "Jude Bellingham",
+          "score": "1-2",
+          "type": "G"
         }
       ]
     },
@@ -6819,10 +6827,10 @@
       "placeholderHome": "W99",
       "placeholderAway": "W100",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
         "score": null,
         "pen": null
       },
