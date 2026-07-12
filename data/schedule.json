@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T00:08:40.913539+00:00",
+  "generatedAt": "2026-07-12T03:54:00.187947+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6736,8 +6736,8 @@
       "group": "",
       "utc": "2026-07-12T01:00:00Z",
       "localKick": "2026-07-11T20:00:00Z",
-      "status": 1,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 3,
       "venue": "Kansas City Stadium",
       "city": "Kansas City",
       "tz": "",
@@ -6749,7 +6749,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": null,
+        "score": 3,
         "pen": null
       },
       "away": {
@@ -6757,17 +6757,53 @@
         "code": "SUI",
         "name": "Switzerland",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/SUI",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43922",
+      "attendance": "69045",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "10'",
+          "side": "home",
+          "team": "43922",
+          "player": "Alexis Mac Allister",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Lionel Messi"
+        },
+        {
+          "minute": "67'",
+          "side": "away",
+          "team": "43971",
+          "player": "Dan Ndoye",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Ricardo Rodriguez"
+        },
+        {
+          "minute": "112'",
+          "side": "home",
+          "team": "43922",
+          "player": "Julian Alvarez",
+          "score": "2-1",
+          "type": "G",
+          "assist": "Jose Manuel Lopez"
+        },
+        {
+          "minute": "120'+1'",
+          "side": "home",
+          "team": "43922",
+          "player": "Lautaro Martinez",
+          "score": "3-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021541",
@@ -6835,10 +6871,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
         "score": null,
         "pen": null
       },
