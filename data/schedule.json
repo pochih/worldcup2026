@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T18:15:40.139723+00:00",
+  "generatedAt": "2026-07-14T19:42:49.688023+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6813,7 +6813,7 @@
       "group": "",
       "utc": "2026-07-14T19:00:00Z",
       "localKick": "2026-07-14T14:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Dallas Stadium",
       "city": "Dallas",
@@ -6826,7 +6826,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6834,7 +6834,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -6844,7 +6844,16 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "22'",
+          "side": "away",
+          "team": "43969",
+          "player": "Mikel Oyarzabal",
+          "score": "0-1",
+          "type": "PEN"
+        }
+      ]
     },
     {
       "id": "400021540",
@@ -6890,8 +6899,8 @@
     {
       "id": "400021542",
       "no": 103,
-      "stage": "third",
-      "stageLabel": "Play-off for third place",
+      "stage": "final",
+      "stageLabel": "Bronze final",
       "group": "",
       "utc": "2026-07-18T21:00:00Z",
       "localKick": "2026-07-18T17:00:00Z",
