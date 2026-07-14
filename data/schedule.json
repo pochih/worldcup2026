@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T19:42:49.688023+00:00",
+  "generatedAt": "2026-07-14T21:13:14.043262+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6813,8 +6813,8 @@
       "group": "",
       "utc": "2026-07-14T19:00:00Z",
       "localKick": "2026-07-14T14:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Dallas Stadium",
       "city": "Dallas",
       "tz": "",
@@ -6834,11 +6834,11 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": 1,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43969",
+      "attendance": "70176",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -6852,6 +6852,15 @@
           "player": "Mikel Oyarzabal",
           "score": "0-1",
           "type": "PEN"
+        },
+        {
+          "minute": "58'",
+          "side": "away",
+          "team": "43969",
+          "player": "Pedro Porro",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Dani Olmo"
         }
       ]
     },
@@ -6913,10 +6922,10 @@
       "placeholderHome": "RU101",
       "placeholderAway": "RU102",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43946",
+        "code": "FRA",
+        "name": "France",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
         "score": null,
         "pen": null
       },
@@ -6954,10 +6963,10 @@
       "placeholderHome": "W101",
       "placeholderAway": "W102",
       "home": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43969",
+        "code": "ESP",
+        "name": "Spain",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
         "score": null,
         "pen": null
       },
