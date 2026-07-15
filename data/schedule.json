@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T17:36:47.593832+00:00",
+  "generatedAt": "2026-07-15T19:34:25.881274+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6872,7 +6872,7 @@
       "group": "",
       "utc": "2026-07-15T19:00:00Z",
       "localKick": "2026-07-15T15:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
@@ -6885,7 +6885,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6893,7 +6893,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
