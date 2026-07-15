@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T19:34:25.881274+00:00",
+  "generatedAt": "2026-07-15T21:13:47.270847+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6872,8 +6872,8 @@
       "group": "",
       "utc": "2026-07-15T19:00:00Z",
       "localKick": "2026-07-15T15:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Atlanta Stadium",
       "city": "Atlanta",
       "tz": "",
@@ -6885,7 +6885,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -6893,17 +6893,45 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": 0,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
+      "winner": "43922",
       "attendance": null,
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "55'",
+          "side": "home",
+          "team": "43942",
+          "player": "Anthony Gordon",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Morgan Rogers"
+        },
+        {
+          "minute": "85'",
+          "side": "away",
+          "team": "43922",
+          "player": "Enzo Fernandez",
+          "score": "1-1",
+          "type": "G",
+          "assist": "Lionel Messi"
+        },
+        {
+          "minute": "90'+2'",
+          "side": "away",
+          "team": "43922",
+          "player": "Lautaro Martinez",
+          "score": "1-2",
+          "type": "G",
+          "assist": "Lionel Messi"
+        }
+      ]
     },
     {
       "id": "400021542",
@@ -6930,10 +6958,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43942",
+        "code": "ENG",
+        "name": "England",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
         "score": null,
         "pen": null
       },
@@ -6971,10 +6999,10 @@
         "pen": null
       },
       "away": {
-        "id": null,
-        "code": null,
-        "name": null,
-        "flag": "",
+        "id": "43922",
+        "code": "ARG",
+        "name": "Argentina",
+        "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
         "score": null,
         "pen": null
       },
