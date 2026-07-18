@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T22:05:39.786156+00:00",
+  "generatedAt": "2026-07-18T23:08:11.207252+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6941,8 +6941,8 @@
       "group": "",
       "utc": "2026-07-18T21:00:00Z",
       "localKick": "2026-07-18T17:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 1,
       "venue": "Miami Stadium",
       "city": "Miami",
       "tz": "",
@@ -6954,7 +6954,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": 0,
+        "score": 4,
         "pen": null
       },
       "away": {
@@ -6962,11 +6962,11 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 4,
+        "score": 6,
         "pen": null
       },
-      "winner": null,
-      "attendance": null,
+      "winner": "43942",
+      "attendance": "64478",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
@@ -7007,6 +7007,58 @@
           "score": "0-4",
           "type": "G",
           "assist": "Eberechi Eze"
+        },
+        {
+          "minute": "48'",
+          "side": "home",
+          "team": "43946",
+          "player": "Kylian Mbappe",
+          "score": "1-4",
+          "type": "G",
+          "assist": "Michael Olise"
+        },
+        {
+          "minute": "54'",
+          "side": "home",
+          "team": "43946",
+          "player": "Bradley Barcola",
+          "score": "2-4",
+          "type": "G",
+          "assist": "Kylian Mbappe"
+        },
+        {
+          "minute": "66'",
+          "side": "home",
+          "team": "43946",
+          "player": "Kylian Mbappe",
+          "score": "3-4",
+          "type": "G",
+          "assist": "Michael Olise"
+        },
+        {
+          "minute": "87'",
+          "side": "away",
+          "team": "43942",
+          "player": "Bukayo Saka",
+          "score": "3-5",
+          "type": "PEN"
+        },
+        {
+          "minute": "90'+6'",
+          "side": "home",
+          "team": "43946",
+          "player": "Ousmane Dembele",
+          "score": "4-5",
+          "type": "G",
+          "assist": "Dayot Upamecano"
+        },
+        {
+          "minute": "90'+8'",
+          "side": "away",
+          "team": "43942",
+          "player": "Jude Bellingham",
+          "score": "4-6",
+          "type": "G"
         }
       ]
     },
