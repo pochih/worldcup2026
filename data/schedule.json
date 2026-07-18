@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T21:04:21.570651+00:00",
+  "generatedAt": "2026-07-18T22:05:39.786156+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6962,7 +6962,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": 1,
+        "score": 4,
         "pen": null
       },
       "winner": null,
@@ -6980,6 +6980,33 @@
           "player": "Declan Rice",
           "score": "0-1",
           "type": "G"
+        },
+        {
+          "minute": "18'",
+          "side": "away",
+          "team": "43942",
+          "player": "Ezri Konsa",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Declan Rice"
+        },
+        {
+          "minute": "37'",
+          "side": "away",
+          "team": "43942",
+          "player": "Bukayo Saka",
+          "score": "0-3",
+          "type": "G",
+          "assist": "Marcus Rashford"
+        },
+        {
+          "minute": "45'+1'",
+          "side": "away",
+          "team": "43942",
+          "player": "Bukayo Saka",
+          "score": "0-4",
+          "type": "G",
+          "assist": "Eberechi Eze"
         }
       ]
     },
