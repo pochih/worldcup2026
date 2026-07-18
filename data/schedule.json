@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T19:23:29.072942+00:00",
+  "generatedAt": "2026-07-18T21:04:21.570651+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -6941,7 +6941,7 @@
       "group": "",
       "utc": "2026-07-18T21:00:00Z",
       "localKick": "2026-07-18T17:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "Miami Stadium",
       "city": "Miami",
@@ -6954,7 +6954,7 @@
         "code": "FRA",
         "name": "France",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/FRA",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -6962,7 +6962,7 @@
         "code": "ENG",
         "name": "England",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ENG",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
@@ -6972,7 +6972,16 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "3'",
+          "side": "away",
+          "team": "43942",
+          "player": "Declan Rice",
+          "score": "0-1",
+          "type": "G"
+        }
+      ]
     },
     {
       "id": "400021543",
