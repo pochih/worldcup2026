@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T21:05:35.222136+00:00",
+  "generatedAt": "2026-07-19T22:08:06.628538+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -7070,8 +7070,8 @@
       "group": "",
       "utc": "2026-07-19T19:00:00Z",
       "localKick": "2026-07-19T15:00:00Z",
-      "status": 3,
-      "resultType": 0,
+      "status": 0,
+      "resultType": 3,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
       "tz": "",
@@ -7083,7 +7083,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": 0,
+        "score": 1,
         "pen": null
       },
       "away": {
@@ -7094,14 +7094,24 @@
         "score": 0,
         "pen": null
       },
-      "winner": null,
+      "winner": "43969",
       "attendance": "80663",
       "twBroadcast": [
         "愛爾達體育台（付費）",
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "106'",
+          "side": "home",
+          "team": "43969",
+          "player": "Ferran Torres",
+          "score": "1-0",
+          "type": "G",
+          "assist": "Nico Williams"
+        }
+      ]
     }
   ],
   "teams": {
