@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T18:07:05.101343+00:00",
+  "generatedAt": "2026-07-19T19:29:39.561881+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -7070,7 +7070,7 @@
       "group": "",
       "utc": "2026-07-19T19:00:00Z",
       "localKick": "2026-07-19T15:00:00Z",
-      "status": 1,
+      "status": 3,
       "resultType": 0,
       "venue": "New York/New Jersey Stadium",
       "city": "New Jersey",
@@ -7083,7 +7083,7 @@
         "code": "ESP",
         "name": "Spain",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ESP",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
@@ -7091,7 +7091,7 @@
         "code": "ARG",
         "name": "Argentina",
         "flag": "https://api.fifa.com/api/v3/picture/flags-sq-4/ARG",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "winner": null,
