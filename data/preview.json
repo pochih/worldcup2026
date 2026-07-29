@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-29T06:43:10.671830+00:00",
+  "_generatedAt": "2026-07-29T09:48:04.292927+00:00",
   "_note": "戰報前瞻：淘汰賽全部、小組賽強強對決 (FIFA 排名差距 ≤ 8 且最佳排名 ≤ 25) 自動生成。手寫戰報優先於自動生成。",
   "matches": [
     {
@@ -1930,8 +1930,8 @@
             "y": 38
           },
           {
-            "n": 20,
-            "name": "M. CHAVEZ",
+            "n": 4,
+            "name": "E. ALVAREZ",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -1951,15 +1951,15 @@
             "y": 30
           },
           {
-            "n": 24,
-            "name": "L. CHAVEZ",
+            "n": 6,
+            "name": "Erik LIRA",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Erik LIRA",
+            "n": 7,
+            "name": "Luis ROMO",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -7028,8 +7028,8 @@
             "y": 38
           },
           {
-            "n": 20,
-            "name": "M. CHAVEZ",
+            "n": 4,
+            "name": "E. ALVAREZ",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -7049,15 +7049,15 @@
             "y": 30
           },
           {
-            "n": 24,
-            "name": "L. CHAVEZ",
+            "n": 6,
+            "name": "Erik LIRA",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Erik LIRA",
+            "n": 7,
+            "name": "Luis ROMO",
             "pos": "CM",
             "x": 40,
             "y": 70
@@ -12974,8 +12974,8 @@
             "y": 38
           },
           {
-            "n": 20,
-            "name": "M. CHAVEZ",
+            "n": 4,
+            "name": "E. ALVAREZ",
             "pos": "CB",
             "x": 22,
             "y": 62
@@ -12995,15 +12995,15 @@
             "y": 30
           },
           {
-            "n": 24,
-            "name": "L. CHAVEZ",
+            "n": 6,
+            "name": "Erik LIRA",
             "pos": "DM",
             "x": 40,
             "y": 50
           },
           {
-            "n": 6,
-            "name": "Erik LIRA",
+            "n": 7,
+            "name": "Luis ROMO",
             "pos": "CM",
             "x": 40,
             "y": 70

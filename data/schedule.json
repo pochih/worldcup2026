@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T06:43:09.994407+00:00",
+  "generatedAt": "2026-07-29T09:48:03.835793+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3487,35 +3487,7 @@
         "愛爾達體育台（付費）",
         "台視（免費無線）"
       ],
-      "goals": [
-        {
-          "minute": "55'",
-          "side": "away",
-          "team": "43911",
-          "player": "Mateo Chavez",
-          "score": "0-1",
-          "type": "G",
-          "assist": "Luis Romo"
-        },
-        {
-          "minute": "61'",
-          "side": "away",
-          "team": "43911",
-          "player": "Julian Quinones",
-          "score": "0-2",
-          "type": "G",
-          "assist": "Jorge Sanchez"
-        },
-        {
-          "minute": "90'+4'",
-          "side": "away",
-          "team": "43911",
-          "player": "Alvaro Fidalgo",
-          "score": "0-3",
-          "type": "G",
-          "assist": "Roberto Alvarado"
-        }
-      ]
+      "goals": []
     },
     {
       "id": "400021445",
@@ -5821,17 +5793,7 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": [
-        {
-          "minute": "14'",
-          "side": "home",
-          "team": "43926",
-          "player": "Jhon Arias",
-          "score": "1-0",
-          "type": "G",
-          "assist": "Luis Suarez"
-        }
-      ]
+      "goals": []
     },
     {
       "id": "400021515",
@@ -5979,16 +5941,7 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": [
-        {
-          "minute": "70'",
-          "side": "away",
-          "team": "43946",
-          "player": "Kylian Mbappe",
-          "score": "0-1",
-          "type": "PEN"
-        }
-      ]
+      "goals": []
     },
     {
       "id": "400021530",
