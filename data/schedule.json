@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T22:16:56.607729+00:00",
+  "generatedAt": "2026-09-26T00:38:57.140303+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -1654,25 +1654,7 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": [
-        {
-          "minute": "6'",
-          "side": "home",
-          "team": "43995",
-          "player": "Michal Sadilek",
-          "score": "1-0",
-          "type": "G",
-          "assist": "Alexandr Sojka"
-        },
-        {
-          "minute": "83'",
-          "side": "away",
-          "team": "43883",
-          "player": "Teboho Mokoena",
-          "score": "1-1",
-          "type": "PEN"
-        }
-      ]
+      "goals": []
     },
     {
       "id": "400021446",
@@ -5735,52 +5717,7 @@
         "東森（基本第四台）",
         "台視（免費無線）"
       ],
-      "goals": [
-        {
-          "minute": "29'",
-          "side": "home",
-          "team": "43922",
-          "player": "Lionel Messi",
-          "score": "1-0",
-          "type": "G",
-          "assist": "Lisandro Martinez"
-        },
-        {
-          "minute": "59'",
-          "side": "away",
-          "team": "43850",
-          "player": "Deroy Duarte",
-          "score": "1-1",
-          "type": "G",
-          "assist": "Ryan Mendes"
-        },
-        {
-          "minute": "92'",
-          "side": "home",
-          "team": "43922",
-          "player": "Lisandro Martinez",
-          "score": "2-1",
-          "type": "G",
-          "assist": "Alexis Mac Allister"
-        },
-        {
-          "minute": "103'",
-          "side": "away",
-          "team": "43850",
-          "player": "Sidny Lopes Cabral",
-          "score": "2-2",
-          "type": "G",
-          "assist": "Yannick Semedo"
-        },
-        {
-          "minute": "111'",
-          "side": "home",
-          "team": "43850",
-          "player": "Diney Borges",
-          "score": "3-2",
-          "type": "OG"
-        }
-      ]
+      "goals": []
     },
     {
       "id": "400021517",
