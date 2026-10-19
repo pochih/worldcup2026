@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T19:18:31.835097+00:00",
+  "generatedAt": "2026-10-19T23:36:18.816733+00:00",
   "totalMatches": 104,
   "matches": [
     {
@@ -3603,7 +3603,26 @@
       "twBroadcast": [
         "愛爾達體育台（付費）"
       ],
-      "goals": []
+      "goals": [
+        {
+          "minute": "7'",
+          "side": "away",
+          "team": "43854",
+          "player": "Nicolas Pepe",
+          "score": "0-1",
+          "type": "G",
+          "assist": "Yan Diomande"
+        },
+        {
+          "minute": "64'",
+          "side": "away",
+          "team": "43854",
+          "player": "Nicolas Pepe",
+          "score": "0-2",
+          "type": "G",
+          "assist": "Ibrahim Sangare"
+        }
+      ]
     },
     {
       "id": "400021466",
